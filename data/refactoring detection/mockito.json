@@ -1,0 +1,2308 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "064fe9028993a11ccf0ae12b5975b96baffcf305",
+      "url": "https://github.com/mockito/mockito/commit/064fe9028993a11ccf0ae12b5975b96baffcf305",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatcher : Matcher to matcher : Matcher<T> in class org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate lastMatcher() : ArgumentMatcher<?> renamed to private lastMatcherType() : Class<?> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tArgumentMatcher<?> to Class<?> in method private lastMatcherType() : Class<?> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldAllowanyWithMixedVarargs() : void renamed to public shouldAllowAnyWithMixedVarargs() : void in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic should_capture_vararg() : void renamed to public should_capture_single_vararg_with_single_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic should_capture_all_vararg() : void renamed to public should_capture_multiple_invocations_with_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tm : CapturingMatcher to m : CapturingMatcher<String[]> in method public should_capture_varargs_as_vararg() : void from class org.mockito.internal.invocation.InvocationMatcherTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tany : InstanceOf.VarArgAware to any : InstanceOf in method public shouldMatchAnyThatMatchesRawVarArgType() : void from class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic type() : Class<?> from class org.mockito.internal.matchers.InstanceOf.VarArgAware to public type() : Class<?> from class org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\targ : Object in method public shouldMatchVarArgs_oneNullArg_isNull() : void from class org.mockitousage.matchers.VarargsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\targArray : Object[] in method public shouldMatchVarArgs_nullArrayArg() : void from class org.mockitousage.matchers.VarargsTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate reportMatcher(matcher HamcrestArgumentMatcher<T>) : void extracted from private reportMatcher(matcher Matcher<T>) : void in class org.mockito.hamcrest.MockitoHamcrest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatcher : Matcher to matcher : Matcher<T> in class org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate lastMatcher() : ArgumentMatcher<?> renamed to private lastMatcherType() : Class<?> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tArgumentMatcher<?> to Class<?> in method private lastMatcherType() : Class<?> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldAllowanyWithMixedVarargs() : void renamed to public shouldAllowAnyWithMixedVarargs() : void in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic should_capture_vararg() : void renamed to public should_capture_multiple_vararg_with_array_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic should_capture_all_vararg() : void renamed to public should_capture_multiple_invocations_with_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tm : CapturingMatcher to m : CapturingMatcher<String[]> in method public should_capture_varargs_as_vararg() : void from class org.mockito.internal.invocation.InvocationMatcherTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tany : InstanceOf.VarArgAware to any : InstanceOf in method public shouldMatchAnyThatMatchesRawVarArgType() : void from class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\targumentCaptor : ArgumentCaptor<String> to argumentCaptor : ArgumentCaptor<String[]> in method public should_capture_multiple_vararg_with_array_captor() : void from class org.mockitousage.matchers.CapturingArgumentsTest",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "url": "https://github.com/mockito/mockito/commit/8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatchers : List<ArgumentMatcher<?>> to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatchers : List to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<ArgumentMatcher<?>> to List<? extends ArgumentMatcher<?>> in method private appendLastMatcherNTimes(timesToAppendLastMatcher int) : List<? extends ArgumentMatcher<?>> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate argsMatch(arguments Object[], matchers List<? extends ArgumentMatcher<?>>, action ArgumentMatcherAction) : boolean extracted from public forEachMatcherAndArgument(action ArgumentMatcherAction) : boolean in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\targumentMatcher : HamcrestArgumentMatcher to argumentMatcher : HamcrestArgumentMatcher<Integer> in method public shouldMatchAnyEvenIfMatcherIsWrappedInHamcrestMatcher() : void from class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatchers : List<ArgumentMatcher<?>> to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate argsMatch(arguments Object[], matchers List<? extends ArgumentMatcher<?>>, action ArgumentMatcherAction) : boolean extracted from public forEachMatcherAndArgument(action ArgumentMatcherAction) : boolean in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<ArgumentMatcher<?>> to List<? extends ArgumentMatcher<?>> in method private appendLastMatcherNTimes(timesToAppendLastMatcher int) : List<? extends ArgumentMatcher<?>> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmatchers : List to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\targumentMatcher : HamcrestArgumentMatcher to argumentMatcher : HamcrestArgumentMatcher<Integer> in method public shouldMatchAnyEvenIfMatcherIsWrappedInHamcrestMatcher() : void from class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\targuments : Object[] in method public forEachMatcherAndArgument(action ArgumentMatcherAction) : boolean from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff98622a8f4bbe96ef5405434b5d788fcd118bb4",
+      "url": "https://github.com/mockito/mockito/commit/ff98622a8f4bbe96ef5405434b5d788fcd118bb4",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest from Class org.mockitousage.strictness.StrictnessMockAnnotationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic mock_is_lenient() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public mock_is_lenient() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic mock_is_strict() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public mock_is_strict() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic rule : MockitoRule from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public rule : MockitoRule from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage lenientMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest to package lenientMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage regularMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest to package regularMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest from class org.mockitousage.strictness.StrictnessMockAnnotationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic mock_is_lenient() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public mock_is_lenient() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic mock_is_strict() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public mock_is_strict() : void from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic rule : MockitoRule from class org.mockitousage.strictness.StrictnessMockAnnotationTest to public rule : MockitoRule from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage lenientMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest to package lenientMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage regularMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest to package regularMock : IMethods from class org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "url": "https://github.com/mockito/mockito/commit/70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tlenient : boolean to strictness : Strictness in class org.mockito.internal.creation.settings.CreationSettings",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tlenient : boolean to strictness : Strictness in class org.mockito.internal.creation.settings.CreationSettings",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "44ba00f38c443b5d3125ce0f26acb76b8d50fe8e",
+      "url": "https://github.com/mockito/mockito/commit/44ba00f38c443b5d3125ce0f26acb76b8d50fe8e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoMoreInteractions() : void renamed to public testStaticMockWithNoMoreInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoInteractionsFailed() : void renamed to public testStaticMockWithNoInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoMoreInteractionsFailed() : void renamed to public testStaticMockWithNoMoreInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoInteractions() : void renamed to public testStaticMockWithNoInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoInteractions() : void renamed to public testStaticMockWithNoInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoInteractionsFailed() : void renamed to public testStaticMockWithNoInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoMoreInteractions() : void renamed to public testStaticMockWithNoMoreInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMockWithMoMoreInteractionsFailed() : void renamed to public testStaticMockWithNoMoreInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff55022c57efaa16c80d32234825aae502c75dad",
+      "url": "https://github.com/mockito/mockito/commit/ff55022c57efaa16c80d32234825aae502c75dad",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalSpy moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalSpy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.EnumClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.EnumClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.ExceptionThrowingClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.ExceptionThrowingClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockContext moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.PackagePrivateSuperClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.PackagePrivateSuperClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.SampleInterface moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.SampleInterface",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdelegate : ClassCreatingMockMaker to delegate : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericSubClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonPackagePrivateSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonPackagePrivateSubClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethod moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethod",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdefaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdefaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonConstructableClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonConstructableClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineStaticMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineStaticMockControl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethodAbstractType moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethodAbstractType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockControl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate delegate() : MemberAccessor extracted from public ModuleMemberAccessor() in class org.mockito.internal.util.reflection.ModuleMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker from Class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest from Class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : org.mockito.creation.instance.InstantiationException to e : InstantiationException in method private doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate prettifyFailure(mockFeatures MockCreationSettings<T>, generationFailed Exception) : RuntimeException from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private prettifyFailure(mockFeatures MockCreationSettings<T>, generationFailed Exception) : RuntimeException from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate makeStandardArgument(type Class<?>) : Object from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private makeStandardArgument(type Class<?>) : Object from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate INSTRUMENTATION : Instrumentation from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private INSTRUMENTATION : Instrumentation from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate INITIALIZATION_ERROR : Throwable from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private INITIALIZATION_ERROR : Throwable from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate bytecodeGenerator : BytecodeGenerator from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private bytecodeGenerator : BytecodeGenerator from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mocks : WeakConcurrentMap<Object,MockMethodInterceptor> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mocks : WeakConcurrentMap<Object,MockMethodInterceptor> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockedStatics : DetachedThreadLocal<Map<Class<?>,MockMethodInterceptor>> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockedStatics : DetachedThreadLocal<Map<Class<?>,MockMethodInterceptor>> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockedConstruction : DetachedThreadLocal<Map<Class<?>,BiConsumer<Object,MockedConstruction.Context>>> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockedConstruction : DetachedThreadLocal<Map<Class<?>,BiConsumer<Object,MockedConstruction.Context>>> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockitoConstruction : ThreadLocal<Boolean> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockitoConstruction : ThreadLocal<Boolean> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate currentSpied : ThreadLocal<Object> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private currentSpied : ThreadLocal<Object> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected mockTypeOf(type Class<?>) : Class<?> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to protected mockTypeOf(type Class<?>) : Class<?> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_spy() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_spy() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_non_constructable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_non_constructable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class_in_the_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class_in_the_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_abstract_class_with_final_method() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_abstract_class_with_final_method() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class_with_interface_methods() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class_with_interface_methods() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_detect_non_overridden_generic_method_of_supertype() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_detect_non_overridden_generic_method_of_supertype() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_hashmap() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_hashmap() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_throw_exception_redefining_unmodifiable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_throw_exception_redefining_unmodifiable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_throw_exception_redefining_array() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_throw_exception_redefining_array() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_enum() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_enum() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_fail_at_creating_a_mock_of_a_final_class_with_explicit_serialization() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_fail_at_creating_a_mock_of_a_final_class_with_explicit_serialization() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_fail_at_creating_a_mock_of_a_final_class_with_extra_interfaces() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_fail_at_creating_a_mock_of_a_final_class_with_extra_interfaces() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_interface() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_interface() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_interface_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_interface_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_class_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_class_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_leave_causing_stack() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_leave_causing_stack() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_remove_recursive_self_call_from_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_remove_recursive_self_call_from_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_handle_missing_or_inconsistent_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_handle_missing_or_inconsistent_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_provide_reason_for_wrapper_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_provide_reason_for_wrapper_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_provide_reason_for_vm_unsupported() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_provide_reason_for_vm_unsupported() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_method_of_package_private_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_method_of_package_private_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_String() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_String() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_Class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_Class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_primitive_classes() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_primitive_classes() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_allows_anonymous() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_allows_anonymous() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_give_empty_reason_if_type_is_mockable() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_give_empty_reason_if_type_is_mockable() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_give_allow_final_mockable_from_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_give_allow_final_mockable_from_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_parameters_retention() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_parameters_retention() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_constant_dynamic_compatibility() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_constant_dynamic_compatibility() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_clear_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_clear_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_clear_all_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_clear_all_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to private settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testMockDispatcherIsRelocated() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public testMockDispatcherIsRelocated() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic isTypeMockable(type Class<?>) : TypeMockability extracted from public isTypeMockable(type Class<?>) : TypeMockability in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic createMockType(settings MockCreationSettings<T>) : Class<? extends T> extracted from public createMockType(settings MockCreationSettings<T>) : Class<? extends T> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic createStaticMock(type Class<T>, settings MockCreationSettings<T>, handler MockHandler) : StaticMockControl<T> extracted from public createStaticMock(type Class<T>, settings MockCreationSettings<T>, handler MockHandler) : StaticMockControl<T> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic newInstance(cls Class<T>) : T extracted from public newInstance(cls Class<T>) : T in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic clearAllMocks() : void extracted from public clearAllMocks() : void in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic createMock(settings MockCreationSettings<T>, handler MockHandler) : T extracted from public createMock(settings MockCreationSettings<T>, handler MockHandler) : T in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getHandler(mock Object) : MockHandler extracted from public getHandler(mock Object) : MockHandler in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic resetMock(mock Object, newHandler MockHandler, settings MockCreationSettings) : void extracted from public resetMock(mock Object, newHandler MockHandler, settings MockCreationSettings) : void in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic clearMock(mock Object) : void extracted from public clearMock(mock Object) : void in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic clearAllCaches() : void extracted from public clearAllCaches() : void in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic createSpy(settings MockCreationSettings<T>, handler MockHandler, object T) : Optional<T> extracted from public createSpy(settings MockCreationSettings<T>, handler MockHandler, object T) : Optional<T> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker & moved to class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineStaticMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineStaticMockControl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockControl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockContext moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalSpy moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalSpy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonConstructableClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonConstructableClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.EnumClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.EnumClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethodAbstractType moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethodAbstractType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethod moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethod",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.SampleInterface moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.SampleInterface",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.PackagePrivateSuperClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.PackagePrivateSuperClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonPackagePrivateSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonPackagePrivateSubClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericSubClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.ExceptionThrowingClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.ExceptionThrowingClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdefaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdefaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate delegate() : MemberAccessor extracted from public ModuleMemberAccessor() in class org.mockito.internal.util.reflection.ModuleMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdelegate : ClassCreatingMockMaker to delegate : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : org.mockito.creation.instance.InstantiationException to e : InstantiationException in method private doCreateMock(settings MockCreationSettings<T>, handler MockHandler, nullOnNonInlineConstruction boolean) : T from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate prettifyFailure(mockFeatures MockCreationSettings<T>, generationFailed Exception) : RuntimeException from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private prettifyFailure(mockFeatures MockCreationSettings<T>, generationFailed Exception) : RuntimeException from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate makeStandardArgument(type Class<?>) : Object from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private makeStandardArgument(type Class<?>) : Object from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate INSTRUMENTATION : Instrumentation from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private INSTRUMENTATION : Instrumentation from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate INITIALIZATION_ERROR : Throwable from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private INITIALIZATION_ERROR : Throwable from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate bytecodeGenerator : BytecodeGenerator from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private bytecodeGenerator : BytecodeGenerator from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mocks : WeakConcurrentMap<Object,MockMethodInterceptor> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mocks : WeakConcurrentMap<Object,MockMethodInterceptor> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockedStatics : DetachedThreadLocal<Map<Class<?>,MockMethodInterceptor>> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockedStatics : DetachedThreadLocal<Map<Class<?>,MockMethodInterceptor>> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockedConstruction : DetachedThreadLocal<Map<Class<?>,BiConsumer<Object,MockedConstruction.Context>>> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockedConstruction : DetachedThreadLocal<Map<Class<?>,BiConsumer<Object,MockedConstruction.Context>>> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate mockitoConstruction : ThreadLocal<Boolean> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private mockitoConstruction : ThreadLocal<Boolean> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate currentSpied : ThreadLocal<Object> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker to private currentSpied : ThreadLocal<Object> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected mockTypeOf(type Class<?>) : Class<?> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to protected mockTypeOf(type Class<?>) : Class<?> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_spy() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_spy() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_non_constructable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_non_constructable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class_in_the_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class_in_the_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_abstract_class_with_final_method() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_abstract_class_with_final_method() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_final_class_with_interface_methods() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_final_class_with_interface_methods() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_detect_non_overridden_generic_method_of_supertype() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_detect_non_overridden_generic_method_of_supertype() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_hashmap() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_hashmap() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_throw_exception_redefining_unmodifiable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_throw_exception_redefining_unmodifiable_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_throw_exception_redefining_array() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_throw_exception_redefining_array() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_create_mock_from_enum() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_create_mock_from_enum() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_fail_at_creating_a_mock_of_a_final_class_with_explicit_serialization() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_fail_at_creating_a_mock_of_a_final_class_with_explicit_serialization() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_fail_at_creating_a_mock_of_a_final_class_with_extra_interfaces() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_fail_at_creating_a_mock_of_a_final_class_with_extra_interfaces() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_interface() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_interface() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_interface_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_interface_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_class_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_class_to_string() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_leave_causing_stack() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_leave_causing_stack() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_remove_recursive_self_call_from_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_remove_recursive_self_call_from_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_handle_missing_or_inconsistent_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_handle_missing_or_inconsistent_stack_trace() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_provide_reason_for_wrapper_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_provide_reason_for_wrapper_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_provide_reason_for_vm_unsupported() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_provide_reason_for_vm_unsupported() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic should_mock_method_of_package_private_class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public should_mock_method_of_package_private_class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_String() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_String() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_Class() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_Class() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_excludes_primitive_classes() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_excludes_primitive_classes() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_allows_anonymous() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_allows_anonymous() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_give_empty_reason_if_type_is_mockable() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_give_empty_reason_if_type_is_mockable() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic is_type_mockable_give_allow_final_mockable_from_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public is_type_mockable_give_allow_final_mockable_from_JDK() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_parameters_retention() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_parameters_retention() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_constant_dynamic_compatibility() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_constant_dynamic_compatibility() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_clear_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_clear_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic test_clear_all_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public test_clear_all_mock_clears_handler() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to private settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testMockDispatcherIsRelocated() : void from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest to public testMockDispatcherIsRelocated() : void from class org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff6d1c85e7e0d9ddaee7bc2d2773c16ed504f709",
+      "url": "https://github.com/mockito/mockito/commit/ff6d1c85e7e0d9ddaee7bc2d2773c16ed504f709",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest.DummyMockHandler moved to org.mockito.internal.creation.AbstractMockMakerTest.DummyMockHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockOne : SomeClass to mockOne : C in method public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockTwo : SomeClass to mockTwo : C in method public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsettings : MockCreationSettings<SampleClass> to settings : MockCreationSettings<C> in method public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tproxy : SampleClass to proxy : C in method public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.mockito.internal.creation.AbstractMockMakerTest from classes [org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate serializableSettingsFor(type Class<T>, serializableMode SerializableMode) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected serializableSettingsFor(type Class<T>, serializableMode SerializableMode) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsWithConstructorFor(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsWithConstructorFor(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsWithSuperCall(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsWithSuperCall(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprotected dummyHandler() : MockHandler from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected dummyHandler() : MockHandler from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest.DummyMockHandler moved to org.mockito.internal.creation.AbstractMockMakerTest.DummyMockHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockOne : SomeClass to mockOne : C in method public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockTwo : SomeClass to mockTwo : C in method public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsettings : MockCreationSettings<SampleClass> to settings : MockCreationSettings<C> in method public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tproxy : SampleClass to proxy : C in method public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.mockito.internal.creation.AbstractMockMakerTest from classes [org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to public should_mocks_have_different_interceptors() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to public should_reset_mock_and_set_new_handler() : void from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsFor(type Class<T>, extraInterfaces Class<?>...) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate serializableSettingsFor(type Class<T>, serializableMode SerializableMode) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected serializableSettingsFor(type Class<T>, serializableMode SerializableMode) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsWithConstructorFor(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsWithConstructorFor(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate settingsWithSuperCall(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected settingsWithSuperCall(type Class<T>) : MockCreationSettings<T> from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprotected dummyHandler() : MockHandler from class org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest to protected dummyHandler() : MockHandler from class org.mockito.internal.creation.AbstractMockMakerTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "80374488162380d006b8ae6da915d940cbf68c7c",
+      "url": "https://github.com/mockito/mockito/commit/80374488162380d006b8ae6da915d940cbf68c7c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMockCreationSettings<T> to MockCreationSettings<T2> in method public build(typeToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmocks : Map<Object,MockCreationSettings> to mocks : IdentityHashMap in class org.mockito.internal.junit.UniversalTestListener",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\twrappedVerification : WrapperType to wrappedVerification : WrapperT in class org.mockito.internal.verification.VerificationWrapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMockCreationSettings<T> to MockCreationSettings<T2> in method public buildStatic(classToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic toString() : String renamed to public getMessage() : String in class org.mockito.exceptions.verification.ArgumentsAreDifferent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpreferredPlugin : PreferredType to preferredPlugin : PreferredT in method package loadPlugin(preferredPluginType Class<PreferredT>, alternatePluginType Class<AlternateType>) : Object from class org.mockito.internal.configuration.plugins.PluginLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method private descriptionOf(value Object) : String from class org.mockito.internal.matchers.text.ValuePrinter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tf : From to f : FromT in method public convert(collection Collection<FromT>, converter Converter<FromT,To>) : LinkedList<To> from class org.mockito.internal.util.collections.ListUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public invoke(method Method, target Object, arguments Object...) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public get(field Field, target Object) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public set(field Field, target Object, value Object) : void from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tignored : Exception to ignored : RuntimeException in method private silentSetAccessible(object AccessibleObject, value boolean) : void from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : RuntimeException to e : RuntimeException|Error in method public verify(data VerificationData) : void from class org.mockito.internal.verification.MockAwareVerificationMode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : MockitoAssertionError to e : AssertionError in method public verify(data VerificationData) : void from class org.mockito.internal.verification.Description",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : MockitoAssertionError to e : AssertionError in method public verify(data VerificationData) : void from class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic toString() : String renamed to public getMessage() : String in class org.mockito.exceptions.verification.ArgumentsAreDifferent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMockCreationSettings<T> to MockCreationSettings<T2> in method public build(typeToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMockCreationSettings<T> to MockCreationSettings<T2> in method public buildStatic(classToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmocks : Map<Object,MockCreationSettings> to mocks : IdentityHashMap in class org.mockito.internal.junit.UniversalTestListener",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\twrappedVerification : WrapperType to wrappedVerification : WrapperT in class org.mockito.internal.verification.VerificationWrapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpreferredPlugin : PreferredType to preferredPlugin : PreferredT in method package loadPlugin(preferredPluginType Class<PreferredT>, alternatePluginType Class<AlternateType>) : Object from class org.mockito.internal.configuration.plugins.PluginLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method private descriptionOf(value Object) : String from class org.mockito.internal.matchers.text.ValuePrinter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tf : From to f : FromT in method public convert(collection Collection<FromT>, converter Converter<FromT,To>) : LinkedList<To> from class org.mockito.internal.util.collections.ListUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public invoke(method Method, target Object, arguments Object...) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public get(field Field, target Object) : Object from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : Exception to e : RuntimeException in method public set(field Field, target Object, value Object) : void from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tignored : Exception to ignored : RuntimeException in method private silentSetAccessible(object AccessibleObject, value boolean) : void from class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : RuntimeException to e : RuntimeException|Error in method public verify(data VerificationData) : void from class org.mockito.internal.verification.MockAwareVerificationMode",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "7b940bcead5240bd030bbe7acbb51c10be0a452b",
+      "url": "https://github.com/mockito/mockito/commit/7b940bcead5240bd030bbe7acbb51c10be0a452b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic verify(verification Verification, mode VerificationMode) : void extracted from public verify(verification Verification) : void in class org.mockito.MockedStatic",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic verify(verification Verification, mode VerificationMode) : void extracted from public verify(mode VerificationMode, verification Verification) : void in class org.mockito.internal.MockedStaticImpl",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic verify(verification Verification, mode VerificationMode) : void extracted from public verify(mode VerificationMode, verification Verification) : void in class org.mockito.internal.MockedStaticImpl",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "214d66fa84af85026be9791456fccc06af2f6b61",
+      "url": "https://github.com/mockito/mockito/commit/214d66fa84af85026be9791456fccc06af2f6b61",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decamelizeMatcher(className String) : String renamed to public decamelizeMatcherName(className String) : String in class org.mockito.internal.util.StringUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decamelizes_matcher() : void renamed to public decamelizes_matcher_name() : void in class org.mockito.internal.util.StringUtilTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decamelizeMatcher(className String) : String renamed to public decamelizeMatcherName(className String) : String in class org.mockito.internal.util.StringUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decamelizes_matcher() : void renamed to public decamelizes_matcher_name() : void in class org.mockito.internal.util.StringUtilTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "3d1405f1c431888b2641a003868ba5b9300aa611",
+      "url": "https://github.com/mockito/mockito/commit/3d1405f1c431888b2641a003868ba5b9300aa611",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.InstrumentationMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tt : Throwable to throwable : Throwable in method public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object from class org.mockito.internal.util.reflection.InstrumentationMemberAccessor",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.InstrumentationMemberAccessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "24c0e45d1ca7a11baef3b161ed7d615f68ffe5fb",
+      "url": "https://github.com/mockito/mockito/commit/24c0e45d1ca7a11baef3b161ed7d615f68ffe5fb",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tfieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.moduletest.ModuleUtil from Class org.mockito.moduletest.ModuleHandlingTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : RuntimeException to e : RuntimeException|IllegalAccessException in method public filterCandidate(mocks Collection<Object>, candidateFieldToBeInjected Field, allRemainingCandidateFields List<Field>, injectee Object) : OngoingInjector from class org.mockito.internal.configuration.injection.filter.TerminalMockCandidateFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IllegalAccessException to ignored : RuntimeException|IllegalAccessException in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\te : IllegalAccessException to ignored : RuntimeException|IllegalAccessException in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate modularJar(isPublic boolean, isExported boolean, isOpened boolean) : Path from class org.mockito.moduletest.ModuleHandlingTest to public modularJar(isPublic boolean, isExported boolean, isOpened boolean) : Path from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate type(isPublic boolean) : byte[] from class org.mockito.moduletest.ModuleHandlingTest to private type(isPublic boolean) : byte[] from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate moduleInfo(isExported boolean, isOpened boolean) : byte[] from class org.mockito.moduletest.ModuleHandlingTest to private moduleInfo(isExported boolean, isOpened boolean) : byte[] from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate layer(jar Path, canRead boolean) : ModuleLayer from class org.mockito.moduletest.ModuleHandlingTest to public layer(jar Path, canRead boolean, namedModules boolean) : ModuleLayer from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate automaticModule(moduleName String, packages String...) : ModuleFinder from class org.mockito.moduletest.ModuleHandlingTest to private automaticModule(moduleName String, packages String...) : ModuleFinder from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tfieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.moduletest.ModuleUtil from class org.mockito.moduletest.ModuleHandlingTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : RuntimeException to e : RuntimeException|IllegalAccessException in method public filterCandidate(mocks Collection<Object>, candidateFieldToBeInjected Field, allRemainingCandidateFields List<Field>, injectee Object) : OngoingInjector from class org.mockito.internal.configuration.injection.filter.TerminalMockCandidateFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IllegalAccessException to ignored : RuntimeException|IllegalAccessException in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\te : IllegalAccessException to ignored : RuntimeException|IllegalAccessException in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate modularJar(isPublic boolean, isExported boolean, isOpened boolean) : Path from class org.mockito.moduletest.ModuleHandlingTest to public modularJar(isPublic boolean, isExported boolean, isOpened boolean) : Path from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate type(isPublic boolean) : byte[] from class org.mockito.moduletest.ModuleHandlingTest to private type(isPublic boolean) : byte[] from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate moduleInfo(isExported boolean, isOpened boolean) : byte[] from class org.mockito.moduletest.ModuleHandlingTest to private moduleInfo(isExported boolean, isOpened boolean) : byte[] from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate layer(jar Path, canRead boolean) : ModuleLayer from class org.mockito.moduletest.ModuleHandlingTest to public layer(jar Path, canRead boolean, namedModules boolean) : ModuleLayer from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate automaticModule(moduleName String, packages String...) : ModuleFinder from class org.mockito.moduletest.ModuleHandlingTest to private automaticModule(moduleName String, packages String...) : ModuleFinder from class org.mockito.moduletest.ModuleUtil",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "12ce7ea57a721f146a2b7c8f69d45b8b7f349531",
+      "url": "https://github.com/mockito/mockito/commit/12ce7ea57a721f146a2b7c8f69d45b8b7f349531",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage inferStaticMock(type Type, name String) : Class<?> renamed to package inferParameterizedType(type Type, name String, sort String) : Class<?> in class org.mockito.internal.configuration.MockAnnotationProcessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tisMockConstruction : BooleanSupplier to isMockConstruction : Predicate<Class<?>> in class org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmockConstruction : ThreadLocal<Boolean> to mockitoConstruction : ThreadLocal<Boolean> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatics : List<MockedStatic<?>> to scopedMocks : List<ScopedMock> in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatics : List<MockedStatic<?>> to scopedMocks : List<ScopedMock> in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic isClosed() : boolean from class org.mockito.MockedStatic to public isClosed() : boolean from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic close() : void from class org.mockito.MockedStatic to public close() : void from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic closeOnDemand() : void from class org.mockito.MockedStatic to public closeOnDemand() : void from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.mockito.ScopedMock from classes [org.mockito.MockedStatic]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage inferStaticMock(type Type, name String) : Class<?> renamed to package inferParameterizedType(type Type, name String, sort String) : Class<?> in class org.mockito.internal.configuration.MockAnnotationProcessor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmockConstruction : ThreadLocal<Boolean> to mockitoConstruction : ThreadLocal<Boolean> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tisMockConstruction : BooleanSupplier to isMockConstruction : Predicate<Class<?>> in class org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatic : MockedStatic<?> to scopedMock : ScopedMock in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmockedStatics : List<MockedStatic<?>> to scopedMocks : List<ScopedMock> in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmockedStatics : List<MockedStatic<?>> to scopedMocks : List<ScopedMock> in method public process(clazz Class<?>, testInstance Object) : AutoCloseable from class org.mockito.internal.configuration.IndependentAnnotationEngine",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic isClosed() : boolean from class org.mockito.MockedStatic to public isClosed() : boolean from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic close() : void from class org.mockito.MockedStatic to public close() : void from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic closeOnDemand() : void from class org.mockito.MockedStatic to public closeOnDemand() : void from class org.mockito.ScopedMock",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.mockito.ScopedMock from classes [org.mockito.MockedStatic]",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "39e5d84e5b0fc10a2884748dfa008bbb26d5d03d",
+      "url": "https://github.com/mockito/mockito/commit/39e5d84e5b0fc10a2884748dfa008bbb26d5d03d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstrictness : Strictness to sessionStore : JUnitSessionStore in class org.mockito.internal.junit.JUnitRule",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstrictness : Strictness to sessionStore : JUnitSessionStore in class org.mockito.internal.junit.JUnitRule",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.junit.JUnitSessionStore from Class org.mockito.internal.junit.JUnitRule",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate logger : MockitoLogger from class org.mockito.internal.junit.JUnitRule to private logger : MockitoLogger from class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate session : MockitoSession from class org.mockito.internal.junit.JUnitRule to private session : MockitoSession from class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage setStrictness(strictness Strictness) : void extracted from public strictness(strictness Strictness) : MockitoRule in class org.mockito.internal.junit.JUnitRule & moved to class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage createStatement(base Statement, methodName String, target Object) : Statement extracted from public apply(base Statement, method FrameworkMethod, target Object) : Statement in class org.mockito.internal.junit.JUnitRule & moved to class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.junit.JUnitSessionStore from class org.mockito.internal.junit.JUnitRule",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate logger : MockitoLogger from class org.mockito.internal.junit.JUnitRule to private logger : MockitoLogger from class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate session : MockitoSession from class org.mockito.internal.junit.JUnitRule to private session : MockitoSession from class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate strictness : Strictness from class org.mockito.internal.junit.JUnitRule to protected strictness : Strictness from class org.mockito.internal.junit.JUnitSessionStore",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "1ce2078a562a4486fe4a5917a9b91aa8ef4216c2",
+      "url": "https://github.com/mockito/mockito/commit/1ce2078a562a4486fe4a5917a9b91aa8ef4216c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstartTime : Instant to startTime : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getPollingPeriod() : Duration renamed to public getPollingPeriodMillis() : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDuration to long in method public getPollingPeriodMillis() : long from class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDuration to long in method public duration() : long from class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tduration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tduration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic timeout(timeout Duration) : VerificationWithTimeout inlined to public timeout(millis long) : VerificationWithTimeout in class org.mockito.Mockito",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic after(delay Duration) : VerificationAfterDelay inlined to public after(millis long) : VerificationAfterDelay in class org.mockito.Mockito",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tduration : Duration to duration : long in method public should_return_true_if_task_is_in_acceptable_time_bounds() : void from class org.mockito.internal.util.TimerTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic timeout(timeout Duration) : VerificationWithTimeout inlined to public timeout(millis long) : VerificationWithTimeout in class org.mockito.Mockito",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic after(delay Duration) : VerificationAfterDelay inlined to public after(millis long) : VerificationAfterDelay in class org.mockito.Mockito",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstartTime : Instant to startTime : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDuration to long in method public duration() : long from class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tduration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tduration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tduration : Duration to duration : long in method public should_return_true_if_task_is_in_acceptable_time_bounds() : void from class org.mockito.internal.util.TimerTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "d64cbd38edaca135a1bc835cd74fc943e0897535",
+      "url": "https://github.com/mockito/mockito/commit/d64cbd38edaca135a1bc835cd74fc943e0897535",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_when_tests_succeeds() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_second_test_when_first_test_fail() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_when_tests_succeeds() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_second_test_when_first_test_fail() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "53e8a93141e1f8c41d6b6d4fd72c20488826269a",
+      "url": "https://github.com/mockito/mockito/commit/53e8a93141e1f8c41d6b6d4fd72c20488826269a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate createTooLittleInvocationsMessage(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : String renamed to private createTooFewInvocationsMessage(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : String in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic tooLittleActualInvocationsInOrder(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocationsInOrder(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic tooLittleActualInvocations(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocations(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocationsInOrder() : void renamed to public shouldReportTooFewInvocationsInOrder() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInOrder() : void renamed to public shouldSayTooFewInvocationsInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInAtLeastModeInOrder() : void renamed to public shouldSayTooFewInvocationsInAtLeastModeInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocations() : void renamed to public shouldSayTooFewInvocations() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInAtLeastMode() : void renamed to public shouldSayTooFewInvocationsInAtLeastMode() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPointToThirdChunkWhenTooLittleActualInvocations() : void renamed to public shouldPointToThirdChunkWhenTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationChunkInOrderTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPointToFourthMethodBecauseOfTooLittleActualInvocations() : void renamed to public shouldPointToFourthMethodBecauseOfTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationInOrderTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPrintTooLittleInvocations() : void renamed to public shouldPrintTooFewInvocations() : void in class org.mockitousage.verification.DescriptiveMessagesOnVerificationInOrderErrorsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldDetectTooLittleActualInvocations() : void renamed to public shouldDetectTooFewActualInvocations() : void in class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldThrowTooLittleInvocationsForMockTwo() : void renamed to public shouldThrowTooFewInvocationsForMockTwo() : void in class org.mockitousage.verification.SelectedMocksInOrderVerificationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldVerifyNumberOfTimesAndFail() : void from class org.mockitousage.spies.SpyingOnRealObjectsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldVerifyActualNumberOfInvocationsSmallerThanWanted() : void from class org.mockitousage.verification.DescriptiveMessagesWhenTimesXVerificationFailsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldDetectTooFewActualInvocations() : void from class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate createTooLittleInvocationsMessage(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : String renamed to private createTooFewInvocationsMessage(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : String in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic tooLittleActualInvocations(discrepancy Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocations(discrepancy Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic tooLittleActualInvocationsInOrder(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocationsInOrder(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocationsInOrder() : void renamed to public shouldReportTooFewInvocationsInOrder() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocations() : void renamed to public shouldSayTooFewInvocations() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInOrder() : void renamed to public shouldSayTooFewInvocationsInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInAtLeastModeInOrder() : void renamed to public shouldSayTooFewInvocationsInAtLeastModeInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldSayTooLittleInvocationsInAtLeastMode() : void renamed to public shouldSayTooFewInvocationsInAtLeastMode() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPointToThirdChunkWhenTooLittleActualInvocations() : void renamed to public shouldPointToThirdChunkWhenTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationChunkInOrderTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPointToFourthMethodBecauseOfTooLittleActualInvocations() : void renamed to public shouldPointToFourthMethodBecauseOfTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationInOrderTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldPrintTooLittleInvocations() : void renamed to public shouldPrintTooFewInvocations() : void in class org.mockitousage.verification.DescriptiveMessagesOnVerificationInOrderErrorsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldDetectTooLittleActualInvocations() : void renamed to public shouldDetectTooFewActualInvocations() : void in class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldThrowTooLittleInvocationsForMockTwo() : void renamed to public shouldThrowTooFewInvocationsForMockTwo() : void in class org.mockitousage.verification.SelectedMocksInOrderVerificationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldVerifyNumberOfTimesAndFail() : void from class org.mockitousage.spies.SpyingOnRealObjectsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldVerifyActualNumberOfInvocationsSmallerThanWanted() : void from class org.mockitousage.verification.DescriptiveMessagesWhenTimesXVerificationFailsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TooLittleActualInvocations to e : TooFewActualInvocations in method public shouldDetectTooFewActualInvocations() : void from class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "61655a491643f042a85203c1ea9433f717799d93",
+      "url": "https://github.com/mockito/mockito/commit/61655a491643f042a85203c1ea9433f717799d93",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.concurrentmockito.ThreadVerifiesContinuoslyInteractingMockTest renamed to org.concurrentmockito.ThreadVerifiesContinuouslyInteractingMockTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.concurrentmockito.ThreadVerifiesContinuoslyInteractingMockTest renamed to org.concurrentmockito.ThreadVerifiesContinuouslyInteractingMockTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "808bae82f1401ce7dfbb23a9c861ac2462920437",
+      "url": "https://github.com/mockito/mockito/commit/808bae82f1401ce7dfbb23a9c861ac2462920437",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.MockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.MockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.MockitoFramework",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.MockitoFramework",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "4a99af3fc920fa2dd8379da7f9a24dd61a7ee39e",
+      "url": "https://github.com/mockito/mockito/commit/4a99af3fc920fa2dd8379da7f9a24dd61a7ee39e",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers from Class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage returnValueFor(clazz Class<?>) : Object inlined to public answer(invocation InvocationOnMock) : Object in class org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tret : Object to defaultReturnValue : Object in method public answer(invocation InvocationOnMock) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate delegateChains(type Class<?>) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private delegateChains(type Class<?>) : Object from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate findTypeFromGeneric(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private findTypeFromGeneric(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate findTypeFromGenericInArguments(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private findTypeFromGenericInArguments(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage returnTypeForMockWithCorrectGenerics(invocation InvocationOnMock, answerCallback AnswerCallback) : Object extracted from public answer(invocation InvocationOnMock) : Object in class org.mockito.internal.stubbing.defaultanswers.ReturnsMocks & moved to class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage returnTypeForMockWithCorrectGenerics(invocation InvocationOnMock, answerCallback AnswerCallback) : Object extracted from public answer(invocation InvocationOnMock) : Object in class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls & moved to class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlocation : Location in method public answer(invocation InvocationOnMock) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tret : Object to defaultReturnValue : Object in method public answer(invocation InvocationOnMock) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate delegateChains(type Class<?>) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private delegateChains(type Class<?>) : Object from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate findTypeFromGeneric(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private findTypeFromGeneric(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate findTypeFromGenericInArguments(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls to private findTypeFromGenericInArguments(invocation InvocationOnMock, returnType TypeVariable) : Class<?> from class org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlocation : Location in method public answer(invocation InvocationOnMock) : Object from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

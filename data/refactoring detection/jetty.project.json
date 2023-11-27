@@ -1,0 +1,1414 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4993291af050185295bfe87dadf2f48158f84d31",
+      "url": "https://github.com/eclipse/jetty.project/commit/4993291af050185295bfe87dadf2f48158f84d31",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testForward() : void renamed to public testForwardInContext() : void in class org.eclipse.jetty.servlet.DispatcherTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.servlet.DispatcherTest.AssertForwardServlet renamed to org.eclipse.jetty.servlet.DispatcherTest.DumpForwardServlet",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testForward() : void renamed to public testForwardInContext() : void in class org.eclipse.jetty.servlet.DispatcherTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresponses : String to rawResponse : String in method public testForwardInContext() : void from class org.eclipse.jetty.servlet.DispatcherTest",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4916377686107ca94c6d4e55fc390415bf06289e",
+      "url": "https://github.com/eclipse/jetty.project/commit/4916377686107ca94c6d4e55fc390415bf06289e",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_exactMap : Index.Mutable<MappedResource<E>> to _exactMap : Map<String,MappedResource<E>> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getMatchedIteratively(path String) : MatchedResource<E> extracted from public getMatched(path String) : MatchedResource<E> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tret : List<MappedResource<E>> to matches : List<MappedResource<E>> in method public getMatches(path String) : List<MappedResource<E>> from class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmatched : MatchedResource<String> to match : MatchedResource<String> in method public testServletMultipleSuffixMappings(path String, matched String) : void from class org.eclipse.jetty.http.pathmap.PathMappingsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\ti : int in method public getMatched(path String) : MatchedResource<E> from class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\ti : int in method public getMatched(path String) : MatchedResource<E> from class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_exactMap : Index.Mutable<MappedResource<E>> to _exactMap : Map<String,MappedResource<E>> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getMatchedIteratively(path String) : MatchedResource<E> extracted from public getMatched(path String) : MatchedResource<E> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tret : List<MappedResource<E>> to matches : List<MappedResource<E>> in method public getMatches(path String) : List<MappedResource<E>> from class org.eclipse.jetty.http.pathmap.PathMappings",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7e1de8b1e2877663c1ff25b1e3cc15be6de35271",
+      "url": "https://github.com/eclipse/jetty.project/commit/7e1de8b1e2877663c1ff25b1e3cc15be6de35271",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic start(configuration Configuration, resolveAlias boolean) : void inlined to public start(configuration Configuration) : void in class org.eclipse.jetty.test.KeyStoreScannerTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic start(configuration Configuration, resolveAlias boolean) : void inlined to public start(configuration Configuration) : void in class org.eclipse.jetty.test.KeyStoreScannerTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "90fe5621f9260ea4df61ff1e341bee204210660f",
+      "url": "https://github.com/eclipse/jetty.project/commit/90fe5621f9260ea4df61ff1e341bee204210660f",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdAuthEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.AuthEndpoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdTokenEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.TokenEndpoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdConfigServlet renamed to org.eclipse.jetty.security.openid.OpenIdProvider.ConfigServlet",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdAuthEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.AuthEndpoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdTokenEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.TokenEndpoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.security.openid.OpenIdProvider.OpenIdConfigServlet renamed to org.eclipse.jetty.security.openid.OpenIdProvider.ConfigServlet",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "0b3387704008d5f522e577106e1aa366a4efcf23",
+      "url": "https://github.com/eclipse/jetty.project/commit/0b3387704008d5f522e577106e1aa366a4efcf23",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate send(command String, wait int) : String extracted from public execute() : void in class org.eclipse.jetty.maven.plugin.JettyStopMojo",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate send(command String, wait int) : String extracted from public execute() : void in class org.eclipse.jetty.maven.plugin.JettyStopMojo",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "aadc86d36a46a6aa1970b602d561ee3e3d56a1c9",
+      "url": "https://github.com/eclipse/jetty.project/commit/aadc86d36a46a6aa1970b602d561ee3e3d56a1c9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(instructions List<Instruction>) : boolean from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueue : Queue<Entry> to entries : Queue<Entry> in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(endPoint QuicStreamEndPoint, frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate fail(x Throwable) : void renamed to public failed(x Throwable) : void in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(instructions List<Instruction>) : boolean from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate fail(x Throwable) : void renamed to public failed(x Throwable) : void in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public offer(endPoint QuicStreamEndPoint, frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueue : Queue<Entry> to entries : Queue<Entry> in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "b937a31b72eb7e42093613a6a7434bcf15397773",
+      "url": "https://github.com/eclipse/jetty.project/commit/b937a31b72eb7e42093613a6a7434bcf15397773",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.client.ClientProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic abstract getProducer() : Runnable renamed to public abstract getProducerTask() : Runnable in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.server.ServerProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic produce() : void inlined to public onFillable() : void in class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsession : ProtocolSession to protocol : ProtocolSession in method public process(remoteAddress SocketAddress, cipherBufferIn ByteBuffer) : Runnable from class org.eclipse.jetty.quic.common.QuicSession",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.client.ClientProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic produce() : void inlined to public onFillable() : void in class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.server.ServerProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic abstract getProducer() : Runnable renamed to public abstract getProducerTask() : Runnable in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsession : ProtocolSession to protocol : ProtocolSession in method public process(remoteAddress SocketAddress, cipherBufferIn ByteBuffer) : Runnable from class org.eclipse.jetty.quic.common.QuicSession",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4eaff8e8808534800609352cf09a5919178dc803",
+      "url": "https://github.com/eclipse/jetty.project/commit/4eaff8e8808534800609352cf09a5919178dc803",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testRequestHasHTTP2Version() : void renamed to public testRequestHasHTTP3Version() : void in class org.eclipse.jetty.http3.tests.HttpClientTransportOverHTTP3Test",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic process() : void renamed to public produce() : void in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.eclipse.jetty.quic.server.ServerQuicConnection.QuicProducer moved to org.eclipse.jetty.quic.common.QuicConnection.QuicProducer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic onClose(cause Throwable) : void from class org.eclipse.jetty.quic.server.ServerQuicConnection to public onClose(cause Throwable) : void from class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic produce() : void extracted from public onFillable() : void in class org.eclipse.jetty.quic.server.ServerQuicConnection & moved to class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic onOpen() : void extracted from public onOpen() : void in class org.eclipse.jetty.quic.server.ServerQuicConnection & moved to class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.eclipse.jetty.quic.server.ServerQuicConnection.QuicProducer moved to org.eclipse.jetty.quic.common.QuicConnection.QuicProducer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testRequestHasHTTP2Version() : void renamed to public testRequestHasHTTP3Version() : void in class org.eclipse.jetty.http3.tests.HttpClientTransportOverHTTP3Test",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic process() : void renamed to public produce() : void in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic onClose(cause Throwable) : void from class org.eclipse.jetty.quic.server.ServerQuicConnection to public onClose(cause Throwable) : void from class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic produce() : void extracted from public onFillable() : void in class org.eclipse.jetty.quic.server.ServerQuicConnection & moved to class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tinterested : boolean in method protected receiveAndProcess() : Runnable from class org.eclipse.jetty.quic.common.QuicConnection",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "16a91b04a8f236d31aaf94866c0136235c206c8d",
+      "url": "https://github.com/eclipse/jetty.project/commit/16a91b04a8f236d31aaf94866c0136235c206c8d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_quicheConfig : QuicheConfig to quicheConfig : QuicheConfig in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_sslContextFactory : SslContextFactory.Server to sslContextFactory : SslContextFactory.Server in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_localPort : int to localPort : int in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_manager : ServerDatagramSelectorManager to selectorManager : ServerDatagramSelectorManager in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_datagramChannel : DatagramChannel to datagramChannel : DatagramChannel in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_manager : ServerDatagramSelectorManager to selectorManager : ServerDatagramSelectorManager in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_sslContextFactory : SslContextFactory.Server to sslContextFactory : SslContextFactory.Server in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_datagramChannel : DatagramChannel to datagramChannel : DatagramChannel in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_quicheConfig : QuicheConfig to quicheConfig : QuicheConfig in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t_localPort : int to localPort : int in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "f061cc41db254fef49be9dcfbed65531029e5b71",
+      "url": "https://github.com/eclipse/jetty.project/commit/f061cc41db254fef49be9dcfbed65531029e5b71",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationSession : HTTP3SessionClient to session : HTTP3SessionClient in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationSession : HTTP3SessionServer to session : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationSession : HTTP3SessionClient to session : HTTP3SessionClient in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationSession : HTTP3SessionServer to session : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7fc3faecaf4d0414c39cbb8b776337718000928d",
+      "url": "https://github.com/eclipse/jetty.project/commit/7fc3faecaf4d0414c39cbb8b776337718000928d",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "a092078668adc808a022d7f9856da62d7bd57926",
+      "url": "https://github.com/eclipse/jetty.project/commit/a092078668adc808a022d7f9856da62d7bd57926",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to private iterableStreamIds(write boolean) : List<Long> in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionClosed() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionEstablished() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionInEarlyData() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public nextTimeout() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public onTimeout() : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public getNegotiatedProtocol() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public statistics() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public close() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isDraining() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public windowCapacity() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public windowCapacity(streamId long) : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public shutdownStream(streamId long, writeSide boolean) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public feedFinForStream(streamId long) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public feedClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public drainClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isStreamFinished(streamId long) : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to private iterableStreamIds(write boolean) : List<Long> in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionClosed() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionEstablished() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isConnectionInEarlyData() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public nextTimeout() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public onTimeout() : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public getNegotiatedProtocol() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public statistics() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public close() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isDraining() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public windowCapacity() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public windowCapacity(streamId long) : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public shutdownStream(streamId long, writeSide boolean) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public feedFinForStream(streamId long) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public feedClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public drainClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate libQuiche() : LibQuiche inlined to public isStreamFinished(streamId long) : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "f6958de4b2d67639279f663e850d912c075b8a83",
+      "url": "https://github.com/eclipse/jetty.project/commit/f6958de4b2d67639279f663e850d912c075b8a83",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tapiSession : HTTP3Session to apiSession : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbuffers : List<ByteBuffer> in method protected process() : Action from class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbuffers : List<ByteBuffer> in method protected process() : Action from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tframe : Frame in method protected process() : Action from class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyPreface() : Map<Long,Long> extracted from public onPreface() : Map<Long,Long> in class org.eclipse.jetty.http3.internal.HTTP3Session",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tapiSession : HTTP3Session to apiSession : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprotected newStream(endPoint QuicStreamEndPoint, listener Stream.Listener) : HTTP3Stream extracted from public newStream(frame HeadersFrame, listener Stream.Listener) : CompletableFuture<Stream> in class org.eclipse.jetty.http3.client.internal.HTTP3SessionClient & moved to class org.eclipse.jetty.http3.internal.HTTP3Session",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic generate(lease ByteBufferPool.Lease, streamId long, frame Frame) : int extracted from protected process() : Action in class org.eclipse.jetty.http3.internal.ControlFlusher & moved to class org.eclipse.jetty.http3.internal.generator.HeadersGenerator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tframe : Frame to headersFrame : HeadersFrame in method public generate(lease ByteBufferPool.Lease, streamId long, frame Frame) : int from class org.eclipse.jetty.http3.internal.generator.HeadersGenerator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tframe : Frame to headersFrame : HeadersFrame in method public generate(lease ByteBufferPool.Lease, streamId long, frame Frame) : int from class org.eclipse.jetty.http3.internal.generator.HeadersGenerator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbuffers : List<ByteBuffer> in method protected process() : Action from class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session.MessageFlusher",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbuffers : List<ByteBuffer> in method protected process() : Action from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "80d2cee238787db739c045c1a338bcc4f9e1bf0f",
+      "url": "https://github.com/eclipse/jetty.project/commit/80d2cee238787db739c045c1a338bcc4f9e1bf0f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_metadataList : Queue<MetaData> to _metadataList : LinkedList<MetaData> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.http3.qpack.internal.util.NBitLongEncoder renamed to org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstreamCancellations : Queue<Integer> to streamCancellations : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_total : int to _total : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsectionAcknowledgements : Queue<Integer> to sectionAcknowledgements : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_streamId : int to _streamId : long in class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestEncoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to long in method public getStreamId() : long from class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_multiplier : int to _multiplier : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decode(buffer ByteBuffer) : int renamed to public decodeInt(buffer ByteBuffer) : int in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_streamInfoMap : Map<Integer,StreamInfo> to _streamInfoMap : Map<Long,StreamInfo> in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification from Class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from public decode(streamId long, buffer ByteBuffer, handler Handler) : boolean in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from package insert(field HttpField) : boolean in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from public encode(buffer ByteBuffer, streamId int, metadata MetaData) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic decodeLong(buffer ByteBuffer) : long extracted from public decode(buffer ByteBuffer) : int in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method private parseSectionAcknowledgment(buffer ByteBuffer) : void from class org.eclipse.jetty.http3.qpack.internal.parser.EncoderInstructionParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method private parseStreamCancellation(buffer ByteBuffer) : void from class org.eclipse.jetty.http3.qpack.internal.parser.EncoderInstructionParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttotal : int to total : long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttotal : int to total : long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method public test() : void from class org.eclipse.jetty.http3.qpack.EncodeDecodeTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method public test() : void from class org.eclipse.jetty.http3.qpack.EvictionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate _metaData : MetaData from class org.eclipse.jetty.http3.qpack.QpackDecoder to private _metaData : MetaData from class org.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic decodeLong(buffer ByteBuffer) : long extracted from private parseStreamCancellation(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.internal.parser.EncoderInstructionParser & moved to class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttotal : int to total : long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbufferPool : NullByteBufferPool in method public toBuffer(instructions List<Instruction>) : ByteBuffer from class org.eclipse.jetty.http3.qpack.QpackTestUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tmetaData : MetaData in method public decode(streamId long, buffer ByteBuffer, handler Handler) : boolean from class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.eclipse.jetty.http3.qpack.internal.util.NBitLongEncoder renamed to org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage parseInstruction(buffer ByteBuffer) : void renamed to public parseInstructionBuffer(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from public decode(streamId long, buffer ByteBuffer, handler Handler) : boolean in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic parseInstruction(buffer ByteBuffer) : void renamed to public parseInstructionBuffer(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_streamInfoMap : Map<Integer,StreamInfo> to _streamInfoMap : Map<Long,StreamInfo> in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from package insert(field HttpField) : boolean in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate notifyInstructionHandler() : void extracted from public encode(buffer ByteBuffer, streamId int, metadata MetaData) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_streamId : int to _streamId : long in class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to long in method public getStreamId() : long from class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic decode(buffer ByteBuffer) : int renamed to public decodeLong(buffer ByteBuffer) : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_total : int to _total : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_multiplier : int to _multiplier : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsectionAcknowledgements : Queue<Integer> to sectionAcknowledgements : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstreamCancellations : Queue<Integer> to streamCancellations : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_metadataList : Queue<MetaData> to _metadataList : LinkedList<MetaData> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestEncoderHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification from class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method private parseSectionAcknowledgment(buffer ByteBuffer) : void from class org.eclipse.jetty.http3.qpack.internal.parser.EncoderInstructionParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method private parseStreamCancellation(buffer ByteBuffer) : void from class org.eclipse.jetty.http3.qpack.internal.parser.EncoderInstructionParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttotal : int to total : long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttotal : int to total : long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method public test() : void from class org.eclipse.jetty.http3.qpack.EncodeDecodeTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstreamId : int to streamId : long in method public test() : void from class org.eclipse.jetty.http3.qpack.EvictionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate _metaData : MetaData from class org.eclipse.jetty.http3.qpack.QpackDecoder to private _metaData : MetaData from class org.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tbufferPool : NullByteBufferPool in method public toBuffer(instructions List<Instruction>) : ByteBuffer from class org.eclipse.jetty.http3.qpack.QpackTestUtil",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4bdcfff94c54b0ad48497f79c2b86995964f8820",
+      "url": "https://github.com/eclipse/jetty.project/commit/4bdcfff94c54b0ad48497f79c2b86995964f8820",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithLiteralName(buffer ByteBuffer) : EncodedField renamed to private parseLiteralField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseIndexedFieldLine(buffer ByteBuffer) : EncodedField renamed to private parseIndexedField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseIndexFieldLineWithPostBaseIndex(buffer ByteBuffer) : EncodedField renamed to private parseIndexedFieldPostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithPostBaseNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReferencePostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReference(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbuffer : ByteBuffer to preEncodedBytes : byte[] in method public getEncodedField(header HttpHeader, name String, value String) : byte[] from class org.eclipse.jetty.http3.qpack.QpackFieldPreEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tbuffer : ByteBuffer to preEncodedBytes : byte[] in method public getEncodedField(header HttpHeader, name String, value String) : byte[] from class org.eclipse.jetty.http3.qpack.QpackFieldPreEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tallowIntermediary : byte to allowIntermediary : boolean in method public encode(buffer ByteBuffer, base int) : void from class org.eclipse.jetty.http3.qpack.internal.EncodableEntry.ReferencedNameEntry",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseIndexedFieldLine(buffer ByteBuffer) : EncodedField renamed to private parseIndexedField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReference(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithLiteralName(buffer ByteBuffer) : EncodedField renamed to private parseLiteralField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseLiteralFieldLineWithPostBaseNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReferencePostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseIndexFieldLineWithPostBaseIndex(buffer ByteBuffer) : EncodedField renamed to private parseIndexedFieldPostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbuffer : ByteBuffer to preEncodedBytes : byte[] in method public getEncodedField(header HttpHeader, name String, value String) : byte[] from class org.eclipse.jetty.http3.qpack.QpackFieldPreEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tbuffer : ByteBuffer to preEncodedBytes : byte[] in method public getEncodedField(header HttpHeader, name String, value String) : byte[] from class org.eclipse.jetty.http3.qpack.QpackFieldPreEncoder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tallowIntermediary : byte to allowIntermediary : boolean in method public encode(buffer ByteBuffer, base int) : void from class org.eclipse.jetty.http3.qpack.internal.EncodableEntry.ReferencedNameEntry",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7c34d3c0cd32d601e90bde6fde2f974cea28803a",
+      "url": "https://github.com/eclipse/jetty.project/commit/7c34d3c0cd32d601e90bde6fde2f974cea28803a",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticTableByHeader : StaticEntry[] to _staticTableByHeader : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticTable : StaticEntry[] to _staticTable : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticFieldMap : Map<HttpField,Entry> to _staticFieldMap : Map<HttpField,Entry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticNameMap : Index<StaticEntry> to _staticNameMap : Index<StaticEntry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticTable : StaticEntry[] to _staticTable : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticFieldMap : Map<HttpField,Entry> to _staticFieldMap : Map<HttpField,Entry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticNameMap : Index<StaticEntry> to _staticNameMap : Index<StaticEntry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\t__staticTableByHeader : StaticEntry[] to _staticTableByHeader : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "5d07842af88dca685fefebf2cd285da3d8578d1b",
+      "url": "https://github.com/eclipse/jetty.project/commit/5d07842af88dca685fefebf2cd285da3d8578d1b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t__staticTable : StaticEntry[] to __staticTable : StaticTable in class org.eclipse.jetty.http3.qpack.QpackContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.qpack.StaticTable from Class org.eclipse.jetty.http3.qpack.QpackContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate EMPTY : String from class org.eclipse.jetty.http3.qpack.QpackContext to private EMPTY : String from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic STATIC_TABLE : String[][] from class org.eclipse.jetty.http3.qpack.QpackContext to public STATIC_TABLE : String[][] from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic STATIC_SIZE : int from class org.eclipse.jetty.http3.qpack.QpackContext to public STATIC_SIZE : int from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\t__staticTable : StaticEntry[] to __staticTable : StaticTable in class org.eclipse.jetty.http3.qpack.QpackContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.qpack.StaticTable from class org.eclipse.jetty.http3.qpack.QpackContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tEntry to QpackContext.Entry in method public get(header HttpHeader) : QpackContext.Entry from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate EMPTY : String from class org.eclipse.jetty.http3.qpack.QpackContext to private EMPTY : String from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic STATIC_TABLE : String[][] from class org.eclipse.jetty.http3.qpack.QpackContext to public STATIC_TABLE : String[][] from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic STATIC_SIZE : int from class org.eclipse.jetty.http3.qpack.QpackContext to public STATIC_SIZE : int from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tindex : int in method public get(header HttpHeader) : QpackContext.Entry from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "c70f49c773168c5ebea06efbae614cb4512c5cf2",
+      "url": "https://github.com/eclipse/jetty.project/commit/c70f49c773168c5ebea06efbae614cb4512c5cf2",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.client.ClientQuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic close(x Throwable) : void extracted from public close() : void in class org.eclipse.jetty.http3.common.QuicSession",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.client.ClientQuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.common.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic close(x Throwable) : void extracted from public close() : void in class org.eclipse.jetty.http3.common.QuicSession",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "36c0f79a9433322be1b10222be79ec273061abaa",
+      "url": "https://github.com/eclipse/jetty.project/commit/36c0f79a9433322be1b10222be79ec273061abaa",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.server.AddressCodec from Class org.eclipse.jetty.http3.server.QuicConnection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.server.AddressCodec from Class org.eclipse.jetty.http3.server.ServerDatagramEndPoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage decodeInetSocketAddress(buffer ByteBuffer) : InetSocketAddress from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public decodeInetSocketAddress(buffer ByteBuffer) : InetSocketAddress from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage encodeInetSocketAddress(buffer ByteBuffer, peer InetSocketAddress) : void from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public encodeInetSocketAddress(buffer ByteBuffer, peer InetSocketAddress) : void from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage ENCODED_ADDRESS_LENGTH : int from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public ENCODED_ADDRESS_LENGTH : int from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage encodeInetSocketAddress(byteBufferPool ByteBufferPool, remoteAddress InetSocketAddress) : ByteBuffer from class org.eclipse.jetty.http3.server.QuicConnection to public encodeInetSocketAddress(byteBufferPool ByteBufferPool, remoteAddress InetSocketAddress) : ByteBuffer from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.http3.server.AddressCodec from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage decodeInetSocketAddress(buffer ByteBuffer) : InetSocketAddress from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public decodeInetSocketAddress(buffer ByteBuffer) : InetSocketAddress from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage encodeInetSocketAddress(buffer ByteBuffer, peer InetSocketAddress) : void from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public encodeInetSocketAddress(buffer ByteBuffer, peer InetSocketAddress) : void from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage ENCODED_ADDRESS_LENGTH : int from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint to public ENCODED_ADDRESS_LENGTH : int from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage encodeInetSocketAddress(byteBufferPool ByteBufferPool, remoteAddress InetSocketAddress) : ByteBuffer from class org.eclipse.jetty.http3.server.QuicConnection to public encodeInetSocketAddress(byteBufferPool ByteBufferPool, remoteAddress InetSocketAddress) : ByteBuffer from class org.eclipse.jetty.http3.server.AddressCodec",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "9eeb44bfe93761e518dbdd2ed00a9b110514963c",
+      "url": "https://github.com/eclipse/jetty.project/commit/9eeb44bfe93761e518dbdd2ed00a9b110514963c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.start.usecases.BasicTest from Class org.eclipse.jetty.start.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdLineArgs : List<String> to runArgs : List<String> in method public testHomeWithSpaces() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.eclipse.jetty.start.usecases.BasicTest from class org.eclipse.jetty.start.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBasicProcessing() : void from class org.eclipse.jetty.start.MainTest to public testBasicProcessing() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdLineArgs : List<String> to runArgs : List<String> in method public testBasicProcessing() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testProvidersUsingDefault() : void from class org.eclipse.jetty.start.MainTest to public testProvidersUsingDefault() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdLineArgs : List<String> to runArgs : List<String> in method public testProvidersUsingDefault() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testProvidersUsingSpecific() : void from class org.eclipse.jetty.start.MainTest to public testProvidersUsingSpecific() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdLineArgs : List<String> to runArgs : List<String> in method public testProvidersUsingSpecific() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testWithCommandLine() : void from class org.eclipse.jetty.start.MainTest to public testWithCommandLine() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdLineArgs : List<String> to runArgs : List<String> in method public testWithCommandLine() : void from class org.eclipse.jetty.start.usecases.BasicTest",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

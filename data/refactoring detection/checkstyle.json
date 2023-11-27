@@ -1,0 +1,2008 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "fb99f4d79d60fe7aaceb37e8fd718316d154f14c",
+      "url": "https://github.com/checkstyle/checkstyle/commit/fb99f4d79d60fe7aaceb37e8fd718316d154f14c",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.CheckTest renamed to com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.DummyHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcheckHandler : CheckTest to checkHandler : DummyHandler in method public testXdocsUrl() : void from class com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.CheckTest renamed to com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.DummyHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcheckHandler : CheckTest to checkHandler : DummyHandler in method public testXdocsUrl() : void from class com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "d6002cc762e3fef49f1e93fee672d4ded26fe420",
+      "url": "https://github.com/checkstyle/checkstyle/commit/d6002cc762e3fef49f1e93fee672d4ded26fe420",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForTryCatchFinally(ast DetailAST) : Details renamed to private getDetailsForTryCatch(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForIfElse(ast DetailAST) : Details renamed to private getDetailsForIf(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForLoops(ast DetailAST) : Details renamed to private getDetailsForDoLoops(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForTryCatchFinally(ast DetailAST) : Details renamed to private getDetailsForTryCatch(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForIfElse(ast DetailAST) : Details renamed to private getDetailsForIf(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getDetailsForLoops(ast DetailAST) : Details renamed to private getDetailsForDoLoops(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tshouldCheckLastRcurly : boolean in method private getDetailsForLoops(ast DetailAST) : Details from class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "405735c92cb8a4171232dc9090e3eb32c55309d5",
+      "url": "https://github.com/checkstyle/checkstyle/commit/405735c92cb8a4171232dc9090e3eb32c55309d5",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tallowedDirectoryAndChecks : Map<String,String> to ALLOWED_DIRECTORY_AND_CHECKS : Map<String,String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tinternalModules : Set<String> to INTERNAL_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsimpleCheckNames : Set<String> to SIMPLE_CHECK_NAMES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setUpBeforeClass() : void renamed to private getInternalModules() : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Set<String> in method private getInternalModules() : Set<String> from class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsimpleCheckNames : Set<String> to SIMPLE_CHECK_NAMES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tallowedDirectoryAndChecks : Map<String,String> to ALLOWED_DIRECTORY_AND_CHECKS : Map<String,String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "5e413ff0036dfb332340fc3fb85af57845906ded",
+      "url": "https://github.com/checkstyle/checkstyle/commit/5e413ff0036dfb332340fc3fb85af57845906ded",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetailAST to Object in method public getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetailAST to Object in method public abstract getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tabstractNode : AbstractNode to abstractNode : ElementNode in method private convertToArray(nodes List<NodeInfo>) : DetailAST[] from class com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic compareOrder(other NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public compareOrder(other NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate compareCommonAncestorChildrenOrder(first NodeInfo, second NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private compareCommonAncestorChildrenOrder(first NodeInfo, second NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPrecedingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getPrecedingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getFollowingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getFollowingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getFollowingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getFollowingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPrecedingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getPrecedingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic compareOrder(nodeInfo NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public compareOrder(nodeInfo NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getLocalPart() : String from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getLocalPart() : String from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getRoot() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getRoot() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.RootNode to private throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getAttributeNode() : AttributeNode from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getAttributeNode() : AttributeNode from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\tcom.puppycrawl.tools.checkstyle.xpath.AbstractElementNode from class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\tcom.puppycrawl.tools.checkstyle.xpath.AbstractRootNode from class com.puppycrawl.tools.checkstyle.xpath.RootNode",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetailAST to Object in method public abstract getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetailAST to Object in method public getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getAttributeValue(namespace String, localPart String) : String renamed to protected createAttributeNode() : AttributeNode in class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getAttributeNode() : AttributeNode inlined to protected createAttributeNode() : AttributeNode in class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to AttributeNode in method protected createAttributeNode() : AttributeNode from class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tabstractNode : AbstractNode to abstractNode : ElementNode in method private convertToArray(nodes List<NodeInfo>) : DetailAST[] from class com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic compareOrder(other NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public compareOrder(other NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate compareCommonAncestorChildrenOrder(first NodeInfo, second NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private compareCommonAncestorChildrenOrder(first NodeInfo, second NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPrecedingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getPrecedingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getFollowingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getFollowingSiblingsIterator() : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getFollowingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getFollowingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPrecedingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private getPrecedingSiblings() : List<AbstractNode> from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to private throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic compareOrder(nodeInfo NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public compareOrder(nodeInfo NodeInfo) : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getAttributeValue(namespace String, localPart String) : String from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getLocalPart() : String from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getLocalPart() : String from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getNodeKind() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getParent() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getRoot() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getRoot() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public iterateAxis(axisNumber int) : AxisIterator from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.RootNode to public getDepth() : int from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.RootNode to private throwUnsupportedOperationException() : UnsupportedOperationException from class com.puppycrawl.tools.checkstyle.xpath.AbstractRootNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : String to result : AttributeNode in method protected createAttributeNode() : AttributeNode from class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\tcom.puppycrawl.tools.checkstyle.xpath.AbstractElementNode from classes [com.puppycrawl.tools.checkstyle.xpath.ElementNode]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\tcom.puppycrawl.tools.checkstyle.xpath.AbstractRootNode from classes [com.puppycrawl.tools.checkstyle.xpath.RootNode]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getRoot() : NodeInfo from class com.puppycrawl.tools.checkstyle.xpath.ElementNode to public getRoot() : AbstractNode from class com.puppycrawl.tools.checkstyle.xpath.AbstractElementNode",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "f741ccecd32fb4d45946ade13ce3f858684cfdfd",
+      "url": "https://github.com/checkstyle/checkstyle/commit/f741ccecd32fb4d45946ade13ce3f858684cfdfd",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic isValidCheckstyleClass(clazz Class<?>) : boolean inlined to public isCheckstyleModule(clazz Class<?>) : boolean in class com.puppycrawl.tools.checkstyle.utils.ModuleReflectionUtil",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic isValidCheckstyleClass(clazz Class<?>) : boolean inlined to public isCheckstyleModule(clazz Class<?>) : boolean in class com.puppycrawl.tools.checkstyle.utils.ModuleReflectionUtil",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "url": "https://github.com/checkstyle/checkstyle/commit/a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tauditStartMessage : Violation to auditStartMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tauditFinishMessage : Violation to auditFinishMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getCustomViolation() : String inlined to public getViolation() : String in class com.puppycrawl.tools.checkstyle.api.Violation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\terrorCounterViolation : Violation to errorCounterViolation : LocalizedMessage in method public main(args String...) : void from class com.puppycrawl.tools.checkstyle.Main",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadPropertiesExceptionMessage : Violation to loadPropertiesExceptionMessage : LocalizedMessage in method private loadProperties(file File) : Properties from class com.puppycrawl.tools.checkstyle.Main",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public createModule(name String) : Object from class com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method private createObjectFromFullModuleNames(name String, fullModuleNames Set<String>) : Object from class com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testMissedHtmlTagParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testWrongSingletonParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tunableToInstantiateExceptionMessage : Violation to unableToInstantiateExceptionMessage : LocalizedMessage in method public testCustomSimpleRootModule(systemErr Capturable) : void from class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testMakeCheckFromName() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateModuleWithNonExistName() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateObjectFromFullModuleNamesWithAmbiguousException() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateObjectFromFullModuleNamesWithCantInstantiateException() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlmessage : Violation to message : LocalizedMessage in method private getParseErrorMessage(parseErrorMessage ParseErrorMessage) : String from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tlmessage : Violation to message : LocalizedMessage in method private getParseErrorMessage(parseErrorMessage ParseErrorMessage) : String from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmsg : Violation to msg : LocalizedMessage in method private validateUserSpecifiedLanguageCodes(languageCodes Set<String>) : void from class com.puppycrawl.tools.checkstyle.checks.TranslationCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tformatter : MessageFormat in method private getCustomViolation() : String from class com.puppycrawl.tools.checkstyle.api.Violation",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getCustomViolation() : String inlined to public getViolation() : String in class com.puppycrawl.tools.checkstyle.api.Violation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tauditStartMessage : Violation to auditStartMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tauditFinishMessage : Violation to auditFinishMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\terrorCounterViolation : Violation to errorCounterViolation : LocalizedMessage in method public main(args String...) : void from class com.puppycrawl.tools.checkstyle.Main",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadPropertiesExceptionMessage : Violation to loadPropertiesExceptionMessage : LocalizedMessage in method private loadProperties(file File) : Properties from class com.puppycrawl.tools.checkstyle.Main",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public createModule(name String) : Object from class com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method private createObjectFromFullModuleNames(name String, fullModuleNames Set<String>) : Object from class com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testMissedHtmlTagParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviolation : Violation to violation : LocalizedMessage in method public testWrongSingletonParseErrorMessage() : void from class com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tunableToInstantiateExceptionMessage : Violation to unableToInstantiateExceptionMessage : LocalizedMessage in method public testCustomSimpleRootModule(systemErr Capturable) : void from class com.puppycrawl.tools.checkstyle.MainTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testMakeCheckFromName() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateModuleWithNonExistName() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateObjectFromFullModuleNamesWithAmbiguousException() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texceptionMessage : Violation to exceptionMessage : LocalizedMessage in method public testCreateObjectFromFullModuleNamesWithCantInstantiateException() : void from class com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tformatter : MessageFormat in method private getCustomViolation() : String from class com.puppycrawl.tools.checkstyle.api.Violation",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "url": "https://github.com/checkstyle/checkstyle/commit/3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.DefaultLogger.LocalizedMessage moved to com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.api.Violation.Utf8Control moved to com.puppycrawl.tools.checkstyle.LocalizedMessage.Utf8Control",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tLOCALE : Locale to locale : Locale in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMethod to String in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMethod to String in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\targs : String[] to args : Object[] in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.api.ViolationTest.TestUrlsClassLoader moved to com.puppycrawl.tools.checkstyle.LocalizedMessageTest.TestUrlsClassLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to LocalizedMessage in method private getAuditStartMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to LocalizedMessage in method private getAuditFinishMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tcom.puppycrawl.tools.checkstyle.LocalizedMessageTest from Class com.puppycrawl.tools.checkstyle.api.ViolationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessage : Method to auditStartMessage : String in method public testAddError() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessage : Method to auditFinishMessage : String in method public testAddError() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessage : Method to auditFinishMessage : String in method public testAddErrorModuleId() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessage : Method to auditStartMessage : String in method public testAddErrorModuleId() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessageClass : Object to auditStartMessage : LocalizedMessage in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tauditStartMessageClass : Object to auditStartMessage : LocalizedMessage in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessageClass : Object to auditFinishMessage : LocalizedMessage in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tauditFinishMessageClass : Object to auditFinishMessage : LocalizedMessage in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\treturnValue : Object to message : String in method public testCtor() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\treturnValue : Object to message : String in method public testCtor() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.api.Violation.Utf8Control moved to com.puppycrawl.tools.checkstyle.LocalizedMessage.Utf8Control",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.api.ViolationTest.TestUrlsClassLoader moved to com.puppycrawl.tools.checkstyle.LocalizedMessageTest.TestUrlsClassLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.puppycrawl.tools.checkstyle.DefaultLogger.LocalizedMessage moved to com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to LocalizedMessage in method private getAuditStartMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to LocalizedMessage in method private getAuditFinishMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMethod to String in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMethod to String in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\targs : String[] to args : Object[] in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tcom.puppycrawl.tools.checkstyle.LocalizedMessageTest from class com.puppycrawl.tools.checkstyle.api.ViolationTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessage : Method to auditStartMessage : String in method public testAddError() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessage : Method to auditFinishMessage : String in method public testAddError() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessage : Method to auditFinishMessage : String in method public testAddErrorModuleId() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessage : Method to auditStartMessage : String in method public testAddErrorModuleId() : void from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditStartMessageClass : Object to auditStartMessage : LocalizedMessage in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tauditStartMessageClass : Object to auditStartMessage : LocalizedMessage in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tauditFinishMessageClass : Object to auditFinishMessage : LocalizedMessage in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tauditFinishMessageClass : Object to auditFinishMessage : LocalizedMessage in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNullFalseReload() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.api.ViolationTest to public testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcontrol : Violation.Utf8Control to control : Utf8Control in method public testBundleReloadUrlNotNullStreamNull() : void from class com.puppycrawl.tools.checkstyle.LocalizedMessageTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "1674de82125f5340171fe5900dce845d3f86f0d9",
+      "url": "https://github.com/checkstyle/checkstyle/commit/1674de82125f5340171fe5900dce845d3f86f0d9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getFirstCaseGroupOrSwitchRule(block DetailAST) : DetailAST renamed to private getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> in class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetailAST to List<DetailAST> in method private getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> from class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> extracted from private getFirstNodeInsideSwitchBlock(block DetailAST, variable DetailAST) : DetailAST in class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "503c53f29292c1411e52ea587789aef4466e3fa8",
+      "url": "https://github.com/checkstyle/checkstyle/commit/503c53f29292c1411e52ea587789aef4466e3fa8",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate collectMethodDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST, frame AbstractFrame) : void extracted from private collectDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate collectMethodDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST, frame AbstractFrame) : void extracted from private collectDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "url": "https://github.com/checkstyle/checkstyle/commit/077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isMultilineStatement(ast DetailAST) : boolean inlined to private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tprevSibling : DetailAST to previousSibling : DetailAST in method private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void from class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\thasResourcesPrevSibling : boolean to isUnnecessarySemicolon : boolean in method private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void from class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isMultilineStatement(ast DetailAST) : boolean inlined to private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tprevSibling : DetailAST to previousSibling : DetailAST in method private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void from class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "a6dec5beda11fd54734e2c5ae655ca09448e48a0",
+      "url": "https://github.com/checkstyle/checkstyle/commit/a6dec5beda11fd54734e2c5ae655ca09448e48a0",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isIfTokenWithAnElseFollowing(ast DetailAST) : boolean inlined to private shouldUpdateUninitializedVariables(ast DetailAST) : boolean in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isIfTokenWithAnElseFollowing(ast DetailAST) : boolean inlined to private shouldUpdateUninitializedVariables(ast DetailAST) : boolean in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "731169056d671d018846b0058d49203f5806777b",
+      "url": "https://github.com/checkstyle/checkstyle/commit/731169056d671d018846b0058d49203f5806777b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLINE_FEED : String to LINE_FEED : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCARRIAGE_RETURN : String to CARRIAGE_RETURN : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDOT : String to DOT : char in class com.puppycrawl.tools.checkstyle.checks.metrics.AbstractClassCouplingCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLINE_FEED : String to LINE_FEED : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCARRIAGE_RETURN : String to CARRIAGE_RETURN : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDOT : String to DOT : char in class com.puppycrawl.tools.checkstyle.checks.metrics.AbstractClassCouplingCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "981dc58240af170559c375f65e5b3f9558ecd496",
+      "url": "https://github.com/checkstyle/checkstyle/commit/981dc58240af170559c375f65e5b3f9558ecd496",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic shouldCheckIdentWithMethodRefParent(identAst DetailAST) : boolean inlined to private visitIdentToken(identAst DetailAST, variablesStack Deque<VariableDesc>) : void in class com.puppycrawl.tools.checkstyle.checks.coding.UnusedLocalVariableCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic shouldCheckIdentWithMethodRefParent(identAst DetailAST) : boolean inlined to private visitIdentToken(identAst DetailAST, variablesStack Deque<VariableDesc>) : void in class com.puppycrawl.tools.checkstyle.checks.coding.UnusedLocalVariableCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "43ae5d651d5b3078d9c04a0539134e811f461f5c",
+      "url": "https://github.com/checkstyle/checkstyle/commit/43ae5d651d5b3078d9c04a0539134e811f461f5c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCLASS_MEMBER_TOKENS : List<Integer> to CLASS_MEMBER_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tskipAnnotations : List<String> to skipAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreAnnotationCanonicalNames : List<String> to ignoreAnnotationCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<String> to Set<String> in method private getClassShortNames(canonicalClassNames Set<String>) : Set<String> from class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreAnnotationShortNames : List<String> to ignoreAnnotationShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tNODES_TO_WRAP : List<String> to NODES_TO_WRAP : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsMobileWrapperTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tMUTATION_OPERATIONS : Set<Integer> to MUTATION_OPERATIONS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCOMPOUND_ASSIGN_TOKENS : Set<Integer> to COMPOUND_ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tacceptableTokens : int[] to acceptableTokens : BitSet in class com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTYPES_HASH_SET : Set<Integer> to TYPES_HASH_SET : BitSet in class com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tPROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : List<String> to PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEFAULT_IMMUTABLE_TYPES : List<String> to DEFAULT_IMMUTABLE_TYPES : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEF_TOKEN_TYPES : int[] to DEF_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tIGNORED_SUN_MODULES : List<String> to IGNORED_SUN_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLOOP_IDIOM_IGNORED_PARENTS : int[] to LOOP_IDIOM_IGNORED_PARENTS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEFAULT_IGNORE_ANNOTATIONS : List<String> to DEFAULT_IGNORE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoredTags : List<String> to ignoredTags : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttarget : List<Integer> to target : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreLines : int[] to ignoreLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTOKEN_TYPES_WITH_TEXT_ATTRIBUTE : Set<Integer> to TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : BitSet in class com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tPARENT_TOKEN_TYPES : int[] to PARENT_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.indentation.SlistHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmultiLines : int[] to multiLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tconstantWaiverParentToken : int[] to constantWaiverParentToken : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEF_TOKEN_TYPES_DEPRECATED : int[] to DEF_TOKEN_TYPES_DEPRECATED : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\texcludes : List<String> to excludes : Set<String> in class com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\timmutableClassShortNames : List<String> to immutableClassShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tprimitiveDataTypes : Set<Integer> to primitiveDataTypes : BitSet in class com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\timmutableClassCanonicalNames : List<String> to immutableClassCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tVISIT_METHODS_NOT_OVERRIDDEN : List<String> to VISIT_METHODS_NOT_OVERRIDDEN : Set<String> in class com.puppycrawl.tools.checkstyle.JavaAstVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLOOP_TYPES : int[] to LOOP_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmemberModifiers : List<Integer> to memberModifiers : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCOMPARISON_TYPES : int[] to COMPARISON_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tOVERRIDE_ANNOTATIONS : List<String> to OVERRIDE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tASSIGN_TOKENS : Set<Integer> to ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tUNDOCUMENTED_PROPERTIES : List<String> to UNDOCUMENTED_PROPERTIES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tIGNORED_TYPES : List<Integer> to IGNORED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.AvoidDoubleBraceInitializationCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tALLOWED_TYPES : Set<Integer> to ALLOWED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDECLARATION_TOKENS : Set<Integer> to DECLARATION_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tASSIGN_OPERATOR_TYPES : int[] to ASSIGN_OPERATOR_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tusedLines : Set<Integer> to usedLines : BitSet in method private countUsedLines(ast DetailAST) : int from class com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdefaultTokensSet : Set<Integer> to defaultTokensSet : BitSet in method private validateDefaultTokens(checkConfig Configuration, check AbstractCheck, configTokens Set<String>) : void from class com.puppycrawl.tools.checkstyle.internal.AllChecksTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequiredTokensSet : Set<Integer> to requiredTokensSet : BitSet in method private validateDefaultTokens(checkConfig Configuration, check AbstractCheck, configTokens Set<String>) : void from class com.puppycrawl.tools.checkstyle.internal.AllChecksTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNullList() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithEmptyList() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNoAnnotationNode() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithEmptyAnnotationNode() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNoMatchingAnnotation() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlineNo : int to lineIndex : int in method private countUsedLines(ast DetailAST) : int from class com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tprimitiveDataTypes : Set<Integer> to primitiveDataTypes : BitSet in class com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTYPES_HASH_SET : Set<Integer> to TYPES_HASH_SET : BitSet in class com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tIGNORED_TYPES : List<Integer> to IGNORED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.AvoidDoubleBraceInitializationCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tASSIGN_OPERATOR_TYPES : int[] to ASSIGN_OPERATOR_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLOOP_TYPES : int[] to LOOP_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmemberModifiers : List<Integer> to memberModifiers : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCOMPARISON_TYPES : int[] to COMPARISON_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tLOOP_IDIOM_IGNORED_PARENTS : int[] to LOOP_IDIOM_IGNORED_PARENTS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tconstantWaiverParentToken : int[] to constantWaiverParentToken : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tMUTATION_OPERATIONS : Set<Integer> to MUTATION_OPERATIONS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDECLARATION_TOKENS : Set<Integer> to DECLARATION_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tASSIGN_TOKENS : Set<Integer> to ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCOMPOUND_ASSIGN_TOKENS : Set<Integer> to COMPOUND_ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCLASS_MEMBER_TOKENS : List<Integer> to CLASS_MEMBER_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEFAULT_IMMUTABLE_TYPES : List<String> to DEFAULT_IMMUTABLE_TYPES : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEFAULT_IGNORE_ANNOTATIONS : List<String> to DEFAULT_IGNORE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreAnnotationShortNames : List<String> to ignoreAnnotationShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\timmutableClassShortNames : List<String> to immutableClassShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreAnnotationCanonicalNames : List<String> to ignoreAnnotationCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\timmutableClassCanonicalNames : List<String> to immutableClassCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreLines : int[] to ignoreLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmultiLines : int[] to multiLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\texcludes : List<String> to excludes : Set<String> in class com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tPARENT_TOKEN_TYPES : int[] to PARENT_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.indentation.SlistHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttarget : List<Integer> to target : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEF_TOKEN_TYPES_DEPRECATED : int[] to DEF_TOKEN_TYPES_DEPRECATED : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tDEF_TOKEN_TYPES : int[] to DEF_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tskipAnnotations : List<String> to skipAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoredTags : List<String> to ignoredTags : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tALLOWED_TYPES : Set<Integer> to ALLOWED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tacceptableTokens : int[] to acceptableTokens : BitSet in class com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tOVERRIDE_ANNOTATIONS : List<String> to OVERRIDE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTOKEN_TYPES_WITH_TEXT_ATTRIBUTE : Set<Integer> to TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : BitSet in class com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tVISIT_METHODS_NOT_OVERRIDDEN : List<String> to VISIT_METHODS_NOT_OVERRIDDEN : Set<String> in class com.puppycrawl.tools.checkstyle.JavaAstVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tNODES_TO_WRAP : List<String> to NODES_TO_WRAP : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsMobileWrapperTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tUNDOCUMENTED_PROPERTIES : List<String> to UNDOCUMENTED_PROPERTIES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tPROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : List<String> to PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tIGNORED_SUN_MODULES : List<String> to IGNORED_SUN_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tusedLines : Set<Integer> to usedLines : BitSet in method private countUsedLines(ast DetailAST) : int from class com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdefaultTokensSet : Set<Integer> to defaultTokensSet : BitSet in method private validateDefaultTokens(checkConfig Configuration, check AbstractCheck, configTokens Set<String>) : void from class com.puppycrawl.tools.checkstyle.internal.AllChecksTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequiredTokensSet : Set<Integer> to requiredTokensSet : BitSet in method private validateDefaultTokens(checkConfig Configuration, check AbstractCheck, configTokens Set<String>) : void from class com.puppycrawl.tools.checkstyle.internal.AllChecksTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNullList() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithEmptyList() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNoAnnotationNode() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithEmptyAnnotationNode() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tannotations : List<String> to annotations : Set<String> in method public testContainsAnnotationListWithNoMatchingAnnotation() : void from class com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic asBitSet(tokens String...) : BitSet extracted from public setMemberModifiers(modifiers String) : void in class com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheck & moved to class com.puppycrawl.tools.checkstyle.utils.TokenUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic asBitSet(tokens String...) : BitSet extracted from public setConstantWaiverParentToken(tokens String...) : void in class com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck & moved to class com.puppycrawl.tools.checkstyle.utils.TokenUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic asBitSet(tokens String...) : BitSet extracted from public setTarget(targets String...) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck & moved to class com.puppycrawl.tools.checkstyle.utils.TokenUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlineNo : int in method private countUsedLines(ast DetailAST) : int from class com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "6eee69e12779a9e6421596d12123bcad5fd232bc",
+      "url": "https://github.com/checkstyle/checkstyle/commit/6eee69e12779a9e6421596d12123bcad5fd232bc",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testUpperEll() : void renamed to public testUpperEllOne() : void in class org.checkstyle.suppressionxpathfilter.XpathRegressionUpperEllTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEll renamed to org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEllFirst",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEll renamed to org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEllFirst",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testUpperEll() : void renamed to public testUpperEllOne() : void in class org.checkstyle.suppressionxpathfilter.XpathRegressionUpperEllTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "6591ef0423d2376486b09784ab33fd5974a7cb41",
+      "url": "https://github.com/checkstyle/checkstyle/commit/6591ef0423d2376486b09784ab33fd5974a7cb41",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate verifySuppressed(moduleConfig Configuration, fileName String, expectedViolations String[], suppressedViolations String...) : void inlined to public testInvalidInfluenceFormat() : void in class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate verifySuppressed(moduleConfig Configuration, fileName String, expectedViolations String[], suppressedViolations String...) : void inlined to public testInvalidCheckFormat() : void in class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttreewalkerConfig : DefaultConfiguration to treeWalkerConfig : DefaultConfiguration in method public testInvalidInfluenceFormat() : void from class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmemberNameCheckConfig : DefaultConfiguration to checkConfig : DefaultConfiguration in method public testInvalidInfluenceFormat() : void from class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttreewalkerConfig : DefaultConfiguration to treeWalkerConfig : DefaultConfiguration in method public testInvalidCheckFormat() : void from class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmemberNameCheckConfig : DefaultConfiguration to checkConfig : DefaultConfiguration in method public testInvalidCheckFormat() : void from class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "5e618459068dbd6d64a8f3518e4fce38b26b5a6f",
+      "url": "https://github.com/checkstyle/checkstyle/commit/5e618459068dbd6d64a8f3518e4fce38b26b5a6f",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createXmlReader(handler DefaultHandler) : XMLReader extracted from protected XmlLoader(publicIdToResourceNameMap Map<String,String>) in class com.puppycrawl.tools.checkstyle.XmlLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createMainFrame(args String...) : void extracted from public main(args String...) : void in class com.puppycrawl.tools.checkstyle.gui.Main",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createXmlReader(handler DefaultHandler) : XMLReader extracted from protected XmlLoader(publicIdToResourceNameMap Map<String,String>) in class com.puppycrawl.tools.checkstyle.XmlLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createMainFrame(args String...) : void extracted from public main(args String...) : void in class com.puppycrawl.tools.checkstyle.gui.Main",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "cc90b04b02f963571ae4697857db838ac27efb84",
+      "url": "https://github.com/checkstyle/checkstyle/commit/cc90b04b02f963571ae4697857db838ac27efb84",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getInlineSummaryTag(javadoc DetailNode) : Optional<DetailNode> renamed to private getInlineTagNode(javadoc DetailNode) : Optional<DetailNode> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate validateUntaggedSummary(ast DetailNode) : void extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate isInlineTagWithName(javadocInlineTag DetailNode, name String) : boolean extracted from private isSummaryTag(javadocInlineTag DetailNode) : boolean in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tinlineSummaryTag : Optional<DetailNode> to inlineTag : Optional<DetailNode> in method public visitJavadocToken(ast DetailNode) : void from class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tnode : Optional<DetailNode> in method private getInlineSummaryTag(javadoc DetailNode) : Optional<DetailNode> from class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate validateUntaggedSummary(ast DetailNode) : void extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getInlineTagNode(javadoc DetailNode) : Optional<DetailNode> extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate isInlineTagWithName(javadocInlineTag DetailNode, name String) : boolean extracted from private isSummaryTag(javadocInlineTag DetailNode) : boolean in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getInlineSummaryTag(javadoc DetailNode) : Optional<DetailNode> inlined to public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tinlineSummaryTag : Optional<DetailNode> to inlineTag : Optional<DetailNode> in method public visitJavadocToken(ast DetailNode) : void from class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "dd7b912b5a96f9027bd2b2f9dd77d3515efc9a74",
+      "url": "https://github.com/checkstyle/checkstyle/commit/dd7b912b5a96f9027bd2b2f9dd77d3515efc9a74",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOperation2 renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOp2",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMathOperation2 to MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.TypeParameterized renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.GenT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMathOperation2 to MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfilter : null to f : null in method package foo(y int) : int from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesLambdas",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\td : TypeParameterized<String> to d : GenT<String> in method private f6(a TypeA) : void from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase6 : yield to f : yield in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase8 : yield to h : yield in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase5 : yield to e : yield in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOperation2 renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOp2",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.TypeParameterized renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.GenT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMathOperation2 to MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMathOperation2 to MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase8 : MathOperation2 to h : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase5 : MathOperation2 to e : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase6 : MathOperation2 to f : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcase7 : MathOperation2 to g : MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfilter : null to f : null in method package foo(y int) : int from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesLambdas",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\td : TypeParameterized<String> to d : GenT<String> in method private f6(a TypeA) : void from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\tcom.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.GenT from classes [com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.TypeA]",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "50a9a64b6d70aa722dcf754ad5d46e37784f5b05",
+      "url": "https://github.com/checkstyle/checkstyle/commit/50a9a64b6d70aa722dcf754ad5d46e37784f5b05",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate visitClass(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate visitCtor(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate visitClass(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate visitCtor(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

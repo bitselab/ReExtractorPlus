@@ -1,0 +1,1994 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "0ae075a2af68e352aa3a75e9fbf7c777bd09e135",
+      "url": "https://github.com/apache/hadoop/commit/0ae075a2af68e352aa3a75e9fbf7c777bd09e135",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getRecord(clazz Class<T>, znode String, child String) : T extracted from public get(clazz Class<T>) : QueryResult<T> in class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstatus : boolean to status : AtfomicBoolean in method public putAll(records List<T>, update boolean, error boolean) : boolean from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_DRIVER_PREFIX : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_DRIVER_PREFIX : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_PARENT_PATH : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_PARENT_PATH : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_PARENT_PATH_DEFAULT : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_PARENT_PATH_DEFAULT : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tchildren : List<String> in method public get(clazz Class<T>) : QueryResult<T> from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getRecord(clazz Class<T>, znode String, child String) : T extracted from public get(clazz Class<T>) : QueryResult<T> in class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstatus : boolean to status : AtfomicBoolean in method public putAll(records List<T>, update boolean, error boolean) : boolean from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_DRIVER_PREFIX : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_DRIVER_PREFIX : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_PARENT_PATH : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_PARENT_PATH : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic FEDERATION_STORE_ZK_PARENT_PATH_DEFAULT : String from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl to public FEDERATION_STORE_ZK_PARENT_PATH_DEFAULT : String from class org.apache.hadoop.hdfs.server.federation.router.RBFConfigKeys",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchild : String to callable : Callable<T> in method public get(clazz Class<T>) : QueryResult<T> from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tchild : String to callable : Callable<T> in method public get(clazz Class<T>) : QueryResult<T> from class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "d81d98388c794b53152f4a80263694c1bf77adc0",
+      "url": "https://github.com/apache/hadoop/commit/d81d98388c794b53152f4a80263694c1bf77adc0",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to void in method package bestEffortSetAttribute(transformerFactory TransformerFactory, flag AtomicBoolean, name String, value Object) : void from class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureTransformerFactory() : TransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureSAXTransformerFactory() : SAXTransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureTransformerFactory() : TransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureSAXTransformerFactory() : SAXTransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to void in method package bestEffortSetAttribute(transformerFactory TransformerFactory, flag AtomicBoolean, name String, value Object) : void from class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttrfactory : SAXTransformerFactory to transformerFactory : TransformerFactory in method private setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void from class org.apache.hadoop.util.XMLUtils",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "c5b42d59d2e0905cdb55db92a89939526eecdb90",
+      "url": "https://github.com/apache/hadoop/commit/c5b42d59d2e0905cdb55db92a89939526eecdb90",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getBblocksMoved() : long renamed to package getBlocksMoved() : long in class org.apache.hadoop.hdfs.server.balancer.Dispatcher",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getBblocksMoved() : long renamed to package getBlocksMoved() : long in class org.apache.hadoop.hdfs.server.balancer.Dispatcher",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "4af4997e1129d3b9bd7fde7ec8731d6e79093fd8",
+      "url": "https://github.com/apache/hadoop/commit/4af4997e1129d3b9bd7fde7ec8731d6e79093fd8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getNumSucceededCheckUserAccessToQueueRetrievedRetrieved() : long renamed to public getNumSucceededCheckUserAccessToQueueRetrieved() : long in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testCheckUserAccessToQueueRetrievedRetrieved() : void renamed to public testCheckUserAccessToQueueRetrieved() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getCheckUserAccessToQueueRetrieved() : void renamed to public getCheckUserAccessToQueueFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getNumSucceededCheckUserAccessToQueueRetrievedRetrieved() : long renamed to public getNumSucceededCheckUserAccessToQueueRetrieved() : long in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getCheckUserAccessToQueueRetrieved() : void renamed to public getCheckUserAccessToQueueFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testCheckUserAccessToQueueRetrievedRetrieved() : void renamed to public testCheckUserAccessToQueueRetrieved() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "696d0420543d5932d88c7dd42108e575d5405585",
+      "url": "https://github.com/apache/hadoop/commit/696d0420543d5932d88c7dd42108e575d5405585",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tkey : Writable to key : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tval : Writable to val : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate readUsingTextCommand(uri URI, conf Configuration) : String extracted from private readUsingTextCommand(fileName String, fileContents byte[]) : String in class org.apache.hadoop.fs.shell.TestTextCommand",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tkey : Writable to key : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tval : Writable to val : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate readUsingTextCommand(uri URI, conf Configuration) : String extracted from private readUsingTextCommand(fileName String, fileContents byte[]) : String in class org.apache.hadoop.fs.shell.TestTextCommand",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "22c9f28f4d85a92d23024b03c9094edb8e56f369",
+      "url": "https://github.com/apache/hadoop/commit/22c9f28f4d85a92d23024b03c9094edb8e56f369",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeSchedConf() : void extracted from public init(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeSchedConf() : void extracted from public formatConfigurationInStore(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler from Class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate constructKeyValueConfUpdate(proposedConf CapacitySchedulerConfiguration, mutationInfo SchedConfUpdateInfo) : Map<String,String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to public constructKeyValueConfUpdate(proposedConf CapacitySchedulerConfiguration, mutationInfo SchedConfUpdateInfo) : Map<String,String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate removeQueue(queueToRemove String, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private removeQueue(queueToRemove String, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueue(updateInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private updateQueue(updateInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getSiblingQueues(queuePath String, conf Configuration) : List<String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private getSiblingQueues(queuePath String, conf Configuration) : List<String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeyValue : String in method private addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeSchedConf() : void extracted from public init(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeSchedConf() : void extracted from public formatConfigurationInStore(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate constructKeyValueConfUpdate(proposedConf CapacitySchedulerConfiguration, mutationInfo SchedConfUpdateInfo) : Map<String,String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to public constructKeyValueConfUpdate(proposedConf CapacitySchedulerConfiguration, mutationInfo SchedConfUpdateInfo) : Map<String,String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate removeQueue(queueToRemove String, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private removeQueue(queueToRemove String, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueue(updateInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private updateQueue(updateInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getSiblingQueues(queuePath String, conf Configuration) : List<String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider to private getSiblingQueues(queuePath String, conf Configuration) : List<String> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeyValue : String in method private addQueue(addInfo QueueConfigInfo, proposedConf CapacitySchedulerConfiguration, confUpdate Map<String,String>) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "5b52123c9d30a178d2c4bc5ed1100e655fcb58c4",
+      "url": "https://github.com/apache/hadoop/commit/5b52123c9d30a178d2c4bc5ed1100e655fcb58c4",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic incrContainerReportFailedRetrieved() : void renamed to public incrGetContainerReportFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic incrContainerFailedRetrieved() : void renamed to public incrGetContainersFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getContainer(duration long) : void renamed to public getContainers(duration long) : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockGoodSubCluster",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetContainerFailed() : void renamed to public testGetContainersFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getContainer() : void renamed to public getContainers() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IOException to e : NotFoundException in method public getAppStatistics(hsr HttpServletRequest, stateQueries Set<String>, typeQueries Set<String>) : ApplicationStatisticsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : YarnException to e : IOException in method public getAppStatistics(hsr HttpServletRequest, stateQueries Set<String>, typeQueries Set<String>) : ApplicationStatisticsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : NotFoundException to e : IllegalArgumentException in method public getContainers(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : ContainersInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tex : Exception to e : NotFoundException in method public getContainers(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : ContainersInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : Exception to e : NotFoundException in method public getContainers(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : ContainersInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tapplicationId : String in method public testGetContainer() : void from class org.apache.hadoop.yarn.server.router.webapp.TestFederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tattemptId : String in method public testGetContainer() : void from class org.apache.hadoop.yarn.server.router.webapp.TestFederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappActivitiesInfo : AppActivitiesInfo in method public getAppActivities(hsr HttpServletRequest, appId String, time String, requestPriorities Set<String>, allocationRequestIds Set<String>, groupBy String, limit String, actions Set<String>, summarize boolean) : AppActivitiesInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tapplicationStatisticsInfo : ApplicationStatisticsInfo in method public getAppStatistics(hsr HttpServletRequest, stateQueries Set<String>, typeQueries Set<String>) : ApplicationStatisticsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnodeToLabelsInfo : NodeToLabelsInfo in method public getNodeToLabels(hsr HttpServletRequest) : NodeToLabelsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tlabelsToNodesInfo : LabelsToNodesInfo in method public getLabelsToNodes(labels Set<String>) : LabelsToNodesInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnodeLabelsInfo : NodeLabelsInfo in method public getClusterNodeLabels(hsr HttpServletRequest) : NodeLabelsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnodeLabelsInfo : NodeLabelsInfo in method public getLabelsOnNode(hsr HttpServletRequest, nodeId String) : NodeLabelsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappPriority : AppPriority in method public getAppPriority(hsr HttpServletRequest, appId String) : AppPriority from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresponse : Response in method public updateApplicationPriority(targetPriority AppPriority, hsr HttpServletRequest, appId String) : Response from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tqueue : AppQueue in method public getAppQueue(hsr HttpServletRequest, appId String) : AppQueue from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresponse : Response in method public updateAppQueue(targetQueue AppQueue, hsr HttpServletRequest, appId String) : Response from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappTimeoutInfo : AppTimeoutInfo in method public getAppTimeout(hsr HttpServletRequest, appId String, type String) : AppTimeoutInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappTimeoutsInfo : AppTimeoutsInfo in method public getAppTimeouts(hsr HttpServletRequest, appId String) : AppTimeoutsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresponse : Response in method public updateApplicationTimeout(appTimeout AppTimeoutInfo, hsr HttpServletRequest, appId String) : Response from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappAttemptsInfo : AppAttemptsInfo in method public getAppAttempts(hsr HttpServletRequest, appId String) : AppAttemptsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tappAttemptInfo : AppAttemptInfo in method public getAppAttempt(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : AppAttemptInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcontainerInfo : ContainerInfo in method public getContainer(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String, containerId String) : ContainerInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresponse : Response in method public signalToContainer(containerId String, command String, req HttpServletRequest) : Response from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic incrContainerReportFailedRetrieved() : void renamed to public incrGetContainerReportFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic incrContainerFailedRetrieved() : void renamed to public incrGetContainersFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getContainer() : void renamed to public getContainers() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getContainer(duration long) : void renamed to public getContainers(duration long) : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockGoodSubCluster",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetContainerFailed() : void renamed to public testGetContainersFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IOException to e : NotFoundException in method public getAppStatistics(hsr HttpServletRequest, stateQueries Set<String>, typeQueries Set<String>) : ApplicationStatisticsInfo from class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppActivities(hsr HttpServletRequest, appId String, time String, requestPriorities Set<String>, allocationRequestIds Set<String>, groupBy String, limit String, actions Set<String>, summarize boolean) : AppActivitiesInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppPriority(hsr HttpServletRequest, appId String) : AppPriority in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public updateApplicationPriority(targetPriority AppPriority, hsr HttpServletRequest, appId String) : Response in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppQueue(hsr HttpServletRequest, appId String) : AppQueue in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public updateAppQueue(targetQueue AppQueue, hsr HttpServletRequest, appId String) : Response in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppTimeouts(hsr HttpServletRequest, appId String) : AppTimeoutsInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public updateApplicationTimeout(appTimeout AppTimeoutInfo, hsr HttpServletRequest, appId String) : Response in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppAttempts(hsr HttpServletRequest, appId String) : AppAttemptsInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getAppAttempt(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : AppAttemptInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationId(applicationId String) : void extracted from public getContainer(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String, containerId String) : ContainerInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationAttemptId(appAttemptId String) : void extracted from public getAppAttempt(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String) : AppAttemptInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateApplicationAttemptId(appAttemptId String) : void extracted from public getContainer(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String, containerId String) : ContainerInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateContainerId(containerId String) : void extracted from public getContainer(req HttpServletRequest, res HttpServletResponse, appId String, appAttemptId String, containerId String) : ContainerInfo in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic validateContainerId(containerId String) : void extracted from public signalToContainer(containerId String, command String, req HttpServletRequest) : Response in class org.apache.hadoop.yarn.server.router.webapp.FederationInterceptorREST & moved to class org.apache.hadoop.yarn.server.router.RouterServerUtil",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tapplicationId : String in method public testGetContainer() : void from class org.apache.hadoop.yarn.server.router.webapp.TestFederationInterceptorREST",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tattemptId : String in method public testGetContainer() : void from class org.apache.hadoop.yarn.server.router.webapp.TestFederationInterceptorREST",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "1675a28e5a0b9258d08f5aa8c1a759d385be4429",
+      "url": "https://github.com/apache/hadoop/commit/1675a28e5a0b9258d08f5aa8c1a759d385be4429",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tseekTargetPos : long to nextReadPos : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected getSeekTargetPos() : long renamed to protected getNextReadPos() : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfilePosition : FilePosition in method protected ensureCurrentBuffer() : boolean from class org.apache.hadoop.fs.s3a.prefetch.S3AInMemoryInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfilePosition : FilePosition in method protected ensureCurrentBuffer() : boolean from class org.apache.hadoop.fs.s3a.prefetch.S3ACachingInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfilePosition : FilePosition in method protected ensureCurrentBuffer() : boolean from class org.apache.hadoop.fs.s3a.prefetch.S3ACachingInputStream",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected getSeekTargetPos() : long renamed to protected getNextReadPos() : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tseekTargetPos : long to nextReadPos : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfilePosition : FilePosition in method protected ensureCurrentBuffer() : boolean from class org.apache.hadoop.fs.s3a.prefetch.S3AInMemoryInputStream",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "213ea037589d8a69c34e1f98413ddbc06dfd42bf",
+      "url": "https://github.com/apache/hadoop/commit/213ea037589d8a69c34e1f98413ddbc06dfd42bf",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic retryOtherThanRemoteException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy renamed to public retryOtherThanRemoteAndSaslException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy in class org.apache.hadoop.io.retry.RetryPolicies",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteExceptionDependentRetry renamed to org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteAndSaslExceptionDependentRetry",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteExceptionDependentRetry renamed to org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteAndSaslExceptionDependentRetry",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic retryOtherThanRemoteException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy renamed to public retryOtherThanRemoteAndSaslException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy in class org.apache.hadoop.io.retry.RetryPolicies",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "e6ecc4f3e4433ae23fd745f6e0c641a019664253",
+      "url": "https://github.com/apache/hadoop/commit/e6ecc4f3e4433ae23fd745f6e0c641a019664253",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\ttask : LogDeletionTask to tasks : List<LogDeletionTask> in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttask : LogDeletionTask to tasks : List<LogDeletionTask> in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setupAndRunDeletionService() : LogAggregationTestcase renamed to public startDeletionService() : LogAggregationTestcase in class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate scheduleLogDeletionTask() : void renamed to private scheduleLogDeletionTasks() : void in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate scheduleLogDeletionTask() : void renamed to private scheduleLogDeletionTasks() : void in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setupAndRunDeletionService() : LogAggregationTestcase renamed to private setupDeletionService() : void in class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tLogAggregationTestcase to void in method private setupDeletionService() : void from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdeletionTask : AggregatedLogDeletionService.LogDeletionTask to tasks : List<LogDeletionTask> in method public runDeletionTask(retentionSeconds long) : LogAggregationTestcase from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdeletionTask : AggregatedLogDeletionService.LogDeletionTask to tasks : List<LogDeletionTask> in method public runDeletionTask(retentionSeconds long) : LogAggregationTestcase from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "5d08ffa769d9dd2ac533e1e9d249788f70191555",
+      "url": "https://github.com/apache/hadoop/commit/5d08ffa769d9dd2ac533e1e9d249788f70191555",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.AggregatedLogDeletionServiceForTest moved to org.apache.hadoop.yarn.logaggregation.testutils.AggregatedLogDeletionServiceForTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus moved to org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils from Class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPathWithFileStatus to LogAggregationTestcaseBuilder in method public create(conf Configuration) : LogAggregationTestcaseBuilder from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcaseBuilder",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcaseBuilder from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate REMOTE_LOG_ROOT : String from class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory to public REMOTE_LOG_ROOT : String from class org.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createPathWithFileStatusForAppId(remoteRootLogDir Path, appId ApplicationId, user String, suffix String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createPathWithFileStatusForAppId(remoteRootLogDir Path, appId ApplicationId, user String, suffix String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createEmptyFileStatus(modificationTime long, path Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createEmptyFileStatus(modificationTime long, path Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDirBucketDirLogPathWithFileStatus(remoteRootLogPath Path, user String, suffix String, appId ApplicationId, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createDirBucketDirLogPathWithFileStatus(remoteRootLogPath Path, user String, suffix String, appId ApplicationId, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileStatusWithLengthForFile(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileStatusWithLengthForFile(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileStatusWithLengthForDir(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileStatusWithLengthForDir(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createMockRMClient(finishedApplications List<ApplicationId>, runningApplications List<ApplicationId>) : ApplicationClientProtocol from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createMockRMClient(finishedApplications List<ApplicationId>, runningApplications List<ApplicationId>) : ApplicationClientProtocol from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createApplicationReportWithRunningApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createApplicationReportWithRunningApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createApplicationReportWithFinishedApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createApplicationReportWithFinishedApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttimeout : int to timeout : long in method public testDeletion() : void from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate fileStatus : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus to public fileStatus : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate enableFileControllers(fileControllers List<Class<? extends LogAggregationFileController>>, fileControllerNames List<String>) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory to public enableFileControllers(conf Configuration, fileControllers List<Class<? extends LogAggregationFileController>>, fileControllerNames List<String>) : void from class org.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic changeModificationTime(modTime long) : void from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus to public changeModificationTime(modTime long) : void from class org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage PathWithFileStatus(path Path, fileStatus FileStatus) from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus to public PathWithFileStatus(path Path, fileStatus FileStatus) from class org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate path : Path from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus to public path : Path from class org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate enableFcs(conf Configuration, remoteLogRoot String, fileControllers List<Class<? extends LogAggregationFileController>>, fileControllerNames List<String>) : void extracted from private enableFileControllers(fileControllers List<Class<? extends LogAggregationFileController>>, fileControllerNames List<String>) : void in class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory & moved to class org.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.AggregatedLogDeletionServiceForTest moved to org.apache.hadoop.yarn.logaggregation.testutils.AggregatedLogDeletionServiceForTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus moved to org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate REMOTE_LOG_ROOT : String from class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory to public REMOTE_LOG_ROOT : String from class org.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createPathWithFileStatusForAppId(remoteRootLogDir Path, appId ApplicationId, user String, suffix String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createPathWithFileStatusForAppId(remoteRootLogDir Path, appId ApplicationId, user String, suffix String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createEmptyFileStatus(modificationTime long, path Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createEmptyFileStatus(modificationTime long, path Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDirBucketDirLogPathWithFileStatus(remoteRootLogPath Path, user String, suffix String, appId ApplicationId, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createDirBucketDirLogPathWithFileStatus(remoteRootLogPath Path, user String, suffix String, appId ApplicationId, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileStatusWithLengthForFile(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileStatusWithLengthForFile(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createFileStatusWithLengthForDir(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createFileStatusWithLengthForDir(length long, modificationTime long, logPath Path) : FileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createMockRMClient(finishedApplications List<ApplicationId>, runningApplications List<ApplicationId>) : ApplicationClientProtocol from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createMockRMClient(finishedApplications List<ApplicationId>, runningApplications List<ApplicationId>) : ApplicationClientProtocol from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createApplicationReportWithRunningApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createApplicationReportWithRunningApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createApplicationReportWithFinishedApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createApplicationReportWithFinishedApplication() : GetApplicationReportResponse from class org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttimeout : int to timeout : long in method public testDeletion() : void from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdeletionSvc : AggregatedLogDeletionService to testcase : LogAggregationTestcase in method public testRefreshLogRetentionSettings() : void from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdeletionSvc : AggregatedLogDeletionService to testcase : LogAggregationTestcase in method public testRefreshLogRetentionSettings() : void from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDirLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService to public createDirLogPathWithFileStatus(baseDir Path, childDir String, modificationTime long) : PathWithFileStatus from class org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "c9a174a260577f6c0ff6ef1594eea1cb19d63012",
+      "url": "https://github.com/apache/hadoop/commit/c9a174a260577f6c0ff6ef1594eea1cb19d63012",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to void in method private validateAggregatedFileControllerName(name String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ts : LogAggregationFileController to controller : LogAggregationFileController in method public LogAggregationFileControllerFactory(conf Configuration) from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfileController : String to controllerName : String in method public LogAggregationFileControllerFactory(conf Configuration) from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tclassName : String to className : DeterminedControllerClassName in method public LogAggregationFileControllerFactory(conf Configuration) from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to void in method private validateAggregatedFileControllerName(name String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ts : LogAggregationFileController to controller : LogAggregationFileController in method public LogAggregationFileControllerFactory(conf Configuration) from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfileController : String to controllerName : String in method public LogAggregationFileControllerFactory(conf Configuration) from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsClass : Class<? extends LogAggregationFileController> to clazz : Class<? extends LogAggregationFileController> in method private createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ts : LogAggregationFileController to instance : LogAggregationFileController in method private createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tremoteDirStr : String to remoteDir : DeterminedLogAggregationRemoteDir in method private validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tremoteDirStr : String to remoteDir : DeterminedLogAggregationRemoteDir in method private validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ab8c36062047e5c4c76ab0399162af9765988690",
+      "url": "https://github.com/apache/hadoop/commit/ab8c36062047e5c4c76ab0399162af9765988690",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate isMetricsAvailable() : boolean extracted from private registerClusterResourceMetrics() : void in class org.apache.hadoop.yarn.sls.scheduler.SchedulerMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.NMRunner from Class org.apache.hadoop.yarn.sls.AMRunner",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.NMRunner from Class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate stjp : SynthTraceJobProducer from class org.apache.hadoop.yarn.sls.AMRunner to private stjp : SynthTraceJobProducer from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nmMap : Map<NodeId,NMSimulator> from class org.apache.hadoop.yarn.sls.SLSRunner to private nmMap : Map<NodeId,NMSimulator> from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate startNM() : void from class org.apache.hadoop.yarn.sls.SLSRunner to public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeSet : Set<NodeDetails> to nodeSet : Set<SLSRunner.NodeDetails> in method public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeDetails : NodeDetails to nodeDetails : SLSRunner.NodeDetails in method public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate waitForNodesRunning() : void from class org.apache.hadoop.yarn.sls.SLSRunner to package waitForNodesRunning() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate numNMs : int from class org.apache.hadoop.yarn.sls.SLSRunner to private numNMs : int from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate numRacks : int from class org.apache.hadoop.yarn.sls.SLSRunner to private numRacks : int from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nodeManagerResource : Resource from class org.apache.hadoop.yarn.sls.SLSRunner to private nodeManagerResource : Resource from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nodeFile : String from class org.apache.hadoop.yarn.sls.SLSRunner to private nodeFile : String from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate inputType : TraceType from class org.apache.hadoop.yarn.sls.SLSRunner to private inputType : TraceType from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\ttableMapping : String in method public setSimulationParams(inType TraceType, inTraces String[], nodes String, metricsOutputDir String, trackApps Set<String>, printsimulation boolean) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate isMetricsAvailable() : boolean extracted from private registerClusterResourceMetrics() : void in class org.apache.hadoop.yarn.sls.scheduler.SchedulerMetrics",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.NMRunner from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate stjp : SynthTraceJobProducer from class org.apache.hadoop.yarn.sls.AMRunner to private stjp : SynthTraceJobProducer from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nmMap : Map<NodeId,NMSimulator> from class org.apache.hadoop.yarn.sls.SLSRunner to private nmMap : Map<NodeId,NMSimulator> from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate startNM() : void from class org.apache.hadoop.yarn.sls.SLSRunner to public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeSet : Set<NodeDetails> to nodeSet : Set<SLSRunner.NodeDetails> in method public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeDetails : NodeDetails to nodeDetails : SLSRunner.NodeDetails in method public startNM() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate waitForNodesRunning() : void from class org.apache.hadoop.yarn.sls.SLSRunner to package waitForNodesRunning() : void from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate numNMs : int from class org.apache.hadoop.yarn.sls.SLSRunner to private numNMs : int from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate numRacks : int from class org.apache.hadoop.yarn.sls.SLSRunner to private numRacks : int from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nodeManagerResource : Resource from class org.apache.hadoop.yarn.sls.SLSRunner to private nodeManagerResource : Resource from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate nodeFile : String from class org.apache.hadoop.yarn.sls.SLSRunner to private nodeFile : String from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate inputType : TraceType from class org.apache.hadoop.yarn.sls.SLSRunner to private inputType : TraceType from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getNodeManagerResource() : Resource from class org.apache.hadoop.yarn.sls.SLSRunner to public getNodeManagerResource() : Resource from class org.apache.hadoop.yarn.sls.NMRunner",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\ttableMapping : String in method public setSimulationParams(inType TraceType, inTraces String[], nodes String, metricsOutputDir String, trackApps Set<String>, printsimulation boolean) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ffa0eab48867ebbb84a3d015a941b0c08fe0b61a",
+      "url": "https://github.com/apache/hadoop/commit/ffa0eab48867ebbb84a3d015a941b0c08fe0b61a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tjsonJob : Map<?,?> to jsonJob : Map<String,String> in class org.apache.hadoop.yarn.sls.AMDefinitionSLS.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tscheduler : AbstractYarnScheduler to scheduler : AbstractYarnScheduler<?,?> in class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttasks : List<Map<?,?>> to tasks : List<Map<String,String>> in method public getTaskContainers(jsonJob Map<String,?>, slsRunner SLSRunner) : List<ContainerSimulator> from class org.apache.hadoop.yarn.sls.AMDefinitionSLS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjsonTask : Map<?,?> to jsonTask : Map<String,String> in method public getTaskContainers(jsonJob Map<String,?>, slsRunner SLSRunner) : List<ContainerSimulator> from class org.apache.hadoop.yarn.sls.AMDefinitionSLS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjobIter : Iterator<Map> to jobIter : Iterator<Map<String,String>> in method private startAMFromSLSTrace(inputTrace String) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjsonJob : Map to jsonJob : Map<String,String> in method private startAMFromSLSTrace(inputTrace String) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjobIds : String to jobIds : String[] in method public run(argv String[]) : int from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tjsonJob : Map<?,?> to jsonJob : Map<String,String> in class org.apache.hadoop.yarn.sls.AMDefinitionSLS.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tscheduler : AbstractYarnScheduler to scheduler : AbstractYarnScheduler<?,?> in class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttasks : List<Map<?,?>> to tasks : List<Map<String,String>> in method public getTaskContainers(jsonJob Map<String,?>, slsRunner SLSRunner) : List<ContainerSimulator> from class org.apache.hadoop.yarn.sls.AMDefinitionSLS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjsonTask : Map<?,?> to jsonTask : Map<String,String> in method public getTaskContainers(jsonJob Map<String,?>, slsRunner SLSRunner) : List<ContainerSimulator> from class org.apache.hadoop.yarn.sls.AMDefinitionSLS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjobIter : Iterator<Map> to jobIter : Iterator<Map<String,String>> in method private startAMFromSLSTrace(inputTrace String) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjsonJob : Map to jsonJob : Map<String,String> in method private startAMFromSLSTrace(inputTrace String) : void from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "526142447abdee02b86820d884b577b23b769663",
+      "url": "https://github.com/apache/hadoop/commit/526142447abdee02b86820d884b577b23b769663",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from Class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from Class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate appQueueMap : Map<ApplicationAttemptId,String> from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private appQueueMap : Map<ApplicationAttemptId,String> from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage stopMetrics() : void extracted from public serviceStop() : void in class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage stopMetrics() : void extracted from public serviceStop() : void in class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic handle(schedulerEvent SchedulerEvent) : void extracted from public handle(schedulerEvent SchedulerEvent) : void in class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic handle(schedulerEvent SchedulerEvent) : void extracted from public handle(schedulerEvent SchedulerEvent) : void in class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic initMetrics(schedulerClass Class<? extends AbstractYarnScheduler>, conf Configuration) : void extracted from public setConf(conf Configuration) : void in class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic initMetrics(schedulerClass Class<? extends AbstractYarnScheduler>, conf Configuration) : void extracted from public setConf(conf Configuration) : void in class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic allocate(attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, schedulingRequests List<SchedulingRequest>, containerIds List<ContainerId>, blacklistAdditions List<String>, blacklistRemovals List<String>, updateRequests ContainerUpdates) : Allocation extracted from public allocate(attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, schedulingRequests List<SchedulingRequest>, containerIds List<ContainerId>, strings List<String>, strings2 List<String>, updateRequests ContainerUpdates) : Allocation in class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic allocate(attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, schedulingRequests List<SchedulingRequest>, containerIds List<ContainerId>, blacklistAdditions List<String>, blacklistRemovals List<String>, updateRequests ContainerUpdates) : Allocation extracted from public allocate(attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, schedulingRequests List<SchedulingRequest>, containerIds List<ContainerId>, blacklistAdditions List<String>, blacklistRemovals List<String>, updateRequests ContainerUpdates) : Allocation in class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler & moved to class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tqueueName : String to queue : String in method public handle(schedulerEvent SchedulerEvent) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate appQueueMap : Map<ApplicationAttemptId,String> from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private appQueueMap : Map<ApplicationAttemptId,String> from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate LOG : Logger from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private LOG : Logger from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private metricsON : boolean from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler to private tracker : Tracker from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private updateQueueWithAllocateRequest(allocation Allocation, attemptId ApplicationAttemptId, resourceRequests List<ResourceRequest>, containerIds List<ContainerId>) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate LOG : Logger from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private LOG : Logger from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private schedulerMetrics : SchedulerMetrics from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler to private preemptionContainerMap : Map<ContainerId,Resource> from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresource : Resource in method private updateQueueWithNodeUpdate(eventWrapper NodeUpdateSchedulerEventWrapper) : void from class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "708a0ce21bc1bd6164ff650e9104de70fe3f1dbb",
+      "url": "https://github.com/apache/hadoop/commit/708a0ce21bc1bd6164ff650e9104de70fe3f1dbb",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ts : S3AFileStatus to fileStatus : S3ALocatedFileStatus in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tit : RemoteIterator<S3AFileStatus> to it : RemoteIterator<S3ALocatedFileStatus> in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ts : S3AFileStatus to fileStatus : S3ALocatedFileStatus in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ts : S3AFileStatus to fileStatus : S3ALocatedFileStatus in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tit : RemoteIterator<S3AFileStatus> to it : RemoteIterator<S3ALocatedFileStatus> in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ts : S3AFileStatus to fileStatus : S3ALocatedFileStatus in method public getDirSummary(dir Path) : ContentSummary from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "8b8158f02df18424b2406fd66b34c1bdf3d7ab55",
+      "url": "https://github.com/apache/hadoop/commit/8b8158f02df18424b2406fd66b34c1bdf3d7ab55",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTrashRootLocalizedTrash() : void renamed to public testTrashRootForceInsideMountPoint() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH_DEFAULT : boolean to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT_DEFAULT : boolean in class org.apache.hadoop.fs.viewfs.Constants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.MockTrashRootFS renamed to org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.DeepTrashRootMockFS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH : String to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT : String in class org.apache.hadoop.fs.viewfs.Constants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage getTrashRootInFallBackFS() : Path extracted from public testTrashRootLocalizedTrash() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrashRoot : Path to targetFSTrashRoot : Path in method public getTrashRoot(path Path) : Path from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tuserTrash : Path to userTrashRoot : Path in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttrashRoots : List<FileStatus> to trashRoots : HashMap<Path,FileStatus> in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfile : FileStatus to trash : FileStatus in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttargetFsTrashRoots : FileStatus[] to mountPointTrashRoots : FileStatus[] in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tuserTrashRoot : Path to targetFSUserHomeTrashRoot : Path in method public testTrashRootForceInsideMountPoint() : void from class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\thomeDir : Path to expectedTrash : Path in method public testTrashRootForceInsideMountPoint() : void from class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.MockTrashRootFS renamed to org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.DeepTrashRootMockFS",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTrashRootLocalizedTrash() : void renamed to public testTrashRootForceInsideMountPoint() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage getTrashRootInFallBackFS() : Path extracted from public testTrashRootLocalizedTrash() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH : String to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT : String in class org.apache.hadoop.fs.viewfs.Constants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrashRoot : Path to targetFSTrashRoot : Path in method public getTrashRoot(path Path) : Path from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tuserTrash : Path to userTrashRoot : Path in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttrashRoots : List<FileStatus> to trashRoots : HashMap<Path,FileStatus> in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmountPointRoot : Path to mountTargetPath : String in method public getTrashRoot(path Path) : Path from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmountPointRoot : Path to mountTargetPath : String in method public getTrashRoot(path Path) : Path from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmountPoints : MountPoint[] to mountPoints : List<InodeTree.MountPoint<FileSystem>> in method public getTrashRoots(allUsers boolean) : Collection<FileStatus> from class org.apache.hadoop.fs.viewfs.ViewFileSystem",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "672e380c4f6ffcb0a6fee6d8263166e16b4323c2",
+      "url": "https://github.com/apache/hadoop/commit/672e380c4f6ffcb0a6fee6d8263166e16b4323c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperations",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem.OperationCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.impl.OperationCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.test.MinimalOperationCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperationsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method private removeKeysS3(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean, quiet boolean) : DeleteObjectsResult inlined to public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic EXECUTOR_THREAD_COUNT : int from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public EXECUTOR_THREAD_COUNT : int from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate EXECUTOR : ListeningExecutorService from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to private EXECUTOR : ListeningExecutorService from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate put(fs FileSystem, path Path, text String) : CompletableFuture<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to private put(fs FileSystem, path Path, text String) : CompletableFuture<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int) : List<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public createFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int) : List<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createDirsAndFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int, paths List<Path>, dirs List<Path>) : List<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public createDirsAndFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int, paths List<Path>, dirs List<Path>) : List<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem.OperationCallbacksImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean, quiet boolean) : DeleteObjectsResult inlined to public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method private removeKeysS3(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperationsImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.impl.OperationCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperations",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.test.MinimalOperationCallbacks",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic EXECUTOR_THREAD_COUNT : int from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public EXECUTOR_THREAD_COUNT : int from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate EXECUTOR : ListeningExecutorService from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to private EXECUTOR : ListeningExecutorService from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate put(fs FileSystem, path Path, text String) : CompletableFuture<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to private put(fs FileSystem, path Path, text String) : CompletableFuture<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int) : List<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public createFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int) : List<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createDirsAndFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int, paths List<Path>, dirs List<Path>) : List<Path> from class org.apache.hadoop.fs.s3a.impl.ITestPartialRenamesDeletes to public createDirsAndFiles(fs FileSystem, destDir Path, depth int, fileCount int, dirCount int, paths List<Path>, dirs List<Path>) : List<Path> from class org.apache.hadoop.fs.s3a.S3ATestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic partition(originalList List<T>, pageSize int) : List<List<T>> extracted from private removeKeysS3(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean, quiet boolean) : DeleteObjectsResult in class org.apache.hadoop.fs.s3a.S3AFileSystem & moved to class org.apache.hadoop.util.Lists",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : DeleteObjectsResult to result : List<List<T>> in method public partition(originalList List<T>, pageSize int) : List<List<T>> from class org.apache.hadoop.util.Lists",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "db36747e831f7045a3e1a0ca390c944981dd141a",
+      "url": "https://github.com/apache/hadoop/commit/db36747e831f7045a3e1a0ca390c944981dd141a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tserverToComponent : HashMap<String,String> to serverToComponent : Map<String,String> in class org.apache.hadoop.http.HttpRequestLog",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tserverToComponent : HashMap<String,String> to serverToComponent : Map<String,String> in class org.apache.hadoop.http.HttpRequestLog",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tlogWriter : AsyncRequestLogWriter to writer : Slf4jRequestLogWriter in method public getRequestLog(name String) : RequestLog from class org.apache.hadoop.http.HttpRequestLog",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlogWriter : AsyncRequestLogWriter to writer : Slf4jRequestLogWriter in method public getRequestLog(name String) : RequestLog from class org.apache.hadoop.http.HttpRequestLog",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ffee92bbf1a69c4d5fc5e0f46486e26a38bf766c",
+      "url": "https://github.com/apache/hadoop/commit/ffee92bbf1a69c4d5fc5e0f46486e26a38bf766c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tAtomicInteger to int in method public getQueueWaitTime() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tAtomicInteger to int in method public getQueueLength() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tqueueWaitTime : AtomicInteger to queueWaitTime : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tqueueLength : AtomicInteger to queueLength : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate ratio(a Resource, b Resource, isDominantShare boolean) : float extracted from public ratio(a Resource, b Resource) : float in class org.apache.hadoop.yarn.util.resource.DominantResourceCalculator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClusterNode to Properties in method package setQueueLength(qLength int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClusterNode to Properties in method package setQueueWaitTime(wTime int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClusterNode to Properties in method package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClusterNode to Properties in method package updateTimestamp() : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties from Class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState, allocatedResource Resource, nodeResource Resource) : RMNode extracted from private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState) : RMNode in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.TestNodeQueueLoadMonitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodes : Object[] to nodes : ClusterNode[] in method protected sortNodes(excludeFullNodes boolean) : List<ClusterNode> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setNodeLabels(labelsToAdd Collection<String>) : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setQueueWaitTime(wTime int) : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package setQueueWaitTime(wTime int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setQueueLength(qLength int) : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package setQueueLength(qLength int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic updateTimestamp() : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package updateTimestamp() : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateNodeLocal(enrichedAsk EnrichedResourceRequest, nodeLocation String, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateRackLocal(enrichedAsk EnrichedResourceRequest, rackLocation String, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateAny(enrichedAsk EnrichedResourceRequest, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate ratio(a Resource, b Resource, isDominantShare boolean) : float extracted from public ratio(a Resource, b Resource) : float in class org.apache.hadoop.yarn.util.resource.DominantResourceCalculator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tqueueLength : AtomicInteger to queueLength : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tqueueWaitTime : AtomicInteger to queueWaitTime : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic updateTimestamp() : ClusterNode inlined to public ClusterNode(nodeId NodeId) in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tAtomicInteger to int in method public getQueueLength() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tAtomicInteger to int in method public getQueueWaitTime() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState, allocatedResource Resource, nodeResource Resource) : RMNode extracted from private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState) : RMNode in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.TestNodeQueueLoadMonitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClusterNode to Properties in method package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodes : Object[] to nodes : ClusterNode[] in method protected sortNodes(excludeFullNodes boolean) : List<ClusterNode> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setNodeLabels(labelsToAdd Collection<String>) : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tj : int to nodesIdx : int in method protected sortNodes(excludeFullNodes boolean) : List<ClusterNode> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setQueueCapacity(capacity int) : ClusterNode from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode to package setQueueCapacity(capacity int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getCapability() : Resource extracted from protected sortNodes(excludeFullNodes boolean) : List<ClusterNode> in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.NodeQueueLoadMonitor & moved to class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateNodeLocal(enrichedAsk EnrichedResourceRequest, nodeLocation String, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateRackLocal(enrichedAsk EnrichedResourceRequest, rackLocation String, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresourceRequest : ResourceRequest in method private allocateAny(enrichedAsk EnrichedResourceRequest, toAllocate int, rmIdentifier long, appParams AllocationParams, idCounter ContainerIdGenerator, blacklist Set<String>, id ApplicationAttemptId, userName String, allocations Map<Resource,List<Allocation>>) : List<Container> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.CentralizedOpportunisticContainerAllocator",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

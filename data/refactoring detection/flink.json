@@ -1,0 +1,2604 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "5a4e0ea31aef51dfc50b9c401c91c7b869a154c4",
+      "url": "https://github.com/apache/flink/commit/5a4e0ea31aef51dfc50b9c401c91c7b869a154c4",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic createCustomParallelismDecider(parallelismFunction Function<JobVertexID,Integer>) : VertexParallelismAndInputInfosDecider extracted from public createCustomParallelismDecider(expectParallelism int) : VertexParallelismAndInputInfosDecider in class org.apache.flink.runtime.scheduler.DefaultSchedulerBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConfiguration() : Configuration extracted from private executeJob(isFineGrained Boolean) : void in class org.apache.flink.test.scheduling.AdaptiveBatchSchedulerITCase",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic createCustomParallelismDecider(parallelismFunction Function<JobVertexID,Integer>) : VertexParallelismAndInputInfosDecider extracted from public createCustomParallelismDecider(expectParallelism int) : VertexParallelismAndInputInfosDecider in class org.apache.flink.runtime.scheduler.DefaultSchedulerBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConfiguration() : Configuration extracted from private executeJob(isFineGrained Boolean) : void in class org.apache.flink.test.scheduling.AdaptiveBatchSchedulerITCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsource1 : JobVertex to source : JobVertex in method package testDecideParallelismForForwardTarget() : void from class org.apache.flink.runtime.scheduler.adaptivebatch.AdaptiveBatchSchedulerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsource2 : JobVertex to map : JobVertex in method package testDecideParallelismForForwardTarget() : void from class org.apache.flink.runtime.scheduler.adaptivebatch.AdaptiveBatchSchedulerTest",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "e69e6514d0b901eb03f1a8bfc499680d076248c9",
+      "url": "https://github.com/apache/flink/commit/e69e6514d0b901eb03f1a8bfc499680d076248c9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage testTableConstraintsValidated() : void renamed to package testUniqueTableConstraint() : void in class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsql : String to sql1 : String in method package testTableConstraints() : void from class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\texpected : String to expected1 : String in method package testTableConstraints() : void from class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tconstraints : List<SqlTableConstraint> to fullConstraints : List<SqlTableConstraint> in method public validateAndChangeColumnNullability(tableConstraints List<SqlTableConstraint>, columnList SqlNodeList) : void from class org.apache.flink.sql.parser.SqlConstraintValidator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage testTableConstraintsValidated() : void renamed to package testUniqueTableConstraint() : void in class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsql : String to sql1 : String in method package testTableConstraints() : void from class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\texpected : String to expected1 : String in method package testTableConstraints() : void from class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tconstraints : List<SqlTableConstraint> to fullConstraints : List<SqlTableConstraint> in method public validateAndChangeColumnNullability(tableConstraints List<SqlTableConstraint>, columnList SqlNodeList) : void from class org.apache.flink.sql.parser.SqlConstraintValidator",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "615fde6667a9a57be8cf308b1118171f8c812f13",
+      "url": "https://github.com/apache/flink/commit/615fde6667a9a57be8cf308b1118171f8c812f13",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.DefaultContextUtils moved to org.apache.flink.table.client.gateway.DefaultContextUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.SingleSessionManager moved to org.apache.flink.table.client.gateway.SingleSessionManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogCollectResult moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogResult moved to org.apache.flink.table.client.gateway.result.ChangelogResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.CollectResultBase moved to org.apache.flink.table.client.gateway.result.CollectResultBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.DynamicResult moved to org.apache.flink.table.client.gateway.result.DynamicResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectResultBase moved to org.apache.flink.table.client.gateway.result.MaterializedCollectResultBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedResult moved to org.apache.flink.table.client.gateway.result.MaterializedResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.ExecutorImplITCase moved to org.apache.flink.table.client.gateway.ExecutorImplITCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.BaseMaterializedResultTest moved to org.apache.flink.table.client.gateway.result.BaseMaterializedResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogCollectResultTest moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResultTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.SingleSessionManager moved to org.apache.flink.table.client.gateway.SingleSessionManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogCollectResult moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogResult moved to org.apache.flink.table.client.gateway.result.ChangelogResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.CollectResultBase moved to org.apache.flink.table.client.gateway.result.CollectResultBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.DynamicResult moved to org.apache.flink.table.client.gateway.result.DynamicResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectResultBase moved to org.apache.flink.table.client.gateway.result.MaterializedCollectResultBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedResult moved to org.apache.flink.table.client.gateway.result.MaterializedResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.ExecutorImplITCase moved to org.apache.flink.table.client.gateway.ExecutorImplITCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.BaseMaterializedResultTest moved to org.apache.flink.table.client.gateway.result.BaseMaterializedResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.ChangelogCollectResultTest moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResultTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.table.client.gateway.local.DefaultContextUtils moved to org.apache.flink.table.client.gateway.DefaultContextUtils",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "cf358d7d55ca48b9d25e5217006898e3070a85ad",
+      "url": "https://github.com/apache/flink/commit/cf358d7d55ca48b9d25e5217006898e3070a85ad",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.connector.file.table.batch.compact.CompactFileUtils moved to org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tconfiguredParallelism : Integer to configuredSinkParallelism : Integer in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataStreamSink<Row> to DataStreamSink<?> in method private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileConfigBuilder OutputFileConfig.OutputFileConfigBuilder, stagingParentDir String, sd StorageDescriptor, tableProps Properties, isToLocal boolean, overwrite boolean, sinkParallelism int) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getBucketsBuilder(path org.apache.flink.core.fs.Path, recordWriterFactory HiveWriterFactory, sd StorageDescriptor, fileNaming OutputFileConfig, conf org.apache.flink.configuration.Configuration) : BucketsBuilder<RowData,String,? extends BucketsBuilder<RowData,?,?>> extracted from private createStreamSink(providerContext ProviderContext, dataStream DataStream<RowData>, sd StorageDescriptor, tableProps Properties, recordWriterFactory HiveWriterFactory, fileNamingBuilder OutputFileConfig.OutputFileConfigBuilder, parallelism int) : DataStreamSink<?> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createBatchNoCompactSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, sinkParallelism int) : DataStreamSink<Row> extracted from private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, parallelism int) : DataStreamSink<Row> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tconfiguredParallelism : Integer to configuredSinkParallelism : Integer in method public createDynamicTableSink(context Context) : DynamicTableSink from class org.apache.flink.connectors.hive.HiveDynamicTableFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tparallelism : int to sinkParallelism : int in method private consume(providerContext ProviderContext, dataStream DataStream<RowData>, isBounded boolean, converter DataStructureConverter) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate doSingleFileMove(src Path, dst Path) : boolean from class org.apache.flink.connector.file.table.stream.compact.CompactOperator to private doSingleFileMove(fileSystem FileSystem, src Path, dst Path) : boolean from class org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttarget : Path to targetPath : Path in method public processElement(element StreamRecord<CoordinatorOutput>) : void from class org.apache.flink.connector.file.table.stream.compact.CompactOperator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.connector.file.table.batch.compact.CompactFileUtils moved to org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getBucketsBuilder(path Path, recordWriterFactory HiveWriterFactory, sd StorageDescriptor, fileNaming OutputFileConfig, conf Configuration) : BucketsBuilder<RowData,String,? extends BucketsBuilder<RowData,?,?>> extracted from private createStreamSink(providerContext ProviderContext, dataStream DataStream<RowData>, sd StorageDescriptor, tableProps Properties, recordWriterFactory HiveWriterFactory, fileNamingBuilder OutputFileConfig.OutputFileConfigBuilder, parallelism int) : DataStreamSink<?> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createBatchNoCompactSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, sinkParallelism int) : DataStreamSink<Row> extracted from private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, parallelism int) : DataStreamSink<Row> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataStreamSink<Row> to DataStreamSink<?> in method private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileConfigBuilder OutputFileConfig.OutputFileConfigBuilder, stagingParentDir String, sd StorageDescriptor, tableProps Properties, isToLocal boolean, overwrite boolean, sinkParallelism int) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tconfiguredParallelism : Integer to configuredSinkParallelism : Integer in class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tconfiguredParallelism : Integer to configuredSinkParallelism : Integer in method public createDynamicTableSink(context Context) : DynamicTableSink from class org.apache.flink.connectors.hive.HiveDynamicTableFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tparallelism : int to sinkParallelism : int in method private consume(providerContext ProviderContext, dataStream DataStream<RowData>, isBounded boolean, converter DataStructureConverter) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate doSingleFileMove(src Path, dst Path) : boolean from class org.apache.flink.connector.file.table.stream.compact.CompactOperator to private doSingleFileMove(fileSystem FileSystem, src Path, dst Path) : boolean from class org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "5afc301bc6445bd5bbd9cb521dc20a808a67694e",
+      "url": "https://github.com/apache/flink/commit/5afc301bc6445bd5bbd9cb521dc20a808a67694e",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.TestSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelModificationSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.table.planner.operations.SqlToOperationConverterTest renamed to org.apache.flink.table.planner.operations.SqlDdlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest from Class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.operations.SqlOtherOperationConverterTest from Class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tupdateRelational : RelRoot to deleteRelational : RelRoot in method private convertDelete(sqlDelete SqlDelete) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic before() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public before() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic after() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public after() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate parse(sql String, planner FlinkPlannerImpl, parser CalciteParser) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected parse(sql String, planner FlinkPlannerImpl, parser CalciteParser) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate parse(sql String) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected parse(sql String) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPlannerBySqlDialect(sqlDialect SqlDialect) : FlinkPlannerImpl from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected getPlannerBySqlDialect(sqlDialect SqlDialect) : FlinkPlannerImpl from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getParserBySqlDialect(sqlDialect SqlDialect) : CalciteParser from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected getParserBySqlDialect(sqlDialect SqlDialect) : CalciteParser from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithUnion() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithUnion() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithExplainDetails() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithExplainDetails() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlInsertWithStaticPartition() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlInsertWithStaticPartition() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlInsertWithDynamicTableOptions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlInsertWithDynamicTableOptions() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testDynamicTableWithInvalidOptions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testDynamicTableWithInvalidOptions() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBeginStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testBeginStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testEnd() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testEnd() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate assertExplainDetails(operation Operation) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private assertExplainDetails(operation Operation) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testDelete() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testDelete() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkExplainSql(sql String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private checkExplainSql(sql String) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkDeleteFromFilterOperation(operation Operation, expectedFilters String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private checkDeleteFromFilterOperation(operation Operation, expectedFilters String) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseCatalog() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseCatalog() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseDatabase() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseDatabase() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseDatabaseWithException() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseDatabaseWithException() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testLoadModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testLoadModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUnloadModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUnloadModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseOneModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseOneModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseMultipleModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseMultipleModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowTables() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowTables() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowFullModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowFullModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowFunctions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowFunctions() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testAddJar() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testAddJar() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testRemoveJar() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testRemoveJar() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowJars() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowJars() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSet() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testReset() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testReset() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSetCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSetCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testHelpCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testHelpCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testClearCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testClearCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testQuitCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testQuitCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate assertShowFunctions(sql String, expectedSummary String, expectedScope FunctionScope) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private assertShowFunctions(sql String, expectedSummary String, expectedScope ShowFunctionsOperation.FunctionScope) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate checkScanContext(context RowLevelModificationScanContext, tableIdentifier ObjectIdentifier) : void extracted from public applyRowLevelDelete(context RowLevelModificationScanContext) : RowLevelDeleteInfo in class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink & moved to class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getChangelogMode(requestedMode ChangelogMode) : ChangelogMode from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.TestSink to public getChangelogMode(requestedMode ChangelogMode) : ChangelogMode from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic asSummaryString() : String from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink to public asSummaryString() : String from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tpublic asSummaryString() : String from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.TestSink to public asSummaryString() : String from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelModificationSink",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.table.planner.operations.SqlToOperationConverterTestBase from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trequireCols : List<String> to requireColsForDelete : List<String> in method public createDynamicTableSink(context Context) : DynamicTableSink from class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelModificationSink",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.table.planner.operations.SqlToOperationConverterTest renamed to org.apache.flink.table.planner.operations.SqlDdlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.operations.SqlOtherOperationConverterTest from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tupdateRelational : RelRoot to deleteRelational : RelRoot in method private convertDelete(sqlDelete SqlDelete) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic before() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public before() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic after() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public after() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate parse(sql String, planner FlinkPlannerImpl, parser CalciteParser) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected parse(sql String, planner FlinkPlannerImpl, parser CalciteParser) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate parse(sql String) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected parse(sql String) : Operation from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPlannerBySqlDialect(sqlDialect SqlDialect) : FlinkPlannerImpl from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected getPlannerBySqlDialect(sqlDialect SqlDialect) : FlinkPlannerImpl from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getParserBySqlDialect(sqlDialect SqlDialect) : CalciteParser from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to protected getParserBySqlDialect(sqlDialect SqlDialect) : CalciteParser from class org.apache.flink.table.planner.operations.SqlToOperationConverterTestBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithUnion() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithUnion() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainWithExplainDetails() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainWithExplainDetails() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlInsertWithStaticPartition() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlInsertWithStaticPartition() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlInsertWithDynamicTableOptions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlInsertWithDynamicTableOptions() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testDynamicTableWithInvalidOptions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testDynamicTableWithInvalidOptions() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testBeginStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testBeginStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testEnd() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testEnd() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlRichExplainWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlRichExplainWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testExplainDetailsWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testExplainDetailsWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate assertExplainDetails(operation Operation) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private assertExplainDetails(operation Operation) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithStatementSet() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithInsert() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithInsert() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSqlExecuteWithSelect() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSqlExecuteWithSelect() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testDelete() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testDelete() : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkExplainSql(sql String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private checkExplainSql(sql String) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkDeleteFromFilterOperation(operation Operation, expectedFilters String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private checkDeleteFromFilterOperation(operation Operation, expectedFilters String) : void from class org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseCatalog() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseCatalog() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseDatabase() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseDatabase() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseDatabaseWithException() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseDatabaseWithException() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testLoadModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testLoadModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUnloadModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUnloadModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseOneModule() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseOneModule() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testUseMultipleModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testUseMultipleModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowTables() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowTables() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowFullModules() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowFullModules() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowFunctions() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowFunctions() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testAddJar() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testAddJar() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testRemoveJar() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testRemoveJar() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testShowJars() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testShowJars() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSet() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSet() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testReset() : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testReset() : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSetCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testSetCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testHelpCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testHelpCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testClearCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testClearCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testQuitCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to public testQuitCommands(command String) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate assertShowFunctions(sql String, expectedSummary String, expectedScope FunctionScope) : void from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest to private assertShowFunctions(sql String, expectedSummary String, expectedScope ShowFunctionsOperation.FunctionScope) : void from class org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate checkScanContext(context RowLevelModificationScanContext, tableIdentifier ObjectIdentifier) : void extracted from public applyRowLevelDelete(context RowLevelModificationScanContext) : RowLevelDeleteInfo in class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink & moved to class org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink from classes [org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink, org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsDeletePushDownSink]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.table.planner.operations.SqlToOperationConverterTestBase from classes [org.apache.flink.table.planner.operations.SqlToOperationConverterTest]",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "95df4e726f3862d3be69a7cf753acd7890bb905d",
+      "url": "https://github.com/apache/flink/commit/95df4e726f3862d3be69a7cf753acd7890bb905d",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission.SQLJobSubmissionBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientMode to SQLJobClientMode in method public getClientMode() : SQLJobClientMode from class org.apache.flink.test.util.SQLJobSubmission",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tport : String to port : int in class org.apache.flink.tests.util.flink.FlinkDistribution.TestSqlGatewayRestClient",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate submitSQLJobWithSQLClient(job SQLJobSubmission, commands List<String>, timeout Duration) : void extracted from public submitSQLJob(job SQLJobSubmission, timeout Duration) : void in class org.apache.flink.tests.util.flink.FlinkDistribution",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tport : String to port : int in class org.apache.flink.tests.util.flink.FlinkDistribution.TestSqlGatewayRestClient",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate submitSQLJobWithSQLClient(job SQLJobSubmission, commands List<String>, timeout Duration) : void extracted from public submitSQLJob(job SQLJobSubmission, timeout Duration) : void in class org.apache.flink.tests.util.flink.FlinkDistribution",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testHiveserver2ExecuteStatement() : void renamed to public testHiveServer2ExecuteStatement() : void in class org.apache.flink.table.gateway.SqlGatewayE2ECase",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission.SQLJobSubmissionBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientMode to SQLJobClientMode in method public getClientMode() : SQLJobClientMode from class org.apache.flink.test.util.SQLJobSubmission",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "83d8e29f6d11354eafcfd5428535a65efffc3a80",
+      "url": "https://github.com/apache/flink/commit/83d8e29f6d11354eafcfd5428535a65efffc3a80",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from Class org.apache.flink.runtime.taskmanager.TaskTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate awaitTriggerLatch() : void from class org.apache.flink.runtime.taskmanager.TaskTest to package awaitTriggerLatch() : void from class org.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.runtime.taskmanager.TaskTest.AwaitLatchInvokable from classes [org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInInvoke, org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInRestore]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from classes [org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingWithTrigger, org.apache.flink.runtime.taskmanager.TaskTest.InvokableWithExceptionOnTrigger, org.apache.flink.runtime.taskmanager.TaskTest.InvokableWithCancelTaskExceptionInInvoke, org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInCancel, org.apache.flink.runtime.taskmanager.TaskTest.InvokableInterruptibleSharedLockInInvokeAndCancel, org.apache.flink.runtime.taskmanager.TaskTest.InvokableUnInterruptibleBlockingInvoke]",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.taskmanager.TaskTest.AwaitLatchInvokable from class org.apache.flink.runtime.taskmanager.TaskTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from class org.apache.flink.runtime.taskmanager.TaskTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate awaitTriggerLatch() : void from class org.apache.flink.runtime.taskmanager.TaskTest to package awaitTriggerLatch() : void from class org.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.runtime.taskmanager.TaskTest.AwaitLatchInvokable from classes [org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInInvoke, org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInRestore]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from classes [org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingWithTrigger, org.apache.flink.runtime.taskmanager.TaskTest.InvokableWithExceptionOnTrigger, org.apache.flink.runtime.taskmanager.TaskTest.InvokableWithCancelTaskExceptionInInvoke, org.apache.flink.runtime.taskmanager.TaskTest.InvokableBlockingInCancel, org.apache.flink.runtime.taskmanager.TaskTest.InvokableInterruptibleSharedLockInInvokeAndCancel, org.apache.flink.runtime.taskmanager.TaskTest.InvokableUnInterruptibleBlockingInvoke]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate awaitLatch : OneShotLatch from class org.apache.flink.runtime.taskmanager.TaskTest to package awaitLatch : OneShotLatch from class org.apache.flink.runtime.taskmanager.TaskTest.AwaitLatchInvokable",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate triggerLatch : OneShotLatch from class org.apache.flink.runtime.taskmanager.TaskTest to package triggerLatch : OneShotLatch from class org.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "8a1f66ca827163b32387e0043f4362921f6c11a9",
+      "url": "https://github.com/apache/flink/commit/8a1f66ca827163b32387e0043f4362921f6c11a9",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getBuiltInNativeAggFunction(name String) : Optional<FunctionDefinition> extracted from public getFunctionDefinition(name String) : Optional<FunctionDefinition> in class org.apache.flink.table.module.hive.HiveModule",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.connectors.hive.HiveDialectQueryPlanTest from Class org.apache.flink.connectors.hive.HiveDialectAggITCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSumAggFunctionPlan() : void from class org.apache.flink.connectors.hive.HiveDialectAggITCase to public testSumAggFunctionPlan() : void from class org.apache.flink.connectors.hive.HiveDialectQueryPlanTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate explainSql(sql String) : String from class org.apache.flink.connectors.hive.HiveDialectAggITCase to private explainSql(sql String) : String from class org.apache.flink.connectors.hive.HiveDialectQueryPlanTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getBuiltInNativeAggFunction(name String) : Optional<FunctionDefinition> extracted from public getFunctionDefinition(name String) : Optional<FunctionDefinition> in class org.apache.flink.table.module.hive.HiveModule",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.connectors.hive.HiveDialectQueryPlanTest from class org.apache.flink.connectors.hive.HiveDialectAggITCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testSumAggFunctionPlan() : void from class org.apache.flink.connectors.hive.HiveDialectAggITCase to public testSumAggFunctionPlan() : void from class org.apache.flink.connectors.hive.HiveDialectQueryPlanTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate explainSql(sql String) : String from class org.apache.flink.connectors.hive.HiveDialectAggITCase to private explainSql(sql String) : String from class org.apache.flink.connectors.hive.HiveDialectQueryPlanTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d9f9b55f82dfbc1676572cc36b718a99001497f8",
+      "url": "https://github.com/apache/flink/commit/d9f9b55f82dfbc1676572cc36b718a99001497f8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithDimSideJoinKeyChanged() : void renamed to public testDPPWithDimSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorToReorderTableWithStats() : void renamed to public testDPPWithJoinReorderTableWithStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithFactSideJoinKeyChanged() : void renamed to public testDPPWithFactSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorToReorderTableWithoutStats() : void renamed to public testDPPWithJoinReorderTableWithoutStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithJoinKeysNotIncludePartitionKeys() : void renamed to public testDPPWithJoinKeysNotIncludePartitionKeys() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker from Class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker from Class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isSuitableFilter(filterCondition RexNode) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private isSuitableFilter(filterCondition RexNode) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getSuitableDynamicFilteringFieldsInFactSide(tableSource DynamicTableSource, candidateFields List<String>) : List<String> from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private getSuitableDynamicFilteringFieldsInFactSide(tableSource DynamicTableSource, candidateFields List<String>) : List<String> from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isNewSource(scanTableSource ScanTableSource) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private isNewSource(scanTableSource ScanTableSource) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getInputIndices(projects List<RexNode>, joinKeys ImmutableIntList) : ImmutableIntList from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private getInputIndices(projects List<RexNode>, joinKeys ImmutableIntList) : ImmutableIntList from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDynamicFilteringConnector(dimSide RelNode, dynamicFilteringFieldIndices List<Integer>) : BatchPhysicalDynamicFilteringDataCollector from class org.apache.flink.table.planner.plan.rules.physical.batch.DynamicPartitionPruningRule to private createDynamicFilteringConnector(dimSide RelNode, dynamicFilteringFieldIndices List<Integer>) : BatchPhysicalDynamicFilteringDataCollector from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate ignoreExchange(dimSide RelNode) : RelNode from class org.apache.flink.table.planner.plan.rules.physical.batch.DynamicPartitionPruningRule to private ignoreExchange(dimSide RelNode) : RelNode from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate hasFilter : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideFactors to private hasFilter : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorToReorderTableWithoutStats() : void renamed to public testDPPWithJoinReorderTableWithoutStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorToReorderTableWithStats() : void renamed to public testDPPWithJoinReorderTableWithStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithFactSideJoinKeyChanged() : void renamed to public testDPPWithFactSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithDimSideJoinKeyChanged() : void renamed to public testDPPWithDimSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testDPPFactorWithJoinKeysNotIncludePartitionKeys() : void renamed to public testDPPWithJoinKeysNotIncludePartitionKeys() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to RelNode in method private convertDppFactSide(rel RelNode, joinKeys ImmutableIntList, dimSide RelNode, dimSideJoinKey ImmutableIntList) : RelNode from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isSuitableFilter(filterCondition RexNode) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private isSuitableFilter(filterCondition RexNode) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getSuitableDynamicFilteringFieldsInFactSide(tableSource DynamicTableSource, candidateFields List<String>) : List<String> from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private getSuitableDynamicFilteringFieldsInFactSide(tableSource DynamicTableSource, candidateFields List<String>) : List<String> from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isNewSource(scanTableSource ScanTableSource) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private isNewSource(scanTableSource ScanTableSource) : boolean from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getInputIndices(projects List<RexNode>, joinKeys ImmutableIntList) : ImmutableIntList from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private getInputIndices(projects List<RexNode>, joinKeys ImmutableIntList) : ImmutableIntList from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDynamicFilteringConnector(dimSide RelNode, dynamicFilteringFieldIndices List<Integer>) : BatchPhysicalDynamicFilteringDataCollector from class org.apache.flink.table.planner.plan.rules.physical.batch.DynamicPartitionPruningRule to private createDynamicFilteringConnector(dimSide RelNode, dynamicFilteringFieldIndices List<Integer>) : BatchPhysicalDynamicFilteringDataCollector from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate ignoreExchange(dimSide RelNode) : RelNode from class org.apache.flink.table.planner.plan.rules.physical.batch.DynamicPartitionPruningRule to private ignoreExchange(dimSide RelNode) : RelNode from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate visitDimSide(rel RelNode, dimSideFactors DppDimSideFactors) : void from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils to private visitDimSide(rel RelNode) : void from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tacceptedFilterFields : List<String> in method private convertDppFactSide(rel RelNode, joinKeys ImmutableIntList, dimSide RelNode, dimSideJoinKey ImmutableIntList) : RelNode from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d5b8ad7672cd981cdbc757549ed2ab1fcf007500",
+      "url": "https://github.com/apache/flink/commit/d5b8ad7672cd981cdbc757549ed2ab1fcf007500",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier, ifExists boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getOriginColumnIdentifier() : SqlIdentifier renamed to public getOldColumnIdentifier() : SqlIdentifier in class org.apache.flink.sql.parser.ddl.SqlAlterTableRenameColumn",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tchangeBuilders : List<Function<ResolvedSchema,TableChange>> to changeBuilders : List<Function<ResolvedSchema,List<TableChange>>> in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate buildNewColumnFromOriginColumn(builder Schema.Builder, originColumn Schema.UnresolvedColumn, columnName String) : void renamed to private buildNewColumnFromOldColumn(builder Schema.Builder, oldColumn Schema.UnresolvedColumn, columnName String) : void in class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tTableColumn to TableColumn.PhysicalColumn in method private toTableColumn(tableColumn SqlTableColumn, sqlValidator SqlValidator) : TableColumn.PhysicalColumn from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic getComment(column SqlTableColumn) : String extracted from public convertAddReplaceColumns(tableIdentifier ObjectIdentifier, addReplaceColumns SqlAddReplaceColumns, catalogTable CatalogTable, sqlValidator SqlValidator) : Operation in class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\talteredTable : CatalogBaseTable to alteredTable : ResolvedCatalogBaseTable<?> in method private convertAlterTable(input HiveParserASTNode) : Operation from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcatalogBaseTable : CatalogBaseTable to catalogBaseTable : ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\toldTable : CatalogTable to oldTable : ResolvedCatalogTable in method private convertAlterTableChangeCol(alteredTable ResolvedCatalogBaseTable<?>, qualified String[], ast HiveParserASTNode) : Operation from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginType : AbstractDataType<?> to oldType : AbstractDataType<?> in method private updatePrimaryKeyNullability(columnName String) : void from class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginPrimaryKeyNames : List<String> to oldPrimaryKeyNames : List<String> in method private buildUpdatedPrimaryKey(builder Schema.Builder, oldTable ResolvedCatalogTable, columnRenamer Function<String,String>) : void from class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginColumnName : String to oldColumnName : String in method public applySchemaChange(renameColumn SqlAlterTableRenameColumn, oldTable ResolvedCatalogTable, tableChangeCollector List<TableChange>) : Schema from class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnewTableColumn : TableColumn to newTableColumn : TableColumn.PhysicalColumn in method public convertChangeColumn(tableIdentifier ObjectIdentifier, changeColumn SqlChangeColumn, catalogTable ResolvedCatalogTable, sqlValidator SqlValidator) : Operation from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getComment(column SqlTableColumn) : String extracted from package getComment(column SqlTableColumn) : String in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter & moved to class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier, ifExists boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getOriginColumnIdentifier() : SqlIdentifier renamed to public getOldColumnIdentifier() : SqlIdentifier in class org.apache.flink.sql.parser.ddl.SqlAlterTableRenameColumn",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tchangeBuilders : List<Function<ResolvedSchema,TableChange>> to changeBuilders : List<Function<ResolvedSchema,List<TableChange>>> in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate buildNewColumnFromOriginColumn(builder Schema.Builder, originColumn Schema.UnresolvedColumn, columnName String) : void renamed to private buildNewColumnFromOldColumn(builder Schema.Builder, oldColumn Schema.UnresolvedColumn, columnName String) : void in class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic getComment(column SqlTableColumn) : String extracted from public convertAddReplaceColumns(tableIdentifier ObjectIdentifier, addReplaceColumns SqlAddReplaceColumns, catalogTable CatalogTable, sqlValidator SqlValidator) : Operation in class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tTableColumn to TableColumn.PhysicalColumn in method private toTableColumn(tableColumn SqlTableColumn, sqlValidator SqlValidator) : TableColumn.PhysicalColumn from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\talteredTable : CatalogBaseTable to alteredTable : ResolvedCatalogBaseTable<?> in method private convertAlterTable(input HiveParserASTNode) : Operation from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcatalogBaseTable : CatalogBaseTable to catalogBaseTable : ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\toldTable : CatalogTable to oldTable : ResolvedCatalogTable in method private convertAlterTableChangeCol(alteredTable ResolvedCatalogBaseTable<?>, qualified String[], ast HiveParserASTNode) : Operation from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginType : AbstractDataType<?> to oldType : AbstractDataType<?> in method private updatePrimaryKeyNullability(columnName String) : void from class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginPrimaryKeyNames : List<String> to oldPrimaryKeyNames : List<String> in method private buildUpdatedPrimaryKey(builder Schema.Builder, oldTable ResolvedCatalogTable, columnRenamer Function<String,String>) : void from class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\toriginColumnName : String to oldColumnName : String in method public applySchemaChange(renameColumn SqlAlterTableRenameColumn, oldTable ResolvedCatalogTable, tableChangeCollector List<TableChange>) : Schema from class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnewTableColumn : TableColumn to newTableColumn : TableColumn.PhysicalColumn in method public convertChangeColumn(tableIdentifier ObjectIdentifier, changeColumn SqlChangeColumn, catalogTable ResolvedCatalogTable, sqlValidator SqlValidator) : Operation from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getComment(column SqlTableColumn) : String extracted from package getComment(column SqlTableColumn) : String in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter & moved to class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "0a9bfeafd570f2e534f4d7f63d26853f734dc3c2",
+      "url": "https://github.com/apache/flink/commit/0a9bfeafd570f2e534f4d7f63d26853f734dc3c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpendingWorkerCounter : PendingWorkerCounter to pendingWorkerCounter : WorkerCounter in class org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpendingWorkerNums : Map<WorkerResourceSpec,Integer> to workerNums : Map<WorkerResourceSpec,Integer> in class org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.resourcemanager.active.PendingWorkerCounter renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testPendingWorkerCounterIncreaseAndDecrease() : void renamed to public testWorkerCounterIncreaseAndDecrease() : void in class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testPendingWorkerCounterDecreaseOnZero() : void renamed to public testWorkerCounterDecreaseOnZero() : void in class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.resourcemanager.active.PendingWorkerCounterTest renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcounter : PendingWorkerCounter to counter : WorkerCounter in method public testWorkerCounterIncreaseAndDecrease() : void from class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcounter : PendingWorkerCounter to counter : WorkerCounter in method public testWorkerCounterDecreaseOnZero() : void from class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.resourcemanager.active.PendingWorkerCounter renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpendingWorkerCounter : PendingWorkerCounter to pendingWorkerCounter : WorkerCounter in class org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpendingWorkerNums : Map<WorkerResourceSpec,Integer> to workerNums : Map<WorkerResourceSpec,Integer> in class org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcounter : PendingWorkerCounter to counter : WorkerCounter in method public testWorkerCounterIncreaseAndDecrease() : void from class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcounter : PendingWorkerCounter to counter : WorkerCounter in method public testWorkerCounterDecreaseOnZero() : void from class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "f82be845f3f673264a13eaf29e11b19e00f37222",
+      "url": "https://github.com/apache/flink/commit/f82be845f3f673264a13eaf29e11b19e00f37222",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeGauge.SizeSupplier moved to org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeSupplier",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeGauge.SizeSupplier moved to org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeSupplier",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "35498b29836b0704ef092637d9728ce27f42d277",
+      "url": "https://github.com/apache/flink/commit/35498b29836b0704ef092637d9728ce27f42d277",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tEXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tEXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttmpFolder : TemporaryFolder to tmpFolder : Path in class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTEMPORARY_FOLDER : TemporaryFolder to temporaryFolder : Path in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentWithBlobServerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTEMPORARY_FOLDER : TemporaryFolder to temporaryFolder : Path in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentWithBlobServerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject[] to Collection<Boolean> in method public parameters() : Collection<Boolean> from class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tEXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tEXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttmpFolder : TemporaryFolder to tmpFolder : Path in class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject[] to Collection<Boolean> in method public parameters() : Collection<Boolean> from class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "ee4d5b8d65768776f070ccc0c28e3fe3da8e10c6",
+      "url": "https://github.com/apache/flink/commit/ee4d5b8d65768776f070ccc0c28e3fe3da8e10c6",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeMiniCluster(configuration Configuration) : PerJobMiniClusterFactory extracted from private initializeMiniCluster() : PerJobMiniClusterFactory in class org.apache.flink.client.program.PerJobMiniClusterFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfinalMaximumParallelism : int in method private getMiniClusterConfig(maximumParallelism int) : MiniClusterConfiguration from class org.apache.flink.client.program.PerJobMiniClusterFactory",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initializeMiniCluster(configuration Configuration) : PerJobMiniClusterFactory extracted from private initializeMiniCluster() : PerJobMiniClusterFactory in class org.apache.flink.client.program.PerJobMiniClusterFactoryTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfinalMaximumParallelism : int in method private getMiniClusterConfig(maximumParallelism int) : MiniClusterConfiguration from class org.apache.flink.client.program.PerJobMiniClusterFactory",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "b4bad50d77cb21abff697fc12f6586b67f6622ff",
+      "url": "https://github.com/apache/flink/commit/b4bad50d77cb21abff697fc12f6586b67f6622ff",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,DelegationTokenProvider> to Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdelegationTokenProviders : Map<String,DelegationTokenProvider> to delegationTokenProviders : Map<String,HadoopDelegationTokenProvider> in class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.DelegationTokenProvider renamed to org.apache.flink.runtime.security.token.HadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.ExceptionThrowingDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.ExceptionThrowingHadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.TestDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.TestHadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tserviceLoader : ServiceLoader<DelegationTokenProvider> to serviceLoader : ServiceLoader<HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tproviders : Map<String,DelegationTokenProvider> to providers : Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprovider : DelegationTokenProvider to provider : HadoopDelegationTokenProvider in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.DelegationTokenProvider renamed to org.apache.flink.runtime.security.token.HadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.ExceptionThrowingDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.ExceptionThrowingHadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.security.token.TestDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.TestHadoopDelegationTokenProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdelegationTokenProviders : Map<String,DelegationTokenProvider> to delegationTokenProviders : Map<String,HadoopDelegationTokenProvider> in class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,DelegationTokenProvider> to Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tserviceLoader : ServiceLoader<DelegationTokenProvider> to serviceLoader : ServiceLoader<HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tproviders : Map<String,DelegationTokenProvider> to providers : Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprovider : DelegationTokenProvider to provider : HadoopDelegationTokenProvider in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "1d28a978b6ba52850bdb320b661a61b584627f6a",
+      "url": "https://github.com/apache/flink/commit/1d28a978b6ba52850bdb320b661a61b584627f6a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,DependencyTree> in method package parseDependencyTreeOutput(lines Stream<String>) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,DependencyTree> in method public parseDependencyTreeOutput(buildOutput Path) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSet<Dependency> to DependencyTree in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseCopyDependencyBlock(block Iterator<String>) : Set<Dependency> in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependenciesByModule : Map<String,Set<Dependency>> to dependenciesByModule : Map<String,DependencyTree> in method private parseMavenOutput(path Path) : ParseResult from class org.apache.flink.tools.ci.suffixcheck.ScalaSuffixChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependencies : Collection<Dependency> to dependencies : List<Dependency> in method private parseMavenOutput(path Path) : ParseResult from class org.apache.flink.tools.ci.suffixcheck.ScalaSuffixChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : Map<String,Set<Dependency>> to result : Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependenciesByModule : Map<String,Set<Dependency>> to dependenciesByModule : Map<String,DependencyTree> in method package testTreeParsing() : void from class org.apache.flink.tools.ci.utils.dependency.DependencyParserTreeTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tline : String in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tdependency : Dependency in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseCopyDependencyBlock(block Iterator<String>) : Set<Dependency> in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,DependencyTree> in method public parseDependencyTreeOutput(buildOutput Path) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,DependencyTree> in method package parseDependencyTreeOutput(lines Stream<String>) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSet<Dependency> to DependencyTree in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<String,Set<Dependency>> to Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependenciesByModule : Map<String,Set<Dependency>> to dependenciesByModule : Map<String,DependencyTree> in method private parseMavenOutput(path Path) : ParseResult from class org.apache.flink.tools.ci.suffixcheck.ScalaSuffixChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependencies : Collection<Dependency> to dependencies : List<Dependency> in method private parseMavenOutput(path Path) : ParseResult from class org.apache.flink.tools.ci.suffixcheck.ScalaSuffixChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : Map<String,Set<Dependency>> to result : Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependenciesByModule : Map<String,Set<Dependency>> to dependenciesByModule : Map<String,DependencyTree> in method package testTreeParsing() : void from class org.apache.flink.tools.ci.utils.dependency.DependencyParserTreeTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdependencies : Set<Dependency> to dependencies : DependencyTree in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tline : String in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "69526c56a10b836e2ca28443398a8e5ea1411855",
+      "url": "https://github.com/apache/flink/commit/69526c56a10b836e2ca28443398a8e5ea1411855",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic ofConfigurationChange(configkey String, change MapDifference.ValueDifference<String>) : String renamed to public ofConfigurationChanged(configKey String, change MapDifference.ValueDifference<String>) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic ofConfigurationKeyAndValue(configkey String, configValue String) : String renamed to public ofConfigurationAdded(configKey String, configValue String) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic ofConfigurationKeyAndValue(configkey String, configValue String) : String renamed to public ofConfigurationAdded(configKey String, configValue String) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic ofConfigurationChange(configkey String, change MapDifference.ValueDifference<String>) : String renamed to public ofConfigurationChanged(configKey String, change MapDifference.ValueDifference<String>) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "a2b402d66de9ecde75881796a6d7ee09fc4d6963",
+      "url": "https://github.com/apache/flink/commit/a2b402d66de9ecde75881796a6d7ee09fc4d6963",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage testConsumeBuffer(compressionFactoryName String) : void renamed to package testCompressBufferAndConsume(compressionFactoryName String) : void in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView() : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionViewInternalOperation renamed to org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionConsumerInternalOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionViewOperationsMap : Map<Integer,HsSubpartitionViewInternalOperations> to subpartitionViewOperationsMap : List<Map<HsConsumerId,HsSubpartitionConsumerInternalOperations>> in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionViewOperation : TestingSubpartitionViewInternalOperation to subpartitionViewOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewInternalOperations renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerInternalOperations",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionLock : Object to subpartitionLock : ReentrantReadWriteLock in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView(bufferAvailabilityListener BufferAvailabilityListener) : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionView renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic registerSubpartitionView(subpartitionId int, viewOperations HsSubpartitionViewInternalOperations) : HsDataView renamed to public registerNewConsumer(subpartitionId int, consumerId HsConsumerId, viewOperations HsSubpartitionConsumerInternalOperations) : HsDataView in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionOperation : TestingSubpartitionViewInternalOperation to subpartitionOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\toperations : HsSubpartitionViewInternalOperations to operations : HsSubpartitionConsumerInternalOperations in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataType to Buffer.DataType in method private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tOptional<BufferAndBacklog> to Optional<ResultSubpartition.BufferAndBacklog> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataType to Buffer.DataType in method public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager from Class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest from Class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewOperation : HsSubpartitionViewInternalOperations to viewOperation : HsSubpartitionConsumerInternalOperations in method public getNextBufferIndexToConsume(consumerId HsConsumerId) : List<Integer> from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method public createSubpartitionView(subpartitionId int, availabilityListener BufferAvailabilityListener) : ResultSubpartitionView from class org.apache.flink.runtime.io.network.partition.hybrid.HsResultPartition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testConsumeWhileReleaseNoDeadlock() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier1 : TestingSubpartitionViewInternalOperation to viewNotifier1 : TestingSubpartitionConsumerInternalOperation in method package testReadBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier2 : TestingSubpartitionViewInternalOperation to viewNotifier2 : TestingSubpartitionConsumerInternalOperation in method package testReadBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testReadBufferCompressed(compressionFactoryName String) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier1 : TestingSubpartitionViewInternalOperation to viewNotifier1 : TestingSubpartitionConsumerInternalOperation in method package testCompareTo() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier2 : TestingSubpartitionViewInternalOperation to viewNotifier2 : TestingSubpartitionConsumerInternalOperation in method package testCompareTo() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testConsumeBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testPeekNextToConsumeDataTypeOrConsumeBufferThrowException() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testPeekNextToConsumeDataType() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testSubpartitionReaderRegisterMultipleTimes() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromDisk() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testDeadLock(dataFilePath Path) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromDiskNextDataTypeIsNone() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromMemory() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferThrowException() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferZeroBacklog() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testNotifyDataAvailableNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testNotifyDataAvailableNotNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetZeroBacklogNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogPositiveCredit() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogNonPositiveCreditNextIsData() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogNonPositiveCreditNextIsEvent() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testRelease() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\treleaseDataViewFuture : CompletableFuture<Void> to releaseDiskViewFuture : CompletableFuture<Void> in method package testRelease() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetConsumingOffset() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testSetDataViewRepeatedly() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic consumeBuffer(toConsumeIndex int) : Optional<BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnextDataType : DataType to nextDataType : Buffer.DataType in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbufferAndNextDataType : Optional<Tuple2<HsBufferContext,DataType>> to bufferAndNextDataType : Optional<Tuple2<HsBufferContext,Buffer.DataType>> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic peekNextToConsumeDataType(nextToConsumeIndex int) : DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkFirstUnConsumedBufferIndex(expectedBufferIndex int) : boolean from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private checkFirstUnConsumedBufferIndex(expectedBufferIndex int) : boolean from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getBacklog() : int from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public getBacklog() : int from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate unConsumedBuffers : Deque<HsBufferContext> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private unConsumedBuffers : Deque<HsBufferContext> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbufferOpt : Optional<BufferAndBacklog> to bufferOpt : Optional<ResultSubpartition.BufferAndBacklog> in method package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionViewInternalOperations : HsSubpartitionViewInternalOperations to consumerViewMap : Map<HsConsumerId,HsSubpartitionConsumerInternalOperations> in method public onDataAvailable(subpartitionId int, consumerIds Collection<HsConsumerId>) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionViewInternalOperations : HsSubpartitionViewInternalOperations to consumerViewMap : Map<HsConsumerId,HsSubpartitionConsumerInternalOperations> in method public onDataAvailable(subpartitionId int, consumerIds Collection<HsConsumerId>) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionView renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewInternalOperations renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerInternalOperations",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionViewInternalOperation renamed to org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionConsumerInternalOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionViewOperationsMap : Map<Integer,HsSubpartitionViewInternalOperations> to subpartitionViewOperationsMap : List<Map<HsConsumerId,HsSubpartitionConsumerInternalOperations>> in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\toperations : HsSubpartitionViewInternalOperations to operations : HsSubpartitionConsumerInternalOperations in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionLock : Object to subpartitionLock : ReentrantReadWriteLock in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionViewOperation : TestingSubpartitionViewInternalOperation to subpartitionViewOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsubpartitionOperation : TestingSubpartitionViewInternalOperation to subpartitionOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage testConsumeBuffer(compressionFactoryName String) : void renamed to package testCompressBufferAndConsume(compressionFactoryName String) : void in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView() : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView(bufferAvailabilityListener BufferAvailabilityListener) : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataType to Buffer.DataType in method public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tOptional<BufferAndBacklog> to Optional<ResultSubpartition.BufferAndBacklog> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDataType to Buffer.DataType in method private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewOperation : HsSubpartitionViewInternalOperations to viewOperation : HsSubpartitionConsumerInternalOperations in method public getNextBufferIndexToConsume(consumerId HsConsumerId) : List<Integer> from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method public createSubpartitionView(subpartitionId int, availabilityListener BufferAvailabilityListener) : ResultSubpartitionView from class org.apache.flink.runtime.io.network.partition.hybrid.HsResultPartition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testConsumeWhileReleaseNoDeadlock() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier1 : TestingSubpartitionViewInternalOperation to viewNotifier1 : TestingSubpartitionConsumerInternalOperation in method package testReadBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier2 : TestingSubpartitionViewInternalOperation to viewNotifier2 : TestingSubpartitionConsumerInternalOperation in method package testReadBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testReadBufferCompressed(compressionFactoryName String) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier1 : TestingSubpartitionViewInternalOperation to viewNotifier1 : TestingSubpartitionConsumerInternalOperation in method package testCompareTo() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier2 : TestingSubpartitionViewInternalOperation to viewNotifier2 : TestingSubpartitionConsumerInternalOperation in method package testCompareTo() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testConsumeBuffer() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testPeekNextToConsumeDataTypeOrConsumeBufferThrowException() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testPeekNextToConsumeDataType() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tviewNotifier : TestingSubpartitionViewInternalOperation to viewNotifier : TestingSubpartitionConsumerInternalOperation in method package testSubpartitionReaderRegisterMultipleTimes() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromDisk() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testDeadLock(dataFilePath Path) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromDiskNextDataTypeIsNone() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferFromMemory() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferThrowException() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetNextBufferZeroBacklog() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testNotifyDataAvailableNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testNotifyDataAvailableNotNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetZeroBacklogNeedNotify() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogPositiveCredit() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogNonPositiveCreditNextIsData() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetAvailabilityAndBacklogNonPositiveCreditNextIsEvent() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testRelease() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\treleaseDataViewFuture : CompletableFuture<Void> to releaseDiskViewFuture : CompletableFuture<Void> in method package testRelease() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testGetConsumingOffset() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionView : HsSubpartitionView to subpartitionView : HsSubpartitionConsumer in method package testSetDataViewRepeatedly() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic consumeBuffer(toConsumeIndex int) : Optional<BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnextDataType : DataType to nextDataType : Buffer.DataType in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbufferAndNextDataType : Optional<Tuple2<HsBufferContext,DataType>> to bufferAndNextDataType : Optional<Tuple2<HsBufferContext,Buffer.DataType>> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic peekNextToConsumeDataType(nextToConsumeIndex int) : DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkFirstUnConsumedBufferIndex(expectedBufferIndex int) : boolean from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private checkFirstUnConsumedBufferIndex(expectedBufferIndex int) : boolean from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getBacklog() : int from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public getBacklog() : int from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate unConsumedBuffers : Deque<HsBufferContext> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to private unConsumedBuffers : Deque<HsBufferContext> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tbufferOpt : Optional<BufferAndBacklog> to bufferOpt : Optional<ResultSubpartition.BufferAndBacklog> in method package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionViewInternalOperations : HsSubpartitionViewInternalOperations to consumerView : HsSubpartitionConsumerInternalOperations in method public onDataAvailable(subpartitionId int, consumerIds Collection<HsConsumerId>) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionViewInternalOperations : HsSubpartitionViewInternalOperations to consumerView : HsSubpartitionConsumerInternalOperations in method public onDataAvailable(subpartitionId int, consumerIds Collection<HsConsumerId>) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\treleaseSubpartitionReader : boolean to releaseDiskView : boolean in method private releaseInternal(throwable Throwable) : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumer",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic releaseDataView() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager to public releaseDataView() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testPeekNextToConsumeDataTypeNotMeetBufferIndexToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testPeekNextToConsumeDataTypeNotMeetBufferIndexToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testPeekNextToConsumeDataTypeNotMeetBufferIndexToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testPeekNextToConsumeDataTypeNotMeetBufferIndexToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testPeekNextToConsumeDataTypeTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testPeekNextToConsumeDataTypeTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testPeekNextToConsumeDataTypeTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testPeekNextToConsumeDataTypeTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testConsumeBufferFirstUnConsumedBufferIndexNotMeetNextToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testConsumeBufferFirstUnConsumedBufferIndexNotMeetNextToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferFirstUnConsumedBufferIndexNotMeetNextToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferFirstUnConsumedBufferIndexNotMeetNextToConsume() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage testConsumeBufferTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest to package testConsumeBufferTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferTrimHeadingReleasedBuffers() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubpartitionMemoryDataManager : HsSubpartitionMemoryDataManager to subpartitionConsumerMemoryDataManager : HsSubpartitionConsumerMemoryDataManager in method package testConsumeBufferReturnSlice() : void from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "b9e3dfe0ae78aaedf5cfa645c307cc3e52168db5",
+      "url": "https://github.com/apache/flink/commit/b9e3dfe0ae78aaedf5cfa645c307cc3e52168db5",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.rpc.RpcGatewayUtils from Class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate extractRpcTimeout(parameterAnnotations Annotation[][], args Object[], defaultTimeout Duration) : Duration from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler to public extractRpcTimeout(parameterAnnotations Annotation[][], args Object[], defaultTimeout Duration) : Duration from class org.apache.flink.runtime.rpc.RpcGatewayUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isRpcTimeout(annotations Annotation[]) : boolean from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler to private isRpcTimeout(annotations Annotation[]) : boolean from class org.apache.flink.runtime.rpc.RpcGatewayUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.flink.runtime.rpc.RpcGatewayUtils from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate extractRpcTimeout(parameterAnnotations Annotation[][], args Object[], defaultTimeout Duration) : Duration from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler to public extractRpcTimeout(parameterAnnotations Annotation[][], args Object[], defaultTimeout Duration) : Duration from class org.apache.flink.runtime.rpc.RpcGatewayUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isRpcTimeout(annotations Annotation[]) : boolean from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler to private isRpcTimeout(annotations Annotation[]) : boolean from class org.apache.flink.runtime.rpc.RpcGatewayUtils",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d3513d98953b0922e3dc753ef90806ed4e264926",
+      "url": "https://github.com/apache/flink/commit/d3513d98953b0922e3dc753ef90806ed4e264926",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate testGenerateEnrichedResourceProfile(resultPartitionType ResultPartitionType, group0MemorySize MemorySize, group1MemorySize MemorySize) : void extracted from public testGenerateEnrichedResourceProfile() : void in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate createBatchGraph(slotSharingGroups List<SlotSharingGroup>, parallelisms List<Integer>) : JobGraph inlined to private createDynamicExecutionGraph(slotSharingGroups List<SlotSharingGroup>, defaultMaxParallelism int) : DefaultExecutionGraph in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate createBatchGraph(slotSharingGroups List<SlotSharingGroup>, parallelisms List<Integer>) : JobGraph inlined to private createDynamicExecutionGraph(slotSharingGroups List<SlotSharingGroup>, defaultMaxParallelism int) : DefaultExecutionGraph in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate testGenerateEnrichedResourceProfile(resultPartitionType ResultPartitionType, group0MemorySize MemorySize, group1MemorySize MemorySize) : void extracted from public testGenerateEnrichedResourceProfile() : void in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

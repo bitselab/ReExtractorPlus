@@ -1,0 +1,1733 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "8969225bd2307ef46b9169d69b5446e361cd7740",
+      "url": "https://github.com/apache/lucene-solr/commit/8969225bd2307ef46b9169d69b5446e361cd7740",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.util.StressRamUsageEstimator renamed to org.apache.lucene.util.TestStressRamUsageEstimator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.util.StressRamUsageEstimator renamed to org.apache.lucene.util.TestStressRamUsageEstimator",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "fe33a436a084a43b3fdceb7beea662730c535337",
+      "url": "https://github.com/apache/lucene-solr/commit/fe33a436a084a43b3fdceb7beea662730c535337",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate basicAuthCredentialsToAuthorizationString(user String, pass String) : String extracted from private setBasicAuthHeader(solrRequest SolrRequest, req Request) : void in class org.apache.solr.client.solrj.impl.Http2SolrClient",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic setup(client Http2SolrClient, basicAuthUser String, basicAuthPass String) : void extracted from public setup(client Http2SolrClient) : void in class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver from Class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate defaultParams : SolrParams from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory to public defaultParams : SolrParams from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate basicAuthCredentialsToAuthorizationString(user String, pass String) : String extracted from private setBasicAuthHeader(solrRequest SolrRequest, req Request) : void in class org.apache.solr.client.solrj.impl.Http2SolrClient",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic setup(client Http2SolrClient, basicAuthUser String, basicAuthPass String) : void extracted from public setup(client Http2SolrClient) : void in class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate defaultParams : SolrParams from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory to public defaultParams : SolrParams from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "99a4bbf3a0ab937cc66a9f256223f7b7bfaf9427",
+      "url": "https://github.com/apache/lucene-solr/commit/99a4bbf3a0ab937cc66a9f256223f7b7bfaf9427",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int renamed to private anyMismatchNgram(n int, s1 String, s2 String, weighted boolean) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage ngramScore(n int, s1 String, s2 String, weighted boolean) : int extracted from private ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tns : int in method private ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int from class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int renamed to package ngramScore(n int, s1 String, s2 String, weighted boolean) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "342ea856d38edccb9d845c64caf4af8d7a38d23d",
+      "url": "https://github.com/apache/lucene-solr/commit/342ea856d38edccb9d845c64caf4af8d7a38d23d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsecondStageAffixFlags : char[] to secondStageSuffixFlags : char[] in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage isSecondStageAffix(flag char) : boolean renamed to package isSecondStageSuffix(flag char) : boolean in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tstage2Flags : Set<Character> to prefixContFlags : Set<Character> in method private readAffixFile(affixStream InputStream, decoder CharsetDecoder, flags FlagEnumerator) : void from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage isSecondStageAffix(flag char) : boolean renamed to package isSecondStageSuffix(flag char) : boolean in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsecondStageAffixFlags : char[] to secondStageSuffixFlags : char[] in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "3ddc3c04a5d42165fb54b1542a3c0c5e187be5e3",
+      "url": "https://github.com/apache/lucene-solr/commit/3ddc3c04a5d42165fb54b1542a3c0c5e187be5e3",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate checkPerformance(code String, wordCount int) : void renamed to private checkAnalysisPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate loadDictionary(code String) : Dictionary extracted from private checkPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\troots : TreeSet<Weighted<Root<String>>> to roots : PriorityQueue<Weighted<Root<String>>> in method private findSimilarDictionaryEntries(word String, originalCase WordCase) : List<Weighted<Root<String>>> from class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate checkPerformance(code String, wordCount int) : void renamed to private checkAnalysisPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate loadDictionary(code String) : Dictionary extracted from private checkPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\troots : TreeSet<Weighted<Root<String>>> to roots : PriorityQueue<Weighted<Root<String>>> in method private findSimilarDictionaryEntries(word String, originalCase WordCase) : List<Weighted<Root<String>>> from class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "58e3b7a8542fa8d94a77215fdf13d575a5657546",
+      "url": "https://github.com/apache/lucene-solr/commit/58e3b7a8542fa8d94a77215fdf13d575a5657546",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to int in method private writeNormalizedWordEntry(reuse StringBuilder, writer ByteSequencesWriter, line String) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tIndexOutput to int in method private mergeDictionaries(dictionaries List<InputStream>, decoder CharsetDecoder, output IndexOutput) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic stringHashCode(chars char[], offset int, length int) : int extracted from public hashCode() : int in class org.apache.lucene.util.CharsRef",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic stringHashCode(chars char[], offset int, length int) : int extracted from private getHashCode(text char[], offset int, len int) : int in class org.apache.lucene.analysis.CharArrayMap & moved to class org.apache.lucene.util.CharsRef",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tprime : int in method public hashCode() : int from class org.apache.lucene.util.CharsRef",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to int in method private writeNormalizedWordEntry(reuse StringBuilder, writer ByteSequencesWriter, line String) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tIndexOutput to int in method private mergeDictionaries(dictionaries List<InputStream>, decoder CharsetDecoder, output IndexOutput) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic stringHashCode(chars char[], offset int, length int) : int extracted from public hashCode() : int in class org.apache.lucene.util.CharsRef",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ef920388e62464c7fee2397f8310f080de61a43a",
+      "url": "https://github.com/apache/lucene-solr/commit/ef920388e62464c7fee2397f8310f080de61a43a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate stemHasFlags(stem CharsRef, flags char[]) : boolean renamed to private hasAllFlags(root Root<?>, flags char[]) : boolean in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate hasAllFlags(flags char[], forms IntsRef) : boolean inlined to private hasAllFlags(root Root<?>, flags char[]) : boolean in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttailStem : Root<CharsRef> to lastRoot : Root<CharsRef> in method private checkCompoundsAfter(originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate hasForceUCaseProblem(root Root<?>, originalCase WordCase) : boolean extracted from private checkCompoundsAfter(originalCase WordCase, prev CompoundPart) : boolean in class org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttailStem : Root<CharsRef> to lastRoot : Root<CharsRef> in method private checkCompoundsAfter(originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "url": "https://github.com/apache/lucene-solr/commit/e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.response.XSLTResponseWriter moved to org.apache.solr.scripting.xslt.XSLTResponseWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.xslt.TransformerProvider moved to org.apache.solr.scripting.xslt.TransformerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.scripting.xslt.XSLTConstants from Class org.apache.solr.response.XSLTResponseWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.scripting.xslt.XSLTOutputWriterTest from Class org.apache.solr.OutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tleaderXsltDir : File to leaderFooDir : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tleaderXsl : File to leaderBarFile : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfollowerXsltDir : File to followerFooDir : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfollowerXsl : File to followerBarFile : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : UpdateRequestHandler to handler : XSLTUpdateRequestHandler in method public testUpdate() : void from class org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloader : XMLLoader to loader : ContentStreamLoader in method public testEntities() : void from class org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testTrivialXsltWriter() : void from class org.apache.solr.OutputWriterTest to public testTrivialXsltWriter() : void from class org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testTrivialXsltWriterInclude() : void from class org.apache.solr.OutputWriterTest to public testTrivialXsltWriterInclude() : void from class org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic XSLT_CACHE_DEFAULT : int from class org.apache.solr.response.XSLTResponseWriter to package XSLT_CACHE_DEFAULT : int from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate XSLT_CACHE_PARAM : String from class org.apache.solr.response.XSLTResponseWriter to package XSLT_CACHE_PARAM : String from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage getTransformer(xslt String, request SolrQueryRequest) : Transformer from class org.apache.solr.handler.loader.XMLLoader to package getTransformer(request SolrQueryRequest, xslt String, xsltCacheLifetimeSeconds int) : Transformer from class org.apache.solr.scripting.xslt.TransformerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUBCLASS",
+          "description": "Extract Subclass\torg.apache.solr.scripting.xslt.XSLTUpdateRequestHandler.XsltXMLLoader from class org.apache.solr.handler.loader.XMLLoader",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.response.XSLTResponseWriter moved to org.apache.solr.scripting.xslt.XSLTResponseWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.xslt.TransformerProvider moved to org.apache.solr.scripting.xslt.TransformerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.scripting.xslt.XSLTConstants from class org.apache.solr.handler.loader.XMLLoader",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.scripting.xslt.XSLTOutputWriterTest from class org.apache.solr.OutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.scripting.xslt.XSLTConstants from class org.apache.solr.response.XSLTResponseWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tleaderXsltDir : File to leaderFooDir : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tleaderXsl : File to leaderBarFile : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfollowerXsltDir : File to followerFooDir : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfollowerXsl : File to followerBarFile : File in method public doTestIndexAndConfigReplication() : void from class org.apache.solr.handler.TestReplicationHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : UpdateRequestHandler to handler : XSLTUpdateRequestHandler in method public testUpdate() : void from class org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloader : XMLLoader to loader : ContentStreamLoader in method public testEntities() : void from class org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testTrivialXsltWriter() : void from class org.apache.solr.OutputWriterTest to public testTrivialXsltWriter() : void from class org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testTrivialXsltWriterInclude() : void from class org.apache.solr.OutputWriterTest to public testTrivialXsltWriterInclude() : void from class org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic XSLT_CACHE_DEFAULT : int from class org.apache.solr.response.XSLTResponseWriter to package XSLT_CACHE_DEFAULT : int from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate XSLT_CACHE_PARAM : String from class org.apache.solr.response.XSLTResponseWriter to package XSLT_CACHE_PARAM : String from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage getTransformer(xslt String, request SolrQueryRequest) : Transformer from class org.apache.solr.handler.loader.XMLLoader to package getTransformer(request SolrQueryRequest, xslt String, xsltCacheLifetimeSeconds int) : Transformer from class org.apache.solr.scripting.xslt.TransformerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic CONTEXT_TRANSFORMER_KEY : String from class org.apache.solr.handler.loader.XMLLoader to package CONTEXT_TRANSFORMER_KEY : String from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic XSLT_CACHE_DEFAULT : int from class org.apache.solr.handler.loader.XMLLoader to package XSLT_CACHE_DEFAULT : int from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate XSLT_CACHE_PARAM : String from class org.apache.solr.handler.loader.XMLLoader to package XSLT_CACHE_PARAM : String from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic CONTEXT_TRANSFORMER_KEY : String from class org.apache.solr.response.XSLTResponseWriter to package CONTEXT_TRANSFORMER_KEY : String from class org.apache.solr.scripting.xslt.XSLTConstants",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "02ea7a11392834857f944f35ace65896c951703f",
+      "url": "https://github.com/apache/lucene-solr/commit/02ea7a11392834857f944f35ace65896c951703f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tspeller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tspeller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.analysis.hunspell.SpellChecker renamed to org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.analysis.hunspell.SpellCheckerTest renamed to org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tspeller : SpellChecker to speller : Hunspell in method private checkPerformance(code String, wordCount int) : void from class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsuggestionSpeller : SpellChecker to suggestionSpeller : Hunspell in method public suggest(word String) : List<String> from class org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tspeller : SpellChecker to speller : Hunspell in method package checkSpellCheckerExpectations(basePath Path) : void from class org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.analysis.hunspell.SpellChecker renamed to org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.lucene.analysis.hunspell.SpellCheckerTest renamed to org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tspeller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tspeller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tspeller : SpellChecker to speller : Hunspell in method private checkPerformance(code String, wordCount int) : void from class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsuggestionSpeller : SpellChecker to suggestionSpeller : Hunspell in method public suggest(word String) : List<String> from class org.apache.lucene.analysis.hunspell.Hunspell",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tspeller : SpellChecker to speller : Hunspell in method package checkSpellCheckerExpectations(basePath Path) : void from class org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "29ea0043efedd4a614ebefb938436464581e1edb",
+      "url": "https://github.com/apache/lucene-solr/commit/29ea0043efedd4a614ebefb938436464581e1edb",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprotected getDocValuesTypes() : DocValuesType[] inlined to private randomFieldType(r Random) : IndexableFieldType in class org.apache.lucene.index.BaseFieldInfoFormatTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvalues : IndexOptions to values : IndexOptions[] in method private randomFieldType(r Random) : IndexableFieldType from class org.apache.lucene.index.BaseFieldInfoFormatTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvalues : DocValuesType to values : DocValuesType[] in method private randomFieldType(r Random) : IndexableFieldType from class org.apache.lucene.index.BaseFieldInfoFormatTestCase",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "650f16ad5d8e7ae22904facd54fe46667c0670b9",
+      "url": "https://github.com/apache/lucene-solr/commit/650f16ad5d8e7ae22904facd54fe46667c0670b9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendChars : char[] to endChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbeginChars : char[] to beginChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treplacement : char[] to replacement : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnextCheck : Predicate<CharsRef> to part : CompoundPart in method private checkCompounds(word CharsRef, originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.SpellChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnextCheck : Predicate<CharsRef> to part : CompoundPart in method private checkCompounds(word CharsRef, originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.SpellChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnextCheck : Predicate<CharsRef> to part : CompoundPart in method private checkCompoundPatternReplacements(word CharsRef, pos int, originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.SpellChecker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnextCheck : Predicate<CharsRef> to part : CompoundPart in method private checkCompoundPatternReplacements(word CharsRef, pos int, originalCase WordCase, prev CompoundPart) : boolean from class org.apache.lucene.analysis.hunspell.SpellChecker",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tendChars : char[] to endChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbeginChars : char[] to beginChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treplacement : char[] to replacement : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "0d4769e174aad3eede7e7b281d14682bab483468",
+      "url": "https://github.com/apache/lucene-solr/commit/0d4769e174aad3eede7e7b281d14682bab483468",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to T in method public execute() : T from class org.apache.solr.common.cloud.ZkOperation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate collectionCmd(message ZkNodeProps, params ModifiableSolrParams, results NamedList<Object>, stateMatcher Replica.State, asyncId String) : List<Replica> inlined to private reloadCollection(clusterState ClusterState, message ZkNodeProps, results NamedList) : void in class org.apache.solr.cloud.api.collections.OverseerCollectionMessageHandler",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate collectionCmd(message ZkNodeProps, params ModifiableSolrParams, results NamedList<Object>, stateMatcher Replica.State, asyncId String) : List<Replica> inlined to private reloadCollection(clusterState ClusterState, message ZkNodeProps, results NamedList) : void in class org.apache.solr.cloud.api.collections.OverseerCollectionMessageHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to T in method public execute() : T from class org.apache.solr.common.cloud.ZkOperation",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "c1ae6dc07c9a988533cbe7176bdeb49e2fca1d9c",
+      "url": "https://github.com/apache/lucene-solr/commit/c1ae6dc07c9a988533cbe7176bdeb49e2fca1d9c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, segmentFileName String) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readCommit(directory Directory, input ChecksumIndexInput, generation long, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, input ChecksumIndexInput, generation long) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readLatestCommit(directory Directory, minSupportedMajorVersion int) : SegmentInfos extracted from public readLatestCommit(directory Directory) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage open(directory Directory, minSupportedMajorVersion int, commit IndexCommit) : DirectoryReader extracted from package open(directory Directory, commit IndexCommit) : DirectoryReader in class org.apache.lucene.index.StandardDirectoryReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public checkIndex(onlySegments List<String>) : Status in class org.apache.lucene.index.CheckIndex & moved to class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public listCommits(dir Directory) : List<IndexCommit> in class org.apache.lucene.index.DirectoryReader & moved to class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcreatedVersionMajor : int in method package SlowCompositeReaderWrapper(reader CompositeReader) from class org.apache.solr.index.SlowCompositeReaderWrapper",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, segmentFileName String) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readCommit(directory Directory, input ChecksumIndexInput, generation long, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, input ChecksumIndexInput, generation long) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage readLatestCommit(directory Directory, minSupportedMajorVersion int) : SegmentInfos extracted from public readLatestCommit(directory Directory) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage open(directory Directory, minSupportedMajorVersion int, commit IndexCommit) : DirectoryReader extracted from package open(directory Directory, commit IndexCommit) : DirectoryReader in class org.apache.lucene.index.StandardDirectoryReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcreatedVersionMajor : int in method package SlowCompositeReaderWrapper(reader CompositeReader) from class org.apache.solr.index.SlowCompositeReaderWrapper",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ca040402d9470969d7f8fe81c5bf4125e9344cde",
+      "url": "https://github.com/apache/lucene-solr/commit/ca040402d9470969d7f8fe81c5bf4125e9344cde",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.ltr.interleaving.TestLTRQParserInterleaving from Class org.apache.solr.ltr.TestLTRQParserPlugin",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic interleavingLtrTooManyModelsTest() : void from class org.apache.solr.ltr.TestLTRQParserPlugin to public interleavingLtrTooManyModelsTest() : void from class org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic interleavingLtrModelIsEmptyTest() : void from class org.apache.solr.ltr.TestLTRQParserPlugin to public interleavingLtrModelIsEmptyTest() : void from class org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.solr.ltr.interleaving.TestLTRQParserInterleaving from class org.apache.solr.ltr.TestLTRQParserPlugin",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic interleavingLtrTooManyModelsTest() : void from class org.apache.solr.ltr.TestLTRQParserPlugin to public interleavingLtrTooManyModelsTest() : void from class org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic interleavingLtrModelIsEmptyTest() : void from class org.apache.solr.ltr.TestLTRQParserPlugin to public interleavingLtrModelIsEmptyTest() : void from class org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "8be0cea5442c2edab260d0598b920ba832506f80",
+      "url": "https://github.com/apache/lucene-solr/commit/8be0cea5442c2edab260d0598b920ba832506f80",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\traSubs : List<RandomAccess> to raSubs : List<RandomAccessVectorValues> in class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trandomAccess : VectorValues.RandomAccess to randomAccess : RandomAccessVectorValues in class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchStrategy to VectorValues.SearchStrategy in method public searchStrategy() : VectorValues.SearchStrategy from class org.apache.lucene.index.RandomAccessVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tra : VectorValues.RandomAccess to ra : RandomAccessVectorValues in method public testSortedIndex() : void from class org.apache.lucene.index.TestVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess to public search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.apache.lucene.index.RandomAccessVectorValuesProducer from classes [org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues, org.apache.lucene.codecs.VectorWriter.VectorValuesMerger, org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues, org.apache.lucene.index.VectorValuesWriter.SortingVectorValues, org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic search(vector float[], topK int, fanout int) : TopDocs from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues.OffHeapRandomAccess to public search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic abstract randomAccess() : RandomAccess from class org.apache.lucene.index.VectorValues to public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.RandomAccessVectorValuesProducer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.index.VectorValues.RandomAccess to public abstract search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.index.VectorValues",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\traSubs : List<RandomAccess> to raSubs : List<RandomAccessVectorValues> in class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trandomAccess : VectorValues.RandomAccess to randomAccess : RandomAccessVectorValues in class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tRandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchStrategy to VectorValues.SearchStrategy in method public searchStrategy() : VectorValues.SearchStrategy from class org.apache.lucene.index.RandomAccessVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tra : VectorValues.RandomAccess to ra : RandomAccessVectorValues in method public testSortedIndex() : void from class org.apache.lucene.index.TestVectorValues",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess to public search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.apache.lucene.index.RandomAccessVectorValuesProducer from classes [org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues, org.apache.lucene.codecs.VectorWriter.VectorValuesMerger, org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues, org.apache.lucene.index.VectorValuesWriter.SortingVectorValues, org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic search(vector float[], topK int, fanout int) : TopDocs from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues.OffHeapRandomAccess to public search(target float[], k int, fanout int) : TopDocs from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ab83b3b7c3786ce39718edc585c70dc12462add9",
+      "url": "https://github.com/apache/lucene-solr/commit/ab83b3b7c3786ce39718edc585c70dc12462add9",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.DOMUtil moved to org.apache.solr.common.util.DOMUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.PropertiesUtil moved to org.apache.solr.common.util.PropertiesUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.DOMUtilTest moved to org.apache.solr.common.util.DOMUtilTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.DOMUtil moved to org.apache.solr.common.util.DOMUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.PropertiesUtil moved to org.apache.solr.common.util.PropertiesUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.solr.util.DOMUtilTest moved to org.apache.solr.common.util.DOMUtilTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "3dcb19f88670b954e0956d0764853effedd923ef",
+      "url": "https://github.com/apache/lucene-solr/commit/3dcb19f88670b954e0956d0764853effedd923ef",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getQuerySting() : String inlined to private remoteQuery(coreUrl String, resp HttpServletResponse) : void in class org.apache.solr.servlet.HttpSolrCall",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tinternalRequestCount : int to forwardCount : int in method private remoteQuery(coreUrl String, resp HttpServletResponse) : void from class org.apache.solr.servlet.HttpSolrCall",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getQuerySting() : String inlined to private remoteQuery(coreUrl String, resp HttpServletResponse) : void in class org.apache.solr.servlet.HttpSolrCall",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "fa756b1c316f1d775fcd4cdcb46e482b31c02fbd",
+      "url": "https://github.com/apache/lucene-solr/commit/fa756b1c316f1d775fcd4cdcb46e482b31c02fbd",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic parseValueSourceList(flags int) : List<ValueSource> extracted from public parseValueSourceList() : List<ValueSource> in class org.apache.solr.search.FunctionQParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate findSpatialStrategyMultiValueSource(mv1 MultiValueSource, mv2 MultiValueSource) : SpatialStrategyMultiValueSource extracted from public parse(fp FunctionQParser) : ValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getMultiValueSource(fp FunctionQParser, sfield String) : MultiValueSource extracted from private parseSfield(fp FunctionQParser) : MultiValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic parseValueSourceList(flags int) : List<ValueSource> extracted from public parseValueSourceList() : List<ValueSource> in class org.apache.solr.search.FunctionQParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate findSpatialStrategyMultiValueSource(mv1 MultiValueSource, mv2 MultiValueSource) : SpatialStrategyMultiValueSource extracted from public parse(fp FunctionQParser) : ValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getMultiValueSource(fp FunctionQParser, sfield String) : MultiValueSource extracted from private parseSfield(fp FunctionQParser) : MultiValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "99220677fe409bab5c4206dc31f186d0c4335280",
+      "url": "https://github.com/apache/lucene-solr/commit/99220677fe409bab5c4206dc31f186d0c4335280",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.NumericComparator moved to org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.DoubleComparator moved to org.apache.lucene.search.comparators.DoubleComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.FloatComparator moved to org.apache.lucene.search.comparators.FloatComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.DocComparator moved to org.apache.lucene.search.comparators.DocComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.IntComparator moved to org.apache.lucene.search.comparators.IntComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.LongComparator moved to org.apache.lucene.search.comparators.LongComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DocComparator.DocLeafComparator from Class org.apache.lucene.search.FieldComparator.DocComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from Class org.apache.lucene.search.FieldComparator.DoubleComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator from Class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.IntComparator.IntLeafComparator from Class org.apache.lucene.search.FieldComparator.IntComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.LongComparator.LongLeafComparator from Class org.apache.lucene.search.FieldComparator.LongComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator from Class org.apache.lucene.search.FieldComparator.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.FilteringLeafFieldComparator to public competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.LeafFieldComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : double from class org.apache.lucene.search.FieldComparator.DoubleComparator to private getValueForDoc(doc int) : double from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.DoubleComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.DoubleComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.DoubleComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprotected reverse : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator to protected reverse : boolean from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate bytesCount : int from class org.apache.lucene.search.FilteringNumericLeafComparator to private bytesCount : int from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprotected singleSort : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator to protected singleSort : boolean from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected getNumericDocValues(context LeafReaderContext, field String) : NumericDocValues from class org.apache.lucene.search.FieldComparator.NumericComparator to protected getNumericDocValues(context LeafReaderContext, field String) : NumericDocValues from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.DocComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DocComparator.DocLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate docBase : int from class org.apache.lucene.search.FieldComparator.DocComparator to private docBase : int from class org.apache.lucene.search.comparators.DocComparator.DocLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate maxDoc : int from class org.apache.lucene.search.FilteringNumericLeafComparator to private maxDoc : int from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate minValueAsBytes : byte[] from class org.apache.lucene.search.FilteringNumericLeafComparator to private minValueAsBytes : byte[] from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate updateCounter : int from class org.apache.lucene.search.FilteringNumericLeafComparator to private updateCounter : int from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.FilteringNumericLeafComparator to public competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.IntComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(slot int) : void from class org.apache.lucene.search.FilteringNumericLeafComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate updateCompetitiveIterator() : void from class org.apache.lucene.search.FilteringNumericLeafComparator to private updateCompetitiveIterator() : void from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : long from class org.apache.lucene.search.FieldComparator.LongComparator to private getValueForDoc(doc int) : long from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate maxDocVisited : int from class org.apache.lucene.search.FilteringNumericLeafComparator to private maxDocVisited : int from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.DocComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DocComparator.DocLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setCanUpdateIterator() : void from class org.apache.lucene.search.FilteringLeafFieldComparator to public setHitsThresholdReached() : void from class org.apache.lucene.search.LeafFieldComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate iteratorCost : long from class org.apache.lucene.search.FilteringNumericLeafComparator to private iteratorCost : long from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.FloatComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.FloatComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected abstract isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator to protected abstract isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate maxValueAsBytes : byte[] from class org.apache.lucene.search.FilteringNumericLeafComparator to private maxValueAsBytes : byte[] from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.LongComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate competitiveIterator : DocIdSetIterator from class org.apache.lucene.search.FilteringNumericLeafComparator to private competitiveIterator : DocIdSetIterator from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setScorer(scorer Scorable) : void from class org.apache.lucene.search.FieldComparator.DocComparator to public setScorer(scorer Scorable) : void from class org.apache.lucene.search.comparators.DocComparator.DocLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected abstract encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator to protected abstract encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.LongComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected abstract encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator to protected abstract encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.LongComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to private getValueForDoc(doc int) : int from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic abstract getLeafComparator(context LeafReaderContext) : FilteringLeafFieldComparator from class org.apache.lucene.search.FilteringFieldComparator to public getLeafComparator(context LeafReaderContext) : LeafFieldComparator from class org.apache.lucene.search.comparators.IntComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : float from class org.apache.lucene.search.FieldComparator.FloatComparator to private getValueForDoc(doc int) : float from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate pointValues : PointValues from class org.apache.lucene.search.FilteringNumericLeafComparator to private pointValues : PointValues from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.DocComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DocComparator.DocLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.FloatComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setScorer(scorer Scorable) : void from class org.apache.lucene.search.FilteringNumericLeafComparator to public setScorer(scorer Scorable) : void from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FilteringNumericLeafComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.DocComparator moved to org.apache.lucene.search.comparators.DocComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.DoubleComparator moved to org.apache.lucene.search.comparators.DoubleComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.FloatComparator moved to org.apache.lucene.search.comparators.FloatComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.IntComparator moved to org.apache.lucene.search.comparators.IntComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.search.FieldComparator.LongComparator moved to org.apache.lucene.search.comparators.LongComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setCanUpdateIterator() : void renamed to public setHitsThresholdReached() : void in class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.DocComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.DoubleComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.IntComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.LongComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator from class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.IntComparator.IntLeafComparator from class org.apache.lucene.search.FieldComparator.IntComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.LongComparator.LongLeafComparator from class org.apache.lucene.search.FieldComparator.LongComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.lucene.search.comparators.NumericComparator from class org.apache.lucene.search.FilteringNumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.FilteringLeafFieldComparator to public competitiveIterator() : DocIdSetIterator from class org.apache.lucene.search.LeafFieldComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : double from class org.apache.lucene.search.FieldComparator.DoubleComparator to private getValueForDoc(doc int) : double from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.DoubleComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.DoubleComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.DoubleComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprotected reverse : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator to protected reverse : boolean from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate bytesCount : int from class org.apache.lucene.search.FilteringNumericLeafComparator to private bytesCount : int from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprotected singleSort : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator to protected singleSort : boolean from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected getNumericDocValues(context LeafReaderContext, field String) : NumericDocValues from class org.apache.lucene.search.FieldComparator.NumericComparator to protected getNumericDocValues(context LeafReaderContext, field String) : NumericDocValues from class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringLongLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.LongComparator.LongLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringIntLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.IntComparator.IntLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringDoubleLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected isMissingValueCompetitive() : boolean from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected encodeBottom(packedValue byte[]) : void from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.FilteringNumericLeafComparator.FilteringFloatLeafComparator to protected encodeTop(packedValue byte[]) : void from class org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.lucene.search.comparators.NumericComparator from classes [org.apache.lucene.search.FieldComparator.DoubleComparator, org.apache.lucene.search.FieldComparator.FloatComparator, org.apache.lucene.search.FieldComparator.IntComparator, org.apache.lucene.search.FieldComparator.LongComparator]",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_SUBCLASS",
+          "description": "Extract Subclass\torg.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FilteringNumericLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(bottom int) : void from class org.apache.lucene.search.FieldComparator.DocComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.DocComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.DocComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.DocComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(bottom int) : void from class org.apache.lucene.search.FieldComparator.DoubleComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : float from class org.apache.lucene.search.FieldComparator.FloatComparator to private getValueForDoc(doc int) : double from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(bottom int) : void from class org.apache.lucene.search.FieldComparator.FloatComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.FloatComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.FloatComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.FloatComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to private getValueForDoc(doc int) : double from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(bottom int) : void from class org.apache.lucene.search.FieldComparator.IntComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.IntComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.IntComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getValueForDoc(doc int) : long from class org.apache.lucene.search.FieldComparator.LongComparator to private getValueForDoc(doc int) : double from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setBottom(bottom int) : void from class org.apache.lucene.search.FieldComparator.LongComparator to public setBottom(slot int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FieldComparator.LongComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FieldComparator.LongComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic copy(slot int, doc int) : void from class org.apache.lucene.search.FieldComparator.LongComparator to public copy(slot int, doc int) : void from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tpublic compareBottom(doc int) : int from class org.apache.lucene.search.FilteringNumericLeafComparator to public compareBottom(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tpublic compareTop(doc int) : int from class org.apache.lucene.search.FilteringNumericLeafComparator to public compareTop(doc int) : int from class org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected NumericComparator(field String, missingValue T) from class org.apache.lucene.search.FieldComparator.NumericComparator to protected NumericComparator(field String, missingValue T, reverse boolean, sortPos int, bytesCount int) from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setTopValue(value T) : void from class org.apache.lucene.search.FilteringFieldComparator to public setTopValue(value T) : void from class org.apache.lucene.search.comparators.NumericComparator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic competitiveIterator() : DocIdSetIterator extracted from public competitiveIterator() : DocIdSetIterator in class org.apache.lucene.search.TopFieldCollector.TopFieldLeafCollector & moved to class org.apache.lucene.search.MultiLeafFieldComparator",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "27aa5c5f59e8cb03316efa504f0351decd41d61c",
+      "url": "https://github.com/apache/lucene-solr/commit/27aa5c5f59e8cb03316efa504f0351decd41d61c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tBEST_COMPRESSION_MODE : DeflateWithPresetDict to BEST_COMPRESSION_MODE : CompressionMode in class org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictDecompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictDecompressor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictCompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictCompressor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void extracted from public compress(bytes byte[], off int, len int, out DataOutput, ht HashTable) : void in class org.apache.lucene.util.compress.LZ4",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tanchor : int to off : int in method public compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void from class org.apache.lucene.util.compress.LZ4",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tbase : int to anchor : int in method public compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void from class org.apache.lucene.util.compress.LZ4",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictDecompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictDecompressor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictCompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictCompressor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tBEST_COMPRESSION_MODE : DeflateWithPresetDict to BEST_COMPRESSION_MODE : CompressionMode in class org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void extracted from public compress(bytes byte[], off int, len int, out DataOutput, ht HashTable) : void in class org.apache.lucene.util.compress.LZ4",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tbase : int in method public compress(bytes byte[], off int, len int, out DataOutput, ht HashTable) : void from class org.apache.lucene.util.compress.LZ4",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

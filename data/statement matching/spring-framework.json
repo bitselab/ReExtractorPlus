@@ -1,0 +1,2107 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "originalMethod": {
+        "container": "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AotContribution",
+        "type": "Method",
+        "name": "registerProxyIfNecessary",
+        "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java",
+        "startLine": 1019,
+        "endLine": 1027,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AotContribution",
+        "type": "Method",
+        "name": "registerProxyIfNecessary",
+        "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java",
+        "startLine": 1019,
+        "endLine": 1027,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(this.candidateResolver != null)",
+            "startLine": 1020,
+            "endLine": 1026,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(this.candidateResolver != null)",
+            "startLine": 1020,
+            "endLine": 1026,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> proxyType=this.candidateResolver.getLazyResolutionProxyClass(dependencyDescriptor,null);\n",
+            "startLine": 1021,
+            "endLine": 1022,
+            "startColumn": 5,
+            "endColumn": 86
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> proxyClass=this.candidateResolver.getLazyResolutionProxyClass(dependencyDescriptor,null);\n",
+            "startLine": 1021,
+            "endLine": 1022,
+            "startColumn": 5,
+            "endColumn": 86
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 1023,
+            "endLine": 1025,
+            "startColumn": 61,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 1023,
+            "endLine": 1025,
+            "startColumn": 29,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "runtimeHints.proxies().registerJdkProxy(proxyType.getInterfaces());\n",
+            "startLine": 1024,
+            "endLine": 1024,
+            "startColumn": 6,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "ClassHintUtils.registerProxyIfNecessary(proxyClass,runtimeHints);\n",
+            "startLine": 1024,
+            "endLine": 1024,
+            "startColumn": 6,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "originalMethod": {
+        "container": "org.springframework.context.support.GenericApplicationContext",
+        "type": "Method",
+        "name": "preDetermineBeanTypes",
+        "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+        "startLine": 432,
+        "endLine": 455,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.context.support.GenericApplicationContext",
+        "type": "Method",
+        "name": "preDetermineBeanTypes",
+        "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+        "startLine": 416,
+        "endLine": 439,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(beanName: this.beanFactory.getBeanDefinitionNames())",
+            "startLine": 442,
+            "endLine": 454,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(beanName: this.beanFactory.getBeanDefinitionNames())",
+            "startLine": 426,
+            "endLine": 438,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(beanType != null)",
+            "startLine": 444,
+            "endLine": 453,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(beanType != null)",
+            "startLine": 428,
+            "endLine": 437,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(bpp: bpps)",
+            "startLine": 446,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(bpp: bpps)",
+            "startLine": 430,
+            "endLine": 436,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(newBeanType != beanType)",
+            "startLine": 448,
+            "endLine": 451,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(newBeanType != beanType)",
+            "startLine": 432,
+            "endLine": 435,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "List<SmartInstantiationAwareBeanPostProcessor> bpps=PostProcessorRegistrationDelegate.loadBeanPostProcessors(this.beanFactory,SmartInstantiationAwareBeanPostProcessor.class);\n",
+            "startLine": 438,
+            "endLine": 440,
+            "startColumn": 3,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "List<SmartInstantiationAwareBeanPostProcessor> bpps=PostProcessorRegistrationDelegate.loadBeanPostProcessors(this.beanFactory,SmartInstantiationAwareBeanPostProcessor.class);\n",
+            "startLine": 422,
+            "endLine": 424,
+            "startColumn": 3,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> beanType=this.beanFactory.getType(beanName);\n",
+            "startLine": 443,
+            "endLine": 443,
+            "startColumn": 4,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> beanType=this.beanFactory.getType(beanName);\n",
+            "startLine": 427,
+            "endLine": 427,
+            "startColumn": 4,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> newBeanType=bpp.determineBeanType(beanType,beanName);\n",
+            "startLine": 447,
+            "endLine": 447,
+            "startColumn": 6,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Class<?> newBeanType=bpp.determineBeanType(beanType,beanName);\n",
+            "startLine": 431,
+            "endLine": 431,
+            "startColumn": 6,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "beanType=newBeanType;\n",
+            "startLine": 450,
+            "endLine": 450,
+            "startColumn": 7,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "beanType=newBeanType;\n",
+            "startLine": 434,
+            "endLine": 434,
+            "startColumn": 7,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "registerProxyHintIfNecessary(newBeanType,runtimeHints);\n",
+            "startLine": 449,
+            "endLine": 449,
+            "startColumn": 7,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "ClassHintUtils.registerProxyIfNecessary(newBeanType,runtimeHints);\n",
+            "startLine": 433,
+            "endLine": 433,
+            "startColumn": 7,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "registerProxyHintIfNecessary(beanType,runtimeHints);\n",
+            "startLine": 445,
+            "endLine": 445,
+            "startColumn": 5,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "ClassHintUtils.registerProxyIfNecessary(beanType,runtimeHints);\n",
+            "startLine": 429,
+            "endLine": 429,
+            "startColumn": 5,
+            "endColumn": 69
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "url": "https://github.com/spring-projects/spring-framework/commit/45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "originalMethod": {
+        "container": "org.springframework.http.server.reactive.JettyHttpHandlerAdapter.JettyServerHttpRequest",
+        "type": "Method",
+        "name": "createHeaders",
+        "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/JettyHttpHandlerAdapter.java",
+        "startLine": 85,
+        "endLine": 89,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.http.server.reactive.JettyHttpHandlerAdapter.JettyServerHttpRequest",
+        "type": "Method",
+        "name": "createHeaders",
+        "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/JettyHttpHandlerAdapter.java",
+        "startLine": 106,
+        "endLine": 116,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Request request=getRequest(servletRequest);\n",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 4,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Request request=getRequest(servletRequest);\n",
+            "startLine": 107,
+            "endLine": 107,
+            "startColumn": 4,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new JettyHeadersAdapter(fields);\n",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 4,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new JettyHeadersAdapter(fields);\n",
+            "startLine": 115,
+            "endLine": 115,
+            "startColumn": 4,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpFields.Mutable fields=HttpFields.build(request.getHttpFields());\n",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 4,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpFields fields;\n",
+            "startLine": 108,
+            "endLine": 108,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "url": "https://github.com/spring-projects/spring-framework/commit/45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "originalMethod": {
+        "container": "org.springframework.http.server.reactive.JettyHttpHandlerAdapter.JettyServerHttpResponse",
+        "type": "Method",
+        "name": "createHeaders",
+        "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/JettyHttpHandlerAdapter.java",
+        "startLine": 116,
+        "endLine": 120,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.http.server.reactive.JettyHttpHandlerAdapter.JettyServerHttpResponse",
+        "type": "Method",
+        "name": "createHeaders",
+        "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/JettyHttpHandlerAdapter.java",
+        "startLine": 143,
+        "endLine": 153,
+        "startColumn": 3,
+        "endColumn": 4
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Response response=getResponse(servletResponse);\n",
+            "startLine": 117,
+            "endLine": 117,
+            "startColumn": 4,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Response response=getResponse(servletResponse);\n",
+            "startLine": 144,
+            "endLine": 144,
+            "startColumn": 4,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new HttpHeaders(new JettyHeadersAdapter(fields));\n",
+            "startLine": 119,
+            "endLine": 119,
+            "startColumn": 4,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new HttpHeaders(new JettyHeadersAdapter(fields));\n",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 4,
+            "endColumn": 60
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpFields.Mutable fields=response.getHttpFields();\n",
+            "startLine": 118,
+            "endLine": 118,
+            "startColumn": 4,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpFields fields;\n",
+            "startLine": 145,
+            "endLine": 145,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpFields.Mutable fields=response.getHttpFields();\n",
+            "startLine": 118,
+            "endLine": 118,
+            "startColumn": 4,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "fields=response.getHttpFields();\n",
+            "startLine": 150,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "url": "https://github.com/spring-projects/spring-framework/commit/45d45c298984b93ac26268b0ee924fe25ddfcd05",
+      "originalMethod": {
+        "container": "org.springframework.web.socket.sockjs.client.JettyXhrTransport",
+        "type": "Method",
+        "name": "toHttpHeaders",
+        "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/JettyXhrTransport.java",
+        "startLine": 172,
+        "endLine": 184,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.web.socket.sockjs.client.JettyXhrTransport",
+        "type": "Method",
+        "name": "toHttpHeaders",
+        "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/sockjs/client/JettyXhrTransport.java",
+        "startLine": 173,
+        "endLine": 185,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "While Statement",
+            "expression": "while(values.hasMoreElements())",
+            "startLine": 178,
+            "endLine": 181,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "type": "While Statement",
+            "expression": "while(values.hasMoreElements())",
+            "startLine": 179,
+            "endLine": 182,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String value=values.nextElement();\n",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String value=values.nextElement();\n",
+            "startLine": 180,
+            "endLine": 180,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "responseHeaders.add(name,value);\n",
+            "startLine": 180,
+            "endLine": 180,
+            "startColumn": 5,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "responseHeaders.add(name,value);\n",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpHeaders responseHeaders=new HttpHeaders();\n",
+            "startLine": 173,
+            "endLine": 173,
+            "startColumn": 3,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "HttpHeaders responseHeaders=new HttpHeaders();\n",
+            "startLine": 174,
+            "endLine": 174,
+            "startColumn": 3,
+            "endColumn": 51
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Enumeration<String> values=httpFields.getValues(name);\n",
+            "startLine": 177,
+            "endLine": 177,
+            "startColumn": 4,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Enumeration<String> values=httpFields.getValues(name);\n",
+            "startLine": 178,
+            "endLine": 178,
+            "startColumn": 4,
+            "endColumn": 60
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return responseHeaders;\n",
+            "startLine": 183,
+            "endLine": 183,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return responseHeaders;\n",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 175,
+            "endLine": 182,
+            "startColumn": 35,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 176,
+            "endLine": 183,
+            "startColumn": 27,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String name=names.nextElement();\n",
+            "startLine": 176,
+            "endLine": 176,
+            "startColumn": 4,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String name=names.next();\n",
+            "startLine": 177,
+            "endLine": 177,
+            "startColumn": 4,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Enumeration<String> names=httpFields.getFieldNames();\n",
+            "startLine": 174,
+            "endLine": 174,
+            "startColumn": 3,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "Iterator<String> names=httpFields.getFieldNamesCollection().iterator();\n",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 3,
+            "endColumn": 76
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "originalMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "UrlResource",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 90,
+        "endLine": 102,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "UrlResource",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 91,
+        "endLine": 103,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "Assert.notNull(path,\"Path must not be null\");\n",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 3,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "Assert.notNull(path,\"Path must not be null\");\n",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 3,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.uri=null;\n",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.uri=null;\n",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.url=new URL(path);\n",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.url=ResourceUtils.toURL(path);\n",
+            "startLine": 101,
+            "endLine": 101,
+            "startColumn": 3,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.cleanedUrl=getCleanedUrl(this.url,path);\n",
+            "startLine": 101,
+            "endLine": 101,
+            "startColumn": 3,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.cleanedUrl=StringUtils.cleanPath(path);\n",
+            "startLine": 102,
+            "endLine": 102,
+            "startColumn": 3,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "originalMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "createRelativeURL",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 302,
+        "endLine": 318,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "createRelativeURL",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 283,
+        "endLine": 296,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(relativePath.startsWith(\"/\"))",
+            "startLine": 311,
+            "endLine": 313,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(relativePath.startsWith(\"/\"))",
+            "startLine": 292,
+            "endLine": 294,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "relativePath=relativePath.substring(1);\n",
+            "startLine": 312,
+            "endLine": 312,
+            "startColumn": 4,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "relativePath=relativePath.substring(1);\n",
+            "startLine": 293,
+            "endLine": 293,
+            "startColumn": 4,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new URL(this.url,relativePath);\n",
+            "startLine": 317,
+            "endLine": 317,
+            "startColumn": 3,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return ResourceUtils.toRelativeURL(this.url,relativePath);\n",
+            "startLine": 295,
+            "endLine": 295,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "relativePath=StringUtils.replace(relativePath,\"#\",\"%23\");\n",
+            "startLine": 315,
+            "endLine": 315,
+            "startColumn": 3,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "relativePath=StringUtils.replace(relativePath,\"#\",\"%23\");\n",
+            "startLine": 420,
+            "endLine": 420,
+            "startColumn": 3,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "originalMethod": {
+        "container": "org.springframework.util.ResourceUtils",
+        "type": "Method",
+        "name": "getFile",
+        "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+        "startLine": 158,
+        "endLine": 190,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.util.ResourceUtils",
+        "type": "Method",
+        "name": "getFile",
+        "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+        "startLine": 158,
+        "endLine": 190,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(resourceLocation.startsWith(CLASSPATH_URL_PREFIX))",
+            "startLine": 171,
+            "endLine": 181,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(resourceLocation.startsWith(CLASSPATH_URL_PREFIX))",
+            "startLine": 171,
+            "endLine": 181,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String path=resourceLocation.substring(CLASSPATH_URL_PREFIX.length());\n",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 4,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String path=resourceLocation.substring(CLASSPATH_URL_PREFIX.length());\n",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 4,
+            "endColumn": 76
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String description=\"class path resource [\" + path + \"]\";\n",
+            "startLine": 173,
+            "endLine": 173,
+            "startColumn": 4,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String description=\"class path resource [\" + path + \"]\";\n",
+            "startLine": 173,
+            "endLine": 173,
+            "startColumn": 4,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ClassLoader cl=ClassUtils.getDefaultClassLoader();\n",
+            "startLine": 174,
+            "endLine": 174,
+            "startColumn": 4,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ClassLoader cl=ClassUtils.getDefaultClassLoader();\n",
+            "startLine": 174,
+            "endLine": 174,
+            "startColumn": 4,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "URL url=(cl != null ? cl.getResource(path) : ClassLoader.getSystemResource(path));\n",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 4,
+            "endColumn": 88
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "URL url=(cl != null ? cl.getResource(path) : ClassLoader.getSystemResource(path));\n",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 4,
+            "endColumn": 88
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(url == null)",
+            "startLine": 176,
+            "endLine": 179,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(url == null)",
+            "startLine": 176,
+            "endLine": 179,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Throw Statement",
+            "expression": "throw new FileNotFoundException(description + \" cannot be resolved to absolute file path because it does not exist\");\n",
+            "startLine": 177,
+            "endLine": 178,
+            "startColumn": 5,
+            "endColumn": 78
+          },
+          "rightSideLocation": {
+            "type": "Throw Statement",
+            "expression": "throw new FileNotFoundException(description + \" cannot be resolved to absolute file path because it does not exist\");\n",
+            "startLine": 177,
+            "endLine": 178,
+            "startColumn": 5,
+            "endColumn": 78
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return getFile(url,description);\n",
+            "startLine": 180,
+            "endLine": 180,
+            "startColumn": 4,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return getFile(url,description);\n",
+            "startLine": 180,
+            "endLine": 180,
+            "startColumn": 4,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Try Statement",
+            "expression": "try",
+            "startLine": 182,
+            "endLine": 189,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Try Statement",
+            "expression": "try",
+            "startLine": 182,
+            "endLine": 189,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Catch Clause",
+            "expression": "catch(ex)",
+            "startLine": 186,
+            "endLine": 189,
+            "startColumn": 36,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Catch Clause",
+            "expression": "catch(ex)",
+            "startLine": 186,
+            "endLine": 189,
+            "startColumn": 36,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new File(resourceLocation);\n",
+            "startLine": 188,
+            "endLine": 188,
+            "startColumn": 4,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new File(resourceLocation);\n",
+            "startLine": 188,
+            "endLine": 188,
+            "startColumn": 4,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "Assert.notNull(resourceLocation,\"Resource location must not be null\");\n",
+            "startLine": 170,
+            "endLine": 170,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "Assert.notNull(resourceLocation,\"Resource location must not be null\");\n",
+            "startLine": 170,
+            "endLine": 170,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return getFile(new URL(resourceLocation));\n",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 4,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return getFile(toURL(resourceLocation));\n",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 4,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return getFile(new URL(resourceLocation));\n",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 4,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return new URL(location);\n",
+            "startLine": 406,
+            "endLine": 406,
+            "startColumn": 3,
+            "endColumn": 28
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "originalMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "getCleanedUrl",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 206,
+        "endLine": 218,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.core.io.UrlResource",
+        "type": "Method",
+        "name": "getCleanedUrl",
+        "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+        "startLine": 187,
+        "endLine": 199,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "If Statement",
+            "expression": "if(cleanedUrl != null)",
+            "startLine": 212,
+            "endLine": 214,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "If Statement",
+            "expression": "if(cleanedUrl != null)",
+            "startLine": 192,
+            "endLine": 194,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return cleanedUrl;\n",
+            "startLine": 213,
+            "endLine": 213,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return cleanedUrl;\n",
+            "startLine": 193,
+            "endLine": 193,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.cleanedUrl=cleanedUrl;\n",
+            "startLine": 216,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.cleanedUrl=cleanedUrl;\n",
+            "startLine": 197,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return cleanedUrl;\n",
+            "startLine": 217,
+            "endLine": 217,
+            "startColumn": 3,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return cleanedUrl;\n",
+            "startLine": 198,
+            "endLine": 198,
+            "startColumn": 3,
+            "endColumn": 21
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "URL cleanedUrl=this.cleanedUrl;\n",
+            "startLine": 211,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String cleanedUrl=this.cleanedUrl;\n",
+            "startLine": 191,
+            "endLine": 191,
+            "startColumn": 3,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "cleanedUrl=getCleanedUrl(this.url,(this.uri != null ? this.uri : this.url).toString());\n",
+            "startLine": 215,
+            "endLine": 215,
+            "startColumn": 3,
+            "endColumn": 93
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String originalPath=(this.uri != null ? this.uri : this.url).toString();\n",
+            "startLine": 195,
+            "endLine": 195,
+            "startColumn": 3,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "String cleanedPath=StringUtils.cleanPath(originalPath);\n",
+            "startLine": 194,
+            "endLine": 194,
+            "startColumn": 3,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "cleanedUrl=StringUtils.cleanPath(originalPath);\n",
+            "startLine": 196,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "cleanedUrl=getCleanedUrl(this.url,(this.uri != null ? this.uri : this.url).toString());\n",
+            "startLine": 215,
+            "endLine": 215,
+            "startColumn": 3,
+            "endColumn": 93
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "cleanedUrl=StringUtils.cleanPath(originalPath);\n",
+            "startLine": 196,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "698f8995f72239d11052e1319c6b2802a34ba3e8",
+      "url": "https://github.com/spring-projects/spring-framework/commit/698f8995f72239d11052e1319c6b2802a34ba3e8",
+      "originalMethod": {
+        "container": "org.springframework.test.util.TestSocketUtils",
+        "type": "Method",
+        "name": "findAvailableTcpPort",
+        "filePath": "spring-test/src/main/java/org/springframework/test/util/TestSocketUtils.java",
+        "startLine": 72,
+        "endLine": 92,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.test.util.TestSocketUtils",
+        "type": "Method",
+        "name": "findAvailableTcpPort",
+        "filePath": "spring-test/src/main/java/org/springframework/test/util/TestSocketUtils.java",
+        "startLine": 95,
+        "endLine": 102,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Do Statement",
+            "expression": "do(!isPortAvailable(candidatePort))",
+            "startLine": 80,
+            "endLine": 89,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "type": "Do Statement",
+            "expression": "do(!isPortAvailable(candidatePort))",
+            "startLine": 112,
+            "endLine": 118,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "int candidatePort;\n",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "int candidatePort;\n",
+            "startLine": 110,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 21
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "int searchCounter=0;\n",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "int searchCounter=0;\n",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 3,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Return Statement",
+            "expression": "return candidatePort;\n",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 24
+          },
+          "rightSideLocation": {
+            "type": "Return Statement",
+            "expression": "return candidatePort;\n",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 3,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "candidatePort=PORT_RANGE_MIN + random.nextInt(PORT_RANGE + 1);\n",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 4,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "candidatePort=PORT_RANGE_MIN + random.nextInt(PORT_RANGE_PLUS_ONE);\n",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 4,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 80,
+            "endLine": 88,
+            "startColumn": 6,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Block",
+            "expression": "{",
+            "startLine": 112,
+            "endLine": 117,
+            "startColumn": 6,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "searchCounter++;\n",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 4,
+            "endColumn": 20
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "Assert.state(++searchCounter <= MAX_ATTEMPTS,() -> String.format(\"Could not find an available TCP port in the range [%d, %d] after %d attempts\",PORT_RANGE_MIN,PORT_RANGE_MAX,MAX_ATTEMPTS));\n",
+            "startLine": 113,
+            "endLine": 115,
+            "startColumn": 4,
+            "endColumn": 53
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "url": "https://github.com/spring-projects/spring-framework/commit/1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "originalMethod": {
+        "container": "org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests",
+        "type": "Method",
+        "name": "handleMatchBestMatchingPatternAttributeInObservationContext",
+        "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/result/method/RequestMappingInfoHandlerMappingTests.java",
+        "startLine": 262,
+        "endLine": 272,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.web.reactive.result.method.RequestMappingInfoHandlerMappingTests",
+        "type": "Method",
+        "name": "handleMatchBestMatchingPatternAttributeInObservationContext",
+        "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/result/method/RequestMappingInfoHandlerMappingTests.java",
+        "startLine": 262,
+        "endLine": 271,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "RequestMappingInfo key=paths(\"/{path1}/2\",\"/**\").build();\n",
+            "startLine": 264,
+            "endLine": 264,
+            "startColumn": 3,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "RequestMappingInfo key=paths(\"/{path1}/2\",\"/**\").build();\n",
+            "startLine": 264,
+            "endLine": 264,
+            "startColumn": 3,
+            "endColumn": 63
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ServerWebExchange exchange=MockServerWebExchange.from(get(\"/1/2\"));\n",
+            "startLine": 265,
+            "endLine": 265,
+            "startColumn": 3,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ServerWebExchange exchange=MockServerWebExchange.from(get(\"/1/2\"));\n",
+            "startLine": 265,
+            "endLine": 265,
+            "startColumn": 3,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "exchange.getAttributes().put(CURRENT_OBSERVATION_CONTEXT_ATTRIBUTE,observationContext);\n",
+            "startLine": 267,
+            "endLine": 267,
+            "startColumn": 3,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "exchange.getAttributes().put(CURRENT_OBSERVATION_CONTEXT_ATTRIBUTE,observationContext);\n",
+            "startLine": 267,
+            "endLine": 267,
+            "startColumn": 3,
+            "endColumn": 91
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.handlerMapping.handleMatch(key,handlerMethod,exchange);\n",
+            "startLine": 268,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "this.handlerMapping.handleMatch(key,handlerMethod,exchange);\n",
+            "startLine": 268,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ServerRequestObservationContext observationContext=new ServerRequestObservationContext(exchange);\n",
+            "startLine": 266,
+            "endLine": 266,
+            "startColumn": 3,
+            "endColumn": 102
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "ServerRequestObservationContext observationContext=new ServerRequestObservationContext(exchange.getRequest(),exchange.getResponse(),exchange.getAttributes());\n",
+            "startLine": 266,
+            "endLine": 266,
+            "startColumn": 3,
+            "endColumn": 165
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "assertThat(observationContext.getPathPattern()).isNotNull();\n",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 3,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "assertThat(observationContext.getPathPattern()).isEqualTo(\"/{path1}/2\");\n",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 3,
+            "endColumn": 75
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "assertThat(observationContext.getPathPattern().toString()).isEqualTo(\"/{path1}/2\");\n",
+            "startLine": 271,
+            "endLine": 271,
+            "startColumn": 3,
+            "endColumn": 86
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "assertThat(observationContext.getPathPattern()).isEqualTo(\"/{path1}/2\");\n",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 3,
+            "endColumn": 75
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "debe78b7f9329b6864440eb3d2f18717a2c0b263",
+      "url": "https://github.com/spring-projects/spring-framework/commit/debe78b7f9329b6864440eb3d2f18717a2c0b263",
+      "originalMethod": {
+        "container": "org.springframework.test.web.servlet.result.StatusResultMatchersTests",
+        "type": "Method",
+        "name": "statusRanges",
+        "filePath": "spring-test/src/test/java/org/springframework/test/web/servlet/result/StatusResultMatchersTests.java",
+        "startLine": 81,
+        "endLine": 107,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.test.web.servlet.result.StatusResultMatchersTests",
+        "type": "Method",
+        "name": "statusRanges",
+        "filePath": "spring-test/src/test/java/org/springframework/test/web/servlet/result/StatusResultMatchersTests.java",
+        "startLine": 81,
+        "endLine": 96,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(status: HttpStatus.values())",
+            "startLine": 83,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "type": "Enhanced For Statement",
+            "expression": "for(status: HttpStatus.values())",
+            "startLine": 83,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Statement",
+            "expression": "switch(status.series().value())",
+            "startLine": 87,
+            "endLine": 105,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "type": "Switch Statement",
+            "expression": "switch(status.series().value())",
+            "startLine": 87,
+            "endLine": 94,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockHttpServletResponse response=new MockHttpServletResponse();\n",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 4,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockHttpServletResponse response=new MockHttpServletResponse();\n",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 4,
+            "endColumn": 69
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "response.setStatus(status.value());\n",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 4,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "response.setStatus(status.value());\n",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 4,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MvcResult mvcResult=new StubMvcResult(request,null,null,null,null,null,response);\n",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 4,
+            "endColumn": 93
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MvcResult mvcResult=new StubMvcResult(request,null,null,null,null,null,response);\n",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 4,
+            "endColumn": 93
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "default:",
+            "startLine": 103,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 13
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "default ->",
+            "startLine": 93,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 2:",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 2 ->",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 4:",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 4 ->",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 3:",
+            "startLine": 94,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 3 ->",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 5:",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 5 ->",
+            "startLine": 92,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 1:",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "type": "Switch Case",
+            "expression": "case 1 ->",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "debe78b7f9329b6864440eb3d2f18717a2c0b263",
+      "url": "https://github.com/spring-projects/spring-framework/commit/debe78b7f9329b6864440eb3d2f18717a2c0b263",
+      "originalMethod": {
+        "container": "org.springframework.test.web.servlet.samples.standalone.MultipartControllerTests",
+        "type": "Method",
+        "name": "multipartRequestWithSingleFileOrPart",
+        "filePath": "spring-test/src/test/java/org/springframework/test/web/servlet/samples/standalone/MultipartControllerTests.java",
+        "startLine": 65,
+        "endLine": 89,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "refactoredMethod": {
+        "container": "org.springframework.test.web.servlet.samples.standalone.MultipartControllerTests",
+        "type": "Method",
+        "name": "multipartRequestWithSingleFileOrPart",
+        "filePath": "spring-test/src/test/java/org/springframework/test/web/servlet/samples/standalone/MultipartControllerTests.java",
+        "startLine": 65,
+        "endLine": 83,
+        "startColumn": 2,
+        "endColumn": 3
+      },
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "byte[] fileContent=\"bar\".getBytes(StandardCharsets.UTF_8);\n",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 3,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "byte[] fileContent=\"bar\".getBytes(StandardCharsets.UTF_8);\n",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 3,
+            "endColumn": 63
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "byte[] json=\"{\\\"name\\\":\\\"yeeeah\\\"}\".getBytes(StandardCharsets.UTF_8);\n",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "byte[] json=\"{\\\"name\\\":\\\"yeeeah\\\"}\".getBytes(StandardCharsets.UTF_8);\n",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockMultipartFile jsonPart=new MockMultipartFile(\"json\",\"json\",\"application/json\",json);\n",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 3,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockMultipartFile jsonPart=new MockMultipartFile(\"json\",\"json\",\"application/json\",json);\n",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 3,
+            "endColumn": 96
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "type": "Expression Statement",
+            "expression": "standaloneSetup(new MultipartController()).build().perform(requestBuilder.file(jsonPart)).andExpect(status().isFound());\n",
+            "startLine": 86,
+            "endLine": 88,
+            "startColumn": 3,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "type": "Expression Statement",
+            "expression": "standaloneSetup(new MultipartController()).build().perform(requestBuilder.file(jsonPart)).andExpect(status().isFound());\n",
+            "startLine": 80,
+            "endLine": 82,
+            "startColumn": 3,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockMultipartHttpServletRequestBuilder requestBuilder;\n",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "type": "Variable Declaration Statement",
+            "expression": "MockMultipartHttpServletRequestBuilder requestBuilder=switch (url) {\ncase \"/multipartfile\" ->  yield multipart(url).file(new MockMultipartFile(\"file\",\"orig\",null,fileContent));\ncase \"/multipartfile-via-put\" ->yield multipart(HttpMethod.PUT,url).file(new MockMultipartFile(\"file\",\"orig\",null,fileContent));\ndefault ->yield multipart(url).part(new MockPart(\"part\",\"orig\",fileContent));\n}\n;\n",
+            "startLine": 73,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

@@ -1,0 +1,1374 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "8a85295e49b2e20b92a9e2a9c62909f524e34e73",
+      "url": "https://github.com/pmd/pmd/commit/8a85295e49b2e20b92a9e2a9c62909f524e34e73",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNoRelativizeWith() : void renamed to public testNoRelativizeWithAbsoluteSrcDir() : void in class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\troot : Path in method public setup() : void from class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNoRelativizeWith() : void renamed to public testNoRelativizeWithAbsoluteSrcDir() : void in class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\troot : Path in method public setup() : void from class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "0b4cc1e5bb34b8a7063a282b6b117200d5496858",
+      "url": "https://github.com/pmd/pmd/commit/0b4cc1e5bb34b8a7063a282b6b117200d5496858",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trelativizePathsWith : String to relativizePathsWith : List<Path> in class net.sourceforge.pmd.ant.PMDTask",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic getRelativizePathsWith() : List<Path> extracted from public getRelativizeRoots() : List<java.nio.file.Path> in class net.sourceforge.pmd.ant.PMDTask",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setRelativizePathsWith(relativizePathsWith String) : void renamed to public getRelativizePathsWith() : List<Path> in class net.sourceforge.pmd.ant.PMDTask",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trelativizePathsWith : String to relativizePathsWith : List<Path> in class net.sourceforge.pmd.ant.PMDTask",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to List<Path> in method public getRelativizePathsWith() : List<Path> from class net.sourceforge.pmd.ant.PMDTask",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "a9fb6f604ef4f301a0a96a0015a376cae84bcb13",
+      "url": "https://github.com/pmd/pmd/commit/a9fb6f604ef4f301a0a96a0015a376cae84bcb13",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createTemporaryZipArchive(name String) : Path extracted from public testZipFileAsSource() : void in class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createTemporaryZipArchive(name String) : Path extracted from public testZipFileAsSource() : void in class net.sourceforge.pmd.cli.CoreCliTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5ad37f67579e2ed2ed02e6ca68a8f28cd9d5aafa",
+      "url": "https://github.com/pmd/pmd/commit/5ad37f67579e2ed2ed02e6ca68a8f28cd9d5aafa",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tBASIC_TYPE_MAP : Map<BasicType,DataType> to BASIC_TYPE_MAP : Map<String,DataType> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Pair<String,BasicType>> to List<Pair<String,String>> in method public getVariables() : List<Pair<String,String>> from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fromBasicType(value BasicType) : DataType renamed to public fromTypeName(value String) : DataType in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tbasicTypes : Set<BasicType> to basicTypeNames : Set<String> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbasicTypes : Set<BasicType> to basicTypeNames : Set<String> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tvariables : List<Pair<String,BasicType>> to variables : List<Pair<String,String>> in class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariable : Pair<String,BasicType> to variable : Pair<String,String> in method public findDataType(expression String, apexDirectories List<Path>) : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariables : List<Pair<String,BasicType>> to variables : List<Pair<String,String>> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariableNameToVariableType : Map<String,BasicType> to variableNameToVariableType : Map<String,String> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprevious : BasicType to previous : String in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariable : Pair<String,BasicType> to variable : Pair<String,String> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tvariables : List<Pair<String,BasicType>> to variables : List<Pair<String,String>> in class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Pair<String,BasicType>> to List<Pair<String,String>> in method public getVariables() : List<Pair<String,String>> from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fromBasicType(value BasicType) : DataType renamed to public fromTypeName(value String) : DataType in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tBASIC_TYPE_MAP : Map<BasicType,DataType> to BASIC_TYPE_MAP : Map<String,DataType> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tbasicTypes : Set<BasicType> to basicTypeNames : Set<String> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbasicTypes : Set<BasicType> to basicTypeNames : Set<String> in class net.sourceforge.pmd.lang.vf.DataType",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testFromBasicType() : void renamed to public testFromTypeName() : void in class net.sourceforge.pmd.lang.vf.DataTypeTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariable : Pair<String,BasicType> to variable : Pair<String,String> in method public findDataType(expression String, apexDirectories List<Path>) : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariables : List<Pair<String,BasicType>> to variables : List<Pair<String,String>> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariableNameToVariableType : Map<String,BasicType> to variableNameToVariableType : Map<String,String> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprevious : BasicType to previous : String in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvariable : Pair<String,BasicType> to variable : Pair<String,String> in method public testApexClassIsProperlyParsed() : void from class net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "b45ab080210678b0352d8402abe8e699f58573e0",
+      "url": "https://github.com/pmd/pmd/commit/b45ab080210678b0352d8402abe8e699f58573e0",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFileSystem to void in method public addZipFile(zipFile Path) : void from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLocalDisplayName(file Path) : String extracted from private getDisplayName(file Path) : String in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\te : FileSystemNotFoundException|ProviderNotFoundException to ignored : FileSystemNotFoundException in method public addZipFile(zipFile Path) : void from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : FileSystemNotFoundException|ProviderNotFoundException to ignored : FileSystemNotFoundException in method public addZipFile(zipFile Path) : void from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLocalDisplayName(file Path) : String extracted from private getDisplayName(file Path) : String in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFileSystem to void in method public addZipFile(zipFile Path) : void from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "99b24b702ff3cad00d6cc0217d8ced0944c5c08f",
+      "url": "https://github.com/pmd/pmd/commit/99b24b702ff3cad00d6cc0217d8ced0944c5c08f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallFilesToProcess : List<TextFile> to allFilesToProcess : Set<TextFile> in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trelativizePathRoot : String to relativizePathRoot : List<Path> in class net.sourceforge.pmd.cli.PMDParameters",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method private addFileImpl(textFile TextFile) : boolean from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trelativizePathRoot : String to relativizePathRoot : List<Path> in class net.sourceforge.pmd.cli.PMDParameters",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallFilesToProcess : List<TextFile> to allFilesToProcess : Set<TextFile> in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method private addFileImpl(textFile TextFile) : boolean from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic addRelativizeRoots(paths List<Path>) : void extracted from public PMDTaskImpl(task PMDTask) in class net.sourceforge.pmd.ant.internal.PMDTaskImpl & moved to class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpath : java.nio.file.Path to path : Path in method public addRelativizeRoots(paths List<Path>) : void from class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tconf : PMDConfiguration in method public runPmd(args String...) : StatusCode from class net.sourceforge.pmd.PMD",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "9b53bf444e37456c7ea371ed382d436fe66c7eb3",
+      "url": "https://github.com/pmd/pmd/commit/9b53bf444e37456c7ea371ed382d436fe66c7eb3",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.rule.errorprone.BeanMembersShouldSerializeRule renamed to net.sourceforge.pmd.lang.java.rule.errorprone.NonSerializableClassRule",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.rule.errorprone.BeanMembersShouldSerializeTest renamed to net.sourceforge.pmd.lang.java.rule.errorprone.NonSerializableClassTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.rule.errorprone.BeanMembersShouldSerializeTest renamed to net.sourceforge.pmd.lang.java.rule.errorprone.NonSerializableClassTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.rule.errorprone.BeanMembersShouldSerializeRule renamed to net.sourceforge.pmd.lang.java.rule.errorprone.NonSerializableClassRule",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "b9737e23b5a71b68a4135257e6bb10797cb16d52",
+      "url": "https://github.com/pmd/pmd/commit/b9737e23b5a71b68a4135257e6bb10797cb16d52",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputPaths : List<String> to inputPaths : List<Path> in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputUri : String to inputUri : URI in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputFilePath : String to inputFilePath : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreFilePath : String to ignoreFilePath : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treportFile : String to reportFile : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpaths : List<String> to paths : List<Path> in method public setInputPaths(inputPaths String) : void from class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputPaths : List<String> to inputPaths : List<Path> in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputUri : String to inputUri : URI in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinputFilePath : String to inputFilePath : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tignoreFilePath : String to ignoreFilePath : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treportFile : String to reportFile : Path in class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpaths : List<String> to paths : List<Path> in method public setInputPaths(inputPaths String) : void from class net.sourceforge.pmd.PMDConfiguration",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5840afe39a1bec770d09de97d9687fd011a25f52",
+      "url": "https://github.com/pmd/pmd/commit/5840afe39a1bec770d09de97d9687fd011a25f52",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getCalled() : String renamed to public getCallStack() : Deque<String> in class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to Deque<String> in method public getCallStack() : Deque<String> from class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setCalledMethod(name String) : void renamed to public addToStack(name String) : void in class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tcalled : String to callStack : Deque<String> in class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tcalled : String to callStack : Deque<String> in class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getCalled() : String renamed to public getCallStack() : Deque<String> in class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to Deque<String> in method public getCallStack() : Deque<String> from class net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "00d391261d90afb005aac22dd9e1beaccb13766a",
+      "url": "https://github.com/pmd/pmd/commit/00d391261d90afb005aac22dd9e1beaccb13766a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tSAXON_DOM_WRAPPER : SimpleDataKey<DocumentWrapper> to SAXON_DOM_WRAPPER : SimpleDataKey<PmdDocumentWrapper> in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDocumentWrapper to PmdDocumentWrapper in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate makeXPathVariables(accessibleProperties List<PropertyDescriptor<?>>, xpathStaticContext XPathStaticContext) : Map<PropertyDescriptor<?>,XPathVariable> renamed to private declareXPathVariables(accessibleProperties List<PropertyDescriptor<?>>, xpathStaticContext XPathStaticContext) : Map<PropertyDescriptor<?>,XPathVariable> in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate makeXPathExpression(xpath String, defaultUri String, properties List<PropertyDescriptor<?>>) : XPathExpressionWithProperties extracted from public SaxonDomXPathQuery(xpath String, properties List<PropertyDescriptor<?>>) in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tXPathDynamicContext to List<Item> in method private evaluate(elementNode PmdDocumentWrapper, properties PropertySource) : List<Item> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tnet.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties from Class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\twrapper : DocumentWrapper to wrapper : PmdDocumentWrapper in method public evaluate(root RootXmlNode, propertyValues PropertySource) : List<Node> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\titem : Object to item : Item in method public evaluate(root RootXmlNode, propertyValues PropertySource) : List<Node> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\twrapper : DocumentWrapper to wrapper : PmdDocumentWrapper in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate xpathVariables : Map<PropertyDescriptor<?>,XPathVariable> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery to package xpathVariables : Map<PropertyDescriptor<?>,XPathVariable> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext extracted from private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery & moved to class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdomRoot : org.w3c.dom.Node to domRoot : Document in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate makeXPathVariables(accessibleProperties List<PropertyDescriptor<?>>, xpathStaticContext XPathStaticContext) : Map<PropertyDescriptor<?>,XPathVariable> renamed to private declareXPathVariables(accessibleProperties List<PropertyDescriptor<?>>, xpathStaticContext XPathStaticContext) : Map<PropertyDescriptor<?>,XPathVariable> in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tSAXON_DOM_WRAPPER : SimpleDataKey<DocumentWrapper> to SAXON_DOM_WRAPPER : SimpleDataKey<PmdDocumentWrapper> in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate makeXPathExpression(xpath String, defaultUri String, properties List<PropertyDescriptor<?>>) : XPathExpressionWithProperties extracted from public SaxonDomXPathQuery(xpath String, properties List<PropertyDescriptor<?>>) in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDocumentWrapper to PmdDocumentWrapper in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\txpathVariables : Map<PropertyDescriptor<?>,XPathVariable> to xpathExpressionDefaultNs : XPathExpressionWithProperties in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\txpathVariables : Map<PropertyDescriptor<?>,XPathVariable> to xpathExpressionDefaultNs : XPathExpressionWithProperties in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tnet.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\twrapper : DocumentWrapper to wrapper : PmdDocumentWrapper in method public evaluate(root RootXmlNode, propertyValues PropertySource) : List<Node> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\titem : Object to item : Item in method public evaluate(root RootXmlNode, propertyValues PropertySource) : List<Node> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\twrapper : DocumentWrapper to wrapper : PmdDocumentWrapper in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate xpathVariables : Map<PropertyDescriptor<?>,XPathVariable> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery to package xpathVariables : Map<PropertyDescriptor<?>,XPathVariable> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\txpathStaticContext : XPathStaticContext to xpathStaticContext : IndependentContext in method private makeXPathExpression(xpath String, defaultUri String, properties List<PropertyDescriptor<?>>) : XPathExpressionWithProperties from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdomRoot : Node to domRoot : Document in method private getSaxonDomWrapper(node RootXmlNode) : PmdDocumentWrapper from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate evaluate(elementNode PmdDocumentWrapper, properties PropertySource) : List<Item> extracted from public evaluate(root RootXmlNode, propertyValues PropertySource) : List<Node> in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery & moved to class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\twrapper : DocumentWrapper to elementNode : PmdDocumentWrapper in method private evaluate(elementNode PmdDocumentWrapper, properties PropertySource) : List<Item> from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery to private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "bc1dd85f3b942082328941fb98aeaa3c74e8ae9c",
+      "url": "https://github.com/pmd/pmd/commit/bc1dd85f3b942082328941fb98aeaa3c74e8ae9c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isIgnored() : boolean renamed to public isDisabled() : boolean in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setIgnored(ignored boolean) : void renamed to public setDisabled(disabled boolean) : void in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tignored : boolean to disabled : boolean in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tignored : boolean to disabled : boolean in method private parseSingleTest(testCode Element, descriptor RuleTestDescriptor, fragments Map<String,Element>, usedFragments Set<String>, err PmdXmlReporter) : void from class net.sourceforge.pmd.test.schema.BaseTestParserImpl",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isIgnored() : boolean renamed to public isDisabled() : boolean in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setIgnored(ignored boolean) : void renamed to public setDisabled(disabled boolean) : void in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tignored : boolean to disabled : boolean in class net.sourceforge.pmd.test.schema.RuleTestDescriptor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tignored : boolean to disabled : boolean in method private parseSingleTest(testCode Element, descriptor RuleTestDescriptor, fragments Map<String,Element>, usedFragments Set<String>, err PmdXmlReporter) : void from class net.sourceforge.pmd.test.schema.BaseTestParserImpl",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "33bfd00303daa93eebc91a1d0b31567192becdcc",
+      "url": "https://github.com/pmd/pmd/commit/33bfd00303daa93eebc91a1d0b31567192becdcc",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tRENDERERS : Map<String,Class<? extends CPDRenderer>> to RENDERERS : Map<String,Class<?>> in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRendererByName(name String, encoding String) : Object extracted from public getRendererFromString(name String, encoding String) : Renderer in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRendererByName(name String, encoding String) : Object extracted from public getCPDRendererFromString(name String, encoding String) : CPDRenderer in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclazz : Class<? extends Renderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclazz : Class<? extends CPDRenderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : ClassCastException to e : ClassNotFoundException in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : ClassCastException to e : Exception in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tclazz : Class<? extends Renderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tclazz : Class<? extends CPDRenderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tclazzname : String in method public getCPDRendererFromString(name String, encoding String) : CPDRenderer from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tclazzname : String in method public getCPDRendererFromString(name String, encoding String) : CPDRenderer from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage getCPDReportRendererFromString(name String, encoding String) : CPDReportRenderer inlined to public postContruct() : void in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRendererByName(name String, encoding String) : Object extracted from public getRendererFromString(name String, encoding String) : Renderer in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createRendererByName(name String, encoding String) : Object extracted from public getCPDRendererFromString(name String, encoding String) : CPDRenderer in class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclazz : Class<? extends Renderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclazz : Class<? extends CPDRenderer> to rendererClass : Class<?> in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trenderer : CPDRenderer to renderer : Object in method public postContruct() : void from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trenderer : Renderer to renderer : Object in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trenderer : CPDRenderer to renderer : Object in method private createRendererByName(name String, encoding String) : Object from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tclazzname : String in method public getCPDRendererFromString(name String, encoding String) : CPDRenderer from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tclazzname : String in method public getRendererFromString(name String, encoding String) : Renderer from class net.sourceforge.pmd.cpd.CPDConfiguration",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "b197daf84e78016f6702e548b78cf5504f7769dc",
+      "url": "https://github.com/pmd/pmd/commit/b197daf84e78016f6702e548b78cf5504f7769dc",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.ast.ASTRecordStructurePattern renamed to net.sourceforge.pmd.lang.java.ast.ASTComponentPatternList",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.ast.ASTGuard renamed to net.sourceforge.pmd.lang.java.ast.ASTSwitchGuard",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.ast.ASTGuard renamed to net.sourceforge.pmd.lang.java.ast.ASTSwitchGuard",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.java.ast.ASTRecordStructurePattern renamed to net.sourceforge.pmd.lang.java.ast.ASTComponentPatternList",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "91d019343c7a772512053b19ea042095fc0ba1b5",
+      "url": "https://github.com/pmd/pmd/commit/91d019343c7a772512053b19ea042095fc0ba1b5",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate addChilds(parent HtmlNode, node Node) : void renamed to private addChildren(parent HtmlNode, node Node) : void in class net.sourceforge.pmd.lang.html.ast.HtmlTreeBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.lang.html.HtmlParser moved to net.sourceforge.pmd.lang.html.ast.HtmlParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.lang.html.HtmlTokenizer moved to net.sourceforge.pmd.lang.html.ast.HtmlTokenizer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.lang.html.HtmlParser moved to net.sourceforge.pmd.lang.html.ast.HtmlParser",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.lang.html.HtmlTokenizer moved to net.sourceforge.pmd.lang.html.ast.HtmlTokenizer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate addChilds(parent HtmlNode, node Node) : void renamed to private addChildren(parent HtmlNode, node Node) : void in class net.sourceforge.pmd.lang.html.ast.HtmlTreeBuilder",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "cd18ba0144cfdc62babedd05ea5950077578a22c",
+      "url": "https://github.com/pmd/pmd/commit/cd18ba0144cfdc62babedd05ea5950077578a22c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic createWriter(charset Charset, reportFile String) : Writer extracted from public createWriter(reportFile String) : Writer in class net.sourceforge.pmd.util.IOUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected testRenderer(expectedCharset Charset) : void extracted from public testRenderer() : void in class net.sourceforge.pmd.renderers.AbstractRendererTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic createWriter(charset Charset, reportFile String) : Writer extracted from public createWriter(reportFile String) : Writer in class net.sourceforge.pmd.util.IOUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected testRenderer(expectedCharset Charset) : void extracted from public testRenderer() : void in class net.sourceforge.pmd.renderers.AbstractRendererTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "0011865cf9e0b38b1af7745ed5b84c1d508ef7c2",
+      "url": "https://github.com/pmd/pmd/commit/0011865cf9e0b38b1af7745ed5b84c1d508ef7c2",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\txpathExpressionDefaultNs : XPathExpressionWithProperties to xpathExpression : XPathExpressionWithProperties in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testRootNode() : void renamed to public testRootNodeWildcardUri() : void in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNamespaceDescendant() : void renamed to public testNamespaceDescendantWildcardUri() : void in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getSaxonValue(properties PropertySource, entry Entry<PropertyDescriptor<?>,XPathVariable>) : ValueRepresentation extracted from private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate makeXPath(expression String, nsUri String) : Rule extracted from private makeXPath(expression String) : Rule in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tvariable : XPathVariable in method private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getSaxonValue(properties PropertySource, entry Entry<PropertyDescriptor<?>,XPathVariable>) : ValueRepresentation extracted from private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\txpathExpressionDefaultNs : XPathExpressionWithProperties to xpathExpression : XPathExpressionWithProperties in class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testRootNode() : void renamed to public testRootNodeWildcardUri() : void in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNamespaceDescendant() : void renamed to public testNamespaceDescendantWildcardUri() : void in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate makeXPath(expression String, nsUri String) : Rule extracted from private makeXPath(expression String) : Rule in class net.sourceforge.pmd.lang.xml.rule.XmlXPathRuleTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tvariable : XPathVariable in method private createDynamicContext(elementNode DocumentWrapper, properties PropertySource) : XPathDynamicContext from class net.sourceforge.pmd.lang.xml.rule.SaxonDomXPathQuery.XPathExpressionWithProperties",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "55f5b45f412bee746ecd6a9a62473cf3d63dbab9",
+      "url": "https://github.com/pmd/pmd/commit/55f5b45f412bee746ecd6a9a62473cf3d63dbab9",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tlog : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tlog : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLoggerScope renamed to net.sourceforge.pmd.util.log.MessageReporterScope",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbackend : PmdLogger to backend : MessageReporter in class net.sourceforge.pmd.util.log.MessageReporterScope",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLogger renamed to net.sourceforge.pmd.util.log.MessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getLog() : PmdLogger renamed to public getReporter() : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPmdLogger to MessageReporter in method public getReporter() : MessageReporter from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treporter : SimplePmdLogger to reporter : SimpleMessageReporter in class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getLog() : PmdLogger renamed to public getReporter() : MessageReporter in class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPmdLogger to MessageReporter in method public getReporter() : MessageReporter from class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.NoopPmdLogger renamed to net.sourceforge.pmd.util.log.NoopReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.SimplePmdLogger renamed to net.sourceforge.pmd.util.log.SimpleMessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLoggerBase renamed to net.sourceforge.pmd.util.log.MessageReporterBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treporter : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.RuleSetLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.document.PmdTestLogger renamed to net.sourceforge.pmd.lang.document.TestMessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmutedLog : PmdLoggerScope to mutedLog : MessageReporterScope in method public collectFiles(configuration PMDConfiguration, collector FileCollector) : void from class net.sourceforge.pmd.internal.util.FileCollectionUtil",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.NoopPmdLogger renamed to net.sourceforge.pmd.util.log.NoopReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLoggerScope renamed to net.sourceforge.pmd.util.log.MessageReporterScope",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.SimplePmdLogger renamed to net.sourceforge.pmd.util.log.SimpleMessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.lang.document.PmdTestLogger renamed to net.sourceforge.pmd.lang.document.TestMessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLogger renamed to net.sourceforge.pmd.util.log.MessageReporter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\tnet.sourceforge.pmd.util.log.PmdLoggerBase renamed to net.sourceforge.pmd.util.log.MessageReporterBase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getLog() : PmdLogger renamed to public getReporter() : MessageReporter in class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treporter : SimplePmdLogger to reporter : SimpleMessageReporter in class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPmdLogger to MessageReporter in method public getReporter() : MessageReporter from class net.sourceforge.pmd.PmdAnalysis",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\treporter : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.RuleSetLoader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tlog : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tlog : PmdLogger to reporter : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbackend : PmdLogger to backend : MessageReporter in class net.sourceforge.pmd.util.log.MessageReporterScope",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getLog() : PmdLogger renamed to public getReporter() : MessageReporter in class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPmdLogger to MessageReporter in method public getReporter() : MessageReporter from class net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmutedLog : PmdLoggerScope to mutedLog : MessageReporterScope in method public collectFiles(configuration PMDConfiguration, collector FileCollector) : void from class net.sourceforge.pmd.internal.util.FileCollectionUtil",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5dc2774c0a53810717358cc850b69c6e7fe0a463",
+      "url": "https://github.com/pmd/pmd/commit/5dc2774c0a53810717358cc850b69c6e7fe0a463",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLogRenderer(commonInputPath String) : AbstractRenderer extracted from private doTask() : void in class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toRenderer(project Project, inputPaths List<String>) : Renderer extracted from private doTask() : void in class net.sourceforge.pmd.ant.internal.PMDTaskImpl & moved to class net.sourceforge.pmd.ant.Formatter",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLogRenderer(commonInputPath String) : AbstractRenderer extracted from private doTask() : void in class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toRenderer(project Project, inputPaths List<String>) : Renderer extracted from private doTask() : void in class net.sourceforge.pmd.ant.internal.PMDTaskImpl & moved to class net.sourceforge.pmd.ant.Formatter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfiles : List<DataSource> to fullInputPath : List<String> in method private doTask() : void from class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfiles : List<DataSource> to fullInputPath : List<String> in method private doTask() : void from class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfs : FileSet to fileset : FileSet in method private doTask() : void from class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsrcFiles : String[] in method private doTask() : void from class net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "9217999bb545c06e34726a893f8213d009772ea5",
+      "url": "https://github.com/pmd/pmd/commit/9217999bb545c06e34726a893f8213d009772ea5",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.FileCollector moved to net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.NioTextFile moved to net.sourceforge.pmd.lang.document.NioTextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.StringTextFile moved to net.sourceforge.pmd.lang.document.StringTextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.TextFile moved to net.sourceforge.pmd.lang.document.TextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.internal.LanguageDiscoverer moved to net.sourceforge.pmd.lang.document.internal.LanguageDiscoverer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.FileCollectorTest moved to net.sourceforge.pmd.lang.document.FileCollectorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.PmdTestLogger moved to net.sourceforge.pmd.lang.document.PmdTestLogger",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.FileCollector moved to net.sourceforge.pmd.lang.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.NioTextFile moved to net.sourceforge.pmd.lang.document.NioTextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.StringTextFile moved to net.sourceforge.pmd.lang.document.StringTextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.TextFile moved to net.sourceforge.pmd.lang.document.TextFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.internal.LanguageDiscoverer moved to net.sourceforge.pmd.lang.document.internal.LanguageDiscoverer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.FileCollectorTest moved to net.sourceforge.pmd.lang.document.FileCollectorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tnet.sourceforge.pmd.util.document.PmdTestLogger moved to net.sourceforge.pmd.lang.document.PmdTestLogger",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "42e9d46eb8baecdeeb53966eb0fa5ae17a14980b",
+      "url": "https://github.com/pmd/pmd/commit/42e9d46eb8baecdeeb53966eb0fa5ae17a14980b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallFilesToProcess : List<FileWithLanguage> to allFilesToProcess : List<TextFile> in class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tLanguage to LanguageVersion in method private discoverLanguage(file String) : LanguageVersion from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdiscoverer : LanguageDiscoverer to discoverer : LanguageVersionDiscoverer in class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic error(message String, error Throwable) : void renamed to public errorEx(message String, error Throwable) : void in class net.sourceforge.pmd.util.log.PmdLogger",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<FileWithLanguage> to List<TextFile> in method public getAllFilesToProcess() : List<TextFile> from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic error(message String, error Throwable) : void renamed to public errorEx(message String, formatArgs Object[], error Throwable) : void in class net.sourceforge.pmd.util.log.SimplePmdLogger",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tnet.sourceforge.pmd.internal.util.FileCollectionUtil from Class net.sourceforge.pmd.util.FileUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tds : DataSource to ds : TextFile in method private parseStress(parser Parser, dataSources FileCollector, debug boolean) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tds : DataSource to ds : TextFile in method private stress(languageVersion LanguageVersion, ruleSet RuleSet, files FileCollector, results Set<RuleDuration>, debug boolean) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfile : FileWithLanguage to file : TextFile in method private assertCollected(collector FileCollector, relPaths List<String>) : void from class net.sourceforge.pmd.util.document.FileCollectorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate addRoot(collector FileCollector, rootLocation String) : void from class net.sourceforge.pmd.util.FileUtil to private addRoot(collector FileCollector, rootLocation String) : void from class net.sourceforge.pmd.internal.util.FileCollectionUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tlanguage : Language to languageVersion : LanguageVersion in method public addFile(file Path) : boolean from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tallFilesToProcess : List<FileWithLanguage> to allFilesToProcess : List<TextFile> in class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdiscoverer : LanguageDiscoverer to discoverer : LanguageVersionDiscoverer in class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate addFileImpl(textFile TextFile) : boolean extracted from public addFile(file Path, language Language) : boolean in class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<FileWithLanguage> to List<TextFile> in method public getAllFilesToProcess() : List<TextFile> from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tLanguage to LanguageVersion in method private discoverLanguage(file String) : LanguageVersion from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic error(message String, error Throwable) : void renamed to public errorEx(message String, formatArgs Object[], error Throwable) : void in class net.sourceforge.pmd.util.log.SimplePmdLogger",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tnet.sourceforge.pmd.internal.util.FileCollectionUtil from class net.sourceforge.pmd.util.FileUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic error(message String, error Throwable) : void renamed to public errorEx(message String, formatArgs Object[], error Throwable) : void in class net.sourceforge.pmd.util.log.PmdLogger",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tds : DataSource to ds : TextFile in method private parseStress(parser Parser, dataSources FileCollector, debug boolean) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tds : DataSource to ds : TextFile in method private stress(languageVersion LanguageVersion, ruleSet RuleSet, files FileCollector, results Set<RuleDuration>, debug boolean) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfile : FileWithLanguage to file : TextFile in method private assertCollected(collector FileCollector, relPaths List<String>) : void from class net.sourceforge.pmd.util.document.FileCollectorTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate addRoot(collector FileCollector, rootLocation String) : void from class net.sourceforge.pmd.util.FileUtil to private addRoot(collector FileCollector, rootLocation String) : void from class net.sourceforge.pmd.internal.util.FileCollectionUtil",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tlanguage : Language to languageVersion : LanguageVersion in method public addFile(file Path) : boolean from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdataSources : List<DataSource> to collector : FileCollector in method public main(args String[]) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdataSources : List<DataSource> to collector : FileCollector in method public main(args String[]) : void from class net.sourceforge.pmd.benchmark.Benchmarker",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlanguage : Language to languageVersion : LanguageVersion in method public addFile(file Path) : boolean from class net.sourceforge.pmd.util.document.FileCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic collectFiles(collector FileCollector, fileLocations String) : void from class net.sourceforge.pmd.util.FileUtil to public collectFiles(collector FileCollector, fileLocations String) : void from class net.sourceforge.pmd.internal.util.FileCollectionUtil",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

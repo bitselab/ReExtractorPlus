@@ -1,0 +1,2223 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "06e87c789efbc7280d04e064b8b1decce22b338e",
+      "url": "https://github.com/hibernate/hibernate-search/commit/06e87c789efbc7280d04e064b8b1decce22b338e",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.AbortedEventsGenerator moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.AbortedEventsGenerator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.IndexedEntity moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.IndexedEntity",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.OutboxPollingSearchMappingIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.OutboxPollingSearchMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.OutboxPollingSearchMappingMultiTenancyIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.OutboxPollingSearchMappingMultiTenancyIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.schema.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.OutboxPollingOrmSetupHelperConfig moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.OutboxPollingOrmSetupHelperConfig",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingTestUtils moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.OutboxPollingTestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.PerSessionFactoryIndexingCountHelper moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.PerSessionFactoryIndexingCountHelper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.TestFailureHandler moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.TestFailureHandler",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.OutboxPollingOrmSetupHelperConfig moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.OutboxPollingOrmSetupHelperConfig",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.schema.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingTestUtils moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.OutboxPollingTestUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.PerSessionFactoryIndexingCountHelper moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.PerSessionFactoryIndexingCountHelper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.TestFailureHandler moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.testsupport.util.TestFailureHandler",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.AbortedEventsGenerator moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.AbortedEventsGenerator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.IndexedEntity moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.IndexedEntity",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.OutboxPollingSearchMappingIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.OutboxPollingSearchMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.searchmapping.OutboxPollingSearchMappingMultiTenancyIT moved to org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.mapping.OutboxPollingSearchMappingMultiTenancyIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "90eee4caf2ea39dfb6ed344f52e38f093d075ecd",
+      "url": "https://github.com/hibernate/hibernate-search/commit/90eee4caf2ea39dfb6ed344f52e38f093d075ecd",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindexingFutureHandler : Consumer<CompletableFuture<SearchIndexingPlanExecutionReport>> to indexingFutureHandler : Consumer<? super CompletableFuture<? extends SearchIndexingPlanExecutionReport>> in class org.hibernate.search.mapper.pojo.plan.synchronization.spi.ConfiguredIndexingPlanSynchronizationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.pojo.work.SearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindexingFutureHandler : Consumer<CompletableFuture<SearchIndexingPlanExecutionReport>> to indexingFutureHandler : Consumer<? super CompletableFuture<? extends SearchIndexingPlanExecutionReport>> in class org.hibernate.search.mapper.pojo.plan.synchronization.spi.ConfiguredIndexingPlanSynchronizationStrategy.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.orm.automaticindexing.session.impl.DelegatingAutomaticIndexingSynchronizationStrategy.HibernateOrmDelegatingSearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.pojo.work.impl.DelegatingSearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT.CustomAutomaticIndexingSynchronizationStrategy from Class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT.CustomAutomaticIndexingSynchronizationStrategy",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic apply(context IndexingPlanSynchronizationStrategyConfigurationContext) : void from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT.CustomAutomaticIndexingSynchronizationStrategy to public apply(context IndexingPlanSynchronizationStrategyConfigurationContext) : void from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT.CustomAutomaticIndexingSynchronizationStrategy",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.orm.automaticindexing.session.impl.DelegatingAutomaticIndexingSynchronizationStrategy.HibernateOrmDelegatingSearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindexingFutureHandler : Consumer<CompletableFuture<SearchIndexingPlanExecutionReport>> to indexingFutureHandler : Consumer<? super CompletableFuture<? extends SearchIndexingPlanExecutionReport>> in class org.hibernate.search.mapper.pojo.plan.synchronization.spi.ConfiguredIndexingPlanSynchronizationStrategy.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindexingFutureHandler : Consumer<CompletableFuture<SearchIndexingPlanExecutionReport>> to indexingFutureHandler : Consumer<? super CompletableFuture<? extends SearchIndexingPlanExecutionReport>> in class org.hibernate.search.mapper.pojo.plan.synchronization.spi.ConfiguredIndexingPlanSynchronizationStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.pojo.work.SearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<Object> to List<?> in method public failingEntities() : List<?> from class org.hibernate.search.mapper.pojo.work.impl.DelegatingSearchIndexingPlanExecutionReport",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate runTransactionInDifferentThreadExpectingBlock(sessionFactory SessionFactory, customStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT to private runTransactionInDifferentThreadExpectingBlock(sessionFactory SessionFactory, customStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate runTransactionInDifferentThreadExpectingNoBlock(sessionFactory SessionFactory, overriddenStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT to private runTransactionInDifferentThreadExpectingNoBlock(sessionFactory SessionFactory, overriddenStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate runTransactionInDifferentThread(sessionFactory SessionFactory, overriddenStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.AutomaticIndexingSynchronizationStrategyIT to private runTransactionInDifferentThread(sessionFactory SessionFactory, overriddenStrategy IndexingPlanSynchronizationStrategy, expectedCommitStrategy DocumentCommitStrategy, expectedRefreshStrategy DocumentRefreshStrategy, indexingWorkFuture CompletableFuture<?>) : CompletableFuture<?> from class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.IndexingPlanSynchronizationStrategyIT",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "3346b6bbc8eac62b94741bf3472ff756e7be8d05",
+      "url": "https://github.com/hibernate/hibernate-search/commit/3346b6bbc8eac62b94741bf3472ff756e7be8d05",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.engine.backend.work.execution.OperationSubmitterTest renamed to org.hibernate.search.engine.backend.work.execution.OperationSubmitterQueueTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.engine.backend.work.execution.OperationSubmitterTest renamed to org.hibernate.search.engine.backend.work.execution.OperationSubmitterQueueTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "7dd57f318219bae6bfd2e8eea7cc3d887ae76842",
+      "url": "https://github.com/hibernate/hibernate-search/commit/7dd57f318219bae6bfd2e8eea7cc3d887ae76842",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic sessionContext() : DetachedBackendSessionContext renamed to public tenantIdentifier() : String in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tDetachedBackendSessionContext to String in method public tenantIdentifier() : String from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.lucene.work.execution.impl.LuceneIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.lucene.work.execution.impl.LuceneIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantIdentifier : String in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantIdentifier : String in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.elasticsearch.work.execution.impl.ElasticsearchIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.elasticsearch.work.execution.impl.ElasticsearchIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.index.impl.StubIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.index.impl.StubIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to mappingContext : BackendMappingContext in class org.hibernate.search.util.impl.integrationtest.mapper.stub.BulkIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to mappingContext : BackendMappingContext in class org.hibernate.search.util.impl.integrationtest.mapper.stub.BulkIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic workspace(detachedSessionContext DetachedBackendSessionContext) : SearchWorkspace inlined to public workspace(tenantId String) : SearchWorkspace in class org.hibernate.search.mapper.orm.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic massIndexer(detachedSessionContexts List<DetachedBackendSessionContext>) : MassIndexer inlined to public massIndexer(tenantIds Collection<String>) : MassIndexer in class org.hibernate.search.mapper.orm.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic workspace(detachedSessionContext DetachedBackendSessionContext) : SearchWorkspace inlined to public workspace(tenantId String) : SearchWorkspace in class org.hibernate.search.mapper.pojo.standalone.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic massIndexer(detachedSessionContexts List<DetachedBackendSessionContext>) : MassIndexer inlined to public massIndexer(tenantIds Collection<String>) : MassIndexer in class org.hibernate.search.mapper.pojo.standalone.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic createWorkspace(sessionContext DetachedBackendSessionContext) : IndexWorkspace inlined to public createWorkspace(tenantId String) : IndexWorkspace in class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappedIndex",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdetachedSession : DetachedBackendSessionContext to tenantId : String in method private beforeBatch() : void from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdetachedSession : DetachedBackendSessionContext to tenantId : String in method private beforeBatch() : void from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createWorkspace(sessionContext DetachedBackendSessionContext) : IndexWorkspace from class org.hibernate.search.engine.backend.index.spi.IndexManagerImplementor to public createWorkspace(mappingContext BackendMappingContext, tenantId String) : IndexWorkspace from class org.hibernate.search.engine.mapper.mapping.impl.MappedIndexManagerImpl",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.elasticsearch.work.execution.impl.ElasticsearchIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.elasticsearch.work.execution.impl.ElasticsearchIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.lucene.work.execution.impl.LuceneIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.backend.lucene.work.execution.impl.LuceneIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic createWorkspace(mappingContext BackendMappingContext, tenantId String) : IndexWorkspace extracted from public createWorkspace(sessionContext DetachedBackendSessionContext) : IndexWorkspace in class org.hibernate.search.engine.mapper.mapping.impl.MappedIndexManagerImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic workspace(detachedSessionContext DetachedBackendSessionContext) : SearchWorkspace inlined to public workspace(tenantId String) : SearchWorkspace in class org.hibernate.search.mapper.orm.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic massIndexer(detachedSessionContexts List<DetachedBackendSessionContext>) : MassIndexer inlined to public massIndexer(tenantIds Collection<String>) : MassIndexer in class org.hibernate.search.mapper.orm.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantIdentifier : String in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantIdentifier : String in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator.SessionContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdetachedSessions : Collection<DetachedBackendSessionContext> to tenantIds : Collection<String> in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic workspace(tenantId String) : PojoScopeWorkspace extracted from public workspace(sessionContext DetachedBackendSessionContext) : PojoScopeWorkspace in class org.hibernate.search.mapper.pojo.scope.impl.PojoScopeDelegateImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic workspace(detachedSessionContext DetachedBackendSessionContext) : SearchWorkspace inlined to public workspace(tenantId String) : SearchWorkspace in class org.hibernate.search.mapper.pojo.standalone.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic massIndexer(detachedSessionContexts List<DetachedBackendSessionContext>) : MassIndexer inlined to public massIndexer(tenantIds Collection<String>) : MassIndexer in class org.hibernate.search.mapper.pojo.standalone.scope.impl.SearchScopeImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.index.impl.StubIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to tenantId : String in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.index.impl.StubIndexWorkspace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionContext : DetachedBackendSessionContext to mappingContext : BackendMappingContext in class org.hibernate.search.util.impl.integrationtest.mapper.stub.BulkIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionContext : DetachedBackendSessionContext to mappingContext : BackendMappingContext in class org.hibernate.search.util.impl.integrationtest.mapper.stub.BulkIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic createWorkspace(sessionContext DetachedBackendSessionContext) : IndexWorkspace inlined to public createWorkspace(tenantId String) : IndexWorkspace in class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappedIndex",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdetachedSession : DetachedBackendSessionContext to tenantId : String in method private beforeBatch() : void from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdetachedSession : DetachedBackendSessionContext to tenantId : String in method private beforeBatch() : void from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingBatchCoordinator",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "fe9d94f5875ba28017d584653e397cffe57d7555",
+      "url": "https://github.com/hibernate/hibernate-search/commit/fe9d94f5875ba28017d584653e397cffe57d7555",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tENTITY_MAPPING_OUTBOXEVENT_UUID_GEN_STRATEGY : String to COORDINATION_ENTITY_MAPPING_OUTBOXEVENT_UUID_GEN_STRATEGY : String in class org.hibernate.search.mapper.orm.coordination.outboxpolling.cfg.HibernateOrmMapperOutboxPollingSettings.Radicals",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : String to COORDINATION_ENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : String in class org.hibernate.search.mapper.orm.coordination.outboxpolling.cfg.HibernateOrmMapperOutboxPollingSettings.Radicals",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tENTITY_MAPPING_OUTBOXEVENT_UUID_GEN_STRATEGY : String to COORDINATION_ENTITY_MAPPING_OUTBOXEVENT_UUID_GEN_STRATEGY : String in class org.hibernate.search.mapper.orm.coordination.outboxpolling.cfg.HibernateOrmMapperOutboxPollingSettings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : String to COORDINATION_ENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : String in class org.hibernate.search.mapper.orm.coordination.outboxpolling.cfg.HibernateOrmMapperOutboxPollingSettings",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : ConfigurationProperty<String> to ENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : OptionalConfigurationProperty<String> in class org.hibernate.search.mapper.orm.coordination.outboxpolling.event.impl.OutboxPollingOutboxEventAdditionalJaxbMappingProducer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomNamesAndSchema() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomUuidGenerator() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomUuidDataType() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tuuidDataType : String to uuidDataType : Optional<String> in method public produceMappings(propertySource ConfigurationPropertySource, dialect Dialect, mappingBinder MappingBinder, buildingContext MetadataBuildingContext) : Collection<MappingDocument> from class org.hibernate.search.mapper.orm.coordination.outboxpolling.event.impl.OutboxPollingOutboxEventAdditionalJaxbMappingProducer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomNamesAndSchema() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomUuidGenerator() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertEventUUIDVersion(session Session, expectedVersion int) : void extracted from public validMappingWithCustomUuidDataType() : void in class org.hibernate.search.integrationtest.mapper.orm.coordination.outboxpolling.automaticindexing.OutboxPollingCustomEntityMappingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : ConfigurationProperty<String> to ENTITY_MAPPING_OUTBOXEVENT_UUID_DATA_TYPE : OptionalConfigurationProperty<String> in class org.hibernate.search.mapper.orm.coordination.outboxpolling.event.impl.OutboxPollingOutboxEventAdditionalJaxbMappingProducer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tuuidDataType : String to resolvedUuidDataType : String in method public produceMappings(propertySource ConfigurationPropertySource, dialect Dialect, mappingBinder MappingBinder, buildingContext MetadataBuildingContext) : Collection<MappingDocument> from class org.hibernate.search.mapper.orm.coordination.outboxpolling.event.impl.OutboxPollingOutboxEventAdditionalJaxbMappingProducer",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "f2c5fae7bdf32b93454201748188300989968fec",
+      "url": "https://github.com/hibernate/hibernate-search/commit/f2c5fae7bdf32b93454201748188300989968fec",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.config.MyElasticsearchAnalysisConfigurer moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.config.MyElasticsearchAnalysisConfigurer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.entity.Author moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.entity.Author",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.entity.AuthorWithSlightlyDifferentIndex moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.entity.AuthorWithSlightlyDifferentIndex",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.service.AuthorService moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.service.AuthorService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.service.JavaModulePathIT moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.service.JavaModulePathIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.config.MyElasticsearchAnalysisConfigurer moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.config.MyElasticsearchAnalysisConfigurer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.entity.Author moved to org.hibernate.search.integrationtest.java.modules.orm.lucene.entity.Author",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.entity.AuthorWithSlightlyDifferentIndex moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.entity.AuthorWithSlightlyDifferentIndex",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.service.AuthorService moved to org.hibernate.search.integrationtest.java.modules.orm.elasticsearch.service.AuthorService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.modules.service.JavaModulePathIT moved to org.hibernate.search.integrationtest.java.modules.orm.lucene.service.JavaModulePathIT",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "d473422187392effec5fd854d18b8dd56f9be754",
+      "url": "https://github.com/hibernate/hibernate-search/commit/d473422187392effec5fd854d18b8dd56f9be754",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetweenIncluding(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean renamed to public isBetween(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetween(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean renamed to public isBetweenExcluded(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLessOrEquals(actual ElasticsearchVersion, version String) : boolean renamed to public isAtMost(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLess(actual ElasticsearchVersion, version String) : boolean renamed to public isLessThan(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionEquals(actual ElasticsearchVersion, version String) : boolean renamed to public isMatching(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate isDistributionEquals(actual ElasticsearchVersion, distribution ElasticsearchDistributionName) : boolean renamed to private isDistribution(actual ElasticsearchVersion, distribution ElasticsearchDistributionName) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isOpensearchDistribution(actual ElasticsearchVersion) : boolean renamed to public isOpenSearch(actual ElasticsearchVersion) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetween() : void renamed to public isBetweenExcluded() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetweenIncluding() : void renamed to public isBetween() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionEquals() : void renamed to public isMatching() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLessOrEquals() : void renamed to public isAtMost() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLess() : void renamed to public isLessThan() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isOpensearchDistribution() : void renamed to public isOpenSearch() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isOpensearchDistribution(actual ElasticsearchVersion) : boolean renamed to public isOpenSearch(actual ElasticsearchVersion) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate isDistributionEquals(actual ElasticsearchVersion, distribution ElasticsearchDistributionName) : boolean renamed to private isDistribution(actual ElasticsearchVersion, distribution ElasticsearchDistributionName) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionEquals(actual ElasticsearchVersion, version String) : boolean renamed to public isMatching(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLessOrEquals(actual ElasticsearchVersion, version String) : boolean renamed to public isAtMost(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLess(actual ElasticsearchVersion, version String) : boolean renamed to public isLessThan(actual ElasticsearchVersion, version String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetween(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean renamed to public isBetweenExcluded(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetweenIncluding(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean renamed to public isBetween(actual ElasticsearchVersion, minVersion String, maxVersion String) : boolean in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetween() : void renamed to public isBetweenExcluded() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionBetweenIncluding() : void renamed to public isBetween() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isOpensearchDistribution() : void renamed to public isOpenSearch() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionEquals() : void renamed to public isMatching() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLessOrEquals() : void renamed to public isAtMost() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic isActualVersionLess() : void renamed to public isLessThan() : void in class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.dialect.ElasticsearchVersionUtilsTest",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "49bdd5dddd76a169cb8bef2d979c386b89edcbfd",
+      "url": "https://github.com/hibernate/hibernate-search/commit/49bdd5dddd76a169cb8bef2d979c386b89edcbfd",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdropAndCreateSchemaOnStart : boolean to dropAndCreateSchemaOnStart : Boolean in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpurgeAtStart : boolean to purgeAtStart : Boolean in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdropAndCreateSchemaOnStart : boolean to dropAndCreateSchemaOnStart : Boolean in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpurgeAtStart : boolean to purgeAtStart : Boolean in class org.hibernate.search.mapper.pojo.massindexing.impl.PojoDefaultMassIndexer",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "6eccb15843c8c5c7b22bef783b932804748ffd4a",
+      "url": "https://github.com/hibernate/hibernate-search/commit/6eccb15843c8c5c7b22bef783b932804748ffd4a",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tloadedObject : StubLoadedObject to loadedEntity : StubEntity in class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT.IndexItem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tloadedObject : StubLoadedObject to loadedEntity : StubEntity in class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT.IndexItem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.integrationtest.backend.tck.testsupport.stub.StubLoadedObject renamed to org.hibernate.search.integrationtest.backend.tck.testsupport.stub.StubEntity",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tquery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tquery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedObject : StubEntity in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public referenceTransformer() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityReferenceProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public referenceTransformer() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityReferenceProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tentityProjection : SearchProjection<StubLoadedObject> to entityProjection : SearchProjection<StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public defaultResultType() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public defaultResultType() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public selectEntity() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public selectEntity() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public selectEntityReference() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public selectEntityReference() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public select() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public select() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchunk : SearchScrollResult<StubLoadedObject> to chunk : SearchScrollResult<StubEntity> in method private verifyLoading(loadingContextMock SearchLoadingContext<StubTransformedReference,StubEntity>, scroll SearchScroll<StubEntity>) : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchunk : SearchScrollResult<StubLoadedObject> to chunk : SearchScrollResult<StubEntity> in method private verifyLoading(loadingContextMock SearchLoadingContext<StubTransformedReference,StubEntity>, scroll SearchScroll<StubEntity>) : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument1LoadedObject : StubLoadedObject to document1LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument2LoadedObject : StubLoadedObject to document2LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument3LoadedObject : StubLoadedObject to document3LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\temptyLoadedObject : StubLoadedObject to emptyLoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument1LoadedObject : StubLoadedObject to document1LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument2LoadedObject : StubLoadedObject to document2LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument3LoadedObject : StubLoadedObject to document3LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\temptyLoadedObject : StubLoadedObject to emptyLoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchunk : SearchScrollResult<StubLoadedObject> to chunk : SearchScrollResult<StubEntity> in method private verifyLoading(loadingContextMock SearchLoadingContext<StubTransformedReference,StubEntity>, scroll SearchScroll<StubEntity>) : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.integrationtest.backend.tck.testsupport.stub.StubLoadedObject renamed to org.hibernate.search.integrationtest.backend.tck.testsupport.stub.StubEntity",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tloadedObject : StubLoadedObject to loadedEntity : StubEntity in class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT.IndexItem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tloadedObject : StubLoadedObject to loadedEntity : StubEntity in class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT.IndexItem",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tquery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tquery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedObject : StubEntity in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public entityLoading_failed_skipHit() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public referenceTransformer() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityReferenceProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public referenceTransformer() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityReferenceProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tentityProjection : SearchProjection<StubLoadedObject> to entityProjection : SearchProjection<StubEntity> in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public defaultResultType() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public defaultResultType() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public selectEntity() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public selectEntity() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public selectEntityReference() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public selectEntityReference() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public select() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public select() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryLoadingOptionsIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_entityLoadingTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tloadingContextMock : SearchLoadingContext<StubTransformedReference,StubLoadedObject> to loadingContextMock : SearchLoadingContext<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscope : GenericStubMappingScope<StubTransformedReference,StubLoadedObject> to scope : GenericStubMappingScope<StubTransformedReference,StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tscroll : SearchScroll<StubLoadedObject> to scroll : SearchScroll<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectsQuery : SearchQuery<StubLoadedObject> to query : SearchQuery<StubEntity> in method public resultLoadingOnScrolling_softTimeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchunk : SearchScrollResult<StubLoadedObject> to chunk : SearchScrollResult<StubEntity> in method private verifyLoading(loadingContextMock SearchLoadingContext<StubTransformedReference,StubEntity>, scroll SearchScroll<StubEntity>) : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchunk : SearchScrollResult<StubLoadedObject> to chunk : SearchScrollResult<StubEntity> in method private verifyLoading(loadingContextMock SearchLoadingContext<StubTransformedReference,StubEntity>, scroll SearchScroll<StubEntity>) : void from class org.hibernate.search.integrationtest.backend.tck.search.query.SearchQueryScrollResultLoadingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc1LoadedObject : StubLoadedObject to doc1LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdoc2LoadedObject : StubLoadedObject to doc2LoadedEntity : StubEntity in method public entityLoading_timeout() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.AbstractEntityProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument1LoadedObject : StubLoadedObject to document1LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument2LoadedObject : StubLoadedObject to document2LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdocument3LoadedObject : StubLoadedObject to document3LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\temptyLoadedObject : StubLoadedObject to emptyLoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument1LoadedObject : StubLoadedObject to document1LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument2LoadedObject : StubLoadedObject to document2LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdocument3LoadedObject : StubLoadedObject to document3LoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\temptyLoadedObject : StubLoadedObject to emptyLoadedEntity : StubEntity in method public references_transformed() : void from class org.hibernate.search.integrationtest.backend.tck.search.projection.SearchProjectionIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "783b7b38056351d1067512a89564c9662c2aefe0",
+      "url": "https://github.com/hibernate/hibernate-search/commit/783b7b38056351d1067512a89564c9662c2aefe0",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingFixture from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingImpl",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMapper to package projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingFixture",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingInitiator to package projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingFixture",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingPartialBuildState to package projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingFixture",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingImpl to package projectionRegistry : ProjectionRegistry from class org.hibernate.search.util.impl.integrationtest.mapper.stub.StubMappingFixture",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "7a224bf553edecf61e154928b317ed8b3a5c5733",
+      "url": "https://github.com/hibernate/hibernate-search/commit/7a224bf553edecf61e154928b317ed8b3a5c5733",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<EventContextElement,ContextualFailureCollectorImpl> to Collection<ContextualFailureCollectorImpl> in method package children() : Collection<ContextualFailureCollectorImpl> from class org.hibernate.search.engine.reporting.spi.RootFailureCollector.NonRootFailureCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfailureMessages : List<String> to failureMessages : Collection<String> in class org.hibernate.search.engine.reporting.spi.RootFailureCollector.ContextualFailureCollectorImpl",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tchildren : Map<EventContextElement,ContextualFailureCollectorImpl> to children : Map<InsertionOrder.Key<EventContextElement>,ContextualFailureCollectorImpl> in class org.hibernate.search.engine.reporting.spi.RootFailureCollector.NonRootFailureCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\telement : null to key : null in method public withContext(contextElement EventContextElement) : ContextualFailureCollectorImpl from class org.hibernate.search.engine.reporting.spi.RootFailureCollector.NonRootFailureCollector",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tchildren : Map<EventContextElement,ContextualFailureCollectorImpl> to children : Map<InsertionOrder.Key<EventContextElement>,ContextualFailureCollectorImpl> in class org.hibernate.search.engine.reporting.spi.RootFailureCollector.NonRootFailureCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tMap<EventContextElement,ContextualFailureCollectorImpl> to Collection<ContextualFailureCollectorImpl> in method package children() : Collection<ContextualFailureCollectorImpl> from class org.hibernate.search.engine.reporting.spi.RootFailureCollector.NonRootFailureCollector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfailureMessages : List<String> to failureMessages : Collection<String> in class org.hibernate.search.engine.reporting.spi.RootFailureCollector.ContextualFailureCollectorImpl",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "e0dc05bbdd3c95b2241d2813394726e3f176d6b5",
+      "url": "https://github.com/hibernate/hibernate-search/commit/e0dc05bbdd3c95b2241d2813394726e3f176d6b5",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic annotationValueReadHandleFactory() : ValueHandleFactory renamed to public annotationValueHandleFactory() : ValueHandleFactory in class org.hibernate.search.mapper.pojo.model.hcann.spi.AbstractPojoHCAnnBootstrapIntrospector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic annotationValueReadHandleFactory() : ValueHandleFactory renamed to public annotationValueHandleFactory() : ValueHandleFactory in class org.hibernate.search.mapper.pojo.model.spi.PojoBootstrapIntrospector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.hibernate.search.util.common.reflect.spi.ValueReadHandleFactory from classes [org.hibernate.search.util.common.reflect.spi.MemberValueHandleFactory, org.hibernate.search.util.common.reflect.spi.MethodHandleValueHandleFactory]",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic annotationValueReadHandleFactory() : ValueHandleFactory renamed to public annotationValueHandleFactory() : ValueHandleFactory in class org.hibernate.search.mapper.pojo.model.hcann.spi.AbstractPojoHCAnnBootstrapIntrospector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic annotationValueReadHandleFactory() : ValueHandleFactory renamed to public annotationValueHandleFactory() : ValueHandleFactory in class org.hibernate.search.mapper.pojo.model.spi.PojoBootstrapIntrospector",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.hibernate.search.util.common.reflect.spi.ValueReadHandleFactory from classes [org.hibernate.search.util.common.reflect.spi.MemberValueHandleFactory, org.hibernate.search.util.common.reflect.spi.MethodHandleValueHandleFactory]",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "37ca9038d8724ce847b63379c29388ccb81985b4",
+      "url": "https://github.com/hibernate/hibernate-search/commit/37ca9038d8724ce847b63379c29388ccb81985b4",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tV to P in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tvalueClass : Class<F> to fieldType : Class<F> in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tV to P in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to A in method public extract(projectionHitMapper ProjectionHitMapper<?,?>, projectionFromIndex Iterator<?>, context StubSearchProjectionContext) : A from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ti : int to j : int in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tV to P in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic build() : SearchProjection<V> inlined to public build(accumulatorProvider ProjectionAccumulator.Provider<V,P>) : SearchProjection<P> in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tObject to A in method public extract(projectionHitMapper ProjectionHitMapper<?,?>, projectionFromIndex Iterator<?>, context StubSearchProjectionContext) : A from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tV to P in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tvalueClass : Class<F> to accumulator : ProjectionAccumulator<F,V,A,P> in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tvalueClass : Class<F> to accumulator : ProjectionAccumulator<F,V,A,P> in class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldProjection",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ti : int to j : int in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttransformedData : E to accumulated : A in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttransformedData : E to accumulated : A in method public transform(loadingResult LoadingResult<?,?>, extractedData Object, context StubSearchProjectionContext) : P from class org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubCompositeProjection",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "98d19cee8e19f52372e94c86ab500af5c0309350",
+      "url": "https://github.com/hibernate/hibernate-search/commit/98d19cee8e19f52372e94c86ab500af5c0309350",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionFactory : SessionFactory to entityManagerFactory : EntityManagerFactory in class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.FlushClearEvictAllIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionFactory : SessionFactory to entityManagerFactory : EntityManagerFactory in class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.FlushClearEvictAllIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsessionFactory : SessionFactory to entityManagerFactory : EntityManagerFactory in class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.FlushClearEvictAllIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsessionFactory : SessionFactory to entityManagerFactory : EntityManagerFactory in class org.hibernate.search.integrationtest.mapper.orm.automaticindexing.session.FlushClearEvictAllIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "9a5b1c13501f8246ee0abd8a21c08c0000141112",
+      "url": "https://github.com/hibernate/hibernate-search/commit/9a5b1c13501f8246ee0abd8a21c08c0000141112",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT from Class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkInvariants() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to private checkInvariants() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testMassIndexingMonitor() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to public testMassIndexingMonitor() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to private MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic logged : ExpectedLog4jLog from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to public logged : ExpectedLog4jLog from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate NUMBER_OF_BOOKS : int from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingManualSchemaManagementIT to private NUMBER_OF_BOOKS : int from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingManualSchemaManagementIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingManualSchemaManagementIT to private MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingManualSchemaManagementIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testMassIndexingWithAutomaticDropAndCreate() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingManualSchemaManagementIT to public testMassIndexingWithAutomaticDropAndCreate() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingManualSchemaManagementIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkInvariants() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingManualSchemaManagementIT to private checkInvariants() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingManualSchemaManagementIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate checkInvariants() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to private checkInvariants() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic testMassIndexingMonitor() : void from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to public testMassIndexingMonitor() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to private MASS_INDEXING_MONITOR_LOG_PERIOD : int from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic logged : ExpectedLog4jLog from class org.hibernate.search.integrationtest.showcase.library.LibraryShowcaseMassIndexingIT to public logged : ExpectedLog4jLog from class org.hibernate.search.integrationtest.mapper.orm.realbackend.massindexing.MassIndexingMonitorIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tentityCount : long to entityCount : int in method public search_skipDeletedEntitiesInHits() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.sync.OutOfSyncIndexIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tindexedEntityCount : long to indexedEntityCount : int in method public search_skipDeletedEntitiesInHits() : void from class org.hibernate.search.integrationtest.mapper.orm.realbackend.sync.OutOfSyncIndexIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "d8552091f35db374b2410ac102731fa1ec4c1b34",
+      "url": "https://github.com/hibernate/hibernate-search/commit/d8552091f35db374b2410ac102731fa1ec4c1b34",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic setupFirstPhaseOnly(previousIntegration Optional<SearchIntegration>) : PartialSetup extracted from public setupFirstPhaseOnly() : PartialSetup in class org.hibernate.search.integrationtest.backend.tck.testsupport.util.rule.SearchSetupHelper.SetupContext",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic setupFirstPhaseOnly(previousIntegration Optional<SearchIntegration>) : PartialSetup extracted from public setupFirstPhaseOnly() : PartialSetup in class org.hibernate.search.integrationtest.backend.tck.testsupport.util.rule.SearchSetupHelper.SetupContext",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "d831688a49d05479a9229a2891b55d7f2f98ad6b",
+      "url": "https://github.com/hibernate/hibernate-search/commit/d831688a49d05479a9229a2891b55d7f2f98ad6b",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.config.MyElasticsearchAnalysisConfigurer moved to org.hibernate.search.integrationtest.java.modules.config.MyElasticsearchAnalysisConfigurer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.entity.Author moved to org.hibernate.search.integrationtest.java.modules.entity.Author",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.service.AuthorService moved to org.hibernate.search.integrationtest.java.modules.service.AuthorService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.service.JavaModulePathIT moved to org.hibernate.search.integrationtest.java.modules.service.JavaModulePathIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.config.MyElasticsearchAnalysisConfigurer moved to org.hibernate.search.integrationtest.java.modules.config.MyElasticsearchAnalysisConfigurer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.entity.Author moved to org.hibernate.search.integrationtest.java.modules.entity.Author",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.service.AuthorService moved to org.hibernate.search.integrationtest.java.modules.service.AuthorService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.hibernate.search.integrationtest.java.module.service.JavaModulePathIT moved to org.hibernate.search.integrationtest.java.modules.service.JavaModulePathIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "537085008a26babc54b9666e62d7f06220bc9a97",
+      "url": "https://github.com/hibernate/hibernate-search/commit/537085008a26babc54b9666e62d7f06220bc9a97",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to rootProjection : ElasticsearchSearchProjection<H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinners : ElasticsearchSearchProjection<?,?>[] to inners : ElasticsearchSearchProjection<?>[] in class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tElasticsearchSearchProjection<?,P> to ElasticsearchSearchProjection<P> in method public from(scope ElasticsearchSearchIndexScope<?>, projection SearchProjection<P>) : ElasticsearchSearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDistanceToFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trootProjection : ElasticsearchSearchProjection<?,H> to rootExtractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to rootExtractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,Float> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,Float> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchScoreProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,R> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,R> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityReferenceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSourceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,DocumentReference> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,DocumentReference> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDocumentReferenceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<String,I> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<String,I> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchIdProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchExplanationProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,E> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,E> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trootProjection : ElasticsearchSearchProjection<?,H> to extractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to extractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchJsonHitProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<A,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<A,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor from Class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypedInners : ElasticsearchSearchProjection<?,?>[] to typedInners : ElasticsearchSearchProjection<?>[] in method public build(inners SearchProjection<?>[], compositor ProjectionCompositor<E,V>, accumulatorProvider ProjectionAccumulator.Provider<V,P>) : SearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcasted : ElasticsearchSearchProjection<?,P> to casted : ElasticsearchSearchProjection<P> in method public from(scope ElasticsearchSearchIndexScope<?>, projection SearchProjection<P>) : ElasticsearchSearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : A from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection to public extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : A from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transform(loadingResult LoadingResult<?,?>, accumulated A, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection to public transform(loadingResult LoadingResult<?,?>, accumulated A, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : E from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : E from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transform(loadingResult LoadingResult<?,?>, extractedData E, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public transform(loadingResult LoadingResult<?,?>, extractedData E, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transformUnsafe(projection ElasticsearchSearchProjection<?,Z>, loadingResult LoadingResult<?,?>, extractedData Object, context ProjectionTransformContext) : Z from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public transformUnsafe(extractor Extractor<?,Z>, loadingResult LoadingResult<?,?>, extractedData Object, context ProjectionTransformContext) : Z from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor from classes [org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDistanceToFieldProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDocumentReferenceProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityReferenceProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchExplanationProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchIdProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchJsonHitProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchScoreProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSourceProjection]",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinners : ElasticsearchSearchProjection<?,?>[] to inners : ElasticsearchSearchProjection<?>[] in class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<A,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<A,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDistanceToFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,DocumentReference> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,DocumentReference> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDocumentReferenceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,E> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,E> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,R> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,R> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityReferenceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchExplanationProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<String,I> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<String,I> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchIdProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchJsonHitProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,Float> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,Float> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchScoreProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,P> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tElasticsearchSearchProjection<?,P> to ElasticsearchSearchProjection<P> in method public from(scope ElasticsearchSearchIndexScope<?>, projection SearchProjection<P>) : ElasticsearchSearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Extractor<?,JsonObject> in method public request(requestBody JsonObject, context ProjectionRequestContext) : Extractor<?,JsonObject> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSourceProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trootProjection : ElasticsearchSearchProjection<?,H> to rootExtractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to rootExtractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trootProjection : ElasticsearchSearchProjection<?,H> to extractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to extractor : ElasticsearchSearchProjection.Extractor<?,H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trootProjection : ElasticsearchSearchProjection<?,H> to rootProjection : ElasticsearchSearchProjection<H> in class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypedInners : ElasticsearchSearchProjection<?,?>[] to typedInners : ElasticsearchSearchProjection<?>[] in method public build(inners SearchProjection<?>[], compositor ProjectionCompositor<E,V>, accumulatorProvider ProjectionAccumulator.Provider<V,P>) : SearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcasted : ElasticsearchSearchProjection<?,P> to casted : ElasticsearchSearchProjection<P> in method public from(scope ElasticsearchSearchIndexScope<?>, projection SearchProjection<P>) : ElasticsearchSearchProjection<P> from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : A from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection to public extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : A from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transform(loadingResult LoadingResult<?,?>, accumulated A, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection to public transform(loadingResult LoadingResult<?,?>, accumulated A, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchCompositeProjection.CompositeExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : E from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public extract(projectionHitMapper ProjectionHitMapper<?,?>, hit JsonObject, context ProjectionExtractContext) : E from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transform(loadingResult LoadingResult<?,?>, extractedData E, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public transform(loadingResult LoadingResult<?,?>, extractedData E, context ProjectionTransformContext) : P from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic transformUnsafe(projection ElasticsearchSearchProjection<?,Z>, loadingResult LoadingResult<?,?>, extractedData Object, context ProjectionTransformContext) : Z from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection to public transformUnsafe(extractor Extractor<?,Z>, loadingResult LoadingResult<?,?>, extractedData Object, context ProjectionTransformContext) : Z from class org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_INTERFACE",
+          "description": "Extract Interface\torg.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSearchProjection.Extractor from classes [org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDistanceToFieldProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchDocumentReferenceProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchEntityReferenceProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchExplanationProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchIdProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchJsonHitProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchScoreProjection, org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchSourceProjection]",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "d32886115860012b49925d4c8e7569ff388b1d60",
+      "url": "https://github.com/hibernate/hibernate-search/commit/d32886115860012b49925d4c8e7569ff388b1d60",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionRequestContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionRequestContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionRequestContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionRequestContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionTransformContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionTransformContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionTransformContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionTransformContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchProjectionExtractContext to ProjectionExtractContext in method package createProjectionExtractContext() : ProjectionExtractContext from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trequestContext : SearchProjectionRequestContext to requestContext : ProjectionRequestContext in class org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchProjectionTransformContext to ProjectionTransformContext in method package createProjectionTransformContext() : ProjectionTransformContext from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionExtractContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionExtractContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionExtractContext : SearchProjectionExtractContext to projectionExtractContext : ProjectionExtractContext in method private extractHits(extractContext ElasticsearchSearchQueryExtractContext) : List<Object> from class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttransformContext : SearchProjectionTransformContext to transformContext : ProjectionTransformContext in method package loadBlocking() : ElasticsearchSearchResultImpl<H> from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionExtractContext : SearchProjectionExtractContext to projectionExtractContext : ProjectionExtractContext in method private extractHits(projectionHitMapper ProjectionHitMapper<?,?>, startInclusive int, endExclusive int) : List<Object> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneExtractableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttransformContext : SearchProjectionTransformContext to transformContext : ProjectionTransformContext in method package loadBlocking() : LuceneSearchResult<H> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionRequestContext : SearchProjectionRequestContext to projectionRequestContext : ProjectionRequestContext in method public build() : LuceneSearchQuery<H> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneSearchQueryBuilder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionExtractContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionRequestContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionRequestContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.elasticsearch.search.projection.impl.SearchProjectionTransformContext renamed to org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionTransformContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionExtractContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionRequestContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionRequestContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.backend.lucene.search.projection.impl.SearchProjectionTransformContext renamed to org.hibernate.search.backend.lucene.search.projection.impl.ProjectionTransformContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchProjectionExtractContext to ProjectionExtractContext in method package createProjectionExtractContext() : ProjectionExtractContext from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSearchProjectionTransformContext to ProjectionTransformContext in method package createProjectionTransformContext() : ProjectionTransformContext from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchSearchQueryExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trequestContext : SearchProjectionRequestContext to requestContext : ProjectionRequestContext in class org.hibernate.search.backend.elasticsearch.search.projection.impl.ProjectionExtractContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionExtractContext : SearchProjectionExtractContext to projectionExtractContext : ProjectionExtractContext in method private extractHits(extractContext ElasticsearchSearchQueryExtractContext) : List<Object> from class org.hibernate.search.backend.elasticsearch.search.query.impl.Elasticsearch7SearchResultExtractor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttransformContext : SearchProjectionTransformContext to transformContext : ProjectionTransformContext in method package loadBlocking() : ElasticsearchSearchResultImpl<H> from class org.hibernate.search.backend.elasticsearch.search.query.impl.ElasticsearchLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionExtractContext : SearchProjectionExtractContext to projectionExtractContext : ProjectionExtractContext in method private extractHits(projectionHitMapper ProjectionHitMapper<?,?>, startInclusive int, endExclusive int) : List<Object> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneExtractableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttransformContext : SearchProjectionTransformContext to transformContext : ProjectionTransformContext in method package loadBlocking() : LuceneSearchResult<H> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneLoadableSearchResult",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tprojectionRequestContext : SearchProjectionRequestContext to projectionRequestContext : ProjectionRequestContext in method public build() : LuceneSearchQuery<H> from class org.hibernate.search.backend.lucene.search.query.impl.LuceneSearchQueryBuilder",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/hibernate/hibernate-search.git",
+      "sha1": "79629c7903c26a2dfb0098f7d5688198f7a68047",
+      "url": "https://github.com/hibernate/hibernate-search/commit/79629c7903c26a2dfb0098f7d5688198f7a68047",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic findChildQuery(parentQuery Query, parentFilter BitSetProducer, nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery renamed to public childDocumentsQuery(nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery in class org.hibernate.search.backend.lucene.lowlevel.query.impl.Queries",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate createNestedDocumentPathSubQuery(nestedDocumentPaths Set<String>) : BooleanQuery inlined to public childDocumentsQuery(nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery in class org.hibernate.search.backend.lucene.lowlevel.query.impl.Queries",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic findChildQuery(parentQuery Query, parentFilter BitSetProducer, nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery renamed to public childDocumentsQuery(nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery in class org.hibernate.search.backend.lucene.lowlevel.query.impl.Queries",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate createNestedDocumentPathSubQuery(nestedDocumentPaths Set<String>) : BooleanQuery inlined to public childDocumentsQuery(nestedDocumentPaths Set<String>, nestedFilter Query) : BooleanQuery in class org.hibernate.search.backend.lucene.lowlevel.query.impl.Queries",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

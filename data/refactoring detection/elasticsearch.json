@@ -1,0 +1,1004 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "7cfd89dd6824bed5ab61075e69a7c49778036c9b",
+      "url": "https://github.com/elastic/elasticsearch/commit/7cfd89dd6824bed5ab61075e69a7c49778036c9b",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tDEFAULT_TIMEOUT : TimeValue to DEFAULT_TIMEOUT_FOR_API : TimeValue in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic forDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request renamed to public forIngestDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Request in method public setInferenceTimeout(inferenceTimeout TimeValue) : Request from class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic forDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request renamed to public forIngestDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Request in method public setInferenceTimeout(inferenceTimeout TimeValue) : Request from class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tDEFAULT_TIMEOUT : TimeValue to DEFAULT_TIMEOUT_FOR_API : TimeValue in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "7b98f79efd7fa5797716b86627433f5e5a862521",
+      "url": "https://github.com/elastic/elasticsearch/commit/7b98f79efd7fa5797716b86627433f5e5a862521",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.KeywordAnalyzerProvider moved to org.elasticsearch.analysis.common.KeywordAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.SimpleAnalyzerProvider moved to org.elasticsearch.analysis.common.SimpleAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.StopAnalyzerProvider moved to org.elasticsearch.analysis.common.StopAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.WhitespaceAnalyzerProvider moved to org.elasticsearch.analysis.common.WhitespaceAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.StopAnalyzerTests moved to org.elasticsearch.analysis.common.StopAnalyzerTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.KeywordAnalyzerProvider moved to org.elasticsearch.analysis.common.KeywordAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.SimpleAnalyzerProvider moved to org.elasticsearch.analysis.common.SimpleAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.StopAnalyzerProvider moved to org.elasticsearch.analysis.common.StopAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.WhitespaceAnalyzerProvider moved to org.elasticsearch.analysis.common.WhitespaceAnalyzerProvider",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.index.analysis.StopAnalyzerTests moved to org.elasticsearch.analysis.common.StopAnalyzerTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "2b3c7e7451874446657c3cc26ffb666729a2678b",
+      "url": "https://github.com/elastic/elasticsearch/commit/2b3c7e7451874446657c3cc26ffb666729a2678b",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage maybeRewriteForOlderVersion(olderVersion TransportVersion, remoteAccessRealmVersion TransportVersion) : Authentication inlined to public maybeRewriteForOlderVersion(olderVersion TransportVersion) : Authentication in class org.elasticsearch.xpack.core.security.authc.Authentication",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage maybeRewriteForOlderVersion(olderVersion TransportVersion, remoteAccessRealmVersion TransportVersion) : Authentication inlined to public maybeRewriteForOlderVersion(olderVersion TransportVersion) : Authentication in class org.elasticsearch.xpack.core.security.authc.Authentication",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "8ec73d6a559d069e18eadc07db493694df196bd4",
+      "url": "https://github.com/elastic/elasticsearch/commit/8ec73d6a559d069e18eadc07db493694df196bd4",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectoryTests moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectory moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectory",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectory moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectoryTests moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectoryTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "36b8083aaf1e408b67eb7b683ce465c3c133bfab",
+      "url": "https://github.com/elastic/elasticsearch/commit/36b8083aaf1e408b67eb7b683ce465c3c133bfab",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate performRequestAgainstFulfillingCluster(request Request) : Response extracted from private getRemoteAccessApiKeyAndStoreInSettings() : void in class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate performRequestAgainstFulfillingCluster(request Request) : Response extracted from private getRemoteAccessApiKeyAndStoreInSettings() : void in class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : var to request : Request in method private performRequestAgainstFulfillingCluster(request Request) : Response from class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\trequest : var in method private getRemoteAccessApiKeyAndStoreInSettings() : void from class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "9f4457cd73c081dc0f3f7066e7a2e15da7619130",
+      "url": "https://github.com/elastic/elasticsearch/commit/9f4457cd73c081dc0f3f7066e7a2e15da7619130",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tframeIds : String[] to frameIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttypeIds : int[] to typeIds : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint[] to List<Integer> in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\taddressOrLines : int[] to addressOrLines : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfileIds : String[] to fileIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfileIDs : String[] to fileIDs : List<String> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tframeIDs : String[] to frameIDs : List<String> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\taddressOrLines : int[] to addressOrLines : List<Integer> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeIDs : int[] to typeIDs : List<Integer> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\toutput : int[] to output : Integer[] in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeUniqueValues() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeSingleValue() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeFillsGap() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeMixedValue() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\taddressOrLines : int[] to addressOrLines : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfileIds : String[] to fileIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tframeIds : String[] to frameIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\ttypeIds : int[] to typeIds : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint[] to List<Integer> in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfileIDs : String[] to fileIDs : List<String> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tframeIDs : String[] to frameIDs : List<String> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\taddressOrLines : int[] to addressOrLines : List<Integer> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeIDs : int[] to typeIDs : List<Integer> in method public fromSource(source Map<String,Object>) : StackTrace from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\toutput : int[] to output : Integer[] in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeUniqueValues() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeSingleValue() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeFillsGap() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tactual : int[] to actual : List<Integer> in method public testRunlengthDecodeMixedValue() : void from class org.elasticsearch.xpack.profiler.StackTraceTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "469c20a8afaa703b8c3c7d8180b985b968d0cb03",
+      "url": "https://github.com/elastic/elasticsearch/commit/469c20a8afaa703b8c3c7d8180b985b968d0cb03",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.elasticsearch.xpack.ml.integration.SemanticSearchIT renamed to org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.search.vectors.AbstractQueryVectorBuilderTestCase moved to org.elasticsearch.test.AbstractQueryVectorBuilderTestCase",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.search.vectors.AbstractQueryVectorBuilderTestCase moved to org.elasticsearch.test.AbstractQueryVectorBuilderTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.elasticsearch.xpack.ml.integration.SemanticSearchIT renamed to org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tprotected semanticSearch(index String, modelText String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.PyTorchModelRestTestCase to protected textEmbeddingSearch(index String, modelText String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tprotected semanticSearchWithTermsFilter(index String, queryText String, filter String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.PyTorchModelRestTestCase to protected textEmbeddingSearchWithTermsFilter(index String, modelText String, filter String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tprotected semanticSearchWithQuery(index String, queryText String, query String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.PyTorchModelRestTestCase to protected textEmbeddingSearchWithTermsFilter(index String, modelText String, filter String, modelId String, denseVectorFieldName String) : Response from class org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "e837ff7b3fc2c38f76e3f44bfa74087c02ba5080",
+      "url": "https://github.com/elastic/elasticsearch/commit/e837ff7b3fc2c38f76e3f44bfa74087c02ba5080",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner from Class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.elasticsearch.common.util.concurrent.CyclicBarrierUtils from Class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunnerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate incrementRunningTasks() : boolean from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private incrementRunningTasks() : boolean from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate taskRunnerName : String from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private taskRunnerName : String from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate maxRunningTasks : int from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private maxRunningTasks : int from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate runningTasks : AtomicInteger from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private runningTasks : AtomicInteger from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate executor : Executor from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private executor : Executor from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage runningTasks() : int extracted from public runningTasks() : int in class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner & moved to class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic enqueueTask(task T) : void extracted from public enqueueTask(task T) : void in class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner & moved to class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate incrementRunningTasks() : boolean from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private incrementRunningTasks() : boolean from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate taskRunnerName : String from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private taskRunnerName : String from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate maxRunningTasks : int from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private maxRunningTasks : int from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate runningTasks : AtomicInteger from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private runningTasks : AtomicInteger from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate executor : Executor from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private executor : Executor from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate pollAndSpawn() : void from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private pollAndSpawn() : void from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate logger : Logger from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner to private logger : Logger from class org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "b0c380d784274900e3e19763e7f3dda54f828584",
+      "url": "https://github.com/elastic/elasticsearch/commit/b0c380d784274900e3e19763e7f3dda54f828584",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tResponseFactory<Response,EmptyResult> to ResponseFactory<Response,ShardResult> in method protected getResponseFactory(request Request, clusterState ClusterState) : ResponseFactory<Response,ShardResult> from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tEmptyResult to ShardResult in method protected readShardResult(in StreamInput) : ShardResult from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate cancelledTask() : Task inlined to public testNoShardOperationsExecutedIfTaskCancelled() : void in class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttask : CancellableTask to cancellableTask : CancellableTask in method public testNoShardOperationsExecutedIfTaskCancelled() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.BroadcastByNodeTransportRequestHandler to handler : TransportBroadcastByNodeAction<Request,Response,ShardResult>.BroadcastByNodeTransportRequestHandler in method public testNoShardOperationsExecutedIfTaskCancelled() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.BroadcastByNodeTransportRequestHandler to handler : TransportBroadcastByNodeAction<Request,Response,ShardResult>.BroadcastByNodeTransportRequestHandler in method public testOperationExecution() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tshardResults : List<TransportBroadcastByNodeAction.EmptyResult> to shardResults : List<ShardResult> in method public testResultAggregation() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeResponse : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.NodeResponse to nodeResponse : TransportBroadcastByNodeAction<Request,Response,ShardResult>.NodeResponse in method public testResultAggregation() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tEmptyResult to ShardResult in method protected readShardResult(in StreamInput) : ShardResult from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tResponseFactory<Response,EmptyResult> to ResponseFactory<Response,ShardResult> in method protected getResponseFactory(request Request, clusterState ClusterState) : ResponseFactory<Response,ShardResult> from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate cancelledTask() : Task inlined to public testNoShardOperationsExecutedIfTaskCancelled() : void in class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttask : CancellableTask to cancellableTask : CancellableTask in method public testNoShardOperationsExecutedIfTaskCancelled() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.BroadcastByNodeTransportRequestHandler to handler : TransportBroadcastByNodeAction<Request,Response,ShardResult>.BroadcastByNodeTransportRequestHandler in method public testNoShardOperationsExecutedIfTaskCancelled() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thandler : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.BroadcastByNodeTransportRequestHandler to handler : TransportBroadcastByNodeAction<Request,Response,ShardResult>.BroadcastByNodeTransportRequestHandler in method public testOperationExecution() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tshardResults : List<TransportBroadcastByNodeAction.EmptyResult> to shardResults : List<ShardResult> in method public testResultAggregation() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnodeResponse : TransportBroadcastByNodeAction<Request,Response,TransportBroadcastByNodeAction.EmptyResult>.NodeResponse to nodeResponse : TransportBroadcastByNodeAction<Request,Response,ShardResult>.NodeResponse in method public testResultAggregation() : void from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "13b71900a62849d8ed3ee20652aaf06a710f009c",
+      "url": "https://github.com/elastic/elasticsearch/commit/13b71900a62849d8ed3ee20652aaf06a710f009c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpollInterval : TimeValue to pollIntervalSupplier : Supplier<TimeValue> in class org.elasticsearch.ingest.geoip.GeoIpDownloader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpollInterval : TimeValue to pollIntervalSupplier : Supplier<TimeValue> in class org.elasticsearch.ingest.geoip.GeoIpDownloader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate putPipeline() : void renamed to private putGeoIpPipeline(pipelineId String) : void in class org.elasticsearch.ingest.geoip.GeoIpDownloaderIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic POLL_INTERVAL_SETTING : Setting<TimeValue> from class org.elasticsearch.ingest.geoip.GeoIpDownloader to public POLL_INTERVAL_SETTING : Setting<TimeValue> from class org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate putPipeline() : void renamed to private putGeoIpPipeline(pipelineId String) : void in class org.elasticsearch.ingest.geoip.GeoIpDownloaderIT",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic POLL_INTERVAL_SETTING : Setting<TimeValue> from class org.elasticsearch.ingest.geoip.GeoIpDownloader to public POLL_INTERVAL_SETTING : Setting<TimeValue> from class org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate pollInterval : TimeValue from class org.elasticsearch.ingest.geoip.GeoIpDownloader to private pollInterval : TimeValue from class org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "c87b7bc17ed6fe721aa12d54d04cf95b6f2a8b9f",
+      "url": "https://github.com/elastic/elasticsearch/commit/c87b7bc17ed6fe721aa12d54d04cf95b6f2a8b9f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tVersion to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.customsuggester.CustomSuggestionBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tVersion to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.rescore.ExampleRescoreBuilder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tVersion to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.customsuggester.CustomSuggestionBuilder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tVersion to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.rescore.ExampleRescoreBuilder",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "14e709659844d1278714f274252517e5f615860f",
+      "url": "https://github.com/elastic/elasticsearch/commit/14e709659844d1278714f274252517e5f615860f",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate loader(path String, closed AtomicBoolean) : DatabaseReaderLazyLoader extracted from private loader(path String) : CheckedSupplier<DatabaseReaderLazyLoader,IOException> in class org.elasticsearch.ingest.geoip.GeoIpProcessorTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate loader(path String, closed AtomicBoolean) : DatabaseReaderLazyLoader extracted from private loader(path String) : CheckedSupplier<DatabaseReaderLazyLoader,IOException> in class org.elasticsearch.ingest.geoip.GeoIpProcessorTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "fa52364462cd459c80701ad031b16175f287c522",
+      "url": "https://github.com/elastic/elasticsearch/commit/fa52364462cd459c80701ad031b16175f287c522",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getFrozenCacheFile(cacheKey KeyType, length long) : CacheFile renamed to public getCacheFile(cacheKey KeyType, length long) : CacheFile in class org.elasticsearch.blobcache.shared.CacheFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tcurrentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tcurrentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tcurrentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tcurrentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getFrozenCacheFile(cacheKey KeyType, length long) : CacheFile renamed to public getCacheFile(cacheKey KeyType, length long) : CacheFile in class org.elasticsearch.blobcache.shared.CacheFile",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "a01aff6243674234aec4b3b34fac6e30dcfa6009",
+      "url": "https://github.com/elastic/elasticsearch/commit/a01aff6243674234aec4b3b34fac6e30dcfa6009",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tActionListener<T> to ActionListener<Void> in method public acquire() : ActionListener<Void> from class org.elasticsearch.action.support.RefCountingListener",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate sortSnapshots(infos Stream<SnapshotInfo>, totalCount int, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo extracted from private sortSnapshots(snapshotInfos List<SnapshotInfo>, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo in class org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate addException(e Exception) : void extracted from public acquire() : ActionListener<T> in class org.elasticsearch.action.support.RefCountingListener",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate sortSnapshots(infos Stream<SnapshotInfo>, totalCount int, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo extracted from private sortSnapshots(snapshotInfos List<SnapshotInfo>, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo in class org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate addException(e Exception) : void extracted from public acquire() : ActionListener<T> in class org.elasticsearch.action.support.RefCountingListener",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tActionListener<T> to ActionListener<Void> in method public acquire() : ActionListener<Void> from class org.elasticsearch.action.support.RefCountingListener",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "4224026fb21b5275d23caf9e3ddd225819c0e4d8",
+      "url": "https://github.com/elastic/elasticsearch/commit/4224026fb21b5275d23caf9e3ddd225819c0e4d8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testLatLonVec3d() : void renamed to public testLatLonAzimuthRads() : void in class org.elasticsearch.h3.LatLngTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic M_2PI : double from class org.elasticsearch.h3.Vec2d to public M_2PI : double from class org.elasticsearch.h3.Constants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate M_PI_2 : double from class org.elasticsearch.h3.Vec2d to private M_PI_2 : double from class org.elasticsearch.h3.LatLng",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testLatLonVec3d() : void renamed to public testLatLonAzimuthRads() : void in class org.elasticsearch.h3.LatLngTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpublic M_2PI : double from class org.elasticsearch.h3.Vec2d to public M_2PI : double from class org.elasticsearch.h3.Constants",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate M_PI_2 : double from class org.elasticsearch.h3.Vec2d to private M_PI_2 : double from class org.elasticsearch.h3.LatLng",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate constrainLng(lng double) : double from class org.elasticsearch.h3.Vec2d to private constrainLng(lng double) : double from class org.elasticsearch.h3.LatLng",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "c9e3bde0ec09064f1c3175c87bc50adf2c6e23cd",
+      "url": "https://github.com/elastic/elasticsearch/commit/c9e3bde0ec09064f1c3175c87bc50adf2c6e23cd",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCacheFile to org.elasticsearch.blobcache.common.CacheFile in method public getCacheFile(cacheKey CacheKey, fileLength long) : org.elasticsearch.blobcache.common.CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrozenCacheFile to CacheFile in method public getFrozenCacheFile(cacheKey CacheKey, length long) : CacheFile from class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tfrozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfrozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.elasticsearch.blobcache.shared.SharedBlobCacheService.FrozenCacheFile renamed to org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrozenCacheFile to CacheFile in method public getFrozenCacheFile(fileName String, length long) : CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tStepListener<Integer> to int in method public populateAndRead(rangeToWrite ByteRange, rangeToRead ByteRange, reader RangeAvailableHandler, writer RangeMissingHandler, executor Executor) : int from class org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tprotected rangeToReadFromBlobCache(position long, readLength int) : ByteRange from class org.elasticsearch.xpack.searchablesnapshots.store.input.BaseSearchableSnapshotIndexInput to private rangeToReadFromBlobCache(position long, readLength int) : ByteRange from class org.elasticsearch.xpack.searchablesnapshots.store.input.MetadataCachingIndexInput",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.elasticsearch.blobcache.shared.SharedBlobCacheService.FrozenCacheFile renamed to org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrozenCacheFile to CacheFile in method public getFrozenCacheFile(cacheKey CacheKey, length long) : CacheFile from class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCacheFile to org.elasticsearch.blobcache.common.CacheFile in method public getCacheFile(cacheKey CacheKey, fileLength long) : org.elasticsearch.blobcache.common.CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrozenCacheFile to CacheFile in method public getFrozenCacheFile(fileName String, length long) : CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tfrozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfrozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tStepListener<Integer> to int in method public populateAndRead(rangeToWrite ByteRange, rangeToRead ByteRange, reader RangeAvailableHandler, writer RangeMissingHandler, executor Executor) : int from class org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tprotected rangeToReadFromBlobCache(position long, readLength int) : ByteRange from class org.elasticsearch.xpack.searchablesnapshots.store.input.BaseSearchableSnapshotIndexInput to private rangeToReadFromBlobCache(position long, readLength int) : ByteRange from class org.elasticsearch.xpack.searchablesnapshots.store.input.MetadataCachingIndexInput",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "854bfa67b8d383940826d7d985348465f253afd1",
+      "url": "https://github.com/elastic/elasticsearch/commit/854bfa67b8d383940826d7d985348465f253afd1",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate numberOfCorners(minX double, maxX double, minY double, maxY double) : int renamed to private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners in class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to ContainsCorners in method private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnumCorners : int to containsCorners : ContainsCorners in method public relate(minX double, maxX double, minY double, maxY double) : PointValues.Relation from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnumCorners : int to containsCorners : ContainsCorners in method public relate(minX double, maxX double, minY double, maxY double) : PointValues.Relation from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate numberOfCorners(minX double, maxX double, minY double, maxY double) : int renamed to private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners in class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to ContainsCorners in method private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tnumCorners : int to containsCorners : ContainsCorners in method public relate(minX double, maxX double, minY double, maxY double) : PointValues.Relation from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnumCorners : int to containsCorners : ContainsCorners in method public relate(minX double, maxX double, minY double, maxY double) : PointValues.Relation from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "52a622cdfd4ca8324859faff49839480e500c274",
+      "url": "https://github.com/elastic/elasticsearch/commit/52a622cdfd4ca8324859faff49839480e500c274",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.search.aggregations.AggregatorTestCase.CrankyCircuitBreakerService moved to org.elasticsearch.indices.CrankyCircuitBreakerService",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.elasticsearch.search.aggregations.AggregatorTestCase.CrankyCircuitBreakerService moved to org.elasticsearch.indices.CrankyCircuitBreakerService",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "9478bd306a19a0a5bbbc5424fe80436a56b35725",
+      "url": "https://github.com/elastic/elasticsearch/commit/9478bd306a19a0a5bbbc5424fe80436a56b35725",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate safePoint() : GeoPoint extracted from public testLatLonVec3d() : void in class org.elasticsearch.h3.AzimuthTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate safePoint() : GeoPoint extracted from public testLatLonVec3d() : void in class org.elasticsearch.h3.AzimuthTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "751dc244f19c88074b01572b19f73a5a2dffca66",
+      "url": "https://github.com/elastic/elasticsearch/commit/751dc244f19c88074b01572b19f73a5a2dffca66",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tQUERY_STRING : ParseField to MODEL_TEXT : ParseField in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getQueryString() : String renamed to public getModelText() : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage setQueryString(queryString String) : void renamed to package setModelText(modelText String) : void in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage setQueryString(queryString String) : void renamed to package setModelText(modelText String) : void in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getQueryString() : String renamed to public getModelText() : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tQUERY_STRING : ParseField to MODEL_TEXT : ParseField in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tqueryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

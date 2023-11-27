@@ -1,0 +1,1694 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "7584dfc79aab36828f1375925a4f058d54fe317f",
+      "url": "https://github.com/spring-projects/spring-framework/commit/7584dfc79aab36828f1375925a4f058d54fe317f",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmappedFields : Map<String,PropertyDescriptor> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmappedProperties : Set<String> to mappedPropertyNames : Set<String> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfield : String to property : String in method public mapRow(rs ResultSet, rowNumber int) : T from class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmappedProperties : Set<String> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmappedFields : Map<String,PropertyDescriptor> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmappedProperties : Set<String> to mappedPropertyNames : Set<String> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfield : String to property : String in method public mapRow(rs ResultSet, rowNumber int) : T from class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "84bc1dfa89e979232c4a36e9d75bb50b1d48453e",
+      "url": "https://github.com/spring-projects/spring-framework/commit/84bc1dfa89e979232c4a36e9d75bb50b1d48453e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClass() : void renamed to package staticQueryWithDataClass() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataRecord() : void renamed to package staticQueryWithDataRecord() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClassAndGenerics() : void renamed to package staticQueryWithDataClassAndGenerics() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClassAndSetters() : void renamed to package staticQueryWithDataClassAndSetters() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmapper : BeanPropertyRowMapper<ExtendedPerson> in method package mappingWithUnpopulatedFieldsNotAccepted() : void from class org.springframework.jdbc.core.BeanPropertyRowMapperTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClass() : void renamed to package staticQueryWithDataClass() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClassAndGenerics() : void renamed to package staticQueryWithDataClassAndGenerics() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataClassAndSetters() : void renamed to package staticQueryWithDataClassAndSetters() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticQueryWithDataRecord() : void renamed to package staticQueryWithDataRecord() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmapper : BeanPropertyRowMapper<ExtendedPerson> in method package mappingWithUnpopulatedFieldsNotAccepted() : void from class org.springframework.jdbc.core.BeanPropertyRowMapperTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "2f20d6322b7a0fcbbaa80280849e7c31fc78d4a9",
+      "url": "https://github.com/spring-projects/spring-framework/commit/2f20d6322b7a0fcbbaa80280849e7c31fc78d4a9",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy from Class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext extracted from private toFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext in class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getPrefix() : String extracted from public prefix() : String in class org.springframework.context.testfixture.context.generator.annotation.CglibConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage processAheadOfTimeWhenHasCglibProxyWriteProxyAndGenerateReflectionHints() : void from class org.springframework.context.aot.ApplicationContextAotGeneratorTests to package processAheadOfTimeWhenHasCglibProxyWriteProxyAndGenerateReflectionHints() : void from class org.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext extracted from private toFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext in class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getPrefix() : String extracted from public prefix() : String in class org.springframework.context.testfixture.context.generator.annotation.CglibConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy from class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage processAheadOfTimeWhenHasCglibProxyWriteProxyAndGenerateReflectionHints() : void from class org.springframework.context.aot.ApplicationContextAotGeneratorTests to package processAheadOfTimeWhenHasCglibProxyWriteProxyAndGenerateReflectionHints() : void from class org.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "58fbf60d2d5d28d96c351eb539a52bceffac270a",
+      "url": "https://github.com/spring-projects/spring-framework/commit/58fbf60d2d5d28d96c351eb539a52bceffac270a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate decodeFilename(filename String, charset Charset) : String renamed to private decodeRfc5987Filename(filename String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate encodeFilename(input String, charset Charset) : String renamed to private encodeRfc5987Filename(input String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate hexDigit(b int) : char extracted from private encodeFilename(input String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlen : int in method private encodeFilename(input String, charset Charset) : String from class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate decodeFilename(filename String, charset Charset) : String renamed to private decodeRfc5987Filename(filename String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\thex1 : char to ch1 : char in method private encodeQuotedPrintableFilename(filename String, charset Charset) : String from class org.springframework.http.ContentDisposition",
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tb : byte to b : int in method private hexDigit(b int) : char from class org.springframework.http.ContentDisposition",
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlen : int in method private encodeFilename(input String, charset Charset) : String from class org.springframework.http.ContentDisposition",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8df4f927fd5d584ae1c9306cb2cd47c2e5bf6d2c",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8df4f927fd5d584ae1c9306cb2cd47c2e5bf6d2c",
+      "ourApproach": [
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate returnValue : InputSource from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.FallingBackEntityResolver to private returnValue : InputSource from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.ConfigurableFallbackEntityResolver",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate shouldThrow : boolean from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.FallingBackEntityResolver to private shouldThrow : boolean from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.ConfigurableFallbackEntityResolver",
+          "developerConfirmation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected resolveSchemaEntity(publicId String, systemId String) : InputSource from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.FallingBackEntityResolver to protected resolveSchemaEntity(publicId String, systemId String) : InputSource from class org.springframework.beans.factory.xml.ResourceEntityResolverTests.ConfigurableFallbackEntityResolver",
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.beans.factory.xml.ResourceEntityResolverTests.FallingBackEntityResolver renamed to org.springframework.beans.factory.xml.ResourceEntityResolverTests.ConfigurableFallbackEntityResolver",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "0b08246760fc5aee5eb4d5fc25ce3a512d6bab16",
+      "url": "https://github.com/spring-projects/spring-framework/commit/0b08246760fc5aee5eb4d5fc25ce3a512d6bab16",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.core.annotation.RepeatableContainersTests.WithExplicitRepeatables renamed to org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatablesTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.core.annotation.RepeatableContainersTests.WithNonRepeatable renamed to org.springframework.core.annotation.RepeatableContainersTests.NonRepeatableTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.core.annotation.RepeatableContainersTests.WithStandardRepeatables renamed to org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatablesTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.core.annotation.RepeatableContainersTests.WithSingleStandardRepeatable renamed to org.springframework.core.annotation.RepeatableContainersTests.SingleStandardRepeatableTestCase",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests from Class org.springframework.core.annotation.RepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests from Class org.springframework.core.annotation.RepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenSingleReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenSingleReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenContainerButNotRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenContainerButNotRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenStandardRepeatableContainerReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenStandardRepeatableContainerReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerIsNullDeducesContainer() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerIsNullDeducesContainer() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenHasNoValueThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenHasNoValueThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenValueIsNotArrayThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenValueIsNotArrayThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenValueIsArrayOfWrongTypeThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenValueIsArrayOfWrongTypeThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenAnnotationIsNullThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenAnnotationIsNullThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerIsNullAndNotRepeatableThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerIsNullAndNotRepeatableThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests from class org.springframework.core.annotation.RepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests from class org.springframework.core.annotation.RepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenSingleReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenSingleReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenContainerButNotRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenContainerButNotRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage standardRepeatablesWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests to package standardRepeatablesWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenNonRepeatableReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenStandardRepeatableContainerReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenStandardRepeatableContainerReturnsNull() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerReturnsRepeats() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerIsNullDeducesContainer() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerIsNullDeducesContainer() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenHasNoValueThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenHasNoValueThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenValueIsNotArrayThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenValueIsNotArrayThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenValueIsArrayOfWrongTypeThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenValueIsArrayOfWrongTypeThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenAnnotationIsNullThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenAnnotationIsNullThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ofExplicitWhenContainerIsNullAndNotRepeatableThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests to package ofExplicitWhenContainerIsNullAndNotRepeatableThrowsException() : void from class org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "4c69892f39989ab26579e987d4c96ce01a0bea62",
+      "url": "https://github.com/spring-projects/spring-framework/commit/4c69892f39989ab26579e987d4c96ce01a0bea62",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCONCURRENCY_FAILURE_CODES : Set<String> to PESSIMISTIC_LOCKING_FAILURE_CODES : Set<String> in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateNullException() : void renamed to public translateNullException() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateBadSqlGrammar() : void renamed to public translateBadSqlGrammar() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateDataIntegrityViolation() : void renamed to public translateDataIntegrityViolation() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateDataAccessResourceFailure() : void renamed to public translateDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateTransientDataAccessResourceFailure() : void renamed to public translateTransientDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCONCURRENCY_FAILURE_CODES : Set<String> to PESSIMISTIC_LOCKING_FAILURE_CODES : Set<String> in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateNullException() : void renamed to public translateNullException() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateBadSqlGrammar() : void renamed to public translateBadSqlGrammar() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateDataIntegrityViolation() : void renamed to public translateDataIntegrityViolation() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateDataAccessResourceFailure() : void renamed to public translateDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateTransientDataAccessResourceFailure() : void renamed to public translateTransientDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTranslateConcurrencyFailure() : void renamed to public translatePessimisticLockingFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "c79ae0c8422880586dbb52f0d18ca81f5e4ea4aa",
+      "url": "https://github.com/spring-projects/spring-framework/commit/c79ae0c8422880586dbb52f0d18ca81f5e4ea4aa",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tpartWriters : List<HttpMessageWriter<?>> to partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> in class org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpartWriters : List<HttpMessageWriter<?>> to partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> in class org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public encoder(encoder Encoder<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public writer(writer HttpMessageWriter<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.codec.ClientCodecConfigurer.MultipartCodecs moved to org.springframework.http.codec.CodecConfigurer.MultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.codec.support.ClientDefaultCodecsImpl.DefaultMultipartCodecs moved to org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartCodecs() : MultipartCodecs from class org.springframework.http.codec.ClientCodecConfigurer.ClientDefaultCodecs to public multipartCodecs() : MultipartCodecs from class org.springframework.http.codec.CodecConfigurer.DefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.ServerCodecConfigurer.ServerDefaultCodecs to public multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.CodecConfigurer.DefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.support.ServerDefaultCodecsImpl to public multipartReader(multipartReader HttpMessageReader<?>) : void from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpackage setPartWritersSupplier(supplier Supplier<List<HttpMessageWriter<?>>>) : void from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to package setPartWritersSupplier(supplier Supplier<List<HttpMessageWriter<?>>>) : void from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPartWriters() : List<HttpMessageWriter<?>> from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to private getPartWriters() : List<HttpMessageWriter<?>> from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartCodecs() : ClientCodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to public multipartCodecs() : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.codec.ClientCodecConfigurer.MultipartCodecs moved to org.springframework.http.codec.CodecConfigurer.MultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.codec.support.ClientDefaultCodecsImpl.DefaultMultipartCodecs moved to org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public encoder(encoder Encoder<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public writer(writer HttpMessageWriter<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartCodecs() : MultipartCodecs from class org.springframework.http.codec.ClientCodecConfigurer.ClientDefaultCodecs to public multipartCodecs() : MultipartCodecs from class org.springframework.http.codec.CodecConfigurer.DefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.ServerCodecConfigurer.ServerDefaultCodecs to public multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.CodecConfigurer.DefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic multipartReader(reader HttpMessageReader<?>) : void from class org.springframework.http.codec.support.ServerDefaultCodecsImpl to public multipartReader(multipartReader HttpMessageReader<?>) : void from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpackage setPartWritersSupplier(supplier Supplier<List<HttpMessageWriter<?>>>) : void from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to package setPartWritersSupplier(supplier Supplier<List<HttpMessageWriter<?>>>) : void from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getPartWriters() : List<HttpMessageWriter<?>> from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to private getPartWriters() : List<HttpMessageWriter<?>> from class org.springframework.http.codec.support.BaseDefaultCodecs",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> from class org.springframework.http.codec.support.ClientDefaultCodecsImpl to private partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> from class org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tasClassBasedProxy : Consumer<Builder> to asClassBasedProxy : Consumer<TypeHint.Builder> in class org.springframework.aot.hint.support.ClassHintUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tasProxiedUserClass : Consumer<Builder> to asProxiedUserClass : Consumer<TypeHint.Builder> in class org.springframework.aot.hint.support.ClassHintUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.aot.hint.support.ClassHintUtils from Class org.springframework.context.support.GenericApplicationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tproxyType : Class<?> to proxyClass : Class<?> in method private registerProxyIfNecessary(runtimeHints RuntimeHints, dependencyDescriptor DependencyDescriptor) : void from class org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AotContribution",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate asClassBasedProxy : Consumer<Builder> from class org.springframework.context.support.GenericApplicationContext to private asClassBasedProxy : Consumer<TypeHint.Builder> from class org.springframework.aot.hint.support.ClassHintUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate asProxiedUserClass : Consumer<Builder> from class org.springframework.context.support.GenericApplicationContext to private asProxiedUserClass : Consumer<TypeHint.Builder> from class org.springframework.aot.hint.support.ClassHintUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.aot.hint.support.ClassHintUtils from class org.springframework.context.support.GenericApplicationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tproxyType : Class<?> to proxyClass : Class<?> in method private registerProxyIfNecessary(runtimeHints RuntimeHints, dependencyDescriptor DependencyDescriptor) : void from class org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AotContribution",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "fe5bd6751f461532d6817610c47254e0400d25f9",
+      "url": "https://github.com/spring-projects/spring-framework/commit/fe5bd6751f461532d6817610c47254e0400d25f9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdiscoverer : LocalVariableTableParameterNameDiscoverer to discoverer : ParameterNameDiscoverer in class org.springframework.core.LocalVariableTableParameterNameDiscovererTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage setUp() : void renamed to package setup() : void in class org.springframework.core.SpringCoreBlockHoundIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnames : String[] in method private doGetParameterNames(executable Executable) : String[] from class org.springframework.core.LocalVariableTableParameterNameDiscoverer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdiscoverer : LocalVariableTableParameterNameDiscoverer to discoverer : ParameterNameDiscoverer in class org.springframework.core.LocalVariableTableParameterNameDiscovererTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage setUp() : void renamed to package setup() : void in class org.springframework.core.SpringCoreBlockHoundIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnames : String[] in method private doGetParameterNames(executable Executable) : String[] from class org.springframework.core.LocalVariableTableParameterNameDiscoverer",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tcleanedUrl : URL to cleanedUrl : String in class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tURL to String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public getURL(resourceLocation String) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public getFile(resourceLocation String) : File in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public extractJarFileURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public extractArchiveURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcleanedUrl : URL to cleanedUrl : String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toRelativeURL(root URL, relativePath String) : URL extracted from protected createRelativeURL(relativePath String) : URL in class org.springframework.core.io.UrlResource & moved to class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tcleanedUrl : URL to cleanedUrl : String in class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tURL to String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public isUrl(resourceLocation String) : boolean in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public getURL(resourceLocation String) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public getFile(resourceLocation String) : File in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public extractJarFileURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toURL(location String) : URL extracted from public extractArchiveURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcleanedUrl : URL to cleanedUrl : String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toRelativeURL(root URL, relativePath String) : URL extracted from protected createRelativeURL(relativePath String) : URL in class org.springframework.core.io.UrlResource & moved to class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toURL(location String) : URL extracted from public getResource(location String) : Resource in class org.springframework.core.io.DefaultResourceLoader & moved to class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toURL(location String) : URL extracted from public UrlResource(path String) in class org.springframework.core.io.UrlResource & moved to class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toURL(location String) : URL extracted from package determinePersistenceUnitRootUrl(resource Resource) : URL in class org.springframework.orm.jpa.persistenceunit.PersistenceUnitReader & moved to class org.springframework.util.ResourceUtils",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\toriginalPath : String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "url": "https://github.com/spring-projects/spring-framework/commit/1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.DefaultServerRequestObservationConvention moved to org.springframework.http.server.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerRequestObservationContext moved to org.springframework.http.server.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerRequestObservationConvention moved to org.springframework.http.server.observation.ServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.observation.DefaultServerRequestObservationConventionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerHttpObservationDocumentation moved to org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.DefaultServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerHttpObservationDocumentation moved to org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPathPattern to String in method public getPathPattern() : String from class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpathPattern : PathPattern to pathPattern : String in class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerRequestObservationContext moved to org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConventionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.ServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpattern : PathPattern to pattern : String in method protected uri(context ServerRequestObservationContext) : KeyValue from class org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.DefaultServerRequestObservationConvention moved to org.springframework.http.server.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerHttpObservationDocumentation moved to org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerRequestObservationContext moved to org.springframework.http.server.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.ServerRequestObservationConvention moved to org.springframework.http.server.observation.ServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.observation.DefaultServerRequestObservationConventionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.DefaultServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerHttpObservationDocumentation moved to org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.ServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.ServerRequestObservationContext moved to org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.http.observation.reactive.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConventionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tpathPattern : PathPattern to pathPattern : String in class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPathPattern to String in method public getPathPattern() : String from class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tpattern : PathPattern to pattern : String in method protected uri(context ServerRequestObservationContext) : KeyValue from class org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trequest : null to req : null in method public ServerRequestObservationContext(request ServerHttpRequest, response ServerHttpResponse, attributes Map<String,Object>) from class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "a2ac764f9c171c55e51ddeb83a6e9229e5455aee",
+      "url": "https://github.com/spring-projects/spring-framework/commit/a2ac764f9c171c55e51ddeb83a6e9229e5455aee",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\ttomcatPresent : boolean to tomcatWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tjettyPresent : boolean to jettyWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tundertowPresent : boolean to undertowWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tVERSIONS : String[] to SUPPORTED_VERSIONS : String[] in class org.springframework.web.socket.server.standard.UndertowRequestUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> in class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgradeInternal(request ServerHttpRequest, response ServerHttpResponse, selectedProtocol String, selectedExtensions List<Extension>, endpoint Endpoint) : void in class org.springframework.web.socket.server.standard.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setAsyncSendTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setAsyncSendTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getAsyncSendTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getAsyncSendTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxSessionIdleTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxSessionIdleTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxSessionIdleTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxSessionIdleTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxTextMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxTextMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxTextMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxTextMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxBinaryMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxBinaryMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxBinaryMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxBinaryMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate initServerContainer(serverContainer ServerContainer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to private initServerContainer(serverContainer ServerContainer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\ttomcatPresent : boolean to tomcatWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tjettyPresent : boolean to jettyWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tundertowPresent : boolean to undertowWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgradeInternal(request ServerHttpRequest, response ServerHttpResponse, selectedProtocol String, selectedExtensions List<Extension>, endpoint Endpoint) : void in class org.springframework.web.socket.server.standard.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> in class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tWsServerContainer to ServerContainer in method protected getContainer(request HttpServletRequest) : ServerContainer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setAsyncSendTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setAsyncSendTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getAsyncSendTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getAsyncSendTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxSessionIdleTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxSessionIdleTimeout(timeoutInMillis Long) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxSessionIdleTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxSessionIdleTimeout() : Long from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxTextMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxTextMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxTextMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxTextMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxBinaryMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public setMaxBinaryMessageBufferSize(bufferSize Integer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getMaxBinaryMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public getMaxBinaryMessageBufferSize() : Integer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate initServerContainer(serverContainer ServerContainer) : void from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to private initServerContainer(serverContainer ServerContainer) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy from classes [org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy, org.springframework.web.socket.server.standard.TomcatRequestUpgradeStrategy, org.springframework.web.socket.server.standard.UndertowRequestUpgradeStrategy, org.springframework.web.socket.server.standard.WebSphereRequestUpgradeStrategy]",
+          "developerConfirmation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tprivate getContainer(request HttpServletRequest) : WsServerContainer from class org.springframework.web.reactive.socket.server.upgrade.TomcatRequestUpgradeStrategy to protected getContainer(request HttpServletRequest) : ServerContainer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tconfig : DefaultServerEndpointConfig to endpointConfig : ServerEndpointConfig in method protected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "6022065ad37eef45555a6bed782d5cac5c1f3240",
+      "url": "https://github.com/spring-projects/spring-framework/commit/6022065ad37eef45555a6bed782d5cac5c1f3240",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.http.client.observation.ClientHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.reactive.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_REACTIVE_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.web.reactive.function.client.ClientHttpObservationDocumentation",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.http.client.observation.ClientHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.reactive.ServerHttpObservationDocumentation",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tHTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_REACTIVE_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.web.reactive.function.client.ClientHttpObservationDocumentation",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "21414bc265454ea0b6a90ef5da63fef05cf0dacd",
+      "url": "https://github.com/spring-projects/spring-framework/commit/21414bc265454ea0b6a90ef5da63fef05cf0dacd",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.build.CompilerConventions renamed to org.springframework.build.JavaConventions",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.build.CompilerConventions renamed to org.springframework.build.JavaConventions",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "13c0c242b3cca2bfa55a1a68b3b8ed677d3310eb",
+      "url": "https://github.com/spring-projects/spring-framework/commit/13c0c242b3cca2bfa55a1a68b3b8ed677d3310eb",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic close() : void inlined to public destroy() : void in class org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic close() : void inlined to public destroy() : void in class org.springframework.http.client.OkHttp3ClientHttpRequestFactory",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic close() : void inlined to public destroy() : void in class org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic close() : void inlined to public destroy() : void in class org.springframework.http.client.OkHttp3ClientHttpRequestFactory",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "935265048a9d18843c0606c2e065116594fa4d6d",
+      "url": "https://github.com/spring-projects/spring-framework/commit/935265048a9d18843c0606c2e065116594fa4d6d",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.test.context.aot.MergedContextConfigurationRuntimeHints from Class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate registerHintsForActiveProfilesResolvers(testClass Class<?>, runtimeHints RuntimeHints) : void inlined to public registerHints(runtimeHints RuntimeHints, testClass Class<?>, classLoader ClassLoader) : void in class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate registerClasspathResources(paths String[], runtimeHints RuntimeHints, classLoader ClassLoader) : void from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private registerClasspathResources(paths String[], runtimeHints RuntimeHints, classLoader ClassLoader) : void from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate registerClasspathResourceDirectoryStructure(directory String, runtimeHints RuntimeHints) : void from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private registerClasspathResourceDirectoryStructure(directory String, runtimeHints RuntimeHints) : void from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate SLASH : String from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private SLASH : String from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmergedConfig : MergedContextConfiguration in method public processAheadOfTime(testClasses Stream<Class<?>>) : void from class org.springframework.test.context.aot.TestContextAotGenerator",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate registerHintsForActiveProfilesResolvers(testClass Class<?>, runtimeHints RuntimeHints) : void renamed to public registerHints(runtimeHints RuntimeHints, testClass Class<?>, classLoader ClassLoader) : void in class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.test.context.aot.MergedContextConfigurationRuntimeHints from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate registerClasspathResources(paths String[], runtimeHints RuntimeHints, classLoader ClassLoader) : void from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private registerClasspathResources(paths String[], runtimeHints RuntimeHints, classLoader ClassLoader) : void from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate registerClasspathResourceDirectoryStructure(directory String, runtimeHints RuntimeHints) : void from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private registerClasspathResourceDirectoryStructure(directory String, runtimeHints RuntimeHints) : void from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate SLASH : String from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints to private SLASH : String from class org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "a4210854fb5f5c857f3c62ca22c2a0f225e0a2d0",
+      "url": "https://github.com/spring-projects/spring-framework/commit/a4210854fb5f5c857f3c62ca22c2a0f225e0a2d0",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic handleHttpMediaTypeNotSupported() : void renamed to public httpMediaTypeNotSupported() : void in class org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandlerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initMessage(contentType MediaType, bodyType ResolvableType) : String extracted from public UnsupportedMediaTypeStatusException(contentType MediaType, supportedTypes List<MediaType>, bodyType ResolvableType, method HttpMethod) in class org.springframework.web.server.UnsupportedMediaTypeStatusException",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpMediaTypeNotSupportedException in method package httpMediaTypeNotSupportedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpMediaTypeNotAcceptableException in method package httpMediaTypeNotAcceptableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpRequestMethodNotSupportedException in method package httpRequestMethodNotSupportedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestHeaderException in method package missingRequestHeaderException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingServletRequestParameterException in method package missingServletRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingMatrixVariableException in method package missingMatrixVariableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingPathVariableException in method package missingPathVariableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestCookieException in method package missingRequestCookieException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsatisfiedServletRequestParameterException in method package unsatisfiedServletRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingServletRequestPartException in method package missingServletRequestPartException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsupportedMediaTypeStatusException in method package unsupportedMediaTypeStatusException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : NotAcceptableStatusException in method package notAcceptableStatusException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestValueException in method package missingRequestValueException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsatisfiedRequestParameterException in method package unsatisfiedRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : WebExchangeBindException in method package webExchangeBindException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MethodNotAllowedException in method package methodNotAllowedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MethodNotAllowedException in method package methodNotAllowedExceptionWithoutSupportedMethods() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresponseEntity : ResponseEntity<?> to entity : ResponseEntity<?> in method private testException(exception ErrorResponseException) : ResponseEntity<ProblemDetail> from class org.springframework.web.reactive.result.method.annotation.ResponseEntityExceptionHandlerTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate paramsToStringList(paramConditions List<String[]>) : List<String> extracted from public UnsatisfiedServletRequestParameterException(paramConditions List<String[]>, actualParams Map<String,String[]>) in class org.springframework.web.bind.UnsatisfiedServletRequestParameterException",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate initMessage(contentType MediaType, bodyType ResolvableType) : String extracted from public UnsupportedMediaTypeStatusException(contentType MediaType, supportedTypes List<MediaType>, bodyType ResolvableType, method HttpMethod) in class org.springframework.web.server.UnsupportedMediaTypeStatusException",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic handleHttpMediaTypeNotSupported() : void renamed to public httpMediaTypeNotSupported() : void in class org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandlerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpMediaTypeNotSupportedException in method package httpMediaTypeNotSupportedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpMediaTypeNotAcceptableException in method package httpMediaTypeNotAcceptableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : HttpRequestMethodNotSupportedException in method package httpRequestMethodNotSupportedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestHeaderException in method package missingRequestHeaderException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingServletRequestParameterException in method package missingServletRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingMatrixVariableException in method package missingMatrixVariableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingPathVariableException in method package missingPathVariableException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestCookieException in method package missingRequestCookieException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsatisfiedServletRequestParameterException in method package unsatisfiedServletRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingServletRequestPartException in method package missingServletRequestPartException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsupportedMediaTypeStatusException in method package unsupportedMediaTypeStatusException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : NotAcceptableStatusException in method package notAcceptableStatusException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MissingRequestValueException in method package missingRequestValueException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : UnsatisfiedRequestParameterException in method package unsatisfiedRequestParameterException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : WebExchangeBindException in method package webExchangeBindException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MethodNotAllowedException in method package methodNotAllowedException() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tex : ErrorResponse to ex : MethodNotAllowedException in method package methodNotAllowedExceptionWithoutSupportedMethods() : void from class org.springframework.web.ErrorResponseExceptionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresponseEntity : ResponseEntity<?> to entity : ResponseEntity<?> in method private testException(exception ErrorResponseException) : ResponseEntity<ProblemDetail> from class org.springframework.web.reactive.result.method.annotation.ResponseEntityExceptionHandlerTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "380795e5b8a553517e69725272e796dfa92dc97c",
+      "url": "https://github.com/spring-projects/spring-framework/commit/380795e5b8a553517e69725272e796dfa92dc97c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage executeAddsSucessAsOutcome() : void renamed to package executeAddsSuccessAsOutcome() : void in class org.springframework.web.client.RestTemplateObservationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.web.reactive.function.client.DefaultClientObservationTests renamed to org.springframework.web.reactive.function.client.WebClientObservationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getStatusMessage(response ClientHttpResponse) : String inlined to protected status(context ClientHttpObservationContext) : KeyValue in class org.springframework.http.client.observation.DefaultClientHttpObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getStatusMessage(context ClientObservationContext) : String inlined to protected status(context ClientObservationContext) : KeyValue in class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsimpleName : String in method protected exception(context HttpRequestsObservationContext) : KeyValue from class org.springframework.web.observation.DefaultHttpRequestsObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsimpleName : String in method protected exception(context HttpRequestsObservationContext) : KeyValue from class org.springframework.web.observation.reactive.DefaultHttpRequestsObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresponse : ClientResponse in method protected status(context ClientObservationContext) : KeyValue from class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.web.reactive.function.client.DefaultClientObservationTests renamed to org.springframework.web.reactive.function.client.WebClientObservationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getStatusMessage(response ClientHttpResponse) : String inlined to protected status(context ClientHttpObservationContext) : KeyValue in class org.springframework.http.client.observation.DefaultClientHttpObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage executeAddsSucessAsOutcome() : void renamed to package executeAddsSuccessAsOutcome() : void in class org.springframework.web.client.RestTemplateObservationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getStatusMessage(context ClientObservationContext) : String inlined to protected status(context ClientObservationContext) : KeyValue in class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\thost : String in method protected clientName(context ClientHttpObservationContext) : KeyValue from class org.springframework.http.client.observation.DefaultClientHttpObservationConvention",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\thost : String in method protected clientName(context ClientObservationContext) : KeyValue from class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "38d91bafce7b5b9de23c2668b7ba8a772dfa2566",
+      "url": "https://github.com/spring-projects/spring-framework/commit/38d91bafce7b5b9de23c2668b7ba8a772dfa2566",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate apply() : TypeSpec.Builder extracted from package generateJavaFile() : JavaFile in class org.springframework.aot.generate.GeneratedClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package getNameReturnsName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesWhenNameUsedThrowsException() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesReservesNames() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateMethodNameWhenAllEmptyPartsGeneratesSetName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateJavaFileIncludesGeneratedMethods() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createInnerClass(generatedClass GeneratedClass, name String, target ClassName) : GeneratedClass extracted from package generateBeanDefinitionMethod(generationContext GenerationContext, beanRegistrationsCode BeanRegistrationsCode) : MethodReference in class org.springframework.beans.factory.aot.BeanDefinitionMethodGenerator",
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate lookupGeneratedClass(generationContext GenerationContext, target ClassName) : GeneratedClass extracted from package generateBeanDefinitionMethod(generationContext GenerationContext, beanRegistrationsCode BeanRegistrationsCode) : MethodReference in class org.springframework.beans.factory.aot.BeanDefinitionMethodGenerator",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate apply() : TypeSpec.Builder extracted from package generateJavaFile() : JavaFile in class org.springframework.aot.generate.GeneratedClass",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package getNameReturnsName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesWhenNameUsedThrowsException() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesReservesNames() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateMethodNameWhenAllEmptyPartsGeneratesSetName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateJavaFileIncludesGeneratedMethods() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttarget : ClassName to topLevelClassName : ClassName in method private lookupGeneratedClass(generationContext GenerationContext, target ClassName) : GeneratedClass from class org.springframework.beans.factory.aot.BeanDefinitionMethodGenerator",
+          "developerConfirmation": false
+        }
+      ]
+    }
+  ]
+}

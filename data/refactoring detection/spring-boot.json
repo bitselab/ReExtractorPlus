@@ -1,0 +1,1703 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "70d561a929caf0f01af29c5a45d9164bc6e3e090",
+      "url": "https://github.com/spring-projects/spring-boot/commit/70d561a929caf0f01af29c5a45d9164bc6e3e090",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.autoconfigure.reactor.netty.ReactorNettyConfigurationProperties renamed to org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyProperties",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.autoconfigure.reactor.netty.ReactorNettyConfigurationProperties renamed to org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyProperties",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "33aef7fe27107e74d2147257161b57890d04b55c",
+      "url": "https://github.com/spring-projects/spring-boot/commit/33aef7fe27107e74d2147257161b57890d04b55c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate determineArtifactoryRepo(project Project) : String renamed to private determineReleaseType(project Project) : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage whenProjectVersionIsReleaseCandidateThenRepositoryIsMilestone() : void renamed to package whenProjectVersionIsReleaseCandidateThenTypeIsMilestone() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage whenProjectVersionIsMilestoneThenRepositoryIsMilestone() : void renamed to package whenProjectVersionIsMilestoneThenTypeIsMilestone() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tArtifactoryRepository to ArtifactRelease in method public forProject(project Project) : ArtifactRelease from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage whenProjectVersionIsSnapshotThenRepositoryIsSnapshot() : void renamed to package whenProjectVersionIsSnapshotThenTypeIsSnapshot() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage whenProjectVersionIsReleaseThenRepositoryIsRelease() : void renamed to package whenProjectVersionIsReleaseThenTypeIsRelease() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate MAVEN_REPO : String from class org.springframework.boot.build.cli.HomebrewFormula to private MAVEN_REPO : String from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate SPRING_REPO : String from class org.springframework.boot.build.cli.HomebrewFormula to private SPRING_REPO : String from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getName() : String renamed to public getType() : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate determineArtifactoryRepo(project Project) : String renamed to private determineReleaseType(project Project) : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tArtifactoryRepository to ArtifactRelease in method public forProject(project Project) : ArtifactRelease from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tname : String to type : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "5eeb429e44180b22bbe9af7f15c2cb70e291daca",
+      "url": "https://github.com/spring-projects/spring-boot/commit/5eeb429e44180b22bbe9af7f15c2cb70e291daca",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage parseWhe5ComponentsShouldReturnNumericQualifierDependencyVersion() : void renamed to package parseWhen5ComponentsShouldReturnNumericQualifierDependencyVersion() : void in class org.springframework.boot.build.bom.bomr.version.DependencyVersionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage healthCheckWhenDownWithExceptionConfiguredDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionConfiguredLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage healthCheckWhenDownWithExceptionThrownDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionThrownLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage parseWhe5ComponentsShouldReturnNumericQualifierDependencyVersion() : void renamed to package parseWhen5ComponentsShouldReturnNumericQualifierDependencyVersion() : void in class org.springframework.boot.build.bom.bomr.version.DependencyVersionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage healthCheckWhenDownWithExceptionThrownDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionThrownLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage healthCheckWhenDownWithExceptionConfiguredDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionConfiguredLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "0b6dade142f233ba4782af01ae3bb2039406766b",
+      "url": "https://github.com/spring-projects/spring-boot/commit/0b6dade142f233ba4782af01ae3bb2039406766b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private execute(request HttpUriRequest, url URI, description String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private executeInitializrMetadataRetrieval(url String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpClient to HttpClient in method protected getHttp() : HttpClient from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private executeProjectGenerationRequest(url URI) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\thttp : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\thttp : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package generate(request ProjectGenerationRequest) : ProjectGenerationResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package loadMetadata(serviceUrl String) : InitializrServiceMetadata from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package loadServiceCapabilities(serviceUrl String) : Object from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockSuccessfulMetadataGet(contentPath String, contentType String, serviceCapabilities boolean) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockSuccessfulProjectGeneration(request MockHttpProjectGenerationRequest) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockProjectGenerationError(status int, message String) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockMetadataGetError(status int, message String) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package generateProjectNoContent() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package loadMetadataInvalidJson() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package loadMetadataNoContent() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\thttp : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpClient to HttpClient in method protected getHttp() : HttpClient from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private executeProjectGenerationRequest(url URI) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private executeInitializrMetadataRetrieval(url String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCloseableHttpResponse to ClassicHttpResponse in method private execute(request HttpUriRequest, url URI, description String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\thttp : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package generate(request ProjectGenerationRequest) : ProjectGenerationResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package loadMetadata(serviceUrl String) : InitializrServiceMetadata from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\thttpResponse : CloseableHttpResponse to httpResponse : ClassicHttpResponse in method package loadServiceCapabilities(serviceUrl String) : Object from class org.springframework.boot.cli.command.init.InitializrService",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockSuccessfulMetadataGet(contentPath String, contentType String, serviceCapabilities boolean) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockSuccessfulProjectGeneration(request MockHttpProjectGenerationRequest) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockProjectGenerationError(status int, message String) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method protected mockMetadataGetError(status int, message String) : void from class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package generateProjectNoContent() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package loadMetadataInvalidJson() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : CloseableHttpResponse to response : ClassicHttpResponse in method package loadMetadataNoContent() : void from class org.springframework.boot.cli.command.init.InitializrServiceTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "2faede6245f657d8e7b87167dadbed1a9411c18b",
+      "url": "https://github.com/spring-projects/spring-boot/commit/2faede6245f657d8e7b87167dadbed1a9411c18b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLoaderOptions() : LoaderOptions extracted from package fromArchiveFile(archiveFile File) : LayersIndex in class org.springframework.boot.image.paketo.LayersIndex",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLoaderOptions() : LoaderOptions extracted from package fromArchiveFile(archiveFile File) : LayersIndex in class org.springframework.boot.image.paketo.LayersIndex",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "d5e541226b2e9e42af67c1c6b43000abfb9e7ebf",
+      "url": "https://github.com/spring-projects/spring-boot/commit/d5e541226b2e9e42af67c1c6b43000abfb9e7ebf",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tNumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method package parse(input String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersion renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tNumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method private version(version String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersion renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tNumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method package parse(input String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tNumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method private version(version String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "d6f682da7e39c74ddb16140df1dcc2948f51a70e",
+      "url": "https://github.com/spring-projects/spring-boot/commit/d6f682da7e39c74ddb16140df1dcc2948f51a70e",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isBetterGetter(getter Method) : boolean inlined to package addGetter(getter Method) : void in class org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "6a0a61f1ce1e9e1114b6674474d48a67a55249ee",
+      "url": "https://github.com/spring-projects/spring-boot/commit/6a0a61f1ce1e9e1114b6674474d48a67a55249ee",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedEndpointsClasses() : void renamed to package toStringWhenIncludedEndpointsClasses() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedExcludedEndpoints() : void renamed to package toStringWhenIncludedExcludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedEndpoints() : void renamed to package toStringWhenIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringEmptyIncludedEndpoints() : void renamed to package toStringWhenEmptyIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate toString(endpoints List<Object>, emptyValue String) : String extracted from public toString() : String in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest.EndpointRequestMatcher",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedEndpoints() : void renamed to package toStringWhenIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringEmptyIncludedEndpoints() : void renamed to package toStringWhenEmptyIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedEndpointsClasses() : void renamed to package toStringWhenIncludedEndpointsClasses() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage toStringIncludedExcludedEndpoints() : void renamed to package toStringWhenIncludedExcludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "50be8cbf9162384af6968edfe5274459464982ca",
+      "url": "https://github.com/spring-projects/spring-boot/commit/50be8cbf9162384af6968edfe5274459464982ca",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate mutateClientRequest(context ClientRequestObservationContext) : void inlined to public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate mutateClientRequest(context ClientRequestObservationContext) : void inlined to public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\trequest : ClientRequest in method public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues from class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\trequest : ClientRequest in method public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues from class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "716a839d545a26566ea16fb713ad24f594fbc8f6",
+      "url": "https://github.com/spring-projects/spring-boot/commit/716a839d545a26566ea16fb713ad24f594fbc8f6",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage configureSslWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package configureSslWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.jetty.SslServerCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.netty.SslServerCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage customizeWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package customizeWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getKeyManagersWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagersWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.undertow.SslBuilderCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeystoreLocation : String in method private configureSslKeyStore(factory SslContextFactory.Server, ssl Ssl) : void from class org.springframework.boot.web.embedded.jetty.SslServerCustomizer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeystoreLocation : String in method private configureSslKeyStore(certificate SSLHostConfigCertificate, ssl Ssl) : void from class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage configureSslWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package configureSslWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.jetty.SslServerCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.netty.SslServerCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage customizeWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package customizeWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage getKeyManagersWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagersWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.undertow.SslBuilderCustomizerTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeystoreLocation : String in method private configureSslKeyStore(factory SslContextFactory.Server, ssl Ssl) : void from class org.springframework.boot.web.embedded.jetty.SslServerCustomizer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tkeystoreLocation : String in method private configureSslKeyStore(certificate SSLHostConfigCertificate, ssl Ssl) : void from class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizer",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "07766c436cb89128eac5389d33f76329b758d8df",
+      "url": "https://github.com/spring-projects/spring-boot/commit/07766c436cb89128eac5389d33f76329b758d8df",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConvention(customConvention ClientRequestObservationConvention, name String, tagsProvider RestTemplateExchangeTagsProvider) : ClientRequestObservationConvention extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConvention(customConvention ClientRequestObservationConvention, tagsProvider WebClientExchangeTagsProvider, name String) : ClientRequestObservationConvention extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConvention(customConvention ServerRequestObservationConvention, name String, tagsProvider WebMvcTagsProvider, contributors List<WebMvcTagsContributor>) : ServerRequestObservationConvention extracted from public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> in class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate createConvention(customConvention ServerRequestObservationConvention, name String, tagsProvider WebMvcTagsProvider, contributors List<WebMvcTagsContributor>) : ServerRequestObservationConvention extracted from public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> in class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\ttagsProvider : WebMvcTagsProvider in method public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> from class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tcontributors : List<WebMvcTagsContributor> in method public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> from class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "5a88468c0938a046d3aa60ba06e26523dd1ce190",
+      "url": "https://github.com/spring-projects/spring-boot/commit/5a88468c0938a046d3aa60ba06e26523dd1ce190",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.MyProperties.Nested moved to org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.Nested",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.MyProperties.Nested moved to org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.Nested",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "fb5cdbd11c3dbf9ea137223247a7b5477cfee7b1",
+      "url": "https://github.com/spring-projects/spring-boot/commit/fb5cdbd11c3dbf9ea137223247a7b5477cfee7b1",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.MeterRegistrySpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.MeterRegistrySpanMetricsConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.NoopSpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.NoopSpanMetricsConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontBrave moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontBrave",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontOpenTelemetry moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontOpenTelemetry",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage exportsApplicationTagsInWavefrontRegistry() : void renamed to package exportsApplicationTagsInWavefrontRegistryWhenApplicationTagsBean() : void in class org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration from Class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate applicationName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private applicationName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate serviceName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private serviceName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate clusterName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private clusterName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate shardName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private shardName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic wavefrontApplicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to public wavefrontApplicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getName(value String, fallback Supplier<String>) : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private getName(value String, fallback Supplier<String>) : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate DEFAULT_SERVICE_NAME : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private DEFAULT_SERVICE_NAME : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate DEFAULT_APPLICATION_NAME : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private DEFAULT_APPLICATION_NAME : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage wavefrontSpanHandler(properties WavefrontProperties, wavefrontSender WavefrontSender, spanMetrics SpanMetrics, applicationTags ApplicationTags) : WavefrontSpanHandler from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer to package wavefrontSpanHandler(properties WavefrontProperties, wavefrontSender WavefrontSender, spanMetrics SpanMetrics, applicationTags ApplicationTags) : WavefrontSpanHandler from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getServiceName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getServiceName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setServiceName(serviceName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setServiceName(serviceName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getApplicationName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getApplicationName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setApplicationName(applicationName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setApplicationName(applicationName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getClusterName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getClusterName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setClusterName(clusterName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setClusterName(clusterName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getShardName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getShardName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setShardName(shardName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setShardName(shardName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.MeterRegistrySpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.MeterRegistrySpanMetricsConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.NoopSpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.NoopSpanMetricsConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontBrave moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontBrave",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontOpenTelemetry moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontOpenTelemetry",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage exportsApplicationTagsInWavefrontRegistry() : void renamed to package exportsApplicationTagsInWavefrontRegistryWhenApplicationTagsBean() : void in class org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate applicationName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private applicationName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate serviceName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private serviceName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate clusterName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private clusterName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate shardName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to private shardName : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic wavefrontApplicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to public wavefrontApplicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getName(value String, fallback Supplier<String>) : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private getName(value String, fallback Supplier<String>) : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate DEFAULT_SERVICE_NAME : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private DEFAULT_SERVICE_NAME : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate DEFAULT_APPLICATION_NAME : String from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration to private DEFAULT_APPLICATION_NAME : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage wavefrontSpanHandler(properties WavefrontProperties, wavefrontSender WavefrontSender, spanMetrics SpanMetrics, applicationTags ApplicationTags) : WavefrontSpanHandler from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer to package wavefrontSpanHandler(properties WavefrontProperties, wavefrontSender WavefrontSender, spanMetrics SpanMetrics, applicationTags ApplicationTags) : WavefrontSpanHandler from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getServiceName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getServiceName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setServiceName(serviceName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setServiceName(serviceName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getApplicationName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getApplicationName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setApplicationName(applicationName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setApplicationName(applicationName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getClusterName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getClusterName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setClusterName(clusterName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setClusterName(clusterName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getShardName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public getShardName() : String from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setShardName(shardName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Tracing to public setShardName(shardName String) : void from class org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "42bb4c06152040711733aa58a862395abbe8d43c",
+      "url": "https://github.com/spring-projects/spring-boot/commit/42bb4c06152040711733aa58a862395abbe8d43c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tDEFAULT_APPLICATION_NAME : String to DEFAULT_WAVEFRONT_APPLICATION_NAME : String in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage shouldHaveADefaultApplicationName() : void renamed to package shouldUseSpringApplicationNameForServiceName() : void in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tspringApplicationName : String to fallbackWavefrontServiceName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tapplicationName : String to wavefrontApplicationName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tserviceName : String to wavefrontServiceName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tDEFAULT_APPLICATION_NAME : String to DEFAULT_WAVEFRONT_SERVICE_NAME : String in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage shouldHaveADefaultApplicationName() : void renamed to package shouldUseSpringApplicationNameForServiceName() : void in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tspringApplicationName : String to fallbackWavefrontServiceName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tapplicationName : String to wavefrontServiceName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tserviceName : String to wavefrontApplicationName : String in method public applicationTags(environment Environment, properties WavefrontProperties) : ApplicationTags from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b5bdee24c2793464a61e31d0e486f025ad9d0fdf",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b5bdee24c2793464a61e31d0e486f025ad9d0fdf",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate applyRollingPolicyProperties(resolver PropertyResolver) : void extracted from protected apply(logFile LogFile, resolver PropertyResolver) : void in class org.springframework.boot.logging.logback.LogbackLoggingSystemProperties",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate applyRollingPolicyProperties(resolver PropertyResolver) : void extracted from protected apply(logFile LogFile, resolver PropertyResolver) : void in class org.springframework.boot.logging.logback.LogbackLoggingSystemProperties",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "0acaa0e46050017e75056d51918d447271fc16c7",
+      "url": "https://github.com/spring-projects/spring-boot/commit/0acaa0e46050017e75056d51918d447271fc16c7",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trequest : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trequest : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\trequest : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\trequest : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "9856286a2dfcc76dd0f8328441b77df7e0f8ee54",
+      "url": "https://github.com/spring-projects/spring-boot/commit/9856286a2dfcc76dd0f8328441b77df7e0f8ee54",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest() : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.SourceServletHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.SourceHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.SourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording from Class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method package httpExchanges() : void from class org.springframework.boot.actuate.autoconfigure.endpoint.web.documentation.HttpExchangesEndpointDocumentationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method package httpExchanges() : void from class org.springframework.boot.actuate.autoconfigure.endpoint.web.documentation.HttpExchangesEndpointDocumentationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trequest : Request to exchangeRequest : Request in method public finish(clock Clock, response RecordableHttpResponse, principalSupplier Supplier<java.security.Principal>, sessionIdSupplier Supplier<String>, includes Set<Include>) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresponse : Response to exchangeResponse : Response in method public finish(clock Clock, response RecordableHttpResponse, principalSupplier Supplier<java.security.Principal>, sessionIdSupplier Supplier<String>, includes Set<Include>) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceResponse : SourceServerHttpResponse to sourceResponse : RecordableServerHttpResponse in method private addExchangeOnCommit(exchange ServerWebExchange, principalAndSession PrincipalAndSession) : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method private addExchangeOnCommit(exchange ServerWebExchange, principalAndSession PrincipalAndSession) : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : ServletSourceHttpRequest to sourceRequest : RecordableServletHttpRequest in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceResponse : SourceServletHttpResponse to sourceResponse : RecordableServletHttpResponse in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getMethod() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getUri() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getHeaders() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getUnresolvedRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : ServletSourceHttpRequest to sourceRequest : RecordableServletHttpRequest in method private validate(expectedUri String) : void from class org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setInclude(include Set<Include>) : void from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties to public setInclude(include Set<Include>) : void from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate include : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties to private include : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createHttpExchange(method String) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method private createHttpExchange(method String) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getInclude() : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties to public getInclude() : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.SourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.SourceHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequest",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.SourceServletHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpResponse",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest() : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpRequest to RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method package httpExchanges() : void from class org.springframework.boot.actuate.autoconfigure.endpoint.web.documentation.HttpExchangesEndpointDocumentationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method package httpExchanges() : void from class org.springframework.boot.actuate.autoconfigure.endpoint.web.documentation.HttpExchangesEndpointDocumentationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trequest : Request to exchangeRequest : Request in method public finish(clock Clock, response RecordableHttpResponse, principalSupplier Supplier<java.security.Principal>, sessionIdSupplier Supplier<String>, includes Set<Include>) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresponse : Response to exchangeResponse : Response in method public finish(clock Clock, response RecordableHttpResponse, principalSupplier Supplier<java.security.Principal>, sessionIdSupplier Supplier<String>, includes Set<Include>) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceResponse : SourceServerHttpResponse to sourceResponse : RecordableServerHttpResponse in method private addExchangeOnCommit(exchange ServerWebExchange, principalAndSession PrincipalAndSession) : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method private addExchangeOnCommit(exchange ServerWebExchange, principalAndSession PrincipalAndSession) : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : ServletSourceHttpRequest to sourceRequest : RecordableServletHttpRequest in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceResponse : SourceServletHttpResponse to sourceResponse : RecordableServletHttpResponse in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilter",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getMethod() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getUri() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getHeaders() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getUnresolvedRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : SourceServerHttpRequest to sourceRequest : RecordableServerHttpRequest in method package getRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsourceRequest : ServletSourceHttpRequest to sourceRequest : RecordableServletHttpRequest in method private validate(expectedUri String) : void from class org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setInclude(include Set<Include>) : void from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties to public setInclude(include Set<Include>) : void from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording",
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate include : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties to private include : Set<Include> from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : SourceHttpRequest to request : RecordableHttpRequest in method private createHttpExchange(method String) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresponse : SourceHttpResponse to response : RecordableHttpResponse in method private createHttpExchange(method String) : HttpExchange from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "29f7a596feae0051ced49da7b1622e390f7a42e7",
+      "url": "https://github.com/spring-projects/spring-boot/commit/29f7a596feae0051ced49da7b1622e390f7a42e7",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForMonoErrorWithRuntimeExceptionHas500Status() : void renamed to package exchangeForMonoErrorWithRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForThrownRuntimeExceptionHas500Status() : void renamed to package exchangeForThrownRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForNotFoundResponseHas404Status() : void renamed to package exchangeForNotFoundResponseHas404Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesSessionIdWhenSessionIsUsed() : void renamed to package filterRecordsSessionIdWhenSessionIsUsed() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterDoesNotCaptureIdOfUnusedSession() : void renamed to package filterDoesNotRecordIdOfUnusedSession() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesSessionId() : void renamed to package filterRecordsSessionId() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrace : HttpExchange to exchange : HttpExchange in method package httpExchanges() : void from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraces : List<HttpExchange> to exchanges : List<HttpExchange> in method package adWhenHasLimitedCapacityRestrictsSize() : void from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraces : List<HttpExchange> to exchanges : List<HttpExchange> in method package addWhenReverseFalseReturnsInCorrectOrder() : void from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getMethod() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getUri() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getHeaders() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getUnresolvedRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrace : ServletSourceHttpRequest to sourceRequest : ServletSourceHttpRequest in method private validate(expectedUri String) : void from class org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttracedPrincipal : org.springframework.boot.actuate.web.exchanges.HttpExchange.Principal to recordedPrincipal : org.springframework.boot.actuate.web.exchanges.HttpExchange.Principal in method package filterRecordsPrincipal() : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttracedPrincipal : org.springframework.boot.actuate.web.exchanges.HttpExchange.Principal to recordedPrincipal : org.springframework.boot.actuate.web.exchanges.HttpExchange.Principal in method package filterRecordsPrincipal() : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForNotFoundResponseHas404Status() : void renamed to package exchangeForNotFoundResponseHas404Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForMonoErrorWithRuntimeExceptionHas500Status() : void renamed to package exchangeForMonoErrorWithRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage traceForThrownRuntimeExceptionHas500Status() : void renamed to package exchangeForThrownRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesSessionIdWhenSessionIsUsed() : void renamed to package filterRecordsSessionIdWhenSessionIsUsed() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterDoesNotCaptureIdOfUnusedSession() : void renamed to package filterDoesNotRecordIdOfUnusedSession() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesSessionId() : void renamed to package filterRecordsSessionId() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrace : HttpExchange to exchange : HttpExchange in method package httpExchanges() : void from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraces : List<HttpExchange> to exchanges : List<HttpExchange> in method package adWhenHasLimitedCapacityRestrictsSize() : void from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraces : List<HttpExchange> to exchanges : List<HttpExchange> in method package addWhenReverseFalseReturnsInCorrectOrder() : void from class org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepositoryTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getMethod() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getUri() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getHeaders() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getUnresolvedRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttraceableRequest : SourceServerHttpRequest to sourceRequest : SourceServerHttpRequest in method package getRemoteAddress() : void from class org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttrace : ServletSourceHttpRequest to sourceRequest : ServletSourceHttpRequest in method private validate(expectedUri String) : void from class org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttracedPrincipal : HttpExchange.Principal to recordedPrincipal : HttpExchange.Principal in method package filterRecordsPrincipal() : void from class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttracedPrincipal : HttpExchange.Principal to recordedPrincipal : HttpExchange.Principal in method package filterRecordsPrincipal() : void from class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b9e176ce1a040941d0807e418174cebee7c6d2e0",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b9e176ce1a040941d0807e418174cebee7c6d2e0",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tapplicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tapplicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tapplicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "33e379c4a2a8f50f4d2490943537d0d1b6f831f6",
+      "url": "https://github.com/spring-projects/spring-boot/commit/33e379c4a2a8f50f4d2490943537d0d1b6f831f6",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithTrailingCharsLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingCharsLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithLeadingWhitespaceLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndLeadingWhitespaceLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithTrailingWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage isPoundCharacter() : boolean renamed to package isCommentPrefixCharacter() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tlastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tlastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate setLastLineComment(lastLineComment boolean) : void renamed to private setLastLineCommentPrefix(lastLineCommentPrefix int) : void in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate isLastLineComment() : boolean renamed to package isSameLastLineCommentPrefix() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithoutWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndWithoutWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage read(wrappedLine boolean) : boolean inlined to package read() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate setLastLineComment(lastLineComment boolean) : void renamed to private setLastLineCommentPrefix(lastLineCommentPrefix int) : void in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage isPoundCharacter() : boolean renamed to package isCommentPrefixCharacter() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpackage read(wrappedLine boolean) : boolean inlined to package read() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tlastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tlastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithoutWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndWithoutWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithLeadingWhitespaceLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndLeadingWhitespaceLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithTrailingWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage loadWhenMultiDocumentWithTrailingCharsLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingCharsLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}
