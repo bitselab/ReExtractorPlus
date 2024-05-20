@@ -2,1553 +2,707 @@
   "results": [
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "b894d66cf07f8ab76f048779b8dcb91f7511f0ce",
-      "url": "https://github.com/apache/commons-io/commit/b894d66cf07f8ab76f048779b8dcb91f7511f0ce",
-      "ourApproach": [
+      "sha1": "59129bcf283ffa5a46d0872e173a4e037575c581",
+      "url": "https://github.com/apache/commons-io/commit/59129bcf283ffa5a46d0872e173a4e037575c581",
+      "commonRefactoring": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttemporaryFolder : File to temporaryFolder : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage freeSpaceOS(pathStr String, os int, kb boolean, timeout Duration) : long renamed to package getFreeSpace(pathStr String) : long in class org.apache.commons.io.FileSystemUtils",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttestFile1 : File to testFile1 : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetFreeSpaceWindows_IllegalFileName(illegalFileNameChar char) : void renamed to public testGetFreeSpace_IllegalFileName(illegalFileNameChar char) : void in class org.apache.commons.io.FileSystemUtilsTest",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttestFile2 : File to testFile2 : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinputFile : File to inputFile : Path in class org.apache.commons.io.input.AbstractInputStreamTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetFreeSpaceWindows_IllegalFileNames() : void renamed to public testGetFreeSpace_IllegalFileNames() : void in class org.apache.commons.io.FileSystemUtilsTest",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttemporaryFolder : File to temporaryFolder : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttestFile1 : File to testFile1 : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttestFile2 : File to testFile2 : Path in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinputFile : File to inputFile : Path in class org.apache.commons.io.input.AbstractInputStreamTest",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tbytes : long in method public testGetFreeSpace_String() : void from class org.apache.commons.io.FileSystemUtilsTest",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "a8c3027f993f5a9c9a82681a56fa6c1b1df4bcf3",
-      "url": "https://github.com/apache/commons-io/commit/a8c3027f993f5a9c9a82681a56fa6c1b1df4bcf3",
-      "ourApproach": [
+      "sha1": "4b47b44bc0b10b456d03a04cb52433c15df21496",
+      "url": "https://github.com/apache/commons-io/commit/4b47b44bc0b10b456d03a04cb52433c15df21496",
+      "commonRefactoring": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.io.ThreadUtils from Class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getNanosOfMilli(duration Duration) : int from class org.apache.commons.io.ThreadMonitor to package getNanosOfMilli(duration Duration) : int from class org.apache.commons.io.ThreadUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage sleep(duration Duration) : void from class org.apache.commons.io.ThreadMonitor to public sleep(duration Duration) : void from class org.apache.commons.io.ThreadUtils",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testForceDeleteUnwritableDirectory() : void renamed to public testForceDeleteUnwritableFile() : void in class org.apache.commons.io.FileUtilsTest",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.io.ThreadUtils from class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getNanosOfMilli(duration Duration) : int from class org.apache.commons.io.ThreadMonitor to package getNanosOfMilli(duration Duration) : int from class org.apache.commons.io.ThreadUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage sleep(duration Duration) : void from class org.apache.commons.io.ThreadMonitor to public sleep(duration Duration) : void from class org.apache.commons.io.ThreadUtils",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "4ea91d20dfa730bf2ce2120f7bdfbe0384d0c29a",
-      "url": "https://github.com/apache/commons-io/commit/4ea91d20dfa730bf2ce2120f7bdfbe0384d0c29a",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage compareAndSetThrows(ref AtomicReference<T>, expected T, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, expected T, update T) : T in class org.apache.commons.io.function.TestUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage compareAndSetThrows(ref AtomicReference<T>, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, update T) : T in class org.apache.commons.io.function.TestUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage throwIOException(message String) : T extracted from private throwIOException() : T in class org.apache.commons.io.function.TestConstants",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic forAll(action IOConsumer<T>, exSupplier BiFunction<Integer,IOException,IOException>) : void extracted from package forAll(stream Stream<T>, action IOConsumer<T>, exSupplier BiFunction<Integer,IOException,IOException>) : void in class org.apache.commons.io.function.IOStreams & moved to class org.apache.commons.io.function.IOStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tactualAction : IOConsumer<T> to safeAction : IOConsumer<T> in method public forAll(action IOConsumer<T>, exSupplier BiFunction<Integer,IOException,IOException>) : void from class org.apache.commons.io.function.IOStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tex : IOException to innerEx : IOException in method public forAll(action IOConsumer<T>, exSupplier BiFunction<Integer,IOException,IOException>) : void from class org.apache.commons.io.function.IOStream",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage throwIOException(message String) : T extracted from private throwIOException() : T in class org.apache.commons.io.function.TestConstants",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage compareAndSetThrows(ref AtomicReference<T>, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, update T) : T in class org.apache.commons.io.function.TestUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage compareAndSetThrows(ref AtomicReference<T>, expected T, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, expected T, update T) : T in class org.apache.commons.io.function.TestUtils",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "153a91c1271f4a07d56230670253e94c5ed94683",
-      "url": "https://github.com/apache/commons-io/commit/153a91c1271f4a07d56230670253e94c5ed94683",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate size(causeList List<? extends Throwable>) : int extracted from private isEmpty(causeList List<? extends Throwable>) : boolean in class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate size(causeList List<? extends Throwable>) : int extracted from private toMessage(causeList List<? extends Throwable>) : String in class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate size(causeList List<? extends Throwable>) : int extracted from private isEmpty(causeList List<? extends Throwable>) : boolean in class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "83ac402ffefbee8adf33843e81c4cd5bda35b410",
-      "url": "https://github.com/apache/commons-io/commit/83ac402ffefbee8adf33843e81c4cd5bda35b410",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.commons.io.Uncheck moved to org.apache.commons.io.function.Uncheck",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.commons.io.Uncheck moved to org.apache.commons.io.function.Uncheck",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "7b003afc65109c26da0f31e24d03841556ebc6d0",
-      "url": "https://github.com/apache/commons-io/commit/7b003afc65109c26da0f31e24d03841556ebc6d0",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DemuxTest renamed to org.apache.commons.io.DemuxInputStreamTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DemuxTest renamed to org.apache.commons.io.DemuxInputStreamTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "b375ca51cb40db2f4254c8c6e4a9f7cfab468da2",
-      "url": "https://github.com/apache/commons-io/commit/b375ca51cb40db2f4254c8c6e4a9f7cfab468da2",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, fileFilter PathFilter, dirFilter PathFilter, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, fileFilter PathFilter, dirFilter PathFilter, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "daa26885ffec2671fc6211f633d912d3174bef19",
-      "url": "https://github.com/apache/commons-io/commit/daa26885ffec2671fc6211f633d912d3174bef19",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Comparator<File>...) in class org.apache.commons.io.comparator.CompositeFileComparator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Iterable<Comparator<File>>) in class org.apache.commons.io.comparator.CompositeFileComparator",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Comparator<File>...) in class org.apache.commons.io.comparator.CompositeFileComparator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Iterable<Comparator<File>>) in class org.apache.commons.io.comparator.CompositeFileComparator",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "63771b3f142c2ac42aca8b864d3df03aa2a46b94",
-      "url": "https://github.com/apache/commons-io/commit/63771b3f142c2ac42aca8b864d3df03aa2a46b94",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to FilterCollectionWriter in method private forAllWriters(action IOConsumer<Writer>) : FilterCollectionWriter from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to FilterCollectionWriter in method private forAllWriters(action IOConsumer<Writer>) : FilterCollectionWriter from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "c8dcd5e9c64b0cbd98b4028e0529d7af2ac81a83",
-      "url": "https://github.com/apache/commons-io/commit/c8dcd5e9c64b0cbd98b4028e0529d7af2ac81a83",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getNanosOfMiili(duration Duration) : int renamed to private getNanosOfMilli(duration Duration) : int in class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tiofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tiofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTestCaseJava4",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic resetThrowsExceptionWhenUnderylingDoesNotSupport() : void renamed to public resetThrowsExceptionWhenUnderlyingDoesNotSupport() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic resetThrowsExceptionWhenUnderylingSupports() : void renamed to public resetThrowsExceptionWhenUnderlyingSupports() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testStrinConstructorStringCharset() : void renamed to public testStringConstructorStringCharset() : void in class org.apache.commons.io.input.StringInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testStrinConstructorString() : void renamed to public testStringConstructorString() : void in class org.apache.commons.io.input.StringInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic linuxLinefeeds() : void renamed to public linuxLineFeeds() : void in class org.apache.commons.io.input.WindowsLineEndingInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedOutputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedWriterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tthresholdOuput : ThresholdingOutputStream to thresholdOutput : ThresholdingOutputStream in method public toByteArray(inputStream InputStream) : byte[] from class org.apache.commons.io.IOUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnewbuf : byte[] to newBuf : byte[] in method protected toByteArrayImpl() : byte[] from class org.apache.commons.io.output.AbstractByteArrayOutputStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnewcount : int to newCount : int in method protected writeImpl(b byte[], off int, len int) : void from class org.apache.commons.io.output.AbstractByteArrayOutputStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tinsize : int to inSize : int in method public testCopy_byteArrayOutputStreamToInputStream() : void from class org.apache.commons.io.IOUtilsCopyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttother : Test to tOther : Test in method public equals(other Object) : boolean from class org.apache.commons.io.input.ClassLoaderObjectInputStreamTest.Test",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getNanosOfMiili(duration Duration) : int renamed to private getNanosOfMilli(duration Duration) : int in class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tiofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tiofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTestCaseJava4",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic resetThrowsExceptionWhenUnderylingDoesNotSupport() : void renamed to public resetThrowsExceptionWhenUnderlyingDoesNotSupport() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic resetThrowsExceptionWhenUnderylingSupports() : void renamed to public resetThrowsExceptionWhenUnderlyingSupports() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testStrinConstructorString() : void renamed to public testStringConstructorString() : void in class org.apache.commons.io.input.StringInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testStrinConstructorStringCharset() : void renamed to public testStringConstructorStringCharset() : void in class org.apache.commons.io.input.StringInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic linuxLinefeeds() : void renamed to public linuxLineFeeds() : void in class org.apache.commons.io.input.WindowsLineEndingInputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedOutputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedWriterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tthresholdOuput : ThresholdingOutputStream to thresholdOutput : ThresholdingOutputStream in method public toByteArray(inputStream InputStream) : byte[] from class org.apache.commons.io.IOUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnewbuf : byte[] to newBuf : byte[] in method protected toByteArrayImpl() : byte[] from class org.apache.commons.io.output.AbstractByteArrayOutputStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnewcount : int to newCount : int in method protected writeImpl(b byte[], off int, len int) : void from class org.apache.commons.io.output.AbstractByteArrayOutputStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tinsize : int to inSize : int in method public testCopy_byteArrayOutputStreamToInputStream() : void from class org.apache.commons.io.IOUtilsCopyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttother : Test to tOther : Test in method public equals(other Object) : boolean from class org.apache.commons.io.input.ClassLoaderObjectInputStreamTest.Test",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "6cf14df952b17b26dc7c86f2b6f38138998d88eb",
-      "url": "https://github.com/apache/commons-io/commit/6cf14df952b17b26dc7c86f2b6f38138998d88eb",
-      "ourApproach": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tlastModified : FileTime to lastModified : SerializableFileTime in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified FileTime) : void in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\torigLastModified : FileTime to origLastModified : SerializableFileTime in method public refresh(file File) : boolean from class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tlastModified : FileTime to lastModified : SerializableFileTime in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage setLastModified(lastModified SerializableFileTime) : void extracted from public refresh(file File) : boolean in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified FileTime) : void in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified long) : void in class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": false
+          "description": "Change Variable Type\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\torigLastModified : FileTime to origLastModified : SerializableFileTime in method public refresh(file File) : boolean from class org.apache.commons.io.monitor.FileEntry",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestDir : TempDirectory to destination : TempFile in method public testForceDeleteUnwritableFile() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "9a2571827af7fc47565a716fada2807d20d4524d",
-      "url": "https://github.com/apache/commons-io/commit/9a2571827af7fc47565a716fada2807d20d4524d",
-      "ourApproach": [
+      "sha1": "f6b8c06559524003d001d59002749c062aa40757",
+      "url": "https://github.com/apache/commons-io/commit/f6b8c06559524003d001d59002749c062aa40757",
+      "commonRefactoring": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\txmlPrologWriter : StringWriter to prologWriter : StringWriter in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testForceDeleteUnwritableFile() : void renamed to public testForceDeleteUnwritableDirectory() : void in class org.apache.commons.io.FileUtilsTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tencoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tencoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdefaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tdefaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdestination : TempFile to destDir : TempDirectory in method public testForceDeleteUnwritableDirectory() : void from class org.apache.commons.io.FileUtilsTest",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "d1ff1830af1f4b9865a6728db95293b37d4ffd36",
+      "url": "https://github.com/apache/commons-io/commit/d1ff1830af1f4b9865a6728db95293b37d4ffd36",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate checkPath(pathStr String, allowEmpty boolean) : Path extracted from package freeSpaceWindows(pathStr String, timeout Duration) : long in class org.apache.commons.io.FileSystemUtils",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tpathStr : String in method package freeSpaceUnix(path String, kb boolean, posix boolean, timeout Duration) : long from class org.apache.commons.io.FileSystemUtils",
+          "validation": true
         },
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\txml : String in method public testNoXmlHeader() : void from class org.apache.commons.io.output.XmlStreamWriterTest",
-          "developerConfirmation": true
+          "description": "Inline Variable\ttrimPathStr : String in method package freeSpaceWindows(pathStr String, timeout Duration) : long from class org.apache.commons.io.FileSystemUtils",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "812d8a4b53d9758b4f081d9b98a70ea9ef131a0e",
+      "url": "https://github.com/apache/commons-io/commit/812d8a4b53d9758b4f081d9b98a70ea9ef131a0e",
+      "commonRefactoring": [
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setPropagateClose(propagateClose boolean) : Builder from class org.apache.commons.io.input.BoundedInputStream.Builder to public setPropagateClose(propagateClose boolean) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tBuilder to T in method public setPropagateClose(propagateClose boolean) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate maxCount : long from class org.apache.commons.io.input.BoundedInputStream.Builder to private maxCount : long from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate propagateClose : boolean from class org.apache.commons.io.input.BoundedInputStream.Builder to private propagateClose : boolean from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.apache.commons.io.input.BoundedInputStream.AbstractBuilder from classes [org.apache.commons.io.input.BoundedInputStream.Builder]",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic setMaxCount(maxCount long) : Builder from class org.apache.commons.io.input.BoundedInputStream.Builder to public setMaxCount(maxCount long) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tBuilder to T in method public setMaxCount(maxCount long) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tskip : long in method public skip(n long) : long from class org.apache.commons.io.input.BoundedInputStream",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tencoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
-        },
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getCountingInputStream() : CountingInputStream inlined to public getCount() : long in class org.apache.commons.io.input.BoundedInputStream",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "57ab49f51f16dadf6ad246dbbcaad18fa3dd7a0e",
+      "url": "https://github.com/apache/commons-io/commit/57ab49f51f16dadf6ad246dbbcaad18fa3dd7a0e",
+      "commonRefactoring": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tencoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdefaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tdefaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\txmlPrologWriter : StringWriter to prologWriter : StringWriter in class org.apache.commons.io.output.XmlStreamWriter",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate sort(files File[]) : File[] extracted from private listFiles(directory File) : File[] in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
         },
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\txml : String in method public testNoXmlHeader() : void from class org.apache.commons.io.output.XmlStreamWriterTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "4848ddde2f1e11bd83efa2ec624e1624a7191c4e",
-      "url": "https://github.com/apache/commons-io/commit/4848ddde2f1e11bd83efa2ec624e1624a7191c4e",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tFOLLOW_LINKS : LinkOption to NULL_LINK_OPTION : LinkOption in class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile1() : void renamed to public testWriteStringToFileWithCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile2() : void renamed to public testWriteStringToFileWithNullStringCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile3() : void renamed to public testWriteStringToFileWithNullCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile4() : void renamed to public testWriteStringToFileIntoNonExistentSubdir() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
+          "description": "Inline Variable\tchildren : File[] in method private listFiles(directory File) : File[] from class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
         }
       ],
-      "baseline": [
+      "ourApproach": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpackage newOutputStream(path Path, linkOptions LinkOption[], openOptions OpenOption...) : OutputStream extracted from public newOutputStream(path Path, append boolean) : OutputStream in class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile1() : void renamed to public testWriteStringToFileWithCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile2() : void renamed to public testWriteStringToFileWithNullStringCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile3() : void renamed to public testWriteStringToFileWithNullCharset() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testWriteStringToFile4() : void renamed to public testWriteStringToFileIntoNonExistentSubdir() : void in class org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tFOLLOW_LINKS : LinkOption to NULL_LINK_OPTION : LinkOption in class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcurrent : FileEntry[] to actual : FileEntry[] in method private checkAndFire(parent FileEntry, previous FileEntry[], current File[]) : void from class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
         }
-      ]
+      ],
+      "baseline": []
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "b6a22186d8246d973c6dc9b7fd2aaa84f34cccbf",
-      "url": "https://github.com/apache/commons-io/commit/b6a22186d8246d973c6dc9b7fd2aaa84f34cccbf",
+      "sha1": "89ce8c14a24969cde0d155aba77c3ad8065bf5f1",
+      "url": "https://github.com/apache/commons-io/commit/89ce8c14a24969cde0d155aba77c3ad8065bf5f1",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate checkAndNotify(parent FileEntry, previous FileEntry[], files File[]) : void renamed to private checkAndFire(parent FileEntry, previous FileEntry[], files File[]) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate doMatch(entry FileEntry, file File) : void renamed to private fireOnChange(entry FileEntry, file File) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testNormalize_with_nullbytes() : void renamed to public testNormalize_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
+          "description": "Rename Method\tprivate doDelete(entry FileEntry) : void renamed to private fireOnDelete(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetBaseName_with_nullByte() : void renamed to public testGetBaseName_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPathNoEndSeparator_with_null_byte() : void renamed to public testGetPathNoEndSeparator_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPrefix_with_nullbyte() : void renamed to public testGetPrefix_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPath_with_nullbyte() : void renamed to public testGetPath_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
+          "description": "Rename Method\tprivate doCreate(entry FileEntry) : void renamed to private fireOnCreate(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": true
         }
       ],
       "baseline": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetBaseName_with_nullByte() : void renamed to public testGetBaseName_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPath_with_nullbyte() : void renamed to public testGetPath_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPathNoEndSeparator_with_null_byte() : void renamed to public testGetPathNoEndSeparator_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetPrefix_with_nullbyte() : void renamed to public testGetPrefix_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testNormalize_with_nullbytes() : void renamed to public testNormalize_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "975ccfcfb5b09450218dba2b08c8d150af11c202",
-      "url": "https://github.com/apache/commons-io/commit/975ccfcfb5b09450218dba2b08c8d150af11c202",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to void in method private setPosixReadOnlyFile(path Path, readOnly boolean, linkOptions LinkOption...) : void from class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to void in method private setPosixReadOnlyFile(path Path, readOnly boolean, linkOptions LinkOption...) : void from class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "d3b043a2ce926509fe4ed04160db7a73339a2964",
-      "url": "https://github.com/apache/commons-io/commit/d3b043a2ce926509fe4ed04160db7a73339a2964",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<Exception> to List<IOException> in method private add(causeList List<IOException>, i int, e IOException) : List<IOException> from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
+          "description": "Rename Method\tprivate doCreate(entry FileEntry) : void renamed to private fireOnDelete(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": false
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isEmpty(causeList List<? extends Throwable>) : boolean extracted from public IOExceptionList(message String, causeList List<? extends Throwable>) in class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public cleanDirectory(directory File) : void from class org.apache.commons.io.FileUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method private cleanDirectoryOnExit(directory File) : void from class org.apache.commons.io.FileUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(c char) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(csq CharSequence) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(csq CharSequence, start int, end int) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public close() : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public flush() : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(cbuf char[]) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(cbuf char[], off int, len int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(c int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(str String) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(str String, off int, len int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate fireOnCreate(entry FileEntry) : void extracted from private doCreate(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": false
         }
-      ],
-      "baseline": [
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "3b95c8c4987955b2f3bedc37dc217cb2e190b63d",
+      "url": "https://github.com/apache/commons-io/commit/3b95c8c4987955b2f3bedc37dc217cb2e190b63d",
+      "commonRefactoring": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<Exception> to List<IOException> in method private add(causeList List<IOException>, i int, e IOException) : List<IOException> from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public cleanDirectory(directory File) : void from class org.apache.commons.io.FileUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method private cleanDirectoryOnExit(directory File) : void from class org.apache.commons.io.FileUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(c char) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(csq CharSequence) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public append(csq CharSequence, start int, end int) : Writer from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public close() : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public flush() : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(cbuf char[]) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(cbuf char[], off int, len int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(c int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(str String) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcauseList : List<Exception> to causeList : List<IOException> in method public write(str String, off int, len int) : void from class org.apache.commons.io.output.FilterCollectionWriter",
-          "developerConfirmation": true
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprotected getReader() : Reader extracted from public get() : UncheckedBufferedReader in class org.apache.commons.io.input.UncheckedBufferedReader.Builder & moved to class org.apache.commons.io.build.AbstractStreamBuilder",
+          "validation": true
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic checkEmpty(causeList List<? extends Throwable>, message Object) : void extracted from public cleanDirectory(directory File) : void in class org.apache.commons.io.FileUtils & moved to class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": false
-        },
+          "description": "Extract And Move Method\tprotected getReader() : Reader extracted from public get() : UncheckedFilterReader in class org.apache.commons.io.input.UncheckedFilterReader.Builder & moved to class org.apache.commons.io.build.AbstractStreamBuilder",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic checkEmpty(causeList List<? extends Throwable>, message Object) : void extracted from private cleanDirectoryOnExit(directory File) : void in class org.apache.commons.io.FileUtils & moved to class org.apache.commons.io.IOExceptionList",
-          "developerConfirmation": false
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "c5dbd227697de296b2d9963a15328cf111dbe1d7",
-      "url": "https://github.com/apache/commons-io/commit/c5dbd227697de296b2d9963a15328cf111dbe1d7",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.ByteOrderMarkTestCase renamed to org.apache.commons.io.ByteOrderMarkTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.CharsetsTestCase renamed to org.apache.commons.io.CharsetsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DemuxTestCase renamed to org.apache.commons.io.DemuxTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DirectoryWalkerTestCase renamed to org.apache.commons.io.DirectoryWalkerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileCleanerTestCase renamed to org.apache.commons.io.FileCleanerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileCleaningTrackerTestCase renamed to org.apache.commons.io.FileCleaningTrackerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileDeleteStrategyTestCase renamed to org.apache.commons.io.FileDeleteStrategyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileSystemTestCase renamed to org.apache.commons.io.FileSystemTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileSystemUtilsTestCase renamed to org.apache.commons.io.FileSystemUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCleanDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCleanDirectoryTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCleanSymlinksTestCase renamed to org.apache.commons.io.FileUtilsCleanSymlinksTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCopyToFileTestCase renamed to org.apache.commons.io.FileUtilsCopyToFileTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryBaseTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryBaseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryLinuxTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryWindowsTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDirectoryContainsTestCase renamed to org.apache.commons.io.FileUtilsDirectoryContainsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsFileNewerTestCase renamed to org.apache.commons.io.FileUtilsFileNewerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsListFilesTestCase renamed to org.apache.commons.io.FileUtilsListFilesTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsTestCase renamed to org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsWaitForTestCase renamed to org.apache.commons.io.FileUtilsWaitForTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FilenameUtilsTestCase renamed to org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FilenameUtilsWildcardTestCase renamed to org.apache.commons.io.FilenameUtilsWildcardTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOCaseTestCase renamed to org.apache.commons.io.IOCaseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOExceptionListTestCase renamed to org.apache.commons.io.IOExceptionListTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOExceptionWithCauseTestCase renamed to org.apache.commons.io.IOExceptionWithCauseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOIndexedExceptionTestCase renamed to org.apache.commons.io.IOIndexedExceptionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsCopyTestCase renamed to org.apache.commons.io.IOUtilsCopyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsTestCase renamed to org.apache.commons.io.IOUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsWriteTestCase renamed to org.apache.commons.io.IOUtilsWriteTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.LineIteratorTestCase renamed to org.apache.commons.io.LineIteratorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.ThreadMonitorTestCase renamed to org.apache.commons.io.ThreadMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.comparator.ComparatorAbstractTestCase renamed to org.apache.commons.io.comparator.ComparatorAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.AndFileFilterTestCase renamed to org.apache.commons.io.filefilter.AndFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.ConditionalFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.FileFilterTestCase renamed to org.apache.commons.io.filefilter.FileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.IOFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.IOFileFilterAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.OrFileFilterTestCase renamed to org.apache.commons.io.filefilter.OrFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.RegexFileFilterTestCase renamed to org.apache.commons.io.filefilter.RegexFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.AbstractMonitorTestCase renamed to org.apache.commons.io.monitor.AbstractMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.FileAlterationMonitorTestCase renamed to org.apache.commons.io.monitor.FileAlterationMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.FileAlterationObserverTestCase renamed to org.apache.commons.io.monitor.FileAlterationObserverTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.output.ByteArrayOutputStreamTestCase renamed to org.apache.commons.io.output.ByteArrayOutputStreamTest",
-          "developerConfirmation": true
+          "description": "Extract And Move Method\tprotected getReader() : Reader extracted from public get() : ReaderInputStream in class org.apache.commons.io.input.ReaderInputStream.Builder & moved to class org.apache.commons.io.build.AbstractStreamBuilder",
+          "validation": true
         }
       ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "d53a5f39fc6966062180f24523caf2f5f50daccf",
+      "url": "https://github.com/apache/commons-io/commit/d53a5f39fc6966062180f24523caf2f5f50daccf",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.ByteOrderMarkTestCase renamed to org.apache.commons.io.ByteOrderMarkTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.CharsetsTestCase renamed to org.apache.commons.io.CharsetsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DemuxTestCase renamed to org.apache.commons.io.DemuxTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.DirectoryWalkerTestCase renamed to org.apache.commons.io.DirectoryWalkerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileCleanerTestCase renamed to org.apache.commons.io.FileCleanerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileCleaningTrackerTestCase renamed to org.apache.commons.io.FileCleaningTrackerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileDeleteStrategyTestCase renamed to org.apache.commons.io.FileDeleteStrategyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileSystemTestCase renamed to org.apache.commons.io.FileSystemTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileSystemUtilsTestCase renamed to org.apache.commons.io.FileSystemUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCleanDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCleanDirectoryTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCleanSymlinksTestCase renamed to org.apache.commons.io.FileUtilsCleanSymlinksTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsCopyToFileTestCase renamed to org.apache.commons.io.FileUtilsCopyToFileTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryBaseTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryBaseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryLinuxTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDeleteDirectoryWindowsTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsDirectoryContainsTestCase renamed to org.apache.commons.io.FileUtilsDirectoryContainsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsFileNewerTestCase renamed to org.apache.commons.io.FileUtilsFileNewerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsTestCase renamed to org.apache.commons.io.FileUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsWaitForTestCase renamed to org.apache.commons.io.FileUtilsWaitForTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FilenameUtilsTestCase renamed to org.apache.commons.io.FilenameUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FilenameUtilsWildcardTestCase renamed to org.apache.commons.io.FilenameUtilsWildcardTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOCaseTestCase renamed to org.apache.commons.io.IOCaseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOExceptionListTestCase renamed to org.apache.commons.io.IOExceptionListTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOExceptionWithCauseTestCase renamed to org.apache.commons.io.IOExceptionWithCauseTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOIndexedExceptionTestCase renamed to org.apache.commons.io.IOIndexedExceptionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsCopyTestCase renamed to org.apache.commons.io.IOUtilsCopyTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsTestCase renamed to org.apache.commons.io.IOUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.IOUtilsWriteTestCase renamed to org.apache.commons.io.IOUtilsWriteTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.LineIteratorTestCase renamed to org.apache.commons.io.LineIteratorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.ThreadMonitorTestCase renamed to org.apache.commons.io.ThreadMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.comparator.ComparatorAbstractTestCase renamed to org.apache.commons.io.comparator.ComparatorAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.AndFileFilterTestCase renamed to org.apache.commons.io.filefilter.AndFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.ConditionalFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.FileFilterTestCase renamed to org.apache.commons.io.filefilter.FileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.IOFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.IOFileFilterAbstractTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.OrFileFilterTestCase renamed to org.apache.commons.io.filefilter.OrFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.filefilter.RegexFileFilterTestCase renamed to org.apache.commons.io.filefilter.RegexFileFilterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.AbstractMonitorTestCase renamed to org.apache.commons.io.monitor.AbstractMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.FileAlterationMonitorTestCase renamed to org.apache.commons.io.monitor.FileAlterationMonitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.monitor.FileAlterationObserverTestCase renamed to org.apache.commons.io.monitor.FileAlterationObserverTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.output.ByteArrayOutputStreamTestCase renamed to org.apache.commons.io.output.ByteArrayOutputStreamTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.io.FileUtilsListFilesTestCase renamed to org.apache.commons.io.FileUtilsListFilesTest",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tintOne : int in method public testSkip() : void from class org.apache.commons.io.input.ChecksumInputStreamTest",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "18a24066db1c1e9f71299e9ab5e6b1b193f77720",
-      "url": "https://github.com/apache/commons-io/commit/18a24066db1c1e9f71299e9ab5e6b1b193f77720",
+      "sha1": "7ea97b34f0f75e88773947e71120e8e75165f781",
+      "url": "https://github.com/apache/commons-io/commit/7ea97b34f0f75e88773947e71120e8e75165f781",
+      "commonRefactoring": [],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getNanosOfMiili(duration Duration) : int extracted from private sleep(duration Duration) : void in class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate getSimpleName() : String extracted from public getFile() : File in class org.apache.commons.io.build.AbstractOrigin",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getSimpleName() : String extracted from public getPath() : Path in class org.apache.commons.io.build.AbstractOrigin",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getSimpleName() : String extracted from public toString() : String in class org.apache.commons.io.build.AbstractOrigin",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "fc8a044fd013505b6af378b15942af875af949df",
+      "url": "https://github.com/apache/commons-io/commit/fc8a044fd013505b6af378b15942af875af949df",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcharset : Charset to origin : T in method public getReader(charset Charset) : Reader from class org.apache.commons.io.build.AbstractOrigin.CharSequenceOrigin",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "9293f5f402e7c22d5526cc1df7aa180318ee640f",
+      "url": "https://github.com/apache/commons-io/commit/9293f5f402e7c22d5526cc1df7aa180318ee640f",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate doEndOfFile() : int renamed to private handleEof() : int in class org.apache.commons.io.input.NullInputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate checkThrowEof(message String) : void extracted from private doEndOfFile() : int in class org.apache.commons.io.input.NullInputStream",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\te : IOException to count4 : int in method public testReadByteArray() : void from class org.apache.commons.io.input.NullInputStreamTest",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IOException to count4 : int in method public testReadByteArray() : void from class org.apache.commons.io.input.NullInputStreamTest",
+          "validation": false
         }
       ],
       "baseline": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getNanosOfMiili(duration Duration) : int extracted from private sleep(duration Duration) : void in class org.apache.commons.io.ThreadMonitor",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate checkThrowEof(message String) : void extracted from public read() : int in class org.apache.commons.io.input.NullInputStream",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate checkThrowEof(message String) : void extracted from public read(bytes byte[], offset int, length int) : int in class org.apache.commons.io.input.NullInputStream",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate checkThrowEof(message String) : void extracted from public skip(numberOfBytes long) : long in class org.apache.commons.io.input.NullInputStream",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "8e265178364e412cd00721b4c164c25381001d7c",
-      "url": "https://github.com/apache/commons-io/commit/8e265178364e412cd00721b4c164c25381001d7c",
+      "sha1": "99702ec5ce4c25a909299c4f4a8be616d8ce04dc",
+      "url": "https://github.com/apache/commons-io/commit/99702ec5ce4c25a909299c4f4a8be616d8ce04dc",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getCountingInputStream() : CountingInputStream extracted from public getCount() : long in class org.apache.commons.io.input.BoundedInputStream",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "d0c53cdba912bf259bf0ba32a5940d820dde4ec8",
+      "url": "https://github.com/apache/commons-io/commit/d0c53cdba912bf259bf0ba32a5940d820dde4ec8",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate toReadLen(len long) : long extracted from public read(b byte[], off int, len int) : int in class org.apache.commons.io.input.BoundedInputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate toReadLen(len long) : long extracted from public skip(n long) : long in class org.apache.commons.io.input.BoundedInputStream",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tcutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresult : int in method public read() : int from class org.apache.commons.io.input.BoundedInputStream",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "7806142dfe5dfdc2e1ff84d07b716da6ad926da9",
+      "url": "https://github.com/apache/commons-io/commit/7806142dfe5dfdc2e1ff84d07b716da6ad926da9",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\ttempDir : Path in method public testTempFileAboveThresholdPrefixOnly(initialBufferSize int) : void from class org.apache.commons.io.output.DeferredFileOutputStreamTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "9aa8ef35d805df0e2c0b635c62c31c0eb5fa2579",
+      "url": "https://github.com/apache/commons-io/commit/9aa8ef35d805df0e2c0b635c62c31c0eb5fa2579",
+      "commonRefactoring": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFileCopy(source File, destination File) : void inlined to public copyDirectory(srcDir File, destDir File, fileFilter FileFilter, preserveFileDate boolean, copyOptions CopyOption...) : void in class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\te : IOException to ex : IOException in method public forceDelete(file File) : void from class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFile to void in method private checkFileExists(file File, name String) : void from class org.apache.commons.io.FileUtils",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFileCopy(source File, destination File) : void inlined to public copyFile(srcFile File, destFile File, preserveFileDate boolean, copyOptions CopyOption...) : void in class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmessage : String in method public testThrowsOnCannotDeleteFile() : void from class org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "dd63fa3b53b4029b026d276a3c5564fa5aac42d1",
+      "url": "https://github.com/apache/commons-io/commit/dd63fa3b53b4029b026d276a3c5564fa5aac42d1",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.apache.commons.io.input.BrokenInputStreamTest.CustomeException moved and renamed to org.apache.commons.io.BrokenTestFactories.CustomException",
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tcutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
-          "developerConfirmation": true
+          "description": "Change Attribute Type\texceptionSupplier : Supplier<IOException> to exceptionSupplier : Supplier<Throwable> in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\texceptionSupplier : Supplier<IOException> to exceptionSupplier : Supplier<Throwable> in class org.apache.commons.io.output.BrokenOutputStream",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\texceptionSupplier : Supplier<IOException> to exceptionSupplier : Supplier<Throwable> in class org.apache.commons.io.output.BrokenWriter",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage parameters() : Stream<Class<? extends Throwable>> from class org.apache.commons.io.input.BrokenInputStreamTest to public parameters() : Stream<Class<? extends Throwable>> from class org.apache.commons.io.BrokenTestFactories",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public close() : void in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNewer(file Path, fileTime FileTime, options LinkOption...) : boolean extracted from public isNewer(file Path, timeMillis long, options LinkOption...) : boolean in class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public ready() : boolean in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public reset() : void in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public skip(n long) : long in class org.apache.commons.io.input.BrokenReader",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public close() : void in class org.apache.commons.io.output.BrokenOutputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public flush() : void in class org.apache.commons.io.output.BrokenOutputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public write(b int) : void in class org.apache.commons.io.output.BrokenOutputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public close() : void in class org.apache.commons.io.output.BrokenWriter",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public flush() : void in class org.apache.commons.io.output.BrokenWriter",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public write(cbuf char[], off int, len int) : void in class org.apache.commons.io.output.BrokenWriter",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.commons.io.BrokenTestFactories from class org.apache.commons.io.input.BrokenInputStreamTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "33db63489777c9782f054f50b434c70a528527d7",
+      "url": "https://github.com/apache/commons-io/commit/33db63489777c9782f054f50b434c70a528527d7",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate requireExistsChecked(file File, fileParamName String) : File renamed to private checkFileObjectExists(file File, fileParamName String) : File in class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate requireFile(file File, name String) : File renamed to private checkFileExists(file File, name String) : File in class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFile to void in method private requireDirectoryExists(directory File, name String) : void from class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFile to void in method private requireDirectoryIfExists(directory File, name String) : void from class org.apache.commons.io.FileUtils",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate requireDirectory(directory File, name String) : File renamed to private requireDirectoryExists(directory File, name String) : void in class org.apache.commons.io.FileUtils",
+          "validation": false
         }
       ],
       "baseline": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNewer(file Path, fileTime FileTime, options LinkOption...) : boolean extracted from public isNewer(file Path, timeMillis long, options LinkOption...) : boolean in class org.apache.commons.io.file.PathUtils",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFileIfExists(file File, name String) : File inlined to public copyFile(srcFile File, destFile File, preserveFileDate boolean, copyOptions CopyOption...) : void in class org.apache.commons.io.FileUtils",
+          "validation": true
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tcutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tcutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireDirectory(directory File, name String) : File inlined to private requireDirectoryExists(directory File, name String) : void in class org.apache.commons.io.FileUtils",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
-      "sha1": "d269f164b3e24a92cc33d759d8bcf3eedb37f576",
-      "url": "https://github.com/apache/commons-io/commit/d269f164b3e24a92cc33d759d8bcf3eedb37f576",
+      "sha1": "6b0ed87f7bbcd807b30436888de445f36b19ce9a",
+      "url": "https://github.com/apache/commons-io/commit/6b0ed87f7bbcd807b30436888de445f36b19ce9a",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\texceptionSupplier : Supplier<IOException> to exceptionSupplier : Supplier<Throwable> in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public available() : int in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public close() : void in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public read() : int in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public reset() : void in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public readLine() : String in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate rethrow() : RuntimeException extracted from public skip(n long) : long in class org.apache.commons.io.input.BrokenInputStream",
+          "validation": true
         }
       ],
-      "baseline": [
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "c070fefba1f8e4e9725dcce9da67ce3edbb76743",
+      "url": "https://github.com/apache/commons-io/commit/c070fefba1f8e4e9725dcce9da67ce3edbb76743",
+      "commonRefactoring": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate UnsynchronizedByteArrayInputStream(data byte[], eod int, offset int, markedOffset int) extracted from public UnsynchronizedByteArrayInputStream(data byte[]) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public readLine() : String in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedBufferedReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedFilterReader",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate UnsynchronizedByteArrayInputStream(data byte[], eod int, offset int, markedOffset int) extracted from public UnsynchronizedByteArrayInputStream(data byte[], offset int) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
         }
-      ]
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate minPosLen(data byte[], defaultValue int) : int extracted from public UnsynchronizedByteArrayInputStream(data byte[], offset int) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate minPosLen(data byte[], defaultValue int) : int extracted from public UnsynchronizedByteArrayInputStream(data byte[], offset int, length int) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate requireNonNegative(value int, name String) : int extracted from public UnsynchronizedByteArrayInputStream(data byte[], offset int) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate requireNonNegative(value int, name String) : int extracted from public UnsynchronizedByteArrayInputStream(data byte[], offset int, length int) in class org.apache.commons.io.input.UnsynchronizedByteArrayInputStream",
+          "validation": true
+        }
+      ],
+      "baseline": []
     }
   ]
 }

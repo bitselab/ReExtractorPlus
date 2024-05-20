@@ -2,1061 +2,883 @@
   "results": [
     {
       "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "ba07b630b230d14aa76ad65e979e4b326d00ab32",
-      "url": "https://github.com/apache/commons-lang/commit/ba07b630b230d14aa76ad65e979e4b326d00ab32",
+      "sha1": "8ddebc231eb63d4e00ba3c04d108f2569c521561",
+      "url": "https://github.com/apache/commons-lang/commit/8ddebc231eb63d4e00ba3c04d108f2569c521561",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdefaultZone : TimeZone to DEFAULT_ZONE : TimeZone in class org.apache.commons.lang3.time.DateUtilsTest",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsubarray : int[] in method public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[] from class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsubarray : long[] in method public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[] from class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsubarray : short[] in method public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[] from class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsubarray : T[] in method public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] from class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tchars : char[] in method public toCharArray() : char[] from class org.apache.commons.lang3.text.StrBuilder",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tchars : char[] in method public toCharArray(startIndex int, endIndex int) : char[] from class org.apache.commons.lang3.text.StrBuilder",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdefaultZone : TimeZone to DEFAULT_ZONE : TimeZone in class org.apache.commons.lang3.time.DateUtilsTest",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "7f7d4b881d78dcb8d5a0149965f934df268919d7",
-      "url": "https://github.com/apache/commons-lang/commit/7f7d4b881d78dcb8d5a0149965f934df268919d7",
+      "sha1": "88374a270ba401e34d7441133f91bd86771ddb06",
+      "url": "https://github.com/apache/commons-lang/commit/88374a270ba401e34d7441133f91bd86771ddb06",
+      "commonRefactoring": [],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isTrue(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
+          "description": "Extract Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notNull(object T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
+          "description": "Extract Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
+          "description": "Extract Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(collection T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(map T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notBlank(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public noNullElements(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public noNullElements(iterable T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(array T[], index int, message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(collection T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(chars T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validState(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public matchesPattern(input CharSequence, pattern String, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notNaN(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public finite(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public inclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public exclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isInstanceOf(type Class<?>, obj Object, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isAssignableFrom(superType Class<?>, type Class<?>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isTrue(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(collection T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(map T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notEmpty(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notBlank(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(array T[], index int, message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(collection T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validIndex(chars T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public validState(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public matchesPattern(input CharSequence, pattern String, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public notNaN(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public finite(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public inclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public exclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isInstanceOf(type Class<?>, obj Object, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getMessage(message String, values Object...) : String extracted from public isAssignableFrom(superType Class<?>, type Class<?>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "f8df864f4cde9d8c6a21ba04ecfe9abd286de71d",
-      "url": "https://github.com/apache/commons-lang/commit/f8df864f4cde9d8c6a21ba04ecfe9abd286de71d",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tMIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tMIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tMIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tMIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "e92dafdc3b3d841ec95fe3df17722a5bdec3658a",
-      "url": "https://github.com/apache/commons-lang/commit/e92dafdc3b3d841ec95fe3df17722a5bdec3658a",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tPERIOD : long to PERIOD_MILLIS : long in class org.apache.commons.lang3.concurrent.TimedSemaphoreTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tPERIOD : long to PERIOD_MILLIS : long in class org.apache.commons.lang3.concurrent.TimedSemaphoreTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "972bf05adea62b912984e1c06a990c815c0e901e",
-      "url": "https://github.com/apache/commons-lang/commit/972bf05adea62b912984e1c06a990c815c0e901e",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate instancesOf(clazz Class<? super E>, stream Stream<?>) : Stream<E> extracted from public instancesOf(clazz Class<? super E>, collection Collection<? super E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate instancesOf(clazz Class<? super E>, stream Stream<?>) : Stream<E> extracted from public instancesOf(clazz Class<? super E>, collection Collection<? super E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "62d7aacb4f3eb318045496f115a7171f0bc2c6c1",
-      "url": "https://github.com/apache/commons-lang/commit/62d7aacb4f3eb318045496f115a7171f0bc2c6c1",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isArray(object Object) : boolean extracted from public isEmpty(object Object) : boolean in class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isArray(object Object) : boolean extracted from public isEmpty(object Object) : boolean in class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
+          "description": "Extract Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isArray(object Object) : boolean extracted from private hashMember(name String, value Object) : int in class org.apache.commons.lang3.AnnotationUtils & moved to class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
+          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public getChars(destination char[]) : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isArray(object Object) : boolean extracted from public append(lhs Object, rhs Object, comparator Comparator<?>) : CompareToBuilder in class org.apache.commons.lang3.builder.CompareToBuilder & moved to class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
+          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public toCharArray() : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isArray(object Object) : boolean extracted from public append(fieldName String, lhs Object, rhs Object) : DiffBuilder<T> in class org.apache.commons.lang3.builder.DiffBuilder & moved to class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
+          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public toCharArray(startIndex int, endIndex int) : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isArray(object Object) : boolean extracted from public append(object Object) : HashCodeBuilder in class org.apache.commons.lang3.builder.HashCodeBuilder & moved to class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isArray(object Object) : boolean extracted from protected appendInternal(buffer StringBuffer, fieldName String, value Object, detail boolean) : void in class org.apache.commons.lang3.builder.ToStringStyle & moved to class org.apache.commons.lang3.ObjectUtils",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "1311d6949a2b7487766ab3c5ba86c5b9ee84d42c",
-      "url": "https://github.com/apache/commons-lang/commit/1311d6949a2b7487766ab3c5ba86c5b9ee84d42c",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array boolean[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array byte[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array char[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array double[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array float[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array int[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array long[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array Object[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array short[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public with(translators CharSequenceTranslator...) : CharSequenceTranslator in class org.apache.commons.lang3.text.translate.CharSequenceTranslator & moved to class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isArrayEmpty(array Object) : boolean extracted from public isEmpty(array Object[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "3c0ac0e87c03ae63a782e48bb31878ec9f114c39",
-      "url": "https://github.com/apache/commons-lang/commit/3c0ac0e87c03ae63a782e48bb31878ec9f114c39",
+      "sha1": "ab8caff3a352fcf10563db44b85f7e8fb154e3a1",
+      "url": "https://github.com/apache/commons-lang/commit/ab8caff3a352fcf10563db44b85f7e8fb154e3a1",
+      "commonRefactoring": [],
       "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Boolean[]) : Boolean[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Byte[]) : Byte[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Character[]) : Character[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Class<?>[]) : Class<?>[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Double[]) : Double[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Float[]) : Float[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Integer[]) : Integer[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Long[]) : Long[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Object[]) : Object[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array Short[]) : Short[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic nullTo(array T[], defaultArray T[]) : T[] extracted from public nullToEmpty(array String[]) : String[] in class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "71d6f222ec42d448c60e0e8f8b9c738c23fcd4cc",
+      "url": "https://github.com/apache/commons-lang/commit/71d6f222ec42d448c60e0e8f8b9c738c23fcd4cc",
+      "commonRefactoring": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tchecked : T in method public clone(obj T) : T from class org.apache.commons.lang3.ObjectUtils",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresult : T in method public median(comparator Comparator<T>, items T...) : T from class org.apache.commons.lang3.ObjectUtils",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresult : T in method public median(items T...) : T from class org.apache.commons.lang3.ObjectUtils",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "6540edfdc0b710f05316bbe6b4f0eb140dca317c",
+      "url": "https://github.com/apache/commons-lang/commit/6540edfdc0b710f05316bbe6b4f0eb140dca317c",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\titerator : Iterator<Locale> in method private assertCountriesByLanguage(language String, countries String[]) : void from class org.apache.commons.lang3.LocaleUtilsTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\titerator : Iterator<Locale> in method private assertLanguageByCountry(country String, languages String[]) : void from class org.apache.commons.lang3.LocaleUtilsTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "84b475ae4983ced77e868c0467a52f217f8bcc8e",
+      "url": "https://github.com/apache/commons-lang/commit/84b475ae4983ced77e868c0467a52f217f8bcc8e",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testExtendedAndBuiltInFormats() : void renamed to public testExtendedAndBuiltInFormatsWithAvailableLocales() : void in class org.apache.commons.lang3.text.ExtendedMessageFormatTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tshouldBeFloat : String in method public testStringCreateNumberEnsureNoPrecisionLoss() : void from class org.apache.commons.lang3.math.NumberUtilsTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tshouldBeDouble : String in method public testStringCreateNumberEnsureNoPrecisionLoss() : void from class org.apache.commons.lang3.math.NumberUtilsTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tshouldBeBigDecimal : String in method public testStringCreateNumberEnsureNoPrecisionLoss() : void from class org.apache.commons.lang3.math.NumberUtilsTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "9ad6d947e9402e6940c90dc0c2b08c8fb44f202b",
+      "url": "https://github.com/apache/commons-lang/commit/9ad6d947e9402e6940c90dc0c2b08c8fb44f202b",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tactual : Exception in method public testAsRuntimeException() : void from class org.apache.commons.lang3.exception.ExceptionUtilsTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "4949adec480ddccdee4f7d09231e85e84fec00a1",
+      "url": "https://github.com/apache/commons-lang/commit/4949adec480ddccdee4f7d09231e85e84fec00a1",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate ReflectionDiffBuilder(diffBuilder DiffBuilder<T>, excludeFieldNames String[]) extracted from public ReflectionDiffBuilder(lhs T, rhs T, style ToStringStyle) in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate readField(field Field, target Object) : Object extracted from private appendFields(clazz Class<?>) : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate toExcludeFieldNames(excludeFieldNames String[]) : String[] extracted from public setExcludeFieldNames(excludeFieldNamesParam String...) : ReflectionDiffBuilder<T> in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullValuesInExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullValuesInExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLeft() : T extracted from private appendFields(clazz Class<?>) : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getLeft() : T extracted from public build() : DiffResult<T> in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getRight() : T extracted from private appendFields(clazz Class<?>) : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getRight() : T extracted from public build() : DiffResult<T> in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "aa4eef85cfd88e55677df238b44c6cc463d0af91",
+      "url": "https://github.com/apache/commons-lang/commit/aa4eef85cfd88e55677df238b44c6cc463d0af91",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobjectToTest : Object to test : Object in method public append(fieldName String, lhs Object, rhs Object) : DiffBuilder<T> from class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testByteArrayEqualAsObject() : void renamed to public testByteArrayEqualAsObjectDeprecated() : void in class org.apache.commons.lang3.builder.DiffBuilderTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlist : DiffResult<SimpleClass> to result : DiffResult<SimpleClass> in method public testListIsNonModifiable() : void from class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlist : DiffResult<EmptyClass> to result : DiffResult<EmptyClass> in method public testToStringOutput() : void from class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\texpectedOutput : String in method public testToStringSpecifyStyleOutput() : void from class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tlist : DiffResult<SimpleClass> to result : DiffResult<SimpleClass> in method public testToStringSpecifyStyleOutput() : void from class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate DiffBuilder(left T, right T, style ToStringStyle, testObjectsEquals boolean, toStringFormat String) extracted from public DiffBuilder(lhs T, rhs T, style ToStringStyle, testObjectsEquals boolean) in class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "faa1a1eea544dbdf5c2fa88c622e6e3eedd09837",
+      "url": "https://github.com/apache/commons-lang/commit/faa1a1eea544dbdf5c2fa88c622e6e3eedd09837",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tobjectsEquals : boolean to equals : boolean in class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate validateFieldNameNotNull(fieldName String) : void renamed to private add(fieldName String, left Supplier<F>, right Supplier<F>, type Class<F>) : DiffBuilder<T> in class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to DiffBuilder<T> in method private add(fieldName String, left Supplier<F>, right Supplier<F>, type Class<F>) : DiffBuilder<T> from class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "b1b409ae4096664a33787bf52be32d9d2eb0cb31",
+      "url": "https://github.com/apache/commons-lang/commit/b1b409ae4096664a33787bf52be32d9d2eb0cb31",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tDIFFERS_STRING : String to toStringFormat : String in class org.apache.commons.lang3.builder.DiffResult",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNullStyle() : void renamed to public testDefaultStyle() : void in class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "5d146cd06965432812c11ea8a6b458b3d2f56f65",
+      "url": "https://github.com/apache/commons-lang/commit/5d146cd06965432812c11ea8a6b458b3d2f56f65",
+      "commonRefactoring": [
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.lang3.CharsetsTestCase renamed to org.apache.commons.lang3.CharsetsTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
+          "description": "Rename Class\torg.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl renamed to org.apache.commons.lang3.concurrent.BackgroundInitializerTest.AbstractBackgroundInitializerTestImpl",
+          "validation": true
+        },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.lang3.CharsetsTestCase renamed to org.apache.commons.lang3.CharsetsTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "5cd20a04a0d2fbd8f281196fbc797e8eec6cd6e0",
-      "url": "https://github.com/apache/commons-lang/commit/5cd20a04a0d2fbd8f281196fbc797e8eec6cd6e0",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to Calendar in method private modify(val Calendar, field int, modType ModifyType) : Calendar from class org.apache.commons.lang3.time.DateUtils",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to Calendar in method private modify(val Calendar, field int, modType ModifyType) : Calendar from class org.apache.commons.lang3.time.DateUtils",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "cbe3523b1254dbfd157b03a5c69787017fd7288c",
-      "url": "https://github.com/apache/commons-lang/commit/cbe3523b1254dbfd157b03a5c69787017fd7288c",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmRules : Rule[] to rules : Rule[] in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmPattern : String to pattern : String in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmTimeZone : TimeZone to timeZone : TimeZone in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmLocale : Locale to locale : Locale in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmMaxLengthEstimate : int to maxLengthEstimate : int in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmPattern : String to pattern : String in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmTimeZone : TimeZone to timeZone : TimeZone in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmLocale : Locale to locale : Locale in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmRules : Rule[] to rules : Rule[] in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmMaxLengthEstimate : int to maxLengthEstimate : int in class org.apache.commons.lang3.time.FastDatePrinter",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "389fb37c56d82473ae925d3c8cbb1d4c40819722",
-      "url": "https://github.com/apache/commons-lang/commit/389fb37c56d82473ae925d3c8cbb1d4c40819722",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.lang3.concurrent.MemoizerTest renamed to org.apache.commons.lang3.concurrent.MemoizerComputableTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.commons.lang3.concurrent.MemoizerTest renamed to org.apache.commons.lang3.concurrent.MemoizerComputableTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "8f48ed8adf7f7b35d3b24e2f2511969d6705ec39",
-      "url": "https://github.com/apache/commons-lang/commit/8f48ed8adf7f7b35d3b24e2f2511969d6705ec39",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tStream<O> to Stream<T> in method public stream() : Stream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollector<O,?,O[]> to Collector<T,?,T[]> in method public toArray(pElementType Class<T>) : Collector<T,?,T[]> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSupplier<List<O>> to Supplier<List<E>> in method public supplier() : Supplier<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBinaryOperator<List<O>> to BinaryOperator<List<E>> in method public combiner() : BinaryOperator<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFunction<List<O>,O[]> to Function<List<E>,E[]> in method public finisher() : Function<List<E>,E[]> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tO to T in method public reduce(identity T, accumulator BinaryOperator<T>) : T from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBiConsumer<List<O>,O> to BiConsumer<List<E>,E> in method public accumulator() : BiConsumer<List<E>,E> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\telementType : Class<O> to elementType : Class<E> in class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<T> in method public filter(predicate FailablePredicate<T,?>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tstream : Stream<O> to stream : Stream<T> in class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<T> in method public stream(stream Stream<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<E> in method public stream(collection Collection<E>) : FailableStream<E> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
+          "description": "Rename Class\torg.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.ChildBackgroundInitializer renamed to org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.AbstractChildBackgroundInitializer",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic failableStream(stream Collection<T>) : FailableStream<T> extracted from public stream(stream Collection<O>) : FailableStream<O> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testInitialize() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic failableStream(stream Stream<T>) : FailableStream<T> extracted from public stream(stream Stream<O>) : FailableStream<O> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\telementType : Class<O> to elementType : Class<E> in class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBiConsumer<List<O>,O> to BiConsumer<List<E>,E> in method public accumulator() : BiConsumer<List<E>,E> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBinaryOperator<List<O>> to BinaryOperator<List<E>> in method public combiner() : BinaryOperator<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFunction<List<O>,O[]> to Function<List<E>,E[]> in method public finisher() : Function<List<E>,E[]> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSupplier<List<O>> to Supplier<List<E>> in method public supplier() : Supplier<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tstream : Stream<O> to stream : Stream<T> in class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tStream<O> to Stream<T> in method public stream() : Stream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<T> in method public filter(predicate FailablePredicate<T,?>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tO to T in method public reduce(identity T, accumulator BinaryOperator<T>) : T from class org.apache.commons.lang3.stream.Streams.FailableStream",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic stream(stream Collection<O>) : FailableStream<O> renamed to public failableStream(stream Collection<T>) : FailableStream<T> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic stream(stream Stream<O>) : FailableStream<O> renamed to public failableStream(stream Stream<T>) : FailableStream<T> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<T> in method public failableStream(stream Collection<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tFailableStream<O> to FailableStream<T> in method public failableStream(stream Stream<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollector<O,?,O[]> to Collector<T,?,T[]> in method public toArray(pElementType Class<T>) : Collector<T,?,T[]> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "ff415c8f8f213d40a19f8dc9ac037050ef497bf8",
-      "url": "https://github.com/apache/commons-lang/commit/ff415c8f8f213d40a19f8dc9ac037050ef497bf8",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate nullSafeStream(collection Collection<O>) : Stream<O> renamed to public toStream(collection Collection<E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tStream<O> to Stream<E> in method public toStream(collection Collection<E>) : Stream<E> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate nullSafeStream(collection Collection<O>) : Stream<O> renamed to public toStream(collection Collection<E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tStream<O> to Stream<E> in method public toStream(collection Collection<E>) : Stream<E> from class org.apache.commons.lang3.stream.Streams",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "e3e29d585a455693829deb9231440aeda38eacd4",
-      "url": "https://github.com/apache/commons-lang/commit/e3e29d585a455693829deb9231440aeda38eacd4",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testRemoveStart() : void renamed to public testRemoveStartString() : void in class org.apache.commons.lang3.StringUtilsTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testRemoveStart() : void renamed to public testRemoveStartString() : void in class org.apache.commons.lang3.StringUtilsTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "8efbb7df05d879dec15433e87a51392810936da5",
-      "url": "https://github.com/apache/commons-lang/commit/8efbb7df05d879dec15433e87a51392810936da5",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\t_mask : int to mask : int in class org.apache.commons.lang3.BitField",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\t_shift_count : int to shiftCount : int in class org.apache.commons.lang3.BitField",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_d : int[] to tmp : int[] in method public getLevenshteinDistance(s CharSequence, t CharSequence, threshold int) : int from class org.apache.commons.lang3.StringUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_ellipsis : CharSequence to actualEllipsis : CharSequence in method public append(seq CharSequence, formatter Formatter, flags int, width int, precision int, padChar char, ellipsis CharSequence) : Formatter from class org.apache.commons.lang3.text.FormattableUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_shortest : int to tmpShortest : int in method public LookupTranslator(lookup CharSequence[]...) from class org.apache.commons.lang3.text.translate.LookupTranslator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_longest : int to tmpLongest : int in method public LookupTranslator(lookup CharSequence[]...) from class org.apache.commons.lang3.text.translate.LookupTranslator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tb : ImmutablePair<String,Object[]> to pair : ImmutablePair<String,Object[]> in method package verify(a ImmutablePair<String,Object[]>, obj Object) : void from class org.apache.commons.lang3.reflect.MethodUtilsTest.TestBean",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\t_mask : int to mask : int in class org.apache.commons.lang3.BitField",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\t_shift_count : int to shiftCount : int in class org.apache.commons.lang3.BitField",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_d : int[] to tmp : int[] in method public getLevenshteinDistance(s CharSequence, t CharSequence, threshold int) : int from class org.apache.commons.lang3.StringUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_ellipsis : CharSequence to actualEllipsis : CharSequence in method public append(seq CharSequence, formatter Formatter, flags int, width int, precision int, padChar char, ellipsis CharSequence) : Formatter from class org.apache.commons.lang3.text.FormattableUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_shortest : int to tmpShortest : int in method public LookupTranslator(lookup CharSequence[]...) from class org.apache.commons.lang3.text.translate.LookupTranslator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\t_longest : int to tmpLongest : int in method public LookupTranslator(lookup CharSequence[]...) from class org.apache.commons.lang3.text.translate.LookupTranslator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tb : ImmutablePair<String,Object[]> to pair : ImmutablePair<String,Object[]> in method package verify(a ImmutablePair<String,Object[]>, obj Object) : void from class org.apache.commons.lang3.reflect.MethodUtilsTest.TestBean",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "8ae6a3925ab3bcfa0450b9aa92f4d00693b4c8d2",
-      "url": "https://github.com/apache/commons-lang/commit/8ae6a3925ab3bcfa0450b9aa92f4d00693b4c8d2",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public addAll(array1 T[], array2 T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testGetActiveExecutorBeforeStart() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public insert(index int, array T[], values T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl(exec ExecutorService) : AbstractBackgroundInitializerTestImpl extracted from public testGetActiveExecutorExternal() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testGetActiveExecutorTemp() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testInitializeTempExecutor() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testSetExternalExecutor() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testSetExternalExecutorAfterStart() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testStartMultipleTimes() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testGetBeforeStart() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testGetRuntimeException() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testGetCheckedException() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl(exec ExecutorService) : AbstractBackgroundInitializerTestImpl extracted from public testGetInterruptedException() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testIsStartedFalse() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testIsStartedTrue() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testIsStartedAfterGet() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected getBackgroundInitializerTestImpl() : AbstractBackgroundInitializerTestImpl extracted from public testIsInitialized() : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttype1 : Class<?> to type1 : Class<T> in method public addAll(array1 T[], array2 T...) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tlength : int in method public insert(index int, array T[], values T...) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public addAll(array1 T[], array2 T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public insert(index int, array T[], values T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] in class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testInitialize() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttype1 : Class<?> to type1 : Class<T> in method public addAll(array1 T[], array2 T...) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetActiveExecutorBeforeStart() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttype1 : Class<?> to type : Class<T> in method public newInstance(type Class<T>, length int) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": false
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetActiveExecutorExternal() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public finisher() : Function<List<O>,O[]> in class org.apache.commons.lang3.Streams.ArrayCollector & moved to class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetActiveExecutorTemp() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from private initializeTransientFields(listenerInterface Class<L>, classLoader ClassLoader) : void in class org.apache.commons.lang3.event.EventListenerSupport & moved to class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testInitializeTempExecutor() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic newInstance(type Class<T>, length int) : T[] extracted from public finisher() : Function<List<O>,O[]> in class org.apache.commons.lang3.stream.Streams.ArrayCollector & moved to class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testSetExternalExecutor() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tlength : int in method public insert(index int, array T[], values T...) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testSetExternalExecutorAfterStart() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tlength : int in method public newInstance(type Class<T>, length int) : T[] from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": false
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "d1e9e598c9bcbf91afa174fa9b6c2ef30bbc8157",
-      "url": "https://github.com/apache/commons-lang/commit/d1e9e598c9bcbf91afa174fa9b6c2ef30bbc8157",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_JAVA() : void renamed to public test_IS_JAVA() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testStartMultipleTimes() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_OS() : void renamed to public test_IS_OS() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetBeforeStart() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_zOS() : void renamed to public test_IS_zOS() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_JAVA() : void renamed to public test_IS_JAVA() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetRuntimeException() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_OS() : void renamed to public test_IS_OS() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetCheckedException() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testIS_zOS() : void renamed to public test_IS_zOS() : void in class org.apache.commons.lang3.SystemUtilsTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "a98a6a99d9415c116087b07f1d777dbe20b889da",
-      "url": "https://github.com/apache/commons-lang/commit/a98a6a99d9415c116087b07f1d777dbe20b889da",
-      "ourApproach": [
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testGetInterruptedException() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTOTAL_DELAY_MILLIS : long to TOTAL_DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testIsStartedFalse() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testIsStartedTrue() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testIsStartedAfterGet() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinit : BackgroundInitializerTestImpl to init : AbstractBackgroundInitializerTestImpl in method public testIsInitialized() : void from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeChildWithExecutor() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeChildWithExecutor() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeRuntimeEx() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeEx() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeResultsIsSuccessfulTrue() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeResultsIsSuccessfulFalse() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testIsInitialized() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testIsInitialized() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcinit : ChildBackgroundInitializer to cinit : AbstractChildBackgroundInitializer in method private checkChild(child BackgroundInitializer<?>, expExec ExecutorService) : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tc1 : ChildBackgroundInitializer to c1 : AbstractChildBackgroundInitializer in method public testInitializeChildWithExecutor() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tc2 : ChildBackgroundInitializer to c2 : AbstractChildBackgroundInitializer in method public testInitializeChildWithExecutor() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchild : ChildBackgroundInitializer to child : AbstractChildBackgroundInitializer in method public testInitializeRuntimeEx() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchild : ChildBackgroundInitializer to child : AbstractChildBackgroundInitializer in method public testInitializeEx() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchild : ChildBackgroundInitializer to child : AbstractChildBackgroundInitializer in method public testInitializeResultsIsSuccessfulTrue() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchild : ChildBackgroundInitializer to child : AbstractChildBackgroundInitializer in method public testInitializeResultsIsSuccessfulFalse() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchildOne : ChildBackgroundInitializer to childOne : AbstractChildBackgroundInitializer in method public testIsInitialized() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchildTwo : ChildBackgroundInitializer to childTwo : AbstractChildBackgroundInitializer in method public testIsInitialized() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage initializeCalls : int from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl to package initializeCalls : AtomicInteger from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTOTAL_DELAY_MILLIS : long to TOTAL_DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "description": "Change Attribute Type\tinitializeCalls : int to initializeCalls : AtomicInteger in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
+          "validation": true
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tDELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getInitializeCalls() : int extracted from private checkInitialize(init BackgroundInitializerTestImpl) : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest & moved to class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
+          "validation": false
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tDELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testAddInitializerNullName() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testReentrantReadWriteLockExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from private checkInitialize() : MultiBackgroundInitializer.MultiBackgroundInitializerResults in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testReentrantReadWriteLockNotExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testAddInitializerAfterStart() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
         },
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testStampedLockExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testStampedLockNotExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeNested() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tDELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected initialize() : Integer renamed to protected initializeInternal() : CloseableCounter in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.AbstractBackgroundInitializerTestImpl",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tDELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tInteger to CloseableCounter in method protected initializeInternal() : CloseableCounter from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.AbstractBackgroundInitializerTestImpl",
+          "validation": true
         },
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testReentrantReadWriteLockExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected initialize() : Integer renamed to protected initializeInternal() : CloseableCounter in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.AbstractChildBackgroundInitializer",
+          "validation": true
         },
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testReentrantReadWriteLockNotExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testStampedLockExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tl : null to millis : null in method public testStampedLockNotExclusive() : void from class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tInteger to CloseableCounter in method protected initializeInternal() : CloseableCounter from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.AbstractChildBackgroundInitializer",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "dddd8c4e26f1d254c55749e4b44ae7c6cce5001d",
-      "url": "https://github.com/apache/commons-lang/commit/dddd8c4e26f1d254c55749e4b44ae7c6cce5001d",
+      "sha1": "3935fa2f193a0cc652300677beeb61b535eedf4c",
+      "url": "https://github.com/apache/commons-lang/commit/3935fa2f193a0cc652300677beeb61b535eedf4c",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testThrow() : void renamed to public testRethrow() : void in class org.apache.commons.lang3.exception.ExceptionUtilsTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNotEmpty() : boolean extracted from public appendSeparator(separator char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic rethrow(throwable Throwable) : R renamed to public asRuntimeException(throwable Throwable) : T in class org.apache.commons.lang3.exception.ExceptionUtils",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNotEmpty() : boolean extracted from public appendSeparator(standard char, defaultIfEmpty char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tR to T in method public asRuntimeException(throwable Throwable) : T from class org.apache.commons.lang3.exception.ExceptionUtils",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNotEmpty() : boolean extracted from public appendSeparator(separator char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic isNotEmpty() : boolean extracted from public appendSeparator(standard char, defaultIfEmpty char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tR to T in method public rethrow(throwable Throwable) : T from class org.apache.commons.lang3.exception.ExceptionUtils",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
-      "sha1": "b4456352bcbe3672afba526ea143fca7a53f7843",
-      "url": "https://github.com/apache/commons-lang/commit/b4456352bcbe3672afba526ea143fca7a53f7843",
+      "sha1": "6c61b0916ef77600d09c3e299498ce60058035a0",
+      "url": "https://github.com/apache/commons-lang/commit/6c61b0916ef77600d09c3e299498ce60058035a0",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.lang3.ArraySorter from Class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "MOVE_RENAME_ATTRIBUTE",
+          "description": "Move And Rename Attribute\tprivate NULL_SUPPLIER : Supplier<String> renamed to private NUL : Supplier and moved from class org.apache.commons.lang3.SystemProperties to class org.apache.commons.lang3.function.Suppliers",
+          "validation": true
         },
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.lang3.ArraySorterTest from Class org.apache.commons.lang3.ArrayUtilsTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic sort(array T[]) : T[] from class org.apache.commons.lang3.ArrayUtils to public sort(array T[]) : T[] from class org.apache.commons.lang3.ArraySorter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic sort(array T[], comparator Comparator<? super T>) : T[] from class org.apache.commons.lang3.ArrayUtils to public sort(array T[], comparator Comparator<? super T>) : T[] from class org.apache.commons.lang3.ArraySorter",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic testSortComparable() : void from class org.apache.commons.lang3.ArrayUtilsTest to public testSortComparable() : void from class org.apache.commons.lang3.ArraySorterTest",
-          "developerConfirmation": true
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tNULL_SUPPLIER : Supplier<String> to NUL : Supplier in class org.apache.commons.lang3.function.Suppliers",
+          "validation": true
         }
       ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "4d63091bdc21465423ef006c3b1aac552ebca902",
+      "url": "https://github.com/apache/commons-lang/commit/4d63091bdc21465423ef006c3b1aac552ebca902",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getNoInit() : T extracted from public get() : T in class org.apache.commons.lang3.concurrent.AtomicInitializer",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getNoInit() : T extracted from public get() : T in class org.apache.commons.lang3.concurrent.AtomicSafeInitializer",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "bc8a81eab022b4cfc363ee40bf1b306cc56c7ae3",
+      "url": "https://github.com/apache/commons-lang/commit/bc8a81eab022b4cfc363ee40bf1b306cc56c7ae3",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.commons.lang3.concurrent.LazyInitializerTest renamed to org.apache.commons.lang3.concurrent.LazyInitializerSingleInstanceTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.lang3.ArraySorter from class org.apache.commons.lang3.ArrayUtils",
-          "developerConfirmation": true
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.commons.lang3.concurrent.LazyInitializerTest.LazyInitializerTestImpl moved to org.apache.commons.lang3.concurrent.LazyInitializerSimpleTest.LazyInitializerTestImpl",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "3d7e9d964d26053b94370e95afc8453923e3c672",
+      "url": "https://github.com/apache/commons-lang/commit/3d7e9d964d26053b94370e95afc8453923e3c672",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testToString_ObjectString() : void renamed to public testToString_Object_String() : void in class org.apache.commons.lang3.ObjectUtilsTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic sort(array T[]) : T[] from class org.apache.commons.lang3.ArrayUtils to public sort(array T[]) : T[] from class org.apache.commons.lang3.ArraySorter",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testToString_SupplierString() : void renamed to public testToString_String_Supplier() : void in class org.apache.commons.lang3.ObjectUtilsTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toString(obj T, supplier Supplier<String>) : String extracted from public appendFixedWidthPadLeft(obj Object, width int, padChar char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ObjectUtils",
+          "validation": false
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic sort(array T[], comparator Comparator<? super T>) : T[] from class org.apache.commons.lang3.ArrayUtils to public sort(array T[], comparator Comparator<? super T>) : T[] from class org.apache.commons.lang3.ArraySorter",
-          "developerConfirmation": true
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toString(obj T, supplier Supplier<String>) : String extracted from public appendFixedWidthPadRight(obj Object, width int, padChar char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ObjectUtils",
+          "validation": false
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic testSortComparable() : void from class org.apache.commons.lang3.ArrayUtilsTest to public testSortComparable() : void from class org.apache.commons.lang3.ArraySorterTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic toString(obj T, supplier Supplier<String>) : String extracted from public toString(obj Object, supplier Supplier<String>) : String in class org.apache.commons.lang3.ObjectUtils",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "4ab7add381194bb2707b64c515e47d8fc3c625b0",
+      "url": "https://github.com/apache/commons-lang/commit/4ab7add381194bb2707b64c515e47d8fc3c625b0",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tobject : Object in method public toStringArray(array Object[], valueForNullElements String) : String[] from class org.apache.commons.lang3.ArrayUtils",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "5571b9b464528dcd60819cc48c93bb2f8015b3cb",
+      "url": "https://github.com/apache/commons-lang/commit/5571b9b464528dcd60819cc48c93bb2f8015b3cb",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tobj : Object in method public lookup(key String) : String from class org.apache.commons.lang3.text.StrLookup.MapStrLookup",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "880b85da4a13cbf4cd74febea270f710419e75e5",
+      "url": "https://github.com/apache/commons-lang/commit/880b85da4a13cbf4cd74febea270f710419e75e5",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate testTimeZoneStrategyPattern(locale Locale) : void renamed to private testTimeZoneStrategyPattern_TimeZone_getAvailableIDs(locale Locale) : void in class org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testTimeZoneStrategy(locale Locale) : void renamed to public testTimeZoneStrategy_TimeZone(locale Locale) : void in class org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest",
+          "validation": true
         }
       ]
     }

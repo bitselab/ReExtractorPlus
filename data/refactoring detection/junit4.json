@@ -2,337 +2,767 @@
   "results": [
     {
       "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "527f3a3d0d71ad6dc66ede6f68f6fc316904ed2a",
-      "url": "https://github.com/junit-team/junit4/commit/527f3a3d0d71ad6dc66ede6f68f6fc316904ed2a",
+      "sha1": "6ba9c4dc1e71e9ceb2e35991e8fc0e4aee69ad6e",
+      "url": "https://github.com/junit-team/junit4/commit/6ba9c4dc1e71e9ceb2e35991e8fc0e4aee69ad6e",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage runMain(args String[]) : int extracted from public main(args String...) : void in class org.junit.runner.JUnitCore",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texitValue : Integer to exitValue : int in method private runClass(className String, returnCode int) : void from class org.junit.tests.running.core.JUnitCoreReturnsCorrectExitCodeTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic runWithCheckForSystemExit(runnable Runnable) : Integer renamed to public runMain(args String...) : int in class org.junit.runner.MainRunner",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tInteger to int in method public runMain(args String...) : int from class org.junit.runner.MainRunner",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.tests.running.core.MainRunner moved to org.junit.runner.MainRunner",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "43df829aeef59d65b951a1eff3daf3c6fadbaee1",
+      "url": "https://github.com/junit-team/junit4/commit/43df829aeef59d65b951a1eff3daf3c6fadbaee1",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresult : T in method package handlePossibleBridgeMethod(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tinfiniteLoop : InfiniteLoop to runForASecond : RunForASecond in method public stopEndlessStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tinfiniteLoop : InfiniteLoop to runForASecond : RunForASecond in method public stopEndlessStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tthisMember : FrameworkMember<? extends T> in method package handlePossibleBridgeMethod(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "d9861ecdb6e487f6c352437ee823879aca3b81d4",
-      "url": "https://github.com/junit-team/junit4/commit/d9861ecdb6e487f6c352437ee823879aca3b81d4",
+      "sha1": "02aaa01b8f74c0eb496d76685ec49fddeb311087",
+      "url": "https://github.com/junit-team/junit4/commit/02aaa01b8f74c0eb496d76685ec49fddeb311087",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstillExecuting : AtomicBoolean to finished : CountDownLatch in class org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstillExecuting : AtomicBoolean to finished : CountDownLatch in class org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "2db63942882d91020b46d7333285e5c94f1d1e52",
+      "url": "https://github.com/junit-team/junit4/commit/2db63942882d91020b46d7333285e5c94f1d1e52",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoopStatement renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : TestTimedOutException to e : Exception in method public throwExceptionWithNiceMessageOnTimeout() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\texception : RuntimeException to exception : Exception in method public sendUpExceptionThrownByStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : RuntimeException to e : Exception in method public sendUpExceptionThrownByStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinfiniteLoop : InfiniteLoopStatement to infiniteLoop : InfiniteLoop in method public stopEndlessStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage handlePossibleShadowedMember(members List<T>) : T renamed to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
-          "developerConfirmation": true
+          "description": "Rename Method\tprivate evaluateWithWaitDuration(waitDuration long) : ThrowingRunnable renamed to private run(failOnTimeout FailOnTimeout) : ThrowingRunnable in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic fieldsOnSubclassesDoNotShadowSuperclasses() : void renamed to public fieldsOnSubclassesShadowSuperclasses() : void in class org.junit.runners.model.TestClassTest",
-          "developerConfirmation": true
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tCOUNT : int to stillExecuting : AtomicBoolean in class org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testFieldsNeverTreatedAsShadowed() : void renamed to public testFieldsShadowFieldsFromParent() : void in class org.junit.tests.running.methods.AnnotationTest",
-          "developerConfirmation": true
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tCOUNT : int to stillExecuting : AtomicBoolean in class org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+          "validation": true
         },
         {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate self() : T inlined to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate failAfter50Ms(statement Statement) : FailOnTimeout extracted from public stopEndlessStatement() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate failAfter50Ms(statement Statement) : FailOnTimeout extracted from public stackTraceContainsRealCauseOfTimeout() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public notLookingForStuckThread_usesSameThreadGroup() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public notLookingForStuckThread_usesSameThreadGroup() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage handlePossibleShadowedMember(members List<T>) : T renamed to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.DelegateStatement",
+          "validation": false
         },
         {
           "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate self() : T inlined to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
-          "developerConfirmation": true
+          "description": "Inline Method\tprivate evaluateWithWaitDuration(waitDuration long) : ThrowingRunnable inlined to public throwExceptionIfTheSecondCallToEvaluateNeedsTooMuchTime() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic fieldsOnSubclassesDoNotShadowSuperclasses() : void renamed to public fieldsOnSubclassesShadowSuperclasses() : void in class org.junit.runners.model.TestClassTest",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate evaluateWithWaitDuration(waitDuration long) : ThrowingRunnable inlined to public throwTimeoutExceptionOnSecondCallAlthoughFirstCallThrowsException() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testFieldsNeverTreatedAsShadowed() : void renamed to public testFieldsShadowFieldsFromParent() : void in class org.junit.tests.running.methods.AnnotationTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate run(failOnTimeout FailOnTimeout) : ThrowingRunnable extracted from public throwExceptionIfTheSecondCallToEvaluateNeedsTooMuchTime() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate run(failOnTimeout FailOnTimeout) : ThrowingRunnable extracted from public throwTimeoutExceptionOnSecondCallAlthoughFirstCallThrowsException() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tstuck : StuckStatement in method public stackTraceContainsRealCauseOfTimeout() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tnextStatement : Statement to delegate : Statement in class org.junit.internal.runners.statements.FailOnTimeoutTest.DelegateStatement",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to public stopEndlessStatement() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to public stackTraceContainsRealCauseOfTimeout() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         }
       ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "de77f666b6bcc640425dbbca559c9d62ea64a815",
+      "url": "https://github.com/junit-team/junit4/commit/de77f666b6bcc640425dbbca559c9d62ea64a815",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate threadGroupForNewThread() : ThreadGroup extracted from public evaluate() : void in class org.junit.internal.runners.statements.FailOnTimeout",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic threadGroupNotLeaked() : void renamed to public lookingForStuckThread_threadGroupNotLeaked() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\touterThreadGroup : ThreadGroup in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "877750a0c8a5aff8d99e5164a1abed487d7f70cc",
+      "url": "https://github.com/junit-team/junit4/commit/877750a0c8a5aff8d99e5164a1abed487d7f70cc",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.FakeClassUnderTest moved to junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.internal.StackTracesTest.JUnit3TestWithOneThrowingTestMethod moved and renamed to junit.tests.SampleJUnit3Tests.TestWithOneThrowingTestMethod",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.internal.StackTracesTest.JUnit3TestWithThrowingSetUpMethod moved and renamed to junit.tests.SampleJUnit3Tests.TestWithThrowingSetUpMethod",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.ThrowingTestRule moved to org.junit.tests.SampleJUnit4Tests.ThrowingTestRule",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingTestRule moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingTestRule",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingClassRule moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingClassRule",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.ThrowingMethodRule moved to org.junit.tests.SampleJUnit4Tests.ThrowingMethodRule",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingMethodRule moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingMethodRule",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithSuppressedException moved to org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic alwaysThrows() : void from class org.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod to public alwaysThrows() : void from class org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage initAddSuppressed() : Method from class org.junit.internal.StackTracesTest.TestWithSuppressedException to package initAddSuppressed() : Method from class org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic alwaysThrows() : void from class org.junit.internal.StackTracesTest.TestWithSuppressedException to public alwaysThrows() : void from class org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "1254795902e56eb545e1fe696827924bc5e82b66",
+      "url": "https://github.com/junit-team/junit4/commit/1254795902e56eb545e1fe696827924bc5e82b66",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : IllegalThreadStateException to e : SecurityException in method public evaluate() : void from class org.junit.internal.runners.statements.FailOnTimeout",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tnextException : Exception to nextStatement : Statement in class org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tnextException : Exception to nextStatement : Statement in class org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate evaluateWithDelegate(delegate Statement) : ThrowingRunnable extracted from private evaluateWithException(exception Exception) : ThrowingRunnable in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tgroup : ThreadGroup in method public threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": false
+        }
+      ],
+      "baseline": []
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
       "sha1": "7c2ac2b03e4f09b3906ed6573cd5232177f2e5c5",
       "url": "https://github.com/junit-team/junit4/commit/7c2ac2b03e4f09b3906ed6573cd5232177f2e5c5",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifiableChildList",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testSuiteFilteringWithUnmodifyableChildList() : void renamed to public testSuiteFilteringWithUnmodifiableChildList() : void in class org.junit.tests.running.classes.ParentRunnerFilteringTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifiableChildList",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifiableChildList",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testSuiteFilteringWithUnmodifyableChildList() : void renamed to public testSuiteFilteringWithUnmodifiableChildList() : void in class org.junit.tests.running.classes.ParentRunnerFilteringTest",
-          "developerConfirmation": true
+          "validation": true
         }
       ],
-      "baseline": [
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "568424ad3cd9fe1fdd02c4089ceb94dcc53499dd",
+      "url": "https://github.com/junit-team/junit4/commit/568424ad3cd9fe1fdd02c4089ceb94dcc53499dd",
+      "commonRefactoring": [
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifiableChildList",
-          "developerConfirmation": true
+          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.ParameterizedAssumtionViolation renamed to org.junit.tests.running.classes.ParameterizedTestTest.AssumptionInParametersMethod",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tcondition : boolean to assumptionFails : boolean in class org.junit.tests.running.classes.ParameterizedTestTest.AssumptionInParametersMethod",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "02c328028b4d32c15bbf0becc9838e54ecbafcbf",
+      "url": "https://github.com/junit-team/junit4/commit/02c328028b4d32c15bbf0becc9838e54ecbafcbf",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfilteredChildren : Collection<T> to filteredChildren : List<T> in class org.junit.runners.ParentRunner",
+          "validation": true
         },
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifiableChildList",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCollection<T> to List<T> in method private getFilteredChildren() : List<T> from class org.junit.runners.ParentRunner",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic getRunner() : Runner from class org.junit.internal.requests.ClassRequest to public getRunner() : Runner from class org.junit.internal.requests.MemoizingRequest",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate runnerLock : Lock from class org.junit.internal.requests.ClassRequest to private runnerLock : Lock from class org.junit.internal.requests.MemoizingRequest",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate runner : Runner from class org.junit.internal.requests.ClassRequest to private runner : Runner from class org.junit.internal.requests.MemoizingRequest",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.junit.internal.requests.MemoizingRequest from classes [org.junit.internal.requests.ClassRequest]",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_SUPERCLASS",
+          "description": "Extract Superclass\torg.junit.runner.manipulation.Ordering from classes [org.junit.runner.manipulation.Sorter]",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\trunner : Runner in method public safeRunnerForClass(testClass Class<?>) : Runner from class org.junit.runners.model.RunnerBuilder",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "ed6813d3bbe2da4d67892f73e641fa80ab4d126e",
+      "url": "https://github.com/junit-team/junit4/commit/ed6813d3bbe2da4d67892f73e641fa80ab4d126e",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testStaticMethodsNeverTreatedAsShadowed() : void renamed to public testStaticMethodsCanBeTreatedAsShadowed() : void in class org.junit.tests.running.methods.AnnotationTest",
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testSuiteFilteringWithUnmodifyableChildList() : void renamed to public testSuiteFilteringWithUnmodifiableChildList() : void in class org.junit.tests.running.classes.ParentRunnerFilteringTest",
-          "developerConfirmation": true
+          "description": "Rename Method\tpublic testStaticFieldsNeverTreatedAsShadowed() : void renamed to public testStaticFieldsCanBeTreatedAsShadowed() : void in class org.junit.tests.running.methods.AnnotationTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\totherMethod : FrameworkMethod to otherMember : T in method package handlePossibleShadowedMember(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\totherMethod : FrameworkMethod to otherMember : T in method package handlePossibleShadowedMember(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrameworkMethod to T in method package handlePossibleShadowedMember(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpackage handlePossibleBridgeMethod(methods List<FrameworkMethod>) : FrameworkMethod from class org.junit.runners.model.FrameworkMethod to package handlePossibleShadowedMember(members List<T>) : T from class org.junit.runners.model.FrameworkMember",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tFrameworkField to T in method private self() : T from class org.junit.runners.model.FrameworkMember",
+          "validation": false
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpackage handlePossibleBridgeMethod(members List<FrameworkField>) : FrameworkField from class org.junit.runners.model.FrameworkField to private self() : T from class org.junit.runners.model.FrameworkMember",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "347eb809e653d8fb601b9751f7b7971341e1f5ec",
-      "url": "https://github.com/junit-team/junit4/commit/347eb809e653d8fb601b9751f7b7971341e1f5ec",
+      "sha1": "0bec573229bdd725b1d4588bd3c1ad9ba38f29eb",
+      "url": "https://github.com/junit-team/junit4/commit/0bec573229bdd725b1d4588bd3c1ad9ba38f29eb",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollector moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollector",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic succeeds() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic succeeds() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.ViolatedAssumptionTest",
+          "validation": true
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.PassesAssumptionViolatedExceptionToErrorCollector moved to org.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector",
-          "developerConfirmation": true
+          "description": "Move Class\torg.junit.rules.TestWatcherTest.ViolatedAssumptionTest moved to org.junit.rules.TestWatcherTest.Callbacks.ViolatedAssumptionTest",
+          "validation": true
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorTwice moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice",
-          "developerConfirmation": true
+          "description": "Move Class\torg.junit.rules.TestWatcherTest.FailingTest moved to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": true
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThat moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThat",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceeds moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsPasses moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsMatchingClass moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsClassMismatch moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsClassMismatch",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsNothingThrown moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.rules.ErrorCollectorTest from Class org.junit.rules.VerifierRuleTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic passingAssumptionViolatedExceptionShouldResultInFailure() : void from class org.junit.rules.VerifierRuleTest to public passingAssumptionViolatedExceptionShouldResultInFailure() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorTwiceShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorTwiceShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThatShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThatShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsWithAssumptionViolatedExceptionShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsWithAssumptionViolatedExceptionShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsShouldPass() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsShouldPass() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsMatchingClassShouldPass() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsMatchingClassShouldPass() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsClassMismatchShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsClassMismatchShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsNothingThrownShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsNothingThrownShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "description": "Move Class\torg.junit.rules.TestWatcherTest.InternalViolatedAssumptionTest moved to org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollector moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollector",
-          "developerConfirmation": true
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic succeeds() : void from class org.junit.rules.TestWatcherTest.InternalViolatedAssumptionTest to public test() : void from class org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
+          "validation": false
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.PassesAssumptionViolatedExceptionToErrorCollector moved to org.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector",
-          "developerConfirmation": true
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic succeeds() : void from class org.junit.rules.TestWatcherTest.ViolatedAssumptionTest to public test() : void from class org.junit.rules.TestWatcherTest.Callbacks.ViolatedAssumptionTest",
+          "validation": false
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorTwice moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice",
-          "developerConfirmation": true
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic fails() : void from class org.junit.rules.TestWatcherTest.TestWatcherSkippedThrowsExceptionTest to public test() : void from class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "7a098547474fb11c91262476a172f994e8051ada",
+      "url": "https://github.com/junit-team/junit4/commit/7a098547474fb11c91262476a172f994e8051ada",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmethodNames : List<String> in method public providesAnnotatedMethodsSortedByName() : void from class org.junit.runners.model.TestClassTest",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "f7d4f2835ec7dde25356d923ade0eb93f11cf1c9",
+      "url": "https://github.com/junit-team/junit4/commit/f7d4f2835ec7dde25356d923ade0eb93f11cf1c9",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThat renamed to org.junit.rules.ErrorCollectorTest.CheckTwoMatchersThatFail",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThat moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThat",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatThrowsInternalAssumptionViolatedException",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceeds moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsExpectedTypeOfException",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatDoesNotThrowAnException",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsPasses moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollector renamed to org.junit.rules.ErrorCollectorTest.AddSingleError",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsMatchingClass moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsClassMismatch renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsUnexpectedTypeOfException",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsClassMismatch moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsClassMismatch",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsNoExceptionAlthoughOneIsExpected",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsNothingThrown moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds renamed to org.junit.rules.ErrorCollectorTest.CheckTwoCallablesThatThrowExceptions",
+          "validation": true
         },
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.rules.ErrorCollectorTest from class org.junit.rules.VerifierRuleTest",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector renamed to org.junit.rules.ErrorCollectorTest.AddInternalAssumptionViolatedException",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice renamed to org.junit.rules.ErrorCollectorTest.AddTwoErrors",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic passingAssumptionViolatedExceptionShouldResultInFailure() : void from class org.junit.rules.VerifierRuleTest to public passingAssumptionViolatedExceptionShouldResultInFailure() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresult : Object in method public example() : void from class org.junit.rules.ErrorCollectorTest.CheckCallableThatDoesNotThrowAnException",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "627b85abfd9c1f6c69b14f9d33fb292868fe6826",
+      "url": "https://github.com/junit-team/junit4/commit/627b85abfd9c1f6c69b14f9d33fb292868fe6826",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to T in method public assertThrows(message String, expectedThrowable Class<T>, runnable ThrowingRunnable) : T from class org.junit.Assert",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorTwiceShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorTwiceShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsRequiresAnExceptionToBeThrown() : void renamed to public assertThrowsRequiresAnExceptionToBeThrown() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThatShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThatShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsIncludesAnInformativeDefaultMessage() : void renamed to public assertThrowsIncludesAnInformativeDefaultMessage() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsReturnsTheSameObjectThrown() : void renamed to public assertThrowsReturnsTheSameObjectThrown() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsWithAssumptionViolatedExceptionShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsWithAssumptionViolatedExceptionShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsDetectsTypeMismatchesViaExplicitTypeHint() : void renamed to public assertThrowsDetectsTypeMismatchesViaExplicitTypeHint() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckSucceedsShouldPass() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckSucceedsShouldPass() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsWrapsAndPropagatesUnexpectedExceptions() : void renamed to public assertThrowsWrapsAndPropagatesUnexpectedExceptions() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsMatchingClassShouldPass() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsMatchingClassShouldPass() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsSuppliesACoherentErrorMessageUponTypeMismatch() : void renamed to public assertThrowsSuppliesACoherentErrorMessageUponTypeMismatch() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsClassMismatchShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsClassMismatchShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsUsesCanonicalNameUponTypeMismatch() : void renamed to public assertThrowsUsesCanonicalNameUponTypeMismatch() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic usedErrorCollectorCheckThrowsNothingThrownShouldFail() : void from class org.junit.rules.VerifierRuleTest to public usedErrorCollectorCheckThrowsNothingThrownShouldFail() : void from class org.junit.rules.ErrorCollectorTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsUsesNameUponTypeMismatchWithAnonymousClass() : void renamed to public assertThrowsUsesNameUponTypeMismatchWithAnonymousClass() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown() : void renamed to public assertThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown() : void in class org.junit.tests.assertion.AssertionTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic expectThrows(expectedThrowable Class<T>, runnable ThrowingRunnable) : T renamed to public assertThrows(expectedThrowable Class<T>, runnable ThrowingRunnable) : T in class org.junit.Assert",
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tpublic expectThrows(expectedThrowable Class<T>, runnable ThrowingRunnable) : T inlined to public assertThrows(message String, expectedThrowable Class<T>, runnable ThrowingRunnable) : T in class org.junit.Assert",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmessage : String to notThrownMessage : String in method public assertThrows(message String, expectedThrowable Class<T>, runnable ThrowingRunnable) : T from class org.junit.Assert",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "43cdf991a8c5808b07c657460815e7d8913ebb79",
+      "url": "https://github.com/junit-team/junit4/commit/43cdf991a8c5808b07c657460815e7d8913ebb79",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.TestRuleTest.MethodBeforesAndAfters renamed to org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic methodBeforesAndAfters() : void renamed to public beforesAndAftersAreEnclosedByRule() : void in class org.junit.rules.TestRuleTest",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "aad22b88bf3332cf304da6f558152b59cdbeea2b",
+      "url": "https://github.com/junit-team/junit4/commit/aad22b88bf3332cf304da6f558152b59cdbeea2b",
+      "commonRefactoring": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate withMethodRules(method FrameworkMethod, testRules List<TestRule>, target Object, result Statement) : Statement inlined to private withRules(method FrameworkMethod, target Object, statement Statement) : Statement in class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\teach : org.junit.rules.MethodRule to each : MethodRule in method private withRules(method FrameworkMethod, target Object, statement Statement) : Statement from class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic collectAnnotatedFieldValues(test Object, annotationClass Class<? extends Annotation>, valueClass Class<T>, consumer MemberValueConsumer<T>) : void extracted from public getAnnotatedFieldValues(test Object, annotationClass Class<? extends Annotation>, valueClass Class<T>) : List<T> in class org.junit.runners.model.TestClass",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic collectAnnotatedMethodValues(test Object, annotationClass Class<? extends Annotation>, valueClass Class<T>, consumer MemberValueConsumer<T>) : void extracted from public getAnnotatedMethodValues(test Object, annotationClass Class<? extends Annotation>, valueClass Class<T>) : List<T> in class org.junit.runners.model.TestClass",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trules : List<MethodRule> to collector : RuleCollector<MethodRule> in method protected rules(target Object) : List<MethodRule> from class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trules : List<MethodRule> to collector : RuleCollector<MethodRule> in method protected rules(target Object) : List<MethodRule> from class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tresult : List<TestRule> to collector : RuleCollector<TestRule> in method protected getTestRules(target Object) : List<TestRule> from class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : List<TestRule> to collector : RuleCollector<TestRule> in method protected getTestRules(target Object) : List<TestRule> from class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getMethodRules(target Object) : List<org.junit.rules.MethodRule> inlined to private withRules(method FrameworkMethod, target Object, statement Statement) : Statement in class org.junit.runners.BlockJUnit4ClassRunner",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getOrderedRules() : List<TestRule> extracted from protected classRules() : List<TestRule> in class org.junit.runners.ParentRunner & moved to class org.junit.runners.ParentRunner.ClassRuleCollector",
+          "validation": false
         }
       ]
     },
@@ -340,1210 +770,64 @@
       "repository": "https://github.com/junit-team/junit4.git",
       "sha1": "bb48ff9a5440f4062abdbd2296a377b6c4e057f0",
       "url": "https://github.com/junit-team/junit4/commit/bb48ff9a5440f4062abdbd2296a377b6c4e057f0",
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\twasRun : boolean to ruleWasEvaluated : boolean in class org.junit.rules.MethodRulesTest",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic nonPublicSuiteClassWithBeforeClassFailsWithoutRunningTests() : void renamed to public nonPublicSuiteClassWithBeforeClassPasses() : void in class org.junit.tests.running.classes.SuiteTest",
-          "developerConfirmation": true
+          "validation": true
         }
       ],
-      "baseline": [
+      "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\twasRun : boolean to ruleWasEvaluated : boolean in class org.junit.rules.MethodRulesTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic nonPublicSuiteClassWithBeforeClassFailsWithoutRunningTests() : void renamed to public nonPublicSuiteClassWithBeforeClassPasses() : void in class org.junit.tests.running.classes.SuiteTest",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresult : Result in method public onFailure() : void from class org.junit.rules.MethodRulesTest",
+          "validation": false
         }
-      ]
+      ],
+      "baseline": []
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "f15ee64ef898f26775b90e4baf19251a76e5b1e0",
-      "url": "https://github.com/junit-team/junit4/commit/f15ee64ef898f26775b90e4baf19251a76e5b1e0",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenPathThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenPathThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFileWithGivenFilenameThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFileWithGivenFilenameThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        }
-      ],
+      "sha1": "7111b9621997f6c660687b8ac04003398343ee3a",
+      "url": "https://github.com/junit-team/junit4/commit/7111b9621997f6c660687b8ac04003398343ee3a",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFileWithGivenFilenameThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFileWithGivenFilenameThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic newFolderWithGivenPathThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenPathThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "c4c8ebd03380350ef4e02a2744ecb5f04f8a30e1",
-      "url": "https://github.com/junit-team/junit4/commit/c4c8ebd03380350ef4e02a2744ecb5f04f8a30e1",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure from Class org.junit.tests.experimental.AssumptionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic assumeWithExpectedException() : void from class org.junit.tests.experimental.AssumptionTest to public assumeWithExpectedException() : void from class org.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure from class org.junit.tests.experimental.AssumptionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic assumeWithExpectedException() : void from class org.junit.tests.experimental.AssumptionTest to public assumeWithExpectedException() : void from class org.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "1db00d5a965951ea3667480a96467b43a80823c1",
-      "url": "https://github.com/junit-team/junit4/commit/1db00d5a965951ea3667480a96467b43a80823c1",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectCause(expectedCause Matcher<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectMessage(matcher Matcher<String>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expect(type Class<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expect(matcher Matcher<?>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectMessage(substring String) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expect(matcher Matcher<?>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expect(type Class<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectMessage(substring String) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectMessage(matcher Matcher<String>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to ExpectedException in method public expectCause(expectedCause Matcher<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "97654ff38f976733fa4c6ae9b28e3fe10328183f",
-      "url": "https://github.com/junit-team/junit4/commit/97654ff38f976733fa4c6ae9b28e3fe10328183f",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciTestWithArray renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithArray",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollection<Object[]> to Iterable<Object[]> in method public data() : Iterable<Object[]> from class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciWithParameterizedFieldTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciWithParameterizedFieldTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.tests.running.classes.ParameterizedTestTest.FibonacciTestWithArray renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithArray",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfInput : int to sum : int in class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfExpected : int to secondSummand : int in class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollection<Object[]> to Iterable<Object[]> in method public data() : Iterable<Object[]> from class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "495a9a93e4a1157e707a01467e7cc3f600c88d19",
-      "url": "https://github.com/junit-team/junit4/commit/495a9a93e4a1157e707a01467e7cc3f600c88d19",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tParametersRunnerFactory to List<Runner> in method package createRunnersForClass(klass Class<?>) : List<Runner> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.runners.Parameterized.RunnersFactory from Class org.junit.runners.Parameterized",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestWithNotNormalizedParameters(pattern String, index int, parametersOrSingleParameter Object) : TestWithParameters from class org.junit.runners.Parameterized to private createTestWithNotNormalizedParameters(pattern String, index int, parametersOrSingleParameter Object) : TestWithParameters from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate allParameters() : Iterable<Object> from class org.junit.runners.Parameterized to private allParameters() : Iterable<Object> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getParametersMethod() : FrameworkMethod from class org.junit.runners.Parameterized to private getParametersMethod() : FrameworkMethod from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createRunnersForParameters(allParameters Iterable<Object>, namePattern String, runnerFactory ParametersRunnerFactory) : List<Runner> from class org.junit.runners.Parameterized to private createRunnersForParameters(allParameters Iterable<Object>, namePattern String, runnerFactory ParametersRunnerFactory) : List<Runner> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestsForParameters(allParameters Iterable<Object>, namePattern String) : List<TestWithParameters> from class org.junit.runners.Parameterized to private createTestsForParameters(allParameters Iterable<Object>, namePattern String) : List<TestWithParameters> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate parametersMethodReturnedWrongType() : Exception from class org.junit.runners.Parameterized to private parametersMethodReturnedWrongType() : Exception from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestWithParameters(testClass TestClass, pattern String, index int, parameters Object[]) : TestWithParameters from class org.junit.runners.Parameterized to private createTestWithParameters(testClass TestClass, pattern String, index int, parameters Object[]) : TestWithParameters from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate DEFAULT_FACTORY : ParametersRunnerFactory from class org.junit.runners.Parameterized to private DEFAULT_FACTORY : ParametersRunnerFactory from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.runners.Parameterized.RunnersFactory from class org.junit.runners.Parameterized",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestWithNotNormalizedParameters(pattern String, index int, parametersOrSingleParameter Object) : TestWithParameters from class org.junit.runners.Parameterized to private createTestWithNotNormalizedParameters(pattern String, index int, parametersOrSingleParameter Object) : TestWithParameters from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate allParameters() : Iterable<Object> from class org.junit.runners.Parameterized to private allParameters() : Iterable<Object> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getParametersMethod() : FrameworkMethod from class org.junit.runners.Parameterized to private getParametersMethod() : FrameworkMethod from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createRunnersForParameters(allParameters Iterable<Object>, namePattern String, runnerFactory ParametersRunnerFactory) : List<Runner> from class org.junit.runners.Parameterized to private createRunnersForParameters(allParameters Iterable<Object>, namePattern String, runnerFactory ParametersRunnerFactory) : List<Runner> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestsForParameters(allParameters Iterable<Object>, namePattern String) : List<TestWithParameters> from class org.junit.runners.Parameterized to private createTestsForParameters(allParameters Iterable<Object>, namePattern String) : List<TestWithParameters> from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate parametersMethodReturnedWrongType() : Exception from class org.junit.runners.Parameterized to private parametersMethodReturnedWrongType() : Exception from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createTestWithParameters(testClass TestClass, pattern String, index int, parameters Object[]) : TestWithParameters from class org.junit.runners.Parameterized to private createTestWithParameters(testClass TestClass, pattern String, index int, parameters Object[]) : TestWithParameters from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate DEFAULT_FACTORY : ParametersRunnerFactory from class org.junit.runners.Parameterized to private DEFAULT_FACTORY : ParametersRunnerFactory from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getParametersRunnerFactory(klass Class<?>) : ParametersRunnerFactory from class org.junit.runners.Parameterized to private getParametersRunnerFactory() : ParametersRunnerFactory from class org.junit.runners.Parameterized.RunnersFactory",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "86b9346e4c8fa263810dbd55a2775081194b1d6f",
-      "url": "https://github.com/junit-team/junit4/commit/86b9346e4c8fa263810dbd55a2775081194b1d6f",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\texpected : String to fExpected : String in class org.junit.ComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tactual : String to fActual : String in class org.junit.ComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdurations : Map<String,Long> to fDurations : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfailureTimestamps : Map<String,Long> to fFailureTimestamps : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\thistoryStore : File to fHistoryStore : File in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tindices : List<Integer> to fIndices : List<Integer> in class org.junit.internal.ArrayComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmessage : String to fMessage : String in class org.junit.internal.ArrayComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmatcher : Matcher<?> to fMatcher : Matcher<?> in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tassumption : String to fAssumption : String in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvalue : Object to fValue : Object in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvalueMatcher : boolean to fValueMatcher : boolean in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.internal.runners.InitializationError",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tchildren : Collection<Description> to fChildren : Collection<Description> in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tannotations : Annotation[] to fAnnotations : Annotation[] in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\ttestClass : Class<?> to fTestClass : Class<?> in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdisplayName : String to fDisplayName : String in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tuniqueId : Serializable to fUniqueId : Serializable in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdescription : Description to fDescription : Description in class org.junit.runner.notification.Failure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tthrownException : Throwable to fThrownException : Throwable in class org.junit.runner.notification.Failure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.InitializationError",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.MultipleFailureException",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\texpected : String to fExpected : String in class org.junit.ComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tactual : String to fActual : String in class org.junit.ComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\thistoryStore : File to fHistoryStore : File in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfailureTimestamps : Map<String,Long> to fFailureTimestamps : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdurations : Map<String,Long> to fDurations : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmessage : String to fMessage : String in class org.junit.internal.ArrayComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tindices : List<Integer> to fIndices : List<Integer> in class org.junit.internal.ArrayComparisonFailure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tassumption : String to fAssumption : String in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvalue : Object to fValue : Object in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmatcher : Matcher<?> to fMatcher : Matcher<?> in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvalueMatcher : boolean to fValueMatcher : boolean in class org.junit.internal.AssumptionViolatedException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.internal.runners.InitializationError",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tchildren : Collection<Description> to fChildren : Collection<Description> in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tuniqueId : Serializable to fUniqueId : Serializable in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\ttestClass : Class<?> to fTestClass : Class<?> in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdisplayName : String to fDisplayName : String in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tannotations : Annotation[] to fAnnotations : Annotation[] in class org.junit.runner.Description",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tthrownException : Throwable to fThrownException : Throwable in class org.junit.runner.notification.Failure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tdescription : Description to fDescription : Description in class org.junit.runner.notification.Failure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.InitializationError",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\terrors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.MultipleFailureException",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "7ae75535efbb7a95ac62cfa1d0ccb626cc23e8c7",
-      "url": "https://github.com/junit-team/junit4/commit/7ae75535efbb7a95ac62cfa1d0ccb626cc23e8c7",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.rules.StopwatchTest moved to org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfFinishedRecord : Record to finishedRecord : Record in class org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfRecord : Record to record : Record in class org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.rules.Stopwatch.InternalWatcher from Class org.junit.rules.Stopwatch",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.rules.Stopwatch.Clock from Class org.junit.rules.Stopwatch",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected starting(description Description) : void from class org.junit.rules.Stopwatch to protected starting(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected finished(description Description) : void from class org.junit.rules.Stopwatch to protected finished(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected succeeded(description Description) : void from class org.junit.rules.Stopwatch to protected succeeded(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected failed(e Throwable, description Description) : void from class org.junit.rules.Stopwatch to protected failed(e Throwable, description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected skipped(e AssumptionViolatedException, description Description) : void from class org.junit.rules.Stopwatch to protected skipped(e AssumptionViolatedException, description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage Record() from class org.junit.tests.experimental.rules.StopwatchTest.Record to package Record() from class org.junit.rules.StopwatchTest.Record",
-          "developerConfirmation": false
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.rules.StopwatchTest moved to org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfRecord : Record to record : Record in class org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfFinishedRecord : Record to finishedRecord : Record in class org.junit.rules.StopwatchTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfDuration : long to duration : long in class org.junit.rules.StopwatchTest.Record",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfStatus : TestStatus to status : TestStatus in class org.junit.rules.StopwatchTest.Record",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.rules.Stopwatch.InternalWatcher from class org.junit.rules.Stopwatch",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected starting(description Description) : void from class org.junit.rules.Stopwatch to protected starting(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected finished(description Description) : void from class org.junit.rules.Stopwatch to protected finished(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected succeeded(description Description) : void from class org.junit.rules.Stopwatch to protected succeeded(description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected failed(e Throwable, description Description) : void from class org.junit.rules.Stopwatch to protected failed(e Throwable, description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected skipped(e AssumptionViolatedException, description Description) : void from class org.junit.rules.Stopwatch to protected skipped(e AssumptionViolatedException, description Description) : void from class org.junit.rules.Stopwatch.InternalWatcher",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "cfe6afadc81b72449c8b0cb96d51aa57f7a593b7",
-      "url": "https://github.com/junit-team/junit4/commit/cfe6afadc81b72449c8b0cb96d51aa57f7a593b7",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches() : void renamed to public testComparisonErrorOverlappingMatches() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatchesContext() : void renamed to public testComparisonErrorOverlappingMatchesContext() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches2() : void renamed to public testComparisonErrorOverlappingMatches2() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches2Context() : void renamed to public testComparisonErrorOverlappingMatches2Context() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches() : void renamed to public testComparisonErrorOverlappingMatches() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatchesContext() : void renamed to public testComparisonErrorOverlappingMatchesContext() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches2() : void renamed to public testComparisonErrorOverlappingMatches2() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testComparisonErrorOverlapingMatches2Context() : void renamed to public testComparisonErrorOverlappingMatches2Context() : void in class junit.tests.framework.ComparisonCompactorTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "9d3821f6411ad85a683b8d38e4d42411229f2eec",
-      "url": "https://github.com/junit-team/junit4/commit/9d3821f6411ad85a683b8d38e4d42411229f2eec",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorMethodTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorMethodTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator moved to org.junit.validator.AnnotationsValidatorTest.ExampleAnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfieldThatShouldBeMatched : String to fieldC : String in class org.junit.tests.running.classes.TestClassTest.FieldAnnotated",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorClassTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic methodToBeMatched() : String renamed to public methodA() : String in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorFieldTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorFieldTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic methodOfWrongType() : int renamed to public methodC() : int in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tfAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> to VALIDATORS_FOR_ANNOTATION_TYPES : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.validator.AnnotationsValidatorTest from Class org.junit.tests.running.classes.ParentRunnerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAClass() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAClass() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAMethod() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAMethod() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAField() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAField() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpackage abstract getAnnotations() : Annotation[] from class org.junit.runners.model.FrameworkMember to public getAnnotations() : Annotation[] from class org.junit.runners.model.Annotatable",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_INTERFACE",
-          "description": "Extract Interface\torg.junit.runners.model.Annotatable from classes [org.junit.runners.model.TestClass]",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator moved to org.junit.validator.AnnotationsValidatorTest.ExampleAnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorMethodTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorMethodTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorFieldTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorFieldTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorClassTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic methodToBeMatched() : String renamed to public methodA() : String in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic methodOfWrongType() : int renamed to public methodC() : int in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic annotationToFields() : void renamed to public providesAnnotatedFieldsSortedByName() : void in class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic annotationToMethods() : void renamed to public providesAnnotatedMethodsSortedByName() : void in class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.validator.AnnotationsValidatorTest from class org.junit.tests.running.classes.ParentRunnerTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAClass() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAClass() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAMethod() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAMethod() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic validatorIsCalledForAField() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAField() : void from class org.junit.validator.AnnotationsValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpackage abstract getAnnotations() : Annotation[] from class org.junit.runners.model.FrameworkMember to public getAnnotations() : Annotation[] from class org.junit.runners.model.Annotatable",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_INTERFACE",
-          "description": "Extract Interface\torg.junit.runners.model.Annotatable from classes [org.junit.runners.model.TestClass]",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tannotationToFields : Map<Class<? extends Annotation>,List<FrameworkField>> to annotatedFields : List<FrameworkField> in method public providesAnnotatedFieldsSortedByName() : void from class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tannotationToFields : Map<Class<? extends Annotation>,List<FrameworkField>> to annotatedFields : List<FrameworkField> in method public providesAnnotatedFieldsSortedByName() : void from class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tannotationToMethods : Map<Class<? extends Annotation>,List<FrameworkMethod>> to annotatedMethods : List<FrameworkMethod> in method public providesAnnotatedMethodsSortedByName() : void from class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tannotationToMethods : Map<Class<? extends Annotation>,List<FrameworkMethod>> to annotatedMethods : List<FrameworkMethod> in method public providesAnnotatedMethodsSortedByName() : void from class org.junit.tests.running.classes.TestClassTest",
-          "developerConfirmation": false
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "26c25f3dbf524f4efd90e97f41c6df10345e78a9",
-      "url": "https://github.com/junit-team/junit4/commit/26c25f3dbf524f4efd90e97f41c6df10345e78a9",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic throwsTestFailedWithTimeoutException() : void renamed to public throwsTestTimedOutException() : void in class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.runners.model.TestFailedOnTimeoutException renamed to org.junit.runners.model.TestTimedOutException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\te : TestFailedOnTimeoutException to e : TestTimedOutException in method public throwsExceptionWithTimeoutValueAndTimeUnitSet() : void from class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.runners.model.TestFailedOnTimeoutException renamed to org.junit.runners.model.TestTimedOutException",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic throwsTestFailedWithTimeoutException() : void renamed to public throwsTestTimedOutException() : void in class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\te : TestFailedOnTimeoutException to e : TestTimedOutException in method public throwsExceptionWithTimeoutValueAndTimeUnitSet() : void from class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "df88873d5013e400489550cf15e9b51dc438eb4b",
-      "url": "https://github.com/junit-team/junit4/commit/df88873d5013e400489550cf15e9b51dc438eb4b",
-      "ourApproach": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnClass(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnMethods(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnFields(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnClass(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnMethods(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnFields(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "1273a35689bdcb3304f6634cdc3889c61f9b1b1f",
-      "url": "https://github.com/junit-team/junit4/commit/1273a35689bdcb3304f6634cdc3889c61f9b1b1f",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tfAnnotationTypeToValidatorMap : Map<ValidateWith,AnnotationValidator> to fAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.experimental.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.categories.CategoryValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.experimental.validator.CategoryValidator moved to org.junit.experimental.categories.CategoryValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.validation.CategoryValidatorTest moved to org.junit.tests.experimental.categories.CategoryValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tclazz : Class<?> to clazz : Class<? extends AnnotationValidator> in method public createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator from class org.junit.experimental.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
-        },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvalidator : AnnotationValidator in method public createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator from class org.junit.experimental.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.validation.CategoryValidatorTest moved to org.junit.tests.experimental.categories.CategoryValidatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.experimental.validator.CategoryValidator moved to org.junit.experimental.categories.CategoryValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tfAnnotationTypeToValidatorMap : Map<ValidateWith,AnnotationValidator> to fAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.experimental.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.categories.CategoryValidator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvalidator : AnnotationValidator in method public createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator from class org.junit.experimental.validator.AnnotationValidatorFactory",
-          "developerConfirmation": true
+          "description": "Extract Variable\tallParametersResult : List<Object> in method private RunnersFactory(klass Class<?>) from class org.junit.runners.Parameterized.RunnersFactory",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "0ce71108da6f487d76c0f4dc46cde41e11dd3daa",
-      "url": "https://github.com/junit-team/junit4/commit/0ce71108da6f487d76c0f4dc46cde41e11dd3daa",
+      "sha1": "f34c4435ebeea2dc4dd91b8242a2defdf14d7d5c",
+      "url": "https://github.com/junit-team/junit4/commit/f34c4435ebeea2dc4dd91b8242a2defdf14d7d5c",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate setFilteredChildren(filteredChildren Collection<T>) : void inlined to public filter(filter Filter) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate notNull(value Object, message String) : void from class org.junit.runners.parameterized.TestWithParameters to public notNull(value T, message String) : T from class org.junit.internal.Checks",
+          "validation": true
         },
         {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate setFilteredChildren(filteredChildren Collection<T>) : void inlined to private getFilteredChildren() : Collection<T> in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tsortedChildren : List<T> to filteredChildren : List<T> in method public filter(filter Filter) : void from class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate setFilteredChildren(filteredChildren Collection<T>) : void inlined to public filter(filter Filter) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate setFilteredChildren(filteredChildren Collection<T>) : void inlined to public sort(sorter Sorter) : void in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate setFilteredChildren(filteredChildren Collection<T>) : void inlined to private getFilteredChildren() : Collection<T> in class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tsortedChildren : List<T> to filteredChildren : List<T> in method public filter(filter Filter) : void from class org.junit.runners.ParentRunner",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "50e3d1bc87b4b16f0617b6212252363f499397ab",
-      "url": "https://github.com/junit-team/junit4/commit/50e3d1bc87b4b16f0617b6212252363f499397ab",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic allIntsOk(x int) : void renamed to public theory(x int) : void in class org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic allIntsOk(x int) : void renamed to public theory(x int) : void in class org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingSingleDataPointMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingDataPointArrayMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to T in method public notNull(value T, message String) : T from class org.junit.internal.Checks",
+          "validation": true
         },
         {
           "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.tests.experimental.theories.runner.FailingDataPointMethods from Class org.junit.tests.experimental.theories.runner.WithDataPointMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic shouldFailFromExceptionsInSingleDataPointMethods() : void from class org.junit.tests.experimental.theories.runner.WithDataPointMethod to public shouldFailFromExceptionsInSingleDataPointMethods() : void from class org.junit.tests.experimental.theories.runner.FailingDataPointMethods",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic shouldFailFromExceptionsInDataPointArrayMethods() : void from class org.junit.tests.experimental.theories.runner.WithDataPointMethod to public shouldFailFromExceptionsInDataPointArrayMethods() : void from class org.junit.tests.experimental.theories.runner.FailingDataPointMethods",
-          "developerConfirmation": true
+          "description": "Extract Class\torg.junit.internal.Checks from class org.junit.runners.parameterized.TestWithParameters",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingSingleDataPointMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingDataPointArrayMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.junit.tests.experimental.theories.runner.FailingDataPointMethods from class org.junit.tests.experimental.theories.runner.WithDataPointMethod",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic shouldFailFromExceptionsInSingleDataPointMethods() : void from class org.junit.tests.experimental.theories.runner.WithDataPointMethod to public shouldFailFromExceptionsInSingleDataPointMethods() : void from class org.junit.tests.experimental.theories.runner.FailingDataPointMethods",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic shouldFailFromExceptionsInDataPointArrayMethods() : void from class org.junit.tests.experimental.theories.runner.WithDataPointMethod to public shouldFailFromExceptionsInDataPointArrayMethods() : void from class org.junit.tests.experimental.theories.runner.FailingDataPointMethods",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/junit-team/junit4.git",
-      "sha1": "0030e51f286ed52ad4c2c44857c4a28525c83f93",
-      "url": "https://github.com/junit-team/junit4/commit/0030e51f286ed52ad4c2c44857c4a28525c83f93",
-      "ourApproach": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getAnnotatedSupplier(unassigned ParameterSignature) : ParameterSupplier inlined to private getSupplier(unassigned ParameterSignature) : ParameterSupplier in class org.junit.experimental.theories.internal.Assignments",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getAnnotatedSupplier(unassigned ParameterSignature) : ParameterSupplier inlined to private getSupplier(unassigned ParameterSignature) : ParameterSupplier in class org.junit.experimental.theories.internal.Assignments",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     }
   ]
 }

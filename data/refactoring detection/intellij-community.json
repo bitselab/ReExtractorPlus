@@ -2,1422 +2,632 @@
   "results": [
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "029e1a3be3d24cb284f0ee3a8add7897aedf5990",
-      "url": "https://github.com/JetBrains/intellij-community/commit/029e1a3be3d24cb284f0ee3a8add7897aedf5990",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getReferencesWidth(row int, cell GraphCommitCell) : int renamed to private prepareTemplateComponent(row int, cell GraphCommitCell) : void in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tint to void in method private prepareTemplateComponent(row int, cell GraphCommitCell) : void from class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getReferencesWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getGraphWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getGraphWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "a09e77333834ed815777b39ae28744d5beae7861",
-      "url": "https://github.com/JetBrains/intellij-community/commit/a09e77333834ed815777b39ae28744d5beae7861",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public abstract registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.QuickFixFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ChoiceVariantIntentionAction> to List<@NotNull ChoiceVariantIntentionAction> in method public getVariants() : List<@NotNull ChoiceVariantIntentionAction> from class com.intellij.codeInsight.daemon.impl.quickfix.ExtendSealedClassFix",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.impl.quickfix.OrderEntryFix",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.impl.config.QuickFixFactoryImpl",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method private registerFixes() : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<V> to List<@NotNull V> in method public getVariants() : List<@NotNull V> from class com.intellij.codeInsight.intention.IntentionActionWithChoice",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.openapi.paths.PsiDynaReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReferenceHelper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public wrapToQuickFixes(actions List<? extends IntentionAction>, file PsiFile) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.IntentionWrapper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerQuickFix(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.quickFix.FileReferenceQuickFixProvider",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.PsiFileReferenceHelper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class org.jetbrains.idea.maven.dom.references.MavenModulePsiReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix @NotNull [] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.lang.properties.references.PropertyReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.DtdReferencesProvider.EntityReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.DtdReferencesProvider.ElementReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tLocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class org.intellij.plugins.relaxNG.xml.dom.impl.DefinitionReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tlist : List<? extends LocalQuickFix> to list : List<? extends @NotNull LocalQuickFix> in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public abstract registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.QuickFixFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ChoiceVariantIntentionAction> to List<@NotNull ChoiceVariantIntentionAction> in method public getVariants() : List<@NotNull ChoiceVariantIntentionAction> from class com.intellij.codeInsight.daemon.impl.quickfix.ExtendSealedClassFix",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.impl.quickfix.OrderEntryFix",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.impl.config.QuickFixFactoryImpl",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method private registerFixes() : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<V> to List<@NotNull V> in method public getVariants() : List<@NotNull V> from class com.intellij.codeInsight.intention.IntentionActionWithChoice",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReferenceHelper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public wrapToQuickFixes(actions List<? extends IntentionAction>, file PsiFile) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.IntentionWrapper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerQuickFix(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.quickFix.FileReferenceQuickFixProvider",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.PsiFileReferenceHelper",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tlist : List<? extends LocalQuickFix> to list : List<? extends @NotNull LocalQuickFix> in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "174b023f6e170b818d8fa6c1eb2f4843cdd32b15",
-      "url": "https://github.com/JetBrains/intellij-community/commit/174b023f6e170b818d8fa6c1eb2f4843cdd32b15",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate synchronizedGetFor(configuration GraphicsConfiguration, key String, type Class<T>) : T extracted from private getFor(object Object, key String, type Class<T>) : T in class com.intellij.openapi.util.WindowStateServiceImpl",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate synchronizedGetFor(configuration GraphicsConfiguration, key String, type Class<T>) : T extracted from private getFor(object Object, key String, type Class<T>) : T in class com.intellij.openapi.util.WindowStateServiceImpl",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "9f64f99739e89c7cb24874a6aef68cce2b63d43e",
-      "url": "https://github.com/JetBrains/intellij-community/commit/9f64f99739e89c7cb24874a6aef68cce2b63d43e",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.impl.ConfigFileInfoSetImpl",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.ConfigFileInfoSet",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.impl.ConfigFileInfoSetImpl",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.ConfigFileInfoSet",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "0fe526a5fabfa5a410aebe13e3d34475ca6f7c9b",
-      "url": "https://github.com/JetBrains/intellij-community/commit/0fe526a5fabfa5a410aebe13e3d34475ca6f7c9b",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachPatternStatement(statement PsiForeachPatternStatement) : void in class com.intellij.psi.JavaElementVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachStatement(statement PsiForeachStatement) : void in class com.intellij.psi.JavaElementVisitor",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachPatternStatement(statement PsiForeachPatternStatement) : void in class com.intellij.psi.JavaElementVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachStatement(statement PsiForeachStatement) : void in class com.intellij.psi.JavaElementVisitor",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "1ae8711fe9785b5b0862caccd6084652c8454625",
-      "url": "https://github.com/JetBrains/intellij-community/commit/1ae8711fe9785b5b0862caccd6084652c8454625",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tGenericAttributeValue to GenericAttributeValue<?> in method public getAttributeValue() : GenericAttributeValue<?> from class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyValue : GenericAttributeValue to myValue : GenericAttributeValue<?> in class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic restartConfigHighlightning(project Project, projects Collection<MavenProject>) : void renamed to public restartConfigHighlighting(projects Collection<MavenProject>) : void in class org.jetbrains.idea.maven.utils.MavenUtil",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfix : QuickFix to fix : QuickFix<?> in method public isDone() : boolean from class com.intellij.codeInspection.actions.CleanupInspectionUtilImpl.PerformBatchFixesTask",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : Map to res : V in method public getOrCreate(map Map<K,V>, key K) : V from class org.jetbrains.idea.maven.utils.MavenUtil",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyValue : GenericAttributeValue to myValue : GenericAttributeValue<?> in class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tGenericAttributeValue to GenericAttributeValue<?> in method public getAttributeValue() : GenericAttributeValue<?> from class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic restartConfigHighlightning(project Project, projects Collection<MavenProject>) : void renamed to public restartConfigHighlighting(projects Collection<MavenProject>) : void in class org.jetbrains.idea.maven.utils.MavenUtil",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfix : QuickFix to fix : QuickFix<?> in method public isDone() : boolean from class com.intellij.codeInspection.actions.CleanupInspectionUtilImpl.PerformBatchFixesTask",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : Map to res : V in method public getOrCreate(map Map<K,V>, key K) : V from class org.jetbrains.idea.maven.utils.MavenUtil",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "5b7f69b69f574ac98ce2f4d4f3b27732f9f5c233",
-      "url": "https://github.com/JetBrains/intellij-community/commit/5b7f69b69f574ac98ce2f4d4f3b27732f9f5c233",
-      "ourApproach": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate updateExecutionPoint(file VirtualFile, navigate boolean) : void inlined to public XDebuggerManagerImpl(project Project, coroutineScope CoroutineScope) in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate updateExecutionPoint(file VirtualFile, navigate boolean) : void inlined to public XDebuggerManagerImpl(project Project, coroutineScope CoroutineScope) in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "029029d68eda29a57221e9da5fd7ff93023d7e97",
-      "url": "https://github.com/JetBrains/intellij-community/commit/029029d68eda29a57221e9da5fd7ff93023d7e97",
+      "sha1": "b686093c55f9df84d036ea528170bc5b39d4d14e",
+      "url": "https://github.com/JetBrains/intellij-community/commit/b686093c55f9df84d036ea528170bc5b39d4d14e",
+      "commonRefactoring": [],
       "ourApproach": [],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmyMainExecutionPointHighlighter : ExecutionPointHighlighter to myExecutionPointManager : XDebuggerExecutionPointManager in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyMainExecutionPointHighlighter : ExecutionPointHighlighter to myExecutionPointManager : XDebuggerExecutionPointManager in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
-          "developerConfirmation": false
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfile : def to file : GroovyFile in method private doTest(expected String) : void from class org.jetbrains.plugins.groovy.lang.StringValueTest",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "b93c505446016fa7060a1e63f4e34f1ac05f06bd",
-      "url": "https://github.com/JetBrains/intellij-community/commit/b93c505446016fa7060a1e63f4e34f1ac05f06bd",
+      "sha1": "fab3cba2c3c87026117d2d0f086c271ad9e45079",
+      "url": "https://github.com/JetBrains/intellij-community/commit/fab3cba2c3c87026117d2d0f086c271ad9e45079",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmyTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tactions : List in method public readExternal(macro Element) : void from class com.intellij.ide.actionMacro.ActionMacro",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "d5def5048e0ebac39a822db57bf34d85989fb656",
+      "url": "https://github.com/JetBrains/intellij-community/commit/d5def5048e0ebac39a822db57bf34d85989fb656",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic changePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.ActionUrl to private changePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
-          "developerConfirmation": true
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode from class com.intellij.ide.ui.customization.ActionUrl to private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcomponent : Object in method private removePathFromActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate removePathFromActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.ActionUrl to private removePathFromActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate movePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.ActionUrl to private movePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String> from class com.intellij.ide.ui.customization.ActionUrl to private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String> from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcomponent : Object in method private movePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tactionType : int in method private changePathInActionsTree(tree JTree, url ActionUrl) : void from class com.intellij.ide.ui.customization.CustomizableActionsPanel",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmyTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tattributeValue : String in method public readExternal(element Element) : void from class com.intellij.ide.ui.customization.ActionUrl",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresult : int in method public hashCode() : int from class com.intellij.ide.ui.customization.ActionUrl",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tgroup : Group to TYPE_POPUP_GROUP : int in method public readExternal(element Element) : void from class com.intellij.ide.ui.customization.ActionUrl",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "11b4d078a52decca99f9b8dfcf355b18788009dc",
-      "url": "https://github.com/JetBrains/intellij-community/commit/11b4d078a52decca99f9b8dfcf355b18788009dc",
+      "sha1": "f080ad913d01bea79eddc5435e5169aec2bea8ce",
+      "url": "https://github.com/JetBrains/intellij-community/commit/f080ad913d01bea79eddc5435e5169aec2bea8ce",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindicator : CheckCancelOnlyProgressIndicator to indicator : CheckPauseOnlyProgressIndicator in class com.intellij.util.indexing.SingleProviderIterator",
+          "validation": true
+        }
+      ],
       "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tservice : var in method private flushPerProjectIndexingQueue(indexingReason String, indicator IndexingProgressReporter.CheckCancelOnlyProgressIndicator) : void from class com.intellij.util.indexing.UnindexedFilesScanner",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "4d6a1d13e2783aeded216619f2d366a9aa70c7e0",
+      "url": "https://github.com/JetBrains/intellij-community/commit/4d6a1d13e2783aeded216619f2d366a9aa70c7e0",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate isSerializableClass(configuration Configuration, currentClass Class<?>) : boolean extracted from public doCollect(aClass Class<?>, configuration Configuration, classToOwnFields ClassValue<List<MutableAccessor>>) : List<MutableAccessor> in class com.intellij.serialization.PropertyCollector",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcurrentClass : Class<?> in method private collectPropertyAccessors(aClass Class<?>, accessors List<? super MutableAccessor>, configuration Configuration) : Map<String,Pair<Method,Method>> from class com.intellij.serialization.PropertyCollector",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "84834a76926e93b64919858ce69b9451b1b868b1",
+      "url": "https://github.com/JetBrains/intellij-community/commit/84834a76926e93b64919858ce69b9451b1b868b1",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmyDirtyFileIds : IntSet to myOrphanDirtyFilesQueue : OrphanDirtyFilesQueue in class com.intellij.util.indexing.FileBasedIndexDataInitialization",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmyDirtyFileIds : IntSet to myOrphanDirtyFilesQueue : OrphanDirtyFilesQueue in class com.intellij.util.indexing.FileBasedIndexDataInitialization",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmyOrphanDirtyFileIds : IntSet to myOrphanDirtyFileIds : OrphanDirtyFilesQueue in class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tallOrphanDirtyFiles : IntSet to orphanDirtyFilesFromThisSession : IntSet in method package performShutdown(keepConnection boolean, reason String) : void from class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tIntList to OrphanDirtyFilesQueue in method package getOrphanDirtyFileIds() : OrphanDirtyFilesQueue from class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\torphanDirtyFileIds : OrphanDirtyFilesQueue in method package performShutdown(keepConnection boolean, reason String) : void from class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "de6bf4b926e5854724a5d626293d79cd9da1e516",
+      "url": "https://github.com/JetBrains/intellij-community/commit/de6bf4b926e5854724a5d626293d79cd9da1e516",
+      "commonRefactoring": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tIntList to void in method package ensureDirtyFileIndexesDeleted(dirtyFiles Collection<Integer>) : void from class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage ensureDirtyFileIndexesDeleted() : IntList renamed to package getOrphanDirtyFileIds() : IntList in class com.intellij.util.indexing.FileBasedIndexImpl",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "d83a9eef42e12e49b1cfc7a01a1e776b7f026362",
+      "url": "https://github.com/JetBrains/intellij-community/commit/d83a9eef42e12e49b1cfc7a01a1e776b7f026362",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tlaunchName : String in method private runReadWrites(test Method, readIterations int, writeIterations int) : void from class com.intellij.openapi.application.impl.ApplicationImplTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "9690b9b6a1b064e2e57d59144fdbc338b9f8fe54",
+      "url": "https://github.com/JetBrains/intellij-community/commit/9690b9b6a1b064e2e57d59144fdbc338b9f8fe54",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.intellij.openapi.fileChooser.FileChooserUsageCollector moved to com.intellij.openapi.fileChooser.impl.FileChooserUsageCollector",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\tcom.intellij.ui.mac.MacPathChooserDialog moved and renamed to com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\tcom.intellij.ui.mac.MacFileSaverDialog moved and renamed to com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage withFileFilter(filter Condition<? super VirtualFile>, type String) : FileChooserDescriptor extracted from public withFileFilter(filter Condition<? super VirtualFile>) : FileChooserDescriptor in class com.intellij.openapi.fileChooser.FileChooserDescriptor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdialog : MyDialog to dialog : var in method private createDialog(headless boolean, owner Window, wrapper DialogWrapper, project Project, ideModalityType DialogWrapper.IdeModalityType) : AbstractDialog from class com.intellij.openapi.ui.impl.DialogWrapperPeerImpl",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fromComponent(parentComponent Component) : OwnerOptional renamed to public findOwner(parent Component) : Window in class com.intellij.util.ui.OwnerOptional",
+          "validation": true
+        },
         {
           "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate fontForChar(c char, style int) : FontInfo inlined to protected getFontToDisplay(text char[], start int, end int, style TextStyle) : Font in class com.intellij.terminal.JBTerminalPanel",
-          "developerConfirmation": true
+          "description": "Inline Method\tprivate findOwnerByComponent(component Component) : Window inlined to public findOwner(parent Component) : Window in class com.intellij.util.ui.OwnerOptional",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tmanager : IdePopupManager in method public fromComponent(parentComponent Component) : OwnerOptional from class com.intellij.util.ui.OwnerOptional",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tOwnerOptional to Window in method public findOwner(parent Component) : Window from class com.intellij.util.ui.OwnerOptional",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmyParent : WeakReference<Component> to myParent : Component in class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tmyHelper : PathChooserDialogHelper to myHelper : FileChooserDialogHelper in class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tjbrDialog : JBRFileDialog to jbrDialog : var in method package NativeFileChooserDialogImpl(descriptor FileChooserDescriptor, parent Component, project Project) from class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmyFileChooserDescriptor : FileChooserDescriptor to myDescriptor : FileChooserDescriptor in class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tfile : String to file : var in method private doSave(baseDir String, filename String) : VirtualFileWrapper from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
         }
       ],
-      "baseline": [
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic ifFrame(consumer Consumer<? super Frame>) : OwnerOptional renamed to public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T in class com.intellij.util.ui.OwnerOptional",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tOwnerOptional to T in method public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T from class com.intellij.util.ui.OwnerOptional",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate useNativeMacChooser(descriptor FileChooserDescriptor) : boolean renamed to private canUseNativeDialog(descriptor FileChooserDescriptor) : boolean in class com.intellij.openapi.fileChooser.impl.LocalFileChooserFactory",
+          "validation": true
+        },
         {
           "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate fontForChar(c char, style int) : FontInfo inlined to protected getFontToDisplay(text char[], start int, end int, style TextStyle) : Font in class com.intellij.terminal.JBTerminalPanel",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "72b1ea9a4cea1af45f07cd59459303d8f83d7bba",
-      "url": "https://github.com/JetBrains/intellij-community/commit/72b1ea9a4cea1af45f07cd59459303d8f83d7bba",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate createLegacyPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
-          "developerConfirmation": true
+          "description": "Inline Method\tprivate getChooserTitle(descriptor FileChooserDescriptor) : String inlined to package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) in class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate createActionPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate createLegacyPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate createActionPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "97f24a7a33c8156ab725c112d1530d561ea07b31",
-      "url": "https://github.com/JetBrains/intellij-community/commit/97f24a7a33c8156ab725c112d1530d561ea07b31",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJPanel to JComponent in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tresult : JPanel in method package getSinglePromotion(isEmptyState boolean) : JPanel from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJPanel to JComponent in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : JPanel to maxPriorityLevel : int in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcontent : JPanel to priorityLevel : int in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": false
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate getChooserTitle(descriptor FileChooserDescriptor) : String inlined to package NativeFileChooserDialogImpl(descriptor FileChooserDescriptor, parent Component, project Project) in class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tresult : JPanel to maxPriorityLevel : int in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": false
+          "description": "Rename Variable\tvirtualFileList : List<VirtualFile> to selectedFiles : var in method public choose(toSelect VirtualFile, callback Consumer<? super List<VirtualFile>>) : void from class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tvirtualFileList : List<VirtualFile> to selectedFiles : var in method public choose(toSelect VirtualFile, callback Consumer<? super List<VirtualFile>>) : void from class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tcontent : JPanel to priorityLevel : int in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": false
-        },
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tresult : JPanel in method package getSinglePromotion(isEmptyState boolean) : JPanel from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "6f8ff1585af02cd6c40c1f2f62defef0c46a4313",
-      "url": "https://github.com/JetBrains/intellij-community/commit/6f8ff1585af02cd6c40c1f2f62defef0c46a4313",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.intellij.diagnostic.CoreAttachmentFactory from Class com.intellij.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.intellij.openapi.diagnostic.AttachmentFactory from Class com.intellij.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(document Document) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(document Document) : Attachment from class com.intellij.diagnostic.CoreAttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(file File, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(file File, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(file Path, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(file Path, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate handleException(t Throwable, path String) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public handleException(t Throwable, path String) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createAttachment(path String, content InputStream, contentLength long, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(path String, content InputStream, contentLength long, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createContext(start Object, more Object...) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createContext(start Object, more Object...) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate LOG : Logger from class com.intellij.diagnostic.AttachmentFactory to private LOG : Logger from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate BIG_FILE_THRESHOLD_BYTES : long from class com.intellij.diagnostic.AttachmentFactory to private BIG_FILE_THRESHOLD_BYTES : long from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
+          "description": "Rename Variable\tideFrameChild : IdeFrame.Child to childFrame : IdeFrame.Child in method public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T from class com.intellij.util.ui.OwnerOptional",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.intellij.diagnostic.CoreAttachmentFactory from class com.intellij.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.intellij.openapi.diagnostic.AttachmentFactory from class com.intellij.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(document Document) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(document Document) : Attachment from class com.intellij.diagnostic.CoreAttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(file File, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(file File, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(file Path, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(file Path, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate handleException(t Throwable, path String) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public handleException(t Throwable, path String) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createAttachment(path String, content InputStream, contentLength long, isBinary boolean) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(path String, content InputStream, contentLength long, isBinary boolean) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createContext(start Object, more Object...) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createContext(start Object, more Object...) : Attachment from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate LOG : Logger from class com.intellij.diagnostic.AttachmentFactory to private LOG : Logger from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate BIG_FILE_THRESHOLD_BYTES : long from class com.intellij.diagnostic.AttachmentFactory to private BIG_FILE_THRESHOLD_BYTES : long from class com.intellij.openapi.diagnostic.AttachmentFactory",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createAttachment(path String, file VirtualFile) : Attachment from class com.intellij.diagnostic.AttachmentFactory to public createAttachment(path String, file VirtualFile) : Attachment from class com.intellij.diagnostic.CoreAttachmentFactory",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "74d1b45ef440cad976148cd6d7abf0daafb3cdb6",
-      "url": "https://github.com/JetBrains/intellij-community/commit/74d1b45ef440cad976148cd6d7abf0daafb3cdb6",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.intellij.java.codeInspection.CastCanBeReplacedWithVariableInspectionTest renamed to com.intellij.java.codeInspection.CastCanBeReplacedWithVariableFixTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isAtRightLocation(expression PsiTypeCastExpression, expressionTextRange TextRange, occurrence PsiExpression) : boolean extracted from private findReplacement(method PsiMethod, castedVar PsiVariable, expression PsiTypeCastExpression) : PsiVariable in class com.intellij.codeInspection.CastCanBeReplacedWithVariableInspection",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.intellij.java.codeInspection.CastCanBeReplacedWithVariableInspectionTest renamed to com.intellij.java.codeInspection.CastCanBeReplacedWithVariableFixTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isAtRightLocation(expression PsiTypeCastExpression, expressionTextRange TextRange, occurrence PsiExpression) : boolean extracted from private findReplacement(method PsiMethod, castedVar PsiVariable, expression PsiTypeCastExpression) : PsiVariable in class com.intellij.codeInspection.CastCanBeReplacedWithVariableInspection",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "e6096466bfcddfa9043964c639d4f31406b40245",
-      "url": "https://github.com/JetBrains/intellij-community/commit/e6096466bfcddfa9043964c639d4f31406b40245",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsNavigatorTest moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyTotalErrorLevel : ErrorLevel to myTotalErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.BaseDependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.BaseDependenciesNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyErrorLevel : ErrorLevel to myErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method public getTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.DependenciesNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependencyNode moved to org.jetbrains.idea.maven.navigator.structure.DependencyNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.GroupNode moved to org.jetbrains.idea.maven.navigator.structure.GroupNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.MavenSimpleNode moved to org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tDisplayKind to MavenProjectsStructure.DisplayKind in method public getDisplayKind() : MavenProjectsStructure.DisplayKind from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsNavigatorPanel moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tchosenFiles : var to myChosenFiles : VirtualFile[] in method public choose(project Project, toSelect VirtualFile...) : VirtualFile @NotNull [] from class com.intellij.openapi.fileChooser.impl.NewFileChooserDialogImpl",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tselectedNodes : List<MavenProjectsStructure.MavenSimpleNode> to selectedNodes : List<MavenSimpleNode> in method public getData(dataId String) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "description": "Change Variable Type\towner : Window to owner : var in method public findOwner(parent Component) : Window from class com.intellij.util.ui.OwnerOptional",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tselectedFiles : var in method public choose(toSelect VirtualFile, callback Consumer<? super List<VirtualFile>>) : void from class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractVirtualFile(selectedNodes List<MavenSimpleNode>) : VirtualFile from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "description": "Change Variable Type\ttitle : String to title : var in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractVirtualFiles(selectedNodes List<MavenSimpleNode>) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\towner : null to dialog : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractNavigatables(selectedNodes List<MavenSimpleNode>) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\towner : null to dialog : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": false
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tnode : MavenProjectsStructure.MavenSimpleNode to node : MavenSimpleNode in method private extractRunSettings(selectedNodes List<MavenSimpleNode>) : RunnerAndConfigurationSettings from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\towner : null to frame : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": false
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tbaseDependenciesNodes : List<MavenProjectsStructure.BaseDependenciesNode> to baseDependenciesNodes : List<BaseDependenciesNode> in method private extractDependencies(selectedNodes List<MavenSimpleNode>) : Set<MavenArtifact> from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.BaseDependenciesNode to each : BaseDependenciesNode in method private extractDependencies(selectedNodes List<MavenSimpleNode>) : Set<MavenArtifact> from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tchildrenErrorLevel : ErrorLevel to childrenErrorLevel : MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : ErrorLevel to result : MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teachLevel : ErrorLevel to eachLevel : MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tlevel : ErrorLevel to level : MavenProjectsStructure.ErrorLevel in method private prepareAttributes(from SimpleTextAttributes) : SimpleTextAttributes from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate NODE_COMPARATOR : Comparator<MavenSimpleNode> from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure to private NODE_COMPARATOR : Comparator<MavenSimpleNode> from class org.jetbrains.idea.maven.navigator.structure.GroupNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tnode : MavenProjectsStructure.MavenSimpleNode to node : MavenSimpleNode in method public MavenProjectsNavigatorPanel(project Project, tree SimpleTree) from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsNavigatorTest moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsNavigatorPanel moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.MavenSimpleNode moved to org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.GroupNode moved to org.jetbrains.idea.maven.navigator.structure.GroupNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.BaseDependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.BaseDependenciesNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.DependenciesNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependencyNode moved to org.jetbrains.idea.maven.navigator.structure.DependencyNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.jetbrains.idea.maven.navigator.MavenProjectsStructure moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyErrorLevel : ErrorLevel to myErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyTotalErrorLevel : ErrorLevel to myTotalErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tDisplayKind to MavenProjectsStructure.DisplayKind in method public getDisplayKind() : MavenProjectsStructure.DisplayKind from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method public getTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tErrorLevel to MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tselectedNodes : List<MavenProjectsStructure.MavenSimpleNode> to selectedNodes : List<MavenSimpleNode> in method public getData(dataId String) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractVirtualFile(selectedNodes List<MavenSimpleNode>) : VirtualFile from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractVirtualFiles(selectedNodes List<MavenSimpleNode>) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.MavenSimpleNode to each : MavenSimpleNode in method private extractNavigatables(selectedNodes List<MavenSimpleNode>) : Object from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tnode : MavenProjectsStructure.MavenSimpleNode to node : MavenSimpleNode in method private extractRunSettings(selectedNodes List<MavenSimpleNode>) : RunnerAndConfigurationSettings from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tbaseDependenciesNodes : List<MavenProjectsStructure.BaseDependenciesNode> to baseDependenciesNodes : List<BaseDependenciesNode> in method private extractDependencies(selectedNodes List<MavenSimpleNode>) : Set<MavenArtifact> from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teach : MavenProjectsStructure.BaseDependenciesNode to each : BaseDependenciesNode in method private extractDependencies(selectedNodes List<MavenSimpleNode>) : Set<MavenArtifact> from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tchildrenErrorLevel : ErrorLevel to childrenErrorLevel : MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : ErrorLevel to result : MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\teachLevel : ErrorLevel to eachLevel : MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tlevel : ErrorLevel to level : MavenProjectsStructure.ErrorLevel in method private prepareAttributes(from SimpleTextAttributes) : SimpleTextAttributes from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tnode : MavenProjectsStructure.MavenSimpleNode to node : MavenSimpleNode in method private getMenuId(nodes Collection<? extends MavenSimpleNode>) : String from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel.MavenProjectsNavigatorPanel.addMouseListener.new PopupHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getGroup() : ProjectsGroupNode from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to public getGroup() : ProjectsGroupNode from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate updateProject() : void from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to private updateProject() : void from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic updateIgnored() : void from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to public updateIgnored() : void from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic updateGoals() : void from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to public updateGoals() : void from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic updateRunConfigurations() : void from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to public updateRunConfigurations() : void from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate makeDescription() : String from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to private makeDescription() : String from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate appendProblems(desc StringBuilder) : void from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to private appendProblems(desc StringBuilder) : void from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate wrappedText(each MavenProjectProblem) : String from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.ProjectNode to private wrappedText(each MavenProjectProblem) : String from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.ProjectNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getProjectPath() : String from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.GoalNode to public getProjectPath() : String from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.GoalNode",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getGoal() : String from class org.jetbrains.idea.maven.navigator.MavenProjectsStructure.GoalNode to public getGoal() : String from class org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure.GoalNode",
-          "developerConfirmation": false
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "2b981e699e644e44484fb0f4c0e28c62c9f86eb5",
-      "url": "https://github.com/JetBrains/intellij-community/commit/2b981e699e644e44484fb0f4c0e28c62c9f86eb5",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(stream InputStream, themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(parentTheme UITheme, data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(stream InputStream, themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(parentTheme UITheme, data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "83b755eae89da18b3be74f396f1f96ff41c6348a",
-      "url": "https://github.com/JetBrains/intellij-community/commit/83b755eae89da18b3be74f396f1f96ff41c6348a",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.jetbrains.jps.incremental.storage.MurmurHashingService renamed to org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte @NotNull [] to long in method package getFileHash(file File) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\thash : byte[] to hash : long in class org.jetbrains.jps.incremental.storage.FileStampStorage.HashStampPerTarget",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<byte[]> to List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyCalculatedHashes : Map<String,byte[]> to myCalculatedHashes : Map<String,Long> in class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<byte[]> to List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte @Nullable [] to Long in method public getStoredFileHash(file File, target BuildTarget<?>) : Long from class org.jetbrains.jps.incremental.storage.FileStampStorage",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\towner : null to frame : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
+          "validation": true
         },
         {
           "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmyBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
-          "developerConfirmation": true
+          "description": "Rename Attribute\tMAC : Type to NATIVE : Type in class com.intellij.openapi.fileChooser.impl.FileChooserUsageCollector.Type",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "c4043846d038c5f95ee5a1b1f992b72737d3c265",
+      "url": "https://github.com/JetBrains/intellij-community/commit/c4043846d038c5f95ee5a1b1f992b72737d3c265",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertTokensAre(input String, expected String...) : void extracted from public test() : void in class com.intellij.openapi.diff.LineTokenizerTest",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertTokensAre(input String, expected String...) : void extracted from public test() : void in class com.intellij.openapi.diff.LineTokenizerTest",
+          "validation": true
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte @NotNull [] to long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<byte[]> to Optional<Long> in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<byte[]> to Optional<Long> in method private getBuildTargetHash(target BuildTarget<?>, context CompileContext) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte @NotNull [] to long in method package getStringHash(hashableString String) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetRootHashes : List<byte[]> to targetRootHashes : List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetRootHashes : List<byte[]> to targetRootHashes : List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfileHash : byte[] to fileHash : Long in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstringHash : byte[] to stringHash : long in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfileHash : byte[] to fileHash : long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstringHash : byte[] to stringHash : long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcalculatedHash : byte[] to calculatedHash : Long in method public visitFile(path Path, attrs BasicFileAttributes) : FileVisitResult from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState.compilationOutputHash.walkFileTree.new SimpleFileVisitor<>",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\thash : byte[] to hash : long in method public visitFile(path Path, attrs BasicFileAttributes) : FileVisitResult from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState.compilationOutputHash.walkFileTree.new SimpleFileVisitor<>",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcalculatedHash : byte[] to calculatedHash : Long in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\thash : byte[] to hash : long in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate assertTokensAre(input String, expected String...) : void extracted from public test() : void in class com.intellij.openapi.diff.LineTokenizerTest",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.jetbrains.jps.incremental.storage.MurmurHashingService renamed to org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
-        },
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tactual : String[] in method private assertTokensAre(input String, expected String...) : void from class com.intellij.openapi.diff.LineTokenizerTest",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "fb44642705a6c7c7d9539889ab6b5f65e532539b",
+      "url": "https://github.com/JetBrains/intellij-community/commit/fb44642705a6c7c7d9539889ab6b5f65e532539b",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyCalculatedHashes : Map<String,byte[]> to myCalculatedHashes : Map<String,Long> in class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<byte[]> to List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<byte[]> to List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<byte[]> to Optional<Long> in method private getBuildTargetHash(target BuildTarget<?>, context CompileContext) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<byte[]> to Optional<Long> in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte[] to long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\thash : byte[] to hash : long in class org.jetbrains.jps.incremental.storage.FileStampStorage.HashStampPerTarget",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmyBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tmyBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte[] to Long in method public getStoredFileHash(file File, target BuildTarget<?>) : Long from class org.jetbrains.jps.incremental.storage.FileStampStorage",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte[] to long in method package getStringHash(hashableString String) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tbyte[] to long in method package getFileHash(file File) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\te : ProcessCanceledException|IndexNotReadyException to e : Throwable in method private processPsiFileRoots(files List<? extends VirtualFile>, totalSize int, alreadyProcessedFiles int, progress ProgressIndicator, localProcessor Processor<? super PsiFile>) : boolean from class com.intellij.psi.impl.search.PsiSearchHelperImpl",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetRootHashes : List<byte[]> to targetRootHashes : List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
+          "description": "Change Variable Type\te : Throwable to e : ProcessCanceledException|IndexNotReadyException in method private processPsiFileRoots(files List<? extends VirtualFile>, totalSize int, alreadyProcessedFiles int, progress ProgressIndicator, localProcessor Processor<? super PsiFile>) : boolean from class com.intellij.psi.impl.search.PsiSearchHelperImpl",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "58c48934323a1eb376c3fb4b30e77d57d00c9f22",
+      "url": "https://github.com/JetBrains/intellij-community/commit/58c48934323a1eb376c3fb4b30e77d57d00c9f22",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tc2 : char to codePoint : int in method public scanWords(processor ScanWordProcessor, chars CharSequence, charArray char @Nullable [], startOffset int, endOffset int, mayHaveEscapes boolean, isWordCodePoint IntPredicate) : void from class com.intellij.psi.impl.cache.impl.id.IdTableBuilding",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetRootHashes : List<byte[]> to targetRootHashes : List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfileHash : byte[] to fileHash : Long in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstringHash : byte[] to stringHash : long in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tfileHash : byte[] to fileHash : long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstringHash : byte[] to stringHash : long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tcalculatedHash : byte[] to calculatedHash : Long in method public visitFile(path Path, attrs BasicFileAttributes) : FileVisitResult from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState.compilationOutputHash.walkFileTree.new SimpleFileVisitor<>",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\thash : byte[] to hash : long in method public visitFile(path Path, attrs BasicFileAttributes) : FileVisitResult from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState.compilationOutputHash.walkFileTree.new SimpleFileVisitor<>",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tbytes : byte[] to hash : long in method public read(in DataInput) : HashStampPerTarget[] from class org.jetbrains.jps.incremental.storage.FileStampStorage.StateExternalizer",
-          "developerConfirmation": false
+          "description": "Change Variable Type\tc2 : char to codePoint : int in method public scanWords(processor ScanWordProcessor, chars CharSequence, charArray char @Nullable [], startOffset int, endOffset int, mayHaveEscapes boolean, isWordCodePoint IntPredicate) : void from class com.intellij.psi.impl.cache.impl.id.IdTableBuilding",
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tbytes : byte[] to hash : long in method public read(in DataInput) : HashStampPerTarget[] from class org.jetbrains.jps.incremental.storage.FileStampStorage.StateExternalizer",
-          "developerConfirmation": false
+          "description": "Rename Variable\tc2 : char to codePoint : int in method public scanWords(processor ScanWordProcessor, chars CharSequence, charArray char @Nullable [], startOffset int, endOffset int, mayHaveEscapes boolean, isWordCodePoint IntPredicate) : void from class com.intellij.psi.impl.cache.impl.id.IdTableBuilding",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tc2 : char to codePoint : int in method public scanWords(processor ScanWordProcessor, chars CharSequence, charArray char @Nullable [], startOffset int, endOffset int, mayHaveEscapes boolean, isWordCodePoint IntPredicate) : void from class com.intellij.psi.impl.cache.impl.id.IdTableBuilding",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "25a0f56ccbbc4d9f0c2b719ebc98732ca6809a31",
-      "url": "https://github.com/JetBrains/intellij-community/commit/25a0f56ccbbc4d9f0c2b719ebc98732ca6809a31",
+      "sha1": "f8819a2580a0cc6c2f6a456a6a5fa83bf2e3cf7e",
+      "url": "https://github.com/JetBrains/intellij-community/commit/f8819a2580a0cc6c2f6a456a6a5fa83bf2e3cf7e",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getRemoteDebugPort() : int extracted from package loadSettings(config JCefAppConfig) : CefSettings in class com.intellij.ui.jcef.SettingsHelper",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tport : int to debuggingPort : int in method package loadSettings(config JCefAppConfig) : CefSettings from class com.intellij.ui.jcef.SettingsHelper",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tport : int to result : int in method private getRemoteDebugPort() : int from class com.intellij.ui.jcef.SettingsHelper",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "50f9f4a51bfffab4050bcc9c8685e9a3ed524e12",
+      "url": "https://github.com/JetBrains/intellij-community/commit/50f9f4a51bfffab4050bcc9c8685e9a3ed524e12",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getNewModuleWizard() : AbstractProjectWizard renamed to private createNewModuleWizard() : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
-        },
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsetter : KmPropertyAccessorAttributes in method private getSetterVisibility(prop KmProperty) : Visibility from class org.jetbrains.jps.dependency.java.KotlinMeta.KmPropertiesDiff",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "1eb4b060f741c4575e56c3435bf1da716477fd26",
+      "url": "https://github.com/JetBrains/intellij-community/commit/1eb4b060f741c4575e56c3435bf1da716477fd26",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getProjectBuilder(wizard AbstractProjectWizard) : ProjectBuilder renamed to private runWizard(wizard AbstractProjectWizard) : ProjectBuilder in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
+          "description": "Rename Method\tpublic getMethodName() : String renamed to protected computeMethodName() : String in class com.intellij.debugger.ui.breakpoints.LineBreakpoint",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "00351758c52d6868495c6ddd70df822248b16ec3",
+      "url": "https://github.com/JetBrains/intellij-community/commit/00351758c52d6868495c6ddd70df822248b16ec3",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate generateTextForInstanceOf(variable PsiLocalVariable, ct CommentTracker, instanceOf PsiInstanceOfExpression, typeElement PsiTypeElement) : StringBuilder extracted from protected applyFix(project Project, element PsiElement, updater ModPsiUpdater) : void in class com.intellij.codeInspection.PatternVariableCanBeUsedInspection.PatternVariableCanBeUsedFix & moved to class com.intellij.codeInspection.PatternVariableCanBeUsedInspection",
+          "validation": true
         },
         {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tinspection : PatternVariableCanBeUsedInspection in method protected configureLocalInspectionTools() : LocalInspectionTool @NotNull [] from class com.intellij.java.codeInspection.PatternVariableCanBeUsedInspectionTest",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "59def660764ebecd5c1e6f9acffdda74472ff714",
+      "url": "https://github.com/JetBrains/intellij-community/commit/59def660764ebecd5c1e6f9acffdda74472ff714",
+      "commonRefactoring": [
+        {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getImportModuleWizard(dialogParent Component) : AbstractProjectWizard renamed to private createImportModuleWizard(dialogParent Component) : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
-        },
+          "description": "Rename Method\tpublic testRenameToIgnored() : void renamed to public testRenameToIgnoredSwitchRule() : void in class com.intellij.java.codeInsight.daemon.RenameToIgnoredFixTest",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tmodules : var in method private addModule(wizard AbstractProjectWizard) : List<Module> from class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
+          "description": "Inline Variable\tanchor : PsiElement in method public findCollisions(element PsiElement, newName String, result List<? super UsageInfo>) : void from class com.intellij.refactoring.rename.JavaUnresolvableLocalCollisionDetector",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getProjectBuilder(wizard AbstractProjectWizard) : ProjectBuilder renamed to private runWizard(wizard AbstractProjectWizard) : ProjectBuilder in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tanchor : PsiElement to variable : PsiVariable in method public findCollisions(element PsiElement, newName String, result List<? super UsageInfo>) : void from class com.intellij.refactoring.rename.JavaUnresolvableLocalCollisionDetector",
+          "validation": false
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getImportModuleWizard(dialogParent Component) : AbstractProjectWizard renamed to private createImportModuleWizard(dialogParent Component) : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getNewModuleWizard() : AbstractProjectWizard renamed to private createNewModuleWizard() : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tanchor : PsiElement to variable : PsiVariable in method public findCollisions(element PsiElement, newName String, result List<? super UsageInfo>) : void from class com.intellij.refactoring.rename.JavaUnresolvableLocalCollisionDetector",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "d49eb04d2f1aab9014c377a75a107a42607730f8",
-      "url": "https://github.com/JetBrains/intellij-community/commit/d49eb04d2f1aab9014c377a75a107a42607730f8",
+      "sha1": "23f17b761ba0b7265cc5a7883a990df7119af645",
+      "url": "https://github.com/JetBrains/intellij-community/commit/23f17b761ba0b7265cc5a7883a990df7119af645",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil from Class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getAttribute(domElement DomElement, attributeName String) : GenericAttributeValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase to public getAttribute(domElement DomElement, attributeName String) : GenericAttributeValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getTag(domElement DomElement, tagName String) : GenericDomValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase to public getTag(domElement DomElement, tagName String) : GenericDomValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil",
-          "developerConfirmation": true
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate canBeMutated(expr PsiExpression) : boolean extracted from private isConstantArray(array PsiVariable) : boolean in class com.siyeh.ig.psiutils.ExpressionUtils",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getAttribute(domElement DomElement, attributeName String) : GenericAttributeValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase to public getAttribute(domElement DomElement, attributeName String) : GenericAttributeValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getTag(domElement DomElement, tagName String) : GenericDomValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase to public getTag(domElement DomElement, tagName String) : GenericDomValue<?> from class org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
-      "sha1": "4e0396a548870210883f4811f32777c516f36177",
-      "url": "https://github.com/JetBrains/intellij-community/commit/4e0396a548870210883f4811f32777c516f36177",
-      "ourApproach": [
+      "sha1": "537ba908c107483e410e46e9093081ad0ebb04b4",
+      "url": "https://github.com/JetBrains/intellij-community/commit/537ba908c107483e410e46e9093081ad0ebb04b4",
+      "commonRefactoring": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.intellij.util.ui.accessibility.AccessibleAnnouncerImpl renamed to com.intellij.util.ui.accessibility.AccessibleAnnouncerUtil",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tvFile : VirtualFile to file : VirtualFile in method protected getElementIcon(flags int) : Icon from class com.intellij.psi.impl.ElementBase",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcomposite : CompositeIcon to o : CompositeIcon in method private is(icon Icon, expected Icon) : boolean from class com.intellij.ide.scopeView.ScopeViewTreeModel",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tretrievable : RetrievableIcon to o : RetrievableIcon in method private is(icon Icon, expected Icon) : boolean from class com.intellij.ide.scopeView.ScopeViewTreeModel",
+          "validation": true
         }
       ],
-      "baseline": [
+      "ourApproach": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.intellij.util.ui.accessibility.AccessibleAnnouncerImpl renamed to com.intellij.util.ui.accessibility.AccessibleAnnouncerUtil",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tpsiFile : PsiFile in method protected getElementIcon(flags int) : Icon from class com.intellij.psi.impl.ElementBase",
+          "validation": true
         }
-      ]
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "a97bd7613ea081db0d8141c0f91228181fbac271",
+      "url": "https://github.com/JetBrains/intellij-community/commit/a97bd7613ea081db0d8141c0f91228181fbac271",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason SourceOfCheck, type InconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason SourceOfCheck, type InconsistencyType) : void in class com.intellij.util.indexing.diagnostic.StubInconsistencyReporterImpl",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType) : void in class com.intellij.psi.stubs.StubInconsistencyReporter",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void in class com.intellij.psi.stubs.StubInconsistencyReporter",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void in class com.intellij.util.indexing.diagnostic.StubInconsistencyReporterImpl",
+          "validation": true
+        }
+      ],
+      "baseline": []
     }
   ]
 }

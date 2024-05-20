@@ -8,7 +8,7 @@
 
 # General Introduction
 
-This is the replication package for TSE2023 submission, containing both tool and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
+This is the replication package for TOSEM2024 submission, containing both tool and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
 
 # Contents of the Replication Package
 
@@ -27,23 +27,17 @@ This is the replication package for TSE2023 submission, containing both tool and
 
 Two scripts (**clone_projects.bat** and **clone_projects.sh**) that can downlow dataset from open-source projects, and the resulting dataset should be taken as the input of the evaluation.
 
-### 2. Entity Matching
-
-All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the experienced developers, are available at the following links:
-
-* [entity matching](data/entity%20matching/)
-
-### 3. Statement Matching
-
-All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the experienced developers, are available at the following links:
-
-* [statement matching](data/statement%20matching/)
-
-### 4. Refactoring Discovery
+### 2. Refactoring Discovery
 
 All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the refactoring experts, are available at the following links:
 
 * [refactoring detection](data/refactoring%20detection/)
+
+### 3. Entity Matching
+
+All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the experienced developers, are available at the following links:
+
+* [entity matching](data/entity%20matching/)
 
 # How to Replicate the Evaluation?
 
@@ -51,7 +45,7 @@ All results reported by the proposed approach and the baseline approach as well 
 
 1. **Clone replicate package to your local file system**
 
-   `git clone https://github.com/lyoubo/ReExtractorPlus.git`
+   `git clone https://github.com/bitselab/ReExtractorPlus.git`
 
    <img src="./data/figures/clone_repository.png" alt="clone repository" width="60%" />
 

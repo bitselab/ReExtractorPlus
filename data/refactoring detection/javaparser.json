@@ -2,1462 +2,567 @@
   "results": [
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "135d3c2209be9c57c3254705066061786477328f",
-      "url": "https://github.com/javaparser/javaparser/commit/135d3c2209be9c57c3254705066061786477328f",
+      "sha1": "37f42462dec876276ca3c7da672906825da77fd0",
+      "url": "https://github.com/javaparser/javaparser/commit/37f42462dec876276ca3c7da672906825da77fd0",
+      "commonRefactoring": [],
       "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tOBJECT_METHODS_SIGNATURES : List<String> to OBJECT_PUBLIC_METHODS_SIGNATURES : List<String> in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate declaredOnObject(m MethodUsage) : boolean renamed to private isPublicMemberOfObject(m MethodUsage) : boolean in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate declaredOnObject(m MethodUsage) : boolean renamed to private isPublicMemberOfObject(m MethodUsage) : boolean in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tOBJECT_METHODS_SIGNATURES : List<String> to OBJECT_PUBLIC_METHODS_SIGNATURES : List<String> in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "3e22ad6bf835e167a8492611e38e153749e3a490",
-      "url": "https://github.com/javaparser/javaparser/commit/3e22ad6bf835e167a8492611e38e153749e3a490",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "ca3ca0cbd889d07977095289d24591f282157bd8",
-      "url": "https://github.com/javaparser/javaparser/commit/ca3ca0cbd889d07977095289d24591f282157bd8",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate considerIndentation(nodeText NodeText, nodeTextIndex int, numberOfCharactersToPreserve int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isEnforcingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isRemovingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": false
-        },
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tpos : int in method private removeExtraCharacters(nodeText NodeText, nodeTextIndex int, extraCharacters int) : int from class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
+          "description": "Inline Variable\terasedParameters : List<ResolvedType> in method private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType> from class com.github.javaparser.resolution.types.ResolvedReferenceType",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate considerIndentation(nodeText NodeText, nodeTextIndex int, numberOfCharactersToPreserve int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isEnforcingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tpos : int in method private removeExtraCharacters(nodeText NodeText, nodeTextIndex int, extraCharacters int) : int from class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "3daaa9d9f7c58640b8162d8fafb893b7d808be3f",
-      "url": "https://github.com/javaparser/javaparser/commit/3daaa9d9f7c58640b8162d8fafb893b7d808be3f",
+      "sha1": "b3c51ccbd030fbaac1c76ea69e2947c26a80c5a1",
+      "url": "https://github.com/javaparser/javaparser/commit/b3c51ccbd030fbaac1c76ea69e2947c26a80c5a1",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.resolution.promotion.ConditionalExprResolver",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.resolution.promotion.NumericConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate asResolvedReferenceType(o Object) : ResolvedReferenceType inlined to public equals(o Object) : boolean in class com.github.javaparser.resolution.types.ResolvedReferenceType",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isLazyType(type Object) : boolean inlined to public equals(o Object) : boolean in class com.github.javaparser.resolution.types.ResolvedReferenceType",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.resolution.promotion.ConditionalExprResolver",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.resolution.promotion.NumericConditionalExprHandler",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler",
-          "developerConfirmation": true
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isLazyType(type Object) : boolean inlined to public equals(o Object) : boolean in class com.github.javaparser.resolution.types.ResolvedReferenceType",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
-      "url": "https://github.com/javaparser/javaparser/commit/d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
+      "sha1": "6a26527b8a0745c53be0523f009a01aa0540cfb3",
+      "url": "https://github.com/javaparser/javaparser/commit/6a26527b8a0745c53be0523f009a01aa0540cfb3",
+      "commonRefactoring": [],
       "ourApproach": [],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tobjectProvider : ObjectProvider to typeSolver : TypeSolver in class com.github.javaparser.symbolsolver.logic.InferenceContext",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tobjectProvider : ObjectProvider to typeSolver : TypeSolver in class com.github.javaparser.symbolsolver.logic.InferenceContext",
-          "developerConfirmation": false
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isEqualRange(range1 Optional<Range>, range2 Optional<Range>) : boolean inlined to private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement> in class com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter.Observer",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "b7375c946214c0301dd83d9fcd98b3a8ca991296",
-      "url": "https://github.com/javaparser/javaparser/commit/b7375c946214c0301dd83d9fcd98b3a8ca991296",
+      "sha1": "dfd8dfb8e8df6f88d869098fcf8884b7f2a8b85d",
+      "url": "https://github.com/javaparser/javaparser/commit/dfd8dfb8e8df6f88d869098fcf8884b7f2a8b85d",
+      "commonRefactoring": [],
       "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tcu : CompilationUnit to compilationUnit : CompilationUnit in class com.github.javaparser.remove.NodeRemovalTest",
-          "developerConfirmation": true
-        },
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tchanged : String in method public test() : void from class com.github.javaparser.printer.lexicalpreservation.Issue3296Test",
-          "developerConfirmation": true
+          "description": "Inline Variable\toType : Optional<Class<N>> in method public findAncestor(predicate Predicate<N>, types Class<N>...) : Optional<N> from class com.github.javaparser.HasParentNode",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tcu : CompilationUnit to compilationUnit : CompilationUnit in class com.github.javaparser.remove.NodeRemovalTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package issue2099AddingStatementAfterTraillingComment1() : void in class com.github.javaparser.printer.lexicalpreservation.TransformationsTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package issue2099AddingStatementAfterTraillingComment2() : void in class com.github.javaparser.printer.lexicalpreservation.TransformationsTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package addingStatement1() : void in class com.github.javaparser.printer.lexicalpreservation.TransformationsTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package addingStatement2() : void in class com.github.javaparser.printer.lexicalpreservation.TransformationsTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package addingStatement3() : void in class com.github.javaparser.printer.lexicalpreservation.TransformationsTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tprotected considerStatement(code String) : void extracted from package testRemoveStatementFromMethodBodyWithLexicalPreservingPrinter() : void in class com.github.javaparser.remove.NodeRemovalTest & moved to class com.github.javaparser.printer.lexicalpreservation.AbstractLexicalPreservingTest",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "8e616cd8366d351950c4cfa4cc9bebf6687a8133",
-      "url": "https://github.com/javaparser/javaparser/commit/8e616cd8366d351950c4cfa4cc9bebf6687a8133",
+      "sha1": "4603287b0f5174ca76f2d3674cf5d292ec815228",
+      "url": "https://github.com/javaparser/javaparser/commit/4603287b0f5174ca76f2d3674cf5d292ec815228",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSymbolSolver to Solver in method public getSymbolSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSymbolSolver to Solver in method protected createSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistEnumTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistInterfaceTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveDeclaredFieldReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveInheritedFieldReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveParameterReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToImportedType() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceUsingQualifiedName() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToClassesInTheSamePackage() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToClassInJavaLang() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToMethod() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveCascadeOfReferencesToMethod() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToMethodCalledOnArrayAccess() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToLambdaParamSimplified() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package accessClassFieldThroughThisWithCompetingSymbolInParentContext() : void from class com.github.javaparser.symbolsolver.resolution.FieldsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToString() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToDeclaredClass() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToInteger() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldOfVariableType() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldOfGenericReferringToVariableType() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_INTERFACE",
-          "description": "Extract Interface\tcom.github.javaparser.resolution.Solver from classes [com.github.javaparser.symbolsolver.resolution.SymbolSolver]",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tfinalRes : Optional<ResolvedType> in method public getType(node Node, solveLambdas boolean) : ResolvedType from class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSymbolSolver to Solver in method public getSymbolSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSymbolSolver to Solver in method protected createSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistClassTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistEnumTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistInterfaceTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveDeclaredFieldReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveInheritedFieldReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveParameterReference() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToImportedType() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceUsingQualifiedName() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToClassesInTheSamePackage() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToClassInJavaLang() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToMethod() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveCascadeOfReferencesToMethod() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToMethodCalledOnArrayAccess() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveReferenceToLambdaParamSimplified() : void from class com.github.javaparser.symbolsolver.resolution.ContextTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package accessClassFieldThroughThisWithCompetingSymbolInParentContext() : void from class com.github.javaparser.symbolsolver.resolution.FieldsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToString() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToDeclaredClass() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldWithGenericTypeToInteger() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldOfVariableType() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tsymbolSolver : SymbolSolver to symbolSolver : Solver in method package resolveFieldOfGenericReferringToVariableType() : void from class com.github.javaparser.symbolsolver.resolution.GenericsResolutionTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_INTERFACE",
-          "description": "Extract Interface\tcom.github.javaparser.resolution.Solver from classes [com.github.javaparser.symbolsolver.resolution.SymbolSolver]",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "9073420016c508b590f3cbfdc0b68bd5f101ec3c",
-      "url": "https://github.com/javaparser/javaparser/commit/9073420016c508b590f3cbfdc0b68bd5f101ec3c",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.model.typesystem.LazyType moved to com.github.javaparser.resolution.model.typesystem.LazyType",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.model.typesystem.NullType moved to com.github.javaparser.resolution.model.typesystem.NullType",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.model.typesystem.LazyType moved to com.github.javaparser.resolution.model.typesystem.LazyType",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.symbolsolver.model.typesystem.NullType moved to com.github.javaparser.resolution.model.typesystem.NullType",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "aee62b1f3a9b2cdee1951db04df21be6e63ca24f",
-      "url": "https://github.com/javaparser/javaparser/commit/aee62b1f3a9b2cdee1951db04df21be6e63ca24f",
+      "sha1": "b73b81a7725c9e2f607886ee8edce7dee8758a4d",
+      "url": "https://github.com/javaparser/javaparser/commit/b73b81a7725c9e2f607886ee8edce7dee8758a4d",
+      "commonRefactoring": [],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate removeExtraCharacters(nodeText NodeText, nodeTextIndex int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate hasOnlyWsBefore(nodeText NodeText, nodeTextIndex int) : boolean extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate resolveParameterDeclaration(resolvedMethodLikeDeclaration ResolvedMethodLikeDeclaration, parameter Parameter) : Optional<ResolvedParameterDeclaration> extracted from public resolveDeclaration(node Node, resultClass Class<T>) : T in class com.github.javaparser.symbolsolver.JavaSymbolSolver",
+          "validation": true
         }
       ],
       "baseline": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate removeExtraCharacters(nodeText NodeText, nodeTextIndex int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate hasOnlyWsBefore(nodeText NodeText, nodeTextIndex int) : boolean extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "97240408d5c48e602a5a277a0af8e98137d32800",
-      "url": "https://github.com/javaparser/javaparser/commit/97240408d5c48e602a5a277a0af8e98137d32800",
-      "ourApproach": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createDefaultVisitor(configuration PrinterConfiguration) : Function<PrinterConfiguration,VoidVisitor<Void>> inlined to private createDefaultVisitor() : Function<PrinterConfiguration,VoidVisitor<Void>> in class com.github.javaparser.printer.DefaultPrettyPrinter",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate createDefaultVisitor(configuration PrinterConfiguration) : Function<PrinterConfiguration,VoidVisitor<Void>> inlined to private createDefaultVisitor() : Function<PrinterConfiguration,VoidVisitor<Void>> in class com.github.javaparser.printer.DefaultPrettyPrinter",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "04d0cb226040a035e08d8be4677e74863d8f18de",
-      "url": "https://github.com/javaparser/javaparser/commit/04d0cb226040a035e08d8be4677e74863d8f18de",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage nullOperandInConditionalExpression() : void renamed to package test_null_operand_in_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage booleanConditionalExpression() : void renamed to package test_boolean_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage numericConditionalExpression() : void renamed to package test_numeric_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage referenceConditionalExpression() : void renamed to package test_reference_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage nullOperandInConditionalExpression() : void renamed to package test_null_operand_in_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage booleanConditionalExpression() : void renamed to package test_boolean_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage numericConditionalExpression() : void renamed to package test_numeric_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage referenceConditionalExpression() : void renamed to package test_reference_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "3f01add3f56546240d08fb3201a9f1143ede54d9",
-      "url": "https://github.com/javaparser/javaparser/commit/3f01add3f56546240d08fb3201a9f1143ede54d9",
-      "ourApproach": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierForbidden renamed to com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage recordUsedAsFieldName() : void renamed to package recordUsedAsFieldNameInClass() : void in class com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate usedAsClassOrInterfaceName(n Node) : boolean renamed to private validUsage(node Node) : boolean in class com.github.javaparser.ast.validator.ReservedKeywordValidatorRecord",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage recordAsClassAndInterfaceIdentifierNotAllowed : Validator from class com.github.javaparser.ast.validator.language_level_validations.Java16Validator to package recordAsClassAndInterfaceIdentifierNotAllowed : Validator from class com.github.javaparser.ast.validator.language_level_validations.Java14Validator",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierForbidden renamed to com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate usedAsClassOrInterfaceName(n Node) : boolean renamed to private validUsage(node Node) : boolean in class com.github.javaparser.ast.validator.ReservedKeywordValidatorRecord",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage recordUsedAsFieldName() : void renamed to package recordUsedAsFieldNameInClass() : void in class com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage recordAsClassAndInterfaceIdentifierNotAllowed : Validator from class com.github.javaparser.ast.validator.language_level_validations.Java16Validator to package recordAsClassAndInterfaceIdentifierNotAllowed : Validator from class com.github.javaparser.ast.validator.language_level_validations.Java14Validator",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "853048dfe3ae630cbf8e0ab487f0dee115e636ce",
-      "url": "https://github.com/javaparser/javaparser/commit/853048dfe3ae630cbf8e0ab487f0dee115e636ce",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserAnonymousClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.resolution.DefaultPackageTest.MyClassDeclaration",
-          "developerConfirmation": true
+          "description": "Extract Method\tprivate resolveParameterDeclaration(parameter Parameter) : Optional<ResolvedParameterDeclaration> extracted from public resolveDeclaration(node Node, resultClass Class<T>) : T in class com.github.javaparser.symbolsolver.JavaSymbolSolver",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserAnonymousClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.resolution.DefaultPackageTest.MyClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tres : List<ResolvedReferenceTypeDeclaration> to res : Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "9e55bc54539d393e1948c8d4a89b1511ed379fad",
-      "url": "https://github.com/javaparser/javaparser/commit/9e55bc54539d393e1948c8d4a89b1511ed379fad",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage record_mustNotAllowNonStaticFields() : void renamed to package record_forbidNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage record_mustAllowStaticFields() : void renamed to package record_permitStaticFields2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels from Class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage basicGrammarCompiles_languageLevelValidation_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package basicGrammarCompiles_languageLevelValidation_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage basicGrammarCompiles_languageLevelValidation_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package basicGrammarCompiles_languageLevelValidation_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage languageLevelValidation_recordAsTypeIdentifier_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package languageLevelValidation_recordAsTypeIdentifier_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage languageLevelValidation_recordAsTypeIdentifier_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package languageLevelValidation_recordAsTypeIdentifier_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage record_mustNotAllowNonStaticFields() : void renamed to package record_forbidNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage record_mustAllowStaticFields() : void renamed to package record_isImplicitlyFinalWithoutExplicit() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tcom.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels from class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage basicGrammarCompiles_languageLevelValidation_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package basicGrammarCompiles_languageLevelValidation_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage basicGrammarCompiles_languageLevelValidation_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package basicGrammarCompiles_languageLevelValidation_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage languageLevelValidation_recordAsTypeIdentifier_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package languageLevelValidation_recordAsTypeIdentifier_permitted(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage languageLevelValidation_recordAsTypeIdentifier_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest to package languageLevelValidation_recordAsTypeIdentifier_forbidden(languageLevel ParserConfiguration.LanguageLevel) : void from class com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "e6060a4498c454e22d7ed1bd1f2e814e34ef89b5",
-      "url": "https://github.com/javaparser/javaparser/commit/e6060a4498c454e22d7ed1bd1f2e814e34ef89b5",
-      "ourApproach": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate addPathToJar(jarInputStream InputStream) : void inlined to public JarTypeSolver(jarInputStream InputStream) in class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate addPathToJar(jarInputStream InputStream) : void inlined to public JarTypeSolver(jarInputStream InputStream) in class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tjarFile : JarFile to jarNotFound : FileNotFoundException in method private addPathToJar(pathToJar String) : void from class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
-          "developerConfirmation": false
+          "description": "Change Variable Type\tcallableDeclaration : CallableDeclaration to parentNode : Optional<Node> in method public resolveDeclaration(node Node, resultClass Class<T>) : T from class com.github.javaparser.symbolsolver.JavaSymbolSolver",
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tjarFile : JarFile to jarNotFound : FileNotFoundException in method private addPathToJar(pathToJar String) : void from class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
-          "developerConfirmation": false
+          "description": "Rename Variable\tcallableDeclaration : CallableDeclaration to parentNode : Optional<Node> in method public resolveDeclaration(node Node, resultClass Class<T>) : T from class com.github.javaparser.symbolsolver.JavaSymbolSolver",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "6d3c852a7ac115d9149dd96a71dee3dfd4c5d91b",
-      "url": "https://github.com/javaparser/javaparser/commit/6d3c852a7ac115d9149dd96a71dee3dfd4c5d91b",
+      "sha1": "2f5b010e5b1421f75c5b86fade578386c257cb59",
+      "url": "https://github.com/javaparser/javaparser/commit/2f5b010e5b1421f75c5b86fade578386c257cb59",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Teste moved to japa.bdd.samples.JavaConceptsEnums.Teste",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Enum moved to japa.bdd.samples.JavaConceptsEnums.Enum",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\tjapa.bdd.samples.JavaConcepts.Ugly moved and renamed to japa.bdd.samples.JavaConceptsUgly",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcu : CompilationUnit to base : CompilationUnit in method package printingExampleJavaConcepts() : void from class com.github.javaparser.printer.ConcreteSyntaxModelAcceptanceTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage ddd() : double from class japa.bdd.samples.JavaConcepts to package ddd() : double from class japa.bdd.samples.JavaConceptsMethods",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.A moved to japa.bdd.samples.JavaConceptsMethods.A",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic JavaConcepts(x int) from class japa.bdd.samples.JavaConcepts to public JavaConceptsInnerClasses(x int) from class japa.bdd.samples.JavaConceptsInnerClasses",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConcepts to private x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConceptsMethods",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.QWE moved to japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createInputStream() : InputStream from class japa.bdd.samples.JavaConcepts to private createInputStream() : InputStream from class japa.bdd.samples.JavaConceptsMethods",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Sexo moved to japa.bdd.samples.JavaConceptsEnums.Sexo",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to int[] in method private doSomething() : int[] from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic parse(file File) : CompilationUnit from class japa.bdd.samples.JavaConcepts to public parse(file File) : CompilationUnit from class japa.bdd.samples.JavaConceptsMethods",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic JavaConcepts(str String) from class japa.bdd.samples.JavaConcepts to public JavaConceptsInnerClasses(str String) from class japa.bdd.samples.JavaConceptsInnerClasses",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbyebye : byte to byebye : byte[] in class japa.bdd.samples.JavaConceptsBase",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic main(args String[]) : void from class japa.bdd.samples.JavaConcepts to public main(args String[]) : void from class japa.bdd.samples.JavaConceptsMethods",
+          "validation": true
+        },
+        {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.symbolsolver.Issue3088Test renamed to com.github.javaparser.symbolsolver.Issue3087Test",
-          "developerConfirmation": true
+          "description": "Rename Class\tjapa.bdd.samples.JavaConcepts renamed to japa.bdd.samples.JavaConceptsBase",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tarr4 : int[] to arr4 : int[][] in class japa.bdd.samples.JavaConceptsBase",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tjapa.bdd.samples.JavaConceptsMethods from class japa.bdd.samples.JavaConcepts",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.symbolsolver.Issue3088Test renamed to com.github.javaparser.symbolsolver.Issue3087Test",
-          "developerConfirmation": true
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Sexo.Sexo_ moved to japa.bdd.samples.JavaConceptsEnums.Sexo.Sexo_",
+          "validation": false
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.JavaConcepts.X moved to japa.bdd.samples.JavaConceptsInnerClasses.JavaConceptsInnerClasses.X",
+          "validation": false
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.JavaConcepts.Y moved to japa.bdd.samples.JavaConceptsInnerClasses.JavaConceptsInnerClasses.Y",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic QWE(x String...) from class japa.bdd.samples.JavaConcepts.QWE to public QWE(x String...) from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic QWE(x int...) from class japa.bdd.samples.JavaConcepts.QWE to public QWE(x int...) from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate doSomething() : int[] from class japa.bdd.samples.JavaConcepts.QWE to private doSomething() : int[] from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "a73aba7b8cef7c52666d25169a3f6e495c65bcd2",
-      "url": "https://github.com/javaparser/javaparser/commit/a73aba7b8cef7c52666d25169a3f6e495c65bcd2",
+      "sha1": "e71c55e3c576c66921ea2c27185117445f580c65",
+      "url": "https://github.com/javaparser/javaparser/commit/e71c55e3c576c66921ea2c27185117445f580c65",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_cannotExtend() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate close(name String) : String renamed to public outputDocument(node Node, name String, writer Writer) : void in class com.github.javaparser.printer.XmlPrinter",
+          "validation": false
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_cannotBeAbstract() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_mustNotAllowNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_mustNotAllowMismatchedComponentAccessorReturnType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammarCompiles() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammar() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_emptyMembers() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitMethods() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_mustAllowStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowComponentAccessorWithMatchingType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to void in method public outputDocument(node Node, name String, writer Writer) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": false
         }
       ],
       "baseline": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammarCompiles() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate attribute(name String, value String) : String renamed to public stringWriterOutput(node Node, name String) : StringWriter in class com.github.javaparser.printer.XmlPrinter",
+          "validation": false
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammar() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to StringWriter in method public stringWriterOutput(node Node, name String) : StringWriter from class com.github.javaparser.printer.XmlPrinter",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "0d909d718d7b11e3081e14aecf28d32976700760",
+      "url": "https://github.com/javaparser/javaparser/commit/0d909d718d7b11e3081e14aecf28d32976700760",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tresult : String in method public toString(configuration PrinterConfiguration) : String from class com.github.javaparser.ast.Node",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "570f1d070e1d5f717530a02178793b507d41a3bf",
+      "url": "https://github.com/javaparser/javaparser/commit/570f1d070e1d5f717530a02178793b507d41a3bf",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tvalue : Node to subNode : Node in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_cannotExtend() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubListNode : Node to subNode : Node in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_cannotBeAbstract() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsubList : NodeList<? extends Node> to nodeList : NodeList<? extends Node> in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tattributeValue : String in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitMethods() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tattributeName : String in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_mustNotAllowNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsubNodeName : String in method public output(node Node, name String, level int, builder StringBuilder) : void from class com.github.javaparser.printer.XmlPrinter",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "24627a59e1f1e39f132cc94900869acaeb4e177c",
+      "url": "https://github.com/javaparser/javaparser/commit/24627a59e1f1e39f132cc94900869acaeb4e177c",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate JAVA_LANG_COMPARABLE : String from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration to public JAVA_LANG_COMPARABLE : String from class com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration",
+          "validation": true
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_mustAllowStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate JAVA_IO_SERIALIZABLE : String from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration to public JAVA_IO_SERIALIZABLE : String from class com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration",
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate JAVA_LANG_COMPARABLE : String from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration to public JAVA_LANG_COMPARABLE : String from class com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration",
+          "validation": false
         },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertCompilationFails(s String) : void extracted from package record_mustNotAllowMismatchedComponentAccessorReturnType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate JAVA_IO_SERIALIZABLE : String from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration to public JAVA_IO_SERIALIZABLE : String from class com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "3296e4ad4e1866a8413fff96bf48734485ea8b1b",
+      "url": "https://github.com/javaparser/javaparser/commit/3296e4ad4e1866a8413fff96bf48734485ea8b1b",
+      "commonRefactoring": [],
+      "ourApproach": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowComponentAccessorWithMatchingType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        },
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsymbolRef : SymbolReference<ResolvedTypeDeclaration> in method public solveType(name String, typeArguments List<ResolvedType>) : SymbolReference<ResolvedTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.contexts.JavaParserTypeDeclarationAdapter",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "dcfd52b307ad2f561e1b9eab668b3f11078352d6",
+      "url": "https://github.com/javaparser/javaparser/commit/dcfd52b307ad2f561e1b9eab668b3f11078352d6",
+      "commonRefactoring": [
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\trecordDeclarations : List<RecordDeclaration> in method package basicGrammar() : void from class com.github.javaparser.ast.body.RecordDeclarationTest",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "e405ceecdc4c3fe0c8b80688f4df4513df3ca50b",
-      "url": "https://github.com/javaparser/javaparser/commit/e405ceecdc4c3fe0c8b80688f4df4513df3ca50b",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tdefaultOptions : Set<ConfigurableOption> to defaultOptions : Set<ConfigurationOption> in class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrinterConfigurationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.printer.configuration.ConfigurableOption renamed to com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrintVisitorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.printer.configuration.ConfigurationOption renamed to com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrinterTest",
-          "developerConfirmation": true
+          "description": "Inline Variable\tnextCsmElementIndex : int in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tother : ConfigurationOption to other : DefaultConfigurationOption in method public equals(o Object) : boolean from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tcsmElementListIterator : ListIterator<CsmElement> to csmElementListIterator : PeekingIterator<CsmElement> in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrintVisitorTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnodeTextIndexOfPreviousElementsIterator : PeekingIterator<Integer> in method public extract(diffElements List<DifferenceElement>) : void from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrinterTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrinterConfigurationTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tdefaultOptions : Set<ConfigurableOption> to defaultOptions : Set<ConfigurationOption> in class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tother : ConfigurationOption to other : DefaultConfigurationOption in method public equals(o Object) : boolean from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_TYPE_DECLARATION_KIND",
-          "description": "Change Type Declaration Kind\tclass to interface in type com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_SUBCLASS",
-          "description": "Extract Subclass\tcom.github.javaparser.printer.configuration.DefaultConfigurationOption from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic equals(o Object) : boolean from class com.github.javaparser.printer.configuration.ConfigurationOption to public equals(o Object) : boolean from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic hashCode() : int from class com.github.javaparser.printer.configuration.ConfigurationOption to public hashCode() : int from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic value(value Object) : ConfigurableOption from class com.github.javaparser.printer.configuration.ConfigurationOption to public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic hasValue() : boolean from class com.github.javaparser.printer.configuration.ConfigurationOption to public hasValue() : boolean from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic asInteger() : Integer from class com.github.javaparser.printer.configuration.ConfigurationOption to public asInteger() : Integer from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic asString() : String from class com.github.javaparser.printer.configuration.ConfigurationOption to public asString() : String from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic asBoolean() : Boolean from class com.github.javaparser.printer.configuration.ConfigurationOption to public asBoolean() : Boolean from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic asValue() : T from class com.github.javaparser.printer.configuration.ConfigurationOption to public asValue() : T from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tprivate cast() : T from class com.github.javaparser.printer.configuration.ConfigurationOption to private cast() : T from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic hasValue() : boolean from class com.github.javaparser.printer.configuration.ConfigurableOption to public hasValue() : boolean from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic asInteger() : Integer from class com.github.javaparser.printer.configuration.ConfigurableOption to public asInteger() : Integer from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic asString() : String from class com.github.javaparser.printer.configuration.ConfigurableOption to public asString() : String from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic asBoolean() : Boolean from class com.github.javaparser.printer.configuration.ConfigurableOption to public asBoolean() : Boolean from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic asValue() : T from class com.github.javaparser.printer.configuration.ConfigurableOption to public asValue() : T from class com.github.javaparser.printer.configuration.ConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic ConfigurationOption(configOption ConfigOption) from class com.github.javaparser.printer.configuration.ConfigurationOption to public DefaultConfigurationOption(configOption ConfigOption) from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
-        },
-        {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic ConfigurationOption(configOption ConfigOption, value Object) from class com.github.javaparser.printer.configuration.ConfigurationOption to public DefaultConfigurationOption(configOption ConfigOption, value Object) from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
-          "developerConfirmation": false
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ti : int to currentTextElementIndex : int in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": false
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "4da1e1ba016b9143cc81cb772249a51570a02c87",
-      "url": "https://github.com/javaparser/javaparser/commit/4da1e1ba016b9143cc81cb772249a51570a02c87",
+      "sha1": "2c0bdef25f0de2330d3efe67450a3787afe705e7",
+      "url": "https://github.com/javaparser/javaparser/commit/2c0bdef25f0de2330d3efe67450a3787afe705e7",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tprinter : PrintableSource to printer : SourcePrinter in class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
-          "developerConfirmation": true
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isCorrespondingElement(textElement TextElement, csmElement CsmElement) : boolean from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor to public isCorrespondingElement(textElement TextElement) : boolean from class com.github.javaparser.printer.concretesyntaxmodel.CsmElement",
+          "validation": false
         },
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.printer.PrettyPrintableTest renamed to com.github.javaparser.printer.DefaultPrettyPrinterTest",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcsmElementListIterator : ListIterator<CsmElement> in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
         }
       ],
-      "baseline": [
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "4b30c8b12a8300eb894d8e99c94a509a6fd9c20f",
+      "url": "https://github.com/javaparser/javaparser/commit/4b30c8b12a8300eb894d8e99c94a509a6fd9c20f",
+      "commonRefactoring": [],
+      "ourApproach": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\tcom.github.javaparser.printer.PrettyPrintableTest renamed to com.github.javaparser.printer.DefaultPrettyPrinterTest",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\toriginalIndex : int in method public extract(diffElements List<DifferenceElement>) : void from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "9eaa832126711aed86a083d319f31d782001d462",
+      "url": "https://github.com/javaparser/javaparser/commit/9eaa832126711aed86a083d319f31d782001d462",
+      "commonRefactoring": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tcom.github.javaparser.printer.lexicalpreservation.Difference.MatchClassification moved to com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor.MatchClassification",
+          "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tprinter : PrintableSource to printer : SourcePrinter in class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
-          "developerConfirmation": true
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate getCorrespondanceBetweenNextOrderAndPreviousOrder(elementsFromPreviousOrder CsmMix, elementsFromNextOrder CsmMix) : Map<Integer,Integer> from class com.github.javaparser.printer.lexicalpreservation.Difference to private getCorrespondanceBetweenNextOrderAndPreviousOrder(elementsFromPreviousOrder CsmMix, elementsFromNextOrder CsmMix) : Map<Integer,Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText, startIndex int, node Node) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.Difference to private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText, startIndex int, node Node) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isCorrespondingElement(textElement TextElement, csmElement CsmElement, node Node) : boolean from class com.github.javaparser.printer.lexicalpreservation.Difference to private isCorrespondingElement(textElement TextElement, csmElement CsmElement, node Node) : boolean from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate isAlmostCorrespondingElement(textElement TextElement, csmElement CsmElement, node Node) : boolean from class com.github.javaparser.printer.lexicalpreservation.Difference to private isAlmostCorrespondingElement(textElement TextElement, csmElement CsmElement, node Node) : boolean from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\tcom.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor from class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "validation": true
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tprivate extractReshuffledDiffElements(diffElements List<DifferenceElement>) : void from class com.github.javaparser.printer.lexicalpreservation.Difference to public extract(diffElements List<DifferenceElement>) : void from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\titerator : ArrayIterator<DifferenceElement> in method public extract(diffElements List<DifferenceElement>) : void from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
         }
       ]
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
-      "sha1": "b08e66263903837d53a688b5d12a758c8cdf167e",
-      "url": "https://github.com/javaparser/javaparser/commit/b08e66263903837d53a688b5d12a758c8cdf167e",
+      "sha1": "f96288a74cde0d0ba4f616619f690ed957481198",
+      "url": "https://github.com/javaparser/javaparser/commit/f96288a74cde0d0ba4f616619f690ed957481198",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic type(type IndentType) : Indentation renamed to public setType(type IndentType) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\talreadyBoundException : ResolvedType to fileNotFoundException : ResolvedType in method public lub_approximation_with_complexe_inheritance() : void from class com.github.javaparser.symbolsolver.resolution.typeinference.LeastUpperBoundTest",
+          "validation": false
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic size(size int) : Indentation renamed to public setSize(size int) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.printer.PrettyPrinterConfiguration.Indentation moved to com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.printer.PrettyPrinterConfiguration.IndentType moved to com.github.javaparser.printer.configuration.Indentation.IndentType",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tunknownGroupException : ResolvedType to uriSyntaxException : ResolvedType in method public lub_approximation_with_complexe_inheritance() : void from class com.github.javaparser.symbolsolver.resolution.typeinference.LeastUpperBoundTest",
+          "validation": false
         }
       ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "0e003e5e2eefed540d4dd51320ce9687f064f07a",
+      "url": "https://github.com/javaparser/javaparser/commit/0e003e5e2eefed540d4dd51320ce9687f064f07a",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tprivate message(cause String, level ParserConfiguration.LanguageLevel) : String from class com.github.javaparser.ast.validator.language_level_validations.Java1_0Validator to public report(node NodeWithTokenRange<?>, message UpgradeJavaMessage, args Object...) : void from class com.github.javaparser.ast.validator.ProblemReporter",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tString to void in method public report(node NodeWithTokenRange<?>, message UpgradeJavaMessage, args Object...) : void from class com.github.javaparser.ast.validator.ProblemReporter",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic toString() : String extracted from private message(cause String, level ParserConfiguration.LanguageLevel) : String in class com.github.javaparser.ast.validator.language_level_validations.Java1_0Validator & moved to class com.github.javaparser.ast.validator.language_level_validations.UpgradeJavaMessage",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "c0edc2244158c70800108bb369fff763bce96d65",
+      "url": "https://github.com/javaparser/javaparser/commit/c0edc2244158c70800108bb369fff763bce96d65",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.printer.PrettyPrinterConfiguration.Indentation moved to com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tcom.github.javaparser.printer.PrettyPrinterConfiguration.IndentType moved to com.github.javaparser.printer.configuration.Indentation.IndentType",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic size(size int) : Indentation renamed to public setSize(size int) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic type(type IndentType) : Indentation renamed to public setType(type IndentType) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": true
-        },
-        {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic getSize() : int extracted from public getIndentSize() : int in class com.github.javaparser.printer.PrettyPrinterConfiguration & moved to class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic getType() : IndentType extracted from private calculateIndentWithAlignTo(column int) : String in class com.github.javaparser.printer.SourcePrinter & moved to class com.github.javaparser.printer.configuration.Indentation",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic getWidth() : int extracted from private calculateIndentWithAlignTo(column int) : String in class com.github.javaparser.printer.SourcePrinter & moved to class com.github.javaparser.printer.configuration.Indentation.IndentType",
-          "developerConfirmation": false
+          "description": "Extract And Move Method\tpublic isAssignableBy(type ResolvedType) : boolean extracted from public isAssignableBy(type ResolvedType) : boolean in class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration & moved to class com.github.javaparser.symbolsolver.javassistmodel.JavassistTypeDeclarationAdapter",
+          "validation": false
         }
       ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "7fcf05b12e24ac852d56378ef1a141a0f4f53d9b",
+      "url": "https://github.com/javaparser/javaparser/commit/7fcf05b12e24ac852d56378ef1a141a0f4f53d9b",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate fixIndentOfMovedNode(nodeText NodeText, index int) : void renamed to private fixIndentOfAddedNode(nodeText NodeText, index int) : void in class com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter.Observer",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tnumberOfIndentationCharacters : int in method private fixIndentOfAddedNode(nodeText NodeText, index int) : void from class com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter.Observer",
+          "validation": true
+        }
+      ],
+      "baseline": []
     }
   ]
 }

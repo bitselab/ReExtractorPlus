@@ -1,0 +1,3807 @@
+{
+  "results": [
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 61,
+            "endColumn": 77
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 64,
+            "endColumn": 80
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 78,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 81,
+            "endColumn": 99
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 293,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 287,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 297,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 291,
+            "endLine": 293,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 298,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 36,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 36,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 19,
+            "endLine": 289,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 19,
+            "endLine": 287,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 56,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 52,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 71,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 66,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 115,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 164,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 153,
+            "endLine": 194,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 209,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 197,
+            "endLine": 242,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 255,
+            "endLine": 306,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 244,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 394,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 298,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 96,
+            "endLine": 469,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 89,
+            "endLine": 456,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 42,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 42,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 69,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 69,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 20,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 21,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.ExpressionLocationEntity",
+            "type": "Class",
+            "name": "ExpressionLocationEntity",
+            "filePath": "Client/src/main/java/utils/ExpressionLocationEntity.java",
+            "startLine": 6,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.ExpressionLocationEntity",
+            "type": "Class",
+            "name": "ExpressionLocationEntity",
+            "filePath": "Client/src/main/java/utils/ExpressionLocationEntity.java",
+            "startLine": 7,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 11,
+            "endLine": 13,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 11,
+            "endLine": 13,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Class",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 8,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Class",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 8,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Field",
+            "name": "classToMethodDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "getClassToMethodDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "getClassToDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 123,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 114,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getMethodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 438,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getMethodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 429,
+            "endLine": 431,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 22,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 22,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 301,
+            "endLine": 303,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 295,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 110,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 33,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 34,
+            "endLine": 268,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 32,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntitySet(methodDeclaration MethodDeclaration)",
+            "type": "Statement",
+            "name": "methodCallList=new ArrayList<String>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 9,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntitySet(methodDeclaration MethodDeclaration)",
+            "type": "Statement",
+            "name": "methodEntityList=new ArrayList<String>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 9,
+            "endColumn": 52
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "MethodEntityVisitor methodEntityVisitor=new MethodEntityVisitor(cu,methodDeclaration,methodGetSetJudge,type,classPath,classBindingToPath,classToMethodDeclaration);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 9,
+            "endColumn": 179
+          },
+          "rightSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "MethodEntityVisitor methodEntityVisitor=new MethodEntityVisitor(cu,methodDeclaration,methodGetSetJudge,type,classPath,classToDeclaration);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 9,
+            "endColumn": 154
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "methodCallList=methodEntityVisitor.getMethodCallList();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "methodEntityList=methodEntityVisitor.getMethodEntityList();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 9,
+            "endColumn": 70
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "result.put(\"MethodCallList\",methodCallList);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "public calculate() : void",
+            "type": "Statement",
+            "name": "result.put(\"methodEntityList\",methodEntityList);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 9,
+            "endColumn": 58
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "if(classBindingToPath.containsKey(typeBinding.getQualifiedName()) && this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToMethodDeclaration.get(typeBinding.getQualifiedName())))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 173,
+            "endLine": 176,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "if(classToDeclaration.containsKey(typeBinding.getQualifiedName()) && this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToDeclaration.get(typeBinding.getQualifiedName())))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 162,
+            "endLine": 165,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,List<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 199,
+            "endLine": 199,
+            "startColumn": 17,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,HashSet<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 17,
+            "endColumn": 90
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "methodCallList.add(className + \".\" + methodBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 13,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "methodEntityList.add(className + \".\" + methodBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 169,
+            "endLine": 169,
+            "startColumn": 13,
+            "endColumn": 77
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(methodSignature,new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 188,
+            "endLine": 188,
+            "startColumn": 21,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(methodSignature,new HashSet<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 176,
+            "endLine": 176,
+            "startColumn": 21,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "set.add(Utils.getMethodSignature(methodBinding));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 194,
+            "endLine": 194,
+            "startColumn": 17,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "set.add(methodSignature);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 17,
+            "endColumn": 42
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "map.get(methodSignature).add(getLocationFromNode(cu,methodSignature,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 201,
+            "endLine": 201,
+            "startColumn": 17,
+            "endColumn": 94
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "set1.add(getLocationFromNode(cu,methodSignature,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 188,
+            "endLine": 188,
+            "startColumn": 17,
+            "endColumn": 74
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "map.put(methodSignature,new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 17,
+            "endColumn": 61
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "map.put(methodSignature,set1);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 189,
+            "endLine": 189,
+            "startColumn": 17,
+            "endColumn": 48
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(Utils.getMethodSignature(methodBinding));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 185,
+            "endLine": 185,
+            "startColumn": 17,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(methodSignature);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 173,
+            "endLine": 173,
+            "startColumn": 17,
+            "endColumn": 67
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(Utils.getMethodSignature(methodBinding));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 17,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(methodSignature);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 174,
+            "endLine": 174,
+            "startColumn": 17,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "list.add(Utils.getMethodSignature(methodBinding));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 195,
+            "endLine": 195,
+            "startColumn": 17,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public visit(node MethodInvocation) : boolean",
+            "type": "Statement",
+            "name": "list.add(methodSignature);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 183,
+            "endLine": 183,
+            "startColumn": 17,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "if(!invocationLocations.get(className).containsKey(variableBinding.getName()))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 233,
+            "endLine": 235,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "if(!invocationLocations.get(className).containsKey(variableName))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,List<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 246,
+            "endLine": 246,
+            "startColumn": 13,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,HashSet<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 235,
+            "endLine": 235,
+            "startColumn": 13,
+            "endColumn": 86
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableWriteList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 17,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableWriteList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 209,
+            "endLine": 209,
+            "startColumn": 17,
+            "endColumn": 71
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 222,
+            "endLine": 222,
+            "startColumn": 17,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 211,
+            "endLine": 211,
+            "startColumn": 17,
+            "endColumn": 70
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 225,
+            "endLine": 225,
+            "startColumn": 13,
+            "endColumn": 79
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 214,
+            "endLine": 214,
+            "startColumn": 13,
+            "endColumn": 66
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 247,
+            "endLine": 247,
+            "startColumn": 13,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableName,set1);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 238,
+            "endLine": 238,
+            "startColumn": 13,
+            "endColumn": 41
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 234,
+            "endLine": 234,
+            "startColumn": 17,
+            "endColumn": 102
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableName,new HashSet<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 17,
+            "endColumn": 87
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "if(!invocationLocations.get(className).containsKey(variableBinding.getName()))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 284,
+            "endLine": 286,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "if(!invocationLocations.get(className).containsKey(variableName))",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 275,
+            "endLine": 277,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,List<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 297,
+            "endLine": 297,
+            "startColumn": 21,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,HashSet<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 287,
+            "endLine": 287,
+            "startColumn": 21,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableWriteList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 271,
+            "endLine": 271,
+            "startColumn": 25,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableWriteList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 261,
+            "endLine": 261,
+            "startColumn": 25,
+            "endColumn": 79
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 273,
+            "endLine": 273,
+            "startColumn": 25,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 263,
+            "endLine": 263,
+            "startColumn": 25,
+            "endColumn": 78
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 276,
+            "endLine": 276,
+            "startColumn": 21,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableReadList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 266,
+            "endLine": 266,
+            "startColumn": 21,
+            "endColumn": 74
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 285,
+            "endLine": 285,
+            "startColumn": 25,
+            "endColumn": 110
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableName,new HashSet<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 276,
+            "endLine": 276,
+            "startColumn": 25,
+            "endColumn": 95
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 298,
+            "endLine": 298,
+            "startColumn": 21,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableName,set1);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 290,
+            "endLine": 290,
+            "startColumn": 21,
+            "endColumn": 49
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,List<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 426,
+            "endLine": 426,
+            "startColumn": 21,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "HashMap<String,HashSet<ExpressionLocationEntity>> map=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 332,
+            "endLine": 332,
+            "startColumn": 21,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 414,
+            "endLine": 414,
+            "startColumn": 25,
+            "endColumn": 110
+          },
+          "rightSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).put(variableBinding.getName(),new HashSet<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 320,
+            "endLine": 320,
+            "startColumn": 25,
+            "endColumn": 108
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableBinding.getName(),new ArrayList<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 427,
+            "endLine": 427,
+            "startColumn": 21,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node SimpleName) : boolean",
+            "type": "Statement",
+            "name": "map.put(variableBinding.getName(),new HashSet<>());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 333,
+            "endLine": 333,
+            "startColumn": 21,
+            "endColumn": 73
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyParser(targetPaths Path[], projectPath Path, repoPath Path, thresholdOfStaticClass double)",
+            "type": "Statement",
+            "name": "classBindingToPath=new HashMap<String,String>();\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyParser(targetPaths Path[], projectPath Path, repoPath Path, thresholdOfStaticClass double)",
+            "type": "Statement",
+            "name": "classToDeclaration=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 9,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public parse() : void",
+            "type": "Statement",
+            "name": "FeatureEnvyCandidate candidate=new FeatureEnvyCandidate(cu,method,path,thresholdOfStaticClass,methodGetSetJudge,classBindingToPath,classToMethodDeclaration);\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 21,
+            "endColumn": 186
+          },
+          "rightSideLocation": {
+            "container": "public parse() : void",
+            "type": "Statement",
+            "name": "FeatureEnvyCandidate candidate=new FeatureEnvyCandidate(cu,method,path,thresholdOfStaticClass,methodGetSetJudge,classToDeclaration);\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 21,
+            "endColumn": 160
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private getBindingToPath() : void",
+            "type": "Statement",
+            "name": "classToMethodDeclaration.putAll(thisClassToMethodDeclaration);\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 17,
+            "endColumn": 79
+          },
+          "rightSideLocation": {
+            "container": "private getBindingToPath() : void",
+            "type": "Statement",
+            "name": "classToDeclaration.putAll(thisClassToDeclaration);\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 80,
+            "endLine": 80,
+            "startColumn": 17,
+            "endColumn": 67
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private getBindingToPath() : void",
+            "type": "Statement",
+            "name": "HashMap<String,HashSet<MethodDeclaration>> thisClassToMethodDeclaration=visitor.getClassToMethodDeclaration();\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 130
+          },
+          "rightSideLocation": {
+            "container": "private getBindingToPath() : void",
+            "type": "Statement",
+            "name": "HashMap<String,TypeDeclaration> thisClassToDeclaration=visitor.getClassToDeclaration();\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 107
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ClassVisitor()",
+            "type": "Statement",
+            "name": "classToMethodDeclaration=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 9,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "public ClassVisitor()",
+            "type": "Statement",
+            "name": "classToDeclaration=new HashMap<>();\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 9,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>>",
+            "type": "Statement",
+            "name": "return classToMethodDeclaration;\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 9,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "public getClassToDeclaration() : HashMap<String,TypeDeclaration>",
+            "type": "Statement",
+            "name": "return classToDeclaration;\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 9,
+            "endColumn": 35
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "methodCallList=new ArrayList<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 133,
+            "endLine": 133,
+            "startColumn": 9,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "methodEntityList=new ArrayList<>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 122,
+            "endLine": 122,
+            "startColumn": 9,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getMethodCallList() : ArrayList<String>",
+            "type": "Statement",
+            "name": "return methodCallList;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 439,
+            "endLine": 439,
+            "startColumn": 9,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "container": "public getMethodEntityList() : ArrayList<String>",
+            "type": "Statement",
+            "name": "return methodEntityList;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 430,
+            "endLine": 430,
+            "startColumn": 9,
+            "endColumn": 33
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, methodDeclarations HashSet<MethodDeclaration>) : boolean",
+            "type": "Statement",
+            "name": "if(isGetMethod(node) || isSetMethod(node))",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 36,
+            "endLine": 38,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean",
+            "type": "Statement",
+            "name": "if(isGetMethod(declaration) || isSetMethod(declaration))",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 42,
+            "endLine": 44,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, methodDeclarations HashSet<MethodDeclaration>) : boolean",
+            "type": "Statement",
+            "name": "for(node: methodDeclarations)",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 35,
+            "endLine": 39,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean",
+            "type": "Statement",
+            "name": "for(declaration: methodDeclarations)",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 38,
+            "endLine": 45,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, methodDeclarations HashSet<MethodDeclaration>) : boolean",
+            "type": "Statement",
+            "name": "set.add(Utils.getMethodSignature(node.resolveBinding()));\n",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 21,
+            "endColumn": 78
+          },
+          "rightSideLocation": {
+            "container": "public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean",
+            "type": "Statement",
+            "name": "set.add(Utils.getMethodSignature(declaration.resolveBinding()));\n",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 21,
+            "endColumn": 85
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntitySet(cu CompilationUnit, methodDeclaration MethodDeclaration, methodGetSetJudge MethodGetSetJudge, path String, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "methodCallList=new ArrayList<String>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 9,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntitySet(cu CompilationUnit, methodDeclaration MethodDeclaration, methodGetSetJudge MethodGetSetJudge, path String, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "methodEntityList=new ArrayList<String>();\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 9,
+            "endColumn": 52
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntitySet(cu CompilationUnit, methodDeclaration MethodDeclaration, methodGetSetJudge MethodGetSetJudge, path String, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "this.classBindingToPath=classBindingToPath;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntitySet(cu CompilationUnit, methodDeclaration MethodDeclaration, methodGetSetJudge MethodGetSetJudge, path String, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "this.classToDeclaration=classToDeclaration;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "MethodEntitySet methodMetric=new MethodEntitySet(this.cu,this.method,this.methodGetSetJudge,sourcePath,classBindingToPath,classToMethodDeclaration);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 119,
+            "endLine": 119,
+            "startColumn": 13,
+            "endColumn": 168
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "MethodEntitySet methodMetric=new MethodEntitySet(this.cu,this.method,this.methodGetSetJudge,sourcePath,classToDeclaration);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 13,
+            "endColumn": 142
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "CouplingBetweenObject cboSource=new CouplingBetweenObject(methodCallHashSet,sourceClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 139,
+            "endLine": 139,
+            "startColumn": 13,
+            "endColumn": 114
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "CouplingBetweenObject cboSource=new CouplingBetweenObject(methodEntitySet,sourceClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 134,
+            "endLine": 134,
+            "startColumn": 13,
+            "endColumn": 112
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "MessagePassingCoupling mpcSource=new MessagePassingCoupling(methodCallList,sourceClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 13,
+            "endColumn": 113
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "MessagePassingCoupling mpcSource=new MessagePassingCoupling(methodEntityList,sourceClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 137,
+            "endLine": 137,
+            "startColumn": 13,
+            "endColumn": 115
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "CouplingBetweenObject cboTarget=new CouplingBetweenObject(methodCallHashSet,targetClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 229,
+            "endLine": 229,
+            "startColumn": 21,
+            "endColumn": 122
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "CouplingBetweenObject cboTarget=new CouplingBetweenObject(methodEntitySet,targetClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 21,
+            "endColumn": 120
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "MessagePassingCoupling mpcTarget=new MessagePassingCoupling(methodCallList,targetClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 21,
+            "endColumn": 121
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "MessagePassingCoupling mpcTarget=new MessagePassingCoupling(methodEntityList,targetClassEntitySet);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 228,
+            "endLine": 228,
+            "startColumn": 21,
+            "endColumn": 123
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(classToMethodDeclaration.containsKey(targetClassName) && !(this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToMethodDeclaration.get(targetClassName))) && !methodBinding.getName().equals(typeBinding.getName()))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 74,
+            "endLine": 78,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "if(classToDeclaration.containsKey(targetClassName) && !(this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToDeclaration.get(targetClassName))) && !methodBinding.getName().equals(typeBinding.getName()))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "InvocationCount.addCountOfMethod(targetClassName,count);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 242,
+            "endLine": 242,
+            "startColumn": 21,
+            "endColumn": 78
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "InvocationCount.addCountOfMethod(targetClassName,1);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 236,
+            "endLine": 236,
+            "startColumn": 21,
+            "endColumn": 74
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "methodCallList=(ArrayList<String>)methodMetric.getMetrics().get(\"MethodCallList\");\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 13,
+            "endColumn": 98
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "methodEntityList=(ArrayList<String>)methodMetric.getMetrics().get(\"methodEntityList\");\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 119,
+            "endLine": 119,
+            "startColumn": 13,
+            "endColumn": 102
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "invocationLocations=(HashMap<String,HashMap<String,List<ExpressionLocationEntity>>>)methodMetric.getMetrics().get(\"InvocationLocations\");\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 13,
+            "endColumn": 155
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "invocationLocations=(HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>>)methodMetric.getMetrics().get(\"InvocationLocations\");\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 127,
+            "endLine": 127,
+            "startColumn": 13,
+            "endColumn": 158
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(static_cnt * 1.0 / (field_cnt + method_cnt) >= thresholdOfStaticClass)",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 100,
+            "endLine": 102,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "if(static_cnt * 1.0 / (field_cnt + method_cnt) >= thresholdOfStaticClass || Flags.isStatic(typeBinding.getModifiers()))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 97,
+            "endLine": 99,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 15,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 227,
+            "endLine": 227,
+            "startColumn": 9,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 217,
+            "endLine": 217,
+            "startColumn": 9,
+            "endColumn": 61
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 228,
+            "endLine": 228,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 218,
+            "endLine": 218,
+            "startColumn": 9,
+            "endColumn": 62
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 230,
+            "endLine": 230,
+            "startColumn": 13,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 13,
+            "endColumn": 60
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 13,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 221,
+            "endLine": 221,
+            "startColumn": 13,
+            "endColumn": 61
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 236,
+            "endLine": 236,
+            "startColumn": 13,
+            "endColumn": 141
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableName).add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 226,
+            "endLine": 226,
+            "startColumn": 13,
+            "endColumn": 115
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 241,
+            "endLine": 241,
+            "startColumn": 13,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 13,
+            "endColumn": 35
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 242,
+            "endLine": 242,
+            "startColumn": 13,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 13,
+            "endColumn": 36
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "map.get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 248,
+            "endLine": 248,
+            "startColumn": 13,
+            "endColumn": 110
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set1.add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 13,
+            "endColumn": 67
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 278,
+            "endLine": 278,
+            "startColumn": 17,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 269,
+            "endLine": 269,
+            "startColumn": 17,
+            "endColumn": 69
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 279,
+            "endLine": 279,
+            "startColumn": 17,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 17,
+            "endColumn": 70
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 281,
+            "endLine": 281,
+            "startColumn": 21,
+            "endColumn": 81
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 272,
+            "endLine": 272,
+            "startColumn": 21,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 282,
+            "endLine": 282,
+            "startColumn": 21,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 273,
+            "endLine": 273,
+            "startColumn": 21,
+            "endColumn": 69
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 287,
+            "endLine": 287,
+            "startColumn": 21,
+            "endColumn": 149
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableName).add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 278,
+            "endLine": 278,
+            "startColumn": 21,
+            "endColumn": 123
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 292,
+            "endLine": 292,
+            "startColumn": 21,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 283,
+            "endLine": 283,
+            "startColumn": 21,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 293,
+            "endLine": 293,
+            "startColumn": 21,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 284,
+            "endLine": 284,
+            "startColumn": 21,
+            "endColumn": 44
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "map.get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 299,
+            "endLine": 299,
+            "startColumn": 21,
+            "endColumn": 118
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set1.add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 289,
+            "endLine": 289,
+            "startColumn": 21,
+            "endColumn": 75
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "this.classBindingToPath=classBindingToPath;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 130,
+            "endLine": 130,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "this.classToDeclaration=classToDeclaration;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodDeclaration) : boolean",
+            "type": "Statement",
+            "name": "if(methodBinding == null)",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 9,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "public visit(node TypeDeclaration) : boolean",
+            "type": "Statement",
+            "name": "if(node.resolveBinding() == null)",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 33,
+            "endLine": 35,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node MethodDeclaration) : boolean",
+            "type": "Statement",
+            "name": "return true;\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "container": "public visit(node TypeDeclaration) : boolean",
+            "type": "Statement",
+            "name": "return true;\n",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "methodCallList=new ArrayList<String>();\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 13,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "methodEntityList=new ArrayList<>();\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 13,
+            "endColumn": 50
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 289,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationSet",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 283,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getInvocationLocations() : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>>",
+            "type": "Statement",
+            "name": "return invocationLocations;\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 290,
+            "endLine": 290,
+            "startColumn": 9,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "container": "public getInvocationSet() : HashMap<String,HashSet<String>>",
+            "type": "Statement",
+            "name": "return invocationSet;\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 284,
+            "endLine": 284,
+            "startColumn": 9,
+            "endColumn": 30
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 227,
+            "endLine": 227,
+            "startColumn": 9,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 13,
+            "endColumn": 60
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 227,
+            "endLine": 227,
+            "startColumn": 9,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 13,
+            "endColumn": 36
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 228,
+            "endLine": 228,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 221,
+            "endLine": 221,
+            "startColumn": 13,
+            "endColumn": 61
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 228,
+            "endLine": 228,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 13,
+            "endColumn": 35
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 230,
+            "endLine": 230,
+            "startColumn": 13,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableName).add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 226,
+            "endLine": 226,
+            "startColumn": 13,
+            "endColumn": 115
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 13,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set1.add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 13,
+            "endColumn": 67
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 236,
+            "endLine": 236,
+            "startColumn": 13,
+            "endColumn": 141
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 218,
+            "endLine": 218,
+            "startColumn": 9,
+            "endColumn": 62
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 241,
+            "endLine": 241,
+            "startColumn": 13,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 217,
+            "endLine": 217,
+            "startColumn": 9,
+            "endColumn": 61
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "map.get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 248,
+            "endLine": 248,
+            "startColumn": 13,
+            "endColumn": 110
+          },
+          "rightSideLocation": {
+            "container": "public visit(node FieldAccess) : boolean",
+            "type": "Statement",
+            "name": "methodEntityList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 216,
+            "endLine": 216,
+            "startColumn": 9,
+            "endColumn": 62
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 278,
+            "endLine": 278,
+            "startColumn": 17,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 272,
+            "endLine": 272,
+            "startColumn": 21,
+            "endColumn": 68
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 278,
+            "endLine": 278,
+            "startColumn": 17,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "list.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 284,
+            "endLine": 284,
+            "startColumn": 21,
+            "endColumn": 44
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 279,
+            "endLine": 279,
+            "startColumn": 17,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 273,
+            "endLine": 273,
+            "startColumn": 21,
+            "endColumn": 69
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 279,
+            "endLine": 279,
+            "startColumn": 17,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 283,
+            "endLine": 283,
+            "startColumn": 21,
+            "endColumn": 43
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationSet.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 281,
+            "endLine": 281,
+            "startColumn": 21,
+            "endColumn": 81
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableName).add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 278,
+            "endLine": 278,
+            "startColumn": 21,
+            "endColumn": 123
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationList.get(className).add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 282,
+            "endLine": 282,
+            "startColumn": 21,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set1.add(getLocationFromNode(cu,variableName,node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 289,
+            "endLine": 289,
+            "startColumn": 21,
+            "endColumn": 75
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "invocationLocations.get(className).get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 287,
+            "endLine": 287,
+            "startColumn": 21,
+            "endColumn": 149
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "variableCallList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 17,
+            "endColumn": 70
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "set.add(variableBinding.getName());\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 292,
+            "endLine": 292,
+            "startColumn": 21,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntitySet.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 269,
+            "endLine": 269,
+            "startColumn": 17,
+            "endColumn": 69
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "map.get(variableBinding.getName()).add(getLocationFromNode(cu,variableBinding.getName(),node));\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 299,
+            "endLine": 299,
+            "startColumn": 21,
+            "endColumn": 118
+          },
+          "rightSideLocation": {
+            "container": "public visit(node QualifiedName) : boolean",
+            "type": "Statement",
+            "name": "methodEntityList.add(className + \".\" + variableName);\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 268,
+            "endLine": 268,
+            "startColumn": 17,
+            "endColumn": 70
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "this.classToMethodDeclaration=classToMethodDeclaration;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 131,
+            "endLine": 131,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public MethodEntityVisitor(cu CompilationUnit, method MethodDeclaration, methodGetSetJudge MethodGetSetJudge, type String, classPath String, classToDeclaration HashMap<String,TypeDeclaration>)",
+            "type": "Statement",
+            "name": "this.classToDeclaration=classToDeclaration;\n",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getClassToMethodDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 98,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getClassToDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 91,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>>",
+            "type": "Statement",
+            "name": "return classToMethodDeclaration;\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 9,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "public getClassToDeclaration() : HashMap<String,TypeDeclaration>",
+            "type": "Statement",
+            "name": "return classToDeclaration;\n",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 92,
+            "endLine": 92,
+            "startColumn": 9,
+            "endColumn": 35
+          },
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "3fe2137773810e2cba622467e0c78429b1383c65",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/3fe2137773810e2cba622467e0c78429b1383c65",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 34,
+            "endLine": 266,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 34,
+            "endLine": 268,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 303,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Method",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 20,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Method",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 20,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Class",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 13,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Class",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 13,
+            "endLine": 107,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 27,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 30,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 31,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 36,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 231,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 19,
+            "endLine": 289,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 28,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 19,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 20,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 16,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 16,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(validTargetClass.contains(targetClassBinding.getQualifiedName()))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 217,
+            "endLine": 240,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(validTargetClass.contains(targetClassName))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 218,
+            "endLine": 244,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "targetNames.add(targetClassBinding.getQualifiedName());\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 222,
+            "endLine": 222,
+            "startColumn": 21,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "targetNames.add(targetClassName);\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 223,
+            "endLine": 223,
+            "startColumn": 21,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected detect() : void",
+            "type": "Statement",
+            "name": "allCandidatesFeatures.add(candidate.getFeatures());\n",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 13,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "protected detect() : void",
+            "type": "Statement",
+            "name": "allCandidatesFeatures.add(features);\n",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 17,
+            "endColumn": 53
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "String projectPath=\"D:\\\\workspace\\\\HWProjectSpace\\\\spring-cloud-huawei\\\\spring-cloud-huawei-config\";\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 13,
+            "endColumn": 115
+          },
+          "rightSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "String projectPath=\"D:\\\\Documents\\\\Projects\\\\guava-master\\\\guava\\\\src\\\\com\\\\google\\\\common\\\\util\";\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 13,
+            "endColumn": 113
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "String targetFolder=\"D:\\\\workspace\\\\HWProjectSpace\\\\spring-cloud-huawei\\\\spring-cloud-huawei-config\\\\\";\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 13,
+            "endColumn": 118
+          },
+          "rightSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "String targetFolder=\"D:\\\\Documents\\\\Projects\\\\guava-master\\\\guava\\\\src\\\\com\\\\google\\\\common\\\\util\";\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 13,
+            "endColumn": 114
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "JSONObject object=godClassSolution.calculateFixSolution(\"com.huaweicloud.config.ConfigService\",information);\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 17,
+            "endColumn": 128
+          },
+          "rightSideLocation": {
+            "container": "public main(args String[]) : void",
+            "type": "Statement",
+            "name": "JSONObject object=godClassSolution.calculateFixSolution(\"artofillusion.translators.TextureImageExporter\",information);\n",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 17,
+            "endColumn": 138
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "protected detect() : void",
+            "type": "Statement",
+            "name": "for(candidate: candidates)",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 45,
+            "endLine": 47,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "protected detect() : void",
+            "type": "Statement",
+            "name": "while(iterator.hasNext())",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 54,
+            "endLine": 89,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "6b36b0e79d400342a4567d0fb0f64bc9b668a8ac",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/6b36b0e79d400342a4567d0fb0f64bc9b668a8ac",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 33,
+            "endLine": 255,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 34,
+            "endLine": 266,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 16,
+            "endLine": 292,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 303,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(StringUtils.isEmpty(targetClassName))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(StringUtils.isEmpty(targetClassName) || targetClassName.toLowerCase().endsWith(\"utils\") || targetClassName.toLowerCase().endsWith(\"util\"))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 60,
+            "endLine": 63,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(classToMethodDeclaration.containsKey(targetClassName) && !(this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToMethodDeclaration.get(targetClassName))))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(classToMethodDeclaration.containsKey(targetClassName) && !(this.methodGetSetJudge.judgeGetAndSet(typeBinding,methodBinding,classToMethodDeclaration.get(targetClassName))) && !methodBinding.getName().equals(typeBinding.getName()))",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 74,
+            "endLine": 78,
+            "startColumn": 21,
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(static_cnt * 1.0 / sum >= thresholdOfStaticClass)",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 89,
+            "endLine": 91,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "if(static_cnt * 1.0 / (field_cnt + method_cnt) >= thresholdOfStaticClass)",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 100,
+            "endLine": 102,
+            "startColumn": 17,
+            "endColumn": 18
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "int sum=methodBindings.length + variableBindings.length;\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 17,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>)",
+            "type": "Statement",
+            "name": "int field_cnt=0;\n",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 17,
+            "endColumn": 35
+          },
+          "validation": false
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

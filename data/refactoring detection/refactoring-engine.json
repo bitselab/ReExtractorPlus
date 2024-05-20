@@ -1,1452 +1,1173 @@
 {
   "results": [
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
-      "url": "***/commit/4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
-      "ourApproach": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsetOfSourceClass : HashMap<String,List<ExpressionLocationEntity>> to setOfSourceClass : HashMap<String,HashSet<ExpressionLocationEntity>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getInvocationLocations() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,List<ExpressionLocationEntity>> to HashMap<String,HashSet<ExpressionLocationEntity>> in method public getSetOfSourceClass() : HashMap<String,HashSet<ExpressionLocationEntity>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getSetOfTargetClasses() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "commonRefactoring": [
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "description": "Change Attribute Type\tsetOfSourceClass : HashMap<String,List<ExpressionLocationEntity>> to setOfSourceClass : HashMap<String,HashSet<ExpressionLocationEntity>> in class candidate.FeatureEnvyCandidate",
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tsetOfTargetClasses : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to setOfTargetClasses : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHashMap<String,List<ExpressionLocationEntity>> to HashMap<String,HashSet<ExpressionLocationEntity>> in method public getSetOfSourceClass() : HashMap<String,HashSet<ExpressionLocationEntity>> from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getSetOfTargetClasses() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntitySet",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntitySet",
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getMethodCallList() : ArrayList<String> renamed to public getMethodEntityList() : ArrayList<String> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
+          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntityVisitor",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node MethodInvocation) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node SimpleName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnode : MethodDeclaration to declaration : MethodDeclaration in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tvariableName : String in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
+          "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tvariableName : String in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node SimpleName) : boolean from class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getInvocationLocations() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnode : MethodDeclaration to declaration : MethodDeclaration in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean from class utils.MethodGetSetJudge",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class visitor.ClassVisitor",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tclassBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
+          "validation": true
         },
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tmethodBinding : IMethodBinding in method public visit(node MethodDeclaration) : boolean from class visitor.ClassVisitor",
-          "developerConfirmation": false
+          "validation": false
         }
       ],
       "baseline": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getInvocationLocations() : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> renamed to public getInvocationSet() : HashMap<String,HashSet<String>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsetOfSourceClass : HashMap<String,List<ExpressionLocationEntity>> to setOfSourceClass : HashMap<String,HashSet<ExpressionLocationEntity>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsetOfTargetClasses : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to setOfTargetClasses : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,List<ExpressionLocationEntity>> to HashMap<String,HashSet<ExpressionLocationEntity>> in method public getSetOfSourceClass() : HashMap<String,HashSet<ExpressionLocationEntity>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getSetOfTargetClasses() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashSet<String>> in method public getInvocationSet() : HashMap<String,HashSet<String>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": false
+          "validation": true
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tset1 : HashSet<ExpressionLocationEntity> in method public visit(node MethodInvocation) : boolean from class metrics.MethodEntityVisitor",
+          "validation": false
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tset1 : HashSet<ExpressionLocationEntity> in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
+          "validation": false
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntitySet",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getMethodCallList() : ArrayList<String> renamed to public getMethodEntityList() : ArrayList<String> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getInvocationLocations() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tmethodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tset1 : HashSet<ExpressionLocationEntity> in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
+          "validation": false
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
-          "developerConfirmation": false
+          "validation": false
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tHashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class parser.FeatureEnvyParser",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tclassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node MethodInvocation) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tmap : HashMap<String,List<ExpressionLocationEntity>> to map : HashMap<String,HashSet<ExpressionLocationEntity>> in method public visit(node SimpleName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tthisClassToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to thisClassToDeclaration : HashMap<String,TypeDeclaration> in method private getBindingToPath() : void from class parser.FeatureEnvyParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnode : MethodDeclaration to declaration : MethodDeclaration in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tmethodDeclarations : HashSet<MethodDeclaration> to methodDeclarations : MethodDeclaration[] in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, typeDeclaration TypeDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvariableName : String in method public visit(node FieldAccess) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvariableName : String in method public visit(node QualifiedName) : boolean from class metrics.MethodEntityVisitor",
-          "developerConfirmation": true
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "e7c003482d42ad32f5fbade89f01bfe68cae8235",
-      "url": "***/commit/e7c003482d42ad32f5fbade89f01bfe68cae8235",
-      "ourApproach": [
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "3fe2137773810e2cba622467e0c78429b1383c65",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/3fe2137773810e2cba622467e0c78429b1383c65",
+      "commonRefactoring": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isStaticClass(typeDeclaration TypeDeclaration) : boolean renamed to public getStaticRadio(typeDeclaration TypeDeclaration) : double in class utils.ClassJudge",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\ttargetClassName : String in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>) from class candidate.FeatureEnvyCandidate",
+          "validation": true
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to double in method public getStaticRadio(typeDeclaration TypeDeclaration) : double from class utils.ClassJudge",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfeatures : HashMap<String,Object> in method protected detect() : void from class detector.FeatureEnvyDetector",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\titerator : Iterator<FeatureEnvyCandidate> in method protected detect() : void from class detector.FeatureEnvyDetector",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "6b36b0e79d400342a4567d0fb0f64bc9b668a8ac",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/6b36b0e79d400342a4567d0fb0f64bc9b668a8ac",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsum : int to field_cnt : int in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>) from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "6331f105ba355a046c5a795da5058d368eb88699",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/6331f105ba355a046c5a795da5058d368eb88699",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tclassBinding : ITypeBinding in method public isSetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmethodBinding : IMethodBinding in method public isSetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "c5cd9013a028b92fa8af54d74c15e1955d1d427b",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/c5cd9013a028b92fa8af54d74c15e1955d1d427b",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmethods : MethodDeclaration[] in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "c50c8c404e74220429882b86211d6db023c08990",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/c50c8c404e74220429882b86211d6db023c08990",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tnewCouping : JSONObject to couping : JSONObject in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isStaticClass(typeDeclaration TypeDeclaration) : boolean renamed to public getStaticRadio(typeDeclaration TypeDeclaration) : double in class utils.ClassJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to double in method public getStaticRadio(typeDeclaration TypeDeclaration) : double from class utils.ClassJudge",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcouping : JSONArray to couping : JSONObject in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "02e04659012da6abe2099203c247f7808fc38a58",
-      "url": "***/commit/02e04659012da6abe2099203c247f7808fc38a58",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "d769c209582a0f631757014c377078ca825a52cf",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/d769c209582a0f631757014c377078ca825a52cf",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to void in method public CalcNoUsedVariables(m int, n int, variables VariableDeclaration[]) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to void in method public CalcNoUsedVariables(m int, n int, variables VariableDeclaration[]) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "2538c9f8bd8415890d1dd1ec4c9012291747e177",
-      "url": "***/commit/2538c9f8bd8415890d1dd1ec4c9012291747e177",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\ttotalCoupingMap : HashMap<String,ArrayList<String>> to methodInvocationEntityMap : HashMap<String,Set<String>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttotalCoupingMap : HashMap<String,ArrayList<String>> to methodInvocationEntityMap : HashMap<String,Set<String>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tvariableCallList : ArrayList<String> to variableCallSet : HashSet<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tentry : Map.Entry<String,ArrayList<String>> to entry : Map.Entry<String,ArrayList<ArrayList<String>>> in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tvariableCallList : ArrayList<String> to variableCallSet : HashSet<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": true
         }
       ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "fb7de096cd86b93de14ea399cc95f10deb26d6d8",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/fb7de096cd86b93de14ea399cc95f10deb26d6d8",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttotalCoupingMap : HashMap<String,ArrayList<String>> to totalCoupingMap : HashMap<String,ArrayList<ArrayList<String>>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcandidateBiggestClassIndex : int in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tentry : Map.Entry<String,ArrayList<String>> to entry : Map.Entry<String,ArrayList<ArrayList<String>>> in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "476262a34dd2377bf7b7ff61a23870c82d02f797",
-      "url": "***/commit/476262a34dd2377bf7b7ff61a23870c82d02f797",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void renamed to private calculateGetterSetterIsBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void renamed to private calculateGetterSetterIsBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "c647eb24c82a9ad4e9b46a789f791281e132a5ac",
-      "url": "***/commit/c647eb24c82a9ad4e9b46a789f791281e132a5ac",
-      "ourApproach": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvariableVisitedTime : int[] to variableInvokingTime : int[] in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tmaxConstructNumber : int to maxConstructNumber : double in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": true
         },
         {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvariableCallList : ArrayList<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tvariableVisitedTime : int[] to variableInvokingTime : int[] in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tvariableCallList : ArrayList<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmaxEntityNumber : int to maxEntityNumber : double in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "ce39eb66b07a087c922f5bf16b4503ccf2e6ed19",
-      "url": "***/commit/ce39eb66b07a087c922f5bf16b4503ccf2e6ed19",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "5df95b7168180d76edb25b001f9734d7fd69400a",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/5df95b7168180d76edb25b001f9734d7fd69400a",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tinfo : HashMap<String,Object> to features : HashMap<String,Object> in method public postRetrainData(candidateData JSONObject, label boolean) : String from class detector.GodClassDetector",
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tpassword : String to update : String in method public retrainFE(FeatureEnvyData HashMap<String,Object>) : String from class bit.se.codesmell.controller.TrainingController",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "521d85539cb0a72449cbf836dc391bde9028440c",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/521d85539cb0a72449cbf836dc391bde9028440c",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJSONArray to JSONObject in method public getFeatureEnvyList() : JSONObject from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsize : int to newClassEntities : ArrayList<String> in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsize : int to newClassEntities : ArrayList<String> in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": false
         }
       ],
       "baseline": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJSONArray to JSONObject in method public getFeatureEnvyList() : JSONObject from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tbiggestClass : int to maxEntityNumber : int in method public calculateFixSolution(targetQualifiedName String, godClassInfo JSONObject) : JSONObject from class detector.GodClassDetector",
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "62667c1e580775eeb1f331ce8b16559189b9f73e",
-      "url": "***/commit/62667c1e580775eeb1f331ce8b16559189b9f73e",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tbit.se.codesmell.controller.TrainingController from Class bit.se.codesmell.controller.PredictionController",
-          "developerConfirmation": true
-        },
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/62667c1e580775eeb1f331ce8b16559189b9f73e",
+      "commonRefactoring": [
         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic retrainGC(GodClassData HashMap<String,Object>) : String from class bit.se.codesmell.controller.PredictionController to public retrainGC(GodClassData HashMap<String,Object>) : String from class bit.se.codesmell.controller.TrainingController",
-          "developerConfirmation": false
-        }
-      ],
-      "baseline": [
+          "validation": true
+        },
         {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\tbit.se.codesmell.controller.TrainingController from class bit.se.codesmell.controller.PredictionController",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic retrainGC(GodClassData HashMap<String,Object>) : String from class bit.se.codesmell.controller.PredictionController to public retrainGC(GodClassData HashMap<String,Object>) : String from class bit.se.codesmell.controller.TrainingController",
-          "developerConfirmation": false
-        },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic retrainFE(FeatureEnvyData HashMap<String,Object>) : String from class bit.se.codesmell.controller.PredictionController to public retrainFE(FeatureEnvyData HashMap<String,Object>) : String from class bit.se.codesmell.controller.TrainingController",
-          "developerConfirmation": false
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
-      "url": "***/commit/718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "fd0fe9e31f1d227336538976f1edaac75bb95b19",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/fd0fe9e31f1d227336538976f1edaac75bb95b19",
+      "commonRefactoring": [],
       "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tstatus : String to jsonResponse : String in method public postRetrainData(candidateData JSONObject, label boolean) : String from class detector.GodClassDetector",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
+      "commonRefactoring": [
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void extracted from private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tnodes : ArrayList<Integer> to cluster : ArrayList<Integer> in method private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcluster_i : int in method private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void from class detector.GodClassRefactorSolution",
+          "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tm : int in method private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        }
-      ],
-      "baseline": [
+          "description": "Extract Variable\tcluster_i : int in method private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void from class detector.GodClassRefactorSolution",
+          "validation": true
+        },
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void extracted from private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcluster_j : int in method private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void from class detector.GodClassRefactorSolution",
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
-      "url": "***/commit/7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "8fbbf4d8540b1f02c326d0ee215c854ef312ffd2",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/8fbbf4d8540b1f02c326d0ee215c854ef312ffd2",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tsourcepathEntries : String[] to sourcesEntries : String[] in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tgetSetMap : Map<String,Set<String>> to getSetMap : HashMap<String,HashSet<String>> in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<String> to HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tset : Set<String> to set : HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tindex : int in method private parseSourceEntries() : void from class parser.ProjectsParser",
+          "validation": true
         }
       ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "7e254ca5fff08bb7d28937877f33296975584d7e",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/7e254ca5fff08bb7d28937877f33296975584d7e",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcurMethodDeclaration : HashSet<MethodDeclaration> to set : HashSet<MethodDeclaration> in method public visit(node MethodDeclaration) : boolean from class visitor.ClassVisitor",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tqualifiedName : String to targetClassName : String in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, sourcePath String, thresholdOfStaticClass double, methodGetSetJudge MethodGetSetJudge, classBindingToPath HashMap<String,String>, classToMethodDeclaration HashMap<String,HashSet<MethodDeclaration>>) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "622c8edc9c887174a35ebb2751613da06e40898b",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/622c8edc9c887174a35ebb2751613da06e40898b",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tp1 : int to nodeId : int in method private updateDistance(index int, distance ArrayList<ArrayList<Double>>, cluster ArrayList<Integer>) : void from class detector.GodClassRefactorSolution",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "commonRefactoring": [
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tgetSetMap : Map<String,Set<String>> to getSetMap : HashMap<String,HashSet<String>> in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<String> to HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tsourcepathEntries : String[] to sourcesEntries : String[] in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tset : Set<String> to set : HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSet<String> to HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tsourcepathEntries : String[] to sourcesEntries : String[] in class utils.MethodGetSetJudge",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tset : Set<String> to set : HashSet<String> in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, classPath String) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "def6a12a271619fe5933bdfdd7b20445b49f1d79",
-      "url": "***/commit/def6a12a271619fe5933bdfdd7b20445b49f1d79",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<JSONObject> to JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : List<JSONObject> to result : JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
-          "developerConfirmation": true
+          "validation": true
         }
       ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tclassName : String in method public judgeGetAndSet(typeBinding ITypeBinding, methodBinding IMethodBinding, classPath String) : boolean from class utils.MethodGetSetJudge",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "6ecdda30677ea29349875c4973409c1d168043b4",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/6ecdda30677ea29349875c4973409c1d168043b4",
+      "commonRefactoring": [],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<JSONObject> to JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : List<JSONObject> to result : JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcodeLen : int in method private getVariableLOC(variable VariableDeclaration) : int from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "3059b67b6844d6479c39f84b828b13bd6fac2363",
-      "url": "***/commit/3059b67b6844d6479c39f84b828b13bd6fac2363",
-      "ourApproach": [
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/3059b67b6844d6479c39f84b828b13bd6fac2363",
+      "commonRefactoring": [
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tm : HashMap<Integer,Integer> to clustersLOC : Map<Integer,Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tm : HashMap<Integer,Integer> to clustersLOC : Map<Integer,Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tt : ArrayList<Integer> to nodes : ArrayList<Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tk : int to p1 : int in method private updateDistance(index int, distance ArrayList<ArrayList<Double>>, clusters ArrayList<Integer>) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tclasses : int to n : int in method private updateDistance(index int, distance ArrayList<ArrayList<Double>>, clusters ArrayList<Integer>) : void from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate findMin(distance ArrayList<ArrayList<Double>>, clusters Map<Integer,ArrayList<Integer>>, clustersLOC Map<Integer,Integer>) : ArrayList<Integer> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate getClusterLOC(nodes ArrayList<Integer>, methods MethodDeclaration[], variables VariableDeclaration[], clustersLOC Map<Integer,Integer>) : int extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate updateDistance(index int, distance ArrayList<ArrayList<Double>>, clusters ArrayList<Integer>) : void extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate findRoot(f int[], x int) : int inlined to private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tt : ArrayList<Integer> to distance : ArrayList<ArrayList<Double>> in method private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tt : ArrayList<Integer> to distance : ArrayList<ArrayList<Double>> in method private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tt : ArrayList<Integer> to minCluster : ArrayList<Integer> in method private findMin(distance ArrayList<ArrayList<Double>>, clusters Map<Integer,ArrayList<Integer>>, clustersLOC Map<Integer,Integer>) : ArrayList<Integer> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tk : int to clusterLOC : int in method private getClusterLOC(nodes ArrayList<Integer>, methods MethodDeclaration[], variables VariableDeclaration[], clustersLOC Map<Integer,Integer>) : int from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate findRoot(f int[], x int) : int renamed to private getMethodLOC(method MethodDeclaration) : int in class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tt : ArrayList<Integer> to nodes : ArrayList<Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tm : HashMap<Integer,Integer> to clustersLOC : Map<Integer,Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tm : HashMap<Integer,Integer> to clustersLOC : Map<Integer,Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate findMin(distance ArrayList<ArrayList<Double>>, clusters Map<Integer,ArrayList<Integer>>, clustersLOC Map<Integer,Integer>) : ArrayList<Integer> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tprivate getClusterLOC(nodes ArrayList<Integer>, methods MethodDeclaration[], variables VariableDeclaration[], clustersLOC Map<Integer,Integer>) : int extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tt : ArrayList<Integer> to distance : ArrayList<ArrayList<Double>> in method private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tt : ArrayList<Integer> to distance : ArrayList<ArrayList<Double>> in method private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\trt : int in method private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
+          "validation": false
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tpos : int to nodes : ArrayList<Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tpos : int to nodes : ArrayList<Integer> in method private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> from class detector.GodClassRefactorSolution",
-          "developerConfirmation": false
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "5cd1c49119b5519c33e2571442e7e43d4e4e2bc8",
-      "url": "***/commit/5cd1c49119b5519c33e2571442e7e43d4e4e2bc8",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "9c1f436d7f38883905255d14afcba9919e900c39",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/9c1f436d7f38883905255d14afcba9919e900c39",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJSONArray to JSONObject in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": true
-        },
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tcu : CompilationUnit in method public readNewJavaFileFromPath(filePath String) : CompilationUnit from class utils.MethodGetSetJudge",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "1e928bfddda01ed1231670470d2ef1b24c856e11",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/1e928bfddda01ed1231670470d2ef1b24c856e11",
+      "commonRefactoring": [
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tarray : JSONArray to information : JSONObject in method public main(args String[]) : void from class detect.GodClassDetectorTest",
-          "developerConfirmation": true
-        },
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsourceClassName : String in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String, thresholdOfStaticClass double) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
         {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tarray : JSONArray to information : JSONObject in method public main(args String[]) : void from class detect.GodClassDetectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : JSONArray to result : JSONObject in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": false
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsourceClassName : String in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[]) : JSONObject from class detector.FeatureEnvyDetector",
+          "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJSONArray to JSONObject in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tarray : JSONArray to information : JSONObject in method public main(args String[]) : void from class detect.GodClassDetectorTest",
-          "developerConfirmation": true
-        },
-        {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tarray : JSONArray to information : JSONObject in method public main(args String[]) : void from class detect.GodClassDetectorTest",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tresult : JSONArray to candidateInfo : JSONArray in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
-          "developerConfirmation": true
+          "description": "Rename Variable\tinvocationListEntry : Map.Entry<String,ArrayList<String>> to item : Map.Entry<String,ArrayList<String>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String, thresholdOfStaticClass double) from class candidate.FeatureEnvyCandidate",
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "dea95a58eea1eae1159215d38a62cad51330b99c",
-      "url": "***/commit/dea95a58eea1eae1159215d38a62cad51330b99c",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "04bbe0fb63b3718223410e57d45107dc63772821",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/04bbe0fb63b3718223410e57d45107dc63772821",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tgetSetMap : Map<String,Set<String>> to GetterSetterMap : Map<String,Set<String>> in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tobj : ITypeBinding to typeBindings : ITypeBinding[] in method public getMethodSignature(methodBinding IMethodBinding) : String from class utils.Utils",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tobj : ITypeBinding to typeBindings : ITypeBinding[] in method public getMethodSignature(methodBinding IMethodBinding) : String from class utils.Utils",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tlocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[]) : JSONObject from class detector.FeatureEnvyDetector",
+          "validation": false
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tgetSetMap : Map<String,Set<String>> to GetterSetterMap : Map<String,Set<String>> in class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "f3775d28a161f058a5ce12de577a635ec9bbcc5d",
-      "url": "***/commit/f3775d28a161f058a5ce12de577a635ec9bbcc5d",
-      "ourApproach": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tutils.MethodGetSetJudge from Class utils.MethodJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic isGetMethod(method MethodDeclaration) : boolean from class utils.MethodJudge to public isGetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic isSetMethod(method MethodDeclaration) : boolean from class utils.MethodJudge to public isSetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tutils.MethodGetSetJudge from class utils.MethodJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic isGetMethod(method MethodDeclaration) : boolean from class utils.MethodJudge to public isGetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic isSetMethod(method MethodDeclaration) : boolean from class utils.MethodJudge to public isSetMethod(method MethodDeclaration) : boolean from class utils.MethodGetSetJudge",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "25eba033aac61aff5c2e380ce7c130d3e5525e41",
-      "url": "***/commit/25eba033aac61aff5c2e380ce7c130d3e5525e41",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method public getTargetClass() : HashSet<ITypeBinding> from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method private parseTargetCandidate() : HashSet<ITypeBinding> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetClass : HashMap<ITypeBinding,List<Expression>> to targetClass : HashSet<ITypeBinding> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassExpressions : HashMap<ITypeBinding,List<Expression>> to targetClassExpressions : HashSet<ITypeBinding> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "description": "Change Variable Type\tinvocationSet : HashMap<String,HashSet<String>> to locations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[]) : JSONObject from class detector.FeatureEnvyDetector",
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttargetClassEntry : Map.Entry<ITypeBinding,List<Expression>> to targetClassBinding : ITypeBinding in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "description": "Rename Variable\tinvocationSet : HashMap<String,HashSet<String>> to locations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[]) : JSONObject from class detector.FeatureEnvyDetector",
+          "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassEntry : Map.Entry<ITypeBinding,List<Expression>> to targetClassBinding : ITypeBinding in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method private parseTargetCandidate() : HashSet<ITypeBinding> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetClass : HashMap<ITypeBinding,List<Expression>> to targetClass : HashSet<ITypeBinding> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method public getTargetClass() : HashSet<ITypeBinding> from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassExpressions : HashMap<ITypeBinding,List<Expression>> to targetClassExpressions : HashSet<ITypeBinding> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\ttypeBindings : ITypeBinding[] in method public getMethodSignature(methodBinding IMethodBinding) : String from class utils.Utils",
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
-      "url": "***/commit/4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getInvocationTargetBinding() : List<HashSet<IBinding>> renamed to public getInvocationTargetExpression() : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method private parseTargetCandidate() : HashMap<ITypeBinding,List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tList<HashSet<IBinding>> to List<List<Expression>> in method public getInvocationTargetExpression() : List<List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tinvocationTargetBindings : List<List<HashSet<IBinding>>> to invocationTargetBindings : List<List<List<Expression>>> in method protected detect() : void from class detector.FeatureEnvyDetector",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node MethodInvocation) : boolean from class visitor.EntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node FieldAccess) : boolean from class visitor.EntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node QualifiedName) : boolean from class visitor.EntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getNewTargetClass() : HashMap<ITypeBinding,HashSet<IBinding>> renamed to public getTargetClass() : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tHashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method public getTargetClass() : HashMap<ITypeBinding,List<Expression>> from class visitor.EntityVisitor",
-          "developerConfirmation": true
+          "validation": true
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method private parseTargetCandidate() : HashMap<ITypeBinding,List<Expression>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getInvocationTargetBinding() : List<HashSet<IBinding>> renamed to public getInvocationTargetExpression() : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<HashSet<IBinding>> to List<List<Expression>> in method public getInvocationTargetExpression() : List<List<Expression>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tinvocationTargetBindings : List<List<HashSet<IBinding>>> to invocationTargetBindings : List<List<List<Expression>>> in method protected detect() : void from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node MethodInvocation) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node FieldAccess) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node QualifiedName) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\texpressions : List<Expression> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
+          "validation": true
         }
       ],
       "baseline": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getInvocationTargetBinding() : List<HashSet<IBinding>> renamed to public getInvocationTargetExpression() : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method private parseTargetCandidate() : HashMap<ITypeBinding,List<Expression>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tList<HashSet<IBinding>> to List<List<Expression>> in method public getInvocationTargetExpression() : List<List<Expression>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinvocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getTargetClasses() : HashSet<ITypeBinding> renamed to public getTargetClass() : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": false
+          "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tHashSet<ITypeBinding> to HashMap<ITypeBinding,List<Expression>> in method public getTargetClass() : HashMap<ITypeBinding,List<Expression>> from class visitor.EntityVisitor",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tnewTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttargetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> to targetClassExpressions : HashMap<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tiTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> to targetClassEntry : Map.Entry<ITypeBinding,List<Expression>> in method public FeatureEnvyCandidate(cu CompilationUnit, method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tinvocationTargetBindings : List<List<HashSet<IBinding>>> to invocationTargetBindings : List<List<List<Expression>>> in method protected detect() : void from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node MethodInvocation) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node FieldAccess) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttemp : HashSet<IBinding> to temp : List<Expression> in method public visit(node QualifiedName) : boolean from class visitor.EntityVisitor",
-          "developerConfirmation": true
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "6d5d01323ada8b53280e14d848e203a3dda7c6b6",
-      "url": "***/commit/6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "commonRefactoring": [],
       "ourApproach": [],
       "baseline": [
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> extracted from public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": false
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tdeclareList : List<ITypeBinding> to classList : ArrayList<ITypeBinding> in method private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> from class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tdeclareList : List<ITypeBinding> to classList : ArrayList<ITypeBinding> in method private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> from class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tdeclareList : List<ITypeBinding> to declareList : ArrayList<ITypeBinding> in method public isOverride(method MethodDeclaration, declareList ArrayList<ITypeBinding>) : boolean from class utils.MethodJudge",
-          "developerConfirmation": false
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "a9dbe50f5e46ccbffd1bf6568b2be1450e0652b7",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/a9dbe50f5e46ccbffd1bf6568b2be1450e0652b7",
+      "commonRefactoring": [],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tdeclareList : ArrayList<ITypeBinding> to declareList : List<ITypeBinding> in method public isOverride(method MethodDeclaration) : boolean from class utils.MethodJudge",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tclassList : ArrayList<ITypeBinding> to allIMethodBindings : List<IMethodBinding> in method private methodIsOverride(methodBinding IMethodBinding) : boolean from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclassList : ArrayList<ITypeBinding> to allIMethodBindings : List<IMethodBinding> in method private methodIsOverride(methodBinding IMethodBinding) : boolean from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdeclaringClass : ITypeBinding to superITypeBinding : ITypeBinding in method private methodIsOverride(methodBinding IMethodBinding) : boolean from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tArrayList<ITypeBinding> to boolean in method private methodIsOverride(methodBinding IMethodBinding) : boolean from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tprivate getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> from class utils.MethodJudge to private methodIsOverride(methodBinding IMethodBinding) : boolean from class candidate.FeatureEnvyCandidate",
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "fdd1f071667f7fb6a5152ee74142fc5ba166efca",
-      "url": "***/commit/fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "commonRefactoring": [],
       "ourApproach": [],
       "baseline": [
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> extracted from public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": false
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tdeclareList : List<ITypeBinding> to classList : ArrayList<ITypeBinding> in method private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> from class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tdeclareList : List<ITypeBinding> to classList : ArrayList<ITypeBinding> in method private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> from class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tdeclareList : List<ITypeBinding> to declareList : ArrayList<ITypeBinding> in method public isOverride(method MethodDeclaration, declareList ArrayList<ITypeBinding>) : boolean from class utils.MethodJudge",
-          "developerConfirmation": false
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "019a8ff3c76540b19183f5654659534c7ddd366e",
-      "url": "***/commit/019a8ff3c76540b19183f5654659534c7ddd366e",
-      "ourApproach": [
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "a622d850af9cc0a646a0a71b091b803a58b2ddc6",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/a622d850af9cc0a646a0a71b091b803a58b2ddc6",
+      "commonRefactoring": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isStatus() : boolean renamed to public getStatus() : boolean in class visitor.FeatureEnvyGenericReferenceVisitor",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isStatus() : boolean renamed to public getStatus() : boolean in class visitor.FeatureEnvyGenericReferenceVisitor",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "671eb189c316656a25bdef4a17e3b46f1a495820",
-      "url": "***/commit/671eb189c316656a25bdef4a17e3b46f1a495820",
-      "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashSet<ITypeBinding> to HashMap<ITypeBinding,HashSet<IBinding>> in method private parseTargetCandidate() : HashMap<ITypeBinding,HashSet<IBinding>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassBindings : HashSet<ITypeBinding> to targetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> in method public FeatureEnvyCandidate(method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tvariableReadList : ArrayList<String> to variableCallList : ArrayList<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttargetClassBinding : ITypeBinding to iTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> in method public FeatureEnvyCandidate(method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
+          "description": "Rename Variable\tvariableWriteList : ArrayList<String> to variableCallList : ArrayList<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassBinding : ITypeBinding to iTypeBindingHashSetEntry : Map.Entry<ITypeBinding,HashSet<IBinding>> in method public FeatureEnvyCandidate(method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\ttargetClassName : String in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[], invocationTargetBinding List<HashSet<IBinding>>) : JSONObject from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfr : String to f : String in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHashSet<ITypeBinding> to HashMap<ITypeBinding,HashSet<IBinding>> in method private parseTargetCandidate() : HashMap<ITypeBinding,HashSet<IBinding>> from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetClassBindings : HashSet<ITypeBinding> to targetClassBindings : HashMap<ITypeBinding,HashSet<IBinding>> in method public FeatureEnvyCandidate(method MethodDeclaration, path String) from class candidate.FeatureEnvyCandidate",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\ttargetClassName : String in method private formatResult(candidate FeatureEnvyCandidate, probabilities String[], invocationTargetBinding List<HashSet<IBinding>>) : JSONObject from class detector.FeatureEnvyDetector",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfw : String to f : String in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "3492bc9e24c04b1a2615ac17776b2d6f07881357",
-      "url": "***/commit/3492bc9e24c04b1a2615ac17776b2d6f07881357",
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isNotNull(method MethodDeclaration) : boolean renamed to public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> in class utils.MethodJudge",
-          "developerConfirmation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to List<IVariableBinding> in method public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> from class utils.MethodJudge",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isNotEnclosing(method MethodDeclaration) : boolean renamed to public judge(method MethodDeclaration, cu CompilationUnit) : boolean in class utils.MethodJudge",
-          "developerConfirmation": false
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isNotContractor(method MethodDeclaration) : boolean renamed to public isConstructor(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isNotSupper(method MethodDeclaration) : boolean renamed to public isContainsSupper(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic isNotOverride(method MethodDeclaration) : boolean renamed to public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/3492bc9e24c04b1a2615ac17776b2d6f07881357",
+      "commonRefactoring": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic isNotNull(method MethodDeclaration) : boolean renamed to public isNull(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic isNotContractor(method MethodDeclaration) : boolean renamed to public isConstructor(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic isNotSupper(method MethodDeclaration) : boolean renamed to public isContainsSupper(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic isNotOverride(method MethodDeclaration) : boolean renamed to public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic isNotEnclosing(method MethodDeclaration) : boolean renamed to public isEnclosing(method MethodDeclaration) : boolean in class utils.MethodJudge",
-          "developerConfirmation": true
-        },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> extracted from public parse() : void in class parser.FeatureEnvyParser & moved to class utils.MethodJudge",
+          "validation": false
+        }
+      ],
+      "baseline": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getPositionTarget(method MethodDeclaration) : void renamed to public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> in class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tvoid to List<IVariableBinding> in method public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> from class utils.MethodJudge",
-          "developerConfirmation": true
+          "validation": true
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "7c69c9e7dcb9fc9368bc253254b2943915611d0f",
-      "url": "***/commit/7c69c9e7dcb9fc9368bc253254b2943915611d0f",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "667ea9c6bf7a86319977c6787b5136814889d30f",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/667ea9c6bf7a86319977c6787b5136814889d30f",
+      "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic configParser() : int renamed to public parserConfigFile() : int in class bit.se.codesmell.config.Config",
-          "developerConfirmation": true
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic isNotNull(method MethodDeclaration) : boolean extracted from public parse() : void in class parser.FeatureEnvyParser & moved to class utils.MethodJudge",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic lineNumCondition(method MethodDeclaration, cu CompilationUnit) : boolean extracted from public parse() : void in class parser.FeatureEnvyParser & moved to class utils.MethodJudge",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "568fdafe62aae6fa939bc4d234c81fe3eb7af03b",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/568fdafe62aae6fa939bc4d234c81fe3eb7af03b",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcoreSize : int in method public parserConfigFile() : int from class bit.se.codesmell.config.Config",
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "ac94ddbc1263f03a89df5815e844173d843a103a",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/ac94ddbc1263f03a89df5815e844173d843a103a",
+      "commonRefactoring": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tf : String to fr : String in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tvariableCallList : ArrayList<String> to variableReadList : ArrayList<String> in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ],
       "baseline": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic configParser() : int renamed to public parserConfigFile() : int in class bit.se.codesmell.config.Config",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tf : String to fw : String in method private calculateMetricSim(methods MethodDeclaration[], variables VariableDeclaration[]) : double[][] from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ]
     },
     {
-      "repository": "***.git",
-      "sha1": "3a87b21d69b4f7830a4e8e821412df641d63c246",
-      "url": "***/commit/3a87b21d69b4f7830a4e8e821412df641d63c246",
-      "ourApproach": [
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "78c762e0e517a6d82c5d5badb8059bd7e8447f43",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/78c762e0e517a6d82c5d5badb8059bd7e8447f43",
+      "commonRefactoring": [
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic MatrixtoVector(simMatrix double[][]) : double[] renamed to public MatrixToVector() : double[] in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tfileds : FieldDeclaration[] to fields : FieldDeclaration[] in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic MatrixtoVector(simMatrix double[][]) : double[] renamed to public MatrixToVector() : double[] in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "12a0938969e99ce2dfde1e1a7c35e57d11bdf7ff",
-      "url": "***/commit/12a0938969e99ce2dfde1e1a7c35e57d11bdf7ff",
       "ourApproach": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to int in method public configParser() : int from class bit.se.codesmell.config.Config",
-          "developerConfirmation": true
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmidSum : double to count1 : int in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tmidSum : double to count1 : int in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tsum : double to count2 : int in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tsum : double to count2 : int in method public calculateRefactorSolution() : ArrayList<ArrayList<String>> from class detector.GodClassRefactorSolution",
+          "validation": false
         }
       ],
-      "baseline": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to int in method public configParser() : int from class bit.se.codesmell.config.Config",
-          "developerConfirmation": true
-        }
-      ]
+      "baseline": []
     },
     {
-      "repository": "***.git",
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
       "sha1": "1ff0071ef06910ce3cbb13798c486c80739e8284",
-      "url": "***/commit/1ff0071ef06910ce3cbb13798c486c80739e8284",
-      "ourApproach": [
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/1ff0071ef06910ce3cbb13798c486c80739e8284",
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tcandidate : GodClassCandidate in method protected detect() : void from class detector.GodClassDetector",
+          "validation": true
+        },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tcandidate : GodClassCandidate to candidate : JSONObject in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
+          "validation": true
         },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprotected getCodeFromFile(javaFile File) : String from class parser.ProjectsParser to public getCodeFromFile(javaFile File) : String from class utils.Utils",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate valid : boolean from class candidate.FeatureEnvyCandidate to protected valid : boolean from class candidate.SmellCandidate",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_ATTRIBUTE",
+          "description": "Pull Up Attribute\tprivate valid : boolean from class candidate.GodClassCandidate to protected valid : boolean from class candidate.SmellCandidate",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tGodClass : ArrayList<GodClassCandidate> to GodClassList : ArrayList<GodClassCandidate> in class detector.GodClassDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getCodeFromFile(javaFile File) : String from class parser.ProjectsParser to public getCodeFromFile(javaFile File) : String from class utils.Utils",
-          "developerConfirmation": true
+          "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tcandidate : GodClassCandidate in method protected detect() : void from class detector.GodClassDetector",
-          "developerConfirmation": true
+          "description": "Extract Variable\tarray : JSONArray in method public main(args String[]) : void from class detect.GodClassDetectorTest",
+          "validation": false
         }
       ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tcandidate : GodClassCandidate to candidate : JSONObject in class detector.GodClassRefactorSolution",
-          "developerConfirmation": true
-        },
+      "baseline": []
+    },
+    {
+      "repository": "https://xxx/huaweicloud/refactoring-engine.git",
+      "sha1": "903128ddbdbc6d9e3d6562de3275054eeb80bb92",
+      "url": "https://xxx/huaweicloud/refactoring-engine/commit/903128ddbdbc6d9e3d6562de3275054eeb80bb92",
+      "commonRefactoring": [
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected getCodeFromFile(javaFile File) : String from class parser.ProjectsParser to public getCodeFromFile(javaFile File) : String from class utils.Utils",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tcandidate : GodClassCandidate in method protected detect() : void from class detector.GodClassDetector",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "98c52fff5a1be10f1b1ea4d3b52a8553b2ceb1f3",
-      "url": "***/commit/98c52fff5a1be10f1b1ea4d3b52a8553b2ceb1f3",
-      "ourApproach": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tbit.se.codesmell.utils.Config moved to bit.se.codesmell.config.Config",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tbit.se.codesmell.threadspool.ModelThreadPools from Class bit.se.codesmell.controller.PredictionController",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate gcThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private gcThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate feThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private feThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate bertThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private bertThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
+          "description": "Move Method\tprivate getMethodSignature(method MethodDeclaration) : String from class detector.GodClassRefactorSolution to public getMethodSignature(method MethodDeclaration) : String from class utils.Utils",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tbit.se.codesmell.utils.Config moved to bit.se.codesmell.config.Config",
-          "developerConfirmation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\tbit.se.codesmell.threadspool.ModelThreadPools from class bit.se.codesmell.controller.PredictionController",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate gcThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private gcThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate feThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private feThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate bertThreadPool : ThreadPoolExecutor from class bit.se.codesmell.controller.PredictionController to private bertThreadPool : ThreadPoolExecutor from class bit.se.codesmell.threadspool.ModelThreadPools",
-          "developerConfirmation": true
-        }
-      ]
-    },
-    {
-      "repository": "***.git",
-      "sha1": "0d3428bce00ed43ccff82b17ac5df109461d2056",
-      "url": "***/commit/0d3428bce00ed43ccff82b17ac5df109461d2056",
-      "ourApproach": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetPaths : String[] to targetPaths : Path[] in class detector.AbstractDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetPaths : String[] to targetPaths : Path[] in class parser.ProjectsParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetPath : String to targetPath : Path in method private traverseFile(root File) : void from class parser.ProjectsParser",
-          "developerConfirmation": true
-        }
-      ],
-      "baseline": [
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetPaths : String[] to targetPaths : Path[] in class detector.AbstractDetector",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\ttargetPaths : String[] to targetPaths : Path[] in class parser.ProjectsParser",
-          "developerConfirmation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttargetPath : String to targetPath : Path in method private traverseFile(root File) : void from class parser.ProjectsParser",
-          "developerConfirmation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic FeatureEnvyDetector() renamed to public setServerURL() : void in class detector.FeatureEnvyDetector",
+          "validation": false
         }
       ]
     }
