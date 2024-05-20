@@ -83,6 +83,6 @@ All results reported by the proposed approach and the baseline approach as well 
 
    All results of refactoring discovery will be stored in the local file system in JSON format:
 
-   `/data/refactoring discovery/<project>.json` 
+   `/data/refactoring detection/<project>.json` 
 
    <img src="./data/figures/refactoring_detection_experiment_results.png" alt="refactoring detection experiment results" width="80%;" />
