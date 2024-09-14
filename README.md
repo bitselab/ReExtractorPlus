@@ -5,16 +5,19 @@
 - [Requirements](#requirements)
 - [Data](#data)
 - [How to Replicate the Evaluation](#how-to-replicate-the-evaluation)
+- [Web](#web)
 
 # General Introduction
 
-This is the replication package for TOSEM2024 submission, containing both tool and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
+This is the replication package for TSE2024 submission, containing both tool and data that are requested by the replication. It also provides detailed instructions to replicate the evaluation.
 
 # Contents of the Replication Package
 
 /data: Input of the evaluation as well as the outputs of the evaluation.
 
 /tool: The implementation of the evaluated approaches (including the proposed approach and the baseline approach).
+
+/web: The source code of the web application for refactoring visualization.
 
 # Requirements
 
@@ -86,3 +89,59 @@ All results reported by the proposed approach and the baseline approach as well 
    `/data/refactoring detection/<project>.json` 
 
    <img src="./data/figures/refactoring_detection_experiment_results.png" alt="refactoring detection experiment results" width="80%;" />
+
+   # Web
+
+   ### 1. Requirements
+
+   - Java 17.0.5 or newer
+   - Apache Maven 3.8.1 or newer
+   - Node.js 20.17.0 or newer
+
+   ### 2. Steps
+
+   1. **Import BackEnd**
+
+      Go to *File* -> *Open...*
+
+      Browse to the **web/backend** directory of project ReExtractorPlus
+
+      Click *OK*
+
+   2. **Run BackEnd**
+
+      From the Project tab of IDEA navigate to `org.reextractor.Application`
+
+      Right-click on the file and select *Run Application.main()*
+
+      The server will be run automatically.
+
+   3. **Import FrontEnd**
+
+      Go to *File* -> *Open Folder...*
+
+      Browse to the **web/frontend** directory of project ReExtractorPlus
+
+      Click *OK*
+
+   4. **Run FrontEnd**
+
+      Open New Terminate
+
+      `npm i` 
+      `npm run start` 
+
+      Open your Browser and type `localhost:3001` 
+
+   5. **Refactoring Detection**
+
+      Type the repository and commit ID
+
+      Click the *Detect* Button
+      
+      The identified refactorings will be display visually:
+
+   <img src="./data/figures/web.png" alt="web" width="60%;" />
+   
+   
+

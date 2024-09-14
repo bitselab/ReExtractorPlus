@@ -64,9 +64,9 @@
         <dependency>
             <groupId>com.github.tsantalis</groupId>
             <artifactId>refactoring-miner</artifactId>
-            <version>3.0.4</version>
+            <version>3.0.7</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/RefactoringMiner-3.0.4.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/RefactoringMiner-3.0.7.jar</systemPath>
         </dependency>
     </dependencies>
 
