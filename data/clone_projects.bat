@@ -3,7 +3,7 @@ git clone https://github.com/checkstyle/checkstyle.git
 git clone https://github.com/apache/commons-lang.git
 git clone https://github.com/apache/flink.git
 git clone https://github.com/hibernate/hibernate-orm.git
-git clone https://git.eclipse.org/r/jgit/jgit.git
+git clone https://github.com/eclipse-jgit/jgit.git
 git clone https://github.com/javaparser/javaparser.git
 git clone https://github.com/junit-team/junit4.git
 git clone https://github.com/junit-team/junit5.git
