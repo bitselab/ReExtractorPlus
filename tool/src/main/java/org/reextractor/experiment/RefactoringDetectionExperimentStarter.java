@@ -17,7 +17,7 @@ import java.util.Map;
 public class RefactoringDetectionExperimentStarter {
 
     //TODO: please specify your local project path
-    final String datasetPath = "/home/anno/dataset/";
+    final String datasetPath = "E:/Dataset/";
 
     public static void main(String[] args) {
         String[] projects = new String[]{
@@ -39,7 +39,8 @@ public class RefactoringDetectionExperimentStarter {
                 "mockito",
                 "okhttp",
                 "pmd",
-                "spring-boot"
+                "spring-boot",
+                "spring-framework",
         };
         for (String projectName : projects) {
             new RefactoringDetectionExperimentStarter().start(projectName);
@@ -64,11 +65,16 @@ public class RefactoringDetectionExperimentStarter {
     private void refactoringDiscover(String projectName, String commitId) throws Exception {
         GitService gitService = new GitServiceImpl();
         String projectPath = datasetPath + projectName;
+        gitService.resetHard(projectPath);
         gitService.checkoutCurrent(projectPath, commitId);
         RefactoringMiner refactoringMiner = new RefactoringMiner();
         ReExtractor reExtractor = new ReExtractor();
+        long time1 = System.nanoTime();
         List<org.refactoringminer.api.Refactoring> refactorings1 = refactoringMiner.detectAtCommit(projectPath, commitId);
+        long time2 = System.nanoTime();
         List<Refactoring> refactorings2 = reExtractor.detectAtCommit(projectPath, commitId);
+        long time3 = System.nanoTime();
+        System.out.println("" + (time3- time2) + "\t" + (time2 - time1));
         Map<org.refactoringminer.api.Refactoring, Refactoring> intersection = new LinkedHashMap<>();
         for (org.refactoringminer.api.Refactoring refactoring1 : refactorings1) {
             for (Refactoring refactoring2 : refactorings2) {
@@ -85,8 +91,6 @@ public class RefactoringDetectionExperimentStarter {
         Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
         String remote_repo = GitServiceImpl.getRemoteUrl(projectPath);
         String remote_url = remote_repo.replace(".git", "/commit/") + commitId;
-        if (remote_repo.equals("https://git.eclipse.org/r/jgit/jgit.git"))
-            remote_url = "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=" + commitId;
         if (file.exists()) {
             FileReader reader1 = new FileReader(filePath);
             RefactoringDetectionResults results1 = gson.fromJson(reader1, RefactoringDetectionResults.class);

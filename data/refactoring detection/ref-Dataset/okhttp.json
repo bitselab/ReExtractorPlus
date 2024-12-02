@@ -357,22 +357,22 @@
       "ourApproach": [
         {
           "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic getStories() : Collection<Story[]> from class okhttp3.internal.http2.HpackRoundTripTest to public arguments() : List<Object> from class okhttp3.internal.http2.HpackRoundTripTest.StoriesTestProvider",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollection<Story[]> to List<Object> in method public arguments() : List<Object> from class okhttp3.internal.http2.HpackRoundTripTest.StoriesTestProvider",
-          "validation": true
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpublic createStories() : Collection<Story[]> from class okhttp3.internal.http2.HpackDecodeInteropTest to public arguments() : List<Object> from class okhttp3.internal.http2.HpackDecodeInteropTest.StoriesTestProvider",
           "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tCollection<Story[]> to List<Object> in method public arguments() : List<Object> from class okhttp3.internal.http2.HpackDecodeInteropTest.StoriesTestProvider",
+          "validation": true
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic getStories() : Collection<Story[]> from class okhttp3.internal.http2.HpackRoundTripTest to public arguments() : List<Object> from class okhttp3.internal.http2.HpackRoundTripTest.StoriesTestProvider",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCollection<Story[]> to List<Object> in method public arguments() : List<Object> from class okhttp3.internal.http2.HpackRoundTripTest.StoriesTestProvider",
           "validation": true
         },
         {
@@ -659,14 +659,14 @@
       "repository": "https://github.com/square/okhttp.git",
       "sha1": "bc3c787ea2df854ac399603d5c67111716137d31",
       "url": "https://github.com/square/okhttp/commit/bc3c787ea2df854ac399603d5c67111716137d31",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tapplicationProtocolUnsupported : DelegatingSSLSocket in method public selectedProtocolIsNullWhenSslSocketThrowsExceptionForApplicationProtocol() : void from class okhttp3.internal.platform.Jdk9PlatformTest",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -811,6 +811,11 @@
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tcodePointString : String in method public test(component Component) : UrlComponentEncodingTester from class okhttp3.UrlComponentEncodingTester",
           "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcodePoint : int to s : String in method public canonicalize(s String) : String from class okhttp3.UrlComponentEncodingTester.Component",
+          "validation": false
         }
       ]
     },

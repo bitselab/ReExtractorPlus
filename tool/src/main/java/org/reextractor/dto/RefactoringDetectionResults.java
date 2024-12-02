@@ -3,6 +3,7 @@ package org.reextractor.dto;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class RefactoringDetectionResults {
 
@@ -94,7 +95,7 @@ public class RefactoringDetectionResults {
     public class Refactoring {
         private String type;
         private String description;
-        private boolean validation;
+        private boolean validation = true;
 
         public Refactoring(org.refactoringminer.api.Refactoring refactoring) {
             this.type = refactoring.getRefactoringType().toString();
@@ -116,6 +117,19 @@ public class RefactoringDetectionResults {
 
         public boolean isValidation() {
             return validation;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Refactoring that = (Refactoring) o;
+            return Objects.equals(type, that.type) && Objects.equals(description, that.description);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(type, description);
         }
     }
 }

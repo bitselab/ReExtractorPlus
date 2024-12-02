@@ -159,6 +159,21 @@
         },
         {
           "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tdsName2 : String to dataStreamName : String in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tindices1 : List<Index> to indices : List<Index> in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tindices2 : List<Index> to failureIndices : List<Index> in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
           "description": "Rename Variable\ti : int to k : int in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
           "validation": true
         },
@@ -181,22 +196,7 @@
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tdsName2 : String to dataStreamName : String in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
-          "validation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tepochMillis : long to currentTimeMillis : long in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tindices2 : List<Index> to failureIndices : List<Index> in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tindices1 : List<Index> to indices : List<Index> in method private createRandomDataStream() : DataStream from class org.elasticsearch.cluster.metadata.DataStreamTests",
           "validation": true
         },
         {
@@ -273,18 +273,6 @@
       "url": "https://github.com/elastic/elasticsearch/commit/a9cab350e0263a6a5f59ea4dd7974c3b8eb6b51d",
       "commonRefactoring": [
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to NodeEligibility in method private localNodeMayWinElection(lastAcceptedState ClusterState, electionStrategy ElectionStrategy) : NodeEligibility from class org.elasticsearch.cluster.coordination.Coordinator",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tboolean to NodeEligibility in method public nodeMayWinElection(lastAcceptedState ClusterState, node DiscoveryNode) : NodeEligibility from class org.elasticsearch.cluster.coordination.ElectionStrategy",
-          "validation": true
-        }
-      ],
-      "ourApproach": [
-        {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tnodeEligibility : var in method private startElection() : void from class org.elasticsearch.cluster.coordination.Coordinator",
           "validation": true
@@ -295,11 +283,22 @@
           "validation": true
         },
         {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to NodeEligibility in method private localNodeMayWinElection(lastAcceptedState ClusterState, electionStrategy ElectionStrategy) : NodeEligibility from class org.elasticsearch.cluster.coordination.Coordinator",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tboolean to NodeEligibility in method public nodeMayWinElection(lastAcceptedState ClusterState, node DiscoveryNode) : NodeEligibility from class org.elasticsearch.cluster.coordination.ElectionStrategy",
+          "validation": true
+        },
+        {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tnodeEligibility : var in method private startElectionScheduler() : void from class org.elasticsearch.cluster.coordination.Coordinator",
+          "description": "Extract Variable\tnodeEligibility : var in method public run() : void from class org.elasticsearch.cluster.coordination.Coordinator.startElectionScheduler.startElectionScheduler.new Runnable",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -457,18 +456,7 @@
       "sha1": "19e9fc32f2d449e77e905aba6ca03c6351b3bbdc",
       "url": "https://github.com/elastic/elasticsearch/commit/19e9fc32f2d449e77e905aba6ca03c6351b3bbdc",
       "commonRefactoring": [],
-      "ourApproach": [
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic runEsqlAsync(requestObject RequestObjectBuilder) : Map<String,Object> extracted from private runEsql(requestObject RestEsqlTestCase.RequestObjectBuilder) : Map<String,Object> in class org.elasticsearch.xpack.esql.ccq.MultiClustersIT & moved to class org.elasticsearch.xpack.esql.qa.rest.RestEsqlTestCase",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic runEsqlAsync(requestObject RequestObjectBuilder) : Map<String,Object> extracted from private runEsql(requestObject RestEsqlTestCase.RequestObjectBuilder) : Map<String,Object> in class org.elasticsearch.xpack.esql.qa.rest.RestEnrichTestCase & moved to class org.elasticsearch.xpack.esql.qa.rest.RestEsqlTestCase",
-          "validation": true
-        }
-      ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -609,11 +597,6 @@
       ],
       "ourApproach": [
         {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate reduceBuckets(pq PriorityQueue<IteratorAndCurrent<Bucket>>, reduceContext AggregationReduceContext) : List<Bucket> extracted from protected getLeaderReducer(reduceContext AggregationReduceContext, size int) : AggregatorReducer in class org.elasticsearch.search.aggregations.bucket.prefix.InternalIpPrefix",
-          "validation": true
-        },
-        {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcurrentReducer : BucketReducer<Bucket> to currentBuckets : List<Bucket> in method private reduceBuckets(pq PriorityQueue<IteratorAndCurrent<Bucket>>, reduceRoundingIdx int, min long, max long, reduceContext AggregationReduceContext) : BucketReduceResult from class org.elasticsearch.aggregations.bucket.histogram.InternalAutoDateHistogram",
           "validation": true
@@ -667,20 +650,9 @@
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tstartValue : Integer to start : Integer in method private supplier(name String, strType DataType, substrType DataType, strValueSupplier Supplier<String>, substrValueSupplier Function<String,String>, startSupplier Supplier<Integer>, expectedValue ExpectedValue) : TestCaseSupplier from class org.elasticsearch.xpack.esql.expression.function.scalar.string.LocateTests",
           "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\ttypes : List<DataType> in method private types(firstType DataType, secondType DataType, hasStart boolean) : List<DataType> from class org.elasticsearch.xpack.esql.expression.function.scalar.string.LocateTests",
-          "validation": false
         }
       ],
-      "baseline": [
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tsuppliers : List<TestCaseSupplier> in method public parameters() : Iterable<Object[]> from class org.elasticsearch.xpack.esql.expression.function.scalar.string.LocateTests",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/elastic/elasticsearch.git",
@@ -740,6 +712,11 @@
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate flushPositionBuilder() : void inlined to public finish() : void in class org.elasticsearch.xpack.esql.enrich.MergePositionsOperator",
           "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic close() : void from class org.elasticsearch.xpack.esql.enrich.MergePositionsOperator.PositionBuilder to public close() : void from class org.elasticsearch.xpack.esql.enrich.EnrichResultBuilderForBoolean",
+          "validation": false
         }
       ]
     },
@@ -769,6 +746,11 @@
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate numericResultsMatcher(typedData List<TestCaseSupplier.TypedData>, value Object) : Matcher<Object> inlined to public parameters() : Iterable<Object[]> in class org.elasticsearch.xpack.esql.expression.function.scalar.math.AutoBucketTests",
           "validation": false
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tfinalNullPosition : int in method protected anyNullIsNull(testCaseSuppliers List<TestCaseSupplier>, expectedType ExpectedType, evaluatorToString ExpectedEvaluatorToString) : List<TestCaseSupplier> from class org.elasticsearch.xpack.esql.expression.function.AbstractFunctionTestCase",
+          "validation": false
         }
       ],
       "baseline": []
@@ -781,22 +763,17 @@
       "ourApproach": [
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tsecondOrderExpr : var to secondOrder : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
-          "validation": true
+          "description": "Rename Variable\tneg : var to salary_desc : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tmul : var to emp_no : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\trenamed_salary2 : var to renamed_emp_no2 : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
-          "validation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tadd : var to thirdOrder : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
-          "validation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tneg : var to salary_desc : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
           "validation": false
         },
         {
@@ -806,7 +783,12 @@
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tmul : var to emp_no : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
+          "description": "Rename Variable\tsecondOrderExpr : var to secondOrder : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tadd : var to thirdOrder : var in method public testPushdownWithOverwrittenName() : void from class org.elasticsearch.xpack.esql.optimizer.LogicalPlanOptimizerTests",
           "validation": false
         }
       ],

@@ -19,18 +19,29 @@
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tcollectedResults : MultiCollectedResults in method public collectMatchingDocs() : void from class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic queryTimeout() : HibernateSearchQueryTimeout extracted from public collectMatchingDocs() : void in class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors & moved to class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
           "validation": true
         }
       ],
-      "ourApproach": [],
       "baseline": [
         {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic queryTimeout() : HibernateSearchQueryTimeout extracted from public collectTopDocsData(collectorFactory TopDocsDataCollector.Factory<T>, startInclusive int, endExclusive int) : List<T> in class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors & moved to class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic newCollector() : Collector renamed to public queryTimeout() : HibernateSearchQueryTimeout in class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate wrapTimeLimitingCollectorIfNecessary(collector Collector) : Collector inlined to public queryTimeout() : HibernateSearchQueryTimeout in class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCollector to HibernateSearchQueryTimeout in method public queryTimeout() : HibernateSearchQueryTimeout from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
           "validation": false
         }
       ]
@@ -88,6 +99,11 @@
       ],
       "ourApproach": [
         {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage integer : IndexFieldReference<Integer> from class org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT.IndexBinding to private integer : IndexFieldReference<Integer> from class org.hibernate.search.integrationtest.backend.tck.search.predicate.AbstractPredicateTypeCheckingAndConversionIT.IndexIntegerBinding",
+          "validation": false
+        },
+        {
           "type": "MOVE_RENAME_ATTRIBUTE",
           "description": "Move And Rename Attribute\tprivate index : SimpleMappedIndex<IndexBinding> renamed to protected indexForSyntaxParsingCheck : SimpleMappedIndex<IndexSyntaxParsingBinding> and moved from class org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT to class org.hibernate.search.integrationtest.backend.tck.search.predicate.AbstractBaseQueryStringPredicateSpecificsIT",
           "validation": true
@@ -101,11 +117,6 @@
           "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpublic simpleQueryString() : List<? extends Arguments> from class org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT to public simpleQueryStringSyntax1() : List<? extends Arguments> from class org.hibernate.search.integrationtest.backend.tck.search.predicate.SimpleQueryStringPredicateSpecificsIT",
           "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage integer : IndexFieldReference<Integer> from class org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT.IndexBinding to private integer : IndexFieldReference<Integer> from class org.hibernate.search.integrationtest.backend.tck.search.predicate.AbstractPredicateTypeCheckingAndConversionIT.IndexIntegerBinding",
-          "validation": false
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
@@ -162,6 +173,11 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcodec : LuceneFieldCodec<?> to builder : var in method protected createFieldQuery(analyzer Analyzer, operator BooleanClause.Occur, field String, queryText String, quoted boolean, phraseSlop int) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneSimpleQueryStringPredicate.HibernateSearchSimpleQueryParser",
+          "validation": false
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpackage debug() : void from class org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT to package parse_unConfigured() : void from class org.hibernate.search.integrationtest.backend.tck.search.predicate.MatchIdPredicateSpecificsIT",
           "validation": false
         },
         {
@@ -349,12 +365,32 @@
         },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\ttenantId : Object in method package test() : void from class org.hibernate.search.documentation.mapper.pojo.standalone.multitenancy.StandalonePojoMultiTenancyIT",
+          "description": "Extract Variable\ttenantId : Object in method package searchSession_withOptions() : void from class org.hibernate.search.documentation.mapper.pojo.standalone.entrypoints.StandalonePojoEntryPointsIT",
           "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\ttenantId : Object in method package searchSession_withOptions() : void from class org.hibernate.search.documentation.mapper.pojo.standalone.entrypoints.StandalonePojoEntryPointsIT",
+          "description": "Extract Variable\ttenantId : Object in method package test() : void from class org.hibernate.search.documentation.mapper.pojo.standalone.multitenancy.StandalonePojoMultiTenancyIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTENANT_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTENANT_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTENANT_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTENANT_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
           "validation": true
         },
         {
@@ -398,6 +434,36 @@
           "validation": true
         },
         {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTENANT_ID_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTENANT_ID_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTENANT_ID_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTENANT_ID_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tTENANT_ID_3 : String to tenant3 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tTENANT_ID_3 : String to tenant3 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tString to Object in method private targetTenantId() : Object from class org.hibernate.search.integrationtest.mapper.orm.massindexing.MassIndexingBaseIT",
           "validation": true
@@ -405,6 +471,26 @@
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tSet<String> to Set<Object> in method private allTenantIds() : Set<Object> from class org.hibernate.search.integrationtest.mapper.orm.massindexing.MassIndexingBaseIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tMETAMEC_TID : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tMETAMEC_TID : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tGEOCHRON_TID : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tGEOCHRON_TID : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
           "validation": true
         },
         {
@@ -557,78 +643,8 @@
       ],
       "baseline": [
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTENANT_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTENANT_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTENANT_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTENANT_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.backend.tck.multitenancy.MultiTenancyBaseIT",
-          "validation": true
-        },
-        {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tsetupContext : OrmSetupHelper.SetupContext in method public setup(tenant1 Object, tenant2 Object, converter TenantIdentifierConverter) : void from class org.hibernate.search.integrationtest.jakarta.batch.massindexing.MassIndexingJobWithMultiTenancyIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTENANT_ID_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTENANT_ID_1 : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTENANT_ID_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTENANT_ID_2 : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tTENANT_ID_3 : String to tenant3 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tTENANT_ID_3 : String to tenant3 : Object in class org.hibernate.search.integrationtest.mapper.orm.realbackend.multitenant.RealBackendDatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tMETAMEC_TID : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tMETAMEC_TID : String to tenant1 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tGEOCHRON_TID : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tGEOCHRON_TID : String to tenant2 : Object in class org.hibernate.search.integrationtest.mapper.orm.multitenancy.DatabaseMultitenancyIT",
           "validation": true
         },
         {
@@ -707,14 +723,14 @@
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tAssertionFailure to org.hibernate.AssertionFailure in method protected invalidTypesException(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<?>>) : org.hibernate.AssertionFailure from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "PULL_UP_OPERATION",
           "description": "Pull Up Method\tprivate invalidTypesException(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<?>>) : AssertionFailure from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy to protected invalidTypesException(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<?>>) : org.hibernate.AssertionFailure from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tqueryFactory : TypeQueryFactory<E,I> in method private create(persistentClass PersistentClass, mappedClass Class<E>, documentIdSourcePropertyClass Class<I>, documentIdSourcePropertyName String, documentIdSourceHandle ValueReadHandle<? extends I>) : HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
@@ -730,11 +746,6 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\trootEntityMappingType : var to commonSuperType : EntityMappingType in method public createQueryLoader(sessionFactory SessionFactoryImplementor, typeContexts Set<? extends PojoLoadingTypeContext<? extends E>>, conditionalExpressions List<ConditionalExpression>, order String) : HibernateOrmQueryLoader<E,I> from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy",
-          "validation": true
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tprivate invalidTypesException(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<?>>) : AssertionFailure from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy to protected invalidTypesException(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<?>>) : AssertionFailure from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy",
           "validation": true
         }
       ]
@@ -796,6 +807,11 @@
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic appendTenantAndRoutingFilters(originalFilterQuery Query) : Query extracted from private prepareFilter(context PredicateRequestContext) : Query in class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneKnnPredicate & moved to class org.hibernate.search.backend.lucene.search.predicate.impl.PredicateRequestContext.FullPredicateRequestContext",
+          "validation": false
+        },
+        {
+          "type": "MOVE_AND_INLINE_OPERATION",
+          "description": "Move And Inline Method\tpublic tenantFilterOrNull() : Query moved from class org.hibernate.search.backend.lucene.search.predicate.impl.PredicateRequestContext.FullPredicateRequestContext to class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneKnnPredicate & inlined to private prepareFilter(context PredicateRequestContext) : Query",
           "validation": false
         }
       ]
@@ -1050,9 +1066,17 @@
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tC to T in method public get(key CollectorKey<C,T>) : T from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager.MultiCollectedResults",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic getCollectorsForAllMatchingDocs() : CollectorSet renamed to public collectedMultiResults() : MultiCollectedResults in class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tCollectorSet to MultiCollectedResults in method public collectedMultiResults() : MultiCollectedResults from class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors",
+          "validation": false
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic createCollector(context CollectorExecutionContext) : C renamed to public createCollectorManager(context CollectorExecutionContext) : CM in class org.hibernate.search.backend.lucene.lowlevel.collector.impl.CollectorFactory",
@@ -1062,7 +1086,9 @@
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tC to CM in method public createCollectorManager(context CollectorExecutionContext) : CM from class org.hibernate.search.backend.lucene.lowlevel.collector.impl.CollectorFactory",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic get(key CollectorKey<C>) : C from class org.hibernate.search.backend.lucene.search.extraction.impl.CollectorSet to public get(key CollectorKey<C,T>) : T from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager.MultiCollectedResults",
@@ -1139,16 +1165,6 @@
           "type": "MOVE_OPERATION",
           "description": "Move Method\tprivate wrapTimeLimitingCollectorIfNecessary(collector Collector, timeoutManager TimeoutManager) : Collector from class org.hibernate.search.backend.lucene.search.extraction.impl.CollectorSet.Builder to private wrapTimeLimitingCollectorIfNecessary(collector Collector) : Collector from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
           "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getCollectorsForAllMatchingDocs() : CollectorSet renamed to public collectedMultiResults() : MultiCollectedResults in class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors",
-          "validation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tCollectorSet to MultiCollectedResults in method public collectedMultiResults() : MultiCollectedResults from class org.hibernate.search.backend.lucene.search.extraction.impl.LuceneCollectors",
-          "validation": false
         }
       ]
     },
@@ -1156,14 +1172,14 @@
       "repository": "https://github.com/hibernate/hibernate-search.git",
       "sha1": "ecd3967726378e5d50d5905e787596fa6c074031",
       "url": "https://github.com/hibernate/hibernate-search/commit/ecd3967726378e5d50d5905e787596fa6c074031",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tcontainer : GenericContainer<?> in method private opensearch(dockerImageName DockerImageName) : GenericContainer<?> from class org.hibernate.search.util.impl.integrationtest.backend.elasticsearch.SearchBackendContainer",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -1205,12 +1221,12 @@
       "ourApproach": [
         {
           "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.session.SearchSession to public scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.scope.SearchScopeProvider",
+          "description": "Pull Up Method\tpublic scope(type Class<T>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.session.SearchSession to public scope(clazz Class<T>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
           "validation": true
         },
         {
           "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic scope(types Collection<? extends Class<? extends T>>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.session.SearchSession to public scope(classes Collection<? extends Class<? extends T>>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
+          "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.session.SearchSession to public scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.scope.SearchScopeProvider",
           "validation": true
         },
         {
@@ -1220,12 +1236,17 @@
         },
         {
           "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic scope(type Class<T>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.session.SearchSession to public scope(clazz Class<T>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
+          "description": "Pull Up Method\tpublic scope(types Collection<? extends Class<? extends T>>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.session.SearchSession to public scope(classes Collection<? extends Class<? extends T>>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
           "validation": true
         },
         {
           "type": "PULL_UP_OPERATION",
           "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.session.SearchSession to public scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.mapping.SearchMapping to public scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
           "validation": true
         },
         {
@@ -1236,11 +1257,6 @@
         {
           "type": "PULL_UP_OPERATION",
           "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.mapping.SearchMapping to public scope(expectedSuperType Class<T>, entityName String) : SearchScope<T> from class org.hibernate.search.mapper.orm.scope.SearchScopeProvider",
-          "validation": true
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.mapping.SearchMapping to public scope(expectedSuperType Class<T>, entityNames Collection<String>) : SearchScope<T> from class org.hibernate.search.mapper.pojo.standalone.scope.SearchScopeProvider",
           "validation": true
         },
         {
@@ -1419,12 +1435,12 @@
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\twithProjectionConstructorInstance : Model.IndexedEntityWithProjectionConstructor to withProjectionConstructorInstance : MultiTypeModel.IndexedEntityWithProjectionConstructor in method package multiType() : void from class org.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT",
+          "description": "Change Variable Type\twithProjectionConstructorChildInstance : Model.IndexedEntityWithProjectionConstructorChild to withProjectionConstructorChildInstance : MultiTypeModel.IndexedEntityWithProjectionConstructorChild in method package multiType() : void from class org.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT",
           "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\twithProjectionConstructorChildInstance : Model.IndexedEntityWithProjectionConstructorChild to withProjectionConstructorChildInstance : MultiTypeModel.IndexedEntityWithProjectionConstructorChild in method package multiType() : void from class org.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT",
+          "description": "Change Variable Type\twithProjectionConstructorInstance : Model.IndexedEntityWithProjectionConstructor to withProjectionConstructorInstance : MultiTypeModel.IndexedEntityWithProjectionConstructor in method package multiType() : void from class org.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT",
           "validation": true
         },
         {
@@ -1471,9 +1487,7 @@
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tINDEX : String to NAME : String in class org.hibernate.search.integrationtest.mapper.pojo.spatial.ProgrammaticMappingGeoPointBindingIT.GeoPointOnCustomCoordinatesPropertyEntity",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage addEntity_configurer_inheritance() : void renamed to package binder_inheritance() : void in class org.hibernate.search.integrationtest.mapper.pojo.loading.EntityLoadingBinderInheritanceIT",
@@ -1488,7 +1502,9 @@
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.hibernate.search.integrationtest.mapper.pojo.loading.LoadingStrategyInheritanceIT renamed to org.hibernate.search.integrationtest.mapper.pojo.loading.EntityLoadingBinderInheritanceIT",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "MOVE_RENAME_ATTRIBUTE",
           "description": "Move And Rename Attribute\tprivate datastore : Map<Integer,Author> renamed to private authors : Map<Integer,Author> and moved from class org.hibernate.search.integrationtest.java.modules.pojo.standalone.elasticsearch.service.AuthorService to class org.hibernate.search.integrationtest.java.modules.pojo.standalone.elasticsearch.service.SimulatedDatastore",
@@ -1539,21 +1555,6 @@
         {
           "type": "MOVE_RENAME_CLASS",
           "description": "Move And Rename Class\torg.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT.multiType.Model moved and renamed to org.hibernate.search.integrationtest.mapper.pojo.search.loading.SearchQueryEntityLoadingFallbackToProjectionConstructorIT.MultiTypeModel",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage setup() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.LoadingStrategyInheritanceIT to package setup() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.EntityLoadingBinderInheritanceIT",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage addEntity_configurer_inheritance() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.LoadingStrategyInheritanceIT to package binder_inheritance() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.EntityLoadingBinderInheritanceIT",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage addEntity_name_configurer_inheritance() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.LoadingStrategyInheritanceIT to package inheritance_explicitName() : void from class org.hibernate.search.integrationtest.mapper.pojo.loading.EntityLoadingBinderInheritanceIT",
           "validation": false
         }
       ]
@@ -1647,23 +1648,38 @@
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tloadingBinder : Object to loadingBinderRef : ParameterizedBeanReference<?> in class org.hibernate.search.mapper.pojo.model.additionalmetadata.impl.PojoEntityTypeAdditionalMetadata",
           "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic contributeAdditionalMetadata(collector PojoAdditionalMetadataCollectorTypeNode) : void from class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoEntityTypeMetadata to public contributeAdditionalMetadata(collector PojoAdditionalMetadataCollectorTypeNode) : void from class org.hibernate.search.mapper.pojo.mapping.definition.programmatic.impl.TypeMappingSearchEntityStepImpl",
+          "validation": true
         }
       ],
       "ourApproach": [
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getTitle() : String from class org.hibernate.search.documentation.mapper.pojo.standalone.loading.Book to public getTitle() : String from class org.hibernate.search.documentation.mapper.pojo.standalone.entitydefinition.Book",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setTitle(title String) : void from class org.hibernate.search.documentation.mapper.pojo.standalone.loading.Book to public setTitle(title String) : void from class org.hibernate.search.documentation.mapper.pojo.standalone.entitydefinition.Book",
+          "validation": false
+        },
         {
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tpackage entityName : String from class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoEntityTypeMetadata to private entityName : String from class org.hibernate.search.mapper.pojo.mapping.definition.programmatic.impl.TypeMappingSearchEntityStepImpl",
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic contributeAdditionalMetadata(collector PojoAdditionalMetadataCollectorTypeNode) : void from class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoEntityTypeMetadata to public contributeAdditionalMetadata(collector PojoAdditionalMetadataCollectorTypeNode) : void from class org.hibernate.search.mapper.pojo.mapping.definition.programmatic.impl.TypeMappingSearchEntityStepImpl",
-          "validation": true
-        },
-        {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.hibernate.search.documentation.mapper.pojo.standalone.entitydefinition.Book from class org.hibernate.search.documentation.mapper.pojo.standalone.loading.Book",
           "validation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.hibernate.search.mapper.pojo.identity.impl.BoundIdentifierMapping from class org.hibernate.search.mapper.pojo.identity.impl.PojoRootIdentityMappingCollector",
+          "validation": true
         }
       ],
       "baseline": [
@@ -1722,6 +1738,11 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic createLoader(targetEntityTypeContexts Set<LoadingTypeContext<? extends E2>>, sessionContext LoadingSessionContext, cacheLookupStrategy EntityLoadingCacheLookupStrategy, loadingOptions MutableEntityLoadingOptions) : PojoSelectionEntityLoader<E2> renamed to public createEntityLoader(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<? extends E>>, loadingContext HibernateOrmSelectionLoadingContext) : PojoSelectionEntityLoader<E> in class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tresult : PojoSelectionEntityLoader<E2> to result : PojoSelectionEntityLoader<E> in method public createEntityLoader(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<? extends E>>, loadingContext HibernateOrmSelectionLoadingContext) : PojoSelectionEntityLoader<E> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
           "validation": true
         },
         {
@@ -1980,18 +2001,8 @@
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic hashCode() : int from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public hashCode() : int from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createIdentifierLoader(context PojoMassIndexingIdentifierLoadingContext<E,I>) : PojoMassIdentifierLoader from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public createIdentifierLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoMassIdentifierLoadingContext<I>) : PojoMassIdentifierLoader from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createEntityLoader(context PojoMassIndexingEntityLoadingContext<E>) : PojoMassEntityLoader<I> from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoMassEntityLoadingContext<E>) : PojoMassEntityLoader<I> from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic createLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>) : PojoSelectionEntityLoader<E> renamed to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoSelectionLoadingContext) : PojoSelectionEntityLoader<E> in class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingStrategy",
           "validation": true
         },
         {
@@ -2005,15 +2016,40 @@
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic createLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>) : PojoSelectionEntityLoader<E> renamed to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoSelectionLoadingContext) : PojoSelectionEntityLoader<E> in class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingStrategy",
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingIdentifierLoadingContext moved and renamed to org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.hibernate.search.mapper.orm.loading.impl.HibernateOrmSelectionLoadingContext.HibernateOrmSelectionLoadingStrategy moved and renamed to org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
           "validation": true
         }
       ],
       "ourApproach": [
         {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate delegate : MassLoadingStrategy<E,I> from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to private delegate : MassLoadingStrategy<E,I> from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic Builder(name String) from class org.hibernate.search.mapper.pojo.standalone.mapping.metadata.impl.StandalonePojoEntityTypeMetadata.Builder to public Builder(mappingContext StandalonePojoMassIndexingMappingContext) from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoLoadingContext.Builder",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_ATTRIBUTE",
+          "description": "Move And Rename Attribute\tprivate entityDefinitionByType : Map<PojoRawTypeModel<?>,EntityDefinition<?>> renamed to private entityTypeMetadataByType : Map<PojoRawTypeModel<?>,StandalonePojoEntityTypeMetadata<?>> and moved from class org.hibernate.search.mapper.pojo.standalone.mapping.metadata.impl.StandalonePojoEntityTypeMetadataProvider.Builder to class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoMappingInitiator",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tentityDefinitionByType : Map<PojoRawTypeModel<?>,EntityDefinition<?>> to entityTypeMetadataByType : Map<PojoRawTypeModel<?>,StandalonePojoEntityTypeMetadata<?>> in class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoMappingInitiator",
+          "validation": true
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic loadingStrategyOptional(type PojoLoadingTypeContext<T>) : Optional<PojoSelectionLoadingStrategy<? super T>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingContext to public selectionLoadingStrategyOptional() : Optional<PojoSelectionLoadingStrategy<? super E>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tOptional<PojoSelectionLoadingStrategy<? super T>> to Optional<PojoSelectionLoadingStrategy<? super E>> in method public selectionLoadingStrategyOptional() : Optional<PojoSelectionLoadingStrategy<? super E>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
           "validation": true
         },
         {
@@ -2028,47 +2064,12 @@
         },
         {
           "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic loadingStrategy(expectedType PojoRawTypeIdentifier<T>) : PojoMassIndexingLoadingStrategy<? super T,?> from class org.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingContext to public massLoadingStrategy() : PojoMassLoadingStrategy<? super E,?> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
+          "description": "Move And Rename Method\tpublic loadingStrategy(type PojoLoadingTypeContext<T>) : PojoSelectionLoadingStrategy<? super T> from class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingContext to public selectionLoadingStrategy() : PojoSelectionLoadingStrategy<? super E> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
           "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tPojoMassIndexingLoadingStrategy<? super T,?> to PojoMassLoadingStrategy<? super E,?> in method public massLoadingStrategy() : PojoMassLoadingStrategy<? super E,?> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic includedTypes() : Set<PojoRawTypeIdentifier<? extends E>> renamed to public parent() : PojoMassLoadingContext in class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tSet<PojoRawTypeIdentifier<? extends E>> to PojoMassLoadingContext in method public parent() : PojoMassLoadingContext from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate ascendingSuperTypes : List<PojoRawTypeIdentifier<? super E>> from class org.hibernate.search.mapper.orm.mapping.impl.AbstractHibernateOrmTypeContext to private ascendingSuperTypes : List<PojoRawTypeIdentifier<? super E>> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager",
-          "validation": false
-        },
-        {
-          "type": "MOVE_RENAME_ATTRIBUTE",
-          "description": "Move And Rename Attribute\tprivate entityDefinitionByType : Map<PojoRawTypeModel<?>,EntityDefinition<?>> renamed to private entityTypeMetadataByType : Map<PojoRawTypeModel<?>,StandalonePojoEntityTypeMetadata<?>> and moved from class org.hibernate.search.mapper.pojo.standalone.mapping.metadata.impl.StandalonePojoEntityTypeMetadataProvider.Builder to class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoMappingInitiator",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tentityDefinitionByType : Map<PojoRawTypeModel<?>,EntityDefinition<?>> to entityTypeMetadataByType : Map<PojoRawTypeModel<?>,StandalonePojoEntityTypeMetadata<?>> in class org.hibernate.search.mapper.pojo.standalone.mapping.impl.StandalonePojoMappingInitiator",
-          "validation": true
-        },
-        {
-          "type": "MOVE_RENAME_CLASS",
-          "description": "Move And Rename Class\torg.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingIdentifierLoadingContext moved and renamed to org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic createLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>) : PojoSelectionEntityLoader<E> renamed to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoSelectionLoadingContext) : PojoSelectionEntityLoader<E> in class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoSelectionLoadingStrategy",
+          "description": "Change Return Type\tPojoSelectionLoadingStrategy<? super T> to PojoSelectionLoadingStrategy<? super E> in method public selectionLoadingStrategy() : PojoSelectionLoadingStrategy<? super E> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
           "validation": true
         },
         {
@@ -2082,39 +2083,24 @@
           "validation": true
         },
         {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic loadingStrategyOptional(type PojoLoadingTypeContext<T>) : Optional<PojoSelectionLoadingStrategy<? super T>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingContext to public selectionLoadingStrategyOptional() : Optional<PojoSelectionLoadingStrategy<? super E>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOptional<PojoSelectionLoadingStrategy<? super T>> to Optional<PojoSelectionLoadingStrategy<? super E>> in method public selectionLoadingStrategyOptional() : Optional<PojoSelectionLoadingStrategy<? super E>> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
-          "validation": true
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic mappedTypeContext(mappedTypeName String) : ProjectionMappedTypeContext from class org.hibernate.search.mapper.orm.mapping.impl.HibernateOrmMapping to public mappedTypeContext(mappedTypeName String) : ProjectionMappedTypeContext from class org.hibernate.search.mapper.pojo.mapping.spi.AbstractPojoMappingImplementor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic loadingStrategy(type PojoLoadingTypeContext<T>) : PojoSelectionLoadingStrategy<? super T> from class org.hibernate.search.mapper.pojo.loading.spi.PojoSelectionLoadingContext to public selectionLoadingStrategy() : PojoSelectionLoadingStrategy<? super E> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tPojoSelectionLoadingStrategy<? super T> to PojoSelectionLoadingStrategy<? super E> in method public selectionLoadingStrategy() : PojoSelectionLoadingStrategy<? super E> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
-          "validation": true
-        },
-        {
-          "type": "MOVE_RENAME_CLASS",
-          "description": "Move And Rename Class\torg.hibernate.search.mapper.orm.loading.impl.HibernateOrmSelectionLoadingContext.HibernateOrmSelectionLoadingStrategy moved and renamed to org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate delegate : MassLoadingStrategy<E,I> from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to private delegate : MassLoadingStrategy<E,I> from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
           "validation": true
         },
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic Builder(name String) from class org.hibernate.search.mapper.pojo.standalone.mapping.metadata.impl.StandalonePojoEntityTypeMetadata.Builder to public Builder(mappingContext StandalonePojoMassIndexingMappingContext) from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoLoadingContext.Builder",
-          "validation": false
+          "description": "Move Method\tpublic createIdentifierLoader(context PojoMassIndexingIdentifierLoadingContext<E,I>) : PojoMassIdentifierLoader from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public createIdentifierLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoMassIdentifierLoadingContext<I>) : PojoMassIdentifierLoader from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic includedTypes() : Set<PojoRawTypeIdentifier<? extends E>> renamed to public parent() : PojoMassLoadingContext in class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tSet<PojoRawTypeIdentifier<? extends E>> to PojoMassLoadingContext in method public parent() : PojoMassLoadingContext from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
+          "validation": true
         },
         {
           "type": "MOVE_AND_RENAME_OPERATION",
@@ -2137,23 +2123,48 @@
           "validation": true
         },
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic createLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>) : PojoSelectionEntityLoader<E> renamed to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoSelectionLoadingContext) : PojoSelectionEntityLoader<E> in class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoSelectionLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate ascendingSuperTypes : List<PojoRawTypeIdentifier<? super E>> from class org.hibernate.search.mapper.orm.mapping.impl.AbstractHibernateOrmTypeContext to private ascendingSuperTypes : List<PojoRawTypeIdentifier<? super E>> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager",
+          "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic createEntityLoader(context PojoMassIndexingEntityLoadingContext<E>) : PojoMassEntityLoader<I> from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public createEntityLoader(expectedTypes Set<? extends PojoLoadingTypeContext<? extends E>>, context PojoMassEntityLoadingContext<E>) : PojoMassEntityLoader<I> from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic loadingStrategy(expectedType PojoRawTypeIdentifier<T>) : PojoMassIndexingLoadingStrategy<? super T,?> from class org.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingContext to public massLoadingStrategy() : PojoMassLoadingStrategy<? super E,?> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tPojoMassIndexingLoadingStrategy<? super T,?> to PojoMassLoadingStrategy<? super E,?> in method public massLoadingStrategy() : PojoMassLoadingStrategy<? super E,?> from class org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContext",
+          "validation": true
+        },
+        {
+          "type": "PULL_UP_OPERATION",
+          "description": "Pull Up Method\tpublic mappedTypeContext(mappedTypeName String) : ProjectionMappedTypeContext from class org.hibernate.search.mapper.orm.mapping.impl.HibernateOrmMapping to public mappedTypeContext(mappedTypeName String) : ProjectionMappedTypeContext from class org.hibernate.search.mapper.pojo.mapping.spi.AbstractPojoMappingImplementor",
+          "validation": true
+        },
+        {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic typeIdentifier() : PojoRawTypeIdentifier<E> from class org.hibernate.search.mapper.pojo.standalone.loading.impl.LoadingTypeContext to public typeIdentifier() : PojoRawTypeIdentifier<E> from class org.hibernate.search.mapper.pojo.standalone.work.impl.SearchIndexingPlanTypeContext",
           "validation": true
         },
         {
           "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic hashCode() : int from class org.hibernate.search.mapper.orm.loading.spi.HibernateOrmEntityLoadingStrategy to public hashCode() : int from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassLoadingStrategy",
+          "description": "Pull Up Method\tpublic equals(obj Object) : boolean from class org.hibernate.search.mapper.orm.loading.spi.HibernateOrmEntityLoadingStrategy to public equals(obj Object) : boolean from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassLoadingStrategy",
           "validation": true
         },
         {
           "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic typeIdentifier() : PojoRawTypeIdentifier<E> from class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingIndexedTypeContext to public typeIdentifier() : PojoRawTypeIdentifier<E> from class org.hibernate.search.mapper.pojo.standalone.work.impl.SearchIndexingPlanTypeContext",
-          "validation": false
-        },
-        {
-          "type": "PULL_UP_OPERATION",
-          "description": "Pull Up Method\tpublic equals(obj Object) : boolean from class org.hibernate.search.mapper.orm.loading.spi.HibernateOrmEntityLoadingStrategy to public equals(obj Object) : boolean from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassLoadingStrategy",
+          "description": "Pull Up Method\tpublic hashCode() : int from class org.hibernate.search.mapper.orm.loading.spi.HibernateOrmEntityLoadingStrategy to public hashCode() : int from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassLoadingStrategy",
           "validation": true
         },
         {
@@ -2176,11 +2187,6 @@
         {
           "type": "MOVE_RENAME_CLASS",
           "description": "Move And Rename Class\torg.hibernate.search.mapper.orm.loading.impl.LoadingIndexedTypeContextProvider moved and renamed to org.hibernate.search.mapper.pojo.loading.spi.PojoLoadingTypeContextProvider",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tresult : PojoSelectionEntityLoader<E2> to result : PojoSelectionEntityLoader<E> in method public createEntityLoader(targetEntityTypeContexts Set<? extends PojoLoadingTypeContext<? extends E>>, loadingContext HibernateOrmSelectionLoadingContext) : PojoSelectionEntityLoader<E> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
           "validation": true
         },
         {
@@ -2244,44 +2250,24 @@
           "validation": false
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic createSink() : PojoMassIdentifierSink<I> from class org.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingIdentifierLoadingContext to public createSink() : PojoMassIdentifierSink<I> from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic tenantIdentifier() : String from class org.hibernate.search.mapper.pojo.massindexing.spi.PojoMassIndexingIdentifierLoadingContext to public tenantIdentifier() : String from class org.hibernate.search.mapper.pojo.loading.spi.PojoMassIdentifierLoadingContext",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic HibernateOrmSelectionLoadingStrategy(delegate HibernateOrmEntityLoadingStrategy<E,I>) from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmSelectionLoadingContext.HibernateOrmSelectionLoadingStrategy to public StandalonePojoMassLoadingStrategy(delegate MassLoadingStrategy<E,I>) from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": false
-        },
-        {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tthat : StandalonePojoMassIndexingLoadingStrategy<?,?> to that : StandalonePojoMassLoadingStrategy<?,?> in method public equals(o Object) : boolean from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic equals(o Object) : boolean from class org.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy to public equals(o Object) : boolean from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic equals(o Object) : boolean from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmSelectionLoadingContext.HibernateOrmSelectionLoadingStrategy to public equals(o Object) : boolean from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic hashCode() : int from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmSelectionLoadingContext.HibernateOrmSelectionLoadingStrategy to public hashCode() : int from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
-          "validation": false
-        },
-        {
           "type": "MOVE_AND_INLINE_OPERATION",
           "description": "Move And Inline Method\tpublic loadingStrategy(expectedType PojoRawTypeIdentifier<T>) : PojoMassIndexingLoadingStrategy<? super T,?> moved from class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoLoadingContext to class org.hibernate.search.mapper.pojo.massindexing.impl.PojoMassIndexingIndexedTypeGroup & inlined to private single(mappingContext PojoMassIndexingMappingContext, typeContextProvider PojoMassIndexingTypeContextProvider, typeContext PojoMassIndexingIndexedTypeContext<E>, loadingContext PojoMassLoadingContext) : PojoMassIndexingIndexedTypeGroup<? super E>",
           "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tdelegate : HibernateOrmEntityLoadingStrategy<E,I> to delegate : MassLoadingStrategy<E,I> in class org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.hibernate.search.mapper.pojo.standalone.massindexing.impl.StandalonePojoMassIndexingLoadingStrategy moved and renamed to org.hibernate.search.mapper.pojo.standalone.loading.impl.StandalonePojoMassLoadingStrategy",
+          "validation": true
         }
       ]
     },
@@ -2301,8 +2287,23 @@
           "validation": true
         },
         {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tqueryFactory : TypeQueryFactory<?,?> to queryFactory : TypeQueryFactory<E,?> in method private create(rootClass RootClass, rootMappedClass Class<E>) : HibernateOrmEntityIdEntityLoadingStrategy<E,?> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
+          "validation": true
+        },
+        {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tdocumentIdSourceHandle : ValueReadHandle<?> to documentIdSourceHandle : ValueReadHandle<? extends I> in class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tqueryFactory : TypeQueryFactory<?,I> to queryFactory : TypeQueryFactory<E,I> in method private create(persistentClass PersistentClass, mappedClass Class<E>, documentIdSourcePropertyClass Class<I>, documentIdSourcePropertyName String, documentIdSourceHandle ValueReadHandle<? extends I>) : HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tHibernateOrmEntityLoadingStrategy<?,?> to HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> in method private create(persistentClass PersistentClass, mappedClass Class<E>, documentIdSourcePropertyClass Class<I>, documentIdSourcePropertyName String, documentIdSourceHandle ValueReadHandle<? extends I>) : HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
           "validation": true
         },
         {
@@ -2333,16 +2334,6 @@
       ],
       "ourApproach": [
         {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate sessionFactory : SessionFactoryImplementor from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy to private sessionFactory : SessionFactoryImplementor from class org.hibernate.search.jakarta.batch.core.massindexing.util.impl.EntityTypeDescriptor",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHibernateOrmEntityLoadingStrategy<?,?> to HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> in method private create(persistentClass PersistentClass, mappedClass Class<E>, documentIdSourcePropertyClass Class<I>, documentIdSourcePropertyName String, documentIdSourceHandle ValueReadHandle<? extends I>) : HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
-          "validation": true
-        },
-        {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\ttype : EntityDomainType<E> to entityClass : Class<E> in class org.hibernate.search.mapper.orm.loading.impl.CriteriaTypeQueryFactory",
           "validation": true
@@ -2350,6 +2341,11 @@
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\ttype : EntityDomainType<E> to entityClass : Class<E> in class org.hibernate.search.mapper.orm.loading.impl.CriteriaTypeQueryFactory",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate sessionFactory : SessionFactoryImplementor from class org.hibernate.search.mapper.orm.loading.impl.AbstractHibernateOrmLoadingStrategy to private sessionFactory : SessionFactoryImplementor from class org.hibernate.search.jakarta.batch.core.massindexing.util.impl.EntityTypeDescriptor",
           "validation": true
         },
         {
@@ -2361,22 +2357,12 @@
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.hibernate.search.mapper.orm.model.impl.DocumentIdSourceProperty from class org.hibernate.search.mapper.orm.mapping.impl.AbstractHibernateOrmTypeContext.AbstractBuilder",
           "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tqueryFactory : TypeQueryFactory<?,?> to queryFactory : TypeQueryFactory<E,?> in method private create(rootClass RootClass, rootMappedClass Class<E>) : HibernateOrmEntityIdEntityLoadingStrategy<E,?> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tqueryFactory : TypeQueryFactory<?,I> to queryFactory : TypeQueryFactory<E,I> in method private create(persistentClass PersistentClass, mappedClass Class<E>, documentIdSourcePropertyClass Class<I>, documentIdSourcePropertyName String, documentIdSourceHandle ValueReadHandle<? extends I>) : HibernateOrmNonEntityIdPropertyEntityLoadingStrategy<E,I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
-          "validation": true
         }
       ],
       "baseline": [
         {
           "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tHibernateOrmEntityLoadingStrategy<?,?> to HibernateOrmEntityLoadingStrategy<?,? super I> in method public create(persistentClass PersistentClass, documentIdSourceProperty DocumentIdSourceProperty<I>) : HibernateOrmEntityLoadingStrategy<?,? super I> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmNonEntityIdPropertyEntityLoadingStrategy",
+          "description": "Change Return Type\tHibernateOrmEntityLoadingStrategy<?,?> to HibernateOrmEntityIdEntityLoadingStrategy<E,?> in method private create(rootClass RootClass, rootMappedClass Class<E>) : HibernateOrmEntityIdEntityLoadingStrategy<E,?> from class org.hibernate.search.mapper.orm.loading.impl.HibernateOrmEntityIdEntityLoadingStrategy",
           "validation": false
         },
         {
@@ -2457,28 +2443,13 @@
           "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypeManager : PojoIndexedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypeManager : PojoIndexedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
-          "validation": true
-        },
-        {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tprivate registerSuperTypes(bySuperType Map<PojoRawTypeIdentifier<?>,Set<T>>, entityType PojoRawTypeModel<?>, value T) : void from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder to private registerSuperTypes(bySuperType Map<PojoRawTypeIdentifier<?>,Set<T>>, entityType PojoRawTypeModel<?>, value T) : void from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to PojoContainedTypeManager.Builder<E> in method public addContained(typeModel PojoRawTypeModel<E>, entityName String, identityMappingCollector PojoRootIdentityMappingCollector<E>, extendedMappingCollector PojoContainedTypeExtendedMappingCollector) : PojoContainedTypeManager.Builder<E> from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
           "validation": true
         },
         {
@@ -2495,14 +2466,24 @@
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tprivate indexManagerBuilder : MappedIndexManagerBuilder from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoIndexedTypeManagerBuilder to private indexManagerBuilder : MappedIndexManagerBuilder from class org.hibernate.search.mapper.pojo.mapping.impl.PojoIndexedTypeManager.Builder",
           "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to PojoContainedTypeManager.Builder<E> in method public addContained(typeModel PojoRawTypeModel<E>, entityName String, identityMappingCollector PojoRootIdentityMappingCollector<E>, extendedMappingCollector PojoContainedTypeExtendedMappingCollector) : PojoContainedTypeManager.Builder<E> from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
-          "validation": true
         }
       ],
       "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tsingleConcreteTypeInEntityHierarchy : boolean to singleConcreteTypeInEntityHierarchy : Boolean in class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tAbstractPojoTypeManager<I,E> to AbstractPojoTypeManager<?,E> in method public abstract build() : AbstractPojoTypeManager<?,E> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate identityMappingCollector : PojoRootIdentityMappingCollector<E> from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoIndexedTypeManagerBuilder to private identityMappingCollector : PojoRootIdentityMappingCollector<E> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
+          "validation": true
+        },
         {
           "type": "MOVE_RENAME_ATTRIBUTE",
           "description": "Move And Rename Attribute\tprivate indexedTypeManagerBuilders : Map<PojoRawTypeModel<?>,PojoIndexedTypeManagerBuilder<?>> renamed to public indexed : Map<PojoRawTypeModel<?>,PojoIndexedTypeManager.Builder<?>> and moved from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoMapper to class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
@@ -2514,23 +2495,8 @@
           "validation": true
         },
         {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate closed : boolean from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoIndexedTypeManagerBuilder to protected closed : boolean from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tsingleConcreteTypeInEntityHierarchy : boolean to singleConcreteTypeInEntityHierarchy : Boolean in class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
-          "validation": true
-        },
-        {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tprocessor : PojoIndexingProcessor<E> to indexingProcessor : PojoIndexingProcessor<E> in class org.hibernate.search.mapper.pojo.mapping.impl.PojoIndexedTypeManager.Builder",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate identityMappingCollector : PojoRootIdentityMappingCollector<E> from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoIndexedTypeManagerBuilder to private identityMappingCollector : PojoRootIdentityMappingCollector<E> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
           "validation": true
         },
         {
@@ -2539,8 +2505,8 @@
           "validation": true
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tAbstractPojoTypeManager<I,E> to AbstractPojoTypeManager<?,E> in method public abstract build() : AbstractPojoTypeManager<?,E> from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tprivate closed : boolean from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoIndexedTypeManagerBuilder to protected closed : boolean from class org.hibernate.search.mapper.pojo.mapping.impl.AbstractPojoTypeManager.Builder",
           "validation": true
         },
         {
@@ -2557,6 +2523,16 @@
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tbuilder : PojoIndexedTypeManagerBuilder<E> to extendedMappingCollector : var in method private mapIndexedType(indexedEntityType PojoRawTypeModel<E>, indexManagerFactory MappedIndexManagerFactory) : void from class org.hibernate.search.mapper.pojo.mapping.building.impl.PojoMapper",
           "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeManager : PojoIndexedTypeManager<?,?> to typeManager : var in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": true
         }
       ],
       "baseline": [
@@ -2579,6 +2555,26 @@
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tindexed : List<PojoIndexedTypeManager<?,?>> to indexed : Map<PojoRawTypeModel<?>,PojoIndexedTypeManager.Builder<?>> in class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
           "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypeManager : PojoIndexedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": false
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttypeManager : PojoIndexedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": false
         },
         {
           "type": "MOVE_AND_RENAME_OPERATION",
@@ -2720,6 +2716,16 @@
       ],
       "ourApproach": [
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic unknownEntityNameForAnyEntityByName(invalidName String, validNames Collection<String>) : SearchException renamed to public unknownEntityName(invalidName String, validNames Collection<String>) : SearchException in class org.hibernate.search.mapper.pojo.logging.impl.Log",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tallByNonInterfaceSuperType : Map<PojoRawTypeIdentifier<?>,Set<AbstractPojoTypeManager<?,?>>> to bySuperType : Map<PojoRawTypeIdentifier<?>,Set<AbstractPojoTypeManager<?,?>>> in class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
+          "validation": true
+        },
+        {
           "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpublic typeIdentifierResolver() : HibernateOrmRawTypeIdentifierResolver from class org.hibernate.search.mapper.orm.model.impl.HibernateOrmRuntimeIntrospectorTypeContextProvider to public typeIdentifierBySecondaryEntityName() : KeyValueProvider<String,PojoRawTypeIdentifier<?>> from class org.hibernate.search.mapper.pojo.mapping.spi.PojoRawTypeIdentifierResolver",
           "validation": true
@@ -2730,18 +2736,8 @@
           "validation": true
         },
         {
-          "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic typeIdentifierByEntityName() : KeyValueProvider<String,PojoRawTypeIdentifier<?>> from class org.hibernate.search.mapper.pojo.work.impl.PojoWorkTypeContextProvider to public nonInterfaceSuperTypeIdentifierByEntityName() : KeyValueProvider<String,PojoRawTypeIdentifier<?>> from class org.hibernate.search.mapper.pojo.scope.impl.PojoScopeTypeContextProvider",
-          "validation": true
-        },
-        {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic unknownSupertypeTypeIdentifier(typeIdentifier PojoRawTypeIdentifier<?>, availableTypeIdentifiers Set<PojoRawTypeIdentifier<?>>) : SearchException renamed to public unknownNonInterfaceSuperTypeIdentifier(typeIdentifier PojoRawTypeIdentifier<?>, availableTypeIdentifiers Set<PojoRawTypeIdentifier<?>>) : SearchException in class org.hibernate.search.mapper.pojo.logging.impl.Log",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tallByNonInterfaceSuperType : Map<PojoRawTypeIdentifier<?>,Set<AbstractPojoTypeManager<?,?>>> to bySuperType : Map<PojoRawTypeIdentifier<?>,Set<AbstractPojoTypeManager<?,?>>> in class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer.Builder",
           "validation": true
         },
         {
@@ -2750,8 +2746,8 @@
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic unknownEntityNameForAnyEntityByName(invalidName String, validNames Collection<String>) : SearchException renamed to public unknownEntityName(invalidName String, validNames Collection<String>) : SearchException in class org.hibernate.search.mapper.pojo.logging.impl.Log",
+          "type": "PUSH_DOWN_OPERATION",
+          "description": "Push Down Method\tpublic typeIdentifierByEntityName() : KeyValueProvider<String,PojoRawTypeIdentifier<?>> from class org.hibernate.search.mapper.pojo.work.impl.PojoWorkTypeContextProvider to public nonInterfaceSuperTypeIdentifierByEntityName() : KeyValueProvider<String,PojoRawTypeIdentifier<?>> from class org.hibernate.search.mapper.pojo.scope.impl.PojoScopeTypeContextProvider",
           "validation": true
         },
         {
@@ -2781,17 +2777,17 @@
         },
         {
           "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttypedIdentifier : PojoRawTypeIdentifier<?> to typeIdentifier : PojoRawTypeIdentifier<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tallNonInterfaceSuperTypesClassesContent : Set<Class<?>> to indexedBySuperTypeClassContent : Map<Class<?>,Set<PojoIndexedTypeManager<?,?>>> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
           "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tallNonInterfaceSuperTypesClassesContent : Set<Class<?>> to indexedBySuperTypeClassContent : Map<Class<?>,Set<PojoIndexedTypeManager<?,?>>> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttypedIdentifier : PojoRawTypeIdentifier<?> to typeIdentifier : PojoRawTypeIdentifier<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
           "validation": true
         },
         {
@@ -2885,13 +2881,13 @@
       "commonRefactoring": [],
       "ourApproach": [
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic interpretPath(source PojoModelPathValueNode) : PojoPathDefinition from class org.hibernate.search.mapper.pojo.model.path.impl.PojoPathsDefinitionAdapter to public interpretPath(source PojoModelPathValueNode) : PojoPathDefinition from class org.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinitionProvider",
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinition renamed to org.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinitionProvider",
           "validation": true
         },
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinition renamed to org.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinitionProvider",
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic interpretPath(source PojoModelPathValueNode) : PojoPathDefinition from class org.hibernate.search.mapper.pojo.model.path.impl.PojoPathsDefinitionAdapter to public interpretPath(source PojoModelPathValueNode) : PojoPathDefinition from class org.hibernate.search.mapper.pojo.standalone.model.impl.StandalonePojoPathsDefinitionProvider",
           "validation": true
         }
       ],

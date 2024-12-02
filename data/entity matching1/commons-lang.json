@@ -1,0 +1,2175 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "8ddebc231eb63d4e00ba3c04d108f2569c521561",
+      "url": "https://github.com/apache/commons-lang/commit/8ddebc231eb63d4e00ba3c04d108f2569c521561",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "add",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 638,
+            "endLine": 669,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "add",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 639,
+            "endLine": 669,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "addAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1083,
+            "endLine": 1136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "addAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1083,
+            "endLine": 1133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8131,
+            "endLine": 8169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8168,
+            "endLine": 8204,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8171,
+            "endLine": 8209,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8206,
+            "endLine": 8242,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8211,
+            "endLine": 8249,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8244,
+            "endLine": 8280,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8251,
+            "endLine": 8298,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8282,
+            "endLine": 8328,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 43,
+            "endLine": 9684,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 44,
+            "endLine": 9714,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Method",
+            "name": "getVarArgs",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 561,
+            "endLine": 601,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Method",
+            "name": "getVarArgs",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 561,
+            "endLine": 599,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Class",
+            "name": "MethodUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 43,
+            "endLine": 1015,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Class",
+            "name": "MethodUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 43,
+            "endLine": 1013,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "ensureCapacity",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1827,
+            "endLine": 1840,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "ensureCapacity",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1827,
+            "endLine": 1838,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "minimizeCapacity",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2464,
+            "endLine": 2476,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "minimizeCapacity",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2462,
+            "endLine": 2472,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2931,
+            "endLine": 2942,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2927,
+            "endLine": 2937,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2944,
+            "endLine": 2962,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2939,
+            "endLine": 2956,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 34,
+            "endLine": 3062,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 34,
+            "endLine": 3056,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private add(array Object, index int, element Object, clazz Class<?>) : Object",
+            "type": "Statement",
+            "name": "final Object result=Array.newInstance(clazz,length + 1);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 662,
+            "endLine": 662,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "private add(array Object, index int, element Object, clazz Class<?>) : Object",
+            "type": "Statement",
+            "name": "final Object result=arraycopy(array,0,0,index,() -> Array.newInstance(clazz,length + 1));\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 663,
+            "endLine": 663,
+            "startColumn": 9,
+            "endColumn": 105
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addAll(array1 T[], array2 T...) : T[]",
+            "type": "Statement",
+            "name": "final T[] joinedArray=newInstance(type1,array1.length + array2.length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1117,
+            "endLine": 1117,
+            "startColumn": 9,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "public addAll(array1 T[], array2 T...) : T[]",
+            "type": "Statement",
+            "name": "final T[] joinedArray=arraycopy(array1,0,0,array1.length,() -> newInstance(type1,array1.length + array2.length));\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1117,
+            "endLine": 1117,
+            "startColumn": 9,
+            "endColumn": 129
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8168,
+            "endLine": 8168,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,0,newSize,int[]::new);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8203,
+            "endLine": 8203,
+            "startColumn": 9,
+            "endColumn": 78
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8208,
+            "endLine": 8208,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,0,newSize,long[]::new);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8241,
+            "endLine": 8241,
+            "startColumn": 9,
+            "endColumn": 79
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8248,
+            "endLine": 8248,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,0,newSize,short[]::new);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8279,
+            "endLine": 8279,
+            "startColumn": 9,
+            "endColumn": 80
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8297,
+            "endLine": 8297,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,0,newSize,() -> newInstance(type,newSize));\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8327,
+            "endLine": 8327,
+            "startColumn": 9,
+            "endColumn": 100
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray() : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,0,chars,0,size);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2941,
+            "endLine": 2941,
+            "startColumn": 9,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "public toCharArray() : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,0,0,size,char[]::new);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2936,
+            "endLine": 2936,
+            "startColumn": 9,
+            "endColumn": 70
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,startIndex,chars,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2961,
+            "endLine": 2961,
+            "startColumn": 9,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,startIndex,0,len,char[]::new);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2955,
+            "endLine": 2955,
+            "startColumn": 9,
+            "endColumn": 78
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "package getVarArgs(args Object[], methodParameterTypes Class<?>[]) : Object[]",
+            "type": "Statement",
+            "name": "final Object[] newArgs=new Object[methodParameterTypes.length];\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 578,
+            "endLine": 578,
+            "startColumn": 9,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "package getVarArgs(args Object[], methodParameterTypes Class<?>[]) : Object[]",
+            "type": "Statement",
+            "name": "final Object[] newArgs=ArrayUtils.arraycopy(args,0,0,methodParameterTypes.length - 1,() -> new Object[methodParameterTypes.length]);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 579,
+            "endLine": 579,
+            "startColumn": 9,
+            "endColumn": 147
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package getVarArgs(args Object[], methodParameterTypes Class<?>[]) : Object[]",
+            "type": "Statement",
+            "name": "Object varArgsArray=Array.newInstance(ClassUtils.primitiveToWrapper(varArgComponentType),varArgLength);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 587,
+            "endLine": 587,
+            "startColumn": 9,
+            "endColumn": 115
+          },
+          "rightSideLocation": {
+            "container": "package getVarArgs(args Object[], methodParameterTypes Class<?>[]) : Object[]",
+            "type": "Statement",
+            "name": "Object varArgsArray=ArrayUtils.arraycopy(args,methodParameterTypes.length - 1,0,varArgLength,s -> Array.newInstance(ClassUtils.primitiveToWrapper(varArgComponentType),varArgLength));\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 586,
+            "endLine": 587,
+            "startColumn": 9,
+            "endColumn": 107
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ensureCapacity(capacity int) : StrBuilder",
+            "type": "Statement",
+            "name": "buffer=new char[capacity * 2];\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1836,
+            "endLine": 1836,
+            "startColumn": 13,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "public ensureCapacity(capacity int) : StrBuilder",
+            "type": "Statement",
+            "name": "buffer=ArrayUtils.arraycopy(buffer,0,0,size,() -> new char[capacity * 2]);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1835,
+            "endLine": 1835,
+            "startColumn": 13,
+            "endColumn": 93
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public minimizeCapacity() : StrBuilder",
+            "type": "Statement",
+            "name": "buffer=new char[length()];\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2472,
+            "endLine": 2472,
+            "startColumn": 13,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "public minimizeCapacity() : StrBuilder",
+            "type": "Statement",
+            "name": "buffer=ArrayUtils.arraycopy(buffer,0,0,size,() -> new char[length()]);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2469,
+            "endLine": 2469,
+            "startColumn": 13,
+            "endColumn": 89
+          },
+          "validation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "88374a270ba401e34d7441133f91bd86771ddb06",
+      "url": "https://github.com/apache/commons-lang/commit/88374a270ba401e34d7441133f91bd86771ddb06",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8110,
+            "endLine": 8149,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8131,
+            "endLine": 8169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8151,
+            "endLine": 8190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8171,
+            "endLine": 8209,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8192,
+            "endLine": 8231,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8211,
+            "endLine": 8249,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8233,
+            "endLine": 8281,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "subarray",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8251,
+            "endLine": 8298,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 43,
+            "endLine": 9667,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 43,
+            "endLine": 9684,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "getChars",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1907,
+            "endLine": 1920,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "getChars",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1907,
+            "endLine": 1919,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2932,
+            "endLine": 2944,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2931,
+            "endLine": 2942,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2946,
+            "endLine": 2965,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "toCharArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2944,
+            "endLine": 2962,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 34,
+            "endLine": 3065,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 34,
+            "endLine": 3062,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+            "type": "Method",
+            "name": "with",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 125,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+            "type": "Method",
+            "name": "with",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 127,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+            "type": "Class",
+            "name": "CharSequenceTranslator",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 26,
+            "endLine": 139,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+            "type": "Class",
+            "name": "CharSequenceTranslator",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 28,
+            "endLine": 140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public with(translators CharSequenceTranslator...) : CharSequenceTranslator",
+            "type": "Statement",
+            "name": "return new AggregateTranslator(newArray);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 9,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "public with(translators CharSequenceTranslator...) : CharSequenceTranslator",
+            "type": "Statement",
+            "name": "return new AggregateTranslator(ArrayUtils.arraycopy(translators,0,newArray,1,translators.length));\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 137,
+            "endLine": 137,
+            "startColumn": 9,
+            "endColumn": 111
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "return subarray;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8148,
+            "endLine": 8148,
+            "startColumn": 9,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8147,
+            "endLine": 8147,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "return subarray;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8189,
+            "endLine": 8189,
+            "startColumn": 9,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8188,
+            "endLine": 8188,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "return subarray;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8230,
+            "endLine": 8230,
+            "startColumn": 9,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8229,
+            "endLine": 8229,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "return subarray;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8280,
+            "endLine": 8280,
+            "startColumn": 9,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8279,
+            "endLine": 8279,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getChars(destination char[]) : char[]",
+            "type": "Statement",
+            "name": "return destination;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1919,
+            "endLine": 1919,
+            "startColumn": 9,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray() : char[]",
+            "type": "Statement",
+            "name": "return chars;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2943,
+            "endLine": 2943,
+            "startColumn": 9,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "return chars;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2964,
+            "endLine": 2964,
+            "startColumn": 9,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "return dest;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1395,
+            "endLine": 1395,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "System.arraycopy(buffer,startIndex,chars,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2963,
+            "endLine": 2963,
+            "startColumn": 9,
+            "endColumn": 61
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public with(translators CharSequenceTranslator...) : CharSequenceTranslator",
+            "type": "Statement",
+            "name": "System.arraycopy(translators,0,newArray,1,translators.length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+            "startLine": 135,
+            "endLine": 135,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
+            "type": "Statement",
+            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1394,
+            "endLine": 1394,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8147,
+            "endLine": 8147,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array int[], startIndexInclusive int, endIndexExclusive int) : int[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8168,
+            "endLine": 8168,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8188,
+            "endLine": 8188,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array long[], startIndexInclusive int, endIndexExclusive int) : long[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8208,
+            "endLine": 8208,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8229,
+            "endLine": 8229,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array short[], startIndexInclusive int, endIndexExclusive int) : short[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8248,
+            "endLine": 8248,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "System.arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8279,
+            "endLine": 8279,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[]",
+            "type": "Statement",
+            "name": "return arraycopy(array,startIndexInclusive,subarray,0,newSize);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8297,
+            "endLine": 8297,
+            "startColumn": 9,
+            "endColumn": 76
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getChars(destination char[]) : char[]",
+            "type": "Statement",
+            "name": "System.arraycopy(buffer,0,destination,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1918,
+            "endLine": 1918,
+            "startColumn": 9,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "container": "public getChars(destination char[]) : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,0,destination,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1918,
+            "endLine": 1918,
+            "startColumn": 9,
+            "endColumn": 69
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray() : char[]",
+            "type": "Statement",
+            "name": "System.arraycopy(buffer,0,chars,0,size);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2942,
+            "endLine": 2942,
+            "startColumn": 9,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "container": "public toCharArray() : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,0,chars,0,size);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2941,
+            "endLine": 2941,
+            "startColumn": 9,
+            "endColumn": 64
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "System.arraycopy(buffer,startIndex,chars,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2963,
+            "endLine": 2963,
+            "startColumn": 9,
+            "endColumn": 61
+          },
+          "rightSideLocation": {
+            "container": "public toCharArray(startIndex int, endIndex int) : char[]",
+            "type": "Statement",
+            "name": "return ArrayUtils.arraycopy(buffer,startIndex,chars,0,len);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 2961,
+            "endLine": 2961,
+            "startColumn": 9,
+            "endColumn": 72
+          },
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "ab8caff3a352fcf10563db44b85f7e8fb154e3a1",
+      "url": "https://github.com/apache/commons-lang/commit/ab8caff3a352fcf10563db44b85f7e8fb154e3a1",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4306,
+            "endLine": 4323,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4327,
+            "endLine": 4344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4344,
+            "endLine": 4361,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4365,
+            "endLine": 4382,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4382,
+            "endLine": 4399,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4403,
+            "endLine": 4420,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4401,
+            "endLine": 4418,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4422,
+            "endLine": 4439,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4439,
+            "endLine": 4456,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4460,
+            "endLine": 4477,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4477,
+            "endLine": 4494,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4498,
+            "endLine": 4515,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4515,
+            "endLine": 4532,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4536,
+            "endLine": 4553,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4553,
+            "endLine": 4570,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4574,
+            "endLine": 4591,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4572,
+            "endLine": 4589,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4593,
+            "endLine": 4610,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4610,
+            "endLine": 4627,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4631,
+            "endLine": 4648,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4629,
+            "endLine": 4646,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Method",
+            "name": "nullToEmpty",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4650,
+            "endLine": 4667,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 43,
+            "endLine": 9646,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtils",
+            "type": "Class",
+            "name": "ArrayUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 43,
+            "endLine": 9667,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtilsTest",
+            "type": "Class",
+            "name": "ArrayUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+            "startLine": 42,
+            "endLine": 6581,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ArrayUtilsTest",
+            "type": "Class",
+            "name": "ArrayUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+            "startLine": 42,
+            "endLine": 6587,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Boolean[]) : Boolean[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_BOOLEAN_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4322,
+            "endLine": 4322,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Byte[]) : Byte[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_BYTE_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4360,
+            "endLine": 4360,
+            "startColumn": 9,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Character[]) : Character[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_CHARACTER_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4398,
+            "endLine": 4398,
+            "startColumn": 9,
+            "endColumn": 70
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Class<?>[]) : Class<?>[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_CLASS_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4417,
+            "endLine": 4417,
+            "startColumn": 9,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Double[]) : Double[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_DOUBLE_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4455,
+            "endLine": 4455,
+            "startColumn": 9,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Float[]) : Float[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_FLOAT_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4493,
+            "endLine": 4493,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Integer[]) : Integer[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_INTEGER_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4531,
+            "endLine": 4531,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Long[]) : Long[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_LONG_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4569,
+            "endLine": 4569,
+            "startColumn": 9,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Object[]) : Object[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4588,
+            "endLine": 4588,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Short[]) : Short[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_SHORT_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4626,
+            "endLine": 4626,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array String[]) : String[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_STRING_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4645,
+            "endLine": 4645,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "public nullTo(array T[], defaultArray T[]) : T[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? defaultArray : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4305,
+            "endLine": 4305,
+            "startColumn": 9,
+            "endColumn": 54
+          },
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Boolean[]) : Boolean[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_BOOLEAN_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4322,
+            "endLine": 4322,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Boolean[]) : Boolean[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_BOOLEAN_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4343,
+            "endLine": 4343,
+            "startColumn": 9,
+            "endColumn": 58
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Byte[]) : Byte[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_BYTE_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4360,
+            "endLine": 4360,
+            "startColumn": 9,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Byte[]) : Byte[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_BYTE_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4381,
+            "endLine": 4381,
+            "startColumn": 9,
+            "endColumn": 55
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Character[]) : Character[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_CHARACTER_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4398,
+            "endLine": 4398,
+            "startColumn": 9,
+            "endColumn": 70
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Character[]) : Character[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_CHARACTER_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4419,
+            "endLine": 4419,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Class<?>[]) : Class<?>[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_CLASS_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4417,
+            "endLine": 4417,
+            "startColumn": 9,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Class<?>[]) : Class<?>[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_CLASS_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4438,
+            "endLine": 4438,
+            "startColumn": 9,
+            "endColumn": 49
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Double[]) : Double[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_DOUBLE_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4455,
+            "endLine": 4455,
+            "startColumn": 9,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Double[]) : Double[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_DOUBLE_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4476,
+            "endLine": 4476,
+            "startColumn": 9,
+            "endColumn": 57
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Float[]) : Float[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_FLOAT_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4493,
+            "endLine": 4493,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Float[]) : Float[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_FLOAT_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4514,
+            "endLine": 4514,
+            "startColumn": 9,
+            "endColumn": 56
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Integer[]) : Integer[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_INTEGER_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4531,
+            "endLine": 4531,
+            "startColumn": 9,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Integer[]) : Integer[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_INTEGER_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4552,
+            "endLine": 4552,
+            "startColumn": 9,
+            "endColumn": 58
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Long[]) : Long[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_LONG_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4569,
+            "endLine": 4569,
+            "startColumn": 9,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Long[]) : Long[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_LONG_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4590,
+            "endLine": 4590,
+            "startColumn": 9,
+            "endColumn": 55
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Object[]) : Object[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4588,
+            "endLine": 4588,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Object[]) : Object[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4609,
+            "endLine": 4609,
+            "startColumn": 9,
+            "endColumn": 50
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array Short[]) : Short[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_SHORT_OBJECT_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4626,
+            "endLine": 4626,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array Short[]) : Short[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_SHORT_OBJECT_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4647,
+            "endLine": 4647,
+            "startColumn": 9,
+            "endColumn": 56
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public nullToEmpty(array String[]) : String[]",
+            "type": "Statement",
+            "name": "return isEmpty(array) ? EMPTY_STRING_ARRAY : array;\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4645,
+            "endLine": 4645,
+            "startColumn": 9,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "public nullToEmpty(array String[]) : String[]",
+            "type": "Statement",
+            "name": "return nullTo(array,EMPTY_STRING_ARRAY);\n",
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4666,
+            "endLine": 4666,
+            "startColumn": 9,
+            "endColumn": 50
+          },
+          "validation": false
+        }
+      ]
+    }
+  ]
+}

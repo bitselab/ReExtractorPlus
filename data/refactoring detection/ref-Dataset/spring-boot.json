@@ -69,11 +69,6 @@
       ],
       "baseline": [
         {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\thistogramFlavor : HistogramFlavor in method package mapToMicrometerHistogramFlavor(properties PrometheusProperties) : HistogramFlavor from class org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus.PrometheusSimpleclientPropertiesConfigAdapter",
-          "validation": true
-        },
-        {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tscrapePage : String to content : byte[] in method public scrape(format PrometheusOutputFormat, includedNames Set<String>) : WebEndpointResponse<byte[]> from class org.springframework.boot.actuate.metrics.export.prometheus.PrometheusScrapeEndpoint",
           "validation": true
@@ -93,6 +88,11 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.springframework.boot.jarmode.tools.AbstractTests renamed to org.springframework.boot.jarmode.tools.AbstractJarModeTests",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresourceLoader : ApplicationResourceLoader in method private getResource() : Resource from class org.springframework.boot.autoconfigure.ssl.BundleContentProperty",
           "validation": true
         },
         {
@@ -148,23 +148,29 @@
           "validation": true
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage ArgFile(path Path) renamed to package create(content CharSequence) : ArgFile in class org.springframework.boot.maven.AbstractRunMojo.ArgFile",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_TYPE_DECLARATION_KIND",
+          "description": "Change Type Declaration Kind\tclass to record in type org.springframework.boot.maven.AbstractRunMojo.ArgFile",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tescaped : String in method package write(content String) : void from class org.springframework.boot.maven.AbstractRunMojo.ArgFile",
+          "validation": true
+        }
+      ]
     },
     {
       "repository": "https://github.com/spring-projects/spring-boot.git",
       "sha1": "21f5d375b7a821f8c1ba5ac4ab6c91afd2124659",
       "url": "https://github.com/spring-projects/spring-boot/commit/21f5d375b7a821f8c1ba5ac4ab6c91afd2124659",
       "commonRefactoring": [
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tsourceType : Class<S> in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tconnectionDetailsType : Class<D> in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
-          "validation": true
-        },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tbaos : ByteArrayOutputStream to byteArrayOutputStream : ByteArrayOutputStream in method private createStringFromBanner(banner Banner, environment Environment, mainApplicationClass Class<?>) : String from class org.springframework.boot.SpringApplicationBannerPrinter",
@@ -174,18 +180,28 @@
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tprintStream : PrintStream to out : PrintStream in method private createStringFromBanner(banner Banner, environment Environment, mainApplicationClass Class<?>) : String from class org.springframework.boot.SpringApplicationBannerPrinter",
           "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tsourceType : Class<S> in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tconnectionDetailsType : Class<D> in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
+          "validation": true
         }
       ],
       "ourApproach": [],
       "baseline": [
         {
           "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate resolveGenerics(type ResolvableType) : Class<?>[] inlined to private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> in class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
+          "description": "Inline Method\tprivate resolveGenerics(type ResolvableType) : Class<?>[] inlined to private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> in class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
           "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tresolvedGenerics : Class<?>[] to generics : Class<?>[] in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
+          "description": "Rename Variable\tresolvedGenerics : Class<?>[] to generics : Class<?>[] in method private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
           "validation": false
         },
         {
@@ -237,6 +253,11 @@
       ],
       "ourApproach": [],
       "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tprovider : SslProvider in method private applySecurity(spec SslContextSpec) : void from class org.springframework.boot.web.embedded.netty.SslServerCustomizer",
+          "validation": true
+        },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate createSslContext() : SSLContext extracted from public customize(builder Undertow.Builder) : void in class org.springframework.boot.web.embedded.undertow.SslBuilderCustomizer",
@@ -303,6 +324,11 @@
       ],
       "baseline": [
         {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.build.artifacts.ArtifactRelease.Type from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "validation": true
+        },
+        {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpackage apply(project Project) : void from class org.springframework.boot.build.AsciidoctorConventions to package apply(project Project) : void from class org.springframework.boot.build.AntoraConventions",
           "validation": false
@@ -314,7 +340,13 @@
       "sha1": "0962025c4b8c08eef1023aa5c06768dfb8bf022e",
       "url": "https://github.com/spring-projects/spring-boot/commit/0962025c4b8c08eef1023aa5c06768dfb8bf022e",
       "commonRefactoring": [],
-      "ourApproach": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate toUrl() : URL inlined to private toPath() : Path in class org.springframework.boot.autoconfigure.ssl.BundleContentProperty",
+          "validation": false
+        }
+      ],
       "baseline": [
         {
           "type": "CHANGE_VARIABLE_TYPE",
@@ -459,6 +491,11 @@
         },
         {
           "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate getWorkingDirectory(options Map<Option,String>) : File renamed to private getDestination(options Map<Option,String>) : File in class org.springframework.boot.jarmode.tools.ExtractCommand",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate createRunner(jarStructure JarStructure, fileResolver FileResolver, options Map<Option,String>) : void renamed to private createApplication(jarStructure JarStructure, fileResolver FileResolver, options Map<Option,String>) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
           "validation": true
         },
@@ -470,6 +507,11 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\trunnerFilename : String to applicationFilename : String in method private getFileResolver(destination File, options Map<Option,String>) : FileResolver from class org.springframework.boot.jarmode.tools.ExtractCommand",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tdestination : File in method private getDestination(options Map<Option,String>) : File from class org.springframework.boot.jarmode.tools.ExtractCommand",
           "validation": true
         },
         {
@@ -541,19 +583,9 @@
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic resolveRunner() : File renamed to public resolveApplication() : File in class org.springframework.boot.jarmode.tools.ExtractCommand.FileResolver",
           "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate getWorkingDirectory(options Map<Option,String>) : File renamed to private getDestination(options Map<Option,String>) : File in class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": true
         }
       ],
       "ourApproach": [
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tdestination : File in method private getDestination(options Map<Option,String>) : File from class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": true
-        },
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tout : TestPrintStream in method package failsOnIncompatibleJar() : void from class org.springframework.boot.jarmode.tools.ExtractCommandTests.Extract",
@@ -570,6 +602,11 @@
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.springframework.boot.jarmode.layertools.LayerToolsJarMode.Runner moved to org.springframework.boot.jarmode.tools.Runner",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.jarmode.layertools.Command moved to org.springframework.boot.jarmode.tools.Command",
           "validation": true
         },
         {
@@ -609,7 +646,7 @@
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.boot.jarmode.layertools.Command moved to org.springframework.boot.jarmode.tools.Command",
+          "description": "Move Class\torg.springframework.boot.jarmode.layertools.ExtractCommand moved to org.springframework.boot.jarmode.tools.ExtractCommand",
           "validation": true
         },
         {
@@ -640,11 +677,6 @@
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.springframework.boot.jarmode.layertools.ListCommandTests moved to org.springframework.boot.jarmode.tools.ListCommandTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.boot.jarmode.layertools.ExtractCommand moved to org.springframework.boot.jarmode.tools.ExtractCommand",
           "validation": true
         },
         {
@@ -691,22 +723,20 @@
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tpackage contextOverride : Context from class org.springframework.boot.jarmode.layertools.LayerToolsJarMode.Runner to package contextOverride : Context from class org.springframework.boot.jarmode.tools.LayerToolsJarMode",
           "validation": true
-        }
-      ],
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage runWhenHasNoCommandParameterPrintsUsage() : void renamed to package shouldPrintCommandSpecificHelp() : void in class org.springframework.boot.jarmode.tools.HelpCommandTests",
-          "validation": true
         },
         {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage DESTINATION_OPTION : Option from class org.springframework.boot.jarmode.layertools.ExtractCommand to package DESTINATION_OPTION : Option from class org.springframework.boot.jarmode.tools.ExtractLayersCommand",
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.springframework.boot.jarmode.layertools.LayerToolsJarMode moved to org.springframework.boot.jarmode.tools.LayerToolsJarMode",
           "validation": true
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage runWhenHasNoParametersPrintsUsage() : void renamed to package shouldPrintAllCommands() : void in class org.springframework.boot.jarmode.tools.HelpCommandTests",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage runWhenHasNoCommandParameterPrintsUsage() : void renamed to package shouldPrintCommandSpecificHelp() : void in class org.springframework.boot.jarmode.tools.HelpCommandTests",
           "validation": true
         },
         {
@@ -718,20 +748,17 @@
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.springframework.boot.jarmode.layertools.HelpCommandTests moved to org.springframework.boot.jarmode.tools.HelpCommandTests",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tprotected run(options Map<Option,String>, parameters List<String>) : void from class org.springframework.boot.jarmode.layertools.ExtractCommand to package run(out PrintStream, options Map<Option,String>, parameters List<String>) : void from class org.springframework.boot.jarmode.tools.ExtractLayersCommand",
           "validation": false
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate mkDirs(file File) : void from class org.springframework.boot.jarmode.layertools.ExtractCommand to private mkDirs(file File) : void from class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": false
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.boot.jarmode.layertools.LayerToolsJarMode moved to org.springframework.boot.jarmode.tools.LayerToolsJarMode",
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage DESTINATION_OPTION : Option from class org.springframework.boot.jarmode.layertools.ExtractCommand to package DESTINATION_OPTION : Option from class org.springframework.boot.jarmode.tools.ExtractLayersCommand",
           "validation": true
         },
         {
@@ -747,6 +774,11 @@
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpackage printLayers(out PrintStream, layers Layers) : void extracted from package printLayers(layers Layers, out PrintStream) : void in class org.springframework.boot.jarmode.layertools.ListCommand & moved to class org.springframework.boot.jarmode.tools.ListLayersCommand",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.boot.jarmode.tools.ExtractLayersCommand from class org.springframework.boot.jarmode.layertools.ExtractCommand",
           "validation": true
         },
         {
@@ -777,18 +809,18 @@
           "validation": true
         },
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate write(zip ZipInputStream, entry ZipEntry, destination File) : void renamed to private extractEntry(zip ZipInputStream, entry ZipEntry, file File) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
+          "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate mkParentDirs(file File) : void inlined to private extractEntry(zip ZipInputStream, entry ZipEntry, file File) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
+          "validation": true
+        },
+        {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate checkJarCompatibility() : void extracted from protected run(options Map<Option,String>, parameters List<String>) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate withZipEntries(file File, callback ThrowingConsumer) : void extracted from protected run(options Map<Option,String>, parameters List<String>) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate withZipEntries(file File, callback ThrowingConsumer) : void extracted from protected run(options Map<Option,String>, parameters List<String>) : void in class org.springframework.boot.jarmode.tools.ExtractCommand",
           "validation": true
         },
         {
@@ -822,28 +854,8 @@
           "validation": false
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to File in method private assertFileIsContainedInDirectory(directory File, file File, name String) : File from class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tprivate write(zip ZipInputStream, entry ZipEntry, destination File) : void from class org.springframework.boot.jarmode.layertools.ExtractCommand to private assertFileIsContainedInDirectory(directory File, file File, name String) : File from class org.springframework.boot.jarmode.tools.ExtractCommand",
-          "validation": false
-        },
-        {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage setup() : void from class org.springframework.boot.jarmode.layertools.HelpCommandTests to package setup() : void from class org.springframework.boot.jarmode.tools.HelpCommandTests",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage runWhenHasNoParametersPrintsUsage() : void from class org.springframework.boot.jarmode.layertools.HelpCommandTests to package shouldPrintAllCommands() : void from class org.springframework.boot.jarmode.tools.HelpCommandTests",
-          "validation": false
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage runWhenHasNoCommandParameterPrintsUsage() : void from class org.springframework.boot.jarmode.layertools.HelpCommandTests to package shouldPrintCommandSpecificHelp() : void from class org.springframework.boot.jarmode.tools.HelpCommandTests",
+          "description": "Move Method\tpublic run(mode String, args String[]) : void from class org.springframework.boot.jarmode.layertools.LayerToolsJarMode to public run(mode String, args String[]) : void from class org.springframework.boot.jarmode.tools.ToolsJarMode",
           "validation": false
         },
         {
@@ -927,12 +939,12 @@
       "baseline": [
         {
           "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate resolveGenerics(type ResolvableType) : Class<?>[] extracted from private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> in class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
+          "description": "Extract Method\tprivate resolveGenerics(type ResolvableType) : Class<?>[] extracted from private get(factory ConnectionDetailsFactory<S,D>) : Registration<S,D> in class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
           "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tgenerics : Class<?>[] to resolvedGenerics : Class<?>[] in method private resolveGenerics(type ResolvableType) : Class<?>[] from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories",
+          "description": "Rename Variable\tgenerics : Class<?>[] to resolvedGenerics : Class<?>[] in method private resolveGenerics(type ResolvableType) : Class<?>[] from class org.springframework.boot.autoconfigure.service.connection.ConnectionDetailsFactories.Registration",
           "validation": false
         }
       ]
@@ -985,11 +997,6 @@
         }
       ],
       "baseline": [
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tzipkinUrl : String to url : String in class org.springframework.boot.actuate.autoconfigure.tracing.zipkin.TestHttpEndpointSupplier",
-          "validation": false
-        },
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tZIPKIN_URL : String to url : String in class org.springframework.boot.actuate.autoconfigure.tracing.zipkin.TestHttpEndpointSupplier",

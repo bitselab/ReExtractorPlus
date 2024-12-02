@@ -6,6 +6,7 @@ import org.reextractor.refactoring.Refactoring;
 import org.reextractor.refactoring.RefactoringType;
 import org.reextractor.service.RefactoringExtractorService;
 import org.reextractor.service.RefactoringExtractorServiceImpl;
+import org.remapper.dto.MatchPair;
 import org.remapper.service.GitService;
 import org.remapper.util.GitServiceImpl;
 
@@ -21,7 +22,7 @@ public class ReExtractor {
             RefactoringExtractorService service = new RefactoringExtractorServiceImpl();
             service.detectAtCommit(repo, commitId, new RefactoringHandler() {
                 @Override
-                public void handle(String commitId, List<Refactoring> refactorings) {
+                public void handle(String commitId, MatchPair matchPair, List<Refactoring> refactorings) {
                     results.addAll(filter(refactorings));
                 }
 
@@ -31,8 +32,7 @@ public class ReExtractor {
                     e.printStackTrace(System.err);
                 }
             });
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (Exception ignore) {
         }
         return results;
     }

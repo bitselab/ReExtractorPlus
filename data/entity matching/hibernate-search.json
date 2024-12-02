@@ -443,8 +443,55 @@
           "validation": true
         }
       ],
-      "ourApproach": [],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public collectMatchingDocs() : void",
+            "type": "Statement",
+            "name": "Deadline deadline=timeoutManager.deadlineOrNull();\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/LuceneCollectors.java",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 4,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "container": "public queryTimeout() : HibernateSearchQueryTimeout",
+            "type": "Statement",
+            "name": "Deadline deadline=timeoutManager.deadlineOrNull();\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 3,
+            "endColumn": 55
+          },
+          "validation": true
+        }
+      ],
       "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
+            "type": "Method",
+            "name": "newCollector",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 55,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
+            "type": "Method",
+            "name": "queryTimeout",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 55,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
         {
           "leftSideLocation": {
             "container": "public collectTopDocsData(collectorFactory TopDocsDataCollector.Factory<T>, startInclusive int, endExclusive int) : List<T>",
@@ -470,37 +517,14 @@
         },
         {
           "leftSideLocation": {
-            "container": "public collectMatchingDocs() : void",
+            "container": "private wrapTimeLimitingCollectorIfNecessary(collector Collector) : Collector",
             "type": "Statement",
-            "name": "if(deadline == null)",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/LuceneCollectors.java",
-            "startLine": 101,
-            "endLine": 103,
-            "startColumn": 4,
-            "endColumn": 5
-          },
-          "rightSideLocation": {
-            "container": "public queryTimeout() : HibernateSearchQueryTimeout",
-            "type": "Statement",
-            "name": "if(deadline != null)",
+            "name": "final Deadline deadline=timeoutManager.deadlineOrNull();\n",
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
-            "startLine": 57,
-            "endLine": 59,
+            "startLine": 63,
+            "endLine": 63,
             "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "public collectTopDocsData(collectorFactory TopDocsDataCollector.Factory<T>, startInclusive int, endExclusive int) : List<T>",
-            "type": "Statement",
-            "name": "Deadline deadline=timeoutManager.deadlineOrNull();\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/LuceneCollectors.java",
-            "startLine": 177,
-            "endLine": 177,
-            "startColumn": 4,
-            "endColumn": 56
+            "endColumn": 61
           },
           "rightSideLocation": {
             "container": "public queryTimeout() : HibernateSearchQueryTimeout",
@@ -512,18 +536,41 @@
             "startColumn": 3,
             "endColumn": 55
           },
-          "validation": false
+          "validation": true
         },
         {
           "leftSideLocation": {
-            "container": "public collectTopDocsData(collectorFactory TopDocsDataCollector.Factory<T>, startInclusive int, endExclusive int) : List<T>",
+            "container": "private wrapTimeLimitingCollectorIfNecessary(collector Collector) : Collector",
             "type": "Statement",
-            "name": "if(deadline == null)",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/LuceneCollectors.java",
-            "startLine": 178,
-            "endLine": 180,
-            "startColumn": 4,
-            "endColumn": 5
+            "name": "return collector;\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 20
+          },
+          "rightSideLocation": {
+            "container": "public queryTimeout() : HibernateSearchQueryTimeout",
+            "type": "Statement",
+            "name": "return null;\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private wrapTimeLimitingCollectorIfNecessary(collector Collector) : Collector",
+            "type": "Statement",
+            "name": "if(deadline != null)",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/extraction/impl/HibernateSearchMultiCollectorManager.java",
+            "startLine": 64,
+            "endLine": 72,
+            "startColumn": 3,
+            "endColumn": 4
           },
           "rightSideLocation": {
             "container": "public queryTimeout() : HibernateSearchQueryTimeout",
@@ -535,7 +582,7 @@
             "startColumn": 3,
             "endColumn": 4
           },
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -5376,22 +5423,68 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
             "type": "Method",
-            "name": "queryString",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 169,
-            "endLine": 336,
+            "name": "AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchSimpleStandardFieldTypeOptionsStep.java",
+            "startLine": 35,
+            "endLine": 39,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.QueryStringPredicateSpecificsIT",
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
             "type": "Method",
-            "name": "queryStringSyntax",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 236,
-            "endLine": 450,
+            "name": "AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchSimpleStandardFieldTypeOptionsStep.java",
+            "startLine": 36,
+            "endLine": 41,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneTemporalIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractLuceneTemporalIndexFieldTypeOptionsStep",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneTemporalIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractLuceneTemporalIndexFieldTypeOptionsStep",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 40,
+            "endLine": 43,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneStandardIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractLuceneStandardIndexFieldTypeOptionsStep",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneStandardIndexFieldTypeOptionsStep.java",
+            "startLine": 32,
+            "endLine": 34,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneStandardIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractLuceneStandardIndexFieldTypeOptionsStep",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneStandardIndexFieldTypeOptionsStep.java",
+            "startLine": 33,
+            "endLine": 37,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -5417,6 +5510,167 @@
             "endLine": 130,
             "startColumn": 3,
             "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
+            "type": "Method",
+            "name": "queryString",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 169,
+            "endLine": 336,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.QueryStringPredicateSpecificsIT",
+            "type": "Method",
+            "name": "queryStringSyntax",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 236,
+            "endLine": 450,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 33,
+            "endLine": 36,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 36,
+            "endLine": 39,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.predicate.impl.ElasticsearchCommonQueryStringPredicateBuilderFieldState.Factory",
+            "type": "Method",
+            "name": "create",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/predicate/impl/ElasticsearchCommonQueryStringPredicateBuilderFieldState.java",
+            "startLine": 54,
+            "endLine": 58,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.predicate.impl.ElasticsearchCommonQueryStringPredicateBuilderFieldState.Factory",
+            "type": "Method",
+            "name": "create",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/predicate/impl/ElasticsearchCommonQueryStringPredicateBuilderFieldState.java",
+            "startLine": 59,
+            "endLine": 63,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
+            "type": "Method",
+            "name": "HibernateSearchMultiFieldQueryParser",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneQueryStringPredicate.java",
+            "startLine": 156,
+            "endLine": 160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
+            "type": "Method",
+            "name": "HibernateSearchMultiFieldQueryParser",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneQueryStringPredicate.java",
+            "startLine": 157,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
+            "type": "Method",
+            "name": "simpleQueryString",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 74,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.SimpleQueryStringPredicateSpecificsIT",
+            "type": "Method",
+            "name": "simpleQueryStringSyntax",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
+            "startLine": 318,
+            "endLine": 405,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.engine.backend.document.model.spi.IndexIdentifier",
+            "type": "Method",
+            "name": "IndexIdentifier",
+            "filePath": "engine/src/main/java/org/hibernate/search/engine/backend/document/model/spi/IndexIdentifier.java",
+            "startLine": 20,
+            "endLine": 23,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.engine.backend.document.model.spi.IndexIdentifier",
+            "type": "Method",
+            "name": "IndexIdentifier",
+            "filePath": "engine/src/main/java/org/hibernate/search/engine/backend/document/model/spi/IndexIdentifier.java",
+            "startLine": 21,
+            "endLine": 26,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchNumericFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractElasticsearchNumericFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchNumericFieldTypeOptionsStep.java",
+            "startLine": 28,
+            "endLine": 31,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchNumericFieldTypeOptionsStep",
+            "type": "Method",
+            "name": "AbstractElasticsearchNumericFieldTypeOptionsStep",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchNumericFieldTypeOptionsStep.java",
+            "startLine": 31,
+            "endLine": 34,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
@@ -5461,213 +5715,6 @@
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
             "startLine": 36,
             "endLine": 39,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 33,
-            "endLine": 36,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchTemporalIndexFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 36,
-            "endLine": 39,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
-            "type": "Method",
-            "name": "simpleQueryString",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 74,
-            "endLine": 157,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.SimpleQueryStringPredicateSpecificsIT",
-            "type": "Method",
-            "name": "simpleQueryStringSyntax",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 318,
-            "endLine": 405,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-            "type": "Method",
-            "name": "HibernateSearchMultiFieldQueryParser",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneQueryStringPredicate.java",
-            "startLine": 156,
-            "endLine": 160,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-            "type": "Method",
-            "name": "HibernateSearchMultiFieldQueryParser",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneQueryStringPredicate.java",
-            "startLine": 157,
-            "endLine": 162,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneStandardIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractLuceneStandardIndexFieldTypeOptionsStep",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneStandardIndexFieldTypeOptionsStep.java",
-            "startLine": 32,
-            "endLine": 34,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneStandardIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractLuceneStandardIndexFieldTypeOptionsStep",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneStandardIndexFieldTypeOptionsStep.java",
-            "startLine": 33,
-            "endLine": 37,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.predicate.impl.ElasticsearchCommonQueryStringPredicateBuilderFieldState.Factory",
-            "type": "Method",
-            "name": "create",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/predicate/impl/ElasticsearchCommonQueryStringPredicateBuilderFieldState.java",
-            "startLine": 54,
-            "endLine": 58,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.predicate.impl.ElasticsearchCommonQueryStringPredicateBuilderFieldState.Factory",
-            "type": "Method",
-            "name": "create",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/predicate/impl/ElasticsearchCommonQueryStringPredicateBuilderFieldState.java",
-            "startLine": 59,
-            "endLine": 63,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchNumericFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchNumericFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchNumericFieldTypeOptionsStep.java",
-            "startLine": 28,
-            "endLine": 31,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchNumericFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchNumericFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchNumericFieldTypeOptionsStep.java",
-            "startLine": 31,
-            "endLine": 34,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.engine.backend.document.model.spi.IndexIdentifier",
-            "type": "Method",
-            "name": "IndexIdentifier",
-            "filePath": "engine/src/main/java/org/hibernate/search/engine/backend/document/model/spi/IndexIdentifier.java",
-            "startLine": 20,
-            "endLine": 23,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.engine.backend.document.model.spi.IndexIdentifier",
-            "type": "Method",
-            "name": "IndexIdentifier",
-            "filePath": "engine/src/main/java/org/hibernate/search/engine/backend/document/model/spi/IndexIdentifier.java",
-            "startLine": 21,
-            "endLine": 26,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchSimpleStandardFieldTypeOptionsStep.java",
-            "startLine": 35,
-            "endLine": 39,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.types.dsl.impl.AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractElasticsearchSimpleStandardFieldTypeOptionsStep",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/types/dsl/impl/AbstractElasticsearchSimpleStandardFieldTypeOptionsStep.java",
-            "startLine": 36,
-            "endLine": 41,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneTemporalIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractLuceneTemporalIndexFieldTypeOptionsStep",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 39,
-            "endLine": 41,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.types.dsl.impl.AbstractLuceneTemporalIndexFieldTypeOptionsStep",
-            "type": "Method",
-            "name": "AbstractLuceneTemporalIndexFieldTypeOptionsStep",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 40,
-            "endLine": 43,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -6390,6 +6437,29 @@
           "leftSideLocation": {
             "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
             "type": "Statement",
+            "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>());\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
+            "startLine": 70,
+            "endLine": 71,
+            "startColumn": 4,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
+            "type": "Statement",
+            "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>(codec));\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
+            "startLine": 72,
+            "endLine": 73,
+            "startColumn": 4,
+            "endColumn": 81
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
+            "type": "Statement",
             "name": "builder.queryElementFactory(LucenePredicateTypeKeys.SIMPLE_QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>());\n",
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
             "startLine": 68,
@@ -6414,9 +6484,9 @@
             "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
             "type": "Statement",
             "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>());\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
-            "startLine": 70,
-            "endLine": 71,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 74,
+            "endLine": 75,
             "startColumn": 4,
             "endColumn": 74
           },
@@ -6424,9 +6494,9 @@
             "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
             "type": "Statement",
             "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>(codec));\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
-            "startLine": 72,
-            "endLine": 73,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 76,
+            "endLine": 77,
             "startColumn": 4,
             "endColumn": 81
           },
@@ -6450,29 +6520,6 @@
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
             "startLine": 74,
             "endLine": 75,
-            "startColumn": 4,
-            "endColumn": 81
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
-            "type": "Statement",
-            "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>());\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 74,
-            "endLine": 75,
-            "startColumn": 4,
-            "endColumn": 74
-          },
-          "rightSideLocation": {
-            "container": "public toIndexFieldType() : LuceneIndexValueFieldType<F>",
-            "type": "Statement",
-            "name": "builder.queryElementFactory(LucenePredicateTypeKeys.QUERY_STRING,new LuceneCommonQueryStringPredicateBuilderFieldState.Factory<>(codec));\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 76,
-            "endLine": 77,
             "startColumn": 4,
             "endColumn": 81
           },
@@ -7057,29 +7104,6 @@
           "leftSideLocation": {
             "container": "package setup() : void",
             "type": "Statement",
-            "name": "indexer.join();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/AbstractBaseQueryStringPredicateSpecificsIT.java",
-            "startLine": 82,
-            "endLine": 82,
-            "startColumn": 3,
-            "endColumn": 18
-          },
-          "rightSideLocation": {
-            "container": "package setup() : void",
-            "type": "Statement",
-            "name": "indexer.join(syntaxIndexer);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/AbstractBaseQueryStringPredicateSpecificsIT.java",
-            "startLine": 104,
-            "endLine": 104,
-            "startColumn": 3,
-            "endColumn": 33
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package setup() : void",
-            "type": "Statement",
             "name": "setupHelper.start().withIndexes(index).setup();\n",
             "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/AbstractBaseQueryStringPredicateSpecificsIT.java",
             "startLine": 76,
@@ -7096,6 +7120,29 @@
             "endLine": 96,
             "startColumn": 3,
             "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package setup() : void",
+            "type": "Statement",
+            "name": "indexer.join();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/AbstractBaseQueryStringPredicateSpecificsIT.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 3,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "package setup() : void",
+            "type": "Statement",
+            "name": "indexer.join(syntaxIndexer);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/AbstractBaseQueryStringPredicateSpecificsIT.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 33
           },
           "validation": true
         },
@@ -7310,29 +7357,6 @@
           "leftSideLocation": {
             "container": "package setup() : void",
             "type": "Statement",
-            "name": "setupHelper.start().withIndexes(SingleFieldConfigured.index,MultiFieldConfigured.index,MultipleArgumentConfigured.index,InObjectFieldConfigured.mainIndex,InObjectFieldConfigured.missingFieldIndex,ScoreConfigured.index,InvalidFieldConfigured.index,UnsupportedTypeConfigured.index,SearchableConfigured.searchableDefaultIndex,SearchableConfigured.searchableYesIndex,SearchableConfigured.searchableNoIndex,ArgumentCheckingConfigured.index,TypeCheckingAndConversionConfigured.index,TypeCheckingAndConversionConfigured.compatibleIndex,TypeCheckingAndConversionConfigured.rawFieldCompatibleIndex,TypeCheckingAndConversionConfigured.missingFieldIndex,TypeCheckingAndConversionConfigured.incompatibleIndex,ScaleCheckingConfigured.index,ScaleCheckingConfigured.compatibleIndex,ScaleCheckingConfigured.incompatibleIndex).setup();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/TermsPredicateBaseIT.java",
-            "startLine": 57,
-            "endLine": 74,
-            "startColumn": 3,
-            "endColumn": 14
-          },
-          "rightSideLocation": {
-            "container": "package setup() : void",
-            "type": "Statement",
-            "name": "setupHelper.start().withIndexes(SingleFieldConfigured.index,MultiFieldConfigured.index,MultipleArgumentConfigured.index,InObjectFieldConfigured.mainIndex,InObjectFieldConfigured.missingFieldIndex,ScoreConfigured.index,InvalidFieldConfigured.index,UnsupportedTypeConfigured.index,SearchableConfigured.searchableDefaultIndex,SearchableConfigured.searchableYesIndex,SearchableConfigured.searchableNoIndex,ArgumentCheckingConfigured.index,TypeCheckingAndConversionConfigured.index,TypeCheckingAndConversionConfigured.compatibleIndex,TypeCheckingAndConversionConfigured.rawFieldCompatibleIndex,TypeCheckingAndConversionConfigured.missingFieldIndex,TypeCheckingAndConversionConfigured.incompatibleIndex,TypeCheckingAndConversionConfigured.integerIndex,ScaleCheckingConfigured.index,ScaleCheckingConfigured.compatibleIndex,ScaleCheckingConfigured.incompatibleIndex).setup();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/TermsPredicateBaseIT.java",
-            "startLine": 61,
-            "endLine": 79,
-            "startColumn": 3,
-            "endColumn": 14
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package setup() : void",
-            "type": "Statement",
             "name": "singleFieldIndexer.join(multiFieldIndexer,multipleArgumentIndexer,inObjectFieldMainIndexer,inObjectFieldMissingFieldIndexer,scoreIndexer,typeCheckingMainIndexer,typeCheckingCompatibleIndexer,typeCheckingRawFieldCompatibleIndexer,typeCheckingMissingFieldIndexer,scaleCheckingMainIndexer,scaleCheckingCompatibleIndexer);\n",
             "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/TermsPredicateBaseIT.java",
             "startLine": 114,
@@ -7349,6 +7373,29 @@
             "endLine": 127,
             "startColumn": 3,
             "endColumn": 5
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package setup() : void",
+            "type": "Statement",
+            "name": "setupHelper.start().withIndexes(SingleFieldConfigured.index,MultiFieldConfigured.index,MultipleArgumentConfigured.index,InObjectFieldConfigured.mainIndex,InObjectFieldConfigured.missingFieldIndex,ScoreConfigured.index,InvalidFieldConfigured.index,UnsupportedTypeConfigured.index,SearchableConfigured.searchableDefaultIndex,SearchableConfigured.searchableYesIndex,SearchableConfigured.searchableNoIndex,ArgumentCheckingConfigured.index,TypeCheckingAndConversionConfigured.index,TypeCheckingAndConversionConfigured.compatibleIndex,TypeCheckingAndConversionConfigured.rawFieldCompatibleIndex,TypeCheckingAndConversionConfigured.missingFieldIndex,TypeCheckingAndConversionConfigured.incompatibleIndex,ScaleCheckingConfigured.index,ScaleCheckingConfigured.compatibleIndex,ScaleCheckingConfigured.incompatibleIndex).setup();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/TermsPredicateBaseIT.java",
+            "startLine": 57,
+            "endLine": 74,
+            "startColumn": 3,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "package setup() : void",
+            "type": "Statement",
+            "name": "setupHelper.start().withIndexes(SingleFieldConfigured.index,MultiFieldConfigured.index,MultipleArgumentConfigured.index,InObjectFieldConfigured.mainIndex,InObjectFieldConfigured.missingFieldIndex,ScoreConfigured.index,InvalidFieldConfigured.index,UnsupportedTypeConfigured.index,SearchableConfigured.searchableDefaultIndex,SearchableConfigured.searchableYesIndex,SearchableConfigured.searchableNoIndex,ArgumentCheckingConfigured.index,TypeCheckingAndConversionConfigured.index,TypeCheckingAndConversionConfigured.compatibleIndex,TypeCheckingAndConversionConfigured.rawFieldCompatibleIndex,TypeCheckingAndConversionConfigured.missingFieldIndex,TypeCheckingAndConversionConfigured.incompatibleIndex,TypeCheckingAndConversionConfigured.integerIndex,ScaleCheckingConfigured.index,ScaleCheckingConfigured.compatibleIndex,ScaleCheckingConfigured.incompatibleIndex).setup();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/TermsPredicateBaseIT.java",
+            "startLine": 61,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 14
           },
           "validation": true
         },
@@ -7446,22 +7493,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "package AbstractLuceneNumericIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>)",
+            "container": "package AbstractLuceneTemporalIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>)",
             "type": "Statement",
             "name": "super(buildContext,fieldType);\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
-            "startLine": 36,
-            "endLine": 36,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 40,
+            "endLine": 40,
             "startColumn": 3,
             "endColumn": 36
           },
           "rightSideLocation": {
-            "container": "package AbstractLuceneNumericIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>, defaultParseConverter ToDocumentValueConverter<String,F>)",
+            "container": "package AbstractLuceneTemporalIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>, defaultParseConverter ToDocumentValueConverter<String,F>)",
             "type": "Statement",
             "name": "super(buildContext,fieldType,defaultParseConverter);\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
-            "startLine": 38,
-            "endLine": 38,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
+            "startLine": 42,
+            "endLine": 42,
             "startColumn": 3,
             "endColumn": 59
           },
@@ -7515,22 +7562,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "package AbstractLuceneTemporalIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>)",
+            "container": "package AbstractLuceneNumericIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>)",
             "type": "Statement",
             "name": "super(buildContext,fieldType);\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 40,
-            "endLine": 40,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
+            "startLine": 36,
+            "endLine": 36,
             "startColumn": 3,
             "endColumn": 36
           },
           "rightSideLocation": {
-            "container": "package AbstractLuceneTemporalIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>, defaultParseConverter ToDocumentValueConverter<String,F>)",
+            "container": "package AbstractLuceneNumericIndexFieldTypeOptionsStep(buildContext LuceneIndexFieldTypeBuildContext, fieldType Class<F>, defaultParseConverter ToDocumentValueConverter<String,F>)",
             "type": "Statement",
             "name": "super(buildContext,fieldType,defaultParseConverter);\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneTemporalIndexFieldTypeOptionsStep.java",
-            "startLine": 42,
-            "endLine": 42,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/dsl/impl/AbstractLuceneNumericIndexFieldTypeOptionsStep.java",
+            "startLine": 38,
+            "endLine": 38,
             "startColumn": 3,
             "endColumn": 59
           },
@@ -7564,29 +7611,6 @@
         {
           "leftSideLocation": {
             "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
-            "type": "Method",
-            "name": "simpleQueryString",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 159,
-            "endLine": 167,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.SimpleQueryStringPredicateSpecificsIT",
-            "type": "Method",
-            "name": "simpleQueryStringSyntax1",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 407,
-            "endLine": 422,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
             "type": "Field",
             "name": "index",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
@@ -7604,6 +7628,29 @@
             "endLine": 79,
             "startColumn": 70,
             "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
+            "type": "Method",
+            "name": "simpleQueryString",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 159,
+            "endLine": 167,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.SimpleQueryStringPredicateSpecificsIT",
+            "type": "Method",
+            "name": "simpleQueryStringSyntax1",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
+            "startLine": 407,
+            "endLine": 422,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
@@ -7678,24 +7725,599 @@
         },
         {
           "leftSideLocation": {
-            "container": "public simpleQueryString() : List<? extends Arguments>",
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "return List.of(Arguments.of(\"integer\",\"1\",\"2\",\"100\",\"not-an-int\"),Arguments.of(\"instant\",\"2000-01-01T01:01:01Z\",\"2000-02-02T02:02:02Z\",\"2222-02-02T02:02:02Z\",\"not-an-instant\"),Arguments.of(\"localDate\",\"2000-01-01\",\"2000-02-02\",\"2222-02-02\",\"not-an-localDate\"));\n",
+            "name": "StubMappingScope scope=index.createScope();\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 161,
-            "endLine": 166,
+            "startLine": 172,
+            "endLine": 172,
             "startColumn": 3,
-            "endColumn": 5
+            "endColumn": 48
           },
           "rightSideLocation": {
-            "container": "public simpleQueryStringSyntax1() : List<? extends Arguments>",
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "return List.of(Arguments.of(\"integer\",\"1\",\"2\",\"100\",\"not-an-int\"),Arguments.of(\"instant\",backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2000-01-01T01:01:01Z\")),backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2000-02-02T02:02:02Z\")),backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2222-02-02T02:02:02Z\")),\"not-an-instant\"),Arguments.of(\"localDate\",\"2000-01-01\",\"2000-02-02\",\"2222-02-02\",\"not-an-localDate\"));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 410,
-            "endLine": 421,
+            "name": "StubMappingScope scope=indexForSyntaxParsingCheck.createScope();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 239,
+            "endLine": 239,
             "startColumn": 3,
-            "endColumn": 5
+            "endColumn": 69
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" && \" + value2)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 200,
+            "endLine": 204,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" && \" + value2)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 267,
+            "endLine": 271,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" AND \" + value2)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 206,
+            "endLine": 210,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" AND \" + value2)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 273,
+            "endLine": 277,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(noMatch)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 280,
+            "endLine": 284,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(noMatch)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 356,
+            "endLine": 360,
+            "startColumn": 5,
+            "endColumn": 17
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s?\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 325,
+            "endLine": 328,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s?\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 439,
+            "endLine": 442,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 269,
+            "endLine": 273,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 339,
+            "endLine": 346,
+            "startColumn": 5,
+            "endColumn": 7
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s %s\\\"\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 299,
+            "endLine": 302,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s %s\\\"\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 409,
+            "endLine": 413,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().fields(field,field + \"2\").matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 292,
+            "endLine": 297,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().fields(field,field + 2).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 402,
+            "endLine": 407,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\",\"3\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 244,
+            "endLine": 248,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 321,
+            "endLine": 329,
+            "startColumn": 5,
+            "endColumn": 7
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 174,
+            "endLine": 178,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 241,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s\",unParsableValue))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 330,
+            "endLine": 334,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s\",unParsableValue))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 444,
+            "endLine": 448,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 286,
+            "endLine": 290,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 396,
+            "endLine": 400,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"!\" + noMatch)).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 274,
+            "endLine": 278,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"!\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 347,
+            "endLine": 354,
+            "startColumn": 5,
+            "endColumn": 7
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" || \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 186,
+            "endLine": 191,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" || \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 253,
+            "endLine": 258,
+            "startColumn": 3,
+            "endColumn": 120
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s %s\\\"~10\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 304,
+            "endLine": 307,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s %s\\\"~10\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 415,
+            "endLine": 419,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \"^10\")).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 180,
+            "endLine": 184,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \"^10\")).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 247,
+            "endLine": 251,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s*\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 315,
+            "endLine": 318,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s*\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 427,
+            "endLine": 430,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" OR \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 193,
+            "endLine": 198,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" OR \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 260,
+            "endLine": 265,
+            "startColumn": 3,
+            "endColumn": 120
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\",\"3\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 250,
+            "endLine": 254,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 330,
+            "endLine": 337,
+            "startColumn": 5,
+            "endColumn": 7
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 309,
+            "endLine": 312,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 421,
+            "endLine": 424,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[%s TO %s}\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 232,
+            "endLine": 236,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[%s TO %s}\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 306,
+            "endLine": 311,
+            "startColumn": 4,
+            "endColumn": 95
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO %s]\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 238,
+            "endLine": 242,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO %s]\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 313,
+            "endLine": 318,
+            "startColumn": 4,
+            "endColumn": 95
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO %s}\",value1,value2))).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 226,
+            "endLine": 230,
+            "startColumn": 3,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO %s}\",value1,value2))).fetchAllHits()).isEmpty();\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 299,
+            "endLine": 304,
+            "startColumn": 4,
+            "endColumn": 16
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"(%s OR %s) AND !%s\",value1,value2,value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 212,
+            "endLine": 217,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"(%s OR %s) AND !%s\",value1,value2,value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 279,
+            "endLine": 284,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"/%s/\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 320,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"/%s/\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 433,
+            "endLine": 436,
+            "startColumn": 4,
+            "endColumn": 44
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[* TO %s}\",value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 262,
+            "endLine": 266,
+            "startColumn": 3,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[* TO %s}\",value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
+            "startLine": 388,
+            "endLine": 393,
+            "startColumn": 4,
+            "endColumn": 95
           },
           "validation": true
         },
@@ -7749,6 +8371,29 @@
           "leftSideLocation": {
             "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\",\"3\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 100,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
+            "startLine": 346,
+            "endLine": 351,
+            "startColumn": 4,
+            "endColumn": 33
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
             "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(value1)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
             "startLine": 79,
@@ -7772,22 +8417,68 @@
           "leftSideLocation": {
             "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\",\"3\");\n",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"(%s | %s) + -%s\",value1,value2,value1)).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 100,
-            "endLine": 104,
+            "startLine": 92,
+            "endLine": 98,
             "startColumn": 3,
-            "endColumn": 62
+            "endColumn": 52
           },
           "rightSideLocation": {
             "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"(%s | %s) + -%s\",value1,value2,value1)).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
             "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 346,
-            "endLine": 351,
-            "startColumn": 4,
-            "endColumn": 33
+            "startLine": 336,
+            "endLine": 342,
+            "startColumn": 3,
+            "endColumn": 94
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(value1 + \" | \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 85,
+            "endLine": 90,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(value1 + \" | \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
+            "startLine": 329,
+            "endLine": 334,
+            "startColumn": 3,
+            "endColumn": 120
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 138,
+            "endLine": 142,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "type": "Statement",
+            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
+            "startLine": 386,
+            "endLine": 390,
+            "startColumn": 3,
+            "endColumn": 43
           },
           "validation": true
         },
@@ -7887,29 +8578,6 @@
           "leftSideLocation": {
             "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 112,
-            "endLine": 117,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 360,
-            "endLine": 365,
-            "startColumn": 3,
-            "endColumn": 94
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
             "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().fields(field,field + \"2\").matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
             "startLine": 119,
@@ -7933,43 +8601,20 @@
           "leftSideLocation": {
             "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(value1 + \" | \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 85,
-            "endLine": 90,
-            "startColumn": 3,
-            "endColumn": 57
-          },
-          "rightSideLocation": {
-            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(value1 + \" | \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 329,
-            "endLine": 334,
-            "startColumn": 3,
-            "endColumn": 120
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"(%s | %s) + -%s\",value1,value2,value1)).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 92,
-            "endLine": 98,
+            "startLine": 112,
+            "endLine": 117,
             "startColumn": 3,
             "endColumn": 52
           },
           "rightSideLocation": {
             "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
             "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"(%s | %s) + -%s\",value1,value2,value1)).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
+            "name": "assertThatHits(scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
             "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 336,
-            "endLine": 342,
+            "startLine": 360,
+            "endLine": 365,
             "startColumn": 3,
             "endColumn": 94
           },
@@ -7977,622 +8622,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "package simpleQueryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "container": "public simpleQueryString() : List<? extends Arguments>",
             "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "name": "return List.of(Arguments.of(\"integer\",\"1\",\"2\",\"100\",\"not-an-int\"),Arguments.of(\"instant\",\"2000-01-01T01:01:01Z\",\"2000-02-02T02:02:02Z\",\"2222-02-02T02:02:02Z\",\"not-an-instant\"),Arguments.of(\"localDate\",\"2000-01-01\",\"2000-02-02\",\"2222-02-02\",\"not-an-localDate\"));\n",
             "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 138,
-            "endLine": 142,
+            "startLine": 161,
+            "endLine": 166,
             "startColumn": 3,
-            "endColumn": 43
+            "endColumn": 5
           },
           "rightSideLocation": {
-            "container": "package simpleQueryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
+            "container": "public simpleQueryStringSyntax1() : List<? extends Arguments>",
             "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.simpleQueryString().field(field).matching(String.format(Locale.ROOT,\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
+            "name": "return List.of(Arguments.of(\"integer\",\"1\",\"2\",\"100\",\"not-an-int\"),Arguments.of(\"instant\",backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2000-01-01T01:01:01Z\")),backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2000-02-02T02:02:02Z\")),backendFeatures.formatForQueryStringPredicate(InstantFieldTypeDescriptor.INSTANCE,Instant.parse(\"2222-02-02T02:02:02Z\")),\"not-an-instant\"),Arguments.of(\"localDate\",\"2000-01-01\",\"2000-02-02\",\"2222-02-02\",\"not-an-localDate\"));\n",
             "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/SimpleQueryStringPredicateSpecificsIT.java",
-            "startLine": 386,
-            "endLine": 390,
+            "startLine": 410,
+            "endLine": 421,
             "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "StubMappingScope scope=index.createScope();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 172,
-            "endLine": 172,
-            "startColumn": 3,
-            "endColumn": 48
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "StubMappingScope scope=indexForSyntaxParsingCheck.createScope();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 239,
-            "endLine": 239,
-            "startColumn": 3,
-            "endColumn": 69
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" && \" + value2)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 200,
-            "endLine": 204,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" && \" + value2)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 267,
-            "endLine": 271,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" AND \" + value2)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 206,
-            "endLine": 210,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" AND \" + value2)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 273,
-            "endLine": 277,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(noMatch)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 280,
-            "endLine": 284,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(noMatch)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 356,
-            "endLine": 360,
-            "startColumn": 5,
-            "endColumn": 17
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \"^10\")).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 180,
-            "endLine": 184,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \"^10\")).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 247,
-            "endLine": 251,
-            "startColumn": 3,
-            "endColumn": 94
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 174,
-            "endLine": 178,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 241,
-            "endLine": 245,
-            "startColumn": 3,
-            "endColumn": 94
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s %s\\\"\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 299,
-            "endLine": 302,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s %s\\\"\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 409,
-            "endLine": 413,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\",\"3\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 250,
-            "endLine": 254,
-            "startColumn": 3,
-            "endColumn": 57
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 330,
-            "endLine": 337,
-            "startColumn": 5,
-            "endColumn": 7
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 269,
-            "endLine": 273,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"-\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 339,
-            "endLine": 346,
-            "startColumn": 5,
-            "endColumn": 7
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"!\" + noMatch)).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 274,
-            "endLine": 278,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(\"!\" + noMatch)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 347,
-            "endLine": 354,
-            "startColumn": 5,
-            "endColumn": 7
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s*\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 315,
-            "endLine": 318,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s*\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 427,
-            "endLine": 430,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" OR \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 193,
-            "endLine": 198,
-            "startColumn": 3,
-            "endColumn": 57
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" OR \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 260,
-            "endLine": 265,
-            "startColumn": 3,
-            "endColumn": 120
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 309,
-            "endLine": 312,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s~10\",value1))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 421,
-            "endLine": 424,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 286,
-            "endLine": 290,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 396,
-            "endLine": 400,
-            "startColumn": 3,
-            "endColumn": 94
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" || \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 186,
-            "endLine": 191,
-            "startColumn": 3,
-            "endColumn": 57
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(value1 + \" || \" + value2).defaultOperator(BooleanOperator.AND)).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 253,
-            "endLine": 258,
-            "startColumn": 3,
-            "endColumn": 120
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s?\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 325,
-            "endLine": 328,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s?\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 439,
-            "endLine": 442,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\",\"2\",\"3\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 244,
-            "endLine": 248,
-            "startColumn": 3,
-            "endColumn": 62
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[%s TO *]\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1),syntaxDataSet.docId(2),syntaxDataSet.docId(3));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 321,
-            "endLine": 329,
-            "startColumn": 5,
-            "endColumn": 7
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"\\\"%s %s\\\"~10\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 304,
-            "endLine": 307,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"\\\"%s %s\\\"~10\",value1,value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 415,
-            "endLine": 419,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"%s\",unParsableValue))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 330,
-            "endLine": 334,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"%s\",unParsableValue))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 444,
-            "endLine": 448,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().fields(field,field + \"2\").matching(String.format(\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 292,
-            "endLine": 297,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().fields(field,field + 2).matching(String.format(Locale.ROOT,\"\\\"%s\\\"\",value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 402,
-            "endLine": 407,
-            "startColumn": 3,
-            "endColumn": 94
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[%s TO %s}\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 232,
-            "endLine": 236,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[%s TO %s}\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 306,
-            "endLine": 311,
-            "startColumn": 4,
-            "endColumn": 95
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO %s}\",value1,value2))).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 226,
-            "endLine": 230,
-            "startColumn": 3,
-            "endColumn": 15
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO %s}\",value1,value2))).fetchAllHits()).isEmpty();\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 299,
-            "endLine": 304,
-            "startColumn": 4,
-            "endColumn": 16
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"{%s TO %s]\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 238,
-            "endLine": 242,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"{%s TO %s]\",value1,value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 313,
-            "endLine": 318,
-            "startColumn": 4,
-            "endColumn": 95
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"[* TO %s}\",value2))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"1\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 262,
-            "endLine": 266,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"[* TO %s}\",value2))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(1));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 388,
-            "endLine": 393,
-            "startColumn": 4,
-            "endColumn": 95
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(\"/%s/\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 320,
-            "endLine": 323,
-            "startColumn": 3,
-            "endColumn": 43
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatThrownBy(() -> scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"/%s/\",value2))).fetchAllHits()).isInstanceOf(SearchException.class);\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 433,
-            "endLine": 436,
-            "startColumn": 4,
-            "endColumn": 44
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package queryString(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(\"(%s OR %s) AND !%s\",value1,value2,value1))).fetchAllHits()).hasDocRefHitsAnyOrder(index.typeName(),\"2\");\n",
-            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
-            "startLine": 212,
-            "endLine": 217,
-            "startColumn": 3,
-            "endColumn": 52
-          },
-          "rightSideLocation": {
-            "container": "package queryStringSyntax(field String, value1 String, value2 String, noMatch String, unParsableValue String) : void",
-            "type": "Statement",
-            "name": "assertThatHits(scope.query().where(f -> f.queryString().field(field).matching(String.format(Locale.ROOT,\"(%s OR %s) AND !%s\",value1,value2,value1))).fetchAllHits()).hasDocRefHitsAnyOrder(indexForSyntaxParsingCheck.typeName(),syntaxDataSet.docId(2));\n",
-            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/QueryStringPredicateSpecificsIT.java",
-            "startLine": 279,
-            "endLine": 284,
-            "startColumn": 3,
-            "endColumn": 94
+            "endColumn": 5
           },
           "validation": true
         }
@@ -8735,6 +8782,29 @@
             "endColumn": 101
           },
           "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.lucene.search.LuceneSimpleQuerySearchPredicateIT",
+            "type": "Method",
+            "name": "debug",
+            "filePath": "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/search/LuceneSimpleQuerySearchPredicateIT.java",
+            "startLine": 348,
+            "endLine": 355,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.integrationtest.backend.tck.search.predicate.MatchIdPredicateSpecificsIT",
+            "type": "Method",
+            "name": "parse_unConfigured",
+            "filePath": "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/predicate/MatchIdPredicateSpecificsIT.java",
+            "startLine": 167,
+            "endLine": 175,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
         },
         {
           "leftSideLocation": {
@@ -9782,20 +9852,43 @@
           "leftSideLocation": {
             "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
             "type": "Method",
-            "name": "transform",
+            "name": "FieldHighlightExtractor",
             "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 125,
-            "endLine": 129,
+            "startLine": 107,
+            "endLine": 109,
             "startColumn": 3,
             "endColumn": 4
           },
           "rightSideLocation": {
             "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
             "type": "Method",
+            "name": "FieldHighlightExtractor",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 114,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
             "name": "transform",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 132,
-            "endLine": 135,
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 110,
+            "endLine": 114,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
+            "name": "transform",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 116,
+            "endLine": 120,
             "startColumn": 3,
             "endColumn": 4
           },
@@ -9803,47 +9896,47 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LucenePlainSearchHighlighter.PlainHighlighterValues",
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
             "type": "Method",
-            "name": "PlainHighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LucenePlainSearchHighlighter.java",
-            "startLine": 113,
-            "endLine": 145,
-            "startColumn": 3,
-            "endColumn": 4
+            "name": "LuceneFieldHighlightProjection",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 37,
+            "endLine": 39,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LucenePlainSearchHighlighter.PlainHighlighterValues",
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
             "type": "Method",
-            "name": "PlainHighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LucenePlainSearchHighlighter.java",
-            "startLine": 113,
-            "endLine": 145,
-            "startColumn": 3,
-            "endColumn": 4
+            "name": "LuceneFieldHighlightProjection",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.HighlighterValues",
             "type": "Method",
-            "name": "request",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 72,
-            "endLine": 102,
-            "startColumn": 2,
-            "endColumn": 3
+            "name": "HighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 121,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.HighlighterValues",
             "type": "Method",
-            "name": "request",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 75,
-            "endLine": 108,
-            "startColumn": 2,
-            "endColumn": 3
+            "name": "HighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 127,
+            "endLine": 131,
+            "startColumn": 3,
+            "endColumn": 4
           },
           "validation": true
         },
@@ -9853,8 +9946,8 @@
             "type": "Method",
             "name": "ElasticsearchFieldHighlightProjection",
             "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 49,
-            "endLine": 57,
+            "startLine": 45,
+            "endLine": 47,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -9863,33 +9956,10 @@
             "type": "Method",
             "name": "ElasticsearchFieldHighlightProjection",
             "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 50,
-            "endLine": 60,
+            "startLine": 45,
+            "endLine": 48,
             "startColumn": 2,
             "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "extract",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 111,
-            "endLine": 123,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "extract",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 119,
-            "endLine": 130,
-            "startColumn": 3,
-            "endColumn": 4
           },
           "validation": true
         },
@@ -9934,213 +10004,6 @@
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
             "startLine": 43,
             "endLine": 53,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.HighlighterValues",
-            "type": "Method",
-            "name": "HighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 121,
-            "endLine": 125,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.HighlighterValues",
-            "type": "Method",
-            "name": "HighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 127,
-            "endLine": 131,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.engine.search.projection.dsl.impl.HighlightProjectionOptionsStepImpl",
-            "type": "Method",
-            "name": "highlighter",
-            "filePath": "engine/src/main/java/org/hibernate/search/engine/search/projection/dsl/impl/HighlightProjectionOptionsStepImpl.java",
-            "startLine": 28,
-            "endLine": 32,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.engine.search.projection.dsl.impl.HighlightProjectionOptionsStepImpl",
-            "type": "Method",
-            "name": "highlighter",
-            "filePath": "engine/src/main/java/org/hibernate/search/engine/search/projection/dsl/impl/HighlightProjectionOptionsStepImpl.java",
-            "startLine": 30,
-            "endLine": 34,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneFastVectorSearchHighlighter.FastVectorHighlighterValues",
-            "type": "Method",
-            "name": "FastVectorHighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneFastVectorSearchHighlighter.java",
-            "startLine": 113,
-            "endLine": 146,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneFastVectorSearchHighlighter.FastVectorHighlighterValues",
-            "type": "Method",
-            "name": "FastVectorHighlighterValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneFastVectorSearchHighlighter.java",
-            "startLine": 112,
-            "endLine": 144,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "transform",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 110,
-            "endLine": 114,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "transform",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 116,
-            "endLine": 120,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.mapper.pojo.logging.impl.Log",
-            "type": "Method",
-            "name": "invalidParameterTypeForHighlightProjectionInProjectionConstructor",
-            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/logging/impl/Log.java",
-            "startLine": 881,
-            "endLine": 884,
-            "startColumn": 2,
-            "endColumn": 57
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.mapper.pojo.logging.impl.Log",
-            "type": "Method",
-            "name": "invalidParameterTypeForHighlightProjectionInProjectionConstructor",
-            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/logging/impl/Log.java",
-            "startLine": 881,
-            "endLine": 884,
-            "startColumn": 2,
-            "endColumn": 79
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "FieldHighlightExtractor",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 107,
-            "endLine": 109,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
-            "type": "Method",
-            "name": "FieldHighlightExtractor",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 114,
-            "endLine": 117,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
-            "type": "Method",
-            "name": "ElasticsearchFieldHighlightProjection",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 45,
-            "endLine": 47,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
-            "type": "Method",
-            "name": "ElasticsearchFieldHighlightProjection",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 45,
-            "endLine": 48,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldHighlightProjection",
-            "type": "Method",
-            "name": "transform",
-            "filePath": "util/internal/integrationtest/common/src/main/java/org/hibernate/search/util/impl/integrationtest/common/stub/backend/search/projection/impl/StubFieldHighlightProjection.java",
-            "startLine": 35,
-            "endLine": 40,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldHighlightProjection",
-            "type": "Method",
-            "name": "transform",
-            "filePath": "util/internal/integrationtest/common/src/main/java/org/hibernate/search/util/impl/integrationtest/common/stub/backend/search/projection/impl/StubFieldHighlightProjection.java",
-            "startLine": 35,
-            "endLine": 40,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
-            "type": "Method",
-            "name": "request",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 65,
-            "endLine": 82,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
-            "type": "Method",
-            "name": "request",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 68,
-            "endLine": 89,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -10194,22 +10057,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneUnifiedSearchHighlighter",
+            "container": "org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldHighlightProjection",
             "type": "Method",
-            "name": "createValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneUnifiedSearchHighlighter.java",
-            "startLine": 92,
-            "endLine": 98,
+            "name": "transform",
+            "filePath": "util/internal/integrationtest/common/src/main/java/org/hibernate/search/util/impl/integrationtest/common/stub/backend/search/projection/impl/StubFieldHighlightProjection.java",
+            "startLine": 35,
+            "endLine": 40,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneUnifiedSearchHighlighter",
+            "container": "org.hibernate.search.util.impl.integrationtest.common.stub.backend.search.projection.impl.StubFieldHighlightProjection",
             "type": "Method",
-            "name": "createValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneUnifiedSearchHighlighter.java",
-            "startLine": 92,
-            "endLine": 98,
+            "name": "transform",
+            "filePath": "util/internal/integrationtest/common/src/main/java/org/hibernate/search/util/impl/integrationtest/common/stub/backend/search/projection/impl/StubFieldHighlightProjection.java",
+            "startLine": 35,
+            "endLine": 40,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -10217,22 +10080,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
             "type": "Method",
-            "name": "LuceneFieldHighlightProjection",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 37,
-            "endLine": 39,
+            "name": "ElasticsearchFieldHighlightProjection",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 49,
+            "endLine": 57,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
             "type": "Method",
-            "name": "LuceneFieldHighlightProjection",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 39,
-            "endLine": 41,
+            "name": "ElasticsearchFieldHighlightProjection",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 50,
+            "endLine": 60,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -10240,24 +10103,47 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneAbstractSearchHighlighter",
+            "container": "org.hibernate.search.mapper.pojo.logging.impl.Log",
             "type": "Method",
-            "name": "createValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneAbstractSearchHighlighter.java",
-            "startLine": 194,
-            "endLine": 196,
+            "name": "invalidParameterTypeForHighlightProjectionInProjectionConstructor",
+            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/logging/impl/Log.java",
+            "startLine": 881,
+            "endLine": 884,
             "startColumn": 2,
-            "endColumn": 67
+            "endColumn": 57
           },
           "rightSideLocation": {
-            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneAbstractSearchHighlighter",
+            "container": "org.hibernate.search.mapper.pojo.logging.impl.Log",
             "type": "Method",
-            "name": "createValues",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneAbstractSearchHighlighter.java",
-            "startLine": 194,
-            "endLine": 196,
+            "name": "invalidParameterTypeForHighlightProjectionInProjectionConstructor",
+            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/logging/impl/Log.java",
+            "startLine": 881,
+            "endLine": 884,
             "startColumn": 2,
-            "endColumn": 56
+            "endColumn": 79
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
+            "type": "Method",
+            "name": "request",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 72,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection",
+            "type": "Method",
+            "name": "request",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 75,
+            "endLine": 108,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
@@ -10286,6 +10172,29 @@
         },
         {
           "leftSideLocation": {
+            "container": "org.hibernate.search.engine.search.projection.dsl.impl.HighlightProjectionOptionsStepImpl",
+            "type": "Method",
+            "name": "highlighter",
+            "filePath": "engine/src/main/java/org/hibernate/search/engine/search/projection/dsl/impl/HighlightProjectionOptionsStepImpl.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.engine.search.projection.dsl.impl.HighlightProjectionOptionsStepImpl",
+            "type": "Method",
+            "name": "highlighter",
+            "filePath": "engine/src/main/java/org/hibernate/search/engine/search/projection/dsl/impl/HighlightProjectionOptionsStepImpl.java",
+            "startLine": 30,
+            "endLine": 34,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
             "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneUnifiedSearchHighlighter.UnifiedHighlighterValues",
             "type": "Method",
             "name": "UnifiedHighlighterValues",
@@ -10302,6 +10211,167 @@
             "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneUnifiedSearchHighlighter.java",
             "startLine": 113,
             "endLine": 131,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
+            "name": "extract",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 111,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
+            "name": "extract",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 119,
+            "endLine": 130,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneAbstractSearchHighlighter",
+            "type": "Method",
+            "name": "createValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneAbstractSearchHighlighter.java",
+            "startLine": 194,
+            "endLine": 196,
+            "startColumn": 2,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneAbstractSearchHighlighter",
+            "type": "Method",
+            "name": "createValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneAbstractSearchHighlighter.java",
+            "startLine": 194,
+            "endLine": 196,
+            "startColumn": 2,
+            "endColumn": 56
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneUnifiedSearchHighlighter",
+            "type": "Method",
+            "name": "createValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneUnifiedSearchHighlighter.java",
+            "startLine": 92,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneUnifiedSearchHighlighter",
+            "type": "Method",
+            "name": "createValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneUnifiedSearchHighlighter.java",
+            "startLine": 92,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
+            "type": "Method",
+            "name": "request",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 65,
+            "endLine": 82,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.projection.impl.LuceneFieldHighlightProjection",
+            "type": "Method",
+            "name": "request",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 68,
+            "endLine": 89,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LucenePlainSearchHighlighter.PlainHighlighterValues",
+            "type": "Method",
+            "name": "PlainHighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LucenePlainSearchHighlighter.java",
+            "startLine": 113,
+            "endLine": 145,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LucenePlainSearchHighlighter.PlainHighlighterValues",
+            "type": "Method",
+            "name": "PlainHighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LucenePlainSearchHighlighter.java",
+            "startLine": 113,
+            "endLine": 145,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
+            "name": "transform",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 125,
+            "endLine": 129,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.elasticsearch.search.projection.impl.ElasticsearchFieldHighlightProjection.FieldHighlightExtractor",
+            "type": "Method",
+            "name": "transform",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 132,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneFastVectorSearchHighlighter.FastVectorHighlighterValues",
+            "type": "Method",
+            "name": "FastVectorHighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneFastVectorSearchHighlighter.java",
+            "startLine": 113,
+            "endLine": 146,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.search.backend.lucene.search.highlighter.impl.LuceneFastVectorSearchHighlighter.FastVectorHighlighterValues",
+            "type": "Method",
+            "name": "FastVectorHighlighterValues",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/highlighter/impl/LuceneFastVectorSearchHighlighter.java",
+            "startLine": 112,
+            "endLine": 144,
             "startColumn": 3,
             "endColumn": 4
           },
@@ -10516,24 +10586,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "public transform(loadingResult LoadingResult<?>, extractedData List<String>, context ProjectionTransformContext) : List<String>",
+            "container": "private LuceneFieldHighlightProjection(builder Builder)",
             "type": "Statement",
-            "name": "return extractedData;\n",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 128,
-            "endLine": 128,
-            "startColumn": 4,
-            "endColumn": 25
+            "name": "this(builder.scope,builder.field,builder.highlighterName());\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 3,
+            "endColumn": 67
           },
           "rightSideLocation": {
-            "container": "public transform(loadingResult LoadingResult<?>, extractedData A, context ProjectionTransformContext) : T",
+            "container": "private LuceneFieldHighlightProjection(builder Builder, accumulatorProvider ProjectionAccumulator.Provider<String,T>)",
             "type": "Statement",
-            "name": "return accumulator.finish(extractedData);\n",
-            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
-            "startLine": 134,
-            "endLine": 134,
-            "startColumn": 4,
-            "endColumn": 47
+            "name": "this(builder.scope,builder.field,builder.highlighterName(),accumulatorProvider);\n",
+            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 3,
+            "endColumn": 88
           },
           "validation": true
         },
@@ -10608,24 +10678,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "private LuceneFieldHighlightProjection(builder Builder)",
+            "container": "public transform(loadingResult LoadingResult<?>, extractedData List<String>, context ProjectionTransformContext) : List<String>",
             "type": "Statement",
-            "name": "this(builder.scope,builder.field,builder.highlighterName());\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 38,
-            "endLine": 38,
-            "startColumn": 3,
-            "endColumn": 67
+            "name": "return extractedData;\n",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 128,
+            "endLine": 128,
+            "startColumn": 4,
+            "endColumn": 25
           },
           "rightSideLocation": {
-            "container": "private LuceneFieldHighlightProjection(builder Builder, accumulatorProvider ProjectionAccumulator.Provider<String,T>)",
+            "container": "public transform(loadingResult LoadingResult<?>, extractedData A, context ProjectionTransformContext) : T",
             "type": "Statement",
-            "name": "this(builder.scope,builder.field,builder.highlighterName(),accumulatorProvider);\n",
-            "filePath": "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldHighlightProjection.java",
-            "startLine": 40,
-            "endLine": 40,
-            "startColumn": 3,
-            "endColumn": 88
+            "name": "return accumulator.finish(extractedData);\n",
+            "filePath": "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldHighlightProjection.java",
+            "startLine": 134,
+            "endLine": 134,
+            "startColumn": 4,
+            "endColumn": 47
           },
           "validation": true
         },
@@ -10842,29 +10912,6 @@
           "leftSideLocation": {
             "container": "public bind(context ProjectionBindingContext) : void",
             "type": "Statement",
-            "name": "multi.definition(String.class,new Definition(fieldPath,highlighterName));\n",
-            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/search/definition/binding/builtin/HighlightProjectionBinder.java",
-            "startLine": 97,
-            "endLine": 97,
-            "startColumn": 3,
-            "endColumn": 82
-          },
-          "rightSideLocation": {
-            "container": "public bind(context ProjectionBindingContext) : void",
-            "type": "Statement",
-            "name": "multiOptional.get().definition(String.class,new Multi(fieldPath,highlighterName));\n",
-            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/search/definition/binding/builtin/HighlightProjectionBinder.java",
-            "startLine": 95,
-            "endLine": 95,
-            "startColumn": 4,
-            "endColumn": 92
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public bind(context ProjectionBindingContext) : void",
-            "type": "Statement",
             "name": "if(!multiOptional.isPresent())",
             "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/search/definition/binding/builtin/HighlightProjectionBinder.java",
             "startLine": 93,
@@ -10881,6 +10928,29 @@
             "endLine": 102,
             "startColumn": 3,
             "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public bind(context ProjectionBindingContext) : void",
+            "type": "Statement",
+            "name": "multi.definition(String.class,new Definition(fieldPath,highlighterName));\n",
+            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/search/definition/binding/builtin/HighlightProjectionBinder.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "public bind(context ProjectionBindingContext) : void",
+            "type": "Statement",
+            "name": "multiOptional.get().definition(String.class,new Multi(fieldPath,highlighterName));\n",
+            "filePath": "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/search/definition/binding/builtin/HighlightProjectionBinder.java",
+            "startLine": 95,
+            "endLine": 95,
+            "startColumn": 4,
+            "endColumn": 92
           },
           "validation": true
         },

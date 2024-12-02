@@ -41,6 +41,11 @@
           "validation": true
         },
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate isMethodShadowedBy(upper Method, lower Method) : boolean renamed to private isMethodOverriddenBy(upper Method, lower Method) : boolean in class org.junit.platform.commons.util.ReflectionUtils",
+          "validation": true
+        },
+        {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tList<Field> to List<String> in method private findShadowingAnnotatedFields(annotationType Class<? extends Annotation>) : List<String> from class org.junit.platform.commons.util.AnnotationUtilsTests",
           "validation": true
@@ -61,13 +66,7 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate isMethodShadowedBy(upper Method, lower Method) : boolean renamed to private isMethodOverriddenBy(upper Method, lower Method) : boolean in class org.junit.platform.commons.util.ReflectionUtils",
-          "validation": true
-        }
-      ],
+      "ourApproach": [],
       "baseline": [
         {
           "type": "MOVE_CLASS",
@@ -90,13 +89,7 @@
       "repository": "https://github.com/junit-team/junit5.git",
       "sha1": "23b69c18d0071b9c36000da137d77e829daf62a8",
       "url": "https://github.com/junit-team/junit5/commit/23b69c18d0071b9c36000da137d77e829daf62a8",
-      "commonRefactoring": [
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttype : null to it : null in method protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void from class org.junit.api.tools.AbstractApiReportWriter",
-          "validation": true
-        }
-      ],
+      "commonRefactoring": [],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
@@ -106,6 +99,11 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate collectTypes(scanResult ScanResult) : SortedSet<ClassInfo> extracted from package generateReport(packages String...) : ApiReport in class org.junit.api.tools.ApiReportGenerator",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttype : null to it : null in method protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void from class org.junit.api.tools.AbstractApiReportWriter",
           "validation": true
         },
         {
@@ -154,14 +152,19 @@
           "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypes : List<Class<?>> to types : var in method private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo> from class org.junit.api.tools.ApiReportGenerator",
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tclassesWithApiAnnotation : ClassInfoList to types : var in method private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo> from class org.junit.api.tools.ApiReportGenerator",
           "validation": true
         },
         {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tclassesWithApiAnnotation : ClassInfoList in method package generateReport(packages String...) : ApiReport from class org.junit.api.tools.ApiReportGenerator",
-          "validation": false
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tclassesWithApiAnnotation : ClassInfoList to types : var in method private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo> from class org.junit.api.tools.ApiReportGenerator",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\ttypes : List<Class<?>> to types : var in method package generateReport(packages String...) : ApiReport from class org.junit.api.tools.ApiReportGenerator",
+          "validation": true
         }
       ],
       "baseline": []
@@ -884,12 +887,42 @@
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests from class org.junit.platform.commons.util.ReflectionUtilsTests",
           "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.Exploder moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.Exploder",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.AbstractClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.AbstractClass",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithVoidAndNonVoidMethods moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithVoidAndNonVoidMethods",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker moved to org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
+          "validation": true
         }
       ],
       "ourApproach": [
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker moved to org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.PrivateClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.PrivateClass",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.FinalClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.FinalClass",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.SubclassWithFieldAndFieldFromInterface moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.SubclassWithFieldAndFieldFromInterface",
           "validation": true
         },
         {
@@ -904,22 +937,12 @@
         },
         {
           "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithTwoConstructors moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithTwoConstructors",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.PublicClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.PublicClass",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithFields moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.ClassWithFields",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.SubclassWithFieldAndFieldFromInterface moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.SubclassWithFieldAndFieldFromInterface",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.Exploder moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.Exploder",
           "validation": true
         },
         {
@@ -934,27 +957,7 @@
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.InterfaceWithField moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.InterfaceWithField",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.FinalClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.FinalClass",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithTwoConstructors moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithTwoConstructors",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithVoidAndNonVoidMethods moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithVoidAndNonVoidMethods",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.PackageVisibleClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.PackageVisibleClass",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.SuperclassWithFieldAndFieldFromInterface moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.SuperclassWithFieldAndFieldFromInterface",
           "validation": true
         },
         {
@@ -964,22 +967,22 @@
         },
         {
           "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.InterfaceWithField moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.InterfaceWithField",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithFields moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.ClassWithFields",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithOneCustomConstructor moved to org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithOneCustomConstructor",
           "validation": true
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.PrivateClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.PrivateClass",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.AbstractClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.AbstractClass",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.SuperclassWithFieldAndFieldFromInterface moved to org.junit.platform.commons.util.ReflectionUtilsTests.FindAndReadFieldsTests.SuperclassWithFieldAndFieldFromInterface",
+          "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.PackageVisibleClass moved to org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.PackageVisibleClass",
           "validation": true
         },
         {
@@ -1048,51 +1051,6 @@
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.Interface45.Nested5 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.Interface45.Nested5",
           "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage Exploder() from class org.junit.platform.commons.util.ReflectionUtilsTests.Exploder to package Exploder() from class org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.Exploder",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage abstract abstractMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.AbstractClass to package abstract abstractMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.ModifierTests.AbstractClass",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage methodReturningVoidReference() : Void from class org.junit.platform.commons.util.ReflectionUtilsTests.ClassWithVoidAndNonVoidMethods to package methodReturningVoidReference() : Void from class org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithVoidAndNonVoidMethods",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage methodReturningObject() : String from class org.junit.platform.commons.util.ReflectionUtilsTests.ClassWithVoidAndNonVoidMethods to package methodReturningObject() : String from class org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithVoidAndNonVoidMethods",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage methodReturningPrimitive() : int from class org.junit.platform.commons.util.ReflectionUtilsTests.ClassWithVoidAndNonVoidMethods to package methodReturningPrimitive() : int from class org.junit.platform.commons.util.ReflectionUtilsTests.MiscellaneousTests.ClassWithVoidAndNonVoidMethods",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic publicStaticMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker to public publicStaticMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate privateStaticMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker to private privateStaticMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic publicMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker to public publicMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate privateMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.InvocationTracker to private privateMethod() : void from class org.junit.platform.commons.util.ReflectionUtilsTests.MethodInvocationTests.InvocationTracker",
-          "validation": false
         }
       ]
     },
@@ -1150,22 +1108,22 @@
       "ourApproach": [
         {
           "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.AfterEachExtension",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.AfterEachExtension",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.BeforeEachExtension",
           "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.BeforeEachExtension",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.AfterEachExtension",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tid : int to prefix : String in class org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests.AfterEachExtension",
           "validation": true
         },
         {
@@ -1228,24 +1186,17 @@
       "commonRefactoring": [
         {
           "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tstaticField3 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
-          "validation": true
-        },
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tfield3 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
-          "validation": true
-        }
-      ],
-      "ourApproach": [
-        {
-          "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tstaticField1 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
           "validation": true
         },
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tstaticField2 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
+          "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tstaticField3 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
           "validation": true
         },
         {
@@ -1257,8 +1208,14 @@
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tfield2 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
           "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tfield3 : String in method package allFieldsAreClosedIfAnyFieldThrowsAnException() : void from class org.junit.jupiter.engine.extension.AutoCloseTests",
+          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -1274,6 +1231,21 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseInstancePerClassTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassTestCase",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodTestCase",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoCloseMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoCloseMethodTestCase",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoShutdownMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoShutdownMethodTestCase",
           "validation": true
         },
         {
@@ -1294,32 +1266,67 @@
       ],
       "ourApproach": [
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoCloseMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoCloseMethodTestCase",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoShutdownMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoShutdownMethodTestCase",
-          "validation": true
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpackage instancePerClass() : void renamed to package fieldsAreProperlyClosedWithInstancePerClassTestClass() : void in class org.junit.jupiter.engine.extension.AutoCloseTests",
+          "validation": false
         },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage fieldsAreProperlyClosed() : void renamed to package fieldsAreProperlyClosedWithInstancePerMethodTestClass() : void in class org.junit.jupiter.engine.extension.AutoCloseTests",
           "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodTestCase",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage instancePerClass() : void renamed to package fieldsAreProperlyClosedWithInstancePerClassTestClass() : void in class org.junit.jupiter.engine.extension.AutoCloseTests",
-          "validation": false
         }
       ],
       "baseline": [
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase moved and renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase moved and renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoCloseMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.BlankCloseMethodNameTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoCloseMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NullCloseableFieldTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoCloseMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoShutdownMethodTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoShutdownMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.BlankCloseMethodNameTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoShutdownMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NullCloseableFieldTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseNoShutdownMethodFailingTestCase renamed to org.junit.jupiter.engine.extension.AutoCloseTests.NoCloseMethodTestCase",
+          "validation": false
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage resetRecorder() : void renamed to package resetTracking() : void in class org.junit.jupiter.engine.extension.AutoCloseTests",
@@ -1346,8 +1353,53 @@
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage setup() : void from class org.junit.jupiter.engine.extension.AutoCloseTests.AutoCloseTestCase to package setup() : void from class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodTestCase",
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstaticClosable : AutoCloseable to nestedStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstaticClosable : AutoCloseable to nestedStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstaticClosable : AutoCloseable to enclosingStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstaticClosable : AutoCloseable to enclosingStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerMethodEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstaticClosable : AutoCloseable to nestedStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstaticClosable : AutoCloseable to nestedStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase.NestedTestCase",
+          "validation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tstaticClosable : AutoCloseable to enclosingStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tstaticClosable : AutoCloseable to enclosingStaticClosable : AutoCloseSpy in class org.junit.jupiter.engine.extension.AutoCloseTests.InstancePerClassEnclosingTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfield : String to field : AutoCloseable in class org.junit.jupiter.engine.extension.AutoCloseTests.NullCloseableFieldTestCase",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tfield : String to field : AutoCloseable in class org.junit.jupiter.engine.extension.AutoCloseTests.NullCloseableFieldTestCase",
           "validation": false
         }
       ]
@@ -1537,6 +1589,16 @@
           "validation": true
         },
         {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.platform.suite.commons.SuiteLauncherDiscoveryRequestBuilderTests.selectOneMethodWithOneParameters.TestClass moved and renamed to org.junit.platform.suite.commons.SuiteLauncherDiscoveryRequestBuilderTests.OneParameterTestCase",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.platform.suite.commons.SuiteLauncherDiscoveryRequestBuilderTests.selectTwoMethodWithTwoParameters.TestClass moved and renamed to org.junit.platform.suite.commons.SuiteLauncherDiscoveryRequestBuilderTests.selectTwoMethodsWithTwoParameters.TestClass",
+          "validation": true
+        },
+        {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic parameters() : String renamed to public value() : String in class org.junit.platform.suite.api.SelectMethod",
           "validation": false
@@ -1628,12 +1690,12 @@
         },
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage selectNestedMethodPreconditions() : void renamed to package selectNestedMethodByEnclosingClassNamesMethodNameAndParameterTypeNamesPreconditions() : void in class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectNestedClassAndSelectNestedMethodTests",
+          "description": "Rename Method\tpackage selectNestedMethodByEnclosingClassNamesAndMethodNameAndClassLoader() : void renamed to package selectNestedMethodByEnclosingClassNamesAndMethodNameWithExplicitClassLoader() : void in class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectNestedClassAndSelectNestedMethodTests",
           "validation": true
         },
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpackage selectNestedMethodByEnclosingClassNamesAndMethodNameAndClassLoader() : void renamed to package selectNestedMethodByEnclosingClassNamesAndMethodNameWithExplicitClassLoader() : void in class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectNestedClassAndSelectNestedMethodTests",
+          "description": "Rename Method\tpackage selectNestedMethodPreconditions() : void renamed to package selectNestedMethodByEnclosingClassNamesMethodNameAndParameterTypeNamesPreconditions() : void in class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectNestedClassAndSelectNestedMethodTests",
           "validation": true
         },
         {
@@ -1987,6 +2049,11 @@
         },
         {
           "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage selectMethodWithParametersByMethodReference() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests to package selectMethodWithParametersByMethodReference() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectMethodTests",
+          "validation": true
+        },
+        {
+          "type": "MOVE_OPERATION",
           "description": "Move Method\tpackage selectClassByNameForSpockSpec() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests to package selectClassByNameForSpockSpec() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectMethodTests",
           "validation": true
         },
@@ -2049,11 +2116,6 @@
       "ourApproach": [],
       "baseline": [
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage selectMethodWithParametersByMethodReference() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests to package selectMethodWithParametersByMethodReference() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectMethodTests",
-          "validation": true
-        },
-        {
           "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpackage selectMethodByClassMethodNameAndMethodParameterTypesPreconditions() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests to package selectMethodByClassMethodNameAndParameterTypeNamesPreconditions() : void from class org.junit.platform.engine.discovery.DiscoverySelectorsTests.SelectMethodTests",
           "validation": true
@@ -2113,13 +2175,7 @@
           "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate valueOf(targetType Class, source String) : Object renamed to public convert(source String, targetType Class) : Object in class org.junit.jupiter.params.converter.StringToEnumConverter",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/junit-team/junit5.git",
@@ -2246,9 +2302,9 @@
       ],
       "baseline": [
         {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate convertToTargetType(source Object, targetType Class<?>) : Object inlined to public convert(source Object, targetType Class<?>, context ParameterContext) : Object in class org.junit.jupiter.params.converter.DefaultArgumentConverter",
-          "validation": false
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.junit.jupiter.params.converter.DefaultArgumentConverter.StringToClassConverter from class org.junit.jupiter.params.converter.DefaultArgumentConverter",
+          "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
@@ -2259,11 +2315,6 @@
           "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tprivate toClass(type String) : Class<?> from class org.junit.jupiter.params.converter.DefaultArgumentConverter.StringToCommonJavaTypesConverter to public convert(className String, targetType Class<?>, classLoader ClassLoader) : Object from class org.junit.jupiter.params.converter.DefaultArgumentConverter.StringToClassConverter",
           "validation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic convert(source String, targetType Class<?>, classLoader ClassLoader) : Object extracted from public convert(source Object, targetType Class<?>) : Object in class org.junit.jupiter.params.converter.DefaultArgumentConverter & moved to class org.junit.jupiter.params.converter.DefaultArgumentConverter.StringToObjectConverter",
-          "validation": false
         }
       ]
     }

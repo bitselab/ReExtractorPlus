@@ -67,16 +67,6 @@
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public getChars(destination char[]) : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public toCharArray() : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T extracted from public toCharArray(startIndex int, endIndex int) : char[] in class org.apache.commons.lang3.text.StrBuilder & moved to class org.apache.commons.lang3.ArrayUtils",
           "validation": true
         },
@@ -258,19 +248,19 @@
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate toExcludeFieldNames(excludeFieldNames String[]) : String[] extracted from public setExcludeFieldNames(excludeFieldNamesParam String...) : ReflectionDiffBuilder<T> in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
           "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullValuesInExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullValuesInExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
-          "validation": true
         }
       ],
       "ourApproach": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic build() : ReflectionDiffBuilder<T> extracted from public testGetExcludeFieldNamesWithNullExcludedFieldNames() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest & moved to class org.apache.commons.lang3.builder.ReflectionDiffBuilder.Builder",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic build() : ReflectionDiffBuilder<T> extracted from public testGetExcludeFieldNamesWithNullValuesInExcludedFieldNames() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest & moved to class org.apache.commons.lang3.builder.ReflectionDiffBuilder.Builder",
+          "validation": true
+        },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate getLeft() : T extracted from private appendFields(clazz Class<?>) : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilder",
@@ -292,7 +282,18 @@
           "validation": true
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testGetExcludeFieldNamesWithNullValuesInExcludedFieldNames() : void renamed to public testGetExcludeFieldNamesWithNullValuesInExcludedFieldNamesCtor() : void in class org.apache.commons.lang3.builder.ReflectionDiffBuilderTest",
+          "validation": true
+        }
+      ]
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
@@ -362,23 +363,30 @@
           "validation": false
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tobjectToTest : Object in method public append(fieldName String, lhs Object, rhs Object) : DiffBuilder<T> from class org.apache.commons.lang3.builder.DiffBuilder",
+          "validation": false
+        }
+      ]
     },
     {
       "repository": "https://github.com/apache/commons-lang.git",
       "sha1": "b1b409ae4096664a33787bf52be32d9d2eb0cb31",
       "url": "https://github.com/apache/commons-lang/commit/b1b409ae4096664a33787bf52be32d9d2eb0cb31",
-      "commonRefactoring": [],
+      "commonRefactoring": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic testNullStyle() : void renamed to public testDefaultStyle() : void in class org.apache.commons.lang3.builder.DiffResultTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tDIFFERS_STRING : String to toStringFormat : String in class org.apache.commons.lang3.builder.DiffResult",
           "validation": false
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic testNullStyle() : void renamed to public testDefaultStyle() : void in class org.apache.commons.lang3.builder.DiffResultTest",
-          "validation": true
         }
       ],
       "baseline": []
@@ -642,24 +650,14 @@
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tchildTwo : ChildBackgroundInitializer to childTwo : AbstractChildBackgroundInitializer in method public testIsInitialized() : void from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
           "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage initializeCalls : int from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl to package initializeCalls : AtomicInteger from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tinitializeCalls : int to initializeCalls : AtomicInteger in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl",
-          "validation": true
         }
       ],
       "ourApproach": [
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage initializeCalls : int from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl to package initializeCalls : int from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.CloseableCounter",
+          "validation": false
+        },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic getInitializeCalls() : int extracted from private checkInitialize(init BackgroundInitializerTestImpl) : void in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest & moved to class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
@@ -684,6 +682,11 @@
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprotected createChildBackgroundInitializer() : AbstractChildBackgroundInitializer extracted from public testInitializeNested() : void in class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest",
           "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.CloseableCounter from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl",
+          "validation": false
         }
       ],
       "baseline": [
@@ -705,6 +708,21 @@
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tInteger to CloseableCounter in method protected initializeInternal() : CloseableCounter from class org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.AbstractChildBackgroundInitializer",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage initializeCalls : int from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl to package initializeCalls : AtomicInteger from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tinitializeCalls : int to initializeCalls : AtomicInteger in class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.apache.commons.lang3.concurrent.BackgroundInitializerTest.CloseableCounter from class org.apache.commons.lang3.concurrent.BackgroundInitializerTest.BackgroundInitializerTestImpl",
           "validation": true
         }
       ]

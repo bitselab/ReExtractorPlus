@@ -103,6 +103,16 @@
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tinfiniteLoop : InfiniteLoopStatement to infiniteLoop : InfiniteLoop in method public stopEndlessStatement() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
           "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
         }
       ],
       "ourApproach": [
@@ -129,16 +139,6 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate failAfter50Ms(statement Statement) : FailOnTimeout extracted from public stackTraceContainsRealCauseOfTimeout() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\trunnable : ThrowingRunnable to failOnTimeout : FailOnTimeout in method public lookingForStuckThread_threadGroupNotLeaked() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
           "validation": true
         },
         {
@@ -179,6 +179,16 @@
           "validation": true
         },
         {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to private failAfter50Ms(statement Statement) : FailOnTimeout in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to private failAfter50Ms(statement Statement) : FailOnTimeout in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tstuck : StuckStatement in method public stackTraceContainsRealCauseOfTimeout() : void from class org.junit.internal.runners.statements.FailOnTimeoutTest",
           "validation": true
@@ -191,6 +201,16 @@
         {
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to public stopEndlessStatement() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to public stopEndlessStatement() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
+          "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate builder() : FailOnTimeout.Builder inlined to public stackTraceContainsRealCauseOfTimeout() : void in class org.junit.internal.runners.statements.FailOnTimeoutTest",
           "validation": true
         },
         {
@@ -244,14 +264,19 @@
           "type": "MOVE_RENAME_CLASS",
           "description": "Move And Rename Class\torg.junit.internal.StackTracesTest.JUnit3TestWithThrowingSetUpMethod moved and renamed to junit.tests.SampleJUnit3Tests.TestWithThrowingSetUpMethod",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
           "validation": true
         },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithSuppressedException moved to org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.internal.StackTracesTest.ThrowingTestRule moved to org.junit.tests.SampleJUnit4Tests.ThrowingTestRule",
@@ -276,30 +301,9 @@
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithThrowingMethodRule moved to org.junit.tests.SampleJUnit4Tests.TestWithThrowingMethodRule",
           "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.internal.StackTracesTest.TestWithSuppressedException moved to org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
-          "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic alwaysThrows() : void from class org.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod to public alwaysThrows() : void from class org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage initAddSuppressed() : Method from class org.junit.internal.StackTracesTest.TestWithSuppressedException to package initAddSuppressed() : Method from class org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic alwaysThrows() : void from class org.junit.internal.StackTracesTest.TestWithSuppressedException to public alwaysThrows() : void from class org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/junit-team/junit4.git",
@@ -397,6 +401,11 @@
           "validation": true
         },
         {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\trunner : Runner in method public safeRunnerForClass(testClass Class<?>) : Runner from class org.junit.runners.model.RunnerBuilder",
+          "validation": true
+        },
+        {
           "type": "PULL_UP_OPERATION",
           "description": "Pull Up Method\tpublic getRunner() : Runner from class org.junit.internal.requests.ClassRequest to public getRunner() : Runner from class org.junit.internal.requests.MemoizingRequest",
           "validation": true
@@ -422,13 +431,7 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\trunner : Runner in method public safeRunnerForClass(testClass Class<?>) : Runner from class org.junit.runners.model.RunnerBuilder",
-          "validation": true
-        }
-      ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -485,11 +488,20 @@
       "repository": "https://github.com/junit-team/junit4.git",
       "sha1": "0bec573229bdd725b1d4588bd3c1ad9ba38f29eb",
       "url": "https://github.com/junit-team/junit4/commit/0bec573229bdd725b1d4588bd3c1ad9ba38f29eb",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.rules.TestWatcherTest.FailingTest moved to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": true
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic succeeds() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\torg.junit.rules.TestWatcherTest.InternalViolatedAssumptionTest moved to org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
           "validation": true
         },
         {
@@ -501,32 +513,103 @@
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.rules.TestWatcherTest.ViolatedAssumptionTest moved to org.junit.rules.TestWatcherTest.Callbacks.ViolatedAssumptionTest",
           "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.TestWatcherTest.FailingTest moved to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.junit.rules.TestWatcherTest.InternalViolatedAssumptionTest moved to org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
-          "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic succeeds() : void from class org.junit.rules.TestWatcherTest.InternalViolatedAssumptionTest to public test() : void from class org.junit.rules.TestWatcherTest.Callbacks.InternalViolatedAssumptionTest",
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
           "validation": false
         },
         {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic succeeds() : void from class org.junit.rules.TestWatcherTest.ViolatedAssumptionTest to public test() : void from class org.junit.rules.TestWatcherTest.Callbacks.ViolatedAssumptionTest",
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
           "validation": false
         },
         {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic fails() : void from class org.junit.rules.TestWatcherTest.TestWatcherSkippedThrowsExceptionTest to public test() : void from class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestRuleTest.WatchmanTest moved and renamed to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestRuleTest.MethodWatchmanTest moved and renamed to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic nothing() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic nothing() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestRuleTest.OnFailureTest moved and renamed to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestRuleTest.MethodOnFailureTest moved and renamed to org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic succeeds() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.Callbacks.FailingTest",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic nothing() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.CallbackArguments.Skipped",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestRuleTest.MethodOnSkippedTest moved and renamed to org.junit.rules.TestWatcherTest.CallbackArguments.Skipped",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic fails() : void renamed to public test() : void in class org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestWatcherTest.TestWatcherSkippedThrowsExceptionTest moved and renamed to org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestWatcherTest.TestWatcherFailedThrowsExceptionTest moved and renamed to org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestWatcherTest.TestWatcherStartingThrowsExceptionTest moved and renamed to org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
+          "validation": false
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.junit.rules.TestWatcherTest.TestWatcherFailedAndFinishedThrowsExceptionTest moved and renamed to org.junit.rules.TestWatcherTest.CallbackArguments.DeprecatedSkipped",
           "validation": false
         }
       ]
@@ -558,17 +641,12 @@
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatThrowsInternalAssumptionViolatedException",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice renamed to org.junit.rules.ErrorCollectorTest.AddTwoErrors",
           "validation": true
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsExpectedTypeOfException",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatDoesNotThrowAnException",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds renamed to org.junit.rules.ErrorCollectorTest.CheckTwoCallablesThatThrowExceptions",
           "validation": true
         },
         {
@@ -583,22 +661,27 @@
         },
         {
           "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatDoesNotThrowAnException",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsExpectedTypeOfException",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
           "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown renamed to org.junit.rules.ErrorCollectorTest.CheckRunnableThatThrowsNoExceptionAlthoughOneIsExpected",
           "validation": true
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds renamed to org.junit.rules.ErrorCollectorTest.CheckTwoCallablesThatThrowExceptions",
+          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException renamed to org.junit.rules.ErrorCollectorTest.CheckCallableThatThrowsInternalAssumptionViolatedException",
           "validation": true
         },
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector renamed to org.junit.rules.ErrorCollectorTest.AddInternalAssumptionViolatedException",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice renamed to org.junit.rules.ErrorCollectorTest.AddTwoErrors",
           "validation": true
         },
         {

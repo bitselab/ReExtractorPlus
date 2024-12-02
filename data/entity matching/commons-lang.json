@@ -1100,29 +1100,6 @@
         },
         {
           "leftSideLocation": {
-            "container": "public getChars(destination char[]) : char[]",
-            "type": "Statement",
-            "name": "System.arraycopy(buffer,0,destination,0,len);\n",
-            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-            "startLine": 1918,
-            "endLine": 1918,
-            "startColumn": 9,
-            "endColumn": 58
-          },
-          "rightSideLocation": {
-            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
-            "type": "Statement",
-            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
-            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-            "startLine": 1394,
-            "endLine": 1394,
-            "startColumn": 9,
-            "endColumn": 68
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
             "container": "public toCharArray() : char[]",
             "type": "Statement",
             "name": "return chars;\n",
@@ -1141,29 +1118,6 @@
             "endLine": 1395,
             "startColumn": 9,
             "endColumn": 21
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public toCharArray() : char[]",
-            "type": "Statement",
-            "name": "System.arraycopy(buffer,0,chars,0,size);\n",
-            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-            "startLine": 2942,
-            "endLine": 2942,
-            "startColumn": 9,
-            "endColumn": 53
-          },
-          "rightSideLocation": {
-            "container": "public arraycopy(source T, sourcePos int, dest T, destPos int, length int) : T",
-            "type": "Statement",
-            "name": "System.arraycopy(source,sourcePos,dest,destPos,length);\n",
-            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-            "startLine": 1394,
-            "endLine": 1394,
-            "startColumn": 9,
-            "endColumn": 68
           },
           "validation": true
         },

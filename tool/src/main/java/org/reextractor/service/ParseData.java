@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public class ParseData {
 
-    final String datasetPath = "/home/anno/dataset/";
+    final String datasetPath = "E:\\contributions\\TSE2024\\Oracle\\";
 
     public static void main(String[] args) {
        new ParseData().start();
@@ -89,8 +89,6 @@ public class ParseData {
         Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
         String remote_repo = GitServiceImpl.getRemoteUrl(projectPath);
         String remote_url = remote_repo.replace(".git", "/commit/") + commitId;
-        if (remote_repo.equals("https://git.eclipse.org/r/jgit/jgit.git"))
-            remote_url = "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=" + commitId;
         if (file.exists()) {
             FileReader reader1 = new FileReader(filePath);
             RefactoringOracle results1 = gson.fromJson(reader1, RefactoringOracle.class);

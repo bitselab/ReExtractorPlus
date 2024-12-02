@@ -1650,29 +1650,6 @@
             "endColumn": 35
           },
           "rightSideLocation": {
-            "container": "public getConnection() : Connection",
-            "type": "Statement",
-            "name": "return connection;\n",
-            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpRequest.java",
-            "startLine": 170,
-            "endLine": 170,
-            "startColumn": 9,
-            "endColumn": 27
-          },
-          "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "public testFailureBeforeRequestCommit() : void",
-            "type": "Statement",
-            "name": "return connection;\n",
-            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
-            "startLine": 79,
-            "endLine": 79,
-            "startColumn": 17,
-            "endColumn": 35
-          },
-          "rightSideLocation": {
             "container": "protected getConnection() : Connection",
             "type": "Statement",
             "name": "return connection;\n",

@@ -85,11 +85,6 @@
       "baseline": [
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic getConnection() : Connection extracted from public testFailureBeforeRequestCommit() : void in class org.eclipse.jetty.client.HttpClientFailureTest & moved to class org.eclipse.jetty.client.HttpRequest",
-          "validation": false
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tprotected getConnection() : Connection extracted from public testFailureBeforeRequestCommit() : void in class org.eclipse.jetty.client.HttpClientFailureTest & moved to class org.eclipse.jetty.client.http.HttpChannelOverHTTP",
           "validation": false
         },
@@ -388,14 +383,13 @@
       "repository": "https://github.com/eclipse/jetty.project.git",
       "sha1": "c55363d43f6a2e0c9e20c16c7a7e3f427df877df",
       "url": "https://github.com/eclipse/jetty.project/commit/c55363d43f6a2e0c9e20c16c7a7e3f427df877df",
-      "commonRefactoring": [
+      "commonRefactoring": [],
+      "ourApproach": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic testDateCacheFormatNow() : void renamed to public testDateCache() : void in class org.eclipse.jetty.util.jmh.DateCacheBenchmark",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.eclipse.jetty.util.DateCache.TickHolder from class org.eclipse.jetty.util.DateCache",
@@ -596,7 +590,17 @@
         },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpackage requiresTunnel(serverOrigin Origin) : boolean extracted from public newConnection(endPoint EndPoint, context Map<String,Object>) : Connection in class org.eclipse.jetty.client.HttpProxy.HttpProxyClientConnectionFactory & moved to class org.eclipse.jetty.client.HttpProxy",
+          "description": "Extract And Move Method\tprotected newHttpClient(clientConnector ClientConnector) : HttpClient extracted from private startProxy(connectHandler ConnectHandler) : void in class org.eclipse.jetty.http.client.ProxyWithDynamicTransportTest & moved to class org.eclipse.jetty.http.client.ProxyWithDynamicTransportTest.ForwardProxyServlet",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage requiresTunnel(serverOrigin Origin) : boolean extracted from protected normalizeRequest(request HttpRequest) : void in class org.eclipse.jetty.client.HttpConnection & moved to class org.eclipse.jetty.client.HttpProxy",
+          "validation": false
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage requiresTunnel(serverOrigin Origin) : boolean extracted from public newConnection(endPoint EndPoint, context Map<String,Object>) : org.eclipse.jetty.io.Connection in class org.eclipse.jetty.client.HttpProxy.HttpProxyClientConnectionFactory & moved to class org.eclipse.jetty.client.HttpProxy",
           "validation": false
         }
       ]
@@ -627,11 +631,6 @@
           "validation": true
         },
         {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tdataCallback : Callback in method public write(callback Callback, buffers ByteBuffer...) : void from class org.eclipse.jetty.http2.HTTP2StreamEndPoint",
-          "validation": true
-        },
-        {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tl : AutoLock to ignored : AutoLock in method private offer(buffer ByteBuffer, callback Callback, failure Throwable) : void from class org.eclipse.jetty.http2.HTTP2StreamEndPoint",
           "validation": true
@@ -651,6 +650,11 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tl : AutoLock to ignored : AutoLock in method public fill(sink ByteBuffer) : int from class org.eclipse.jetty.http2.HTTP2StreamEndPoint",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tdataCallback : Callback in method public write(callback Callback, buffers ByteBuffer...) : void from class org.eclipse.jetty.http2.HTTP2StreamEndPoint",
           "validation": true
         }
       ],
@@ -725,6 +729,16 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate configure(settings Map<Integer,Integer>, local boolean) : void extracted from public onSettings(frame SettingsFrame, reply boolean) : void in class org.eclipse.jetty.http2.HTTP2Session",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic Generator(byteBufferPool ByteBufferPool, maxHeaderBlockFragment int) extracted from public Generator(byteBufferPool ByteBufferPool, maxDynamicTableSize int, maxHeaderBlockFragment int) in class org.eclipse.jetty.http2.generator.Generator",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic Generator(byteBufferPool ByteBufferPool, useDirectByteBuffers boolean, maxHeaderBlockFragment int) extracted from public Generator(byteBufferPool ByteBufferPool, useDirectByteBuffers boolean, maxDynamicTableSize int, maxHeaderBlockFragment int) in class org.eclipse.jetty.http2.generator.Generator",
           "validation": true
         },
         {
@@ -903,6 +917,11 @@
         },
         {
           "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic Generator(byteBufferPool ByteBufferPool, maxHeaderBlockFragment int) extracted from public Generator(byteBufferPool ByteBufferPool) in class org.eclipse.jetty.http2.generator.Generator",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tpublic getMaxFrameSize() : int extracted from public getMaxFrameLength() : int in class org.eclipse.jetty.http2.parser.Parser",
           "validation": true
         },
@@ -914,6 +933,11 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tpublic Parser(byteBufferPool ByteBufferPool, maxTableCapacity int, maxHeaderSize int) extracted from public Parser(byteBufferPool ByteBufferPool, listener Listener, maxDynamicTableSize int, maxHeaderSize int) in class org.eclipse.jetty.http2.parser.Parser",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tparser : Parser in method public testMaxFrameSize() : void from class org.eclipse.jetty.http2.frames.MaxFrameSizeParseTest",
           "validation": true
         },
         {

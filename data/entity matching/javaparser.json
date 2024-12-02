@@ -122,6 +122,29 @@
         },
         {
           "leftSideLocation": {
+            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
+            "type": "Statement",
+            "name": "return erasedParameters;\n",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
+            "startLine": 589,
+            "endLine": 589,
+            "startColumn": 9,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
+            "type": "Statement",
+            "name": "return new ArrayList<ResolvedType>();\n",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
+            "startLine": 578,
+            "endLine": 578,
+            "startColumn": 9,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
             "container": "package erasure_arraytype_with_bound() : void",
             "type": "Statement",
             "name": "String expected=\"java.util.List<java.io.Serializable>[]\";\n",
@@ -167,56 +190,8 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "leftSideLocation": {
-            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
-            "type": "Statement",
-            "name": "return erasedParameters;\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
-            "startLine": 589,
-            "endLine": 589,
-            "startColumn": 9,
-            "endColumn": 33
-          },
-          "rightSideLocation": {
-            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
-            "type": "Statement",
-            "name": "return new ArrayList<ResolvedType>();\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
-            "startLine": 578,
-            "endLine": 578,
-            "startColumn": 9,
-            "endColumn": 46
-          },
-          "validation": true
-        }
-      ],
-      "baseline": [
-        {
-          "leftSideLocation": {
-            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
-            "type": "Statement",
-            "name": "List<ResolvedType> erasedParameters=new ArrayList<ResolvedType>();\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
-            "startLine": 578,
-            "endLine": 578,
-            "startColumn": 9,
-            "endColumn": 77
-          },
-          "rightSideLocation": {
-            "container": "private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType>",
-            "type": "Statement",
-            "name": "return new ArrayList<ResolvedType>();\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedReferenceType.java",
-            "startLine": 578,
-            "endLine": 578,
-            "startColumn": 9,
-            "endColumn": 46
-          },
-          "validation": false
-        }
-      ]
+      "ourApproach": [],
+      "baseline": []
     },
     {
       "repository": "https://github.com/javaparser/javaparser.git",
@@ -513,6 +488,29 @@
           "leftSideLocation": {
             "container": "private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement>",
             "type": "Statement",
+            "name": "matchingTokens=nodeText.getElements().stream().filter(e -> e.isToken(SINGLE_LINE_COMMENT)).map(e -> (TokenTextElement)e).filter(t -> t.getText().trim().equals((oldValue.getHeader() + oldValue.getContent()).trim())).collect(toList());\n",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 332,
+            "endLine": 332,
+            "startColumn": 17,
+            "endColumn": 253
+          },
+          "rightSideLocation": {
+            "container": "private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement>",
+            "type": "Statement",
+            "name": "matchingTokens=nodeText.getElements().stream().filter(e -> e.isToken(SINGLE_LINE_COMMENT)).map(e -> (TokenTextElement)e).filter(t -> t.getText().trim().equals((oldValue.asString()).trim())).collect(toList());\n",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 346,
+            "endLine": 350,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement>",
+            "type": "Statement",
             "name": "matchingTokens=nodeText.getElements().stream().filter(e -> e.isToken(MULTI_LINE_COMMENT)).map(e -> (TokenTextElement)e).filter(t -> t.getText().equals(oldValue.getHeader() + oldValue.getContent() + oldValue.getFooter())).collect(toList());\n",
             "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
             "startLine": 330,
@@ -550,29 +548,6 @@
             "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
             "startLine": 334,
             "endLine": 338,
-            "startColumn": 5,
-            "endColumn": 26
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement>",
-            "type": "Statement",
-            "name": "matchingTokens=nodeText.getElements().stream().filter(e -> e.isToken(SINGLE_LINE_COMMENT)).map(e -> (TokenTextElement)e).filter(t -> t.getText().trim().equals((oldValue.getHeader() + oldValue.getContent()).trim())).collect(toList());\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
-            "startLine": 332,
-            "endLine": 332,
-            "startColumn": 17,
-            "endColumn": 253
-          },
-          "rightSideLocation": {
-            "container": "private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement>",
-            "type": "Statement",
-            "name": "matchingTokens=nodeText.getElements().stream().filter(e -> e.isToken(SINGLE_LINE_COMMENT)).map(e -> (TokenTextElement)e).filter(t -> t.getText().trim().equals((oldValue.asString()).trim())).collect(toList());\n",
-            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
-            "startLine": 346,
-            "endLine": 350,
             "startColumn": 5,
             "endColumn": 26
           },

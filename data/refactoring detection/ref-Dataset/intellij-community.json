@@ -287,16 +287,6 @@
       "ourApproach": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic ifFrame(consumer Consumer<? super Frame>) : OwnerOptional renamed to public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T in class com.intellij.util.ui.OwnerOptional",
-          "validation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tOwnerOptional to T in method public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T from class com.intellij.util.ui.OwnerOptional",
-          "validation": false
-        },
-        {
-          "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate useNativeMacChooser(descriptor FileChooserDescriptor) : boolean renamed to private canUseNativeDialog(descriptor FileChooserDescriptor) : boolean in class com.intellij.openapi.fileChooser.impl.LocalFileChooserFactory",
           "validation": true
         },
@@ -318,11 +308,6 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tvirtualFileList : List<VirtualFile> to selectedFiles : var in method public choose(toSelect VirtualFile, callback Consumer<? super List<VirtualFile>>) : void from class com.intellij.openapi.fileChooser.impl.NativeFileChooserDialogImpl",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tideFrameChild : IdeFrame.Child to childFrame : IdeFrame.Child in method public create(parent Component, forDialog Function<Dialog,T>, forFrame Function<@Nullable Frame,T>) : T from class com.intellij.util.ui.OwnerOptional",
           "validation": true
         }
       ],
@@ -360,16 +345,11 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\towner : null to frame : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\towner : null to frame : null in method package NativeFileSaverDialogImpl(descriptor FileSaverDescriptor, parent Component) from class com.intellij.openapi.fileChooser.impl.NativeFileSaverDialogImpl",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tMAC : Type to NATIVE : Type in class com.intellij.openapi.fileChooser.impl.FileChooserUsageCollector.Type",
           "validation": false
         }
       ]
@@ -410,18 +390,7 @@
       "url": "https://github.com/JetBrains/intellij-community/commit/fb44642705a6c7c7d9539889ab6b5f65e532539b",
       "commonRefactoring": [],
       "ourApproach": [],
-      "baseline": [
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\te : ProcessCanceledException|IndexNotReadyException to e : Throwable in method private processPsiFileRoots(files List<? extends VirtualFile>, totalSize int, alreadyProcessedFiles int, progress ProgressIndicator, localProcessor Processor<? super PsiFile>) : boolean from class com.intellij.psi.impl.search.PsiSearchHelperImpl",
-          "validation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\te : Throwable to e : ProcessCanceledException|IndexNotReadyException in method private processPsiFileRoots(files List<? extends VirtualFile>, totalSize int, alreadyProcessedFiles int, progress ProgressIndicator, localProcessor Processor<? super PsiFile>) : boolean from class com.intellij.psi.impl.search.PsiSearchHelperImpl",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
@@ -464,7 +433,7 @@
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tport : int to debuggingPort : int in method package loadSettings(config JCefAppConfig) : CefSettings from class com.intellij.ui.jcef.SettingsHelper",
+          "description": "Rename Variable\tport : int to result : int in method private getRemoteDebugPort() : int from class com.intellij.ui.jcef.SettingsHelper",
           "validation": true
         }
       ],
@@ -472,7 +441,7 @@
       "baseline": [
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tport : int to result : int in method private getRemoteDebugPort() : int from class com.intellij.ui.jcef.SettingsHelper",
+          "description": "Rename Variable\tport : int to debuggingPort : int in method package loadSettings(config JCefAppConfig) : CefSettings from class com.intellij.ui.jcef.SettingsHelper",
           "validation": true
         }
       ]
@@ -509,16 +478,17 @@
       "repository": "https://github.com/JetBrains/intellij-community.git",
       "sha1": "00351758c52d6868495c6ddd70df822248b16ec3",
       "url": "https://github.com/JetBrains/intellij-community/commit/00351758c52d6868495c6ddd70df822248b16ec3",
-      "commonRefactoring": [],
+      "commonRefactoring": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tinspection : PatternVariableCanBeUsedInspection in method protected configureLocalInspectionTools() : LocalInspectionTool @NotNull [] from class com.intellij.java.codeInspection.PatternVariableCanBeUsedInspectionTest",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tprivate generateTextForInstanceOf(variable PsiLocalVariable, ct CommentTracker, instanceOf PsiInstanceOfExpression, typeElement PsiTypeElement) : StringBuilder extracted from protected applyFix(project Project, element PsiElement, updater ModPsiUpdater) : void in class com.intellij.codeInspection.PatternVariableCanBeUsedInspection.PatternVariableCanBeUsedFix & moved to class com.intellij.codeInspection.PatternVariableCanBeUsedInspection",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tinspection : PatternVariableCanBeUsedInspection in method protected configureLocalInspectionTools() : LocalInspectionTool @NotNull [] from class com.intellij.java.codeInspection.PatternVariableCanBeUsedInspectionTest",
           "validation": true
         }
       ],
@@ -578,7 +548,16 @@
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tvFile : VirtualFile to file : VirtualFile in method protected getElementIcon(flags int) : Icon from class com.intellij.psi.impl.ElementBase",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tpsiFile : PsiFile in method protected getElementIcon(flags int) : Icon from class com.intellij.psi.impl.ElementBase",
+          "validation": true
+        }
+      ],
+      "baseline": [
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcomposite : CompositeIcon to o : CompositeIcon in method private is(icon Icon, expected Icon) : boolean from class com.intellij.ide.scopeView.ScopeViewTreeModel",
@@ -589,15 +568,7 @@
           "description": "Rename Variable\tretrievable : RetrievableIcon to o : RetrievableIcon in method private is(icon Icon, expected Icon) : boolean from class com.intellij.ide.scopeView.ScopeViewTreeModel",
           "validation": true
         }
-      ],
-      "ourApproach": [
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tpsiFile : PsiFile in method protected getElementIcon(flags int) : Icon from class com.intellij.psi.impl.ElementBase",
-          "validation": true
-        }
-      ],
-      "baseline": []
+      ]
     },
     {
       "repository": "https://github.com/JetBrains/intellij-community.git",
@@ -613,14 +584,14 @@
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType) : void in class com.intellij.psi.stubs.StubInconsistencyReporter",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void in class com.intellij.psi.stubs.StubInconsistencyReporter",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic reportStubInconsistency(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void renamed to public reportStubInconsistencyBetweenPsiAndText(project Project, reason StubInconsistencyReporter.SourceOfCheck, type InconsistencyType, enforcedInconsistencyType EnforcedInconsistencyType) : void in class com.intellij.util.indexing.diagnostic.StubInconsistencyReporterImpl",

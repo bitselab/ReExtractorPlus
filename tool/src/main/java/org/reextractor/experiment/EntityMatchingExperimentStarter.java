@@ -15,13 +15,12 @@ import org.remapper.util.GitServiceImpl;
 
 import java.io.*;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 public class EntityMatchingExperimentStarter {
 
     //TODO: please specify your local project path
-    final String datasetPath = "/home/anno/dataset/";
+    final String datasetPath = "E:/Dataset/";
 
     public static void main(String[] args) {
         String[] projects = new String[]{
@@ -44,7 +43,7 @@ public class EntityMatchingExperimentStarter {
                 "okhttp",
                 "pmd",
                 "spring-boot",
-                "spring-framework"
+                "spring-framework",
         };
         for (String projectName : projects) {
             new EntityMatchingExperimentStarter().start(projectName);
@@ -85,8 +84,6 @@ public class EntityMatchingExperimentStarter {
         Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
         String remote_repo = GitServiceImpl.getRemoteUrl(projectPath);
         String remote_url = remote_repo.replace(".git", "/commit/") + commitId;
-        if (remote_repo.equals("https://git.eclipse.org/r/jgit/jgit.git"))
-            remote_url = "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=" + commitId;
         if (file.exists()) {
             FileReader reader = new FileReader(filePath);
             EntityMatchingResults results = gson.fromJson(reader, EntityMatchingResults.class);

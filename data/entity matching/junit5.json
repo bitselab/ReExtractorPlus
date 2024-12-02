@@ -812,185 +812,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtils",
-            "type": "Method",
-            "name": "isMethodShadowedByLocalMethods",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1732,
-            "endLine": 1734,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtils",
-            "type": "Method",
-            "name": "isMethodOverriddenByLocalMethods",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1734,
-            "endLine": 1736,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
-            "type": "Method",
-            "name": "findMethodsReturnsAllOverloadedMethodsThatAreNotShadowed",
-            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
-            "startLine": 1505,
-            "endLine": 1517,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
-            "type": "Method",
-            "name": "findMethodsReturnsAllOverloadedMethodsInGenericTypeHieararchy",
-            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
-            "startLine": 1600,
-            "endLine": 1612,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests",
             "type": "Class",
-            "name": "PublicExtendsPackagePrivateLifecycleMethod",
+            "name": "LifecycleMethodOverridingAndSupersedingTests",
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
-            "startLine": 97,
-            "endLine": 107,
-            "startColumn": 3,
-            "endColumn": 4
+            "startLine": 21,
+            "endLine": 153,
+            "startColumn": 0,
+            "endColumn": 2
           },
           "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests",
             "type": "Class",
-            "name": "PublicExtendsPackagePrivateLifecycleMethod",
+            "name": "LifecycleMethodOverridingTests",
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
-            "startLine": 100,
-            "endLine": 111,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
-            "type": "Method",
-            "name": "findMethodsWithStaticHidingUsingHierarchyUpMode",
-            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
-            "startLine": 1455,
-            "endLine": 1478,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
-            "type": "Method",
-            "name": "findMethodsWithStaticHidingUsingHierarchyUpModeInLegacyMode",
-            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
-            "startLine": 1491,
-            "endLine": 1518,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
-            "type": "Method",
-            "name": "classLevelWithInheritedAndHiddenExtensions",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
-            "startLine": 121,
-            "endLine": 140,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
-            "type": "Method",
-            "name": "classLevelWithInheritedAndHiddenExtensionsInLegacyMode",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
-            "startLine": 167,
-            "endLine": 187,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.ProtectedExtendsPackagePrivateLifecycleMethod",
-            "type": "Class",
-            "name": "ProtectedExtendsPackagePrivateLifecycleMethod",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
-            "startLine": 73,
-            "endLine": 83,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.ProtectedExtendsPackagePrivateLifecycleMethod",
-            "type": "Class",
-            "name": "ProtectedExtendsPackagePrivateLifecycleMethod",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
-            "startLine": 74,
-            "endLine": 85,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests",
-            "type": "Class",
-            "name": "PackagePrivateSuperClassInDifferentPackageTests",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
-            "startLine": 69,
-            "endLine": 108,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests",
-            "type": "Class",
-            "name": "PackagePrivateSuperClassInDifferentPackageTests",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
-            "startLine": 70,
-            "endLine": 112,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
-            "type": "Method",
-            "name": "beforeEach",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
-            "startLine": 103,
-            "endLine": 105,
-            "startColumn": 4,
-            "endColumn": 5
-          },
-          "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
-            "type": "Method",
-            "name": "beforeEach",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
-            "startLine": 106,
-            "endLine": 109,
-            "startColumn": 4,
-            "endColumn": 5
+            "startLine": 22,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
           },
           "validation": true
         },
@@ -1021,20 +860,20 @@
           "leftSideLocation": {
             "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
             "type": "Method",
-            "name": "instanceLevelWithInheritedAndHiddenExtensions",
+            "name": "classLevelWithInheritedAndHiddenExtensions",
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
-            "startLine": 100,
-            "endLine": 119,
+            "startLine": 121,
+            "endLine": 140,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
             "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
             "type": "Method",
-            "name": "instanceLevelWithInheritedAndHiddenExtensionsInLegacyMode",
+            "name": "classLevelWithInheritedAndHiddenExtensionsInLegacyMode",
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
-            "startLine": 123,
-            "endLine": 143,
+            "startLine": 167,
+            "endLine": 187,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1065,6 +904,29 @@
         },
         {
           "leftSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests",
+            "type": "Class",
+            "name": "PackagePrivateSuperClassInDifferentPackageTests",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
+            "startLine": 69,
+            "endLine": 108,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests",
+            "type": "Class",
+            "name": "PackagePrivateSuperClassInDifferentPackageTests",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
+            "startLine": 70,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
             "container": "org.junit.jupiter.engine.extension.OrderedProgrammaticExtensionRegistrationTests",
             "type": "Method",
             "name": "classLevelWithDefaultOrderShadowingOrderFromSuperclass",
@@ -1081,29 +943,6 @@
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedProgrammaticExtensionRegistrationTests.java",
             "startLine": 171,
             "endLine": 183,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.extension.BeforeAndAfterAllTests",
-            "type": "Method",
-            "name": "beforeAllAndAfterAllCallbacksInSubSubclassWithStaticMethodHiding",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/BeforeAndAfterAllTests.java",
-            "startLine": 106,
-            "endLine": 131,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.extension.BeforeAndAfterAllTests",
-            "type": "Method",
-            "name": "beforeAllAndAfterAllCallbacksInSubSubclassWithoutStaticMethodHiding",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/BeforeAndAfterAllTests.java",
-            "startLine": 106,
-            "endLine": 139,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1134,24 +973,208 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests",
-            "type": "Class",
-            "name": "LifecycleMethodOverridingAndSupersedingTests",
-            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
-            "startLine": 21,
-            "endLine": 153,
-            "startColumn": 0,
-            "endColumn": 2
+            "container": "org.junit.jupiter.engine.extension.BeforeAndAfterAllTests",
+            "type": "Method",
+            "name": "beforeAllAndAfterAllCallbacksInSubSubclassWithStaticMethodHiding",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/BeforeAndAfterAllTests.java",
+            "startLine": 106,
+            "endLine": 131,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests",
-            "type": "Class",
-            "name": "LifecycleMethodOverridingTests",
+            "container": "org.junit.jupiter.engine.extension.BeforeAndAfterAllTests",
+            "type": "Method",
+            "name": "beforeAllAndAfterAllCallbacksInSubSubclassWithoutStaticMethodHiding",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/BeforeAndAfterAllTests.java",
+            "startLine": 106,
+            "endLine": 139,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtils",
+            "type": "Method",
+            "name": "isMethodShadowedByLocalMethods",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1732,
+            "endLine": 1734,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtils",
+            "type": "Method",
+            "name": "isMethodOverriddenByLocalMethods",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1734,
+            "endLine": 1736,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "type": "Method",
+            "name": "beforeEach",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
+            "startLine": 103,
+            "endLine": 105,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "type": "Method",
+            "name": "beforeEach",
             "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
-            "startLine": 22,
-            "endLine": 157,
-            "startColumn": 0,
-            "endColumn": 2
+            "startLine": 106,
+            "endLine": 109,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "type": "Class",
+            "name": "PublicExtendsPackagePrivateLifecycleMethod",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
+            "startLine": 97,
+            "endLine": 107,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.PublicExtendsPackagePrivateLifecycleMethod",
+            "type": "Class",
+            "name": "PublicExtendsPackagePrivateLifecycleMethod",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
+            "startLine": 100,
+            "endLine": 111,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtils",
+            "type": "Method",
+            "name": "isMethodShadowedBy",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1736,
+            "endLine": 1738,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtils",
+            "type": "Method",
+            "name": "isMethodOverriddenBy",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1738,
+            "endLine": 1758,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
+            "type": "Method",
+            "name": "findMethodsWithStaticHidingUsingHierarchyUpMode",
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 1455,
+            "endLine": 1478,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
+            "type": "Method",
+            "name": "findMethodsWithStaticHidingUsingHierarchyUpModeInLegacyMode",
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 1491,
+            "endLine": 1518,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
+            "type": "Method",
+            "name": "instanceLevelWithInheritedAndHiddenExtensions",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
+            "startLine": 100,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.jupiter.engine.extension.ProgrammaticExtensionRegistrationTests",
+            "type": "Method",
+            "name": "instanceLevelWithInheritedAndHiddenExtensionsInLegacyMode",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/ProgrammaticExtensionRegistrationTests.java",
+            "startLine": 123,
+            "endLine": 143,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
+            "type": "Method",
+            "name": "findMethodsReturnsAllOverloadedMethodsThatAreNotShadowed",
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 1505,
+            "endLine": 1517,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.junit.platform.commons.util.ReflectionUtilsTests.FindMethodsTests",
+            "type": "Method",
+            "name": "findMethodsReturnsAllOverloadedMethodsInGenericTypeHieararchy",
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 1600,
+            "endLine": 1612,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingAndSupersedingTests.PackagePrivateSuperClassInDifferentPackageTests.ProtectedExtendsPackagePrivateLifecycleMethod",
+            "type": "Class",
+            "name": "ProtectedExtendsPackagePrivateLifecycleMethod",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingAndSupersedingTests.java",
+            "startLine": 73,
+            "endLine": 83,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.junit.jupiter.engine.LifecycleMethodOverridingTests.PackagePrivateSuperClassInDifferentPackageTests.ProtectedExtendsPackagePrivateLifecycleMethod",
+            "type": "Class",
+            "name": "ProtectedExtendsPackagePrivateLifecycleMethod",
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodOverridingTests.java",
+            "startLine": 74,
+            "endLine": 85,
+            "startColumn": 3,
+            "endColumn": 4
           },
           "validation": true
         },
@@ -1410,29 +1433,6 @@
         },
         {
           "leftSideLocation": {
-            "container": "private isMethodShadowedByLocalMethods(method Method, localMethods List<Method>) : boolean",
-            "type": "Statement",
-            "name": "return localMethods.stream().anyMatch(local -> isMethodShadowedBy(method,local));\n",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1733,
-            "endLine": 1733,
-            "startColumn": 3,
-            "endColumn": 85
-          },
-          "rightSideLocation": {
-            "container": "private isMethodOverriddenByLocalMethods(method Method, localMethods List<Method>) : boolean",
-            "type": "Statement",
-            "name": "return localMethods.stream().anyMatch(local -> isMethodOverriddenBy(method,local));\n",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1735,
-            "endLine": 1735,
-            "startColumn": 3,
-            "endColumn": 87
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
             "container": "package beforeAllAndAfterAllCallbacksInSubSubclassWithStaticMethodHiding() : void",
             "type": "Statement",
             "name": "assertBeforeAllAndAfterAllCallbacks(ThirdLevelStaticHidingTestCase.class,\"fooBeforeAllCallback\",\"barBeforeAllCallback\",\"bazBeforeAllCallback\",\"quuxBeforeAllCallback\",\"beforeAllMethod-1-hidden\",\"beforeAllMethod-2-hidden\",\"beforeAllMethod-3\",\"test-3\",\"afterAllMethod-1-hidden\",\"afterAllMethod-2-hidden\",\"afterAllMethod-3\",\"quuxAfterAllCallback\",\"bazAfterAllCallback\",\"barAfterAllCallback\",\"fooAfterAllCallback\");\n",
@@ -1453,32 +1453,32 @@
             "endColumn": 5
           },
           "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private isMethodShadowedByLocalMethods(method Method, localMethods List<Method>) : boolean",
+            "type": "Statement",
+            "name": "return localMethods.stream().anyMatch(local -> isMethodShadowedBy(method,local));\n",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1733,
+            "endLine": 1733,
+            "startColumn": 3,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "container": "private isMethodOverriddenByLocalMethods(method Method, localMethods List<Method>) : boolean",
+            "type": "Statement",
+            "name": "return localMethods.stream().anyMatch(local -> isMethodOverriddenBy(method,local));\n",
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1735,
+            "endLine": 1735,
+            "startColumn": 3,
+            "endColumn": 87
+          },
+          "validation": true
         }
       ],
       "ourApproach": [
-        {
-          "leftSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtils",
-            "type": "Method",
-            "name": "isMethodShadowedBy",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1736,
-            "endLine": 1738,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.platform.commons.util.ReflectionUtils",
-            "type": "Method",
-            "name": "isMethodOverriddenBy",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1738,
-            "endLine": 1758,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
         {
           "leftSideLocation": {
             "container": "private isFieldShadowedByLocalFields(field Field, localFields List<Field>) : boolean",
@@ -1524,29 +1524,6 @@
             "endColumn": 56
           },
           "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private isMethodShadowedBy(upper Method, lower Method) : boolean",
-            "type": "Statement",
-            "name": "return hasCompatibleSignature(upper,lower.getName(),lower.getParameterTypes());\n",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1737,
-            "endLine": 1737,
-            "startColumn": 3,
-            "endColumn": 84
-          },
-          "rightSideLocation": {
-            "container": "private isMethodOverriddenBy(upper Method, lower Method) : boolean",
-            "type": "Statement",
-            "name": "return hasCompatibleSignature(upper,lower.getName(),lower.getParameterTypes());\n",
-            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
-            "startLine": 1757,
-            "endLine": 1757,
-            "startColumn": 3,
-            "endColumn": 84
-          },
-          "validation": true
         }
       ],
       "baseline": [
@@ -1582,22 +1559,22 @@
       "commonMatching": [
         {
           "leftSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
             "type": "Method",
-            "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 48,
-            "endLine": 53,
+            "name": "printDeclarationInfo",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 41,
+            "endLine": 48,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
             "type": "Method",
-            "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 46,
-            "endLine": 51,
+            "name": "printDeclarationInfo",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 43,
+            "endLine": 47,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1605,22 +1582,68 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "container": "org.junit.api.tools.ApiReportWriter",
+            "type": "Interface",
+            "name": "ApiReportWriter",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportWriter.java",
+            "startLine": 18,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.ApiReportWriter",
+            "type": "Interface",
+            "name": "ApiReportWriter",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportWriter.java",
+            "startLine": 18,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
             "type": "Method",
             "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 49,
-            "endLine": 53,
+            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 54,
+            "endLine": 58,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
             "type": "Method",
             "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 47,
-            "endLine": 51,
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 52,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 60,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 58,
+            "endLine": 65,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1653,275 +1676,22 @@
           "leftSideLocation": {
             "container": "org.junit.api.tools.MarkdownApiReportWriter",
             "type": "Method",
-            "name": "printDeclarationTableRow",
+            "name": "printDeclarationTableHeader",
             "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 59,
-            "endLine": 66,
+            "startLine": 49,
+            "endLine": 53,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
             "container": "org.junit.api.tools.MarkdownApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 57,
-            "endLine": 64,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
-            "type": "Field",
-            "name": "MARKDOWN_FORMAT",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 23,
-            "endLine": 23,
-            "startColumn": 30,
-            "endColumn": 81
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
-            "type": "Field",
-            "name": "MARKDOWN_FORMAT",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 21,
-            "endLine": 21,
-            "startColumn": 30,
-            "endColumn": 96
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 55,
-            "endLine": 67,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 53,
-            "endLine": 60,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationInfo",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 41,
-            "endLine": 48,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationInfo",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 43,
-            "endLine": 47,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 60,
-            "endLine": 67,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 58,
-            "endLine": 65,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
-            "type": "Class",
-            "name": "HtmlApiReportWriter",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 17,
-            "endLine": 74,
-            "startColumn": 0,
-            "endColumn": 2
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
-            "type": "Class",
-            "name": "HtmlApiReportWriter",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 15,
-            "endLine": 72,
-            "startColumn": 0,
-            "endColumn": 2
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationSectionHeader",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 61,
-            "endLine": 71,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationSectionHeader",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 60,
-            "endLine": 71,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
             "type": "Method",
             "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 54,
-            "endLine": 58,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.HtmlApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableHeader",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 52,
-            "endLine": 56,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
-            "type": "Field",
-            "name": "ASCIIDOC_FORMAT",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 22,
-            "endLine": 22,
-            "startColumn": 30,
-            "endColumn": 75
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.AsciidocApiReportWriter",
-            "type": "Field",
-            "name": "ASCIIDOC_FORMAT",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 20,
-            "endLine": 20,
-            "startColumn": 30,
-            "endColumn": 98
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.ApiReportWriter",
-            "type": "Interface",
-            "name": "ApiReportWriter",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportWriter.java",
-            "startLine": 18,
-            "endLine": 27,
-            "startColumn": 0,
-            "endColumn": 2
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.ApiReportWriter",
-            "type": "Interface",
-            "name": "ApiReportWriter",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportWriter.java",
-            "startLine": 18,
-            "endLine": 27,
-            "startColumn": 0,
-            "endColumn": 2
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 87,
-            "endLine": 87,
-            "startColumn": 2,
-            "endColumn": 83
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.AbstractApiReportWriter",
-            "type": "Method",
-            "name": "printDeclarationTableRow",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 87,
-            "endLine": 87,
-            "startColumn": 2,
-            "endColumn": 93
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
-            "type": "Class",
-            "name": "MarkdownApiReportWriter",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 18,
-            "endLine": 73,
-            "startColumn": 0,
-            "endColumn": 2
-          },
-          "rightSideLocation": {
-            "container": "org.junit.api.tools.MarkdownApiReportWriter",
-            "type": "Class",
-            "name": "MarkdownApiReportWriter",
             "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
-            "startLine": 16,
-            "endLine": 71,
-            "startColumn": 0,
-            "endColumn": 2
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
@@ -1996,6 +1766,213 @@
         },
         {
           "leftSideLocation": {
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
+            "type": "Class",
+            "name": "HtmlApiReportWriter",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 17,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.HtmlApiReportWriter",
+            "type": "Class",
+            "name": "HtmlApiReportWriter",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 15,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Field",
+            "name": "MARKDOWN_FORMAT",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 30,
+            "endColumn": 81
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Field",
+            "name": "MARKDOWN_FORMAT",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 30,
+            "endColumn": 96
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationSectionHeader",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 61,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationSectionHeader",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 60,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableHeader",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 48,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableHeader",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 46,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 59,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 57,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Field",
+            "name": "ASCIIDOC_FORMAT",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 30,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Field",
+            "name": "ASCIIDOC_FORMAT",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 30,
+            "endColumn": 98
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.AbstractApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 93
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 55,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.AsciidocApiReportWriter",
+            "type": "Method",
+            "name": "printDeclarationTableRow",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 53,
+            "endLine": 60,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Class",
+            "name": "MarkdownApiReportWriter",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 18,
+            "endLine": 73,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.api.tools.MarkdownApiReportWriter",
+            "type": "Class",
+            "name": "MarkdownApiReportWriter",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/MarkdownApiReportWriter.java",
+            "startLine": 16,
+            "endLine": 71,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
             "container": "org.junit.api.tools.ApiReportWriter",
             "type": "Method",
             "name": "printDeclarationInfo",
@@ -2021,22 +1998,45 @@
           "leftSideLocation": {
             "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
             "type": "Statement",
-            "name": "out.printf(ASCIIDOC_FORMAT,\"Package Name\",\"Type Name\",\"Since\");\n",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 51,
-            "endLine": 51,
+            "name": "out.printf(HTML_HEADER_FORMAT,\"Package Name\",\"Type Name\",\"Since\");\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 57,
+            "endLine": 57,
             "startColumn": 3,
-            "endColumn": 69
+            "endColumn": 72
           },
           "rightSideLocation": {
             "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
             "type": "Statement",
-            "name": "out.printf(ASCIIDOC_FORMAT,\"Package Name\",\"Name\",\"Since\");\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
-            "startLine": 49,
-            "endLine": 49,
+            "name": "out.printf(HTML_HEADER_FORMAT,\"Package Name\",\"Name\",\"Since\");\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
+            "startLine": 55,
+            "endLine": 55,
             "startColumn": 3,
-            "endColumn": 64
+            "endColumn": 67
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public printReportHeader(out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.println(paragraph(format(\"Discovered %d types with %s declarations.\",this.apiReport.getTypes().size(),code(\"@API\"))));\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 36,
+            "endLine": 37,
+            "startColumn": 3,
+            "endColumn": 106
+          },
+          "rightSideLocation": {
+            "container": "public printReportHeader(out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.println(paragraph(format(\"Discovered %d types with %s declarations.\",this.apiReport.types().size(),code(\"@API\"))));\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 38,
+            "endLine": 39,
+            "startColumn": 3,
+            "endColumn": 103
           },
           "validation": true
         },
@@ -2088,70 +2088,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "public printReportHeader(out PrintWriter) : void",
+            "container": "protected printDeclarationSection(statuses EnumSet<Status>, status Status, types List<Class<?>>, out PrintWriter) : void",
             "type": "Statement",
-            "name": "out.println(paragraph(format(\"Discovered %d types with %s declarations.\",this.apiReport.getTypes().size(),code(\"@API\"))));\n",
+            "name": "types.forEach(type -> printDeclarationTableRow(type,out));\n",
             "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 36,
-            "endLine": 37,
-            "startColumn": 3,
-            "endColumn": 106
-          },
-          "rightSideLocation": {
-            "container": "public printReportHeader(out PrintWriter) : void",
-            "type": "Statement",
-            "name": "out.println(paragraph(format(\"Discovered %d types with %s declarations.\",this.apiReport.types().size(),code(\"@API\"))));\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 38,
-            "endLine": 39,
-            "startColumn": 3,
-            "endColumn": 103
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "protected printDeclarationSectionHeader(statuses EnumSet<Status>, status Status, types List<Class<?>>, out PrintWriter) : void",
-            "type": "Statement",
-            "name": "out.println(paragraph(format(\"Discovered %d \" + code(\"@API(%s)\") + \" declarations.\",types.size(),status)));\n",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 69,
-            "endLine": 69,
-            "startColumn": 3,
-            "endColumn": 112
-          },
-          "rightSideLocation": {
-            "container": "protected printDeclarationSectionHeader(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void",
-            "type": "Statement",
-            "name": "out.println(paragraph(format(\"Discovered %d \" + code(\"@API(%s)\") + \" declarations.\",declarations.size(),status)));\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 68,
-            "endLine": 69,
-            "startColumn": 3,
-            "endColumn": 108
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
-            "type": "Statement",
-            "name": "out.printf(HTML_HEADER_FORMAT,\"Package Name\",\"Type Name\",\"Since\");\n",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/HtmlApiReportWriter.java",
-            "startLine": 57,
-            "endLine": 57,
-            "startColumn": 3,
-            "endColumn": 72
-          },
-          "rightSideLocation": {
-            "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
-            "type": "Statement",
-            "name": "out.printf(HTML_HEADER_FORMAT,\"Package Name\",\"Name\",\"Since\");\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/HtmlApiReportWriter.java",
             "startLine": 55,
             "endLine": 55,
-            "startColumn": 3,
-            "endColumn": 67
+            "startColumn": 4,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "container": "protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void",
+            "type": "Statement",
+            "name": "declarations.forEach(it -> printDeclarationTableRow(it,out));\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 4,
+            "endColumn": 66
           },
           "validation": true
         },
@@ -2182,29 +2136,6 @@
           "leftSideLocation": {
             "container": "protected printDeclarationSection(statuses EnumSet<Status>, status Status, types List<Class<?>>, out PrintWriter) : void",
             "type": "Statement",
-            "name": "types.forEach(type -> printDeclarationTableRow(type,out));\n",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 55,
-            "endLine": 55,
-            "startColumn": 4,
-            "endColumn": 63
-          },
-          "rightSideLocation": {
-            "container": "protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void",
-            "type": "Statement",
-            "name": "declarations.forEach(it -> printDeclarationTableRow(it,out));\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
-            "startLine": 54,
-            "endLine": 54,
-            "startColumn": 4,
-            "endColumn": 66
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "protected printDeclarationSection(statuses EnumSet<Status>, status Status, types List<Class<?>>, out PrintWriter) : void",
-            "type": "Statement",
             "name": "printDeclarationSectionHeader(statuses,status,types,out);\n",
             "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
             "startLine": 52,
@@ -2221,6 +2152,52 @@
             "endLine": 51,
             "startColumn": 3,
             "endColumn": 70
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected printDeclarationSectionHeader(statuses EnumSet<Status>, status Status, types List<Class<?>>, out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.println(paragraph(format(\"Discovered %d \" + code(\"@API(%s)\") + \" declarations.\",types.size(),status)));\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 112
+          },
+          "rightSideLocation": {
+            "container": "protected printDeclarationSectionHeader(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.println(paragraph(format(\"Discovered %d \" + code(\"@API(%s)\") + \" declarations.\",declarations.size(),status)));\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AbstractApiReportWriter.java",
+            "startLine": 68,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 108
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.printf(ASCIIDOC_FORMAT,\"Package Name\",\"Type Name\",\"Since\");\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 3,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "container": "protected printDeclarationTableHeader(out PrintWriter) : void",
+            "type": "Statement",
+            "name": "out.printf(ASCIIDOC_FORMAT,\"Package Name\",\"Name\",\"Since\");\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/AsciidocApiReportWriter.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 3,
+            "endColumn": 64
           },
           "validation": true
         }
@@ -2368,29 +2345,6 @@
           "leftSideLocation": {
             "container": "public main(args String...) : void",
             "type": "Statement",
-            "name": "PrintWriter writer=new PrintWriter(System.out,true);\n",
-            "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 40,
-            "endLine": 40,
-            "startColumn": 3,
-            "endColumn": 58
-          },
-          "rightSideLocation": {
-            "container": "public main(args String...) : void",
-            "type": "Statement",
-            "name": "var writer=new PrintWriter(stream == null ? System.out : stream,true);\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 72,
-            "endLine": 72,
-            "startColumn": 5,
-            "endColumn": 78
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public main(args String...) : void",
-            "type": "Statement",
             "name": "ApiReport apiReport=reportGenerator.generateReport(\"org.junit\");\n",
             "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
             "startLine": 44,
@@ -2407,6 +2361,29 @@
             "endLine": 58,
             "startColumn": 3,
             "endColumn": 63
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public main(args String...) : void",
+            "type": "Statement",
+            "name": "PrintWriter writer=new PrintWriter(System.out,true);\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 3,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "container": "public main(args String...) : void",
+            "type": "Statement",
+            "name": "var writer=new PrintWriter(stream == null ? System.out : stream,true);\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 78
           },
           "validation": true
         },
@@ -2598,22 +2575,22 @@
           "leftSideLocation": {
             "container": "package generateReport(packages String...) : ApiReport",
             "type": "Statement",
-            "name": "logger.debug(() -> {\n  StringBuilder builder=new StringBuilder(\"Listing of all \" + types.size() + \" annotated types:\");\n  builder.append(EOL);\n  types.forEach(e -> builder.append(e).append(EOL));\n  return builder.toString();\n}\n);\n",
+            "name": "String apiClasspath=System.getProperty(\"api.classpath\");\n",
             "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 98,
-            "endLine": 103,
-            "startColumn": 4,
-            "endColumn": 7
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 3,
+            "endColumn": 61
           },
           "rightSideLocation": {
-            "container": "private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo>",
+            "container": "private scanClasspath(packages String[]) : ScanResult",
             "type": "Statement",
-            "name": "LOGGER.debug(() -> {\n  var builder=new StringBuilder(\"Listing of all \" + types.size() + \" annotated types:\");\n  builder.append(EOL);\n  types.forEach(e -> builder.append(e.getName()).append(EOL));\n  return builder.toString();\n}\n);\n",
+            "name": "var apiClasspath=System.getProperty(\"api.classpath\");\n",
             "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 152,
-            "endLine": 157,
+            "startLine": 140,
+            "endLine": 140,
             "startColumn": 3,
-            "endColumn": 6
+            "endColumn": 58
           },
           "validation": true
         },
@@ -2667,24 +2644,24 @@
           "leftSideLocation": {
             "container": "package generateReport(packages String...) : ApiReport",
             "type": "Statement",
-            "name": "String apiClasspath=System.getProperty(\"api.classpath\");\n",
+            "name": "ClassInfoList classesWithApiAnnotation=scanResult.getClassesWithAnnotation(API.class.getCanonicalName());\n",
             "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 72,
-            "endLine": 72,
-            "startColumn": 3,
-            "endColumn": 61
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 4,
+            "endColumn": 111
           },
           "rightSideLocation": {
-            "container": "private scanClasspath(packages String[]) : ScanResult",
+            "container": "private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo>",
             "type": "Statement",
-            "name": "var apiClasspath=System.getProperty(\"api.classpath\");\n",
+            "name": "var types=scanResult.getClassesWithAnnotation(API.class).stream().filter(it -> !it.getAnnotationInfo(API.class).isInherited()).collect(toCollection(TreeSet::new));\n",
             "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 140,
-            "endLine": 140,
+            "startLine": 148,
+            "endLine": 150,
             "startColumn": 3,
-            "endColumn": 58
+            "endColumn": 42
           },
-          "validation": true
+          "validation": false
         },
         {
           "leftSideLocation": {
@@ -2698,14 +2675,37 @@
             "endColumn": 49
           },
           "rightSideLocation": {
+            "container": "private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo>",
+            "type": "Statement",
+            "name": "return types;\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
+            "startLine": 159,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 16
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
             "container": "package generateReport(packages String...) : ApiReport",
             "type": "Statement",
-            "name": "return new ApiReport(types,declarations);\n",
-            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 129,
-            "endLine": 129,
+            "name": "logger.debug(() -> {\n  StringBuilder builder=new StringBuilder(\"Listing of all \" + types.size() + \" annotated types:\");\n  builder.append(EOL);\n  types.forEach(e -> builder.append(e).append(EOL));\n  return builder.toString();\n}\n);\n",
+            "filePath": "documentation/src/test/java/org/junit/api/tools/ApiReportGenerator.java",
+            "startLine": 98,
+            "endLine": 103,
             "startColumn": 4,
-            "endColumn": 46
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "container": "private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo>",
+            "type": "Statement",
+            "name": "LOGGER.debug(() -> {\n  var builder=new StringBuilder(\"Listing of all \" + types.size() + \" annotated types:\");\n  builder.append(EOL);\n  types.forEach(e -> builder.append(e.getName()).append(EOL));\n  return builder.toString();\n}\n);\n",
+            "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
+            "startLine": 152,
+            "endLine": 157,
+            "startColumn": 3,
+            "endColumn": 6
           },
           "validation": true
         },
@@ -2721,14 +2721,14 @@
             "endColumn": 66
           },
           "rightSideLocation": {
-            "container": "private collectTypes(scanResult ScanResult) : SortedSet<ClassInfo>",
+            "container": "package generateReport(packages String...) : ApiReport",
             "type": "Statement",
-            "name": "var types=scanResult.getClassesWithAnnotation(API.class).stream().filter(it -> !it.getAnnotationInfo(API.class).isInherited()).collect(toCollection(TreeSet::new));\n",
+            "name": "var types=collectTypes(scanResult);\n",
             "filePath": "documentation/src/tools/java/org/junit/api/tools/ApiReportGenerator.java",
-            "startLine": 148,
-            "endLine": 150,
-            "startColumn": 3,
-            "endColumn": 42
+            "startLine": 113,
+            "endLine": 113,
+            "startColumn": 4,
+            "endColumn": 41
           },
           "validation": true
         }

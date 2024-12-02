@@ -755,12 +755,12 @@
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.abstractclassname.SuppressionXpathRegressionAbstractClassNameTop renamed to org.checkstyle.suppressionxpathfilter.abstractclassname.InputXpathAbstractClassNameTop",
+          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationlocation.SuppressionXpathRegressionAnnotationLocationCTOR renamed to org.checkstyle.suppressionxpathfilter.annotationlocation.InputXpathAnnotationLocationCTOR",
           "validation": true
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationlocation.SuppressionXpathRegressionAnnotationLocationCTOR renamed to org.checkstyle.suppressionxpathfilter.annotationlocation.InputXpathAnnotationLocationCTOR",
+          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationlocation.SuppressionXpathRegressionAnnotationLocationEnum renamed to org.checkstyle.suppressionxpathfilter.annotationlocation.InputXpathAnnotationLocationEnum",
           "validation": true
         },
         {
@@ -832,11 +832,6 @@
       "ourApproach": [
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationlocation.SuppressionXpathRegressionAnnotationLocationEnum renamed to org.checkstyle.suppressionxpathfilter.annotationlocation.InputXpathAnnotationLocationEnum",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
           "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationlocation.SuppressionXpathRegressionAnnotationLocationAnnotation renamed to org.checkstyle.suppressionxpathfilter.annotationlocation.InputXpathAnnotationLocationAnnotation",
           "validation": true
         },
@@ -873,6 +868,11 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.annotationusestyle.SuppressionXpathRegressionAnnotationUseStyleSix renamed to org.checkstyle.suppressionxpathfilter.annotationusestyle.InputXpathAnnotationUseStyleSix",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.checkstyle.suppressionxpathfilter.abstractclassname.SuppressionXpathRegressionAbstractClassNameTop renamed to org.checkstyle.suppressionxpathfilter.abstractclassname.InputXpathAbstractClassNameTop",
           "validation": true
         },
         {

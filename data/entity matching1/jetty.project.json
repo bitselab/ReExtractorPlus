@@ -1,0 +1,1736 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "9b2cfc4483c7174accca413ae0db841e8af4b069",
+      "url": "https://github.com/eclipse/jetty.project/commit/9b2cfc4483c7174accca413ae0db841e8af4b069",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 227,
+            "endLine": 230,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 227,
+            "endLine": 230,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 232,
+            "endLine": 235,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 232,
+            "endLine": 235,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 237,
+            "endLine": 240,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 237,
+            "endLine": 240,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 242,
+            "endLine": 248,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Method",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 242,
+            "endLine": 257,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Class",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 223,
+            "endLine": 255,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData.ConnectRequest",
+            "type": "Class",
+            "name": "ConnectRequest",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 223,
+            "endLine": 264,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData",
+            "type": "Class",
+            "name": "MetaData",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 22,
+            "endLine": 313,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.MetaData",
+            "type": "Class",
+            "name": "MetaData",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 22,
+            "endLine": 322,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpSenderOverHTTP2",
+            "type": "Method",
+            "name": "sendHeaders",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 50,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpSenderOverHTTP2",
+            "type": "Method",
+            "name": "sendHeaders",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 51,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpSenderOverHTTP2",
+            "type": "Class",
+            "name": "HttpSenderOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 37,
+            "endLine": 216,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpSenderOverHTTP2",
+            "type": "Class",
+            "name": "HttpSenderOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 38,
+            "endLine": 218,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpSenderOverHTTP3",
+            "type": "Method",
+            "name": "sendHeaders",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 50,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpSenderOverHTTP3",
+            "type": "Method",
+            "name": "sendHeaders",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 51,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpSenderOverHTTP3",
+            "type": "Class",
+            "name": "HttpSenderOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 37,
+            "endLine": 205,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpSenderOverHTTP3",
+            "type": "Class",
+            "name": "HttpSenderOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 38,
+            "endLine": 207,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test",
+            "type": "Method",
+            "name": "testWebSocketOverDynamicTransport",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 159,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test",
+            "type": "Method",
+            "name": "testWebSocketOverDynamicTransport",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 159,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test.TestJettyWebSocketServlet",
+            "type": "Method",
+            "name": "configure",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 381,
+            "endLine": 397,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test.TestJettyWebSocketServlet",
+            "type": "Method",
+            "name": "configure",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 381,
+            "endLine": 402,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test.TestJettyWebSocketServlet",
+            "type": "Class",
+            "name": "TestJettyWebSocketServlet",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 379,
+            "endLine": 398,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test.TestJettyWebSocketServlet",
+            "type": "Class",
+            "name": "TestJettyWebSocketServlet",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 379,
+            "endLine": 403,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test",
+            "type": "Class",
+            "name": "WebSocketOverHTTP2Test",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 80,
+            "endLine": 399,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.tests.WebSocketOverHTTP2Test",
+            "type": "Class",
+            "name": "WebSocketOverHTTP2Test",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 80,
+            "endLine": 404,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ConnectRequest(scheme HttpScheme, authority HostPortHttpField, path String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(scheme == null ? null : scheme.asString(),authority,path,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 229,
+            "endLine": 229,
+            "startColumn": 13,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "public ConnectRequest(scheme HttpScheme, authority HostPortHttpField, pathQuery String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(scheme == null ? null : scheme.asString(),authority,pathQuery,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 229,
+            "endLine": 229,
+            "startColumn": 13,
+            "endColumn": 101
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ConnectRequest(beginNanoTime long, scheme HttpScheme, authority HostPortHttpField, path String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(beginNanoTime,scheme == null ? null : scheme.asString(),authority,path,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 234,
+            "endLine": 234,
+            "startColumn": 13,
+            "endColumn": 111
+          },
+          "rightSideLocation": {
+            "container": "public ConnectRequest(beginNanoTime long, scheme HttpScheme, authority HostPortHttpField, pathQuery String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(beginNanoTime,scheme == null ? null : scheme.asString(),authority,pathQuery,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 234,
+            "endLine": 234,
+            "startColumn": 13,
+            "endColumn": 116
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ConnectRequest(scheme String, authority HostPortHttpField, path String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(NanoTime.now(),scheme,authority,path,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 13,
+            "endColumn": 77
+          },
+          "rightSideLocation": {
+            "container": "public ConnectRequest(scheme String, authority HostPortHttpField, pathQuery String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "this(NanoTime.now(),scheme,authority,pathQuery,fields,protocol);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 13,
+            "endColumn": 82
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ConnectRequest(beginNanoTime long, scheme String, authority HostPortHttpField, path String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "super(beginNanoTime,HttpMethod.CONNECT.asString(),HttpURI.build().scheme(scheme).host(authority == null ? null : authority.getHost()).port(authority == null ? -1 : authority.getPort()).pathQuery(path),HttpVersion.HTTP_2,fields,Long.MIN_VALUE,null);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 244,
+            "endLine": 246,
+            "startColumn": 13,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public ConnectRequest(beginNanoTime long, scheme String, authority HostPortHttpField, pathQuery String, fields HttpFields, protocol String)",
+            "type": "Statement",
+            "name": "super(beginNanoTime,HttpMethod.CONNECT.asString(),HttpURI.build().scheme(scheme).host(authority == null ? null : authority.getHost()).port(authority == null ? -1 : authority.getPort()).pathQuery(pathQuery),HttpVersion.HTTP_2,fields,Long.MIN_VALUE,null);\n",
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/MetaData.java",
+            "startLine": 244,
+            "endLine": 255,
+            "startColumn": 13,
+            "endColumn": 15
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected sendHeaders(exchange HttpExchange, contentBuffer ByteBuffer, lastContent boolean, callback Callback) : void",
+            "type": "Statement",
+            "name": "metaData=new MetaData.ConnectRequest(request.getScheme(),authority,request.getPath(),request.getHeaders(),upgradeProtocol);\n",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 17,
+            "endColumn": 146
+          },
+          "rightSideLocation": {
+            "container": "protected sendHeaders(exchange HttpExchange, contentBuffer ByteBuffer, lastContent boolean, callback Callback) : void",
+            "type": "Statement",
+            "name": "metaData=new MetaData.ConnectRequest(request.getScheme(),authority,pathQuery,request.getHeaders(),upgradeProtocol);\n",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpSenderOverHTTP2.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 17,
+            "endColumn": 138
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected sendHeaders(exchange HttpExchange, contentBuffer ByteBuffer, lastContent boolean, callback Callback) : void",
+            "type": "Statement",
+            "name": "metaData=new MetaData.ConnectRequest(request.getScheme(),authority,request.getPath(),request.getHeaders(),upgradeProtocol);\n",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 17,
+            "endColumn": 146
+          },
+          "rightSideLocation": {
+            "container": "protected sendHeaders(exchange HttpExchange, contentBuffer ByteBuffer, lastContent boolean, callback Callback) : void",
+            "type": "Statement",
+            "name": "metaData=new MetaData.ConnectRequest(request.getScheme(),authority,pathQuery,request.getHeaders(),upgradeProtocol);\n",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpSenderOverHTTP3.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 17,
+            "endColumn": 138
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private testWebSocketOverDynamicTransport(protocolFn Function<ClientConnector,ClientConnectionFactory.Info>) : void",
+            "type": "Statement",
+            "name": "URI uri=URI.create(\"ws://localhost:\" + connector.getLocalPort() + \"/ws/echo\");\n",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 165,
+            "endLine": 165,
+            "startColumn": 9,
+            "endColumn": 89
+          },
+          "rightSideLocation": {
+            "container": "private testWebSocketOverDynamicTransport(protocolFn Function<ClientConnector,ClientConnectionFactory.Info>) : void",
+            "type": "Statement",
+            "name": "URI uri=URI.create(\"ws://localhost:\" + connector.getLocalPort() + \"/ws/echo/query?param=value\");\n",
+            "filePath": "jetty-websocket/websocket-jetty-tests/src/test/java/org/eclipse/jetty/websocket/tests/WebSocketOverHTTP2Test.java",
+            "startLine": 165,
+            "endLine": 165,
+            "startColumn": 9,
+            "endColumn": 107
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "9fdfa464d765e7f999c28efd7b89b944f6ac59d2",
+      "url": "https://github.com/eclipse/jetty.project/commit/9fdfa464d765e7f999c28efd7b89b944f6ac59d2",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Method",
+            "name": "ByteArrayMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 33,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Method",
+            "name": "ByteArrayMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 33,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 46,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 43,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Class",
+            "name": "ByteArrayMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 28,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteArrayMessageSink",
+            "type": "Class",
+            "name": "ByteArrayMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 28,
+            "endLine": 109,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Method",
+            "name": "ByteBufferMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 34,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Method",
+            "name": "ByteBufferMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 33,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 47,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 42,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Class",
+            "name": "ByteBufferMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 30,
+            "endLine": 123,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.ByteBufferMessageSink",
+            "type": "Class",
+            "name": "ByteBufferMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 29,
+            "endLine": 113,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 35,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 35,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Method",
+            "name": "fail",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 73,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Method",
+            "name": "fail",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 68,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Class",
+            "name": "StringMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 24,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.websocket.core.internal.messages.StringMessageSink",
+            "type": "Class",
+            "name": "StringMessageSink",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 24,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin() && (out == null))",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 60,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin() && (out == null || out.getLength() == 0))",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 58,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "out.fail(t);\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 17,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "fail(t);\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteArrayMessageSink.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 13,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin() && (out == null))",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 61,
+            "endLine": 71,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin() && (out == null || out.getLength() == 0))",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 57,
+            "endLine": 67,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "out.fail(t);\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 105,
+            "endLine": 105,
+            "startColumn": 17,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "fail(t);\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/ByteBufferMessageSink.java",
+            "startLine": 102,
+            "endLine": 102,
+            "startColumn": 13,
+            "endColumn": 21
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin())",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 52,
+            "endLine": 53,
+            "startColumn": 13,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "container": "public accept(frame Frame, callback Callback) : void",
+            "type": "Statement",
+            "name": "if(frame.isFin())",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 52,
+            "endLine": 56,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public fail(failure Throwable) : void",
+            "type": "Statement",
+            "name": "out.reset();\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 13,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public fail(failure Throwable) : void",
+            "type": "Statement",
+            "name": "reset();\n",
+            "filePath": "jetty-websocket/websocket-core-common/src/main/java/org/eclipse/jetty/websocket/core/internal/messages/StringMessageSink.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 9,
+            "endColumn": 17
+          },
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "efda64631919479ac8c1bab033cbeb47a4363bfc",
+      "url": "https://github.com/eclipse/jetty.project/commit/efda64631919479ac8c1bab033cbeb47a4363bfc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "associate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 44,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "associate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 45,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "disassociate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 80,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "disassociate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 83,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "getHttpExchange",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 99,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Method",
+            "name": "getHttpExchange",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 102,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Class",
+            "name": "HttpChannel",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 22,
+            "endLine": 167,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpChannel",
+            "type": "Class",
+            "name": "HttpChannel",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 23,
+            "endLine": 172,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpProxy.ProxyConnection",
+            "type": "Class",
+            "name": "ProxyConnection",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpProxy.java",
+            "startLine": 266,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpProxy.ProxyConnection",
+            "type": "Class",
+            "name": "ProxyConnection",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpProxy.java",
+            "startLine": 267,
+            "endLine": 329,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpProxy",
+            "type": "Class",
+            "name": "HttpProxy",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpProxy.java",
+            "startLine": 41,
+            "endLine": 372,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpProxy",
+            "type": "Class",
+            "name": "HttpProxy",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpProxy.java",
+            "startLine": 42,
+            "endLine": 385,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpRequest",
+            "type": "Class",
+            "name": "HttpRequest",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpRequest.java",
+            "startLine": 62,
+            "endLine": 1027,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpRequest",
+            "type": "Class",
+            "name": "HttpRequest",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpRequest.java",
+            "startLine": 63,
+            "endLine": 1040,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.api.Connection",
+            "type": "Interface",
+            "name": "Connection",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/api/Connection.java",
+            "startLine": 20,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.api.Connection",
+            "type": "Interface",
+            "name": "Connection",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/api/Connection.java",
+            "startLine": 21,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.api.Request",
+            "type": "Interface",
+            "name": "Request",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/api/Request.java",
+            "startLine": 40,
+            "endLine": 825,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.api.Request",
+            "type": "Interface",
+            "name": "Request",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/api/Request.java",
+            "startLine": 40,
+            "endLine": 841,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpChannelOverHTTP",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpChannelOverHTTP.java",
+            "startLine": 31,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpChannelOverHTTP",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpChannelOverHTTP.java",
+            "startLine": 32,
+            "endLine": 178,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpConnectionOverHTTP.Delegate",
+            "type": "Class",
+            "name": "Delegate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpConnectionOverHTTP.java",
+            "startLine": 275,
+            "endLine": 356,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpConnectionOverHTTP.Delegate",
+            "type": "Class",
+            "name": "Delegate",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpConnectionOverHTTP.java",
+            "startLine": 288,
+            "endLine": 381,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpConnectionOverHTTP",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpConnectionOverHTTP.java",
+            "startLine": 51,
+            "endLine": 357,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.http.HttpConnectionOverHTTP",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpConnectionOverHTTP.java",
+            "startLine": 52,
+            "endLine": 382,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpClientFailureTest",
+            "type": "Method",
+            "name": "testFailureBeforeRequestCommit",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 66,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpClientFailureTest",
+            "type": "Method",
+            "name": "testFailureBeforeRequestCommit",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 67,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpClientFailureTest",
+            "type": "Class",
+            "name": "HttpClientFailureTest",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 40,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.client.HttpClientFailureTest",
+            "type": "Class",
+            "name": "HttpClientFailureTest",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 41,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpChannelOverFCGI",
+            "type": "Method",
+            "name": "HttpChannelOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpChannelOverFCGI.java",
+            "startLine": 46,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpChannelOverFCGI",
+            "type": "Method",
+            "name": "HttpChannelOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpChannelOverFCGI.java",
+            "startLine": 47,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpChannelOverFCGI",
+            "type": "Class",
+            "name": "HttpChannelOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpChannelOverFCGI.java",
+            "startLine": 34,
+            "endLine": 205,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpChannelOverFCGI",
+            "type": "Class",
+            "name": "HttpChannelOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpChannelOverFCGI.java",
+            "startLine": 35,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Method",
+            "name": "acquireRequest",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 320,
+            "endLine": 329,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Method",
+            "name": "acquireRequest",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 333,
+            "endLine": 342,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Method",
+            "name": "releaseRequest",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 331,
+            "endLine": 337,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Method",
+            "name": "releaseRequest",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 344,
+            "endLine": 350,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI.Delegate",
+            "type": "Class",
+            "name": "Delegate",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 362,
+            "endLine": 410,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI.Delegate",
+            "type": "Class",
+            "name": "Delegate",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 375,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Class",
+            "name": "HttpConnectionOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 55,
+            "endLine": 512,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.fcgi.client.http.HttpConnectionOverFCGI",
+            "type": "Class",
+            "name": "HttpConnectionOverFCGI",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 56,
+            "endLine": 537,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpChannelOverHTTP2",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpChannelOverHTTP2.java",
+            "startLine": 35,
+            "endLine": 223,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpChannelOverHTTP2",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpChannelOverHTTP2.java",
+            "startLine": 36,
+            "endLine": 230,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpConnectionOverHTTP2",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpConnectionOverHTTP2.java",
+            "startLine": 49,
+            "endLine": 268,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http2.client.http.HttpConnectionOverHTTP2",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP2",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpConnectionOverHTTP2.java",
+            "startLine": 50,
+            "endLine": 281,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpChannelOverHTTP3",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpChannelOverHTTP3.java",
+            "startLine": 26,
+            "endLine": 108,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpChannelOverHTTP3",
+            "type": "Class",
+            "name": "HttpChannelOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpChannelOverHTTP3.java",
+            "startLine": 27,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpConnectionOverHTTP3",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpConnectionOverHTTP3.java",
+            "startLine": 34,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http3.client.http.internal.HttpConnectionOverHTTP3",
+            "type": "Class",
+            "name": "HttpConnectionOverHTTP3",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpConnectionOverHTTP3.java",
+            "startLine": 35,
+            "endLine": 156,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jetty.http.client.HttpClientTest",
+            "type": "Class",
+            "name": "HttpClientTest",
+            "filePath": "tests/test-http-client-transport/src/test/java/org/eclipse/jetty/http/client/HttpClientTest.java",
+            "startLine": 73,
+            "endLine": 849,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jetty.http.client.HttpClientTest",
+            "type": "Class",
+            "name": "HttpClientTest",
+            "filePath": "tests/test-http-client-transport/src/test/java/org/eclipse/jetty/http/client/HttpClientTest.java",
+            "startLine": 73,
+            "endLine": 868,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public associate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "exchange.getRequest().abort(new UnsupportedOperationException(\"Pipelined requests not supported\"));\n",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 13,
+            "endColumn": 112
+          },
+          "rightSideLocation": {
+            "container": "public associate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "request.abort(new UnsupportedOperationException(\"Pipelined requests not supported\"));\n",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 13,
+            "endColumn": 98
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public associate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "try(AutoLock l=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 56,
+            "endLine": 65,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "public associate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "try(AutoLock ignored=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 57,
+            "endLine": 66,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public disassociate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "try(AutoLock l=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "public disassociate(exchange HttpExchange) : boolean",
+            "type": "Statement",
+            "name": "try(AutoLock ignored=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 86,
+            "endLine": 95,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getHttpExchange() : HttpExchange",
+            "type": "Statement",
+            "name": "try(AutoLock l=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 101,
+            "endLine": 104,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "public getHttpExchange() : HttpExchange",
+            "type": "Statement",
+            "name": "try(AutoLock ignored=_lock.lock())",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/HttpChannel.java",
+            "startLine": 104,
+            "endLine": 107,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "DuplexConnectionPool connectionPool=(DuplexConnectionPool)connectionRef.get().getHttpDestination().getConnectionPool();\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 9,
+            "endColumn": 130
+          },
+          "rightSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "DuplexConnectionPool connectionPool=(DuplexConnectionPool)destination.getConnectionPool();\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 101
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "client=new HttpClient(new HttpClientTransportOverHTTP(1){\n  @Override public org.eclipse.jetty.io.Connection newConnection(  EndPoint endPoint,  Map<String,Object> context) throws IOException {\n    HttpConnectionOverHTTP connection=(HttpConnectionOverHTTP)super.newConnection(endPoint,context);\n    connectionRef.set(connection);\n    return connection;\n  }\n}\n);\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 72,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "client=new HttpClient(new HttpClientTransportOverHTTP(1));\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 9,
+            "endColumn": 69
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "assertThrows(ExecutionException.class,() -> client.newRequest(\"localhost\",connector.getLocalPort()).onRequestHeaders(request -> connectionRef.get().getEndPoint().close()).timeout(5,TimeUnit.SECONDS).send());\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 84,
+            "endLine": 88,
+            "startColumn": 9,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "assertThrows(ExecutionException.class,request::send);\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 9,
+            "endColumn": 63
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private acquireRequest() : int",
+            "type": "Statement",
+            "name": "try(AutoLock l=lock.lock())",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 322,
+            "endLine": 328,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "private acquireRequest() : int",
+            "type": "Statement",
+            "name": "try(AutoLock ignored=lock.lock())",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 335,
+            "endLine": 341,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private releaseRequest(request int) : void",
+            "type": "Statement",
+            "name": "try(AutoLock l=lock.lock())",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 333,
+            "endLine": 336,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "private releaseRequest(request int) : void",
+            "type": "Statement",
+            "name": "try(AutoLock ignored=lock.lock())",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpConnectionOverFCGI.java",
+            "startLine": 346,
+            "endLine": 349,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "protected getConnection() : Connection",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-client/src/main/java/org/eclipse/jetty/client/http/HttpChannelOverHTTP.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 9,
+            "endColumn": 27
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "protected getConnection() : Connection",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-fcgi/fcgi-client/src/main/java/org/eclipse/jetty/fcgi/client/http/HttpChannelOverFCGI.java",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 9,
+            "endColumn": 27
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "protected getConnection() : Connection",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-http2/http2-http-client-transport/src/main/java/org/eclipse/jetty/http2/client/http/HttpChannelOverHTTP2.java",
+            "startLine": 74,
+            "endLine": 74,
+            "startColumn": 9,
+            "endColumn": 27
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public testFailureBeforeRequestCommit() : void",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-client/src/test/java/org/eclipse/jetty/client/HttpClientFailureTest.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 17,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "protected getConnection() : Connection",
+            "type": "Statement",
+            "name": "return connection;\n",
+            "filePath": "jetty-http3/http3-http-client-transport/src/main/java/org/eclipse/jetty/http3/client/http/internal/HttpChannelOverHTTP3.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 9,
+            "endColumn": 27
+          },
+          "validation": false
+        }
+      ]
+    }
+  ]
+}

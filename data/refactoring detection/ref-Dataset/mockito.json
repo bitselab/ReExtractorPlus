@@ -43,18 +43,7 @@
           "validation": false
         }
       ],
-      "baseline": [
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate checkDoNotMockAnnotationForType(type Class<?>) : void inlined to private checkDoNotMockAnnotation(creationSettings MockCreationSettings<?>) : void in class org.mockito.internal.MockitoCore",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic checkTypeForDoNotMockViolation(creationSettings MockCreationSettings<?>) : String extracted from private checkDoNotMockAnnotation(typeToMock Class<?>, creationSettings MockCreationSettings<?>) : void in class org.mockito.internal.MockitoCore & moved to class org.mockito.plugins.DoNotMockEnforcer",
-          "validation": true
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/mockito/mockito.git",
@@ -127,15 +116,14 @@
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.mockitousage.GenericTypeMockTest.MultipleCandidatesByTypeTest moved to org.mockitousage.GenericTypeMockMultipleMatchesTest.MultipleCandidatesByTypeTest",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tresult : OngoingInjector in method public filterCandidate(mocks Collection<Object>, candidateFieldToBeInjected Field, allRemainingCandidateFields List<Field>, injectee Object, injectMocksField Field) : OngoingInjector from class org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -220,6 +208,11 @@
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\targumentCaptor : ArgumentCaptor<String> to argumentCaptor : ArgumentCaptor<String[]> in method public should_capture_multiple_vararg_with_array_captor() : void from class org.mockitousage.matchers.CapturingArgumentsTest",
           "validation": false
+        },
+        {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic shouldAllowUsinganyForVarArgs() : void from class org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyTest to public verify_vararg_with_multiple_item() : void from class org.mockitousage.matchers.HamcrestMatchersTest",
+          "validation": false
         }
       ]
     },
@@ -256,7 +249,13 @@
           "validation": false
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic shouldMatchEmptyVarArgs_noArgsIsNotNullArray() : void renamed to public shouldVerifyVarArgs_isNull_NullArrayArg2() : void in class org.mockitousage.matchers.VarargsTest",
+          "validation": false
+        }
+      ]
     },
     {
       "repository": "https://github.com/mockito/mockito.git",
@@ -357,11 +356,6 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.mockitousage.internal.debugging.LocationImplTest renamed to org.mockitousage.internal.debugging.LocationFactoryTest",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tprivate isIn(className String) : boolean extracted from public isIn(e StackTraceElement) : boolean in class org.mockito.internal.exceptions.stacktrace.DefaultStackTraceCleaner",
           "validation": true
         },
         {
@@ -629,11 +623,6 @@
           "validation": true
         },
         {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tinvocation : Invocation in method public should_report_bogus_default_answer() : void from class org.mockito.internal.handler.MockHandlerImplTest",
-          "validation": true
-        },
-        {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate containsTimes(value String, amount int) : BaseMatcher<String> renamed to private messageContaining(value String, amountOfOccurrences int) : Condition<? super Throwable> in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest",
           "validation": true
@@ -656,30 +645,50 @@
       ],
       "ourApproach": [
         {
+          "type": "MOVE_RENAME_ATTRIBUTE",
+          "description": "Move And Rename Attribute\tprivate expected : String renamed to private value : String and moved from class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.StringContainsNumberMatcher to class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
           "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpublic matchesSafely(text String) : boolean from class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.StringContainsNumberMatcher to public matches(ex Throwable) : boolean from class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.ThrowableMessageContainsOccurrencesCondition",
           "validation": true
         },
         {
-          "type": "MOVE_RENAME_ATTRIBUTE",
-          "description": "Move And Rename Attribute\tprivate expected : String renamed to private value : String and moved from class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.StringContainsNumberMatcher to class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tinvocation : Invocation in method public should_report_bogus_default_answer() : void from class org.mockito.internal.handler.MockHandlerImplTest",
           "validation": true
         }
       ],
       "baseline": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic shouldGiveExplantionOnStaticMockingWithoutInlineMockMaker() : void renamed to public shouldGiveExplanationOnStaticMockingWithoutInlineMockMaker() : void in class org.mockito.MockitoTest",
+          "description": "Rename Method\tpublic matchesSafely(text String) : boolean renamed to public matches(ex Throwable) : boolean in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
           "validation": true
         },
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic shouldGiveExplantionOnConstructionMockingWithoutInlineMockMaker() : void renamed to public shouldGiveExplanationOnConstructionMockingWithoutInlineMockMaker() : void in class org.mockito.MockitoTest",
+          "description": "Rename Method\tpublic matchesSafely(text String) : boolean renamed to public matches(ex Throwable) : boolean in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic shouldNotAllowVerifyingInOrderUnfamilarMocks() : void renamed to public shouldNotAllowVerifyingInOrderUnfamiliarMocks() : void in class org.mockitousage.misuse.InvalidUsageTest",
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\texpected : String to value : String in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tamount : int to expectedOccurrences : int in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.StringContainsNumberMatcher renamed to org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest.StringContainsNumberMatcher moved and renamed to org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
           "validation": true
         }
       ]

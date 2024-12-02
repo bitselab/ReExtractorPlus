@@ -605,68 +605,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.mockito.internal.configuration.plugins.Plugins",
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
             "type": "Method",
             "name": "getDoNotMockEnforcer",
-            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/Plugins.java",
-            "startLine": 98,
-            "endLine": 106,
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 116,
+            "endLine": 124,
             "startColumn": 5,
             "endColumn": 6
           },
           "rightSideLocation": {
-            "container": "org.mockito.internal.configuration.plugins.Plugins",
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
             "type": "Method",
             "name": "getDoNotMockEnforcer",
-            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/Plugins.java",
-            "startLine": 102,
-            "endLine": 111,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.mockito.internal.MockitoCore",
-            "type": "Field",
-            "name": "DO_NOT_MOCK_ENFORCER",
-            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 73,
-            "endLine": 73,
-            "startColumn": 44,
-            "endColumn": 97
-          },
-          "rightSideLocation": {
-            "container": "org.mockito.internal.MockitoCore",
-            "type": "Field",
-            "name": "DO_NOT_MOCK_ENFORCER",
-            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 70,
-            "endLine": 71,
-            "startColumn": 52,
-            "endColumn": 43
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.mockito.internal.util.MockNameImpl",
-            "type": "Method",
-            "name": "MockNameImpl",
-            "filePath": "src/main/java/org/mockito/internal/util/MockNameImpl.java",
-            "startLine": 17,
-            "endLine": 25,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "rightSideLocation": {
-            "container": "org.mockito.internal.util.MockNameImpl",
-            "type": "Method",
-            "name": "MockNameImpl",
-            "filePath": "src/main/java/org/mockito/internal/util/MockNameImpl.java",
-            "startLine": 18,
-            "endLine": 26,
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 120,
+            "endLine": 128,
             "startColumn": 5,
             "endColumn": 6
           },
@@ -697,22 +651,68 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "container": "org.mockito.internal.util.MockNameImpl",
             "type": "Method",
-            "name": "getDoNotMockEnforcer",
-            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
-            "startLine": 116,
-            "endLine": 124,
+            "name": "MockNameImpl",
+            "filePath": "src/main/java/org/mockito/internal/util/MockNameImpl.java",
+            "startLine": 17,
+            "endLine": 25,
             "startColumn": 5,
             "endColumn": 6
           },
           "rightSideLocation": {
-            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "container": "org.mockito.internal.util.MockNameImpl",
+            "type": "Method",
+            "name": "MockNameImpl",
+            "filePath": "src/main/java/org/mockito/internal/util/MockNameImpl.java",
+            "startLine": 18,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Field",
+            "name": "DO_NOT_MOCK_ENFORCER",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 44,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Field",
+            "name": "DO_NOT_MOCK_ENFORCER",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 70,
+            "endLine": 71,
+            "startColumn": 52,
+            "endColumn": 43
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.Plugins",
             "type": "Method",
             "name": "getDoNotMockEnforcer",
-            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
-            "startLine": 120,
-            "endLine": 128,
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/Plugins.java",
+            "startLine": 98,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.Plugins",
+            "type": "Method",
+            "name": "getDoNotMockEnforcer",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/Plugins.java",
+            "startLine": 102,
+            "endLine": 111,
             "startColumn": 5,
             "endColumn": 6
           },
@@ -1016,29 +1016,6 @@
             "endColumn": 97
           },
           "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private checkDoNotMockAnnotationForType(type Class<?>) : void",
-            "type": "Statement",
-            "name": "String warning=DO_NOT_MOCK_ENFORCER.checkTypeForDoNotMockViolation(type);\n",
-            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 111,
-            "endLine": 111,
-            "startColumn": 9,
-            "endColumn": 84
-          },
-          "rightSideLocation": {
-            "container": "private checkDoNotMockAnnotation(creationSettings MockCreationSettings<?>) : void",
-            "type": "Statement",
-            "name": "String warning=DO_NOT_MOCK_ENFORCER.checkTypeForDoNotMockViolation(creationSettings);\n",
-            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 107,
-            "endLine": 107,
-            "startColumn": 9,
-            "endColumn": 96
-          },
-          "validation": true
         }
       ],
       "ourApproach": [
@@ -1087,32 +1064,78 @@
             "endColumn": 100
           },
           "validation": true
-        }
-      ],
-      "baseline": [
+        },
         {
           "leftSideLocation": {
-            "container": "org.mockito.internal.MockitoCore",
-            "type": "Method",
-            "name": "checkDoNotMockAnnotation",
+            "container": "private checkDoNotMockAnnotationForType(type Class<?>) : void",
+            "type": "Statement",
+            "name": "if(warning != null)",
             "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 93,
-            "endLine": 99,
-            "startColumn": 5,
-            "endColumn": 6
+            "startLine": 112,
+            "endLine": 114,
+            "startColumn": 9,
+            "endColumn": 10
           },
           "rightSideLocation": {
-            "container": "org.mockito.internal.MockitoCore",
-            "type": "Method",
-            "name": "checkDoNotMockAnnotation",
+            "container": "private checkDoNotMockAnnotation(creationSettings MockCreationSettings<?>) : void",
+            "type": "Statement",
+            "name": "if(warning != null)",
             "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 106,
-            "endLine": 111,
-            "startColumn": 5,
-            "endColumn": 6
+            "startLine": 108,
+            "endLine": 110,
+            "startColumn": 9,
+            "endColumn": 10
           },
           "validation": true
         },
+        {
+          "leftSideLocation": {
+            "container": "private checkDoNotMockAnnotationForType(type Class<?>) : void",
+            "type": "Statement",
+            "name": "throw new DoNotMockException(warning);\n",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 113,
+            "endLine": 113,
+            "startColumn": 13,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "container": "private checkDoNotMockAnnotation(creationSettings MockCreationSettings<?>) : void",
+            "type": "Statement",
+            "name": "throw new DoNotMockException(warning);\n",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 109,
+            "endLine": 109,
+            "startColumn": 13,
+            "endColumn": 51
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private checkDoNotMockAnnotationForType(type Class<?>) : void",
+            "type": "Statement",
+            "name": "String warning=DO_NOT_MOCK_ENFORCER.checkTypeForDoNotMockViolation(type);\n",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "container": "private checkDoNotMockAnnotation(creationSettings MockCreationSettings<?>) : void",
+            "type": "Statement",
+            "name": "String warning=DO_NOT_MOCK_ENFORCER.checkTypeForDoNotMockViolation(creationSettings);\n",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 107,
+            "endLine": 107,
+            "startColumn": 9,
+            "endColumn": 96
+          },
+          "validation": true
+        }
+      ],
+      "baseline": [
         {
           "leftSideLocation": {
             "container": "private validatedSettings(typeToMock Class<T>, source CreationSettings<T>) : CreationSettings<T>",
@@ -1133,29 +1156,6 @@
             "endLine": 313,
             "startColumn": 9,
             "endColumn": 71
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private checkDoNotMockAnnotation(typeToMock Class<?>, creationSettings MockCreationSettings<?>) : void",
-            "type": "Statement",
-            "name": "for(aClass: creationSettings.getExtraInterfaces())",
-            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
-            "startLine": 96,
-            "endLine": 98,
-            "startColumn": 9,
-            "endColumn": 10
-          },
-          "rightSideLocation": {
-            "container": "public checkTypeForDoNotMockViolation(creationSettings MockCreationSettings<?>) : String",
-            "type": "Statement",
-            "name": "for(aClass: creationSettings.getExtraInterfaces())",
-            "filePath": "src/main/java/org/mockito/plugins/DoNotMockEnforcer.java",
-            "startLine": 50,
-            "endLine": 55,
-            "startColumn": 9,
-            "endColumn": 10
           },
           "validation": true
         }
@@ -1236,148 +1236,8 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 258,
-            "endLine": 258,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 256,
-            "endLine": 256,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 267,
-            "endLine": 267,
-            "startColumn": 29,
-            "endColumn": 42
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 265,
-            "endLine": 265,
-            "startColumn": 29,
-            "endColumn": 42
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 272,
-            "endLine": 272,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 270,
-            "endLine": 270,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "validation": true
-        }
-      ],
-      "baseline": [
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 258,
-            "endLine": 258,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 265,
-            "endLine": 265,
-            "startColumn": 29,
-            "endColumn": 42
-          },
-          "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 267,
-            "endLine": 267,
-            "startColumn": 29,
-            "endColumn": 42
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 270,
-            "endLine": 270,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 272,
-            "endLine": 272,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "rightSideLocation": {
-            "container": "package InlineDelegateByteBuddyMockMaker()",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
-            "startLine": 256,
-            "endLine": 256,
-            "startColumn": 25,
-            "endColumn": 38
-          },
-          "validation": false
-        }
-      ]
+      "ourApproach": [],
+      "baseline": []
     },
     {
       "repository": "https://github.com/mockito/mockito.git",

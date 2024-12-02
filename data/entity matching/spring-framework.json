@@ -5945,162 +5945,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "public setBeanFactory(beanFactory BeanFactory) : void",
-            "type": "Statement",
-            "name": "Assert.isInstanceOf(ConfigurableListableBeanFactory.class,beanFactory,\"Bean overriding can only be used with a ConfigurableListableBeanFactory\");\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 116,
-            "endLine": 117,
-            "startColumn": 3,
-            "endColumn": 80
-          },
-          "rightSideLocation": {
-            "container": "public setBeanFactory(beanFactory BeanFactory) : void",
-            "type": "Statement",
-            "name": "Assert.isInstanceOf(ConfigurableBeanFactory.class,beanFactory,\"Bean OverrideRegistrar can only be used with a ConfigurableBeanFactory\");\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 80,
-            "endLine": 81,
-            "startColumn": 3,
-            "endColumn": 79
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
+            "container": "org.springframework.test.context.bean.override.mockito.SpyDefinition",
             "type": "Method",
-            "name": "register",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 294,
-            "endLine": 320,
+            "name": "hashCode",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/mockito/SpyDefinition.java",
+            "startLine": 89,
+            "endLine": 94,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideRegistrar",
+            "container": "org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
             "type": "Method",
-            "name": "register",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 116,
-            "endLine": 147,
+            "name": "hashCode",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/mockito/MockitoSpyBeanMetadata.java",
+            "startLine": 83,
+            "endLine": 86,
             "startColumn": 2,
             "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, overrideMetadata Set<OverrideMetadata>) : void",
-            "type": "Statement",
-            "name": "ConstructorArgumentValues.ValueHolder constructorArg=definition.getConstructorArgumentValues().getIndexedArgumentValue(0,Set.class);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 313,
-            "endLine": 314,
-            "startColumn": 3,
-            "endColumn": 85
-          },
-          "rightSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void",
-            "type": "Statement",
-            "name": "ConstructorArgumentValues.ValueHolder constructorArg=definition.getConstructorArgumentValues().getIndexedArgumentValue(0,Set.class);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 140,
-            "endLine": 141,
-            "startColumn": 3,
-            "endColumn": 85
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, overrideMetadata Set<OverrideMetadata>) : void",
-            "type": "Statement",
-            "name": "@SuppressWarnings({\"unchecked\",\"NullAway\"}) Set<OverrideMetadata> existing=(Set<OverrideMetadata>)constructorArg.getValue();\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 315,
-            "endLine": 316,
-            "startColumn": 3,
-            "endColumn": 86
-          },
-          "rightSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void",
-            "type": "Statement",
-            "name": "@SuppressWarnings({\"unchecked\",\"NullAway\"}) Set<Class<?>> existing=(Set<Class<?>>)constructorArg.getValue();\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 142,
-            "endLine": 143,
-            "startColumn": 3,
-            "endColumn": 70
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, overrideMetadata Set<OverrideMetadata>) : void",
-            "type": "Statement",
-            "name": "existing.addAll(overrideMetadata);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 318,
-            "endLine": 318,
-            "startColumn": 4,
-            "endColumn": 38
-          },
-          "rightSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void",
-            "type": "Statement",
-            "name": "existing.addAll(detectedTestClasses);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 145,
-            "endLine": 145,
-            "startColumn": 4,
-            "endColumn": 41
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, overrideMetadata Set<OverrideMetadata>) : void",
-            "type": "Statement",
-            "name": "if(overrideMetadata != null && existing != null)",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 317,
-            "endLine": 319,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "rightSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void",
-            "type": "Statement",
-            "name": "if(detectedTestClasses != null && existing != null)",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 144,
-            "endLine": 146,
-            "startColumn": 3,
-            "endColumn": 4
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Field",
-            "name": "INFRASTRUCTURE_BEAN_NAME",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 81,
-            "endLine": 81,
-            "startColumn": 30,
-            "endColumn": 102
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideRegistrar",
-            "type": "Field",
-            "name": "INFRASTRUCTURE_BEAN_NAME",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 49,
-            "endLine": 49,
-            "startColumn": 22,
-            "endColumn": 86
           },
           "validation": true
         },
@@ -6198,29 +6060,6 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.mockito.SpyDefinition",
-            "type": "Method",
-            "name": "hashCode",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/mockito/SpyDefinition.java",
-            "startLine": 89,
-            "endLine": 94,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
-            "type": "Method",
-            "name": "hashCode",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/mockito/MockitoSpyBeanMetadata.java",
-            "startLine": 83,
-            "endLine": 86,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
             "container": "org.springframework.test.context.bean.override.BeanOverrideParserTests",
             "type": "Method",
             "name": "findsOnField",
@@ -6308,6 +6147,52 @@
             "endLine": 52,
             "startColumn": 3,
             "endColumn": 56
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.test.context.bean.override.BeanOverrideParser",
+            "type": "Class",
+            "name": "BeanOverrideParser",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideParser.java",
+            "startLine": 35,
+            "endLine": 114,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
+            "type": "Class",
+            "name": "BeanOverrideParsingUtils",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideParsingUtils.java",
+            "startLine": 34,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.test.context.bean.override.BeanOverrideParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideParser.java",
+            "startLine": 55,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideParsingUtils.java",
+            "startLine": 79,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
           },
           "validation": true
         },
@@ -6402,29 +6287,6 @@
             "endColumn": 56
           },
           "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private getOrAddInfrastructureBeanDefinition(registry BeanDefinitionRegistry, clazz Class<?>, beanName String, constructorArgumentsConsumer Consumer<ConstructorArgumentValues>) : BeanDefinition",
-            "type": "Statement",
-            "name": "return registry.getBeanDefinition(beanName);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 333,
-            "endLine": 333,
-            "startColumn": 3,
-            "endColumn": 47
-          },
-          "rightSideLocation": {
-            "container": "public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void",
-            "type": "Statement",
-            "name": "definition=registry.getBeanDefinition(BeanOverrideRegistrar.INFRASTRUCTURE_BEAN_NAME);\n",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideRegistrar.java",
-            "startLine": 137,
-            "endLine": 137,
-            "startColumn": 4,
-            "endColumn": 92
-          },
-          "validation": false
         },
         {
           "leftSideLocation": {
@@ -6837,167 +6699,6 @@
             "endLine": 180,
             "startColumn": 3,
             "endColumn": 60
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "postProcessBeanFactory",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 128,
-            "endLine": 135,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "postProcessBeanFactory",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 95,
-            "endLine": 100,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "postProcessWithRegistry",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 137,
-            "endLine": 142,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "postProcessWithRegistry",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 102,
-            "endLine": 106,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "registerBeanOverride",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 155,
-            "endLine": 161,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "registerBeanOverride",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 119,
-            "endLine": 125,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "registerReplaceDefinition",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 163,
-            "endLine": 193,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "registerReplaceDefinition",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 127,
-            "endLine": 154,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "createBeanDefinition",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 232,
-            "endLine": 236,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "createBeanDefinition",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 174,
-            "endLine": 178,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Method",
-            "name": "getExistingBeanNames",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 238,
-            "endLine": 253,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Method",
-            "name": "getExistingBeanNames",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 180,
-            "endLine": 194,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-            "type": "Field",
-            "name": "EARLY_INFRASTRUCTURE_BEAN_NAME",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanPostProcessor.java",
-            "startLine": 83,
-            "endLine": 84,
-            "startColumn": 30,
-            "endColumn": 76
-          },
-          "rightSideLocation": {
-            "container": "org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-            "type": "Field",
-            "name": "EARLY_INFRASTRUCTURE_BEAN_NAME",
-            "filePath": "spring-test/src/main/java/org/springframework/test/context/bean/override/BeanOverrideBeanFactoryPostProcessor.java",
-            "startLine": 71,
-            "endLine": 72,
-            "startColumn": 30,
-            "endColumn": 83
           },
           "validation": true
         },
@@ -8677,7 +8378,7 @@
           "leftSideLocation": {
             "container": "public isCompilable() : boolean",
             "type": "Statement",
-            "name": "return (index instanceof StringLiteral && this.cachedReadAccessor instanceof CompilablePropertyAccessor compilablePropertyAccessor && compilablePropertyAccessor.isCompilable());\n",
+            "name": "return (index instanceof StringLiteral && this.cachedReadAccessor instanceof int MISSING && compilablePropertyAccessor.isCompilable());\n",
             "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
             "startLine": 286,
             "endLine": 288,
@@ -8687,7 +8388,7 @@
           "rightSideLocation": {
             "container": "public isCompilable() : boolean",
             "type": "Statement",
-            "name": "return (index instanceof StringLiteral && this.cachedPropertyReadAccessor instanceof CompilablePropertyAccessor cpa && cpa.isCompilable());\n",
+            "name": "return (index instanceof StringLiteral && this.cachedPropertyReadAccessor instanceof int MISSING && cpa.isCompilable());\n",
             "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
             "startLine": 371,
             "endLine": 373,
@@ -8746,29 +8447,6 @@
           "leftSideLocation": {
             "container": "public setValue(newValue Object) : void",
             "type": "Statement",
-            "name": "throw new SpelEvaluationException(getStartPosition(),ex,SpelMessage.EXCEPTION_DURING_INDEX_WRITE,this.index,this.typeDescriptor.toString());\n",
-            "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
-            "startLine": 921,
-            "endLine": 923,
-            "startColumn": 5,
-            "endColumn": 39
-          },
-          "rightSideLocation": {
-            "container": "public setValue(newValue Object) : void",
-            "type": "Statement",
-            "name": "throw new SpelEvaluationException(getStartPosition(),exception,SpelMessage.EXCEPTION_DURING_INDEX_WRITE,this.index,this.typeDescriptor.toString());\n",
-            "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
-            "startLine": 1102,
-            "endLine": 1104,
-            "startColumn": 5,
-            "endColumn": 39
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public setValue(newValue Object) : void",
-            "type": "Statement",
             "name": "this.indexAccessor.write(this.evaluationContext,this.target,this.index,newValue);\n",
             "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
             "startLine": 918,
@@ -8785,6 +8463,29 @@
             "endLine": 1092,
             "startColumn": 7,
             "endColumn": 86
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public setValue(newValue Object) : void",
+            "type": "Statement",
+            "name": "throw new SpelEvaluationException(getStartPosition(),ex,SpelMessage.EXCEPTION_DURING_INDEX_WRITE,this.index,this.typeDescriptor.toString());\n",
+            "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
+            "startLine": 921,
+            "endLine": 923,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "container": "public setValue(newValue Object) : void",
+            "type": "Statement",
+            "name": "throw new SpelEvaluationException(getStartPosition(),exception,SpelMessage.EXCEPTION_DURING_INDEX_WRITE,this.index,this.typeDescriptor.toString());\n",
+            "filePath": "spring-expression/src/main/java/org/springframework/expression/spel/ast/Indexer.java",
+            "startLine": 1102,
+            "endLine": 1104,
+            "startColumn": 5,
+            "endColumn": 39
           },
           "validation": true
         },

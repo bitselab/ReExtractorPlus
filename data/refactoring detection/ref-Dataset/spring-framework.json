@@ -156,6 +156,11 @@
           "validation": true
         },
         {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tWRAP_EARLY_BEAN : BeanOverrideStrategy to WRAP_BEAN : BeanOverrideStrategy in class org.springframework.test.context.bean.override.BeanOverrideStrategy",
+          "validation": true
+        },
+        {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tmethodToInvoke : Method in method protected createOverride(beanName String, existingBeanDefinition BeanDefinition, existingBeanInstance Object) : Object from class org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.MethodConventionOverrideMetadata",
           "validation": true
@@ -302,11 +307,6 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate createContext(classes Class<?>...) : AnnotationConfigApplicationContext extracted from package copyDefinitionPrimaryAndScope() : void in class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tWRAP_EARLY_BEAN : BeanOverrideStrategy to WRAP_BEAN : BeanOverrideStrategy in class org.springframework.test.context.bean.override.BeanOverrideStrategy",
           "validation": true
         },
         {
@@ -507,11 +507,6 @@
       "url": "https://github.com/spring-projects/spring-framework/commit/5c6b82a9479522546161df3921368da812b2746c",
       "commonRefactoring": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.expression.spel.FieldAnnotation.MapAccessor moved to org.springframework.expression.spel.IndexingTests.MapAccessor",
-          "validation": true
-        },
-        {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tValueRef to TypedValue in method public read(context EvaluationContext, target Object, index Object) : TypedValue from class org.springframework.expression.IndexAccessor",
           "validation": true
@@ -520,73 +515,13 @@
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tValueRef to TypedValue in method public read(context EvaluationContext, target Object, index Object) : TypedValue from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
           "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic isWritable() : boolean from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor to public isWritable() : boolean from class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic property : Object from class org.springframework.expression.spel.FieldAnnotation to public property : Object from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic property2 : List from class org.springframework.expression.spel.FieldAnnotation to public property2 : List from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedMap : Map<Integer,Integer> from class org.springframework.expression.spel.FieldAnnotation to public parameterizedMap : Map<Integer,Integer> from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic decimals : List<BigDecimal> from class org.springframework.expression.spel.FieldAnnotation to public decimals : List<BigDecimal> from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedList : List<Integer> from class org.springframework.expression.spel.FieldAnnotation to public parameterizedList : List<Integer> from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedListOfList : List<List<Integer>> from class org.springframework.expression.spel.FieldAnnotation to public parameterizedListOfList : List<List<Integer>> from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation to public listNotGeneric : List from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic mapNotGeneric : Map from class org.springframework.expression.spel.FieldAnnotation to public mapNotGeneric : Map from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listOfScalarNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation to public listOfScalarNotGeneric : List from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listOfMapsNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation to public listOfMapsNotGeneric : List from class org.springframework.expression.spel.IndexingTests",
-          "validation": true
         }
       ],
       "ourApproach": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.expression.spel.FieldAnnotation moved to org.springframework.expression.spel.IndexingTests.FieldAnnotation",
-          "validation": false
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic isWritable() : boolean from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor to public isWritable() : boolean from class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
+          "validation": true
         },
         {
           "type": "EXTRACT_VARIABLE",
@@ -601,18 +536,18 @@
       ],
       "baseline": [
         {
-          "type": "EXTRACT_AND_MOVE_OPERATION",
-          "description": "Extract And Move Method\tpublic isWritable() : boolean extracted from public isWritable(expressionState ExpressionState) : boolean in class org.springframework.expression.spel.ast.Indexer & moved to class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getValue() : TypedValue from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor to public getValue() : TypedValue from class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
+          "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef moved and renamed to org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic setValue(newValue Object) : void from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor to public setValue(newValue Object) : void from class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindex : int to index : Object in class org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_TYPE_DECLARATION_KIND",
+          "description": "Change Type Declaration Kind\trecord to class in type org.springframework.expression.spel.ast.Indexer.IndexAccessorValueRef",
           "validation": true
         }
       ]
@@ -622,11 +557,6 @@
       "sha1": "d91277095a3eee690f3e6766257cec6e1c2510f8",
       "url": "https://github.com/spring-projects/spring-framework/commit/d91277095a3eee690f3e6766257cec6e1c2510f8",
       "commonRefactoring": [
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.expression.spel.IndexingTests.MapAccessor moved to org.springframework.expression.spel.FieldAnnotation.MapAccessor",
-          "validation": true
-        },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tpublic getAccessorsToTry(targetType Class<?>, accessors List<T>) : List<T> extracted from public getPropertyAccessorsToTry(targetType Class<?>, propertyAccessors List<PropertyAccessor>) : List<PropertyAccessor> in class org.springframework.expression.spel.ast.AstUtils",
@@ -655,66 +585,6 @@
         {
           "type": "EXTRACT_INTERFACE",
           "description": "Extract Interface\torg.springframework.expression.TargetedAccessor from classes [org.springframework.expression.IndexAccessor, org.springframework.expression.PropertyAccessor]",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic property : Object from class org.springframework.expression.spel.IndexingTests to public property : Object from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic property2 : List from class org.springframework.expression.spel.IndexingTests to public property2 : List from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedMap : Map<Integer,Integer> from class org.springframework.expression.spel.IndexingTests to public parameterizedMap : Map<Integer,Integer> from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic decimals : List<BigDecimal> from class org.springframework.expression.spel.IndexingTests to public decimals : List<BigDecimal> from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedList : List<Integer> from class org.springframework.expression.spel.IndexingTests to public parameterizedList : List<Integer> from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic parameterizedListOfList : List<List<Integer>> from class org.springframework.expression.spel.IndexingTests to public parameterizedListOfList : List<List<Integer>> from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listNotGeneric : List from class org.springframework.expression.spel.IndexingTests to public listNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic mapNotGeneric : Map from class org.springframework.expression.spel.IndexingTests to public mapNotGeneric : Map from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listOfScalarNotGeneric : List from class org.springframework.expression.spel.IndexingTests to public listOfScalarNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpublic listOfMapsNotGeneric : List from class org.springframework.expression.spel.IndexingTests to public listOfMapsNotGeneric : List from class org.springframework.expression.spel.FieldAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getValue() : TypedValue from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef to public getValue() : TypedValue from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic setValue(newValue Object) : void from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef to public setValue(newValue Object) : void from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
           "validation": true
         },
         {
@@ -755,19 +625,19 @@
       ],
       "ourApproach": [
         {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpublic canWrite(context EvaluationContext, target Object, index Object) : boolean from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor to public isWritable() : boolean from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
-          "validation": false
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic getValue() : TypedValue from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef to public getValue() : TypedValue from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.springframework.expression.spel.IndexingTests.FieldAnnotation moved to org.springframework.expression.spel.FieldAnnotation",
-          "validation": false
-        },
-         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic canRead(context EvaluationContext, target Object, index Object) : boolean from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor to public canRead(context EvaluationContext, target Object, index Object) : boolean from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
           "validation": false
+        },
+        {
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpublic setValue(newValue Object) : void from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef to public setValue(newValue Object) : void from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": true
         },
         {
           "type": "MOVE_OPERATION",
@@ -775,14 +645,14 @@
           "validation": false
         },
         {
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpublic canWrite(context EvaluationContext, target Object, index Object) : boolean from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor to public isWritable() : boolean from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": false
+        },
+        {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic indexReadWrite() : void from class org.springframework.expression.spel.PropertyAccessTests to package indexReadWrite() : void from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests",
           "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage objectMapper : ObjectMapper from class org.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor to private objectMapper : ObjectMapper from class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
-          "validation": false
         },
         {
           "type": "PULL_UP_OPERATION",
@@ -843,6 +713,11 @@
       "baseline": [
         {
           "type": "MOVE_RENAME_CLASS",
+          "description": "Move And Rename Class\torg.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef moved and renamed to org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": true
+        },
+        {
+          "type": "MOVE_RENAME_CLASS",
           "description": "Move And Rename Class\torg.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor moved and renamed to org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor",
           "validation": true
         },
@@ -877,9 +752,14 @@
           "validation": true
         },
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.springframework.expression.spel.FieldAnnotation from class org.springframework.expression.spel.IndexingTests",
-          "validation": false
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tindex : Integer to index : int in class org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_TYPE_DECLARATION_KIND",
+          "description": "Change Type Declaration Kind\tclass to record in type org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
@@ -932,9 +812,7 @@
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage beforeEach() : void renamed to package clear() : void in class org.springframework.aop.framework.ProxyExceptionHandlingTests",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage beforeEach() : void renamed to package setup() : void in class org.springframework.aop.framework.ProxyExceptionHandlingTests.CglibAopProxyTests",
@@ -946,21 +824,12 @@
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tcalToSuperWasSeen : boolean to callToSuperSeen : boolean in class org.springframework.cglib.transform.impl.UndeclaredThrowableTransformer.begin_method.new CodeEmitter",
           "validation": true
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage beforeEach() : void from class org.springframework.aop.framework.ProxyExceptionHandlingTests.ObjenesisCglibAopProxyTests to package setup() : void from class org.springframework.aop.framework.ProxyExceptionHandlingTests.CglibAopProxyTests",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprotected assertProxyType(proxy Object) : void from class org.springframework.aop.framework.ProxyExceptionHandlingTests.ObjenesisCglibAopProxyTests to protected assertProxyType(proxy Object) : void from class org.springframework.aop.framework.ProxyExceptionHandlingTests.CglibAopProxyTests",
-          "validation": false
         }
       ]
     },
@@ -1222,14 +1091,14 @@
       "repository": "https://github.com/spring-projects/spring-framework.git",
       "sha1": "b68f76c86e356044b6f88884172d7f025061c3a6",
       "url": "https://github.com/spring-projects/spring-framework/commit/b68f76c86e356044b6f88884172d7f025061c3a6",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\thandlerResult : HandlerResult in method private handle(adapter RequestMappingHandlerAdapter, controller Object, exchange ServerWebExchange, timeout Duration, methodName String, parameterTypes Class<?>...) : HandlerResult from class org.springframework.web.reactive.result.method.annotation.ControllerAdviceTests",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -1308,15 +1177,14 @@
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tmetaSource : MergedAnnotation<?> in method private parseField(field Field, source Class<?>) : void from class org.springframework.test.context.bean.override.BeanOverrideParser",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tseries : HttpStatus.Series in method private getHttpStatusSeries(result MvcResult) : HttpStatus.Series from class org.springframework.test.web.servlet.result.StatusResultMatchers",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -1351,7 +1219,7 @@
         },
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tentityBody : Flux<?> in method private initResponseEntityFunction(client ReactorHttpExchangeAdapter, methodParam MethodParameter, reactiveAdapter ReactiveAdapter, isSuspending boolean) : Function<HttpRequestValues,Publisher<?>> from class org.springframework.web.service.invoker.ResponseFunction",
+          "description": "Extract Variable\tentityBody : Flux<?> in method private initResponseEntityFunction(client ReactorHttpExchangeAdapter, methodParam MethodParameter, reactiveAdapter ReactiveAdapter, isSuspending boolean) : Function<HttpRequestValues,Publisher<?>> from class org.springframework.web.service.invoker.HttpServiceMethod.ReactorExchangeResponseFunction",
           "validation": true
         }
       ],
@@ -1387,18 +1255,7 @@
           "validation": true
         }
       ],
-      "baseline": [
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tresolvedValue : String to value : String in method public resolve(resolutionContext PartResolutionContext) : String from class org.springframework.util.PlaceholderParser",
-          "validation": false
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\tvalue : String to resolvedValue : String in method public resolve(resolutionContext PartResolutionContext) : String from class org.springframework.util.PlaceholderParser",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/spring-projects/spring-framework.git",
@@ -1470,6 +1327,21 @@
         {
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate isSameDeclaringClass(declaringClass ClassName) : boolean inlined to public toInvokeCodeBlock(argumentCodeGenerator ArgumentCodeGenerator, targetClassName ClassName) : CodeBlock in class org.springframework.aot.generate.DefaultMethodReference",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\thint : TypeHint in method public withAnyMemberCategory(memberCategories MemberCategory...) : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.TypeHintPredicate",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\thint : TypeHint in method package exactMatch() : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.ConstructorHintPredicate",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\thint : TypeHint in method package exactMatch() : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.MethodHintPredicate",
           "validation": true
         },
         {
@@ -1556,21 +1428,6 @@
       "ourApproach": [
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\thint : TypeHint in method public withAnyMemberCategory(memberCategories MemberCategory...) : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.TypeHintPredicate",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\thint : TypeHint in method package exactMatch() : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.ConstructorHintPredicate",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\thint : TypeHint in method package exactMatch() : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.MethodHintPredicate",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tmerged : MergedAnnotation<?> in method public findAnnotationDeclaringClassForTypes(annotationTypes List<Class<? extends Annotation>>, clazz Class<?>) : Class<?> from class org.springframework.core.annotation.AnnotationUtils",
           "validation": true
         },
@@ -1593,7 +1450,22 @@
       "baseline": [
         {
           "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tmono : Mono<?> in method public executeSynchronized(invoker CacheOperationInvoker, method Method, cache Cache, key Object) : Object from class org.springframework.cache.interceptor.CacheAspectSupport.ReactiveCachingHandler",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tinterfaceToUse : Class<?> in method public afterPropertiesSet() : void from class org.springframework.jmx.access.MBeanProxyFactoryBean",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\thint : TypeHint in method public withMemberCategory(memberCategory MemberCategory) : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.TypeHintPredicate",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\thint : TypeHint in method public withMemberCategories(memberCategories MemberCategory...) : Predicate<RuntimeHints> from class org.springframework.aot.hint.predicate.ReflectionHintsPredicates.TypeHintPredicate",
           "validation": true
         }
       ]
@@ -1623,6 +1495,11 @@
       "url": "https://github.com/spring-projects/spring-framework/commit/5dc6a16c0b7ad2431a01c33885c1bf21442ff318",
       "commonRefactoring": [
         {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\temptyValue : Object in method public getEmptyValue() : Object from class org.springframework.core.ReactiveTypeDescriptor",
+          "validation": true
+        },
+        {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tsyntheticType : ParameterizedType in method public forClassWithGenerics(clazz Class<?>, generics ResolvableType...) : ResolvableType from class org.springframework.core.ResolvableType",
           "validation": true
@@ -1647,11 +1524,6 @@
         {
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate assertAttributePresence(attributeName String, attributeValue Object) : void inlined to private getRequiredAttribute(attributeName String, expectedType Class<T>) : T in class org.springframework.core.annotation.AnnotationAttributes",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\temptyValue : Object in method public getEmptyValue() : Object from class org.springframework.core.ReactiveTypeDescriptor",
           "validation": true
         },
         {

@@ -654,22 +654,22 @@
       "ourApproach": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate transformManyToManyCollection(pluralAttributeInfo PluralAttributeInfo) : JaxbManyToMany renamed to private transferManyToManyInfo(hbmCollection PluralAttributeInfo, manyToMany JaxbHbmManyToManyCollectionElementType, target JaxbManyToMany) : void in class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tJaxbManyToMany to void in method private transferManyToManyInfo(hbmCollection PluralAttributeInfo, manyToMany JaxbHbmManyToManyCollectionElementType, target JaxbManyToMany) : void from class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate transformElementCollection(source PluralAttributeInfo) : JaxbElementCollection renamed to private transferElementInfo(hbmCollection PluralAttributeInfo, element JaxbHbmBasicCollectionElementType, target JaxbElementCollection) : void in class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
           "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tJaxbElementCollection to void in method private transferElementInfo(hbmCollection PluralAttributeInfo, element JaxbHbmBasicCollectionElementType, target JaxbElementCollection) : void from class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate transformManyToManyCollection(pluralAttributeInfo PluralAttributeInfo) : JaxbManyToMany renamed to private transferManyToManyInfo(hbmCollection PluralAttributeInfo, manyToMany JaxbHbmManyToManyCollectionElementType, target JaxbManyToMany) : void in class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tJaxbManyToMany to void in method private transferManyToManyInfo(hbmCollection PluralAttributeInfo, manyToMany JaxbHbmManyToManyCollectionElementType, target JaxbManyToMany) : void from class org.hibernate.boot.jaxb.hbm.transform.HbmXmlTransformer",
           "validation": true
         },
         {
@@ -737,7 +737,13 @@
           "validation": true
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tprivate wrapStatement(statement Statement) : Statement extracted from public getConnection() : Connection in class org.hibernate.testing.jta.JtaAwareConnectionProviderImpl & moved to class org.hibernate.testing.jta.JtaAwareConnectionProviderImpl.ConnectionWrapper",
+          "validation": false
+        }
+      ]
     },
     {
       "repository": "https://github.com/hibernate/hibernate-orm.git",
@@ -848,6 +854,11 @@
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpackage usingReactiveSessionAccess(sessionType String) : boolean extracted from package isReactiveSession() : boolean in class org.hibernate.processor.annotation.AbstractQueryMethod & moved to class org.hibernate.processor.annotation.AnnotationMetaEntity",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpackage usingReactiveSessionAccess(sessionType String) : boolean extracted from package isReactiveSession() : boolean in class org.hibernate.processor.annotation.LifecycleMethod & moved to class org.hibernate.processor.annotation.AnnotationMetaEntity",
           "validation": true
         }
       ],

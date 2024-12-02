@@ -257,6 +257,29 @@
             "endColumn": 6
           },
           "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "protected coreParser() : CoreParser",
+            "type": "Statement",
+            "name": "solrCoreParser=new SolrCoreParser(super.defaultField(),super.analyzer(),harness.getRequestFactory(\"/select\",0,0).makeRequest());\n",
+            "filePath": "solr/core/src/test/org/apache/solr/search/TestXmlQParser.java",
+            "startLine": 56,
+            "endLine": 59,
+            "startColumn": 7,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "container": "protected coreParser() : CoreParser",
+            "type": "Statement",
+            "name": "solrCoreParser=new SolrCoreParser(\"contents\",new MockAnalyzer(random(),MockTokenizer.WHITESPACE,true,MockTokenFilter.ENGLISH_STOPSET),harness.getRequestFactory(\"/select\",0,0).makeRequest());\n",
+            "filePath": "solr/core/src/test/org/apache/solr/search/TestXmlQParser.java",
+            "startLine": 59,
+            "endLine": 62,
+            "startColumn": 7,
+            "endColumn": 69
+          },
+          "validation": true
         }
       ],
       "ourApproach": [
@@ -282,29 +305,6 @@
             "endColumn": 100
           },
           "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "protected coreParser() : CoreParser",
-            "type": "Statement",
-            "name": "solrCoreParser=new SolrCoreParser(super.defaultField(),super.analyzer(),harness.getRequestFactory(\"/select\",0,0).makeRequest());\n",
-            "filePath": "solr/core/src/test/org/apache/solr/search/TestXmlQParser.java",
-            "startLine": 56,
-            "endLine": 59,
-            "startColumn": 7,
-            "endColumn": 69
-          },
-          "rightSideLocation": {
-            "container": "protected coreParser() : CoreParser",
-            "type": "Statement",
-            "name": "solrCoreParser=new SolrCoreParser(\"contents\",new MockAnalyzer(random(),MockTokenizer.WHITESPACE,true,MockTokenFilter.ENGLISH_STOPSET),harness.getRequestFactory(\"/select\",0,0).makeRequest());\n",
-            "filePath": "solr/core/src/test/org/apache/solr/search/TestXmlQParser.java",
-            "startLine": 59,
-            "endLine": 62,
-            "startColumn": 7,
-            "endColumn": 69
-          },
-          "validation": true
         }
       ],
       "baseline": []
@@ -707,6 +707,29 @@
         },
         {
           "leftSideLocation": {
+            "container": "public build() : Http2SolrClient",
+            "type": "Statement",
+            "name": "return new Http2SolrClient(baseSolrUrl,this);\n",
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 857,
+            "endLine": 857,
+            "startColumn": 7,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "container": "public build() : Http2SolrClient",
+            "type": "Statement",
+            "name": "return client;\n",
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 885,
+            "endLine": 885,
+            "startColumn": 7,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
             "container": "public setDefaultSolrParams(params SolrParams) : void",
             "type": "Statement",
             "name": "defaultParams=params;\n",
@@ -821,56 +844,8 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "leftSideLocation": {
-            "container": "public build() : Http2SolrClient",
-            "type": "Statement",
-            "name": "return new Http2SolrClient(baseSolrUrl,this);\n",
-            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
-            "startLine": 857,
-            "endLine": 857,
-            "startColumn": 7,
-            "endColumn": 53
-          },
-          "rightSideLocation": {
-            "container": "public build() : Http2SolrClient",
-            "type": "Statement",
-            "name": "return client;\n",
-            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
-            "startLine": 885,
-            "endLine": 885,
-            "startColumn": 7,
-            "endColumn": 21
-          },
-          "validation": true
-        }
-      ],
-      "baseline": [
-        {
-          "leftSideLocation": {
-            "container": "public build() : Http2SolrClient",
-            "type": "Statement",
-            "name": "return new Http2SolrClient(baseSolrUrl,this);\n",
-            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
-            "startLine": 857,
-            "endLine": 857,
-            "startColumn": 7,
-            "endColumn": 53
-          },
-          "rightSideLocation": {
-            "container": "public build() : Http2SolrClient",
-            "type": "Statement",
-            "name": "Http2SolrClient client=new Http2SolrClient(baseSolrUrl,this);\n",
-            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
-            "startLine": 874,
-            "endLine": 874,
-            "startColumn": 7,
-            "endColumn": 71
-          },
-          "validation": false
-        }
-      ]
+      "ourApproach": [],
+      "baseline": []
     },
     {
       "repository": "https://github.com/apache/lucene-solr.git",

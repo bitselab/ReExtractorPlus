@@ -6,6 +6,7 @@ import org.eclipse.jdt.core.dom.MethodDeclaration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class EntityMatchingResults {
 
@@ -120,6 +121,22 @@ public class EntityMatchingResults {
         public boolean isValidation() {
             return validation;
         }
+
+        @Override
+        public int hashCode() {
+            // 基于左侧位置、右侧位置以及 validation 状态
+            return Objects.hash(leftSideLocation, rightSideLocation, validation);
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (obj == null || getClass() != obj.getClass()) return false;
+            Entity other = (Entity) obj;
+            return validation == other.validation &&
+                    Objects.equals(leftSideLocation, other.leftSideLocation) &&
+                    Objects.equals(rightSideLocation, other.rightSideLocation);
+        }
     }
 
     public class Location {
@@ -145,6 +162,26 @@ public class EntityMatchingResults {
 
         public String getType() {
             return type;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(container, type, name, filePath, startLine, endLine, startColumn, endColumn);
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (obj == null || getClass() != obj.getClass()) return false;
+            Location other = (Location) obj;
+            return startLine == other.startLine &&
+                    endLine == other.endLine &&
+                    startColumn == other.startColumn &&
+                    endColumn == other.endColumn &&
+                    Objects.equals(container, other.container) &&
+                    Objects.equals(type, other.type) &&
+                    Objects.equals(name, other.name) &&
+                    Objects.equals(filePath, other.filePath);
         }
     }
 }

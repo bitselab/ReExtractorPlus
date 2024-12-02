@@ -1,0 +1,1301 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/eclipse-jgit/jgit.git",
+      "sha1": "093bde518118175e1542fa2561f8d2f20649879b",
+      "url": "https://github.com/eclipse-jgit/jgit/commit/093bde518118175e1542fa2561f8d2f20649879b",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPackTest",
+            "type": "Class",
+            "name": "UploadPackTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/UploadPackTest.java",
+            "startLine": 66,
+            "endLine": 3140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPackTest",
+            "type": "Class",
+            "name": "UploadPackTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/UploadPackTest.java",
+            "startLine": 66,
+            "endLine": 3203,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "markReachable",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 684,
+            "endLine": 732,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "markReachable",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 686,
+            "endLine": 728,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Class",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 68,
+            "endLine": 1207,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Class",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 70,
+            "endLine": 1233,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "parseReachable",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 734,
+            "endLine": 744,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "markReachable",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 760,
+            "endLine": 770,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "ObjectId id=r.getPeeledObjectId();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 695,
+            "endLine": 695,
+            "startColumn": 4,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "container": "private getRefObjectId(ref Ref) : ObjectId",
+            "type": "Statement",
+            "name": "ObjectId id=ref.getPeeledObjectId();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 753,
+            "endLine": 753,
+            "startColumn": 3,
+            "endColumn": 41
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "parseReachable(id);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 704,
+            "endLine": 704,
+            "startColumn": 4,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "markReachable(id);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 700,
+            "endLine": 700,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "parseReachable(id);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 707,
+            "endLine": 707,
+            "startColumn": 4,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "markReachable(id);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 703,
+            "endLine": 703,
+            "startColumn": 4,
+            "endColumn": 22
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "parseReachable(id);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 700,
+            "endLine": 700,
+            "startColumn": 4,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "container": "private getRefObjectId(ref Ref) : ObjectId",
+            "type": "Statement",
+            "name": "return id;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 757,
+            "endLine": 757,
+            "startColumn": 3,
+            "endColumn": 13
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "Set<String> wantRefs=want.stream().map(Ref::getName).collect(Collectors.toSet());\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 687,
+            "endLine": 688,
+            "startColumn": 3,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "container": "private translateToLocalTips(want Collection<Ref>) : Collection<Ref>",
+            "type": "Statement",
+            "name": "String[] refs=want.stream().map(Ref::getName).collect(Collectors.toSet()).toArray(String[]::new);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 732,
+            "endLine": 733,
+            "startColumn": 3,
+            "endColumn": 57
+          },
+          "validation": false
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "id=r.getObjectId();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 697,
+            "endLine": 697,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "private getRefObjectId(ref Ref) : ObjectId",
+            "type": "Statement",
+            "name": "id=ref.getObjectId();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 755,
+            "endLine": 755,
+            "startColumn": 4,
+            "endColumn": 27
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "if(useNegotiationTip && !wantRefs.contains(r.getName()))",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 691,
+            "endLine": 693,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "container": "private getRefObjectId(ref Ref) : ObjectId",
+            "type": "Statement",
+            "name": "if(id == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 754,
+            "endLine": 756,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "id=r.getObjectId();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 697,
+            "endLine": 697,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "refsToMark=local.getRefDatabase().getRefs();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 695,
+            "endLine": 695,
+            "startColumn": 4,
+            "endColumn": 50
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private markReachable(want Collection<Ref>, have Set<ObjectId>, maxTime int) : void",
+            "type": "Statement",
+            "name": "if(id == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 696,
+            "endLine": 697,
+            "startColumn": 4,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "private translateToLocalTips(want Collection<Ref>) : Collection<Ref>",
+            "type": "Statement",
+            "name": "return wantRefMap.values().stream().filter(r -> getRefObjectId(r) != null).collect(Collectors.toList());\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 735,
+            "endLine": 737,
+            "startColumn": 3,
+            "endColumn": 35
+          },
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse-jgit/jgit.git",
+      "sha1": "621685d3ca5fbaba37a8fc79b347644b3e4425c0",
+      "url": "https://github.com/eclipse-jgit/jgit/commit/621685d3ca5fbaba37a8fc79b347644b3e4425c0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.DeleteBranchCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 64,
+            "endLine": 145,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.DeleteBranchCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 70,
+            "endLine": 93,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.DeleteBranchCommand",
+            "type": "Class",
+            "name": "DeleteBranchCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 36,
+            "endLine": 178,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.DeleteBranchCommand",
+            "type": "Class",
+            "name": "DeleteBranchCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 39,
+            "endLine": 299,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.JGitText",
+            "type": "Class",
+            "name": "JGitText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 17,
+            "endLine": 924,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.JGitText",
+            "type": "Class",
+            "name": "JGitText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 17,
+            "endLine": 926,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "final StoredConfig cfg=repo.getConfig();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 130,
+            "endLine": 130,
+            "startColumn": 7,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "private updateConfig(shortNames Set<String>, error Exception) : void",
+            "type": "Statement",
+            "name": "StoredConfig cfg=repo.getConfig();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 183,
+            "endLine": 183,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "boolean ok=true;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 113,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "container": "private updateConfig(shortNames Set<String>, error Exception) : void",
+            "type": "Statement",
+            "name": "boolean changed=false;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 29
+          },
+          "validation": false
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "try",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 71,
+            "endLine": 144,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "try",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 86,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 79,
+            "endLine": 91,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 127,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 80,
+            "endLine": 81,
+            "startColumn": 7,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 128,
+            "endLine": 131,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 83,
+            "endLine": 84,
+            "startColumn": 7,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 95,
+            "endLine": 140,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 106,
+            "endLine": 119,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 96,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 107,
+            "endLine": 109,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 99,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 111,
+            "endLine": 113,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 6,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 162,
+            "endLine": 162,
+            "startColumn": 7,
+            "endColumn": 13
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 7,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 6,
+            "endColumn": 48
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 110,
+            "endLine": 110,
+            "startColumn": 7,
+            "endColumn": 49
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 119,
+            "endLine": 119,
+            "startColumn": 6,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 166,
+            "endLine": 166,
+            "startColumn": 7,
+            "endColumn": 13
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "cfg.unsetSection(ConfigConstants.CONFIG_BRANCH_SECTION,shortenedName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 131,
+            "endLine": 133,
+            "startColumn": 7,
+            "endColumn": 24
+          },
+          "rightSideLocation": {
+            "container": "private updateConfig(shortNames Set<String>, error Exception) : void",
+            "type": "Statement",
+            "name": "changed|=cfg.removeSection(ConfigConstants.CONFIG_BRANCH_SECTION,branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 186,
+            "endLine": 188,
+            "startColumn": 6,
+            "endColumn": 20
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(ok)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 124,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "private updateConfig(shortNames Set<String>, error Exception) : void",
+            "type": "Statement",
+            "name": "if(changed)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 190,
+            "endLine": 192,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 7,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 110,
+            "endLine": 110,
+            "startColumn": 7,
+            "endColumn": 49
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "Ref currentRef=repo.findRef(branchName);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 6,
+            "endColumn": 48
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 119,
+            "endLine": 119,
+            "startColumn": 6,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 162,
+            "endLine": 162,
+            "startColumn": 7,
+            "endColumn": 13
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 6,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "break;\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 166,
+            "endLine": 166,
+            "startColumn": 7,
+            "endColumn": 13
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "String shortenedName=fullName.substring(Constants.R_HEADS.length());\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 127,
+            "endLine": 128,
+            "startColumn": 7,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "shortNames.add(fullName.substring(Constants.R_HEADS.length()));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 159,
+            "endLine": 160,
+            "startColumn": 8,
+            "endColumn": 50
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 80,
+            "endLine": 81,
+            "startColumn": 7,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 107,
+            "endLine": 109,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 83,
+            "endLine": 84,
+            "startColumn": 7,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 111,
+            "endLine": 113,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 79,
+            "endLine": 91,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 106,
+            "endLine": 119,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 96,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(branchName == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 128,
+            "endLine": 131,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 99,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "if(currentRef == null)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 95,
+            "endLine": 140,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "for(branchName: branchNames)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 127,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "try",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 71,
+            "endLine": 144,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "private deleteBranches(result List<String>, shortNames Set<String>) : void",
+            "type": "Statement",
+            "name": "try",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 98,
+            "endLine": 174,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public call() : List<String>",
+            "type": "Statement",
+            "name": "if(ok)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 124,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "private updateConfig(shortNames Set<String>, error Exception) : void",
+            "type": "Statement",
+            "name": "if(!shortNames.isEmpty())",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/DeleteBranchCommand.java",
+            "startLine": 180,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse-jgit/jgit.git",
+      "sha1": "f1a9d92a30abaf8c3d8cfc8030f864d4c642bf1e",
+      "url": "https://github.com/eclipse-jgit/jgit/commit/f1a9d92a30abaf8c3d8cfc8030f864d4c642bf1e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Method",
+            "name": "write",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 105,
+            "endLine": 152,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Method",
+            "name": "write",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 106,
+            "endLine": 160,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Class",
+            "name": "CommitGraphWriter",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 57,
+            "endLine": 530,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Class",
+            "name": "CommitGraphWriter",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 58,
+            "endLine": 542,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": false
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Method",
+            "name": "createChunks",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 154,
+            "endLine": 176,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.commitgraph.CommitGraphWriter",
+            "type": "Method",
+            "name": "createCoreChunks",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 162,
+            "endLine": 176,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public write(monitor ProgressMonitor, commitGraphStream OutputStream) : Stats",
+            "type": "Statement",
+            "name": "List<ChunkHeader> chunks=createChunks(stats);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 125,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "public write(monitor ProgressMonitor, commitGraphStream OutputStream) : Stats",
+            "type": "Statement",
+            "name": "List<ChunkHeader> chunks=new ArrayList<>();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 129,
+            "endLine": 129,
+            "startColumn": 3,
+            "endColumn": 48
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "if(graphCommits.getExtraEdgeCnt() > 0)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 163,
+            "endLine": 166,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "if(graphCommits.getExtraEdgeCnt() > 0)",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 171,
+            "endLine": 174,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_EXTRA_EDGE_LIST,graphCommits.getExtraEdgeCnt() * 4));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 164,
+            "endLine": 165,
+            "startColumn": 4,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_EXTRA_EDGE_LIST,graphCommits.getExtraEdgeCnt() * 4));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 172,
+            "endLine": 173,
+            "startColumn": 4,
+            "endColumn": 43
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "List<ChunkHeader> chunks=new ArrayList<>();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 157,
+            "endLine": 157,
+            "startColumn": 3,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "List<ChunkHeader> chunks=new ArrayList<>();\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 165,
+            "endLine": 165,
+            "startColumn": 3,
+            "endColumn": 48
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_OID_FANOUT,GRAPH_FANOUT_SIZE));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 158,
+            "endLine": 158,
+            "startColumn": 3,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_OID_FANOUT,GRAPH_FANOUT_SIZE));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 166,
+            "endLine": 166,
+            "startColumn": 3,
+            "endColumn": 71
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_OID_LOOKUP,hashsz * graphCommits.size()));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 159,
+            "endLine": 160,
+            "startColumn": 3,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_OID_LOOKUP,hashsz * graphCommits.size()));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 167,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 36
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_COMMIT_DATA,(hashsz + 16) * graphCommits.size()));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 161,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "chunks.add(new ChunkHeader(CHUNK_ID_COMMIT_DATA,(hashsz + 16) * graphCommits.size()));\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 169,
+            "endLine": 170,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createChunks(stats Stats) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "return Collections.unmodifiableList(chunks);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 3,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "container": "private createCoreChunks(hashsz int, graphCommits GraphCommits) : List<ChunkHeader>",
+            "type": "Statement",
+            "name": "return Collections.unmodifiableList(chunks);\n",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/commitgraph/CommitGraphWriter.java",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 3,
+            "endColumn": 47
+          },
+          "validation": false
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

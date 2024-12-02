@@ -1053,68 +1053,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.QueryMethod",
+            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
             "type": "Method",
-            "name": "QueryMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 31,
-            "endLine": 64,
+            "name": "AbstractQueryMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 53,
+            "endLine": 74,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.QueryMethod",
+            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
             "type": "Method",
-            "name": "QueryMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 29,
-            "endLine": 64,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.CriteriaFinderMethod",
-            "type": "Method",
-            "name": "CriteriaFinderMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
-            "startLine": 24,
-            "endLine": 44,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.CriteriaFinderMethod",
-            "type": "Method",
-            "name": "CriteriaFinderMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
-            "startLine": 22,
-            "endLine": 44,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.QueryMethod",
-            "type": "Method",
-            "name": "castResult",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 145,
-            "endLine": 155,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.QueryMethod",
-            "type": "Method",
-            "name": "castResult",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 144,
-            "endLine": 154,
+            "name": "AbstractQueryMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 54,
+            "endLine": 77,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1145,45 +1099,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractFinderMethod",
+            "container": "org.hibernate.processor.annotation.CriteriaDeleteMethod",
             "type": "Method",
-            "name": "AbstractFinderMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
-            "startLine": 26,
-            "endLine": 49,
+            "name": "CriteriaDeleteMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
+            "startLine": 22,
+            "endLine": 40,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractFinderMethod",
+            "container": "org.hibernate.processor.annotation.CriteriaDeleteMethod",
             "type": "Method",
-            "name": "AbstractFinderMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
-            "startLine": 25,
-            "endLine": 50,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
-            "type": "Method",
-            "name": "preamble",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 110,
-            "endLine": 118,
-            "startColumn": 2,
-            "endColumn": 3
-          },
-          "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
-            "type": "Method",
-            "name": "preamble",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 113,
-            "endLine": 121,
+            "name": "CriteriaDeleteMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
+            "startLine": 21,
+            "endLine": 40,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1214,22 +1145,91 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.CriteriaDeleteMethod",
+            "container": "org.hibernate.processor.annotation.QueryMethod",
             "type": "Method",
-            "name": "CriteriaDeleteMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
-            "startLine": 22,
-            "endLine": 40,
+            "name": "QueryMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 31,
+            "endLine": 64,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.CriteriaDeleteMethod",
+            "container": "org.hibernate.processor.annotation.QueryMethod",
             "type": "Method",
-            "name": "CriteriaDeleteMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
-            "startLine": 21,
-            "endLine": 40,
+            "name": "QueryMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 29,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.processor.annotation.AbstractFinderMethod",
+            "type": "Method",
+            "name": "AbstractFinderMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
+            "startLine": 26,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.processor.annotation.AbstractFinderMethod",
+            "type": "Method",
+            "name": "AbstractFinderMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
+            "startLine": 25,
+            "endLine": 50,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.processor.annotation.QueryMethod",
+            "type": "Method",
+            "name": "castResult",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 145,
+            "endLine": 155,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.processor.annotation.QueryMethod",
+            "type": "Method",
+            "name": "castResult",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 144,
+            "endLine": 154,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
+            "type": "Method",
+            "name": "preamble",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 110,
+            "endLine": 118,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
+            "type": "Method",
+            "name": "preamble",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 113,
+            "endLine": 121,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1260,22 +1260,22 @@
         },
         {
           "leftSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
+            "container": "org.hibernate.processor.annotation.CriteriaFinderMethod",
             "type": "Method",
-            "name": "AbstractQueryMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 53,
-            "endLine": 74,
+            "name": "CriteriaFinderMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
+            "startLine": 24,
+            "endLine": 44,
             "startColumn": 2,
             "endColumn": 3
           },
           "rightSideLocation": {
-            "container": "org.hibernate.processor.annotation.AbstractQueryMethod",
+            "container": "org.hibernate.processor.annotation.CriteriaFinderMethod",
             "type": "Method",
-            "name": "AbstractQueryMethod",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 54,
-            "endLine": 77,
+            "name": "CriteriaFinderMethod",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
+            "startLine": 22,
+            "endLine": 44,
             "startColumn": 2,
             "endColumn": 3
           },
@@ -1469,29 +1469,6 @@
           "leftSideLocation": {
             "container": "private createMultipleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
             "type": "Statement",
-            "name": "putMember(methodKey,new CriteriaFinderMethod(this,method,methodName,returnType.toString(),null,paramNames,paramTypes,parameterNullability(method,entity),multivalued,paramPatterns,repository,sessionType[0],sessionType[1],enabledFetchProfiles(method),orderByList(method,entity),context.addNonnullAnnotation(),jakartaDataRepository));\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1815,
-            "endLine": 1834,
-            "startColumn": 4,
-            "endColumn": 6
-          },
-          "rightSideLocation": {
-            "container": "private createMultipleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
-            "type": "Statement",
-            "name": "putMember(methodKey,new CriteriaFinderMethod(this,method,methodName,returnType.toString(),null,paramNames,paramTypes,parameterNullability(method,entity),multivalued,paramPatterns,repository,sessionType[0],sessionType[1],enabledFetchProfiles(method),orderByList(method,entity),context.addNonnullAnnotation(),jakartaDataRepository,fullReturnType(method)));\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1814,
-            "endLine": 1834,
-            "startColumn": 4,
-            "endColumn": 6
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private createMultipleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
-            "type": "Statement",
             "name": "putMember(methodKey,new NaturalIdFinderMethod(this,method,methodName,returnType.toString(),paramNames,paramTypes,parameterNullability(method,entity),repository,sessionType[0],sessionType[1],enabledFetchProfiles(method),context.addNonnullAnnotation(),jakartaDataRepository));\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
             "startLine": 1796,
@@ -1513,24 +1490,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "private createSingleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
+            "container": "private createMultipleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
             "type": "Statement",
-            "name": "putMember(methodKey,new IdFinderMethod(this,method,methodName,returnType.toString(),paramNames,paramTypes,repository,sessionType[0],sessionType[1],profiles,context.addNonnullAnnotation(),jakartaDataRepository));\n",
+            "name": "putMember(methodKey,new CriteriaFinderMethod(this,method,methodName,returnType.toString(),null,paramNames,paramTypes,parameterNullability(method,entity),multivalued,paramPatterns,repository,sessionType[0],sessionType[1],enabledFetchProfiles(method),orderByList(method,entity),context.addNonnullAnnotation(),jakartaDataRepository));\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1853,
-            "endLine": 1867,
-            "startColumn": 6,
-            "endColumn": 8
+            "startLine": 1815,
+            "endLine": 1834,
+            "startColumn": 4,
+            "endColumn": 6
           },
           "rightSideLocation": {
-            "container": "private createSingleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
+            "container": "private createMultipleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
             "type": "Statement",
-            "name": "putMember(methodKey,new IdFinderMethod(this,method,methodName,returnType.toString(),paramNames,paramTypes,repository,sessionType[0],sessionType[1],profiles,context.addNonnullAnnotation(),jakartaDataRepository,fullReturnType(method)));\n",
+            "name": "putMember(methodKey,new CriteriaFinderMethod(this,method,methodName,returnType.toString(),null,paramNames,paramTypes,parameterNullability(method,entity),multivalued,paramPatterns,repository,sessionType[0],sessionType[1],enabledFetchProfiles(method),orderByList(method,entity),context.addNonnullAnnotation(),jakartaDataRepository,fullReturnType(method)));\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1853,
-            "endLine": 1868,
-            "startColumn": 6,
-            "endColumn": 8
+            "startLine": 1814,
+            "endLine": 1834,
+            "startColumn": 4,
+            "endColumn": 6
           },
           "validation": true
         },
@@ -1575,6 +1552,29 @@
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
             "startLine": 1871,
             "endLine": 1887,
+            "startColumn": 6,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private createSingleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
+            "type": "Statement",
+            "name": "putMember(methodKey,new IdFinderMethod(this,method,methodName,returnType.toString(),paramNames,paramTypes,repository,sessionType[0],sessionType[1],profiles,context.addNonnullAnnotation(),jakartaDataRepository));\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
+            "startLine": 1853,
+            "endLine": 1867,
+            "startColumn": 6,
+            "endColumn": 8
+          },
+          "rightSideLocation": {
+            "container": "private createSingleParameterFinder(method ExecutableElement, returnType TypeMirror, entity TypeElement) : void",
+            "type": "Statement",
+            "name": "putMember(methodKey,new IdFinderMethod(this,method,methodName,returnType.toString(),paramNames,paramTypes,repository,sessionType[0],sessionType[1],profiles,context.addNonnullAnnotation(),jakartaDataRepository,fullReturnType(method)));\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
+            "startLine": 1853,
+            "endLine": 1868,
             "startColumn": 6,
             "endColumn": 8
           },
@@ -1699,29 +1699,6 @@
           "leftSideLocation": {
             "container": "public getAttributeDeclarationString() : String",
             "type": "Statement",
-            "name": "preamble(declaration,returnType,paramTypes);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 93,
-            "endLine": 93,
-            "startColumn": 3,
-            "endColumn": 51
-          },
-          "rightSideLocation": {
-            "container": "public getAttributeDeclarationString() : String",
-            "type": "Statement",
-            "name": "preamble(declaration,paramTypes);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 92,
-            "endLine": 92,
-            "startColumn": 3,
-            "endColumn": 39
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "public getAttributeDeclarationString() : String",
-            "type": "Statement",
             "name": "castResult(declaration,returnType);\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
             "startLine": 97,
@@ -1743,70 +1720,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "package QueryMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, queryString String, returnTypeName String, returnTypeClass String, containerType String, paramNames List<String>, paramTypes List<String>, isUpdate boolean, isNative boolean, belongsToDao boolean, sessionType String, sessionName String, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean)",
+            "container": "public getAttributeDeclarationString() : String",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,returnTypeName,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,dataRepository);\n",
+            "name": "preamble(declaration,returnType,paramTypes);\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 52,
-            "endLine": 58,
+            "startLine": 93,
+            "endLine": 93,
             "startColumn": 3,
-            "endColumn": 22
+            "endColumn": 51
           },
           "rightSideLocation": {
-            "container": "package QueryMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, queryString String, returnTypeName String, returnTypeClass String, containerType String, paramNames List<String>, paramTypes List<String>, isUpdate boolean, isNative boolean, belongsToDao boolean, sessionType String, sessionName String, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
+            "container": "public getAttributeDeclarationString() : String",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,returnTypeName,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,dataRepository,fullReturnType);\n",
+            "name": "preamble(declaration,paramTypes);\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 51,
-            "endLine": 58,
+            "startLine": 92,
+            "endLine": 92,
             "startColumn": 3,
-            "endColumn": 22
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package CriteriaFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, containerType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean)",
-            "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,fetchProfiles,paramNames,paramTypes,orderBys,addNonnullAnnotation,dataRepository,multivalued,paramPatterns);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
-            "startLine": 40,
-            "endLine": 41,
-            "startColumn": 3,
-            "endColumn": 106
-          },
-          "rightSideLocation": {
-            "container": "package CriteriaFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, containerType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
-            "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,fetchProfiles,paramNames,paramTypes,orderBys,addNonnullAnnotation,dataRepository,multivalued,paramPatterns,fullReturnType);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
-            "startLine": 39,
-            "endLine": 41,
-            "startColumn": 3,
-            "endColumn": 21
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private castResult(declaration StringBuilder, returnType String) : void",
-            "type": "Statement",
-            "name": "declaration.append(\"(\").append(returnType).append(\") \");\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 150,
-            "endLine": 153,
-            "startColumn": 4,
-            "endColumn": 20
-          },
-          "rightSideLocation": {
-            "container": "private castResult(declaration StringBuilder) : void",
-            "type": "Statement",
-            "name": "declaration.append(\"(\").append(fullReturnType).append(\") \");\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
-            "startLine": 149,
-            "endLine": 152,
-            "startColumn": 4,
-            "endColumn": 20
+            "endColumn": 39
           },
           "validation": true
         },
@@ -1835,47 +1766,24 @@
         },
         {
           "leftSideLocation": {
-            "container": "package AbstractFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, paramNames List<String>, paramTypes List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, convertToDataExceptions boolean)",
+            "container": "package CriteriaDeleteMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, returnType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, addNonnullAnnotation boolean, dataRepository boolean)",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,entity,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,convertToDataExceptions);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
-            "startLine": 40,
-            "endLine": 46,
+            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,emptyList(),paramNames,paramTypes,emptyList(),addNonnullAnnotation,dataRepository,multivalued,paramPatterns);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
+            "startLine": 36,
+            "endLine": 37,
             "startColumn": 3,
-            "endColumn": 31
+            "endColumn": 109
           },
           "rightSideLocation": {
-            "container": "package AbstractFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, paramNames List<String>, paramTypes List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, convertToDataExceptions boolean, fullReturnType String)",
+            "container": "package CriteriaDeleteMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,entity,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,convertToDataExceptions,fullReturnType);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
-            "startLine": 40,
-            "endLine": 47,
+            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,emptyList(),paramNames,paramTypes,emptyList(),addNonnullAnnotation,dataRepository,multivalued,paramPatterns,fullReturnType);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
+            "startLine": 36,
+            "endLine": 38,
             "startColumn": 3,
-            "endColumn": 22
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "package preamble(declaration StringBuilder, returnType String, paramTypes List<String>) : void",
-            "type": "Statement",
-            "name": "declaration.append(returnType).append(\" \").append(methodName);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 111,
-            "endLine": 114,
-            "startColumn": 3,
-            "endColumn": 25
-          },
-          "rightSideLocation": {
-            "container": "package preamble(declaration StringBuilder, paramTypes List<String>) : void",
-            "type": "Statement",
-            "name": "declaration.append(annotationMetaEntity.importType(fullReturnType)).append(\" \").append(methodName);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
-            "startLine": 114,
-            "endLine": 117,
-            "startColumn": 3,
-            "endColumn": 25
+            "endColumn": 21
           },
           "validation": true
         },
@@ -1904,24 +1812,93 @@
         },
         {
           "leftSideLocation": {
-            "container": "package CriteriaDeleteMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, returnType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, addNonnullAnnotation boolean, dataRepository boolean)",
+            "container": "package QueryMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, queryString String, returnTypeName String, returnTypeClass String, containerType String, paramNames List<String>, paramTypes List<String>, isUpdate boolean, isNative boolean, belongsToDao boolean, sessionType String, sessionName String, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean)",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,emptyList(),paramNames,paramTypes,emptyList(),addNonnullAnnotation,dataRepository,multivalued,paramPatterns);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
-            "startLine": 36,
-            "endLine": 37,
+            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,returnTypeName,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,dataRepository);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 52,
+            "endLine": 58,
             "startColumn": 3,
-            "endColumn": 109
+            "endColumn": 22
           },
           "rightSideLocation": {
-            "container": "package CriteriaDeleteMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
+            "container": "package QueryMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, queryString String, returnTypeName String, returnTypeClass String, containerType String, paramNames List<String>, paramTypes List<String>, isUpdate boolean, isNative boolean, belongsToDao boolean, sessionType String, sessionName String, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
             "type": "Statement",
-            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,emptyList(),paramNames,paramTypes,emptyList(),addNonnullAnnotation,dataRepository,multivalued,paramPatterns,fullReturnType);\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaDeleteMethod.java",
-            "startLine": 36,
-            "endLine": 38,
+            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,returnTypeName,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,dataRepository,fullReturnType);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 51,
+            "endLine": 58,
             "startColumn": 3,
-            "endColumn": 21
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package AbstractFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, paramNames List<String>, paramTypes List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, convertToDataExceptions boolean)",
+            "type": "Statement",
+            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,entity,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,convertToDataExceptions);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
+            "startLine": 40,
+            "endLine": 46,
+            "startColumn": 3,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "container": "package AbstractFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, paramNames List<String>, paramTypes List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, convertToDataExceptions boolean, fullReturnType String)",
+            "type": "Statement",
+            "name": "super(annotationMetaEntity,method,methodName,paramNames,paramTypes,entity,sessionType,sessionName,belongsToDao,orderBys,addNonnullAnnotation,convertToDataExceptions,fullReturnType);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractFinderMethod.java",
+            "startLine": 40,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private castResult(declaration StringBuilder, returnType String) : void",
+            "type": "Statement",
+            "name": "declaration.append(\"(\").append(returnType).append(\") \");\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 150,
+            "endLine": 153,
+            "startColumn": 4,
+            "endColumn": 20
+          },
+          "rightSideLocation": {
+            "container": "private castResult(declaration StringBuilder) : void",
+            "type": "Statement",
+            "name": "declaration.append(\"(\").append(fullReturnType).append(\") \");\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/QueryMethod.java",
+            "startLine": 149,
+            "endLine": 152,
+            "startColumn": 4,
+            "endColumn": 20
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package preamble(declaration StringBuilder, returnType String, paramTypes List<String>) : void",
+            "type": "Statement",
+            "name": "declaration.append(returnType).append(\" \").append(methodName);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 111,
+            "endLine": 114,
+            "startColumn": 3,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "package preamble(declaration StringBuilder, paramTypes List<String>) : void",
+            "type": "Statement",
+            "name": "declaration.append(annotationMetaEntity.importType(fullReturnType)).append(\" \").append(methodName);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java",
+            "startLine": 114,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 25
           },
           "validation": true
         },
@@ -1945,6 +1922,29 @@
             "endLine": 36,
             "startColumn": 3,
             "endColumn": 97
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package CriteriaFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, containerType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean)",
+            "type": "Statement",
+            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,fetchProfiles,paramNames,paramTypes,orderBys,addNonnullAnnotation,dataRepository,multivalued,paramPatterns);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
+            "startLine": 40,
+            "endLine": 41,
+            "startColumn": 3,
+            "endColumn": 106
+          },
+          "rightSideLocation": {
+            "container": "package CriteriaFinderMethod(annotationMetaEntity AnnotationMetaEntity, method ExecutableElement, methodName String, entity String, containerType String, paramNames List<String>, paramTypes List<String>, paramNullability List<Boolean>, multivalued List<Boolean>, paramPatterns List<Boolean>, belongsToDao boolean, sessionType String, sessionName String, fetchProfiles List<String>, orderBys List<OrderBy>, addNonnullAnnotation boolean, dataRepository boolean, fullReturnType String)",
+            "type": "Statement",
+            "name": "super(annotationMetaEntity,method,methodName,entity,belongsToDao,sessionType,sessionName,fetchProfiles,paramNames,paramTypes,orderBys,addNonnullAnnotation,dataRepository,multivalued,paramPatterns,fullReturnType);\n",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/CriteriaFinderMethod.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 3,
+            "endColumn": 21
           },
           "validation": true
         }
@@ -2168,29 +2168,6 @@
         },
         {
           "leftSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "if(method.getParameters().stream().noneMatch(param -> typeNameEquals(param.asType(),HIB_KEYED_PAGE)))",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1136,
-            "endLine": 1146,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "rightSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "if(!hashKeyedPage(method))",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1152,
-            "endLine": 1161,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
             "container": "private orderByList(method ExecutableElement, returnType TypeElement) : List<OrderBy>",
             "type": "Statement",
             "name": "final AnnotationMirror orderByList=getAnnotationMirror(method,\"jakarta.data.repository.OrderBy.List\");\n",
@@ -2241,29 +2218,6 @@
           "leftSideLocation": {
             "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
             "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1142,
-            "endLine": 1142,
-            "startColumn": 6,
-            "endColumn": 19
-          },
-          "rightSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1157,
-            "endLine": 1157,
-            "startColumn": 6,
-            "endColumn": 19
-          },
-          "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
             "name": "return true;\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
             "startLine": 1145,
@@ -2305,6 +2259,29 @@
             "endColumn": 18
           },
           "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
+            "type": "Statement",
+            "name": "if(method.getParameters().stream().noneMatch(param -> typeNameEquals(param.asType(),HIB_KEYED_PAGE)))",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
+            "startLine": 1136,
+            "endLine": 1146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
+            "type": "Statement",
+            "name": "if(!hashKeyedPage(method))",
+            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
+            "startLine": 1152,
+            "endLine": 1161,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
         },
         {
           "leftSideLocation": {
@@ -2358,29 +2335,6 @@
           "leftSideLocation": {
             "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
             "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1142,
-            "endLine": 1142,
-            "startColumn": 6,
-            "endColumn": 19
-          },
-          "rightSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "return false;\n",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1139,
-            "endLine": 1139,
-            "startColumn": 6,
-            "endColumn": 19
-          },
-          "validation": false
-        },
-        {
-          "leftSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
             "name": "return true;\n",
             "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
             "startLine": 1145,
@@ -2399,29 +2353,6 @@
             "endColumn": 18
           },
           "validation": true
-        },
-        {
-          "leftSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "if(method.getParameters().stream().noneMatch(param -> typeNameEquals(param.asType(),JD_PAGE_REQUEST)))",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1124,
-            "endLine": 1134,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "rightSideLocation": {
-            "container": "private validatedQueryReturnType(method ExecutableElement, typeElement TypeElement) : boolean",
-            "type": "Statement",
-            "name": "if(!hasPageRequest(method))",
-            "filePath": "tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AnnotationMetaEntity.java",
-            "startLine": 1123,
-            "endLine": 1132,
-            "startColumn": 5,
-            "endColumn": 6
-          },
-          "validation": false
         }
       ]
     }

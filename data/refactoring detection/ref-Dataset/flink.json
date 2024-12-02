@@ -17,6 +17,11 @@
         },
         {
           "type": "MOVE_CLASS",
+          "description": "Move Class\torg.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest moved to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
           "description": "Move Class\torg.apache.flink.runtime.taskprocessing.ReferenceCountedTest moved to org.apache.flink.runtime.asyncprocessing.ReferenceCountedTest",
           "validation": true
         },
@@ -37,7 +42,12 @@
         },
         {
           "type": "MOVE_RENAME_CLASS",
-          "description": "Move And Rename Class\torg.apache.flink.runtime.taskprocessing.ProcessingRequest.RequestType moved and renamed to org.apache.flink.runtime.asyncprocessing.StateRequestType",
+          "description": "Move And Rename Class\torg.apache.flink.runtime.taskprocessing.keyAccountingUnitTest moved and renamed to org.apache.flink.runtime.asyncprocessing.KeyAccountingUnitTest",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\trequest : ProcessingRequest to request : StateRequest in method public executeBatchRequests(processingRequests Iterable<StateRequest<?,?,?>>) : CompletableFuture<Boolean> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestStateExecutor",
           "validation": true
         },
         {
@@ -51,44 +61,14 @@
           "validation": true
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tPUT : RequestType to VALUE_UPDATE : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tPUT : RequestType to VALUE_UPDATE : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tGET : RequestType to VALUE_GET : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tGET : RequestType to VALUE_GET : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
-          "validation": true
-        },
-        {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.apache.flink.runtime.asyncprocessing.StateFutureFactory from class org.apache.flink.runtime.taskprocessing.AsyncExecutionController",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstateFuture : StateFutureImpl<Void> to stateFuture : InternalStateFuture<OUT> in method public handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstateFuture : StateFutureImpl<Integer> to stateFuture : InternalStateFuture<OUT> in method public handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
           "validation": true
         }
       ],
       "ourApproach": [
         {
-          "type": "MOVE_RENAME_METHOD",
+          "type": "MOVE_AND_RENAME_OPERATION",
           "description": "Move And Rename Method\tpublic getParameter() : Parameter from class org.apache.flink.runtime.taskprocessing.ProcessingRequest to public complete(result T) : void from class org.apache.flink.core.state.InternalStateFuture",
           "validation": false
         },
@@ -108,40 +88,25 @@
           "validation": true
         },
         {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tGET : RequestType to VALUE_GET : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tPUT : RequestType to VALUE_UPDATE : StateRequestType in class org.apache.flink.runtime.asyncprocessing.StateRequestType",
+          "validation": true
+        },
+        {
           "type": "MOVE_RENAME_CLASS",
-          "description": "Move And Rename Class\torg.apache.flink.runtime.taskprocessing.keyAccountingUnitTest moved and renamed to org.apache.flink.runtime.asyncprocessing.KeyAccountingUnitTest",
-          "validation": true
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest moved to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tstateFuture : StateFutureImpl<Void> to stateFuture : InternalStateFuture<OUT> in method public handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
+          "description": "Move And Rename Class\torg.apache.flink.runtime.taskprocessing.ProcessingRequest.RequestType moved and renamed to org.apache.flink.runtime.asyncprocessing.StateRequestType",
           "validation": true
         }
       ],
       "baseline": [
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest.TestUnderlyingState moved to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestUnderlyingState",
-          "validation": false
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest.TestStateExecutor moved to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestStateExecutor",
-          "validation": false
-        },
-        {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\torg.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest.TestValueState moved to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestValueState",
-          "validation": false
-        },
-        {
-          "type": "MOVE_RENAME_CLASS",
-          "description": "Move And Rename Class\torg.apache.flink.runtime.taskprocessing.keyAccountingUnitTest moved and renamed to org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest",
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public occupy(record R, key K) : boolean from class org.apache.flink.runtime.asyncprocessing.KeyAccountingUnit",
           "validation": false
         },
         {
@@ -155,11 +120,6 @@
           "validation": false
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\trequest : ProcessingRequest to request : StateRequest in method public executeBatchRequests(processingRequests Iterable<StateRequest<?,?,?>>) : CompletableFuture<Boolean> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestStateExecutor",
-          "validation": true
-        },
-        {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tunderlyingState : TestUnderlyingState to state : TestValueState in method public executeBatchRequests(processingRequests Iterable<StateRequest<?,?,?>>) : CompletableFuture<Boolean> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionControllerTest.TestStateExecutor",
           "validation": true
@@ -170,24 +130,24 @@
           "validation": false
         },
         {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to boolean in method public occupy(record R, key K) : boolean from class org.apache.flink.runtime.asyncprocessing.KeyAccountingUnit",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage testBasic() : void from class org.apache.flink.runtime.taskprocessing.keyAccountingUnitTest to package testBasic() : void from class org.apache.flink.runtime.asyncprocessing.KeyAccountingUnitTest",
-          "validation": false
-        },
-        {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> extracted from public asyncClear() : StateFuture<Void> in class org.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest.TestValueState & moved to class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
           "validation": false
         },
         {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstateFuture : StateFutureImpl<Void> to stateFuture : InternalStateFuture<OUT> in method public handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
+          "validation": true
+        },
+        {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> extracted from public asyncValue() : StateFuture<Integer> in class org.apache.flink.runtime.taskprocessing.AsyncExecutionControllerTest.TestValueState & moved to class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
           "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tstateFuture : StateFutureImpl<Integer> to stateFuture : InternalStateFuture<OUT> in method public handleRequest(state State, type StateRequestType, payload IN) : InternalStateFuture<OUT> from class org.apache.flink.runtime.asyncprocessing.AsyncExecutionController",
+          "validation": true
         }
       ]
     },
@@ -420,6 +380,11 @@
       "url": "https://github.com/apache/flink/commit/54ac32f1adc556e6d15deb2f3997c81de169023c",
       "commonRefactoring": [
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic setCheckpointMode(checkpointingMode org.apache.flink.core.execution.CheckpointingMode) : void renamed to public setConsistencyMode(checkpointingMode CheckpointingMode) : void in class org.apache.flink.streaming.api.environment.CheckpointConfig",
+          "validation": true
+        },
+        {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tDEFAULT_MODE : CheckpointingMode to DEFAULT_MODE : org.apache.flink.streaming.api.CheckpointingMode in class org.apache.flink.streaming.api.environment.CheckpointConfig",
           "validation": true
@@ -445,22 +410,11 @@
           "validation": true
         }
       ],
-      "ourApproach": [
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setCheckpointMode(checkpointingMode org.apache.flink.core.execution.CheckpointingMode) : void renamed to public setConsistencyMode(checkpointingMode CheckpointingMode) : void in class org.apache.flink.streaming.api.environment.CheckpointConfig",
-          "validation": true
-        }
-      ],
+      "ourApproach": [],
       "baseline": [
         {
           "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic getCheckpointMode() : CheckpointingMode renamed to public getConsistencyMode() : CheckpointingMode in class org.apache.flink.streaming.api.environment.CheckpointConfig",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic setCheckpointMode(checkpointingMode CheckpointingMode) : void renamed to public setConsistencyMode(checkpointingMode CheckpointingMode) : void in class org.apache.flink.streaming.api.environment.CheckpointConfig",
+          "description": "Rename Method\tpublic getCheckpointMode() : org.apache.flink.core.execution.CheckpointingMode renamed to public getConsistencyMode() : CheckpointingMode in class org.apache.flink.streaming.api.environment.CheckpointConfig",
           "validation": true
         },
         {
@@ -477,6 +431,11 @@
       "commonRefactoring": [
         {
           "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeSchedulerTest renamed to org.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeExecutionTest",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
           "description": "Rename Class\torg.apache.flink.test.scheduling.SpeculativeSchedulerITCase renamed to org.apache.flink.test.scheduling.SpeculativeExecutionITCase",
           "validation": true
         },
@@ -486,23 +445,8 @@
           "validation": true
         },
         {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeSchedulerTest renamed to org.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeExecutionTest",
-          "validation": true
-        },
-        {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tpublic createScheduler(log Logger, jobGraph JobGraph, executionConfig ExecutionConfig, ioExecutor Executor, jobMasterConfiguration Configuration, futureExecutor ScheduledExecutorService, userCodeLoader ClassLoader, checkpointRecoveryFactory CheckpointRecoveryFactory, rpcTimeout Time, blobWriter BlobWriter, jobManagerJobMetricGroup JobManagerJobMetricGroup, shuffleMaster ShuffleMaster<?>, partitionTracker JobMasterPartitionTracker, executionDeploymentTracker ExecutionDeploymentTracker, initializationTimestamp long, mainThreadExecutor ComponentMainThreadExecutor, jobStatusListener JobStatusListener, failureEnrichers Collection<FailureEnricher>, blocklistOperations BlocklistOperations, executionOperations ExecutionOperations, allocatorFactory ExecutionSlotAllocatorFactory, restartBackoffTimeStrategy RestartBackoffTimeStrategy, delayExecutor ScheduledExecutor, vertexParallelismAndInputInfosDecider VertexParallelismAndInputInfosDecider) : AdaptiveBatchScheduler extracted from public createInstance(log Logger, jobGraph JobGraph, ioExecutor Executor, jobMasterConfiguration Configuration, slotPoolService SlotPoolService, futureExecutor ScheduledExecutorService, userCodeLoader ClassLoader, checkpointRecoveryFactory CheckpointRecoveryFactory, rpcTimeout Time, blobWriter BlobWriter, jobManagerJobMetricGroup JobManagerJobMetricGroup, slotRequestTimeout Time, shuffleMaster ShuffleMaster<?>, partitionTracker JobMasterPartitionTracker, executionDeploymentTracker ExecutionDeploymentTracker, initializationTimestamp long, mainThreadExecutor ComponentMainThreadExecutor, fatalErrorHandler FatalErrorHandler, jobStatusListener JobStatusListener, failureEnrichers Collection<FailureEnricher>, blocklistOperations BlocklistOperations) : SchedulerNG in class org.apache.flink.runtime.scheduler.adaptivebatch.AdaptiveBatchSchedulerFactory",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprotected onTaskFinished(execution Execution, ioMetrics IOMetrics) : void renamed to public notifyTaskFinished(execution Execution, cancelPendingExecutionsFunction Function<ExecutionVertexID,CompletableFuture<?>>) : void in class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprotected onTaskFailed(execution Execution) : void renamed to public notifyTaskFailed(execution Execution) : void in class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
           "validation": true
         },
         {
@@ -596,6 +540,21 @@
           "validation": true
         },
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onTaskFinished(execution Execution, ioMetrics IOMetrics) : void renamed to public notifyTaskFinished(execution Execution, cancelPendingExecutionsFunction Function<ExecutionVertexID,CompletableFuture<?>>) : void in class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected onTaskFailed(execution Execution) : void renamed to public notifyTaskFailed(execution Execution) : void in class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "validation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to boolean in method public handleTaskFailure(failedExecution Execution, error Throwable, handleLocalExecutionAttemptFailure BiConsumer<Execution,Throwable>) : boolean from class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "validation": true
+        },
+        {
           "type": "EXTRACT_INTERFACE",
           "description": "Extract Interface\torg.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeExecutionHandler from classes [org.apache.flink.runtime.scheduler.adaptivebatch.SpeculativeScheduler]",
           "validation": true
@@ -612,11 +571,6 @@
         }
       ],
       "ourApproach": [
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to boolean in method public handleTaskFailure(failedExecution Execution, error Throwable, handleLocalExecutionAttemptFailure BiConsumer<Execution,Throwable>) : boolean from class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
-          "validation": true
-        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic closeAsync() : CompletableFuture<Void> renamed to public stopSlowTaskDetector() : void in class org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
@@ -729,12 +683,12 @@
       "ourApproach": [
         {
           "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpackage testCreateAndReuseFiles() : void from class org.apache.flink.runtime.checkpoint.filemerging.FileMergingSnapshotManagerTest to package testCreateAndReuseFiles() : void from class org.apache.flink.runtime.checkpoint.filemerging.WithinCheckpointFileMergingSnapshotManagerTest",
+          "description": "Push Down Method\tpublic testCheckpointNotification() : void from class org.apache.flink.runtime.checkpoint.filemerging.FileMergingSnapshotManagerTest to public testCheckpointNotification() : void from class org.apache.flink.runtime.checkpoint.filemerging.WithinCheckpointFileMergingSnapshotManagerTest",
           "validation": true
         },
         {
           "type": "PUSH_DOWN_OPERATION",
-          "description": "Push Down Method\tpublic testCheckpointNotification() : void from class org.apache.flink.runtime.checkpoint.filemerging.FileMergingSnapshotManagerTest to public testCheckpointNotification() : void from class org.apache.flink.runtime.checkpoint.filemerging.WithinCheckpointFileMergingSnapshotManagerTest",
+          "description": "Push Down Method\tpackage testCreateAndReuseFiles() : void from class org.apache.flink.runtime.checkpoint.filemerging.FileMergingSnapshotManagerTest to package testCreateAndReuseFiles() : void from class org.apache.flink.runtime.checkpoint.filemerging.WithinCheckpointFileMergingSnapshotManagerTest",
           "validation": true
         },
         {
@@ -850,12 +804,12 @@
       "ourApproach": [
         {
           "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBoolean[] to Collection<Boolean> in method private parameters() : Collection<Boolean> from class org.apache.flink.streaming.runtime.tasks.MultipleInputStreamTaskChainedSourcesCheckpointingTest",
+          "description": "Change Return Type\tBoolean[] to Collection<Boolean> in method private parameters() : Collection<Boolean> from class org.apache.flink.streaming.runtime.tasks.MultipleInputStreamTaskTest",
           "validation": true
         },
         {
           "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tBoolean[] to Collection<Boolean> in method private parameters() : Collection<Boolean> from class org.apache.flink.streaming.runtime.tasks.MultipleInputStreamTaskTest",
+          "description": "Change Return Type\tBoolean[] to Collection<Boolean> in method private parameters() : Collection<Boolean> from class org.apache.flink.streaming.runtime.tasks.MultipleInputStreamTaskChainedSourcesCheckpointingTest",
           "validation": true
         },
         {
@@ -1251,19 +1205,19 @@
           "validation": true
         },
         {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate writeUnorderedRecords(testHarness OneInputStreamOperatorTestHarness<Row,Object>) : void inlined to private checkWriteAndCommit(override boolean, partitioned boolean, dynamicGrouped boolean, staticPartitions LinkedHashMap<String,String>, inputSupplier Supplier<List<StreamRecord<Row>>>, outputSupplier Supplier<?>) : void in class org.apache.flink.connector.file.table.FileSystemOutputFormatTest",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate writeUnorderedRecords(testHarness OneInputStreamOperatorTestHarness<Row,Object>) : void inlined to private checkWriteAndCommit(override boolean, partitioned boolean, dynamicGrouped boolean, staticPartitions LinkedHashMap<String,String>, inputSupplier Supplier<List<StreamRecord<Row>>>, outputSupplier Supplier<?>) : void in class org.apache.flink.connector.file.table.FileSystemOutputFormatTest",
+          "validation": false
+        },
+        {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\ttmpPath : Path to stagingBaseDir : Path in class org.apache.flink.connector.file.table.FileSystemOutputFormatTest",
           "validation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate writeUnorderedRecords(testHarness OneInputStreamOperatorTestHarness<Row,Object>) : void inlined to package testOverrideNonPartition() : void in class org.apache.flink.connector.file.table.FileSystemOutputFormatTest",
-          "validation": false
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate writeUnorderedRecords(testHarness OneInputStreamOperatorTestHarness<Row,Object>) : void inlined to package testDynamicPartition() : void in class org.apache.flink.connector.file.table.FileSystemOutputFormatTest",
-          "validation": false
         }
       ]
     },
@@ -1286,24 +1240,18 @@
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tloggingEvents : ConcurrentLinkedQueue<String> to loggingEvents : ConcurrentLinkedQueue<LogEvent> in class org.apache.flink.testutils.logging.LoggerAuditingExtension",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tpublic LoggerAuditingExtension(loggerName String, level org.slf4j.event.Level) extracted from public LoggerAuditingExtension(clazz Class<?>, level org.slf4j.event.Level) in class org.apache.flink.testutils.logging.LoggerAuditingExtension",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic getMessages() : List<String> renamed to public getEvents() : List<LogEvent> in class org.apache.flink.testutils.logging.LoggerAuditingExtension",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_OPERATION",
-          "description": "Extract Method\tpublic LoggerAuditingExtension(loggerName String, level Level) extracted from public LoggerAuditingExtension(clazz Class<?>, level Level) in class org.apache.flink.testutils.logging.LoggerAuditingExtension",
           "validation": true
         },
         {
@@ -1344,8 +1292,19 @@
           "validation": true
         }
       ],
-      "ourApproach": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tbuffer : null to buffers : null in method package testNoBuffersForSort() : void from class org.apache.flink.runtime.io.network.partition.hybrid.tiered.storage.SortBufferAccumulatorTest",
+          "validation": true
+        }
+      ],
       "baseline": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\texpected : int in method public getMinMaxNetworkBuffersPerResultPartition(configuredNetworkBuffersPerChannel int, numFloatingBuffersPerGate int, sortShuffleMinParallelism int, sortShuffleMinBuffers int, numSubpartitions int, enableTieredStorage boolean, enableMemoryDecoupling boolean, tieredStoreExclusiveBuffers int, tieredStorageMinBuffersPerResultPartition int, type ResultPartitionType) : Tuple3<Integer,Integer,Integer> from class org.apache.flink.runtime.shuffle.NettyShuffleUtils",
+          "validation": false
+        },
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic builder() : TestingBufferPool.Builder extracted from package testOnUpstreamBlockedAndResumed() : void in class org.apache.flink.runtime.io.network.partition.consumer.RemoteInputChannelTest & moved to class org.apache.flink.runtime.io.network.buffer.TestingBufferPool",

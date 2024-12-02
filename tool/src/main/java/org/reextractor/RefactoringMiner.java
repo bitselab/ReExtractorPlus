@@ -18,7 +18,7 @@ public class RefactoringMiner {
             GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
             detector.detectAtCommit(repo, commitId, new RefactoringHandler() {
                 @Override
-                public void handle(String commitId, UMLModelDiff modelDiff, List<Refactoring> refactorings) {
+                public void handleModelDiff(String commitId, List<Refactoring> refactorings, UMLModelDiff modelDiff) {
                     results.addAll(filter(refactorings));
                 }
 
@@ -28,8 +28,7 @@ public class RefactoringMiner {
                     e.printStackTrace(System.err);
                 }
             });
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (Exception ignore) {
         }
         return results;
     }

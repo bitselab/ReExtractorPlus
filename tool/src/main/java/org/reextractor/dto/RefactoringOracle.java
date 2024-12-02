@@ -3,6 +3,7 @@ package org.reextractor.dto;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class RefactoringOracle {
 
@@ -92,6 +93,10 @@ public class RefactoringOracle {
             return baseline;
         }
 
+        public int getId() {
+            return id;
+        }
+
         public String getRepository() {
             return repository;
         }
@@ -132,6 +137,23 @@ public class RefactoringOracle {
 
         public boolean isValidation() {
             return validation;
+        }
+
+        public void setValidation(boolean validation) {
+            this.validation = validation;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Refactoring that = (Refactoring) o;
+            return Objects.equals(description, that.description);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hashCode(description);
         }
     }
 }

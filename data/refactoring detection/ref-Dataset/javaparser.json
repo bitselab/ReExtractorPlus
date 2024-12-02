@@ -4,14 +4,14 @@
       "repository": "https://github.com/javaparser/javaparser.git",
       "sha1": "37f42462dec876276ca3c7da672906825da77fd0",
       "url": "https://github.com/javaparser/javaparser/commit/37f42462dec876276ca3c7da672906825da77fd0",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\terasedParameters : List<ResolvedType> in method private erasureOfParamaters(typeParametersMap ResolvedTypeParametersMap) : List<ResolvedType> from class com.github.javaparser.resolution.types.ResolvedReferenceType",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -31,11 +31,6 @@
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate isLazyType(type Object) : boolean inlined to public equals(o Object) : boolean in class com.github.javaparser.resolution.types.ResolvedReferenceType",
           "validation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate isLazyType(type Object) : boolean inlined to public equals(o Object) : boolean in class com.github.javaparser.resolution.types.ResolvedReferenceType",
-          "validation": false
         }
       ]
     },
@@ -46,6 +41,11 @@
       "commonRefactoring": [],
       "ourApproach": [],
       "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate isEqualRange(range1 Optional<Range>, range2 Optional<Range>) : boolean inlined to private findChildTextElementForComment(oldValue Comment, nodeText NodeText) : List<ChildTextElement> in class com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter.Observer",
+          "validation": true
+        },
         {
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate isEqualRange(range1 Optional<Range>, range2 Optional<Range>) : boolean inlined to private findTokenTextElementForComment(oldValue Comment, nodeText NodeText) : List<TokenTextElement> in class com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter.Observer",
@@ -123,6 +123,11 @@
         },
         {
           "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Sexo moved to japa.bdd.samples.JavaConceptsEnums.Sexo",
+          "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
           "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Enum moved to japa.bdd.samples.JavaConceptsEnums.Enum",
           "validation": true
         },
@@ -135,17 +140,22 @@
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcu : CompilationUnit to base : CompilationUnit in method package printingExampleJavaConcepts() : void from class com.github.javaparser.printer.ConcreteSyntaxModelAcceptanceTest",
           "validation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.QWE moved to japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "validation": true
         }
       ],
       "ourApproach": [
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage ddd() : double from class japa.bdd.samples.JavaConcepts to package ddd() : double from class japa.bdd.samples.JavaConceptsMethods",
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tint to int[] in method private doSomething() : int[] from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
           "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.A moved to japa.bdd.samples.JavaConceptsMethods.A",
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate createInputStream() : InputStream from class japa.bdd.samples.JavaConcepts to private createInputStream() : InputStream from class japa.bdd.samples.JavaConceptsMethods",
           "validation": true
         },
         {
@@ -155,27 +165,22 @@
         },
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConcepts to private x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConceptsMethods",
+          "description": "Move Method\tpublic JavaConcepts(str String) from class japa.bdd.samples.JavaConcepts to public JavaConceptsInnerClasses(str String) from class japa.bdd.samples.JavaConceptsInnerClasses",
           "validation": true
         },
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.QWE moved to japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.A moved to japa.bdd.samples.JavaConceptsMethods.A",
           "validation": true
         },
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createInputStream() : InputStream from class japa.bdd.samples.JavaConcepts to private createInputStream() : InputStream from class japa.bdd.samples.JavaConceptsMethods",
+          "description": "Move Method\tpublic main(args String[]) : void from class japa.bdd.samples.JavaConcepts to public main(args String[]) : void from class japa.bdd.samples.JavaConceptsMethods",
           "validation": true
         },
         {
-          "type": "MOVE_CLASS",
-          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Sexo moved to japa.bdd.samples.JavaConceptsEnums.Sexo",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tint to int[] in method private doSomething() : int[] from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tprivate x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConcepts to private x(x Map<? extends X,? super T>) : void from class japa.bdd.samples.JavaConceptsMethods",
           "validation": true
         },
         {
@@ -185,17 +190,12 @@
         },
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic JavaConcepts(str String) from class japa.bdd.samples.JavaConcepts to public JavaConceptsInnerClasses(str String) from class japa.bdd.samples.JavaConceptsInnerClasses",
+          "description": "Move Method\tpackage ddd() : double from class japa.bdd.samples.JavaConcepts to package ddd() : double from class japa.bdd.samples.JavaConceptsMethods",
           "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tbyebye : byte to byebye : byte[] in class japa.bdd.samples.JavaConceptsBase",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic main(args String[]) : void from class japa.bdd.samples.JavaConcepts to public main(args String[]) : void from class japa.bdd.samples.JavaConceptsMethods",
           "validation": true
         },
         {
@@ -217,32 +217,12 @@
       "baseline": [
         {
           "type": "MOVE_CLASS",
-          "description": "Move Class\tjapa.bdd.samples.JavaConcepts.Sexo.Sexo_ moved to japa.bdd.samples.JavaConceptsEnums.Sexo.Sexo_",
-          "validation": false
-        },
-        {
-          "type": "MOVE_CLASS",
           "description": "Move Class\tjapa.bdd.samples.JavaConcepts.JavaConcepts.X moved to japa.bdd.samples.JavaConceptsInnerClasses.JavaConceptsInnerClasses.X",
           "validation": false
         },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\tjapa.bdd.samples.JavaConcepts.JavaConcepts.Y moved to japa.bdd.samples.JavaConceptsInnerClasses.JavaConceptsInnerClasses.Y",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic QWE(x String...) from class japa.bdd.samples.JavaConcepts.QWE to public QWE(x String...) from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic QWE(x int...) from class japa.bdd.samples.JavaConcepts.QWE to public QWE(x int...) from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
-          "validation": false
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate doSomething() : int[] from class japa.bdd.samples.JavaConcepts.QWE to private doSomething() : int[] from class japa.bdd.samples.JavaConceptsInnerClasses.QWE",
           "validation": false
         }
       ]
@@ -271,6 +251,11 @@
           "validation": false
         },
         {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpublic outputNode(node Node, name String, xmlWriter XMLStreamWriter) : void extracted from public output(node Node, name String, level int, builder StringBuilder) : void in class com.github.javaparser.printer.XmlPrinter",
+          "validation": false
+        },
+        {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tString to StringWriter in method public stringWriterOutput(node Node, name String) : StringWriter from class com.github.javaparser.printer.XmlPrinter",
           "validation": false
@@ -281,14 +266,14 @@
       "repository": "https://github.com/javaparser/javaparser.git",
       "sha1": "0d909d718d7b11e3081e14aecf28d32976700760",
       "url": "https://github.com/javaparser/javaparser/commit/0d909d718d7b11e3081e14aecf28d32976700760",
-      "commonRefactoring": [],
-      "ourApproach": [
+      "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tresult : String in method public toString(configuration PrinterConfiguration) : String from class com.github.javaparser.ast.Node",
           "validation": true
         }
       ],
+      "ourApproach": [],
       "baseline": []
     },
     {
@@ -380,17 +365,18 @@
       "url": "https://github.com/javaparser/javaparser/commit/dcfd52b307ad2f561e1b9eab668b3f11078352d6",
       "commonRefactoring": [
         {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tnextCsmElementIndex : int in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
-          "validation": true
-        },
-        {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tcsmElementListIterator : ListIterator<CsmElement> to csmElementListIterator : PeekingIterator<CsmElement> in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
           "validation": true
         }
       ],
-      "ourApproach": [],
+      "ourApproach": [
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tnextCsmElementIndex : int in method private findIndexOfCorrespondingNodeTextElement(elements List<CsmElement>, nodeText NodeText) : List<Integer> from class com.github.javaparser.printer.lexicalpreservation.ReshuffledDiffElementExtractor",
+          "validation": true
+        }
+      ],
       "baseline": [
         {
           "type": "EXTRACT_VARIABLE",

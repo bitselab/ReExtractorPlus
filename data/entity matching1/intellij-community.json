@@ -1,0 +1,2702 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "b686093c55f9df84d036ea528170bc5b39d4d14e",
+      "url": "https://github.com/JetBrains/intellij-community/commit/b686093c55f9df84d036ea528170bc5b39d4d14e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "getBasePath",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 28,
+            "endLine": 31,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "getBasePath",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 15,
+            "endLine": 18,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "doTest",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 33,
+            "endLine": 37,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "doTest",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 20,
+            "endLine": 24,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString0",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString0",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 26,
+            "endLine": 28,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString1",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 43,
+            "endLine": 45,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString1",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 30,
+            "endLine": 32,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString2",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 47,
+            "endLine": 49,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString2",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 34,
+            "endLine": 36,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString3",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 51,
+            "endLine": 53,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testString3",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 38,
+            "endLine": 40,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testGString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 55,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testGString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 42,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testSlashString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 59,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "testSlashString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 46,
+            "endLine": 48,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "_testDollarSlashString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 63,
+            "endLine": 65,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Method",
+            "name": "_testDollarSlashString",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 50,
+            "endLine": 52,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Class",
+            "name": "StringValueTest",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 24,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.jetbrains.plugins.groovy.lang.StringValueTest",
+            "type": "Class",
+            "name": "StringValueTest",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 11,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "private doTest(expected String) : void",
+            "type": "Statement",
+            "name": "def file=myFixture.configureByFile(\"${getTestName(false)}.groovy\");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "private doTest(expected String) : void",
+            "type": "Statement",
+            "name": "GroovyFile file=(GroovyFile)myFixture.configureByFile(getTestName(false) + \".groovy\");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 5,
+            "endColumn": 93
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package testString0() : void",
+            "type": "Statement",
+            "name": "doTest(\"fo\\nabc \\r \\u1234 \\\" \\' \\\" \");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "container": "public testString0() : void",
+            "type": "Statement",
+            "name": "doTest(\"fo\\nabc \\r ሴ \\\" ' \\\" \");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 37
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "package testGString() : void",
+            "type": "Statement",
+            "name": "doTest(\"abc \\' \\\" \");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "public testGString() : void",
+            "type": "Statement",
+            "name": "doTest(\"abc ' \\\" \");\n",
+            "filePath": "plugins/groovy/test/org/jetbrains/plugins/groovy/lang/StringValueTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 25
+          },
+          "validation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "fab3cba2c3c87026117d2d0f086c271ad9e45079",
+      "url": "https://github.com/JetBrains/intellij-community/commit/fab3cba2c3c87026117d2d0f086c271ad9e45079",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.actionMacro.ActionMacro",
+            "type": "Method",
+            "name": "readExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 57,
+            "endLine": 82,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.actionMacro.ActionMacro",
+            "type": "Method",
+            "name": "readExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 57,
+            "endLine": 80,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.actionMacro.ActionMacro",
+            "type": "Class",
+            "name": "ActionMacro",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 23,
+            "endLine": 366,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.actionMacro.ActionMacro",
+            "type": "Class",
+            "name": "ActionMacro",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 23,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public readExternal(macro Element) : void",
+            "type": "Statement",
+            "name": "if(text == null || text.length() == 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 66,
+            "endLine": 68,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "public readExternal(macro Element) : void",
+            "type": "Statement",
+            "name": "if(text == null || text.isEmpty())",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 64,
+            "endLine": 66,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public readExternal(macro Element) : void",
+            "type": "Statement",
+            "name": "for(final o: actions)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 60,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public readExternal(macro Element) : void",
+            "type": "Statement",
+            "name": "for(action: macro.getChildren())",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/actionMacro/ActionMacro.java",
+            "startLine": 59,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "d5def5048e0ebac39a822db57bf34d85989fb656",
+      "url": "https://github.com/JetBrains/intellij-community/commit/d5def5048e0ebac39a822db57bf34d85989fb656",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 29,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 38,
+            "endColumn": 49
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 18,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 28,
+            "endColumn": 39
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myInitialPosition",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 14,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Field",
+            "name": "myInitialPosition",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 15,
+            "endColumn": 37
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "ActionUrl",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 49,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "ActionUrl",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 58,
+            "endLine": 66,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 59,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 84,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getRootGroup",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 67,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getRootGroup",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 96,
+            "endLine": 98,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 105,
+            "endLine": 122,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getComponentAction",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 75,
+            "endLine": 90,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getComponentAction",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 137,
+            "endLine": 153,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "readExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 117,
+            "endLine": 142,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "readExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 180,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "writeExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 144,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "writeExternal",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 199,
+            "endLine": 222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "equals",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 249,
+            "endLine": 260,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "equals",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 241,
+            "endLine": 252,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "hashCode",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 262,
+            "endLine": 267,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "hashCode",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 254,
+            "endLine": 263,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "setComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 269,
+            "endLine": 271,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "setComponent",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 124,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "setGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 273,
+            "endLine": 275,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "setGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 88,
+            "endLine": 90,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "toString",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 277,
+            "endLine": 286,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "toString",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 265,
+            "endLine": 275,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "copy",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 288,
+            "endLine": 292,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "copy",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 224,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getInverted",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 294,
+            "endLine": 304,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getInverted",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 229,
+            "endLine": 239,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Class",
+            "name": "ActionUrl",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 21,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Class",
+            "name": "ActionUrl",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 24,
+            "endLine": 276,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Class",
+            "name": "CustomizableActionsPanel",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 45,
+            "endLine": 912,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Class",
+            "name": "CustomizableActionsPanel",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 46,
+            "endLine": 993,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "getGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 237,
+            "endLine": 247,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Method",
+            "name": "getGroupPath",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 487,
+            "endLine": 497,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "removePathFromActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 201,
+            "endLine": 214,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Method",
+            "name": "removePathFromActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 451,
+            "endLine": 465,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "addPathToActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 182,
+            "endLine": 199,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Method",
+            "name": "addPathToActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 432,
+            "endLine": 449,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "movePathInActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 216,
+            "endLine": 235,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Method",
+            "name": "movePathInActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 467,
+            "endLine": 485,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.intellij.ide.ui.customization.ActionUrl",
+            "type": "Method",
+            "name": "changePathInActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 170,
+            "endLine": 180,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "com.intellij.ide.ui.customization.CustomizableActionsPanel",
+            "type": "Method",
+            "name": "changePathInActionsTree",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 419,
+            "endLine": 430,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public ActionUrl(groupPath ArrayList<String>, component Object, actionType int, position int)",
+            "type": "Statement",
+            "name": "myComponent=component;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "container": "public ActionUrl(groupPath ArrayList<String>, component Object, actionType int, position int)",
+            "type": "Statement",
+            "name": "setComponent(component);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 29
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getRootGroup() : String",
+            "type": "Statement",
+            "name": "return myGroupPath.size() >= 1 ? myGroupPath.get(1) : \"\";\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "container": "public getRootGroup() : String",
+            "type": "Statement",
+            "name": "return !myGroupPath.isEmpty() ? myGroupPath.get(1) : \"\";\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 61
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "final String id=((Group)myComponent).getId();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 7,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "String id=o.getId();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 146,
+            "endLine": 146,
+            "startColumn": 7,
+            "endColumn": 29
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(id == null || id.length() == 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 84,
+            "endLine": 86,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(StringUtil.isEmpty(id))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 147,
+            "endLine": 149,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(myComponent instanceof Group)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 82,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(component instanceof Group o)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 145,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return ((Group)myComponent).constructActionGroup(true);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 9,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return o.constructActionGroup(true);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 148,
+            "endLine": 148,
+            "startColumn": 9,
+            "endColumn": 45
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(FORCE_POPUP,Boolean.toString(group.isForceShowAsPopup()));\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 163,
+            "endLine": 163,
+            "startColumn": 7,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(FORCE_POPUP,Boolean.toString(myComponentType == TYPE_POPUP_GROUP));\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 216,
+            "endLine": 216,
+            "startColumn": 9,
+            "endColumn": 98
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(VALUE,(String)myComponent);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 7,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(VALUE,StringUtil.notNullize(myComponentId));\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 210,
+            "endLine": 210,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public equals(object Object) : boolean",
+            "type": "Statement",
+            "name": "if(!(object instanceof ActionUrl url))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 251,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public equals(o Object) : boolean",
+            "type": "Statement",
+            "name": "if(!(o instanceof ActionUrl url))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 244,
+            "endLine": 244,
+            "startColumn": 5,
+            "endColumn": 53
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public equals(object Object) : boolean",
+            "type": "Statement",
+            "name": "return Comparing.equal(comp,thatComp) && myGroupPath.equals(url.myGroupPath) && myAbsolutePosition == url.myAbsolutePosition && myActionType == url.myActionType;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 256,
+            "endLine": 259,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "public equals(o Object) : boolean",
+            "type": "Statement",
+            "name": "return myComponentType == url.myComponentType && myActionType == url.myActionType && myAbsolutePosition == url.myAbsolutePosition && myInitialPosition == url.myInitialPosition && myGroupPath.equals(url.myGroupPath) && Objects.equals(myComponentId,url.myComponentId);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 246,
+            "endLine": 251,
+            "startColumn": 5,
+            "endColumn": 61
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public setComponent(object Object) : void",
+            "type": "Statement",
+            "name": "myComponent=object;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "public setComponent(c Object) : void",
+            "type": "Statement",
+            "name": "myComponent=c;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 125,
+            "endLine": 125,
+            "startColumn": 5,
+            "endColumn": 21
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public toString() : String",
+            "type": "Statement",
+            "name": "return \"ActionUrl{\" + \"myGroupPath=\" + myGroupPath + \", myComponent=\"+ myComponent+ \", myActionType=\"+ myActionType+ \", myAbsolutePosition=\"+ myAbsolutePosition+ \", myInitialPosition=\"+ myInitialPosition+ '}';\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 279,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 16
+          },
+          "rightSideLocation": {
+            "container": "public toString() : String",
+            "type": "Statement",
+            "name": "return \"ActionUrl{\" + \"myGroupPath=\" + myGroupPath + \", myComponentId='\"+ myComponentId+ '\\''+ \", myComponentType=\"+ myComponentType+ \", myComponent=\"+ myComponent+ \", myActionType=\"+ myActionType+ \", myAbsolutePosition=\"+ myAbsolutePosition+ \", myInitialPosition=\"+ myInitialPosition+ '}';\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 267,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 16
+          },
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "public getComponent() : Object",
+            "type": "Statement",
+            "name": "return myComponent;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 24
+          },
+          "rightSideLocation": {
+            "container": "public getComponent() : Object",
+            "type": "Statement",
+            "name": "return myComponent;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 62,
+            "endColumn": 81
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return ActionManager.getInstance().getAction((String)myComponent);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 80,
+            "endLine": 80,
+            "startColumn": 7,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return ActionManager.getInstance().getAction(o);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 7,
+            "endColumn": 55
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(myComponent instanceof String)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 79,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(component instanceof String o)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(VALUE,groupId != null ? groupId : \"\");\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 161,
+            "endLine": 161,
+            "startColumn": 7,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(VALUE,StringUtil.notNullize(myComponentId));\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 214,
+            "endLine": 214,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public hashCode() : int",
+            "type": "Statement",
+            "name": "int result=myComponent != null ? myComponent.hashCode() : 0;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 264,
+            "endLine": 264,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "public hashCode() : int",
+            "type": "Statement",
+            "name": "int result=myGroupPath.hashCode();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 256,
+            "endLine": 256,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public hashCode() : int",
+            "type": "Statement",
+            "name": "result+=29 * myGroupPath.hashCode();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 265,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "container": "public hashCode() : int",
+            "type": "Statement",
+            "name": "result=31 * result + Objects.hashCode(myComponentId);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 257,
+            "endLine": 257,
+            "startColumn": 5,
+            "endColumn": 60
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public copy() : ActionUrl",
+            "type": "Statement",
+            "name": "return url;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 291,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 16
+          },
+          "rightSideLocation": {
+            "container": "public copy() : ActionUrl",
+            "type": "Statement",
+            "name": "return new ActionUrl(new ArrayList<>(myGroupPath),myComponentId,myComponentType,myComponent,myActionType,myAbsolutePosition,myInitialPosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 225,
+            "endLine": 226,
+            "startColumn": 5,
+            "endColumn": 79
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "for(int i=0; i < length; i++)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 240,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "for(int i=0; i < length; i++)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 490,
+            "endLine": 495,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "Object o=((DefaultMutableTreeNode)treePath.getPath()[i]).getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 241,
+            "endLine": 241,
+            "startColumn": 7,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "Object o=((DefaultMutableTreeNode)treePath.getPath()[i]).getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 491,
+            "endLine": 491,
+            "startColumn": 7,
+            "endColumn": 82
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "if(o instanceof Group)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 242,
+            "endLine": 244,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "if(o instanceof Group)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 492,
+            "endLine": 494,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "result.add(((Group)o).getName());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 243,
+            "endLine": 243,
+            "startColumn": 9,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "result.add(((Group)o).getName());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 493,
+            "endLine": 493,
+            "startColumn": 9,
+            "endColumn": 42
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "final ArrayList<String> result=new ArrayList<>();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 238,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "ArrayList<String> result=new ArrayList<>();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 488,
+            "endLine": 488,
+            "startColumn": 5,
+            "endColumn": 50
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "int length=treePath.getPath().length - (includeSelf ? 0 : 1);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 5,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "int length=treePath.getPath().length - (includeSelf ? 0 : 1);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 489,
+            "endLine": 489,
+            "startColumn": 5,
+            "endColumn": 68
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "return result;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 246,
+            "endLine": 246,
+            "startColumn": 5,
+            "endColumn": 19
+          },
+          "rightSideLocation": {
+            "container": "private getGroupPath(treePath TreePath, includeSelf boolean) : ArrayList<String>",
+            "type": "Statement",
+            "name": "return result;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 496,
+            "endLine": 496,
+            "startColumn": 5,
+            "endColumn": 19
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(treePath == null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 204,
+            "endLine": 204,
+            "startColumn": 5,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(treePath == null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 455,
+            "endLine": 455,
+            "startColumn": 5,
+            "endColumn": 34
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(node.getChildCount() > absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 207,
+            "endLine": 213,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(node.getChildCount() > absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 458,
+            "endLine": 464,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "node.remove(child);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 211,
+            "endLine": 211,
+            "startColumn": 9,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "node.remove(child);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 462,
+            "endLine": 462,
+            "startColumn": 9,
+            "endColumn": 28
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 203,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 454,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 66
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode node=(DefaultMutableTreeNode)treePath.getLastPathComponent();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 205,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode node=(DefaultMutableTreeNode)treePath.getLastPathComponent();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 456,
+            "endLine": 456,
+            "startColumn": 5,
+            "endColumn": 91
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 206,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 457,
+            "endLine": 457,
+            "startColumn": 5,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode child=(DefaultMutableTreeNode)node.getChildAt(absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 208,
+            "endLine": 208,
+            "startColumn": 7,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode child=(DefaultMutableTreeNode)node.getChildAt(absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 459,
+            "endLine": 459,
+            "startColumn": 7,
+            "endColumn": 96
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "Object userObj=child.getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 209,
+            "endLine": 209,
+            "startColumn": 7,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "Object userObj=child.getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 460,
+            "endLine": 460,
+            "startColumn": 7,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(url.getComponent().equals(userObj instanceof Pair<?,?> pair ? pair.first : userObj))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 210,
+            "endLine": 212,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(component.equals(userObj instanceof Pair<?,?> pair ? pair.first : userObj))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 461,
+            "endLine": 463,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "return;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 202,
+            "endLine": 202,
+            "startColumn": 34,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "private removePathFromActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "return;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 453,
+            "endLine": 453,
+            "startColumn": 28,
+            "endColumn": 35
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(treePath == null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 184,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(treePath == null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 434,
+            "endLine": 434,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(node.getChildCount() >= absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 187,
+            "endLine": 197,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(node.getChildCount() >= absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 437,
+            "endLine": 447,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "newNode=new DefaultMutableTreeNode(url.getComponent());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 193,
+            "endLine": 193,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "newNode=new DefaultMutableTreeNode(url.getComponent());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 443,
+            "endLine": 443,
+            "startColumn": 9,
+            "endColumn": 66
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "final TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 183,
+            "endLine": 183,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 433,
+            "endLine": 433,
+            "startColumn": 5,
+            "endColumn": 66
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode node=(DefaultMutableTreeNode)treePath.getLastPathComponent();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 185,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode node=(DefaultMutableTreeNode)treePath.getLastPathComponent();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 435,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 91
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "final int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 436,
+            "endLine": 436,
+            "startColumn": 5,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode newNode;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 188,
+            "endLine": 188,
+            "startColumn": 7,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode newNode;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 438,
+            "endLine": 438,
+            "startColumn": 7,
+            "endColumn": 38
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "node.insert(newNode,absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 195,
+            "endLine": 195,
+            "startColumn": 7,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "node.insert(newNode,absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 445,
+            "endLine": 445,
+            "startColumn": 7,
+            "endColumn": 46
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "return newNode;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 196,
+            "endLine": 196,
+            "startColumn": 7,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "return newNode;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 446,
+            "endLine": 446,
+            "startColumn": 7,
+            "endColumn": 22
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "return null;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 198,
+            "endLine": 198,
+            "startColumn": 5,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "return null;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 448,
+            "endLine": 448,
+            "startColumn": 5,
+            "endColumn": 17
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(url.getComponent() instanceof Group)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 189,
+            "endLine": 194,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "if(url.getComponent() instanceof Group o)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 439,
+            "endLine": 444,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "newNode=ActionsTreeUtil.createNode((Group)url.getComponent());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 190,
+            "endLine": 190,
+            "startColumn": 9,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "private addPathToActionsTree(tree JTree, url ActionUrl) : DefaultMutableTreeNode",
+            "type": "Statement",
+            "name": "newNode=ActionsTreeUtil.createNode(o);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 440,
+            "endLine": 440,
+            "startColumn": 9,
+            "endColumn": 49
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(parent.getChildCount() > absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 223,
+            "endLine": 232,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(parent.getChildCount() > absolutePosition && absolutePosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 475,
+            "endLine": 484,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(parent.getChildCount() > initialPosition && initialPosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 224,
+            "endLine": 231,
+            "startColumn": 11,
+            "endColumn": 12
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(parent.getChildCount() > initialPosition && initialPosition >= 0)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 476,
+            "endLine": 483,
+            "startColumn": 7,
+            "endColumn": 8
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "parent.remove(child);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 228,
+            "endLine": 228,
+            "startColumn": 15,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "parent.remove(child);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 480,
+            "endLine": 480,
+            "startColumn": 11,
+            "endColumn": 32
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "parent.insert(child,absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 229,
+            "endLine": 229,
+            "startColumn": 15,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "parent.insert(child,absolutePosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 481,
+            "endLine": 481,
+            "startColumn": 11,
+            "endColumn": 50
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 217,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "TreePath treePath=CustomizationUtil.getTreePath(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 468,
+            "endLine": 468,
+            "startColumn": 5,
+            "endColumn": 66
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final DefaultMutableTreeNode parent=((DefaultMutableTreeNode)treePath.getLastPathComponent());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 9,
+            "endColumn": 105
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "DefaultMutableTreeNode parent=pathComponent instanceof DefaultMutableTreeNode o ? o : null;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 470,
+            "endLine": 470,
+            "startColumn": 5,
+            "endColumn": 98
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 221,
+            "endLine": 221,
+            "startColumn": 9,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "int absolutePosition=url.getAbsolutePosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 472,
+            "endLine": 472,
+            "startColumn": 5,
+            "endColumn": 54
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final int initialPosition=url.getInitialPosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 222,
+            "endLine": 222,
+            "startColumn": 9,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "int initialPosition=url.getInitialPosition();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 473,
+            "endLine": 473,
+            "startColumn": 5,
+            "endColumn": 52
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final DefaultMutableTreeNode child=(DefaultMutableTreeNode)parent.getChildAt(initialPosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 225,
+            "endLine": 225,
+            "startColumn": 13,
+            "endColumn": 109
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "final DefaultMutableTreeNode child=(DefaultMutableTreeNode)parent.getChildAt(initialPosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 477,
+            "endLine": 477,
+            "startColumn": 9,
+            "endColumn": 105
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "Object userObj=child.getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 226,
+            "endLine": 226,
+            "startColumn": 13,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "Object userObj=child.getUserObject();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 478,
+            "endLine": 478,
+            "startColumn": 9,
+            "endColumn": 48
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(treePath != null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 218,
+            "endLine": 234,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(parent == null)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 471,
+            "endLine": 471,
+            "startColumn": 5,
+            "endColumn": 32
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(url.getComponent().equals(userObj instanceof Pair<?,?> pair ? pair.first : userObj))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 227,
+            "endLine": 230,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "private movePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(component != null && component.equals(userObj instanceof Pair<?,?> pair ? pair.first : userObj))",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 479,
+            "endLine": 482,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "addPathToActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 7,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "addPathToActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 422,
+            "endLine": 422,
+            "startColumn": 7,
+            "endColumn": 39
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "removePathFromActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 175,
+            "endLine": 175,
+            "startColumn": 7,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "removePathFromActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 425,
+            "endLine": 425,
+            "startColumn": 7,
+            "endColumn": 44
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "movePathInActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 178,
+            "endLine": 178,
+            "startColumn": 7,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "movePathInActionsTree(tree,url);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 428,
+            "endLine": 428,
+            "startColumn": 7,
+            "endColumn": 40
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(url.myActionType == MOVE)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 177,
+            "endLine": 179,
+            "startColumn": 10,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(actionType == MOVE)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 427,
+            "endLine": 429,
+            "startColumn": 10,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(url.myActionType == ADDED)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 171,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(actionType == ADDED)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 421,
+            "endLine": 429,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(url.myActionType == DELETED)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 174,
+            "endLine": 179,
+            "startColumn": 10,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "private changePathInActionsTree(tree JTree, url ActionUrl) : void",
+            "type": "Statement",
+            "name": "if(actionType == DELETED)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/CustomizableActionsPanel.java",
+            "startLine": 424,
+            "endLine": 429,
+            "startColumn": 10,
+            "endColumn": 6
+          },
+          "validation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "public getComponent() : Object",
+            "type": "Statement",
+            "name": "return myComponent;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 24
+          },
+          "rightSideLocation": {
+            "container": "public getComponent() : Object",
+            "type": "Statement",
+            "name": "return myComponent;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 24
+          },
+          "validation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return Separator.getInstance();\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 7,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return ActionManager.getInstance().getAction(o);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 7,
+            "endColumn": 55
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return ActionManager.getInstance().getAction((String)myComponent);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 80,
+            "endLine": 80,
+            "startColumn": 7,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "return o;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 7,
+            "endColumn": 16
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(myComponent instanceof Separator)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 76,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(component instanceof String o)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(myComponent instanceof String)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 79,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "public getComponentAction() : AnAction",
+            "type": "Statement",
+            "name": "if(component instanceof Separator o)",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 139,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public readExternal(element Element) : void",
+            "type": "Statement",
+            "name": "myComponent=attributeValue;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 125,
+            "endLine": 125,
+            "startColumn": 7,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "container": "public readExternal(element Element) : void",
+            "type": "Statement",
+            "name": "myComponentId=element.getAttributeValue(VALUE);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 54
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public readExternal(element Element) : void",
+            "type": "Statement",
+            "name": "myComponent=group;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 7,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "container": "public readExternal(element Element) : void",
+            "type": "Statement",
+            "name": "myComponentType=TYPE_POPUP_GROUP;\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 191,
+            "endLine": 191,
+            "startColumn": 7,
+            "endColumn": 42
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(SEPARATOR,Boolean.TRUE.toString());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 156,
+            "endLine": 156,
+            "startColumn": 7,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "public writeExternal(element Element) : void",
+            "type": "Statement",
+            "name": "element.setAttribute(VALUE,StringUtil.notNullize(myComponentId));\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 214,
+            "endLine": 214,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "validation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "public copy() : ActionUrl",
+            "type": "Statement",
+            "name": "ActionUrl url=new ActionUrl(new ArrayList<>(getGroupPath()),getComponent(),getActionType(),getAbsolutePosition());\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 289,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 124
+          },
+          "rightSideLocation": {
+            "container": "public copy() : ActionUrl",
+            "type": "Statement",
+            "name": "return new ActionUrl(new ArrayList<>(myGroupPath),myComponentId,myComponentType,myComponent,myActionType,myAbsolutePosition,myInitialPosition);\n",
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/customization/ActionUrl.java",
+            "startLine": 225,
+            "endLine": 226,
+            "startColumn": 5,
+            "endColumn": 79
+          },
+          "validation": false
+        }
+      ]
+    }
+  ]
+}

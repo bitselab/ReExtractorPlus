@@ -22,13 +22,7 @@
         }
       ],
       "ourApproach": [],
-      "baseline": [
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tbytes : long in method public testGetFreeSpace_String() : void from class org.apache.commons.io.FileSystemUtilsTest",
-          "validation": false
-        }
-      ]
+      "baseline": []
     },
     {
       "repository": "https://github.com/apache/commons-io.git",
@@ -131,7 +125,18 @@
           "validation": true
         }
       ],
-      "ourApproach": [],
+      "ourApproach": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tcmdAttribs : String[] to trimPathStr : String in method private checkPath(pathStr String, allowEmpty boolean) : Path from class org.apache.commons.io.FileSystemUtils",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tcmdAttribs : String[] to trimPathStr : String in method private checkPath(pathStr String, allowEmpty boolean) : Path from class org.apache.commons.io.FileSystemUtils",
+          "validation": false
+        }
+      ],
       "baseline": [
         {
           "type": "EXTRACT_VARIABLE",
@@ -150,6 +155,11 @@
       "sha1": "812d8a4b53d9758b4f081d9b98a70ea9ef131a0e",
       "url": "https://github.com/apache/commons-io/commit/812d8a4b53d9758b4f081d9b98a70ea9ef131a0e",
       "commonRefactoring": [
+        {
+          "type": "EXTRACT_VARIABLE",
+          "description": "Extract Variable\tskip : long in method public skip(n long) : long from class org.apache.commons.io.input.BoundedInputStream",
+          "validation": true
+        },
         {
           "type": "PULL_UP_OPERATION",
           "description": "Pull Up Method\tpublic setPropagateClose(propagateClose boolean) : Builder from class org.apache.commons.io.input.BoundedInputStream.Builder to public setPropagateClose(propagateClose boolean) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
@@ -185,11 +195,6 @@
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tBuilder to T in method public setMaxCount(maxCount long) : T from class org.apache.commons.io.input.BoundedInputStream.AbstractBuilder",
-          "validation": true
-        },
-        {
-          "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\tskip : long in method public skip(n long) : long from class org.apache.commons.io.input.BoundedInputStream",
           "validation": true
         }
       ],
@@ -235,14 +240,14 @@
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate checkAndNotify(parent FileEntry, previous FileEntry[], files File[]) : void renamed to private checkAndFire(parent FileEntry, previous FileEntry[], files File[]) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
           "validation": true
-        },
+        }
+      ],
+      "ourApproach": [
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate doMatch(entry FileEntry, file File) : void renamed to private fireOnChange(entry FileEntry, file File) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate doDelete(entry FileEntry) : void renamed to private fireOnDelete(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
@@ -258,6 +263,11 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate doCreate(entry FileEntry) : void renamed to private fireOnDelete(entry FileEntry) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
+          "validation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate doDelete(entry FileEntry) : void renamed to private fireOnChange(entry FileEntry, file File) : void in class org.apache.commons.io.monitor.FileAlterationObserver",
           "validation": false
         },
         {
@@ -589,11 +599,6 @@
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate requireFile(file File, name String) : File renamed to private checkFileExists(file File, name String) : File in class org.apache.commons.io.FileUtils",
-          "validation": true
-        },
-        {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tFile to void in method private requireDirectoryExists(directory File, name String) : void from class org.apache.commons.io.FileUtils",
           "validation": true
@@ -605,6 +610,11 @@
         }
       ],
       "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate requireFile(file File, name String) : File renamed to private checkFileExists(file File, name String) : File in class org.apache.commons.io.FileUtils",
+          "validation": true
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate requireDirectory(directory File, name String) : File renamed to private requireDirectoryExists(directory File, name String) : void in class org.apache.commons.io.FileUtils",
@@ -621,6 +631,36 @@
           "type": "INLINE_OPERATION",
           "description": "Inline Method\tprivate requireDirectory(directory File, name String) : File inlined to private requireDirectoryExists(directory File, name String) : void in class org.apache.commons.io.FileUtils",
           "validation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to private checkFileExists(file File, name String) : File in class org.apache.commons.io.FileUtils",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to public checksum(file File, checksum Checksum) : Checksum in class org.apache.commons.io.FileUtils",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to public contentEquals(file1 File, file2 File) : boolean in class org.apache.commons.io.FileUtils",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to public contentEqualsIgnoreEOL(file1 File, file2 File, charsetName String) : boolean in class org.apache.commons.io.FileUtils",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to public contentEqualsIgnoreEOL(file1 File, file2 File, charsetName String) : boolean in class org.apache.commons.io.FileUtils",
+          "validation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method\tprivate requireFile(file File, name String) : File inlined to public openOutputStream(file File, append boolean) : FileOutputStream in class org.apache.commons.io.FileUtils",
+          "validation": false
         }
       ]
     },
