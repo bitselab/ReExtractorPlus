@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Count {
 
-    private static final String jsonPath = "E:\\contributions\\TSE2024\\ReExtractorPlus\\data\\refactoring detection\\ref-Dataset\\";
+    private static final String jsonPath = "E:\\ReExtractorPlus\\data\\refactoring detection\\ref-Dataset\\";
 
     public static void main(String[] args) {
         List<RefactoringDetectionResults.Refactoring> commonTPs = new ArrayList<>();
