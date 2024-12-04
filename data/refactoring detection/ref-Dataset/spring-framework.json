@@ -12,7 +12,12 @@
         },
         {
           "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor renamed to org.springframework.test.context.bean.override.BeanOverrideRegistrar",
+          "description": "Rename Class\torg.springframework.test.context.bean.override.mockito.SpyDefinition renamed to org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideBeanPostProcessorTests renamed to org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
           "validation": true
         },
         {
@@ -23,16 +28,6 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.springframework.test.context.bean.override.mockito.MockDefinition renamed to org.springframework.test.context.bean.override.mockito.MockitoBeanMetadata",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.springframework.test.context.bean.override.mockito.SpyDefinition renamed to org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
-          "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideBeanPostProcessorTests renamed to org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
           "validation": true
         },
         {
@@ -106,8 +101,8 @@
           "validation": true
         },
         {
-          "type": "CHANGE_ATTRIBUTE_TYPE",
-          "description": "Change Attribute Type\tbeanFactory : ConfigurableListableBeanFactory to beanFactory : ConfigurableBeanFactory in class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
+          "type": "CHANGE_VARIABLE_TYPE",
+          "description": "Change Variable Type\tthat : SpyDefinition to that : MockitoSpyBeanMetadata in method public equals(obj Object) : boolean from class org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
           "validation": true
         },
         {
@@ -126,13 +121,20 @@
           "validation": true
         },
         {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tthat : SpyDefinition to that : MockitoSpyBeanMetadata in method public equals(obj Object) : boolean from class org.springframework.test.context.bean.override.mockito.MockitoSpyBeanMetadata",
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tmethodToInvoke : Method in method protected createOverride(beanName String, existingBeanDefinition BeanDefinition, existingBeanInstance Object) : Object from class org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.MethodConventionOverrideMetadata",
+          "validation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor renamed to org.springframework.test.context.bean.override.BeanOverrideRegistrar",
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic getOrder() : int from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to public getOrder() : int from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type\tbeanFactory : ConfigurableListableBeanFactory to beanFactory : ConfigurableBeanFactory in class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
           "validation": true
         },
         {
@@ -141,13 +143,43 @@
           "validation": true
         },
         {
-          "type": "EXTRACT_CLASS",
-          "description": "Extract Class\torg.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
+          "type": "MOVE_AND_RENAME_OPERATION",
+          "description": "Move And Rename Method\tpackage parse(testClass Class<?>) : void from class org.springframework.test.context.bean.override.BeanOverrideParser to private createContext(classes Class<?>...) : AnnotationConfigApplicationContext from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
+          "validation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to AnnotationConfigApplicationContext in method private createContext(classes Class<?>...) : AnnotationConfigApplicationContext from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
+          "validation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tWRAP_EARLY_BEAN : BeanOverrideStrategy to WRAP_BEAN : BeanOverrideStrategy in class org.springframework.test.context.bean.override.BeanOverrideStrategy",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprotected getExpectedBeanName() : String renamed to protected getBeanName() : String in class org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.TestBeanOverrideMetadata",
+          "validation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tprivate parseMetadata(testClass Class<?>, parser BeanOverrideParser) : void renamed to private findClassesWithBeanOverride(testClass Class<?>, detectedClasses Set<Class<?>>) : void in class org.springframework.test.context.bean.override.BeanOverrideContextCustomizerFactory",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.MethodConventionOverrideMetadata renamed to org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.TestBeanOverrideMetadata",
           "validation": true
         },
         {
           "type": "MOVE_OPERATION",
-          "description": "Move Method\tpackage hasBeanOverride(testClass Class<?>) : boolean from class org.springframework.test.context.bean.override.BeanOverrideParser to package hasBeanOverride(clazz Class<?>) : boolean from class org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
+          "description": "Move Method\tpublic getOrder() : int from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to public getOrder() : int from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
+          "validation": true
+        },
+        {
+          "type": "MOVE_ATTRIBUTE",
+          "description": "Move Attribute\tpackage DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideProcessor to package DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideAnnotation",
           "validation": true
         },
         {
@@ -156,17 +188,15 @@
           "validation": true
         },
         {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\tWRAP_EARLY_BEAN : BeanOverrideStrategy to WRAP_BEAN : BeanOverrideStrategy in class org.springframework.test.context.bean.override.BeanOverrideStrategy",
+          "type": "MOVE_OPERATION",
+          "description": "Move Method\tpackage hasBeanOverride(testClass Class<?>) : boolean from class org.springframework.test.context.bean.override.BeanOverrideParser to package hasBeanOverride(clazz Class<?>) : boolean from class org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
           "validation": true
         },
         {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tmethodToInvoke : Method in method protected createOverride(beanName String, existingBeanDefinition BeanDefinition, existingBeanInstance Object) : Object from class org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.MethodConventionOverrideMetadata",
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\ttypeToOverride : ResolvableType to beanType : ResolvableType in class org.springframework.test.context.bean.override.OverrideMetadata",
           "validation": true
-        }
-      ],
-      "ourApproach": [
+        },
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tprivate getOrAddInfrastructureBeanDefinition(registry BeanDefinitionRegistry, clazz Class<?>, beanName String, constructorArgumentsConsumer Consumer<ConstructorArgumentValues>) : BeanDefinition renamed to public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void in class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
@@ -183,39 +213,9 @@
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprivate parseMetadata(testClass Class<?>, parser BeanOverrideParser) : void renamed to private findClassesWithBeanOverride(testClass Class<?>, detectedClasses Set<Class<?>>) : void in class org.springframework.test.context.bean.override.BeanOverrideContextCustomizerFactory",
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class\torg.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
           "validation": true
-        },
-        {
-          "type": "RENAME_CLASS",
-          "description": "Rename Class\torg.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.MethodConventionOverrideMetadata renamed to org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.TestBeanOverrideMetadata",
-          "validation": true
-        },
-        {
-          "type": "RENAME_ATTRIBUTE",
-          "description": "Rename Attribute\ttypeToOverride : ResolvableType to beanType : ResolvableType in class org.springframework.test.context.bean.override.OverrideMetadata",
-          "validation": true
-        },
-        {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tprotected getExpectedBeanName() : String renamed to protected getBeanName() : String in class org.springframework.test.context.bean.override.convention.TestBeanOverrideProcessor.TestBeanOverrideMetadata",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tpackage DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideProcessor to package DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideAnnotation",
-          "validation": true
-        },
-        {
-          "type": "MOVE_AND_RENAME_OPERATION",
-          "description": "Move And Rename Method\tpackage parse(testClass Class<?>) : void from class org.springframework.test.context.bean.override.BeanOverrideParser to private createContext(classes Class<?>...) : AnnotationConfigApplicationContext from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
-          "validation": false
-        },
-        {
-          "type": "CHANGE_RETURN_TYPE",
-          "description": "Change Return Type\tvoid to AnnotationConfigApplicationContext in method private createContext(classes Class<?>...) : AnnotationConfigApplicationContext from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessorTests",
-          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
@@ -237,26 +237,6 @@
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\tmainProcessor : BeanOverrideBeanPostProcessor to overrideRegistrar : BeanOverrideRegistrar in class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor.WrapEarlyBeanPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "INLINE_OPERATION",
-          "description": "Inline Method\tprivate getOrAddInfrastructureBeanDefinition(registry BeanDefinitionRegistry, clazz Class<?>, beanName String, constructorArgumentsConsumer Consumer<ConstructorArgumentValues>) : BeanDefinition inlined to public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void in class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
-          "validation": true
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\tdefinition : RootBeanDefinition to definition : BeanDefinition in method public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void from class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
-          "validation": false
-        },
-        {
-          "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\texisting : Set<OverrideMetadata> to existing : Set<Class<?>> in method public register(registry BeanDefinitionRegistry, detectedTestClasses Set<Class<?>>) : void from class org.springframework.test.context.bean.override.BeanOverrideRegistrar",
-          "validation": true
-        },
-        {
-          "type": "INLINE_VARIABLE",
-          "description": "Inline Variable\tresult : int in method public hashCode() : int from class org.springframework.test.context.bean.override.mockito.MockDefinition",
           "validation": true
         },
         {
@@ -310,38 +290,8 @@
           "validation": true
         },
         {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tpublic postProcessBeanFactory(beanFactory ConfigurableListableBeanFactory) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to public postProcessBeanFactory(beanFactory ConfigurableListableBeanFactory) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate postProcessWithRegistry(registry BeanDefinitionRegistry) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private postProcessWithRegistry(registry DefaultListableBeanFactory) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate registerBeanOverride(registry BeanDefinitionRegistry, overrideMetadata OverrideMetadata) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private registerBeanOverride(beanFactory DefaultListableBeanFactory, overrideMetadata OverrideMetadata) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate registerReplaceDefinition(registry BeanDefinitionRegistry, overrideMetadata OverrideMetadata, enforceExistingDefinition boolean) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private registerReplaceDefinition(beanFactory DefaultListableBeanFactory, overrideMetadata OverrideMetadata, enforceExistingDefinition boolean) : void from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate createBeanDefinition(metadata OverrideMetadata) : RootBeanDefinition from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private createBeanDefinition(metadata OverrideMetadata) : RootBeanDefinition from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_OPERATION",
-          "description": "Move Method\tprivate getExistingBeanNames(resolvableType ResolvableType) : Set<String> from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private getExistingBeanNames(beanFactory DefaultListableBeanFactory, resolvableType ResolvableType) : Set<String> from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
-          "validation": true
-        },
-        {
-          "type": "MOVE_ATTRIBUTE",
-          "description": "Move Attribute\tprivate EARLY_INFRASTRUCTURE_BEAN_NAME : String from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor to private EARLY_INFRASTRUCTURE_BEAN_NAME : String from class org.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor",
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tresult : int in method public hashCode() : int from class org.springframework.test.context.bean.override.mockito.MockDefinition",
           "validation": true
         },
         {
@@ -355,6 +305,11 @@
           "validation": false
         },
         {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method\tpublic typeToOverride() : ResolvableType renamed to public getBeanType() : ResolvableType in class org.springframework.test.context.bean.override.OverrideMetadata",
+          "validation": true
+        },
+        {
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tpackage DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideProcessor to public DUPLICATE_TRIGGER : String from class org.springframework.test.context.bean.override.example.ExampleBeanOverrideAnnotation",
           "validation": true
@@ -365,8 +320,13 @@
           "validation": true
         },
         {
-          "type": "RENAME_METHOD",
-          "description": "Rename Method\tpublic typeToOverride() : ResolvableType renamed to public getBeanType() : ResolvableType in class org.springframework.test.context.bean.override.OverrideMetadata",
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type\tvoid to Set<OverrideMetadata> in method package parse(clazz Class<?>) : Set<OverrideMetadata> from class org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
+          "validation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideParser renamed to org.springframework.test.context.bean.override.BeanOverrideParsingUtils",
           "validation": true
         }
       ]
