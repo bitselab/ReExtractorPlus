@@ -95,7 +95,7 @@ public class RefactoringDetectionResults {
     public class Refactoring {
         private String type;
         private String description;
-        private boolean validation = true;
+        private boolean validation;
 
         public Refactoring(org.refactoringminer.api.Refactoring refactoring) {
             this.type = refactoring.getRefactoringType().toString();
