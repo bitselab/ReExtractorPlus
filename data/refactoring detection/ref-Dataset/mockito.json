@@ -344,7 +344,7 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\thandler : MockHandler to handler : MockHandler<?> in method private getMockHandlerOrNull(mock Object) : MockHandler<?> from class org.mockito.internal.util.MockUtil",
-          "validation": false
+          "validation": true
         }
       ]
     },

@@ -1007,7 +1007,7 @@
         {
           "type": "PULL_UP_ATTRIBUTE",
           "description": "Pull Up Attribute\tprivate docValuesFormat : DocValuesFormat from class org.elasticsearch.index.codec.PerFieldMapperCodec to private docValuesFormat : DocValuesFormat from class org.elasticsearch.index.codec.Elasticsearch814Codec",
-          "validation": false
+          "validation": true
         }
       ]
     },

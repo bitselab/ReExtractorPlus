@@ -85,7 +85,7 @@
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tresult : int in method public hashCode() : int from class com.intellij.ide.ui.customization.ActionUrl",
-          "validation": false
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",

@@ -107,17 +107,17 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate testPrettyPrint(expr String, nodeTy Class<T>, expected String) : void extracted from package ppMethodCallOnCast() : void in class net.sourceforge.pmd.lang.java.ast.internal.PrettyPrintingUtilTest",
-          "validation": false
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate testPrettyPrint(expr String, nodeTy Class<T>, expected String) : void extracted from package ppMethodRef() : void in class net.sourceforge.pmd.lang.java.ast.internal.PrettyPrintingUtilTest",
-          "validation": false
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate testPrettyPrint(expr String, nodeTy Class<T>, expected String) : void extracted from package ppCtorCall() : void in class net.sourceforge.pmd.lang.java.ast.internal.PrettyPrintingUtilTest",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -296,7 +296,7 @@
         {
           "type": "MOVE_OPERATION",
           "description": "Move Method\tpublic isFinal() : boolean from class net.sourceforge.pmd.lang.java.ast.ASTMethodDeclaration to public isFinal() : boolean from class net.sourceforge.pmd.lang.java.ast.ASTExecutableDeclaration",
-          "validation": false
+          "validation": true
         }
       ]
     },

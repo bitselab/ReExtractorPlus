@@ -1414,7 +1414,7 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tsegments : Collection<MemorySegment> to segments : List<MemorySegment> in method package requestExclusiveBuffersFromGlobal(numExclusiveBuffers int) : void from class org.apache.flink.runtime.io.network.partition.consumer.BufferManager",
-          "validation": false
+          "validation": true
         },
         {
           "type": "EXTRACT_OPERATION",

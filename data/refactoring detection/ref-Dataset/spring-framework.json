@@ -714,7 +714,7 @@
         {
           "type": "MOVE_RENAME_CLASS",
           "description": "Move And Rename Class\torg.springframework.expression.spel.PropertyAccessTests.JsonIndexAccessor.ArrayValueRef moved and renamed to org.springframework.expression.spel.IndexingTests.IndexAccessorTests.JacksonArrayNodeIndexAccessor.ArrayNodeValueRef",
-          "validation": true
+          "validation": false
         },
         {
           "type": "MOVE_RENAME_CLASS",

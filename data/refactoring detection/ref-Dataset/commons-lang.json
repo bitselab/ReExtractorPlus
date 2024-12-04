@@ -813,7 +813,7 @@
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.apache.commons.lang3.concurrent.LazyInitializerTest.LazyInitializerTestImpl moved to org.apache.commons.lang3.concurrent.LazyInitializerSimpleTest.LazyInitializerTestImpl",
-          "validation": false
+          "validation": true
         }
       ]
     },

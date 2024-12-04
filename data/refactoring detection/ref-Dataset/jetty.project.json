@@ -152,7 +152,7 @@
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tselector : Selector in method private processUpdates() : void from class org.eclipse.jetty.io.ManagedSelector.SelectorProducer",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -261,7 +261,7 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tfoundServer : Server to server : Server in method public loadConfigurations(configurations List<Resource>, properties Map<String,String>) : Server from class org.eclipse.jetty.deploy.test.XmlConfiguredJetty",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -581,7 +581,7 @@
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tpath : String in method protected normalizeRequest(request HttpRequest) : void from class org.eclipse.jetty.client.HttpConnection",
-          "validation": false
+          "validation": true
         },
         {
           "type": "INLINE_VARIABLE",

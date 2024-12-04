@@ -481,12 +481,12 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tNO_OUTPUT : IntsRef to output : IntsRef in method private stem(word char[], offset int, length int, context WordContext, previous int, prevFlag char, prefixId int, recursionDepth int, doPrefix boolean, previousWasPrefix boolean, processor RootProcessor) : boolean from class org.apache.lucene.analysis.hunspell.Stemmer",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tNO_OUTPUT : IntsRef to output : IntsRef in method private stem(word char[], offset int, length int, context WordContext, previous int, prevFlag char, prefixId int, recursionDepth int, doPrefix boolean, previousWasPrefix boolean, processor RootProcessor) : boolean from class org.apache.lucene.analysis.hunspell.Stemmer",
-          "validation": false
+          "validation": true
         }
       ]
     },

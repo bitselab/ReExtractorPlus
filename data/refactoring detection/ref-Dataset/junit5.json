@@ -1030,27 +1030,27 @@
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithNestedClasses.Nested1 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.ClassWithNestedClasses.Nested1",
-          "validation": true
+          "validation": false
         },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithNestedClasses.Nested2 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.ClassWithNestedClasses.Nested2",
-          "validation": true
+          "validation": false
         },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.ClassWithNestedClasses.Nested3 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.ClassWithNestedClasses.Nested3",
-          "validation": true
+          "validation": false
         },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.InterfaceWithNestedClass.Nested4 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.InterfaceWithNestedClass.Nested4",
-          "validation": true
+          "validation": false
         },
         {
           "type": "MOVE_CLASS",
           "description": "Move Class\torg.junit.platform.commons.util.ReflectionUtilsTests.Interface45.Nested5 moved to org.junit.platform.commons.util.ReflectionUtilsTests.NestedClassTests.Interface45.Nested5",
-          "validation": true
+          "validation": false
         }
       ]
     },
@@ -1555,7 +1555,7 @@
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\te : JUnitException to exception : JUnitException in method package pruneStackTraceOfEverythingPriorToFirstLauncherCall() : void from class org.junit.platform.commons.util.ExceptionUtilsTests",
-          "validation": false
+          "validation": true
         }
       ]
     },

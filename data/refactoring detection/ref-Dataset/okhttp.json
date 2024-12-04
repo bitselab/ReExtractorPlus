@@ -256,12 +256,12 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tresponse : MockResponse to builder : MockResponse.Builder in method public setBodyAdjustsHeaders() : void from class mockwebserver3.MockWebServerTest",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tresponse : MockResponse to builder : MockResponse.Builder in method public setBodyAdjustsHeaders() : void from class mockwebserver3.MockWebServerTest",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -631,7 +631,7 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\texpected : IllegalArgumentException to expected : NullPointerException in method public nullSSLSocketFactory_throws() : void from class okhttp3.URLConnectionTest",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -854,12 +854,12 @@
         {
           "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\texecutor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
-          "validation": false
+          "validation": true
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
           "description": "Change Attribute Type\texecutor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
-          "validation": false
+          "validation": true
         }
       ]
     },

@@ -879,7 +879,7 @@
         {
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tprivate homeDir : File from class org.eclipse.jgit.junit.ssh.SshTestHarness to private homeDir : File from class org.eclipse.jgit.junit.LocalDiskRepositoryTestCase",
-          "validation": false
+          "validation": true
         }
       ]
     },
