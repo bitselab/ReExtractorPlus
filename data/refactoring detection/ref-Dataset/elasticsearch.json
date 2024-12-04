@@ -224,7 +224,7 @@
       "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\twaitForActiveShardsTimeout : var in method public executeTask(currentState ClusterState, results List<MetadataRolloverService.RolloverResult>, rolloverTaskContext TaskContext<RolloverTask>, allocationActionMultiListener AllocationActionMultiListener<RolloverResponse>) : ClusterState from class org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction",
+          "description": "Extract Variable\twaitForActiveShardsTimeout : var in method public executeTask(currentState ClusterState, results List<MetadataRolloverService.RolloverResult>, rolloverTaskContext TaskContext<RolloverTask>, allocationActionMultiListener AllocationActionMultiListener<RolloverResponse>) : ClusterState from class org.elasticsearch.action.admin.indices.rollover.TransportRolloverAction.RolloverExecutor",
           "validation": true
         },
         {
@@ -1018,7 +1018,7 @@
       "commonRefactoring": [
         {
           "type": "EXTRACT_VARIABLE",
-          "description": "Extract Variable\treason : MergeReason in method private applyRequest(currentState ClusterState, request PutMappingClusterStateUpdateRequest, indexMapperServices Map<Index,MapperService>) : ClusterState from class org.elasticsearch.cluster.metadata.PutMappingExecutor",
+          "description": "Extract Variable\treason : MergeReason in method private applyRequest(currentState ClusterState, request PutMappingClusterStateUpdateRequest, indexMapperServices Map<Index,MapperService>) : ClusterState from class org.elasticsearch.cluster.metadata.MetadataMappingService.PutMappingExecutor",
           "validation": true
         },
         {
