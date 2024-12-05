@@ -1459,6 +1459,26 @@
           "validation": true
         },
         {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage deleteIfNotNullAndExists(dir Path) : void extracted from package afterAll() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage deleteIfNotNullAndExists(dir Path) : void extracted from package afterAll() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage deleteIfNotNullAndExists(dir Path) : void extracted from package afterAll() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "validation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method\tpackage deleteIfNotNullAndExists(dir Path) : void extracted from package afterAll() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "validation": true
+        },
+        {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpackage deleteIfNotNullAndExists(dir Path) : void extracted from package afterAll() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests & moved to class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
           "validation": true
