@@ -89,7 +89,13 @@
       "repository": "https://github.com/junit-team/junit5.git",
       "sha1": "23b69c18d0071b9c36000da137d77e829daf62a8",
       "url": "https://github.com/junit-team/junit5/commit/23b69c18d0071b9c36000da137d77e829daf62a8",
-      "commonRefactoring": [],
+      "commonRefactoring": [
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\ttype : null to it : null in method protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void from class org.junit.api.tools.AbstractApiReportWriter",
+          "validation": true
+        }
+      ],
       "ourApproach": [
         {
           "type": "EXTRACT_OPERATION",
@@ -99,11 +105,6 @@
         {
           "type": "EXTRACT_OPERATION",
           "description": "Extract Method\tprivate collectTypes(scanResult ScanResult) : SortedSet<ClassInfo> extracted from package generateReport(packages String...) : ApiReport in class org.junit.api.tools.ApiReportGenerator",
-          "validation": true
-        },
-        {
-          "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttype : null to it : null in method protected printDeclarationSection(statuses Set<Status>, status Status, declarations List<Declaration>, out PrintWriter) : void from class org.junit.api.tools.AbstractApiReportWriter",
           "validation": true
         },
         {
