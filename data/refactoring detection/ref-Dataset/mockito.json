@@ -678,6 +678,16 @@
         },
         {
           "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\texpected : String to value : String in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute\tamount : int to expectedOccurrences : int in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
+          "validation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
           "description": "Rename Attribute\tamount : int to expectedOccurrences : int in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest.ThrowableMessageContainsOccurrencesCondition",
           "validation": true
         },
