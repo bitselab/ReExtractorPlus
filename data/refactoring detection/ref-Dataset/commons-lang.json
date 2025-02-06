@@ -195,7 +195,7 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic testExtendedAndBuiltInFormats() : void renamed to public testExtendedAndBuiltInFormatsWithAvailableLocales() : void in class org.apache.commons.lang3.text.ExtendedMessageFormatTest",
-          "validation": true
+          "validation": false
         },
         {
           "type": "INLINE_VARIABLE",

@@ -68,7 +68,7 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic shouldStackTraceGetFilteredOnUserExceptionsReflection() : void renamed to public shouldStackTraceGetFilteredOnUserExceptionsReflectionForJavaOfVersionLessThan21() : void in class org.mockitousage.spies.PartialMockingWithSpiesTest",
-          "validation": true
+          "validation": false
         }
       ],
       "baseline": []
@@ -383,7 +383,7 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.mockito.internal.debugging.LocationImpl renamed to org.mockito.internal.debugging.Java8LocationImpl",
-          "validation": true
+          "validation": false
         },
         {
           "type": "EXTRACT_CLASS",

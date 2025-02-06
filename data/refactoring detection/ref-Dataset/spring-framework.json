@@ -130,7 +130,7 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\torg.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor renamed to org.springframework.test.context.bean.override.BeanOverrideRegistrar",
-          "validation": true
+          "validation": false
         },
         {
           "type": "CHANGE_ATTRIBUTE_TYPE",
@@ -215,7 +215,7 @@
         {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\torg.springframework.test.context.bean.override.BeanOverrideBeanFactoryPostProcessor from class org.springframework.test.context.bean.override.BeanOverrideBeanPostProcessor",
-          "validation": true
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",

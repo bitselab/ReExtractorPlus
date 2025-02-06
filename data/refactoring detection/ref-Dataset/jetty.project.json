@@ -388,7 +388,7 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpublic testDateCacheFormatNow() : void renamed to public testDateCache() : void in class org.eclipse.jetty.util.jmh.DateCacheBenchmark",
-          "validation": true
+          "validation": false
         },
         {
           "type": "EXTRACT_CLASS",

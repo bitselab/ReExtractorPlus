@@ -1547,12 +1547,12 @@
         {
           "type": "RENAME_CLASS",
           "description": "Rename Class\tcom.puppycrawl.tools.checkstyle.checks.coding.onestatementperline.InputOneStatementPerLineMultiline renamed to com.puppycrawl.tools.checkstyle.checks.coding.onestatementperline.InputOneStatementPerLineMultilineForDeclarations",
-          "validation": true
+          "validation": false
         },
         {
           "type": "EXTRACT_CLASS",
           "description": "Extract Class\tcom.puppycrawl.tools.checkstyle.checks.coding.onestatementperline.InputOneStatementPerLineMultilineInLoopsAndTryWithResources from class com.puppycrawl.tools.checkstyle.checks.coding.onestatementperline.InputOneStatementPerLineMultiline",
-          "validation": true
+          "validation": false
         }
       ],
       "baseline": []
